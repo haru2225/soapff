@@ -28,7 +28,7 @@
       -> OUTDIR/analysis/{summary.txt, summary.json, analysis.png, msd_fit.csv, sova_pdf.csv, sova_rdf.csv, sova_sq.csv,
                           sova_summary.json, sova_sq.png, compute_<file>.png, compute_<file>_average.csv, xrd.png, xrd.csv}
 
-SOVA: pip install sovapy (soapff-gui's install.sh installs it).  SOVA parameters (SOVA_DEFAULTS): dr, r_max, Q range, X-ray or neutron,
+SOVA: pip install sovapy.  SOVA parameters (SOVA_DEFAULTS): dr, r_max, Q range, X-ray or neutron,
 frames, pairs.
 Debyer: --debyer, $DEBYER, debyer on PATH, or a source build ~/debyer/debyer/debyer or ~/*/debyer/debyer/debyer.
 """
@@ -78,7 +78,7 @@ SOVA_DEFAULTS = dict(dr=0.02, rmax=8.0, qmin=0.05, qmax=12.0, dq=0.05, radiation
 
 def sova(out_dir, dest, skip_ps, dt_fs, opts=None, log=print, traj="traj.lammpstrj"):
     """PDF g(r), RDF N(r), coordination numbers and S(Q) by SOVA (sovapy, https://github.com/MotokiShiga/sova-cui), called in
-    this Python (pip install sovapy; soapff-gui's install.sh installs it).  opts: SOVA_DEFAULTS keys.
+    this Python (pip install sovapy).  opts: SOVA_DEFAULTS keys.
     -> dest/sova_pdf.csv, sova_rdf.csv, sova_sq.csv, sova_summary.json (returned)."""
     try:
         import sovapy
@@ -86,7 +86,7 @@ def sova(out_dir, dest, skip_ps, dt_fs, opts=None, log=print, traj="traj.lammpst
                                                          radial_dist_fun, structure_factor_neutron, structure_factor_xray,
                                                          xcoeff, ncoeff)
     except ImportError:
-        raise RuntimeError("SOVA (sovapy) is not installed in this Python: pip install sovapy (soapff-gui's install.sh does it)")
+        raise RuntimeError("SOVA (sovapy) is not installed in this Python: pip install sovapy")
     o = dict(SOVA_DEFAULTS, **(opts or {}))
     rows = list(csv.DictReader(open(os.path.join(out_dir, "charges.csv"))))
     el = np.array([r["element"] for r in rows]); role = np.array([r["role"] for r in rows])
@@ -427,7 +427,7 @@ def computes(out_dir, dest, skip_ps, dt_fs):
 
 # ------------------------------------------------------------------------------------------------------ XRD (Debyer)
 def find_debyer(path=None):
-    """the debyer executable: the given path, $DEBYER, debyer on PATH, ~/.soapff-gui/bin/debyer (install.sh), or a source build ~/debyer/debyer/debyer or
+    """the debyer executable: the given path, $DEBYER, debyer on PATH, ~/.soapff-gui/bin/debyer, or a source build ~/debyer/debyer/debyer or
     ~/*/debyer/debyer/debyer; None when not found."""
     for c in (path, os.environ.get("DEBYER"), shutil.which("debyer")):
         if c and os.path.isfile(c) and os.access(c, os.X_OK):

@@ -21,5 +21,5 @@ Force field: ClayFF exactly as in Cygan et al. (2004) Tables 1 and 2 (soapff_cui
 H-O-H and M-O-H angle) with its flexible SPC water, 0.5 fs time step (writer and typing: soapff_cui/_clayff, copied from mincharge).
 """
 
-# part of soapff-gui
+# part of soapff
 __version__ = "0.1.0"

@@ -84,7 +84,7 @@ The docstring of `soapff.library` gives the full format. Libraries are looked up
 **Your own library.** First, `soapff.new_library("mine", extends="amber14sb")` writes `~/.soapff/libraries/mine.txt`. Then `soapff.add_reference("mine", molecule, types=[...], charges=[...])` adds a reference, and any parameter rows that are needed go into the text file. The table of reference environments is computed once and cached in `~/.cache/soapff`. It is computed again when the references or the descriptor settings change. See `examples/user_library.py`.
 
 **Engines.**
-- **clayff:** the ClayFF writer of soapff-gui (`soapff_cui`), unchanged. The mineral is typed first; the water and the ions are typed in a second step with a solution library.
+- **clayff:** the ClayFF writer (`soapff_cui`). The mineral is typed first; the water and the ions are typed in a second step with a solution library.
 - **molecular:** any force field with bonds, angles, dihedrals and impropers. It works in three steps:
   1. Bonds come from the distances (covalent radii × 1.15).
   2. The type comes from the SOAP vector of each atom's covalent neighbourhood.
@@ -101,16 +101,18 @@ The scripts and their results are in `examples/`.
 | Protein in water | `examples/amber14sb/solvated_lammps.py` | Ubiquitin in TIP3P with 0.15 M NaCl (17,018 atoms) from a PDB file: 0 wrong types and 0 wrong charges. Total energy differs from OpenMM PME by 0.21 kcal/mol (of −36,286). The written `in.lammps` runs. |
 | Water | `examples/md_check.py` | TIP3P: 300.5 K, 0.977 g/cm³. SPC/E: 298.9 K, 0.988 g/cm³ (NPT, 10 Å cutoff, no tail correction). |
 | Your own library | `examples/user_library.py` | Methanol added to a library that extends `amber14sb`. A methanol/water mixture read from a CIF file is typed correctly; the parent library refuses it. |
+| More clay cases | `examples/<folder>/` | Larger crystals, MD frames, basal slabs, interfaces with water, water shapes, a 105,977-atom droplet, the particle with edges, the swelling curve of Na montmorillonite, diffusion, mechanical properties, and a supercomputer workflow. See `examples/README.md`. |
+
+Besides soapff, the clay examples need packmol (water) and pymatgen (surfaces). The protein examples need OpenMM and pdbfixer to remake the library and the reference energies.
 
 **Note on PPPM.** The tests were run with Ewald, because the Homebrew LAMMPS used for them crashes when PPPM is set up a second time (FFTW3 with threads). Other builds run the `in.lammps` soapff writes as it is.
 
 ## Layout
 
 ```
-src/soapff/              the package: api.py (build, System), library.py (library files), molecular.py, clayff.py, lammps.py
+src/soapff/              the package: api.py (build, System), library.py (library files), molecular.py, clayff.py, lammps.py,
+                         remote.py (LAMMPS on another computer over SSH)
 src/soapff/libraries/    the bundled libraries (*.txt), their reference structures and the prebuilt ClayFF tables
-src/soapff_cui/          the ClayFF writer of soapff-gui, used by the clayff engine
-examples/                quick start, your own library, short MD checks, and the test cases
+src/soapff_cui/          the ClayFF writer used by the clayff engine (SOAP table, ClayFF types and charges, water, surfaces, analysis)
+examples/                quick start, your own library, short MD checks, and all the test cases (examples/README.md)
 ```
-
-soapff-gui (https://github.com/haru2225/soapff-gui) is the graphical program for clay minerals that uses the same ClayFF writer.

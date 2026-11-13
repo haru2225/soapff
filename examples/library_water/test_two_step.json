@@ -1,0 +1,409 @@
+{
+ "cases": {
+  "interface_montmorillonite_dry_Na": {
+   "atoms": 692,
+   "water": 122,
+   "ions": 6,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9877411127090454
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 0,
+    "low_mineral": 0,
+    "min_water": 0.9162523150444031,
+    "min_ion": 0.9916593432426453,
+    "min_mineral": 0.987217903137207
+   }
+  },
+  "interface_muscovite_2M1": {
+   "atoms": 738,
+   "water": 134,
+   "ions": 16,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9872806668281555
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 0,
+    "low_mineral": 0,
+    "min_water": 0.9632105231285095,
+    "min_ion": 0.9626655578613281,
+    "min_mineral": 0.982638418674469
+   }
+  },
+  "interface_muscovite_1M": {
+   "atoms": 759,
+   "water": 141,
+   "ions": 16,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9873322248458862
+   },
+   "whole": {
+    "wrong": 2,
+    "low": 0,
+    "low_mineral": 0,
+    "min_water": 0.9304839968681335,
+    "min_ion": 0.9243155717849731,
+    "min_mineral": 0.9659263491630554
+   }
+  },
+  "interface_phlogopite_1M": {
+   "atoms": 784,
+   "water": 144,
+   "ions": 16,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9871100783348083
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 1,
+    "low_mineral": 0,
+    "min_water": 0.938430666923523,
+    "min_ion": 0.8911369442939758,
+    "min_mineral": 0.9667668342590332
+   }
+  },
+  "interface_nanpingite": {
+   "atoms": 774,
+   "water": 146,
+   "ions": 16,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9860698580741882
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 1,
+    "low_mineral": 0,
+    "min_water": 0.9457711577415466,
+    "min_ion": 0.8851173520088196,
+    "min_mineral": 0.9851233959197998
+   }
+  },
+  "interface_pyrophyllite": {
+   "atoms": 710,
+   "water": 130,
+   "ions": 0,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9863893985748291
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 0,
+    "low_mineral": 0,
+    "min_water": 0.9171373248100281,
+    "min_ion": null,
+    "min_mineral": 0.9875495433807373
+   }
+  },
+  "interface_kaolinite": {
+   "atoms": 1659,
+   "water": 281,
+   "ions": 0,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9822220802307129
+   },
+   "whole": {
+    "wrong": 3,
+    "low": 1,
+    "low_mineral": 0,
+    "min_water": 0.8986198902130127,
+    "min_ion": null,
+    "min_mineral": 0.9324997067451477
+   }
+  },
+  "interface_lizerdite": {
+   "atoms": 1335,
+   "water": 229,
+   "ions": 0,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9552386999130249
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 0,
+    "low_mineral": 0,
+    "min_water": 0.9568856954574585,
+    "min_ion": null,
+    "min_mineral": 0.9831616282463074
+   }
+  },
+  "interface_talc": {
+   "atoms": 849,
+   "water": 157,
+   "ions": 0,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9544686675071716
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 0,
+    "low_mineral": 0,
+    "min_water": 0.9392039775848389,
+    "min_ion": null,
+    "min_mineral": 0.9832122921943665
+   }
+  },
+  "interface_brucite": {
+   "atoms": 885,
+   "water": 135,
+   "ions": 0,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.962263822555542
+   },
+   "whole": {
+    "wrong": 1,
+    "low": 0,
+    "low_mineral": 0,
+    "min_water": 0.9651507139205933,
+    "min_ion": null,
+    "min_mineral": 0.9144536852836609
+   }
+  },
+  "shape_sphere": {
+   "atoms": 2373,
+   "water": 139,
+   "ions": 36,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9816358089447021
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 0,
+    "low_mineral": 0,
+    "min_water": 0.9816358089447021,
+    "min_ion": 0.999976634979248,
+    "min_mineral": 0.9990046620368958
+   }
+  },
+  "shape_hemisphere": {
+   "atoms": 2469,
+   "water": 151,
+   "ions": 96,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9831238985061646
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 3,
+    "low_mineral": 0,
+    "min_water": 0.9722583293914795,
+    "min_ion": 0.8536676168441772,
+    "min_mineral": 0.9966994524002075
+   }
+  },
+  "shape_cylinder": {
+   "atoms": 2829,
+   "water": 291,
+   "ions": 36,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9798470735549927
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 0,
+    "low_mineral": 0,
+    "min_water": 0.9795973896980286,
+    "min_ion": 0.9831294417381287,
+    "min_mineral": 0.9955224990844727
+   }
+  },
+  "shape_cavity": {
+   "atoms": 4047,
+   "water": 697,
+   "ions": 36,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9817315936088562
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 0,
+    "low_mineral": 0,
+    "min_water": 0.979353666305542,
+    "min_ion": 0.9752851128578186,
+    "min_mineral": 0.9972713589668274
+   }
+  },
+  "shape_xygauss": {
+   "atoms": 3159,
+   "water": 401,
+   "ions": 36,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.98497074842453
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 0,
+    "low_mineral": 0,
+    "min_water": 0.9835420250892639,
+    "min_ion": 0.983894944190979,
+    "min_mineral": 0.9969974756240845
+   }
+  },
+  "shape_ions": {
+   "atoms": 4249,
+   "water": 739,
+   "ions": 112,
+   "two_step": {
+    "wrong": 0,
+    "fallback": 0,
+    "by_rule": 0,
+    "type_check_differ": 0
+   },
+   "water_only": {
+    "wrong": 0,
+    "low": 0,
+    "min": 0.9154413342475891
+   },
+   "whole": {
+    "wrong": 0,
+    "low": 2,
+    "low_mineral": 0,
+    "min_water": 0.9643083214759827,
+    "min_ion": 0.8850567936897278,
+    "min_mineral": 0.9970161318778992
+   }
+  }
+ },
+ "total": {
+  "structures": 16,
+  "atoms": 28311,
+  "water": 4037,
+  "ions": 422,
+  "two_step": {
+   "wrong": 0,
+   "fallback": 0,
+   "by_rule": 0,
+   "type_check_differ": 0
+  },
+  "water_only": {
+   "wrong": 0,
+   "low": 0
+  },
+  "whole": {
+   "wrong": 6,
+   "low": 8,
+   "low_mineral": 0
+  }
+ }
+}

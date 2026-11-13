@@ -181,19 +181,26 @@ def input_file(lib, info, md=True, temp=300.0, relax_ps=10.0, nvt_ps=50.0, npt_p
 
 # ------------------------------------------------------------------------------------------------- running LAMMPS
 def find_lammps():
-    """(lmp, mpirun): $SOAPFF_LMP / $SOAPFF_MPIRUN, else as soapff-gui finds them (next to this Python, ~/.soapff-gui/lammps/bin,
-    then lmp / lmp_mpi / lmp_serial on the PATH)"""
+    """(lmp, mpirun): $SOAPFF_LMP / $SOAPFF_MPIRUN, else lmp / lmp_mpi / lmp_serial next to this Python, then on the PATH; the
+    mpirun (or mpiexec) next to lmp is preferred (same MPI)"""
     lmp = os.environ.get("SOAPFF_LMP")
     mpirun = os.environ.get("SOAPFF_MPIRUN")
     if lmp:
         return shutil.which(lmp) or lmp, mpirun
-    try:
-        from soapff_gui.runner import find_executables
-        found = find_executables()
-    except Exception:
-        found = (next((shutil.which(n) for n in ("lmp", "lmp_mpi", "lmp_serial") if shutil.which(n)), None),
-                 shutil.which("mpirun"))
-    return found[0], mpirun or found[1]
+    dirs = [os.path.dirname(sys.executable)] + os.environ.get("PATH", "").split(os.pathsep)
+
+    def first(names):
+        for d in dirs:
+            for n in names:
+                p = os.path.join(d, n)
+                if d and os.path.isfile(p) and os.access(p, os.X_OK):
+                    return p
+        return None
+    lmp = first(["lmp", "lmp_mpi", "lmp_serial"])
+    if not mpirun and lmp and not lmp.endswith("lmp_serial"):
+        mpirun = next((os.path.join(os.path.dirname(lmp), n) for n in ("mpirun", "mpiexec")
+                       if os.path.isfile(os.path.join(os.path.dirname(lmp), n))), None) or first(["mpirun", "mpiexec"])
+    return lmp, mpirun
 
 
 def run(out_dir, np_=1, lmp=None, mpirun=None, input="in.lammps", log="log.lammps", extra=(), echo=True):

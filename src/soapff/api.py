@@ -103,7 +103,7 @@ class System:
         return read_thermo(os.path.join(self.out_dir, log))
 
     def analyze(self, **kw):
-        """the analyses of soapff-gui (soapff_cui.analysis: diffusion from compute msd, SOVA g(r) and S(Q), XRD)"""
+        """the analyses of a finished run (soapff_cui.analysis: diffusion from compute msd, SOVA g(r) and S(Q), XRD)"""
         from soapff_cui.analysis import analyze
         return analyze(self.out_dir, **kw)
 

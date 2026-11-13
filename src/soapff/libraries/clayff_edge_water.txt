@@ -1,6 +1,6 @@
 # soapff library: the solution library of clayff_edge (its second step).  Not used alone.
 # The two particle files and liquid water, the chloride solutions and the same in vacuum (ClayFF water and ions), not relaxed.
-# (examples/library_water/build_library_clayff_edge_water.py of soapff-gui)
+# (examples/library_water/build_library_clayff_edge_water.py)
 
 [library]
 name        = clayff_edge_water

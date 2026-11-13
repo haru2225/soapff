@@ -1,0 +1,1693 @@
+LAMMPS (7 Feb 2024 - Update 1)
+  using 1 OpenMP thread(s) per MPI task
+# soapff-cui: ClayFF + SOAP charges.  lmp -in in.lammps
+include system.settings
+# soapff-cui settings: ClayFF (Cygan et al. 2004, Tables 1 and 2) with flexible SPC (ClayFF) water; types in system.data from SOAP, charges: clayff2004
+units real
+atom_style full
+boundary p p p
+bond_style harmonic
+angle_style harmonic
+pair_style lj/cut/coul/long 10.0
+pair_modify mix arithmetic tail no
+special_bonds lj/coul 0.0 0.0 0.0
+read_data system.data
+Reading data file ...
+  triclinic box = (0 0 0) to (20.706 17.9744 19.970797) with tilt (0 -2.0130661 0)
+  2 by 1 by 2 MPI processor grid
+  reading atoms ...
+  672 atoms
+  scanning bonds ...
+  1 = max bonds/atom
+  scanning angles ...
+  2 = max angles/atom
+  reading bonds ...
+  64 bonds
+  reading angles ...
+  128 angles
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     1 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.004 seconds
+pair_coeff 1 1 1.3298e-06 4.271235724380229  # ao
+pair_coeff 2 2 1.8405e-06 3.3020270089153536  # at
+pair_coeff 3 3 0.0 0.0  # ho
+pair_coeff 4 4 0.1 3.3340102728965917  # K
+pair_coeff 5 5 0.1554 3.1655413252962536  # ob
+pair_coeff 6 6 0.1554 3.1655413252962536  # obts
+pair_coeff 7 7 0.1554 3.1655413252962536  # oh
+pair_coeff 8 8 1.8405e-06 3.3020270089153536  # st
+bond_coeff 1 554.1349 1.0  # O-H
+angle_coeff 1 30.0 109.47  # MOH-Al-bulk
+kspace_style pppm 1.0e-5
+neighbor 2.0 bin
+neigh_modify every 1 delay 0 check yes
+thermo_style custom step temp press pe ke etotal vol density lx ly lz
+thermo 1000
+# minimisation with a small step limit first (built structures may contain overlapping water)
+min_style cg
+min_modify dmax 0.01
+minimize 1.0e-4 1.0e-6 1000 10000
+PPPM initialization ...
+WARNING: System is not charge neutral, net charge = -0.0064 (src/kspace.cpp:327)
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33289341
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023525917
+  estimated relative force accuracy = 7.0847599e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 4 3 4
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut/coul/long, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/tri
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.429 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0             -58593.826     -151246.37      0             -151246.37      7432.69        2.8475552      20.706         17.9744        19.970797    
+        20   0             -29336.087     -154041.8       0             -154041.8       7432.69        2.8475552      20.706         17.9744        19.970797    
+Loop time of 0.0293696 on 4 procs for 20 steps with 672 atoms
+
+98.2% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+      -151246.37005098   -154028.20152232  -154041.803452131
+  Force two-norm initial, final = 2690.2036 97.025353
+  Force max component initial, final = 192.18734 7.7314177
+  Final line search alpha, max atom move = 0.0012582301 0.0097279028
+  Iterations, force evaluations = 20 20
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.017538   | 0.018285   | 0.019023   |   0.5 | 62.26
+Bond    | 4.377e-05  | 4.7208e-05 | 5.0986e-05 |   0.0 |  0.16
+Kspace  | 0.0091027  | 0.0098403  | 0.010588   |   0.7 | 33.51
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.00090023 | 0.000903   | 0.00090565 |   0.0 |  3.07
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0002939  |            |       |  1.00
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4090 ave        4090 max        4090 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Neighs:          54624 ave       56505 max       52797 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 218496
+Ave neighs/atom = 325.14286
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+min_modify dmax 0.1
+minimize 1.0e-6 1.0e-6 5000 50000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33289341
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023525917
+  estimated relative force accuracy = 7.0847599e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.429 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+        20   0             -29336.087     -154041.8       0             -154041.8       7432.69        2.8475552      20.706         17.9744        19.970797    
+        95   0             -14662.962     -154406.27      0             -154406.27      7432.69        2.8475552      20.706         17.9744        19.970797    
+Loop time of 0.201762 on 4 procs for 75 steps with 672 atoms
+
+94.1% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+     -154041.803452131  -154406.141345888  -154406.274074086
+  Force two-norm initial, final = 97.025353 12.447562
+  Force max component initial, final = 7.7314177 1.0523211
+  Final line search alpha, max atom move = 0.01051544 0.011065619
+  Iterations, force evaluations = 75 142
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.11895    | 0.12417    | 0.12986    |   1.4 | 61.54
+Bond    | 0.00026892 | 0.00028762 | 0.00030622 |   0.0 |  0.14
+Kspace  | 0.059688   | 0.065386   | 0.07062    |   1.9 | 32.41
+Neigh   | 0.0049834  | 0.0049862  | 0.0049905  |   0.0 |  2.47
+Comm    | 0.0055652  | 0.0055861  | 0.0056048  |   0.0 |  2.77
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001351   |            |       |  0.67
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4047 ave        4053 max        4041 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          55023 ave       56913 max       53151 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 220092
+Ave neighs/atom = 327.51786
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 2
+Dangerous builds = 0
+change_box all triclinic
+Changing box ...
+  triclinic box = (0 0 0) to (20.706 17.9744 19.970797) with tilt (0 -2.0130661 0)
+kspace_style pppm 1.0e-5
+
+# Add the MD (fix, compute, run, etc.) below this line (+ fix / + compute / + Other)
+
+# ===== soapff: property calculation (0 K elastic constants, tension / compression, shear) =====
+# (change_box all triclinic is needed for the tilt factors: it is placed before any dump)
+
+# soapff-property: elastic0 strain=0.01 file=elastic0.dat
+# 0 K elastic constants (LAMMPS examples/ELASTIC): zero-stress box, then +-strain per direction, atoms relaxed
+velocity all set 0.0 0.0 0.0
+# zero-stress box: box/relax and fixed-box minimisations alternated 4 times (box/relax alone leaves the
+# atoms unrelaxed); the last fixed-box minimisation is the reference, relaxed as the strained states
+fix soapff_br all box/relax tri 0.0 vmax 0.001 nreset 20
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+WARNING: System is not charge neutral, net charge = -0.0064 (src/kspace.cpp:327)
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33289341
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023525917
+  estimated relative force accuracy = 7.0847599e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+WARNING: Energy due to 6 extra global DOFs will be included in minimizer energies
+ (src/min.cpp:219)
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.429 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+        95   0             -14662.962     -154406.27      0             -154406.27      7432.69        2.8475552      20.706         17.9744        19.970797    
+       188   0              89.932445     -154422.34      0             -154422.34      7286.2649      2.9047798      20.611575      17.911747      19.73585     
+Loop time of 0.506083 on 4 procs for 93 steps with 672 atoms
+
+95.4% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154406.274074086  -154422.341740769  -154422.341740769
+  Force two-norm initial, final = 2839.2004 61.319924
+  Force max component initial, final = 2049.6636 51.464717
+  Final line search alpha, max atom move = 3.0484113e-12 1.5688563e-10
+  Iterations, force evaluations = 93 224
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.19629    | 0.2042     | 0.21269    |   1.6 | 40.35
+Bond    | 0.00051198 | 0.00054015 | 0.00056616 |   0.0 |  0.11
+Kspace  | 0.10263    | 0.11119    | 0.11918    |   2.2 | 21.97
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0095829  | 0.0096522  | 0.0097093  |   0.1 |  1.91
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.1805     |            |       | 35.67
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4047 ave        4053 max        4041 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          55018 ave       56879 max       53157 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 220072
+Ave neighs/atom = 327.4881
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+unfix soapff_br
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33325728
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023192975
+  estimated relative force accuracy = 6.9844957e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+       188   0              90.011905     -154422.34      0             -154422.34      7286.2649      2.9047798      20.611575      17.911747      19.73585     
+       270   0             -1846.3967     -154466.32      0             -154466.32      7286.2649      2.9047798      20.611575      17.911747      19.73585     
+Loop time of 0.299915 on 4 procs for 82 steps with 672 atoms
+
+94.2% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+       -154422.3403677  -154466.317314398  -154466.317314398
+  Force two-norm initial, final = 23.955115 0.90490002
+  Force max component initial, final = 1.6312827 0.1090259
+  Final line search alpha, max atom move = 1.173712e-08 1.2796501e-09
+  Iterations, force evaluations = 82 213
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.18319    | 0.1904     | 0.19849    |   1.6 | 63.49
+Bond    | 0.0004022  | 0.00042671 | 0.00045289 |   0.0 |  0.14
+Kspace  | 0.088407   | 0.096579   | 0.10387    |   2.3 | 32.20
+Neigh   | 0.0025079  | 0.0025093  | 0.0025106  |   0.0 |  0.84
+Comm    | 0.0081406  | 0.0081955  | 0.0082537  |   0.1 |  2.73
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001803   |            |       |  0.60
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4124 ave        4134 max        4114 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          56076 ave       57895 max       54285 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 224304
+Ave neighs/atom = 333.78571
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 1
+Dangerous builds = 0
+fix soapff_br all box/relax tri 0.0 vmax 0.001 nreset 20
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33325728
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023192975
+  estimated relative force accuracy = 6.9844957e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+WARNING: Energy due to 6 extra global DOFs will be included in minimizer energies
+ (src/min.cpp:219)
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+       270   0             -1846.3967     -154466.32      0             -154466.32      7286.2649      2.9047798      20.611575      17.911747      19.73585     
+       295   0             -24.172363     -154466.78      0             -154466.78      7268.6578      2.9118162      20.603767      17.910666      19.696808    
+Loop time of 0.413463 on 4 procs for 25 steps with 672 atoms
+
+96.5% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154466.317314398  -154466.782040893  -154466.782040893
+  Force two-norm initial, final = 377.00019 19.235294
+  Force max component initial, final = 313.64832 9.9960106
+  Final line search alpha, max atom move = 2.4763015e-11 2.4753136e-10
+  Iterations, force evaluations = 25 181
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.16095    | 0.16774    | 0.17572    |   1.6 | 40.57
+Bond    | 0.00041455 | 0.00043452 | 0.00045675 |   0.0 |  0.11
+Kspace  | 0.083619   | 0.091691   | 0.098562   |   2.2 | 22.18
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0078894  | 0.0079703  | 0.0080433  |   0.1 |  1.93
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.1456     |            |       | 35.22
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          56096 ave       57929 max       54257 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 224384
+Ave neighs/atom = 333.90476
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+unfix soapff_br
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33328814
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023173408
+  estimated relative force accuracy = 6.978603e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+       295   0             -24.168152     -154466.78      0             -154466.78      7268.6578      2.9118162      20.603767      17.910666      19.696808    
+       312   0             -680.8334      -154466.96      0             -154466.96      7268.6578      2.9118162      20.603767      17.910666      19.696808    
+Loop time of 0.124523 on 4 procs for 17 steps with 672 atoms
+
+96.8% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154466.781961694  -154466.960733504  -154466.960733504
+  Force two-norm initial, final = 10.048268 0.72767637
+  Force max component initial, final = 0.8778439 0.05102118
+  Final line search alpha, max atom move = 1.4901161e-08 7.6027483e-10
+  Iterations, force evaluations = 17 89
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.076892   | 0.080048   | 0.083648   |   1.0 | 64.28
+Bond    | 0.00017173 | 0.00017902 | 0.00019013 |   0.0 |  0.14
+Kspace  | 0.036496   | 0.040102   | 0.043269   |   1.5 | 32.20
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0034807  | 0.003496   | 0.0035092  |   0.0 |  2.81
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.000699   |            |       |  0.56
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          56234 ave       58068 max       54402 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 224936
+Ave neighs/atom = 334.72619
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+fix soapff_br all box/relax tri 0.0 vmax 0.001 nreset 20
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33328814
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023173408
+  estimated relative force accuracy = 6.978603e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+WARNING: Energy due to 6 extra global DOFs will be included in minimizer energies
+ (src/min.cpp:219)
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+       312   0             -680.8334      -154466.96      0             -154466.96      7268.6578      2.9118162      20.603767      17.910666      19.696808    
+       315   0             -26.486928     -154467.01      0             -154467.01      7266.5804      2.9126486      20.604328      17.911606      19.689609    
+Loop time of 0.10804 on 4 procs for 3 steps with 672 atoms
+
+96.0% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154466.960733504   -154467.00589829   -154467.00589829
+  Force two-norm initial, final = 179.49535 19.151361
+  Force max component initial, final = 174.82517 13.682061
+  Final line search alpha, max atom move = 2.8882469e-11 3.9517171e-10
+  Iterations, force evaluations = 3 47
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.042722   | 0.044333   | 0.046469   |   0.8 | 41.03
+Bond    | 0.00010754 | 0.00011342 | 0.00012307 |   0.0 |  0.10
+Kspace  | 0.021921   | 0.024082   | 0.025706   |   1.1 | 22.29
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0021242  | 0.0021554  | 0.0021797  |   0.0 |  1.99
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.03736    |            |       | 34.58
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          56239 ave       58062 max       54414 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 224956
+Ave neighs/atom = 334.75595
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+unfix soapff_br
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33328949
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023174635
+  estimated relative force accuracy = 6.9789726e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+       315   0             -26.486757     -154467.01      0             -154467.01      7266.5804      2.9126486      20.604328      17.911606      19.689609    
+       330   0             -605.17246     -154467.04      0             -154467.04      7266.5804      2.9126486      20.604328      17.911606      19.689609    
+Loop time of 0.145217 on 4 procs for 15 steps with 672 atoms
+
+94.3% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154467.005895013  -154467.038544621  -154467.038544621
+  Force two-norm initial, final = 6.396817 0.83922202
+  Force max component initial, final = 0.4640392 0.075409493
+  Final line search alpha, max atom move = 1.4901161e-08 1.123689e-09
+  Iterations, force evaluations = 15 104
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.089326   | 0.093191   | 0.097461   |   1.2 | 64.17
+Bond    | 0.0001996  | 0.00020807 | 0.00021343 |   0.0 |  0.14
+Kspace  | 0.042811   | 0.047106   | 0.050997   |   1.7 | 32.44
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0039084  | 0.0039476  | 0.0039787  |   0.0 |  2.72
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0007647  |            |       |  0.53
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          56265 ave       58080 max       54448 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 225060
+Ave neighs/atom = 334.91071
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+fix soapff_br all box/relax tri 0.0 vmax 0.001 nreset 20
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33328949
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023174635
+  estimated relative force accuracy = 6.9789726e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+WARNING: Energy due to 6 extra global DOFs will be included in minimizer energies
+ (src/min.cpp:219)
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+       330   0             -605.17246     -154467.04      0             -154467.04      7266.5804      2.9126486      20.604328      17.911606      19.689609    
+       346   0              1.0202093     -154467.11      0             -154467.11      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+Loop time of 0.181603 on 4 procs for 16 steps with 672 atoms
+
+95.4% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154467.038544621  -154467.113612146  -154467.113612146
+  Force two-norm initial, final = 146.23337 11.586022
+  Force max component initial, final = 139.05893 8.2078464
+  Final line search alpha, max atom move = 5.5676014e-11 4.5698017e-10
+  Iterations, force evaluations = 16 79
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.071199   | 0.073919   | 0.076881   |   1.0 | 40.70
+Bond    | 0.00018041 | 0.00019188 | 0.00020351 |   0.0 |  0.11
+Kspace  | 0.037512   | 0.040499   | 0.043238   |   1.3 | 22.30
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0035638  | 0.0035803  | 0.0035897  |   0.0 |  1.97
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.06341    |            |       | 34.92
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          56262 ave       58081 max       54441 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 225048
+Ave neighs/atom = 334.89286
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+unfix soapff_br
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33329378
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.002317502
+  estimated relative force accuracy = 6.9790886e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+       346   0              1.0206979     -154467.11      0             -154467.11      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+       370   0             -391.51306     -154467.16      0             -154467.16      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+Loop time of 0.172262 on 4 procs for 24 steps with 672 atoms
+
+93.9% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154467.113602506  -154467.155030581  -154467.155030581
+  Force two-norm initial, final = 4.7778132 0.76496932
+  Force max component initial, final = 0.46808039 0.075475789
+  Final line search alpha, max atom move = 2.0709723e-08 1.5630826e-09
+  Iterations, force evaluations = 24 123
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.10616    | 0.11026    | 0.11508    |   1.2 | 64.01
+Bond    | 0.00023162 | 0.0002442  | 0.00025071 |   0.0 |  0.14
+Kspace  | 0.051237   | 0.056083   | 0.060214   |   1.7 | 32.56
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0046831  | 0.004715   | 0.0047433  |   0.0 |  2.74
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0009579  |            |       |  0.56
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          56313 ave       58125 max       54501 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 225252
+Ave neighs/atom = 335.19643
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "# dir sign strain pxx pyy pzz pyz pxz pxy (atm) lx ly lz xy xz yz" file elastic0.dat screen no
+print "0 0 0 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+reset_timestep 0
+write_dump all custom soapff_e0.dump id x y z ix iy iz modify sort id
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+change_box all x delta 0 $(-0.01*lx) xy delta $(-0.01*xy) xz delta $(-0.01*xz) remap units box
+change_box all x delta 0 -0.20604565951576098159 xy delta $(-0.01*xy) xz delta $(-0.01*xz) remap units box
+change_box all x delta 0 -0.20604565951576098159 xy delta 1.6210018015212967416e-05 xz delta $(-0.01*xz) remap units box
+change_box all x delta 0 -0.20604565951576098159 xy delta 1.6210018015212967416e-05 xz delta 0.020891813647161413398 remap units box
+Changing box ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.449237 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.449237 17.942679 19.824509) with tilt (-0.0016047918 -2.0891814 0.035147133)
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.449237 17.942679 19.824509) with tilt (-0.0016047918 -2.0682896 0.035147133)
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33365954
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0022731324
+  estimated relative force accuracy = 6.8454706e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0              21574.275     -154445.48      0             -154445.48      7189.5764      2.9438446      20.39852       17.910958      19.67822     
+        30   0              10775.32      -154453.81      0             -154453.81      7189.5764      2.9438446      20.39852       17.910958      19.67822     
+Loop time of 0.159131 on 4 procs for 30 steps with 672 atoms
+
+93.9% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154445.484527806  -154453.813235937  -154453.813235937
+  Force two-norm initial, final = 107.81286 1.8758005
+  Force max component initial, final = 9.1224606 0.18255168
+  Final line search alpha, max atom move = 2.1443118e-09 3.9144772e-10
+  Iterations, force evaluations = 30 113
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.097958   | 0.10207    | 0.10646    |   1.2 | 64.14
+Bond    | 0.00022065 | 0.0002318  | 0.00023615 |   0.0 |  0.15
+Kspace  | 0.047155   | 0.051568   | 0.055696   |   1.7 | 32.41
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0043352  | 0.0043538  | 0.0043715  |   0.0 |  2.74
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0009109  |            |       |  0.57
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:        56906.5 ave       58707 max       55117 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 227626
+Ave neighs/atom = 338.72917
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "1 -1 -0.01 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+change_box all x delta 0 $(0.01*lx) xy delta $(0.01*xy) xz delta $(0.01*xz) remap units box
+change_box all x delta 0 0.20604565951576098159 xy delta $(0.01*xy) xz delta $(0.01*xz) remap units box
+change_box all x delta 0 0.20604565951576098159 xy delta -1.6210018015212967416e-05 xz delta $(0.01*xz) remap units box
+change_box all x delta 0 0.20604565951576098159 xy delta -1.6210018015212967416e-05 xz delta -0.020891813647161413398 remap units box
+Changing box ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.861329 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.861329 17.942679 19.824509) with tilt (-0.0016372118 -2.0891814 0.035147133)
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.861329 17.942679 19.824509) with tilt (-0.0016372118 -2.1100732 0.035147133)
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33292097
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.002363903
+  estimated relative force accuracy = 7.1188236e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0             -20166.291     -154446.47      0             -154446.47      7334.8203      2.8855506      20.810612      17.910958      19.67822     
+        36   0             -12424.459     -154452.96      0             -154452.96      7334.8203      2.8855506      20.810612      17.910958      19.67822     
+Loop time of 0.170809 on 4 procs for 36 steps with 672 atoms
+
+94.9% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154446.473170021  -154452.961733237  -154452.961733237
+  Force two-norm initial, final = 95.392861 1.0655196
+  Force max component initial, final = 7.8753027 0.071602428
+  Final line search alpha, max atom move = 6.7863243e-09 4.8591729e-10
+  Iterations, force evaluations = 36 123
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.10494    | 0.10924    | 0.114      |   1.2 | 63.96
+Bond    | 0.00023823 | 0.00024585 | 0.00025479 |   0.0 |  0.14
+Kspace  | 0.050847   | 0.055648   | 0.059978   |   1.7 | 32.58
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0046531  | 0.0046794  | 0.0047132  |   0.0 |  2.74
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0009929  |            |       |  0.58
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:        55671.5 ave       57451 max       53897 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 222686
+Ave neighs/atom = 331.37798
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "1 1 0.01 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+change_box all y delta 0 $(-0.01*ly) yz delta $(-0.01*yz) remap units box
+change_box all y delta 0 -0.17910958216652411723 yz delta $(-0.01*yz) remap units box
+change_box all y delta 0 -0.17910958216652411723 yz delta -0.00035147132873983191574 remap units box
+Changing box ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.76357 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.76357 19.824509) with tilt (-0.0016210018 -2.0891814 0.034795662)
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33349806
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.002297716
+  estimated relative force accuracy = 6.9195036e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.457 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0              22330.555     -154445.12      0             -154445.12      7189.5764      2.9438446      20.604566      17.731849      19.67822     
+        46   0              9688.0308     -154455.56      0             -154455.56      7189.5764      2.9438446      20.604566      17.731849      19.67822     
+Loop time of 0.198106 on 4 procs for 46 steps with 672 atoms
+
+94.4% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154445.123317171  -154455.562579254  -154455.562579254
+  Force two-norm initial, final = 124.35881 1.3258434
+  Force max component initial, final = 10.373808 0.12342461
+  Final line search alpha, max atom move = 4.917105e-09 6.0689176e-10
+  Iterations, force evaluations = 46 141
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.12196    | 0.12722    | 0.13235    |   1.3 | 64.22
+Bond    | 0.00026135 | 0.00028499 | 0.00030103 |   0.0 |  0.14
+Kspace  | 0.058917   | 0.064089   | 0.06941    |   1.9 | 32.35
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.005314   | 0.0053494  | 0.0053754  |   0.0 |  2.70
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001158   |            |       |  0.58
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4142 ave        4143 max        4141 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          56782 ave       58588 max       54978 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 227128
+Ave neighs/atom = 337.9881
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "2 -1 -0.01 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+change_box all y delta 0 $(0.01*ly) yz delta $(0.01*yz) remap units box
+change_box all y delta 0 0.17910958216652411723 yz delta $(0.01*yz) remap units box
+change_box all y delta 0 0.17910958216652411723 yz delta 0.00035147132873983191574 remap units box
+Changing box ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 18.121789 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 18.121789 19.824509) with tilt (-0.0016210018 -2.0891814 0.035498604)
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33308263
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023386243
+  estimated relative force accuracy = 7.0426976e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.458 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0             -20943.415     -154446.15      0             -154446.15      7334.8203      2.8855506      20.604566      18.090068      19.67822     
+        38   0             -11353.488     -154454.44      0             -154454.44      7334.8203      2.8855506      20.604566      18.090068      19.67822     
+Loop time of 0.171721 on 4 procs for 38 steps with 672 atoms
+
+94.9% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154446.152099559  -154454.444323803  -154454.444323803
+  Force two-norm initial, final = 110.80416 1.1030421
+  Force max component initial, final = 9.2110141 0.12802254
+  Final line search alpha, max atom move = 7.8514663e-09 1.0051647e-09
+  Iterations, force evaluations = 38 125
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.10526    | 0.10959    | 0.11407    |   1.2 | 63.82
+Bond    | 0.00024467 | 0.00026112 | 0.00027692 |   0.0 |  0.15
+Kspace  | 0.051597   | 0.056094   | 0.060451   |   1.7 | 32.67
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0047313  | 0.0047574  | 0.0047801  |   0.0 |  2.77
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001014   |            |       |  0.59
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:         4082.5 ave        4085 max        4080 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:        55720.8 ave       57513 max       53943 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 222883
+Ave neighs/atom = 331.67113
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "2 1 0.01 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+change_box all z delta 0 $(-0.01*lz) remap units box
+change_box all z delta 0 -0.19678220154934042418 remap units box
+Changing box ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.627727) with tilt (-0.0016210018 -2.0891814 0.035147133)
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33338322
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023153537
+  estimated relative force accuracy = 6.9726188e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.458 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0              23339.666     -154442.32      0             -154442.32      7189.5764      2.9438446      20.604566      17.910958      19.481438    
+        25   0              3696.1854     -154464.88      0             -154464.88      7189.5764      2.9438446      20.604566      17.910958      19.481438    
+Loop time of 0.138668 on 4 procs for 25 steps with 672 atoms
+
+95.1% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154442.316017943  -154464.879274438  -154464.879274438
+  Force two-norm initial, final = 187.4906 1.771889
+  Force max component initial, final = 13.070123 0.13901131
+  Final line search alpha, max atom move = 3.3586725e-09 4.6689346e-10
+  Iterations, force evaluations = 25 99
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.085697   | 0.089188   | 0.09248    |   1.1 | 64.32
+Bond    | 0.00019714 | 0.0002066  | 0.00021319 |   0.0 |  0.15
+Kspace  | 0.041305   | 0.044612   | 0.048129   |   1.6 | 32.17
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0038546  | 0.0038752  | 0.0038963  |   0.0 |  2.79
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0007853  |            |       |  0.57
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          56902 ave       58597 max       55233 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 227608
+Ave neighs/atom = 338.70238
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "3 -1 -0.01 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+change_box all z delta 0 $(0.01*lz) remap units box
+change_box all z delta 0 0.19678220154934042418 remap units box
+Changing box ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 20.021291) with tilt (-0.0016210018 -2.0891814 0.035147133)
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33320279
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.002320004
+  estimated relative force accuracy = 6.9866232e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.458 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0             -21715.711     -154441.19      0             -154441.19      7334.8203      2.8855506      20.604566      17.910958      19.875002    
+        28   0             -3760.3007     -154462.46      0             -154462.46      7334.8203      2.8855506      20.604566      17.910958      19.875002    
+Loop time of 0.149203 on 4 procs for 28 steps with 672 atoms
+
+94.4% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154441.192481748  -154462.463247825  -154462.463247825
+  Force two-norm initial, final = 166.65727 1.3181605
+  Force max component initial, final = 11.05408 0.12008077
+  Final line search alpha, max atom move = 5.0155425e-09 6.0227019e-10
+  Iterations, force evaluations = 28 107
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.090682   | 0.094487   | 0.098941   |   1.2 | 63.33
+Bond    | 0.00021376 | 0.00024176 | 0.00030242 |   0.0 |  0.16
+Kspace  | 0.044849   | 0.04941    | 0.053276   |   1.7 | 33.12
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0041385  | 0.0041784  | 0.0042105  |   0.0 |  2.80
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008854  |            |       |  0.59
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:         4100.5 ave        4108 max        4093 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:        55698.2 ave       57596 max       53797 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 222793
+Ave neighs/atom = 331.5372
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "3 1 0.01 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+change_box all yz delta $(-0.01*lz) remap units box
+change_box all yz delta -0.19678220154934042418 remap units box
+Changing box ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 -0.16163507)
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33333056
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023118343
+  estimated relative force accuracy = 6.9620204e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.458 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0             -159.95866     -154461.17      0             -154461.17      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+        29   0             -334.69877     -154466.45      0             -154466.45      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+Loop time of 0.15171 on 4 procs for 29 steps with 672 atoms
+
+94.4% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+      -154461.16785998  -154466.448894288  -154466.448894288
+  Force two-norm initial, final = 90.052461 1.5867767
+  Force max component initial, final = 7.5006459 0.18335975
+  Final line search alpha, max atom move = 3.4521479e-09 6.32985e-10
+  Iterations, force evaluations = 29 109
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.093136   | 0.097152   | 0.10125    |   1.2 | 64.04
+Bond    | 0.00020467 | 0.00021672 | 0.00023254 |   0.0 |  0.14
+Kspace  | 0.04519    | 0.049301   | 0.053343   |   1.7 | 32.50
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0041478  | 0.0041729  | 0.0041887  |   0.0 |  2.75
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008679  |            |       |  0.57
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:        56300.5 ave       58120 max       54473 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 225202
+Ave neighs/atom = 335.12202
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "4 -1 -0.01 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+change_box all yz delta $(0.01*lz) remap units box
+change_box all yz delta 0.19678220154934042418 remap units box
+Changing box ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.23192933)
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33325301
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023237977
+  estimated relative force accuracy = 6.9980479e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.458 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0             -292.29058     -154461.69      0             -154461.69      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+        33   0             -173.30605     -154466.93      0             -154466.93      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+Loop time of 0.160194 on 4 procs for 33 steps with 672 atoms
+
+92.4% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154461.692947723  -154466.932302405  -154466.932302405
+  Force two-norm initial, final = 90.014452 0.98824577
+  Force max component initial, final = 7.4847623 0.084726643
+  Final line search alpha, max atom move = 8.3757383e-09 7.0964819e-10
+  Iterations, force evaluations = 33 115
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.0977     | 0.102      | 0.10644    |   1.3 | 63.67
+Bond    | 0.00022103 | 0.00023765 | 0.00024917 |   0.0 |  0.15
+Kspace  | 0.048123   | 0.052603   | 0.056932   |   1.8 | 32.84
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0044107  | 0.0044413  | 0.0044705  |   0.0 |  2.77
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0009172  |            |       |  0.57
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:        56314.2 ave       58138 max       54511 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 225257
+Ave neighs/atom = 335.20387
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "4 1 0.01 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+change_box all xz delta $(-0.01*lz) remap units box
+change_box all xz delta -0.19678220154934042418 remap units box
+Changing box ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.2859636 0.035147133)
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33332724
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023123454
+  estimated relative force accuracy = 6.9635594e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.458 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0              458.35426     -154462.37      0             -154462.37      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+        30   0              347.28399     -154466.35      0             -154466.35      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+Loop time of 0.160503 on 4 procs for 30 steps with 672 atoms
+
+94.2% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154462.371899627  -154466.348257003  -154466.348257003
+  Force two-norm initial, final = 71.196131 1.1064451
+  Force max component initial, final = 5.3484303 0.11649262
+  Final line search alpha, max atom move = 6.4031903e-09 7.4592443e-10
+  Iterations, force evaluations = 30 115
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.098109   | 0.10251    | 0.10709    |   1.3 | 63.87
+Bond    | 0.00021905 | 0.00023306 | 0.00024618 |   0.0 |  0.15
+Kspace  | 0.047788   | 0.052393   | 0.056828   |   1.8 | 32.64
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0044373  | 0.0044581  | 0.0044744  |   0.0 |  2.78
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0009041  |            |       |  0.56
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:        56310.2 ave       58082 max       54523 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 225241
+Ave neighs/atom = 335.18006
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "5 -1 -0.01 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+change_box all xz delta $(0.01*lz) remap units box
+change_box all xz delta 0.19678220154934042418 remap units box
+Changing box ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -1.8923992 0.035147133)
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33325705
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023231734
+  estimated relative force accuracy = 6.9961677e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.458 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0             -970.58766     -154462.1       0             -154462.1       7262.1983      2.9144061      20.604566      17.910958      19.67822     
+        28   0             -779.92571     -154466.22      0             -154466.22      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+Loop time of 0.151904 on 4 procs for 28 steps with 672 atoms
+
+93.6% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+      -154462.09838853  -154466.217574089  -154466.217574089
+  Force two-norm initial, final = 72.05706 1.4302681
+  Force max component initial, final = 5.4343586 0.11855902
+  Final line search alpha, max atom move = 3.3864458e-09 4.014937e-10
+  Iterations, force evaluations = 28 109
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.093376   | 0.097214   | 0.1015     |   1.2 | 64.00
+Bond    | 0.00020387 | 0.00022107 | 0.00023341 |   0.0 |  0.15
+Kspace  | 0.045002   | 0.049344   | 0.05324    |   1.7 | 32.48
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0041951  | 0.004244   | 0.004285   |   0.1 |  2.79
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008808  |            |       |  0.58
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:        56309.2 ave       58134 max       54508 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 225237
+Ave neighs/atom = 335.17411
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "5 1 0.01 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+change_box all xy delta $(-0.01*ly) remap units box
+change_box all xy delta -0.17910958216652411723 remap units box
+Changing box ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.18073058 -2.0891814 0.035147133)
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33347035
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0022904184
+  estimated relative force accuracy = 6.897527e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.458 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0             -199.92237     -154459.75      0             -154459.75      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+        28   0             -326.41023     -154462.16      0             -154462.16      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+Loop time of 0.220332 on 4 procs for 28 steps with 672 atoms
+
+95.7% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154459.750068146   -154462.15771341   -154462.15771341
+  Force two-norm initial, final = 71.310416 0.91847085
+  Force max component initial, final = 5.2900026 0.11621616
+  Final line search alpha, max atom move = 1.1847285e-08 1.376846e-09
+  Iterations, force evaluations = 28 159
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.13452    | 0.14094    | 0.14728    |   1.5 | 63.97
+Bond    | 0.00029495 | 0.00031807 | 0.00033288 |   0.0 |  0.14
+Kspace  | 0.065504   | 0.071887   | 0.078347   |   2.1 | 32.63
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0059618  | 0.0059942  | 0.0060208  |   0.0 |  2.72
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001195   |            |       |  0.54
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          56306 ave       58141 max       54477 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 225224
+Ave neighs/atom = 335.15476
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "6 -1 -0.01 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+change_box all xy delta $(0.01*ly) remap units box
+change_box all xy delta 0.17910958216652411723 remap units box
+Changing box ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (0.17748858 -2.0891814 0.035147133)
+minimize 0.0 1.0e-8 20000 200000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.3331022
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023472334
+  estimated relative force accuracy = 7.0686237e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 9.386 | 9.43 | 9.458 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   0             -116.8949      -154459.73      0             -154459.73      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+        20   0             -309.45265     -154462.13      0             -154462.13      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+Loop time of 0.130601 on 4 procs for 20 steps with 672 atoms
+
+96.2% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -154459.728458117    -154462.1347344    -154462.1347344
+  Force two-norm initial, final = 71.268939 1.5100661
+  Force max component initial, final = 5.2995018 0.11820984
+  Final line search alpha, max atom move = 3.2861604e-09 3.884565e-10
+  Iterations, force evaluations = 20 93
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.080015   | 0.083594   | 0.087165   |   1.1 | 64.01
+Bond    | 0.00018323 | 0.00019215 | 0.00020224 |   0.0 |  0.15
+Kspace  | 0.038917   | 0.042522   | 0.046132   |   1.5 | 32.56
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0035368  | 0.0035642  | 0.0035941  |   0.0 |  2.73
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0007289  |            |       |  0.56
+
+Nlocal:            168 ave         168 max         168 min
+Histogram: 4 0 0 0 0 0 0 0 0 0
+Nghost:           4136 ave        4137 max        4135 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:          56304 ave       58077 max       54509 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 225216
+Ave neighs/atom = 335.14286
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 0
+Dangerous builds = 0
+print "6 1 0.01 $(pxx) $(pyy) $(pzz) $(pyz) $(pxz) $(pxy) $(lx) $(ly) $(lz) $(xy) $(xz) $(yz)" append elastic0.dat screen no
+read_dump soapff_e0.dump 0 x y z ix iy iz box yes replace yes
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0.050717024 0.031720892 0.14628862) to (20.655283 17.942679 19.824509) with tilt (-0.0016210018 -2.0891814 0.035147133)
+  672 atoms before read
+  672 atoms in snapshot
+  0 atoms purged
+  672 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  672 atoms after read
+
+# soapff: equilibration at 300 K (NVT 10 ps, NPT 20 ps at 1 atm, tri; box set to its NPT average)
+velocity all create 300 4928459 mom yes rot no dist gaussian
+timestep 0.5
+fix soapff_eq all nvt temp 300 300 100
+run 20000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33329378
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.002317502
+  estimated relative force accuracy = 6.9790886e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 8.261 | 8.305 | 8.333 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   300            3385.7686     -154467.15      600.03706     -153867.12      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+      1000   316.11026      9437.7412     -153992.01      632.25957     -153359.75      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+      2000   302.08665      9330.6155     -154120.23      604.21063     -153516.02      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+      3000   282.26953      12477.617     -154110.26      564.57394     -153545.68      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+      4000   287.80718      9894.6078     -154119.1       575.64991     -153543.45      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+      5000   301.46299      11331.364     -154119.32      602.96322     -153516.35      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+      6000   306.961        12336.834     -154174.19      613.95991     -153560.23      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+      7000   304.59471      11933.304     -154197.44      609.22705     -153588.22      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+      8000   281.04758      7545.7977     -154160.15      562.12988     -153598.02      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+      9000   299.26211      12321.918     -154166.55      598.56119     -153567.99      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+     10000   323.59326      11834.853     -154187.69      647.22649     -153540.46      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+     11000   302.43863      11334.218     -154159.67      604.91462     -153554.76      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+     12000   303.24112      14189.614     -154175.33      606.51971     -153568.81      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+     13000   293.95536      12670.052     -154189.97      587.94703     -153602.02      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+     14000   284.28137      8687.8727     -154210.38      568.59786     -153641.79      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+     15000   305.06123      7435.4556     -154230.38      610.16015     -153620.22      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+     16000   319.49964      8815.4226     -154205.22      639.03875     -153566.18      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+     17000   314.61477      14818.32      -154187.3       629.26841     -153558.03      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+     18000   309.18692      15506.376     -154217.56      618.41204     -153599.15      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+     19000   302.09551      9164.871      -154207.9       604.22835     -153603.68      7262.1983      2.9144061      20.604566      17.910958      19.67822     
+     20000   293.62488      10243.704     -154182.39      587.28603     -153595.1       7262.1983      2.9144061      20.604566      17.910958      19.67822     
+Loop time of 21.2333 on 4 procs for 20000 steps with 672 atoms
+
+Performance: 40.691 ns/day, 0.590 hours/ns, 941.916 timesteps/s, 632.967 katom-step/s
+93.4% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 11.61      | 11.801     | 12.331     |   8.9 | 55.58
+Bond    | 0.03461    | 0.035887   | 0.039172   |   1.0 |  0.17
+Kspace  | 7.7935     | 8.3125     | 8.5141     |  10.4 | 39.15
+Neigh   | 0.13346    | 0.13348    | 0.1335     |   0.0 |  0.63
+Comm    | 0.7866     | 0.80113    | 0.83786    |   2.4 |  3.77
+Output  | 0.00041384 | 0.00043458 | 0.00048378 |   0.0 |  0.00
+Modify  | 0.074656   | 0.079264   | 0.084785   |   1.6 |  0.37
+Other   |            | 0.06983    |            |       |  0.33
+
+Nlocal:            168 ave         169 max         167 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Nghost:         4140.5 ave        4153 max        4125 min
+Histogram: 1 0 0 0 1 0 0 1 0 1
+Neighs:        56140.2 ave       57555 max       54728 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 224561
+Ave neighs/atom = 334.16815
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 52
+Dangerous builds = 0
+unfix soapff_eq
+reset_timestep 0
+fix soapff_eq all npt temp 300 300 100 tri 1 1 1000
+run 20000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33329378
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.002317502
+  estimated relative force accuracy = 6.9790886e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 8.277 | 8.321 | 8.348 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+         0   293.62488      10243.704     -154182.39      587.28603     -153595.1       7262.1983      2.9144061      20.604566      17.910958      19.67822     
+      1000   300.02145     -3939.9639     -154201.55      600.07997     -153601.47      7342.1985      2.8826509      20.775547      17.971969      19.664278    
+      2000   307.99044     -2524.8915     -154193.24      616.01894     -153577.22      7320.2782      2.8912829      20.669253      17.985275      19.691814    
+      3000   310.70455     -4958.7056     -154188.37      621.44749     -153566.92      7330.1223      2.8874         20.733781      17.987984      19.653967    
+      4000   315.40259      3970.477      -154179.41      630.84414     -153548.57      7280.9485      2.9069008      20.702832      17.925647      19.619293    
+      5000   299.88434      2630.3289     -154181.3       599.80573     -153581.49      7299.6014      2.8994727      20.726497      17.935959      19.635802    
+      6000   293.87871     -1154.1643     -154178.69      587.79372     -153590.89      7320.6662      2.8911297      20.693759      17.962794      19.694154    
+      7000   309.03795      865.7335      -154175.88      618.11408     -153557.77      7306.0209      2.8969251      20.673533      17.937068      19.702202    
+      8000   294.93259      2798.6926     -154190.49      589.90161     -153600.59      7358.7092      2.8761831      20.774383      17.902289      19.786316    
+      9000   292.85574     -159.70638     -154216.64      585.74765     -153630.9       7335.3128      2.8853569      20.675893      17.952742      19.761667    
+     10000   313.59776     -3252.373      -154211.77      627.23427     -153584.53      7354.8573      2.8776894      20.742523      17.92211       19.78443     
+     11000   313.22406      12343.873     -154186.39      626.48682     -153559.9       7285.6392      2.9050293      20.674719      17.903097      19.68339     
+     12000   300.42253     -6448.7981     -154197.76      600.88218     -153596.88      7338.5527      2.884083       20.739263      17.988236      19.671095    
+     13000   294.9402      -164.65921     -154218.43      589.91683     -153628.51      7305.8911      2.8969766      20.679466      17.950706      19.681235    
+     14000   310.35277      2197.0745     -154204.72      620.74389     -153583.98      7298.5002      2.8999102      20.732158      17.923568      19.641047    
+     15000   312.03341     -5014.6849     -154179.68      624.10536     -153555.58      7300.7518      2.8990158      20.694454      17.930218      19.675602    
+     16000   295.12843     -4918.7456     -154184.51      590.29333     -153594.21      7317.5293      2.8923691      20.689394      18.002048      19.646933    
+     17000   309.41644      4938.9653     -154239.7       618.8711      -153620.83      7287.8821      2.9041352      20.706847      17.895157      19.667623    
+     18000   285.23742     -2917.0371     -154189.36      570.51008     -153618.85      7350.0685      2.8795644      20.766977      17.944423      19.72371     
+     19000   314.24853      791.09279     -154219.77      628.53589     -153591.23      7306.2368      2.8968395      20.681191      17.919445      19.714857    
+     20000   299.96444     -4977.0977     -154189.08      599.96593     -153589.11      7348.2678      2.88027        20.672751      17.980145      19.769401    
+Loop time of 29.9647 on 4 procs for 20000 steps with 672 atoms
+
+Performance: 28.834 ns/day, 0.832 hours/ns, 667.452 timesteps/s, 448.528 katom-step/s
+95.1% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 8.0881     | 11.104     | 12.606     |  53.1 | 37.06
+Bond    | 0.028069   | 0.039947   | 0.048106   |   3.7 |  0.13
+Kspace  | 8.3166     | 9.8098     | 12.854     |  56.9 | 32.74
+Neigh   | 0.18633    | 0.18651    | 0.18683    |   0.0 |  0.62
+Comm    | 0.79995    | 0.81429    | 0.83       |   1.5 |  2.72
+Output  | 0.00038923 | 0.00040871 | 0.00045388 |   0.0 |  0.00
+Modify  | 4.391      | 6.9673     | 7.8521     |  56.4 | 23.25
+Other   |            | 1.042      |            |       |  3.48
+
+Nlocal:            168 ave         169 max         167 min
+Histogram: 1 0 0 0 0 2 0 0 0 1
+Nghost:        4116.75 ave        4121 max        4110 min
+Histogram: 1 0 0 0 1 0 0 0 0 2
+Neighs:        55522.8 ave       57485 max       53452 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 222091
+Ave neighs/atom = 330.49256
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 79
+Dangerous builds = 0
+# the box averaged over the second half of the NPT only (the first half still relaxes the volume)
+variable soapff_lx equal lx
+variable soapff_ly equal ly
+variable soapff_lz equal lz
+variable soapff_xy equal xy
+variable soapff_xz equal xz
+variable soapff_yz equal yz
+fix soapff_box all ave/time 10 100 1000 v_soapff_lx v_soapff_ly v_soapff_lz v_soapff_xy v_soapff_xz v_soapff_yz ave running
+run 20000
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.33303797
+  grid = 25 24 27
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0023434346
+  estimated relative force accuracy = 7.0571837e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 13020 4368
+Generated 28 of 28 mixed pair_coeff terms from arithmetic mixing rule
+Per MPI rank memory allocation (min/avg/max) = 8.277 | 8.321 | 8.349 Mbytes
+   Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
+     20000   299.96444     -4977.175      -154189.08      599.96593     -153589.11      7348.2678      2.88027        20.672751      17.980145      19.769401    
+     21000   287.94246      808.55283     -154235.85      575.92049     -153659.93      7306.8758      2.8965861      20.72133       17.929529      19.667322    
+     22000   287.06135     -6100.8297     -154226.41      574.15817     -153652.25      7314.2529      2.8936647      20.727563      17.940251      19.669495    
+     23000   284.58534     -895.8742      -154202.87      569.20584     -153633.66      7319.0808      2.8917559      20.67312       17.968995      19.702745    
+     24000   288.55963     -721.12582     -154184.62      577.1549      -153607.47      7315.4649      2.8931853      20.703977      17.941577      19.693711    
+     25000   293.02337     -3965.7686     -154170.32      586.08294     -153584.24      7315.355       2.8932287      20.73856       17.940315      19.661958    
+     26000   313.93612      6426.9418     -154195.18      627.91103     -153567.26      7284.5229      2.9054745      20.684929      17.960256      19.608057    
+     27000   315.88953     -1846.7043     -154230.02      631.81809     -153598.2       7291.6963      2.9026161      20.684215      17.986982      19.598879    
+     28000   290.61812      2081.7978     -154221.52      581.27215     -153640.25      7275.3305      2.9091455      20.740284      17.897554      19.599471    
+     29000   301.99972     -2935.4633     -154218.16      604.03674     -153614.12      7294.7265      2.9014104      20.692169      17.945394      19.644908    
+     30000   307.8566       833.81046     -154208.83      615.75123     -153593.08      7307.5501      2.8963189      20.682769      17.964416      19.667539    
+     31000   294.94071      5170.3691     -154218.34      589.91786     -153628.42      7293.1094      2.9020537      20.667528      17.926184      19.685041    
+     32000   284.99018     -209.35144     -154181.7       570.01557     -153611.68      7353.6142      2.8781759      20.758885      17.935926      19.750269    
+     33000   328.72561     -2365.6605     -154219.49      657.49184     -153561.99      7353.956       2.8780421      20.658378      17.980847      19.797696    
+     34000   297.1709       607.19182     -154229.39      594.37852     -153635.01      7313.6151      2.893917       20.724383      17.884497      19.73212     
+     35000   285.01745     -5048.1911     -154213.5       570.07011     -153643.43      7340.0245      2.8835047      20.714434      17.939002      19.752686    
+     36000   283.00044      5246.7603     -154240.82      566.03584     -153674.79      7286.659       2.9046227      20.646698      17.964299      19.645702    
+     37000   295.18597     -1876.3168     -154253.19      590.4084      -153662.78      7303.8818      2.8977735      20.733103      17.933094      19.644194    
+     38000   312.66684      474.02631     -154234.07      625.37231     -153608.7       7302.7102      2.8982384      20.700994      17.945585      19.657815    
+     39000   314.61513      5116.5475     -154246.91      629.26912     -153617.64      7272.6694      2.91021        20.669287      17.945921      19.606614    
+     40000   298.90329      785.31758     -154254.46      597.8435      -153656.61      7266.6461      2.9126223      20.711883      17.955586      19.539562    
+Loop time of 29.9522 on 4 procs for 20000 steps with 672 atoms
+
+Performance: 28.846 ns/day, 0.832 hours/ns, 667.730 timesteps/s, 448.714 katom-step/s
+95.0% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 8.1149     | 11.089     | 12.561     |  52.3 | 37.02
+Bond    | 0.027535   | 0.039774   | 0.047664   |   3.7 |  0.13
+Kspace  | 8.3242     | 9.7883     | 12.792     |  56.2 | 32.68
+Neigh   | 0.20048    | 0.20072    | 0.20108    |   0.1 |  0.67
+Comm    | 0.79954    | 0.81591    | 0.83365    |   1.6 |  2.72
+Output  | 0.00038604 | 0.00040499 | 0.00045693 |   0.0 |  0.00
+Modify  | 4.4209     | 6.9813     | 7.8668     |  56.0 | 23.31
+Other   |            | 1.037      |            |       |  3.46
+
+Nlocal:            168 ave         170 max         166 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Nghost:        4125.25 ave        4132 max        4114 min
+Histogram: 1 0 0 0 0 0 0 2 0 1
+Neighs:        56123.8 ave       58389 max       53850 min
+Histogram: 1 0 1 0 0 0 0 1 0 1
+
+Total # of neighbors = 224495
+Ave neighs/atom = 334.06994
+Ave special neighs/atom = 0.19047619
+Neighbor list builds = 85
+Dangerous builds = 0
+unfix soapff_eq
+change_box all x final $(xlo) $(xlo+f_soapff_box[1]) y final $(ylo) $(ylo+f_soapff_box[2]) z final $(zlo) $(zlo+f_soapff_box[3]) remap units box
+change_box all x final -0.0029416169486093934893 $(xlo+f_soapff_box[1]) y final $(ylo) $(ylo+f_soapff_box[2]) z final $(zlo) $(zlo+f_soapff_box[3]) remap units box
+change_box all x final -0.0029416169486093934893 20.700751242075860148 y final $(ylo) $(ylo+f_soapff_box[2]) z final $(zlo) $(zlo+f_soapff_box[3]) remap units box
+change_box all x final -0.0029416169486093934893 20.700751242075860148 y final 0.0094067639293751170726 $(ylo+f_soapff_box[2]) z final $(zlo) $(zlo+f_soapff_box[3]) remap units box
+change_box all x final -0.0029416169486093934893 20.700751242075860148 y final 0.0094067639293751170726 17.950885528288075932 z final $(zlo) $(zlo+f_soapff_box[3]) remap units box
+change_box all x final -0.0029416169486093934893 20.700751242075860148 y final 0.0094067639293751170726 17.950885528288075932 z final 0.21561768340764864149 $(zlo+f_soapff_box[3]) remap units box
+change_box all x final -0.0029416169486093934893 20.700751242075860148 y final 0.0094067639293751170726 17.950885528288075932 z final 0.21561768340764864149 19.898242416989617709 remap units box
+Changing box ...
+  triclinic box = (-0.0029416169 0.0094067639 0.21561768) to (20.700751 17.964993 19.75518) with tilt (-0.018555555 -1.9483314 -0.20653422)
+  triclinic box = (-0.0029416169 0.0094067639 0.21561768) to (20.700751 17.950886 19.75518) with tilt (-0.018555555 -1.9483314 -0.20653422)
+  triclinic box = (-0.0029416169 0.0094067639 0.21561768) to (20.700751 17.950886 19.898242) with tilt (-0.018555555 -1.9483314 -0.20653422)
+change_box all xy final $(f_soapff_box[4]) xz final $(f_soapff_box[5]) yz final $(f_soapff_box[6]) remap units box
+change_box all xy final 0.00071163078023003031175 xz final $(f_soapff_box[5]) yz final $(f_soapff_box[6]) remap units box
+change_box all xy final 0.00071163078023003031175 xz final -2.075816210465761813 yz final $(f_soapff_box[6]) remap units box
+change_box all xy final 0.00071163078023003031175 xz final -2.075816210465761813 yz final -0.0026994079224211958712 remap units box
+Changing box ...
+  triclinic box = (-0.0029416169 0.0094067639 0.21561768) to (20.700751 17.950886 19.898242) with tilt (0.00071163078 -1.9483314 -0.20653422)
+  triclinic box = (-0.0029416169 0.0094067639 0.21561768) to (20.700751 17.950886 19.898242) with tilt (0.00071163078 -2.0758162 -0.20653422)
+  triclinic box = (-0.0029416169 0.0094067639 0.21561768) to (20.700751 17.950886 19.898242) with tilt (0.00071163078 -2.0758162 -0.0026994079)
+unfix soapff_box
+reset_timestep 0
+write_dump all custom soapff_eq.dump id x y z vx vy vz ix iy iz modify sort id
+
+Total wall time: 0:01:25

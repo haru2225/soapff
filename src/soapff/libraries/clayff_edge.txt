@@ -1,5 +1,5 @@
 # soapff library: montmorillonite with edges (T. R. Underwood, I. C. Bourg, J. Phys. Chem. C 124, 3702 (2020), after Lammers et
-# al.), the optional library of soapff-gui.
+# al.), the optional clay library of soapff.
 #
 # engine clayff with the force field of the reference particle taken whole from its data and settings files
 # (core.read_forcefield: charges, LJ, O-H bond, M-O-H and edge metal-O-metal angles of every type); the water and the ions

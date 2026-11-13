@@ -1,0 +1,69 @@
+{
+ "structure": "examples/library_water/refs/vac_water_film_thin/structure.extxyz",
+ "atoms": 618,
+ "library": "src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
+ "soap": {
+  "r_cut": 5.0,
+  "n_max": 4,
+  "l_max": 3,
+  "sigma": 0.4
+ },
+ "threshold": 0.95,
+ "boundary": "p p p",
+ "kspace": [
+  "kspace_style pppm 1.0e-5"
+ ],
+ "vacuum_gap": {},
+ "charges": "clayff2004",
+ "water_model": "spc",
+ "forcefield": null,
+ "charge_sum_before": 0.0,
+ "charge_sum": 0.0,
+ "from_soap": 618,
+ "fallback": 0,
+ "type_check": {
+  "compared": 0,
+  "differ": 0,
+  "kinds": {}
+ },
+ "water_check": null,
+ "solution_library": null,
+ "solution": null,
+ "warnings": [],
+ "roles": {
+  "mineral": 0,
+  "water": 618,
+  "ion": 0
+ },
+ "per_type": {
+  "hw": {
+   "atoms": 412,
+   "charges": [
+    0.41
+   ],
+   "from_soap": 412,
+   "fallback": 0,
+   "min_similarity": 1.0
+  },
+  "ow": {
+   "atoms": 206,
+   "charges": [
+    -0.82
+   ],
+   "from_soap": 206,
+   "fallback": 0,
+   "min_similarity": 1.0
+  }
+ },
+ "consistency": [],
+ "md": {
+  "temp": 300.0,
+  "relax_ps": 10.0,
+  "nvt_ps": 50.0,
+  "npt_ps": 0.0,
+  "press": 1.0,
+  "baro": "aniso",
+  "dump_ps": 1.0,
+  "timestep_fs": 0.5
+ }
+}

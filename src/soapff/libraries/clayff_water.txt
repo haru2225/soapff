@@ -3,7 +3,7 @@
 # The 22 mineral structures of clayff and the structures that packmol builds, not relaxed (no MD frame): liquid water (512
 # molecules), the NaCl, KCl, CsCl, CaCl2 and BaCl2 solutions, and the same water and solutions in vacuum (films, a droplet).
 # The water is in the SOAP; the rows of the systems with water are pruned at 0.99, the slab rows at 0.999.
-# (examples/library_water/build_library_initial.py of soapff-gui)
+# (examples/library_water/build_library_initial.py)
 
 [library]
 name        = clayff_water

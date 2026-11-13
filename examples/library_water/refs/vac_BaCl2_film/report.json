@@ -1,0 +1,87 @@
+{
+ "structure": "examples/library_water/refs/vac_BaCl2_film/structure.extxyz",
+ "atoms": 1251,
+ "library": "src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
+ "soap": {
+  "r_cut": 5.0,
+  "n_max": 4,
+  "l_max": 3,
+  "sigma": 0.4
+ },
+ "threshold": 0.95,
+ "boundary": "p p p",
+ "kspace": [
+  "kspace_style pppm 1.0e-5"
+ ],
+ "vacuum_gap": {},
+ "charges": "clayff2004",
+ "water_model": "spc",
+ "forcefield": null,
+ "charge_sum_before": 3.3306690738754696e-16,
+ "charge_sum": 3.3306690738754696e-16,
+ "from_soap": 1251,
+ "fallback": 0,
+ "type_check": {
+  "compared": 15,
+  "differ": 0,
+  "kinds": {}
+ },
+ "water_check": null,
+ "solution_library": null,
+ "solution": null,
+ "warnings": [],
+ "roles": {
+  "mineral": 0,
+  "water": 1236,
+  "ion": 15
+ },
+ "per_type": {
+  "Ba": {
+   "atoms": 5,
+   "charges": [
+    2.0
+   ],
+   "from_soap": 5,
+   "fallback": 0,
+   "min_similarity": 1.0
+  },
+  "Cl": {
+   "atoms": 10,
+   "charges": [
+    -1.0
+   ],
+   "from_soap": 10,
+   "fallback": 0,
+   "min_similarity": 1.0
+  },
+  "hw": {
+   "atoms": 824,
+   "charges": [
+    0.41
+   ],
+   "from_soap": 824,
+   "fallback": 0,
+   "min_similarity": 1.0
+  },
+  "ow": {
+   "atoms": 412,
+   "charges": [
+    -0.82
+   ],
+   "from_soap": 412,
+   "fallback": 0,
+   "min_similarity": 1.0
+  }
+ },
+ "consistency": [],
+ "md": {
+  "temp": 300.0,
+  "relax_ps": 10.0,
+  "nvt_ps": 50.0,
+  "npt_ps": 0.0,
+  "press": 1.0,
+  "baro": "aniso",
+  "dump_ps": 1.0,
+  "timestep_fs": 0.5
+ }
+}

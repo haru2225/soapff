@@ -16,7 +16,7 @@ The command line does the same: soapff list | info LIB | build LIB STRUCTURE -o 
 --extends LIB | add-reference LIB FILE   (python -m soapff --help).
 
 Each library is a text file (see soapff.library): the reference structures and, for the molecular engine, the force-field
-parameters.  Engines: "clayff" (soapff-cui of soapff-gui, unchanged: ClayFF, Cygan et al. 2004) and "molecular" (any force
+parameters.  Engines: "clayff" (the ClayFF writer soapff_cui: ClayFF, Cygan et al. 2004) and "molecular" (any force
 field written in the library: AMBER ff14SB proteins, TIP3P / SPC/E water and ions, ...)."""
 from .api import System, add_reference, build, new_library, read_structure, read_thermo
 from .library import Library, LibraryError

@@ -1,0 +1,80 @@
+#!/bin/bash
+# Usage: autoconfig.sh RUNDIR      writes RUNDIR/config.auto from the centre's sample script (nothing to edit by hand).
+#   source of the settings: $CONFIG_SRC, else ~/run.sh (your copy of the centre's sample), ./run.sh, then /home/app/lammps/run.sh.
+#   taken from it:  every "#PBS" line (queue, resources, walltime; not name/output/join/mail) -> QSUB_OPTS
+#                   "module ..." lines -> MODULES;   the "singularity ... <image>.sif <lmp>" line -> SIF, SING_OPTS, LMP_IN_IMAGE
+#                   the mpirun / mpiexec word -> MPIRUN (mpiexec.hydra / Intel MPI -> HOSTFILE_FMT=mpich)
+#   NCPUS=<n> ./go.sh   cores per node (default: the node size reported by pbsnodes, if larger than the script's)
+#   NODES=<n> ./go.sh   rescales "select=<n>:" (PBS Pro) or "nodes=<n>" in the resources.
+RUNDIR=${1:-.}; mkdir -p "$RUNDIR"
+SRC=${CONFIG_SRC:-}
+for c in "$SRC" "$HOME/run.sh" ./run.sh ../run.sh /home/app/lammps/run.sh; do [ -n "$c" ] && [ -f "$c" ] && grep -qi "lmp\|lammps\|mpi" "$c" && { SRC=$c; break; }; done
+echo "autoconfig: sample script = ${SRC:-none}" >&2
+OUT="$RUNDIR/config.auto"; : > "$OUT"
+q() { printf "'%s'" "$(printf %s "$1" | sed "s/'/'\\\\''/g")"; }   # single-quote: variables like $X_DIR stay as text
+if [ -z "$SRC" ] || [ ! -f "$SRC" ]; then
+  echo "autoconfig: no sample script found (set CONFIG_SRC=/path/run.sh); defaults are used" >&2
+  {
+    echo 'QSUB_OPTS=""'
+    # default resources: one node with all cores, if the batch system tells us
+    NC=$(pbsnodes -a 2>/dev/null | awk -F= '/resources_available.ncpus/{gsub(/ /,"",$2); print $2}' | sort | uniq -c | sort -rn | head -1 | awk '{print $2}')
+    [ -n "$NC" ] && echo "QSUB_OPTS=\"-l select=${NODES:-1}:ncpus=$NC:mpiprocs=$NC -l walltime=24:00:00\""
+    if command -v singularity >/dev/null 2>&1; then
+      SIF=$(ls /home/app/*/*.sif /home/app/*/*/*.sif "$HOME"/*.sif "$HOME"/*/*.sif 2>/dev/null | grep -i lammps | head -1)
+      [ -n "$SIF" ] && echo "SIF=\"$SIF\""
+    fi
+  } >> "$OUT"
+else
+  echo "autoconfig: reading $SRC" >&2
+  PBS=$(grep -E '^[[:space:]]*#PBS' "$SRC" | sed -E 's/^[[:space:]]*#PBS[[:space:]]*//' | grep -vE '^-(N|o|e|j|m|M|S|V|v|J|k|r)( |$)' | sed -E 's/[[:space:]]+#.*$//')
+  if [ -n "${NODES:-}" ]; then PBS=$(echo "$PBS" | sed -E "s/select=[0-9]+/select=${NODES}/; s/nodes=[0-9]+/nodes=${NODES}/"); fi
+  # use all cores of a node: NCPUS=<n> forces a value; otherwise ask the batch system for the node size (MAXCPU=0 disables)
+  NC=${NCPUS:-}
+  if [ -z "$NC" ] && [ "${MAXCPU:-1}" = 1 ]; then
+    NC=$(pbsnodes -a 2>/dev/null | awk -F= '/resources_available.ncpus/{gsub(/ /,"",$2); print $2}' | sort | uniq -c | sort -rn | head -1 | awk '{print $2}')
+  fi
+  if [ -n "$NC" ] && echo "$PBS" | grep -q "ncpus="; then
+    OLD=$(echo "$PBS" | grep -o "ncpus=[0-9]*" | head -1 | cut -d= -f2)
+    if [ "$OLD" != "$NC" ] && { [ -n "${NCPUS:-}" ] || [ "$NC" -gt "$OLD" ]; }; then
+      PBS=$(echo "$PBS" | sed -E "s/ncpus=[0-9]+/ncpus=$NC/g; s/mpiprocs=[0-9]+/mpiprocs=$NC/g")
+      echo "autoconfig: ncpus per node $OLD -> $NC (all cores of a node; NCPUS=<n> to change, MAXCPU=0 to keep the script's value)" >&2
+    fi
+  fi
+  Q=""; while IFS= read -r l; do [ -n "$l" ] && Q="$Q $l"; done <<< "$PBS"
+  echo "QSUB_OPTS=$(q "$Q")" >> "$OUT"
+  # environment of the sample script: module / source / export / ulimit / PATH lines (not PBS directives, not the job's own cd/INPUT lines)
+  MOD=$(grep -vE '^[[:space:]]*(#|$)' "$SRC" | grep -E '^[[:space:]]*(module|source|\.|export|ulimit|unset|set|PATH=|LD_LIBRARY_PATH=|MPI[A-Z_]*=|OMP[A-Z_]*=)[[:space:]=]' | grep -vE 'PBS_O_WORKDIR|INPUT|OMP_NUM_THREADS' | sed -E 's/^[[:space:]]+//' | paste -sd';' -)
+  [ -n "$MOD" ] && echo "MODULES=$(q "$MOD")" >> "$OUT"
+  SL=$(grep -E 'singularity[[:space:]]+(exec|run)' "$SRC" | grep -vE '^[[:space:]]*#' | head -1)
+  if [ -n "$SL" ]; then
+    SIF=$(echo "$SL" | tr ' ' '\n' | grep -E '\.(sif|simg|img)$' | head -1)
+    ex=$(echo "$SL" | sed -E 's/.*singularity[[:space:]]+(exec|run)[[:space:]]+//; s/'"$(echo "$SIF" | sed 's/[][\.*^$/]/\\&/g')"'.*//')
+    BIN=$(echo "$SL" | sed -E 's#.*\.(sif|simg|img)[[:space:]]+##' | awk '{print $1}')
+    [ -n "$SIF" ] && echo "SIF=$(q "$SIF")" >> "$OUT"
+    [ -n "$ex" ] && echo "SING_OPTS=$(q "$(echo $ex | sed -E 's/--bind[ =][^ ]+//g')")" >> "$OUT"
+    [ -n "$BIN" ] && echo "LMP_IN_IMAGE=$(q "$BIN")" >> "$OUT"
+  else
+    LL=$(grep -vE '^[[:space:]]*#' "$SRC" | grep -vE '^[[:space:]]*(export|module|source|set|PATH=|[A-Za-z_][A-Za-z_0-9]*=)' | grep -E '(^|[[:space:]/])(lmp[_a-z0-9]*|lammps)([[:space:]]|$)' | grep -E '(-in|-i)[[:space:]]|INPUT' | head -1)
+    B=$(echo "$LL" | tr ' ' '\n' | grep -vE '=' | grep -E '(^|/)(lmp[_a-z0-9]*|lammps)$' | head -1); [ -n "$B" ] && echo "LMP=$(q "$B")" >> "$OUT"
+  fi
+  LL=$(grep -vE '^[[:space:]]*#' "$SRC" | grep -vE '^[[:space:]]*(export|module|source|set|PATH=|[A-Za-z_][A-Za-z_0-9]*=)' | grep -E '(^|[[:space:]/])(lmp[_a-z0-9]*|lammps[_a-z0-9]*)([[:space:]]|$)' | grep -E '(-in|-i)[[:space:]]|INPUT' | head -1)
+  MP=$(echo "$LL" | tr ' ' '\n' | grep -E '^(mpirun|mpiexec[_a-z.]*|mpijob|srun|aprun|mpirun_mpt|mpiexec_mpt)$' | head -1)
+  [ -n "$MP" ] && echo "MPIRUN=$(q "$MP")" >> "$OUT"
+  # options between the launcher and the program, without -np/-n N (the number of ranks is set from the allocation)
+  if [ -n "$MP" ]; then
+    # tokenise the launch line: options = the words between the launcher and the program (or singularity / a redirect / -in), without -np N
+    OPTS=$(echo "$LL" | awk -v mp="$MP" '{ s=0; for(i=1;i<=NF;i++) if($i==mp){s=i;break}
+        out=""; for(k=s+1;k<=NF;k++){ w=$k
+          if (w ~ /(^|\/)(lmp[_a-z0-9]*|lammps[_a-z0-9]*)$/ || w=="singularity" || w ~ /^[<>0-9]*[<>]/ || w=="-in" || w=="-i" || w=="2>&1") break
+          if (w ~ /^(-np|-n|-c)$/) { k++; continue }
+          if (w ~ /^-(np|n)[0-9]+$/) continue
+          out = out " " w }
+        sub(/^ /,"",out); print out }')
+    [ -n "$OPTS" ] && echo "MPI_OPTS=$(q "$OPTS")" >> "$OUT"
+  fi
+  # a host file option is passed only if the sample script itself uses one (otherwise the PBS-aware mpirun reads the allocation)
+  grep -qE '(-machinefile|-f)[[:space:]]+[^ ]*(NODEFILE|hostfile)' "$SRC" && echo 'HOSTFILE_FMT="mpich"' >> "$OUT"
+  grep -qE '(--hostfile|-hostfile)[[:space:]]+' "$SRC" && echo 'HOSTFILE_FMT="openmpi"' >> "$OUT"
+fi
+grep -q "ncpus=1\b\|ncpus=1:" "$OUT" && echo "autoconfig WARNING: the sample script asks for ncpus=1; use NODES / edit QSUB_OPTS in config.auto to ask for all cores" >&2
+echo "---- detected settings ($OUT) ----" >&2; cat "$OUT" >&2; echo "-----------------------------------" >&2

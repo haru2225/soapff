@@ -1,0 +1,81 @@
+{
+ "out_dir": "examples/library_nvt_npt/nanpingite/run",
+ "t_end_ps": 100.0,
+ "skip_ps": 20.0,
+ "timestep_fs": 0.5,
+ "what": [
+  "msd",
+  "sova"
+ ],
+ "traj": "traj.lammpstrj",
+ "has_mineral": true,
+ "tools": {
+  "msd": "LAMMPS compute msd (Einstein relation)",
+  "pdf_rdf": "SOVA (sovapy) pair_dist_func, radial_dist_fun",
+  "sq": "SOVA (sovapy) partial_structure_factor, structure_factor_xray",
+  "compute": "LAMMPS fix ave/time, ave/chunk, ave/correlate, ave/histo output files",
+  "xrd": "Debyer (Debye scattering equation)",
+  "swelling": "LAMMPS fix npt; d001 = lz of the cell (swelling.dat of the soapff swelling block)"
+ },
+ "figures": [
+  [
+   "MSD, PDF, RDF",
+   "analysis.png"
+  ],
+  [
+   "S(Q)",
+   "sova_sq.png"
+  ]
+ ],
+ "diffusion_1e-9_m2_s": {
+  "Cs": {
+   "D_total": 0.0004642466506564428,
+   "D_xy": 0.0004148788524767199,
+   "D_z": 0.0005629823265221784,
+   "fit_from_ps": 20.0,
+   "fit_to_ps": 100.0,
+   "msd_at_end_A2": 0.104006
+  }
+ },
+ "sova": {
+  "sovapy_version": "0.8.3",
+  "frames": 40,
+  "rmax": 5.1632559025874105,
+  "dr": 0.02,
+  "pairs": [
+   "Cs-O_min",
+   "all:H-H",
+   "all:O-H",
+   "all:O-O",
+   "all:Al-H",
+   "all:Al-O",
+   "all:Al-Al",
+   "all:Si-H",
+   "all:Si-O",
+   "all:Si-Al",
+   "all:Si-Si",
+   "all:Cs-H",
+   "all:Cs-O",
+   "all:Cs-Al",
+   "all:Cs-Si",
+   "all:Cs-Cs"
+  ],
+  "first_peaks": {
+   "Cs-O_min": {
+    "r_peak": 3.2,
+    "g_peak": 3.8833127503493294
+   }
+  },
+  "coordination": {
+   "Cs-O_min": {
+    "r_min": 4.44,
+    "cn": 13.864514804642932
+   }
+  },
+  "sq_xray": true,
+  "radiation": "xray",
+  "sq_rmax": 5.16,
+  "sq_qmax": 12.0,
+  "note": "PDF g(r) by SOVA pair_dist_func (normalised by the density over the whole box: in a slab or interlayer it does not tend to 1); RDF N(r) = 4 pi r^2 rho_B g(r) by SOVA radial_dist_fun"
+ }
+}

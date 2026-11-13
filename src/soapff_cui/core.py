@@ -928,12 +928,12 @@ def make(structure, out_dir, library, threshold=THRESHOLD, cutoff=10.0, kspace="
     """charges: "clayff2004", the only scheme (clayff.CHARGE_SCHEMES): SOAP gives the type of every atom, ClayFF Table 1 (the
     published values) its charge.  water: "spc", the flexible SPC water of ClayFF (the only model).
     md=False: in.lammps stops after the energy minimisation (force field, neighbour list, thermo output, minimisation and
-    the walls of fixed faces); the MD (velocities, time step, fixes, computes, runs) is then written by the user (soapff-gui).
+    the walls of fixed faces); the MD (velocities, time step, fixes, computes, runs) is then written by the user (soapff.build writes it).
     fallback=True: atoms whose best similarity is below `threshold` get the geometric ClayFF type and charge.
     fallback=False: they keep the type and charge of the most similar library entry (same element) and are only
     reported (charges.csv source "soap-low"); only elements absent from the library fall back.
     stop_on_fallback: any atom that the library cannot describe (fallback) stops make with an error before anything is
-    written (soapff-gui): the library lacks that environment and should be extended.
+    written (soapff.build: TypingError): the library lacks that environment and should be extended.
     water_rule: water molecules (an O with exactly two H within 1.2 A and no framework cation within 2.4 A, and those H)
     are typed by that rule (ow/hw, charges of the water model) instead of by SOAP; the SOAP assignment is used for everything else.
     solution_library (with a library without water): the water and the ions are typed in a second step.  First the mineral:
@@ -1197,7 +1197,7 @@ write_data final.data
 def open_in_ovito(path):
     """open a soapff-cui output (a directory: traj.lammpstrj, else final.data / system.data; or a file) in OVITO.
     The trajectory carries the ClayFF type names and the SOAP charges, so OVITO colours atoms by type
-    (add 'Create bonds' for the bonds).  macOS: the Ovito application; elsewhere: the `ovito` command (PATH, or ~/.soapff-gui/ovito/bin/ovito of install.sh)."""
+    (add 'Create bonds' for the bonds).  macOS: the Ovito application; elsewhere: the `ovito` command (PATH, or ~/.soapff-gui/ovito/bin/ovito)."""
     import shutil
     import subprocess
     import sys

@@ -1,6 +1,6 @@
-# soapff library: ClayFF (Cygan, Liang, Kalinichev, J. Phys. Chem. B 108, 1255 (2004)), the default library of soapff-gui.
+# soapff library: ClayFF (Cygan, Liang, Kalinichev, J. Phys. Chem. B 108, 1255 (2004)), the default clay library of soapff.
 #
-# engine clayff: soapff_cui (soapff-gui), unchanged.  Every atom gets the ClayFF type of the most similar atom of the references
+# engine clayff: soapff_cui.  Every atom gets the ClayFF type of the most similar atom of the references
 # (SOAP, same element) and the charge of that type in ClayFF Table 1; LJ, the O-H bond and the H-O-H / M-O-H angles of Tables 1
 # and 2 (soapff_cui/clayff.py) with the flexible SPC water.  The mineral is typed first, on the structure without the water;
 # the water and the ions (Na+ K+ Cs+ Ca2+ Ba2+ Cl-) in a second step with the solution library clayff_water.
@@ -8,7 +8,7 @@
 # References: the 11 bulk layered minerals and their basal (0 0 1) slabs in vacuum (LAMMPS data files with the ClayFF type
 # names in the comments of Masses).  The slab rows are pruned at similarity 0.999.  To add a mineral, make your own library:
 #     soapff.new_library("myclay", extends="clayff");  soapff.add_reference("myclay", "mymineral.data")
-# (the data file of the mineral with its ClayFF types and charges; see examples/library/ of soapff-gui).
+# (the data file of the mineral with its ClayFF types and charges; see examples/library/).
 
 [library]
 name        = clayff

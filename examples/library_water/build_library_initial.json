@@ -1,0 +1,42 @@
+{
+ "rows": 4124,
+ "species": [
+  "Al",
+  "Ba",
+  "Ca",
+  "Cl",
+  "Cs",
+  "H",
+  "K",
+  "Mg",
+  "Na",
+  "O",
+  "Si"
+ ],
+ "rows_per_type": {
+  "Ba": 8,
+  "Ca": 8,
+  "Cl": 15,
+  "Cs": 27,
+  "K": 47,
+  "Na": 15,
+  "ao": 206,
+  "at": 54,
+  "ho": 489,
+  "hw": 538,
+  "mgh": 181,
+  "mgo": 2,
+  "ob": 1099,
+  "obos": 8,
+  "obts": 211,
+  "oh": 476,
+  "ohs": 4,
+  "ow": 263,
+  "st": 473
+ },
+ "one_to_one": {
+  "rows": 4124,
+  "same_charge": 4124,
+  "confusions": {}
+ }
+}
