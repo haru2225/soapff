@@ -1,0 +1,3 @@
+1
+Properties=species:S:1:pos:R:3:fftype:S:1:ffcharge:R:1:template:S:1:atomname:S:1:resid:I:1 pbc="F F F" comment="Ba2+ (tip3p ion set)"
+Ba     0.000000     0.000000     0.000000 Ba2+   2.000000 BA    BA        0

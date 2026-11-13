@@ -1,0 +1,297 @@
+"""soapff libraries: a text file (.txt) that names the force field, the reference structures (atoms with a known type and
+charge) and the parameters, so that a library can be read, copied and extended by hand.
+
+Format (one file per library; '#' starts a comment):
+
+    [library]                    key = value
+    name        = amber14sb
+    engine      = molecular      # molecular (any force field written in the tables below) or clayff (soapff_cui, ClayFF)
+    extends     = NAME           # optional: start from another library (its references and parameters come first)
+    description = ...
+    reference   = ...            # the papers of the force field
+    [soap]                       key = value: r_cut, n_max, l_max, sigma (dscribe SOAP), depth (molecular: atoms within
+                                 # `depth` bonds), prune (similarity above which a reference row adds nothing), threshold
+    [graph]                      key = value (molecular, optional): cut = T1 T2 [T3 T4 ...] (bonds between these types are cut
+                                 # into fragments), depth; the charge then comes from the bonds inside the fragment
+    [bonding]                    key = value (molecular): factor (x covalent radii), ions (elements never bonded)
+    [lammps]                     key = value: pair_style, pair_modify, kspace_style, bond_style, angle_style, dihedral_style,
+                                 # improper_style, special_bonds, rigid (types made rigid by SHAKE), timestep (fs)
+    [types]        type element mass epsilon sigma               (kcal/mol, A; LJ 12-6, sigma not R_min)
+    [bonds]        t1 t2 K r0                                    (E = K (r - r0)^2; kcal/mol/A^2, A)
+    [angles]       t1 t2 t3 K theta0                             (E = K (theta - theta0)^2; kcal/mol/rad^2, deg)
+    [dihedrals]    t1 t2 t3 t4 K1 n1 d1 [K2 n2 d2 ...]           (E = sum K [1 + cos(n phi - d)]; kcal/mol, deg; X = any)
+    [impropers]    t1 t2 tc t4 K d n                             (tc: the central atom, bonded to the three others;
+                                                                  E = K [1 + d cos(n phi)], LAMMPS cvff; X = any)
+    [references]   FILE [prune=S]                                (paths relative to this file: extxyz with the per-atom
+                                                                  columns fftype and ffcharge, or a LAMMPS data file with
+                                                                  the type names in the comments of Masses)
+
+Libraries are found by name in $SOAPFF_LIBRARY_PATH, ~/.soapff/libraries and the libraries bundled with soapff (in this
+order), or given as a path.  The table of SOAP vectors of the references is computed once and kept in ~/.cache/soapff
+($SOAPFF_CACHE); any change of the references or of [soap] / [graph] / [bonding] makes a new one."""
+import hashlib
+import json
+import os
+import re
+
+import numpy as np
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+BUNDLED = os.path.join(HERE, "libraries")
+# changes when the way the table of a library is computed changes (per engine: the prebuilt ClayFF tables stay valid)
+DESCRIPTOR_VERSION = {"clayff": "1", "molecular": "2"}
+KEYVALUE = ("library", "soap", "graph", "bonding", "lammps")
+TABLES = ("types", "bonds", "angles", "dihedrals", "impropers", "references")
+
+
+class LibraryError(ValueError):
+    """a library file that cannot be read or a library that cannot be found"""
+
+
+def search_path():
+    """the folders where libraries are looked for by name"""
+    env = [p for p in os.environ.get("SOAPFF_LIBRARY_PATH", "").split(os.pathsep) if p]
+    return env + [os.path.join(os.path.expanduser("~"), ".soapff", "libraries"), BUNDLED]
+
+
+def cache_dir():
+    d = os.environ.get("SOAPFF_CACHE") or os.path.join(os.path.expanduser("~"), ".cache", "soapff")
+    os.makedirs(d, exist_ok=True)
+    return d
+
+
+def find(name):
+    """path of a library given by path or by name"""
+    if os.path.isfile(name):
+        return os.path.abspath(name)
+    base = name[:-4] if name.endswith(".txt") else name
+    for d in search_path():
+        p = os.path.join(d, base + ".txt")
+        if os.path.isfile(p):
+            return os.path.abspath(p)
+    raise LibraryError(f"library {name!r} not found (looked in {', '.join(search_path())}); available: "
+                       f"{', '.join(l['name'] for l in available()) or 'none'}")
+
+
+def available():
+    """[{name, path, engine, description}] of every library that can be given by name (the first of a name wins)"""
+    out, seen = [], set()
+    for d in search_path():
+        if not os.path.isdir(d):
+            continue
+        for f in sorted(os.listdir(d)):
+            if not f.endswith(".txt") or f[:-4] in seen:
+                continue
+            try:
+                raw = parse(os.path.join(d, f))
+            except LibraryError:
+                continue
+            lib = raw["library"]
+            if lib.get("hidden", "no") == "yes":
+                continue
+            seen.add(f[:-4])
+            out.append(dict(name=f[:-4], path=os.path.join(d, f), engine=lib.get("engine", "molecular"),
+                            description=lib.get("description", "")))
+    return out
+
+
+def parse(path):
+    """one library file -> {section: {key: value}} for the key = value sections and {section: [(tokens, file, line)]} for
+    the tables (no `extends`)"""
+    out = {s: {} for s in KEYVALUE}
+    out.update({s: [] for s in TABLES})
+    sec = None
+    for k, raw in enumerate(open(path, encoding="utf-8"), 1):
+        line = raw.split("#", 1)[0].strip()
+        if not line:
+            continue
+        m = re.fullmatch(r"\[\s*([A-Za-z_]+)\s*\]", line)
+        if m:
+            sec = m.group(1).lower()
+            if sec not in out:
+                raise LibraryError(f"{path}:{k}: unknown section [{sec}] (sections: {', '.join(KEYVALUE + TABLES)})")
+            continue
+        if sec is None:
+            raise LibraryError(f"{path}:{k}: a line before the first [section]")
+        if sec in KEYVALUE:
+            if "=" not in line:
+                raise LibraryError(f"{path}:{k}: [{sec}] takes key = value lines, got {line!r}")
+            key, val = (x.strip() for x in line.split("=", 1))
+            out[sec][key.lower()] = val
+        else:
+            out[sec].append((line.split(), path, k))
+    return out
+
+
+def _sha(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for block in iter(lambda: f.read(1 << 20), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
+class Library:
+    """a library read from its text file (with the libraries it extends)"""
+
+    def __init__(self, path, _chain=()):
+        self.path = os.path.abspath(path)
+        if self.path in _chain:
+            raise LibraryError(f"{path}: 'extends' makes a loop ({' -> '.join(_chain + (self.path,))})")
+        raw = parse(self.path)
+        here = os.path.dirname(self.path)
+        kv = raw["library"]
+        # the keys that name files are made absolute here (relative to the file that declares them)
+        if "forcefield" in kv:
+            kv["forcefield"] = " ".join(_resolve(x, here) for x in kv["forcefield"].split())
+        if "prebuilt" in kv:
+            kv["prebuilt"] = _resolve(kv["prebuilt"], here)
+        if "solution" in kv and os.path.isfile(os.path.join(here, kv["solution"] + ".txt")):
+            kv["solution"] = os.path.join(here, kv["solution"] + ".txt")
+        parent = raw["library"].get("extends")
+        if parent:
+            base = Library(find(parent) if not os.path.isfile(os.path.join(os.path.dirname(self.path), parent))
+                           else os.path.join(os.path.dirname(self.path), parent), _chain + (self.path,))
+            merged = {s: dict(getattr(base, s)) for s in KEYVALUE}
+            for s in KEYVALUE:
+                merged[s].update(raw[s])
+            merged["library"].pop("extends", None)
+            merged["library"].pop("prebuilt", None)            # a prebuilt table is that of the parent only
+            merged["library"].pop("prebuilt_sha", None)
+            merged["library"].pop("hidden", None)
+            # rows of this file first (they win over the parent's for the same types), then the parent's
+            tables = {s: raw[s] + base._rows[s] for s in TABLES if s != "references"}
+            tables["references"] = base._rows["references"] + raw["references"]
+            self.parent = base
+        else:
+            merged = {s: raw[s] for s in KEYVALUE}
+            tables = {s: raw[s] for s in TABLES}
+            self.parent = None
+        self._rows = tables
+        for s in KEYVALUE:
+            setattr(self, s, merged[s])
+        self.name = self.library.get("name") or os.path.basename(self.path)[:-4]
+        self.engine = self.library.get("engine", "molecular")
+        if self.engine not in ("molecular", "clayff"):
+            raise LibraryError(f"{self.path}: engine must be molecular or clayff, got {self.engine!r}")
+        self.description = self.library.get("description", "")
+        self.references = self._references()
+        if self.engine == "molecular":
+            self.types = self._types()
+            self.bonds = self._table("bonds", 2, 2)
+            self.angles = self._table("angles", 3, 2)
+            self.dihedrals = self._dihedrals()
+            self.impropers = self._table("impropers", 4, 3)
+
+    def __repr__(self):
+        return f"<soapff Library {self.name} ({self.engine}, {len(self.references)} references) {self.path}>"
+
+    # ------------------------------------------------------------------------------------------- tables
+    def _references(self):
+        out = []
+        for tok, src, k in self._rows["references"]:
+            path = tok[0] if os.path.isabs(tok[0]) else os.path.join(os.path.dirname(src), tok[0])
+            if not os.path.isfile(path):
+                raise LibraryError(f"{src}:{k}: reference {tok[0]} not found ({path})")
+            opts = {}
+            for o in tok[1:]:
+                if "=" not in o:
+                    raise LibraryError(f"{src}:{k}: reference option {o!r} is not key=value")
+                key, val = o.split("=", 1)
+                opts[key] = float(val) if key == "prune" else val
+            out.append(dict(path=os.path.abspath(path), **opts))
+        return out
+
+    def _types(self):
+        out = {}
+        for tok, src, k in reversed(self._rows["types"]):          # the first row of a type wins (this file before the parent)
+            if len(tok) != 5:
+                raise LibraryError(f"{src}:{k}: [types] rows are: type element mass epsilon sigma")
+            out[tok[0]] = dict(element=tok[1], mass=float(tok[2]), epsilon=float(tok[3]), sigma=float(tok[4]))
+        return out
+
+    def _table(self, sec, n, nval):
+        out = []
+        seen = set()
+        for tok, src, k in self._rows[sec]:
+            if len(tok) != n + nval:
+                raise LibraryError(f"{src}:{k}: [{sec}] rows are {n} types and {nval} numbers, got {' '.join(tok)!r}")
+            key = tuple(tok[:n])
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append((key, tuple(float(x) for x in tok[n:])))
+        return out
+
+    def _dihedrals(self):
+        out, seen = [], set()
+        for tok, src, k in self._rows["dihedrals"]:
+            if len(tok) < 7 or (len(tok) - 4) % 3:
+                raise LibraryError(f"{src}:{k}: [dihedrals] rows are t1 t2 t3 t4 K1 n1 d1 [K2 n2 d2 ...]")
+            key = tuple(tok[:4])
+            if key in seen:
+                continue
+            seen.add(key)
+            v = [float(x) for x in tok[4:]]
+            out.append((key, [(v[i], int(round(v[i + 1])), v[i + 2]) for i in range(0, len(v), 3)]))
+        return out
+
+    # ------------------------------------------------------------------------------------------- the SOAP table
+    def soap_params(self):
+        s = self.soap
+        return dict(r_cut=float(s.get("r_cut", 5.0)), n_max=int(s.get("n_max", 4)), l_max=int(s.get("l_max", 3)),
+                    sigma=float(s.get("sigma", 0.4)))
+
+    def recipe(self):
+        """everything the table of the library depends on (its hash names the cached table)"""
+        keep = {k: v for k, v in self.soap.items() if k != "threshold"}
+        ff = [_sha(p) for p in self.library.get("forcefield", "").split()]
+        return dict(engine=self.engine, version=DESCRIPTOR_VERSION[self.engine], soap=keep, graph=self.graph, bonding=self.bonding,
+                    forcefield=ff,
+                    references=[dict(sha=_sha(r["path"]), **{k: v for k, v in r.items() if k != "path"})
+                                for r in self.references],
+                    types=sorted(self.types) if self.engine == "molecular" else None)
+
+    def recipe_sha(self):
+        return hashlib.sha256(json.dumps(self.recipe(), sort_keys=True).encode()).hexdigest()
+
+    def table_path(self, build=True, log=print):
+        """the npz table of the library (SOAP rows; for the molecular engine also the graph rows): the prebuilt one when the
+        recipe is unchanged, else the cached one, built when missing"""
+        sha = self.recipe_sha()
+        pre = self.library.get("prebuilt")
+        if pre and self.library.get("prebuilt_sha", "") == sha[:16] and os.path.isfile(pre):
+            return pre
+        out = os.path.join(cache_dir(), f"{self.name}-{sha[:16]}.npz")
+        if not os.path.isfile(out):
+            if not build:
+                return None
+            log(f"soapff: library {self.name}: computing the SOAP table of {len(self.references)} references "
+                f"(once; kept in {out})")
+            tmp = out[:-4] + f".tmp{os.getpid()}.npz"
+            if self.engine == "clayff":
+                from .clayff import build_table
+            else:
+                from .molecular import build_table
+            build_table(self, tmp, log=log)
+            os.replace(tmp, out)
+        return out
+
+
+def _resolve(spec, base):
+    """a path relative to the library file, or pkg:PACKAGE/rel/path inside an installed package"""
+    if spec.startswith("pkg:"):
+        pkg, rel = spec[4:].split("/", 1)
+        import importlib.util
+        mod = importlib.util.find_spec(pkg)
+        if mod is None or not mod.submodule_search_locations:
+            return ""
+        return os.path.join(list(mod.submodule_search_locations)[0], rel)
+    return spec if os.path.isabs(spec) else os.path.join(base, spec)
+
+
+def load(name_or_path):
+    """a library by name (amber14sb, clayff, ...) or by the path of its .txt file"""
+    if isinstance(name_or_path, Library):
+        return name_or_path
+    return Library(find(str(name_or_path)))

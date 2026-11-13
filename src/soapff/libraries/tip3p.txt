@@ -1,0 +1,80 @@
+# soapff library: TIP3P water (Jorgensen et al. 1983, rigid) with the ions of OpenMM amber14/tip3p.xml: Joung-Cheatham monovalent ions (2008) and Li-Merz 12-6 divalent ions (2013).
+# Parameters converted from OpenMM 8.6.1 (amber14/tip3p.xml) by examples/amber14sb/make_library_txt.py.
+# The water is rigid (SHAKE on the O-H bonds and the H-O-H angle during the MD; flexible with these force constants in the
+# minimisation).  Every ion is an atom without bonds: its element gives its type.
+
+[library]
+name        = tip3p
+engine      = molecular
+description = TIP3P water (Jorgensen et al. 1983, rigid) with the ions of OpenMM amber14/tip3p.xml: Joung-Cheatham monovalent ions (2008) and Li-Merz 12-6 divalent ions (2013)
+reference   = W. L. Jorgensen et al., J. Chem. Phys. 79, 926 (1983); I. S. Joung, T. E. Cheatham, J. Phys. Chem. B 112, 9020 (2008); P. Li, B. P. Roberts, D. K. Chakravorty, K. M. Merz, J. Chem. Theory Comput. 9, 2733 (2013)
+source      = OpenMM 8.6.1 amber14/tip3p.xml
+
+[soap]
+r_cut = 5.0
+n_max = 4
+l_max = 3
+sigma = 0.4
+depth = 4
+prune = 0.999
+threshold = 0.9
+
+[bonding]
+factor = 1.15
+ions   = Li Na K Rb Cs F Cl Br I Mg Ca Zn Sr Ba
+
+[lammps]
+pair_style     = lj/cut/coul/long 10.0
+pair_modify    = mix arithmetic
+kspace_style   = pppm 1.0e-5
+bond_style     = harmonic
+angle_style    = harmonic
+dihedral_style = charmm
+improper_style = cvff
+special_bonds  = amber
+rigid          = OW HW
+timestep       = 1.0
+
+[types]
+# type  element  mass  epsilon(kcal/mol)  sigma(A)
+Li+    Li       6.94      0.0279896    1.826342372
+Na+    Na      22.99      0.0874393     2.43928069
+K+     K        39.1      0.1936829    3.037964629
+Rb+    Rb      85.47      0.3278219    3.230398752
+Cs+    Cs     132.91      0.4065394    3.520831734
+F-     F          19       0.003364    4.103479496
+Cl-    Cl      35.45       0.035591    4.477656957
+Br-    Br       79.9      0.0586554    4.646927714
+I-     I       126.9      0.0536816    5.095940668
+Zn2+   Zn       65.4     0.00330286    2.264664542
+Mg2+   Mg     24.305     0.01020237    2.423244513
+Ca2+   Ca      40.08      0.1059287    2.938183972
+Sr2+   Sr      87.62     0.22132374     3.22505336
+Ba2+   Ba     137.33     0.40664608    3.597449024
+OW     O    15.99943          0.152    3.150752407
+HW     H    1.007947              0             10
+
+[bonds]
+# t1 t2  K(kcal/mol/A^2)  r0(A)       E = K (r - r0)^2
+OW    HW             553     0.9572
+
+[angles]
+# t1 t2 t3  K(kcal/mol/rad^2)  theta0(deg)       E = K (theta - theta0)^2
+HW    OW    HW             100       104.52
+
+[references]
+tip3p/tip3p_NaCl.extxyz
+tip3p/ion_Li.extxyz
+tip3p/ion_Na.extxyz
+tip3p/ion_K.extxyz
+tip3p/ion_Rb.extxyz
+tip3p/ion_Cs.extxyz
+tip3p/ion_F.extxyz
+tip3p/ion_Cl.extxyz
+tip3p/ion_Br.extxyz
+tip3p/ion_I.extxyz
+tip3p/ion_Mg.extxyz
+tip3p/ion_Ca.extxyz
+tip3p/ion_Zn.extxyz
+tip3p/ion_Sr.extxyz
+tip3p/ion_Ba.extxyz

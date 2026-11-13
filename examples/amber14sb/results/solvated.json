@@ -1,0 +1,53 @@
+{
+ "typing": {
+  "atoms": 17018,
+  "seconds": 2.7,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "molecules": 5282,
+  "molecule_kinds": {
+   "3 atoms, charge +0.0000": 5253,
+   "1 atoms, charge +1.0000": 14,
+   "1 atoms, charge -1.0000": 14,
+   "1231 atoms, charge +0.0000": 1
+  },
+  "net_charge": 3.552713678800501e-15,
+  "sources": {
+   "graph": 16990,
+   "ion": 28
+  }
+ },
+ "energy_ewald_vs_pme": {
+  "lammps": {
+   "bond": 130.668214,
+   "angle": 274.393203,
+   "torsion": 939.681315,
+   "nonbonded": -37630.97536500002,
+   "total": -36286.232634
+  },
+  "openmm": {
+   "bond": 130.66821354100918,
+   "angle": 274.39320254456675,
+   "torsion": 939.6832123804124,
+   "nonbonded": -37630.7696003852,
+   "total": -36286.02497191922
+  },
+  "diff": {
+   "bond": 4.5899082579126116e-07,
+   "angle": 4.554332804218575e-07,
+   "torsion": -0.001897380412401617,
+   "nonbonded": -0.20576461481687147,
+   "total": -0.2076620807783911
+  }
+ },
+ "run": {
+  "seconds": 1067.4,
+  "steps": 1000,
+  "temp_last": 279.24338,
+  "pe_last": -56215.044,
+  "final_data": true,
+  "shake": [
+   "fix rigid all shake 1.0e-4 20 0 b 56 a 119   # rigid water (library: rigid = OW HW)"
+  ]
+ }
+}

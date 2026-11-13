@@ -1,0 +1,716 @@
+# soapff library: AMBER ff14SB proteins (Maier et al. 2015) with TIP3P water and ions (extends tip3p).
+# Parameters converted from OpenMM 8.6.1 (amber14/protein.ff14SB.xml) by examples/amber14sb/make_library_txt.py.
+#
+# Types: the SOAP of the covalent neighbourhood of every atom (atoms within 4 bonds).  Charges: ff14SB gives every atom of every
+# residue its own charge, so the molecule is cut at the peptide bonds (C-N, [graph] cut) and every atom takes the type and the
+# charge of the reference atom whose residue (its atoms and their bond distances) is the same; similarity 1 means the residue is
+# in the references.  References: hen egg-white lysozyme (1AKI) and T4 lysozyme (2LZM) prepared by pdbfixer / OpenMM at pH 7,
+# every amino acid (and HID, HIE, HIP) as an N- and a C-terminus, ACE / NME caps, HID HIE HIP ASH GLH LYN CYS in capped
+# fragments, disulfides (CYX).  Not included: CYM, HYP, NHE caps, N-terminal CYX, non-standard residues, ligands.
+# 1-4 interactions: special_bonds amber (LJ 1/2, Coulomb 1/1.2); LJ mixing: Lorentz-Berthelot (pair_modify mix arithmetic).
+
+[library]
+name        = amber14sb
+extends     = tip3p
+engine      = molecular
+description = AMBER ff14SB proteins (20 amino acids, HID/HIE/HIP, ASH/GLH/LYN, CYS/CYX, termini, ACE/NME) with TIP3P water and ions
+reference   = J. A. Maier, C. Martinez, K. Kasavajhala, L. Wickstrom, K. E. Hauser, C. Simmerling, J. Chem. Theory Comput. 11, 3696 (2015); TIP3P and ions: see tip3p
+source      = OpenMM 8.6.1 amber14/protein.ff14SB.xml
+
+[graph]
+cut   = C N
+depth = 12
+
+[types]
+# type  element  mass  epsilon(kcal/mol)  sigma(A)
+C      C       12.01          0.086    3.399669508
+CA     C       12.01          0.086    3.399669508
+CB     C       12.01          0.086    3.399669508
+CC     C       12.01          0.086    3.399669508
+CN     C       12.01          0.086    3.399669508
+CR     C       12.01          0.086    3.399669508
+CT     C       12.01         0.1094    3.399669508
+CV     C       12.01          0.086    3.399669508
+CW     C       12.01          0.086    3.399669508
+C*     C       12.01          0.086    3.399669508
+CX     C       12.01         0.1094    3.399669508
+H      H       1.008         0.0157    1.069078462
+HC     H       1.008         0.0157    2.649532788
+H1     H       1.008         0.0157    2.471353044
+HA     H       1.008          0.015     2.59964246
+H4     H       1.008          0.015    2.510552588
+H5     H       1.008          0.015    2.421462716
+HO     H       1.008              0             10
+HS     H       1.008         0.0157    1.069078462
+HP     H       1.008         0.0157     1.95997718
+N      N       14.01           0.17    3.249998524
+NA     N       14.01           0.17    3.249998524
+NB     N       14.01           0.17    3.249998524
+N2     N       14.01           0.17    3.249998524
+N3     N       14.01           0.17    3.249998524
+O      O          16           0.21    2.959921901
+O2     O          16           0.21    2.959921901
+OH     O          16         0.2104    3.066473388
+S      S       32.06           0.25    3.563594873
+SH     S       32.06           0.25    3.563594873
+CO     C       12.01          0.086    3.399669508
+2C     C       12.01         0.1094    3.399669508
+3C     C       12.01         0.1094    3.399669508
+C8     C       12.01         0.1094    3.399669508
+
+[bonds]
+# t1 t2  K(kcal/mol/A^2)  r0(A)       E = K (r - r0)^2
+C     C              310      1.525
+C     CA             469      1.409
+C     CB             447      1.419
+C     CT             317      1.522
+C     CX             317      1.522
+C     N              490      1.335
+C     NA             418      1.388
+C     O              570      1.229
+C     O2             656       1.25
+C     OH             450      1.364
+C     H4             367       1.08
+C     H5             367       1.08
+CA    CA             469        1.4
+CA    CB             469      1.404
+CA    CN             469        1.4
+CA    CT             317       1.51
+CA    HA             367       1.08
+CA    H4             367       1.08
+CA    N2             481       1.34
+CA    NA             427      1.381
+CA    OH             450      1.364
+CB    CB             520       1.37
+CB    NB             414      1.391
+CT    CT             310      1.526
+CX    CT             310      1.526
+CT    HC             340       1.09
+CT    H1             340       1.09
+CX    H1             340       1.09
+CT    HP             340       1.09
+CX    HP             340       1.09
+CT    N2             337      1.463
+CT    OH             320       1.41
+C*    HC             367       1.08
+C*    CB             388      1.459
+C*    CT             317      1.495
+C*    CW             546      1.352
+CB    CN             447      1.419
+CC    CT             317      1.504
+CC    CV             512      1.375
+CC    CW             518      1.371
+CC    NA             422      1.385
+CC    NB             410      1.394
+CN    NA             428       1.38
+CR    H5             367       1.08
+CR    NA             477      1.343
+CR    NB             488      1.335
+CT    N              337      1.449
+CX    N              337      1.449
+CT    N3             367      1.471
+CX    N3             367      1.471
+CT    S              227       1.81
+CT    SH             237       1.81
+CV    H4             367       1.08
+CV    NB             410      1.394
+CW    H4             367       1.08
+CW    NA             427      1.381
+H     N2             434       1.01
+H     NA             434       1.01
+H     N              434       1.01
+H     N3             434       1.01
+HO    OH             553       0.96
+HS    SH             274      1.336
+S     S              166      2.038
+C     2C             317      1.522
+C*    2C             317      1.495
+C8    C8             310      1.526
+C8    CX             310      1.526
+C8    H1             340       1.09
+C8    HC             340       1.09
+C8    HP             340       1.09
+C8    N2             337      1.463
+C8    N3             367      1.471
+CA    2C             317       1.51
+CC    2C             317      1.504
+CO    O2             656       1.25
+CO    2C             317      1.522
+CT    2C             310      1.526
+CT    3C             310      1.526
+CX    2C             310      1.526
+CX    3C             310      1.526
+H1    2C             340       1.09
+H1    3C             340       1.09
+HC    2C             340       1.09
+HC    3C             340       1.09
+OH    2C             320       1.41
+OH    3C             320       1.41
+S     2C             227       1.81
+SH    2C             237       1.81
+2C    2C             310      1.526
+2C    3C             310      1.526
+
+[angles]
+# t1 t2 t3  K(kcal/mol/rad^2)  theta0(deg)       E = K (theta - theta0)^2
+C     C     O               80          120
+C     C     OH              80          120
+CA    C     CA              63          120
+CA    C     OH              70          120
+CB    C     NA              70        111.3
+CB    C     O               80        128.8
+CT    C     O               80        120.4
+CX    C     O               80        120.4
+CT    C     O2              70          117
+CX    C     O2              70          117
+CT    C     N               70        116.6
+CX    C     N               70        116.6
+CT    C     CT              63          117
+CT    C     OH              80          110
+CX    C     OH              80          110
+NA    C     O               80        120.6
+N     C     O               80        122.9
+O     C     O               80          126
+O     C     OH              80          120
+O2    C     O2              80          126
+H4    C     C               50          120
+H4    C     CT              50          115
+H4    C     O               50          120
+H4    C     OH              50          120
+H5    C     N               50          120
+H5    C     O               50          119
+H5    C     OH              50          107
+C     CA    CA              63          120
+C     CA    HA              50          120
+CA    CA    CA              63          120
+CA    CA    CB              63          120
+CA    CA    CT              70          120
+CA    CA    HA              50          120
+CA    CA    H4              50          120
+CA    CA    OH              70          120
+CA    CA    CN              63          120
+CB    CA    HA              50          120
+CB    CA    H4              50          120
+CB    CA    N2              70        123.5
+CN    CA    HA              50          120
+N2    CA    NA              70          116
+N2    CA    N2              70          120
+C     CB    CB              63        119.2
+C     CB    NB              70          130
+CA    CB    CB              63        117.3
+CA    CB    NB              70        132.4
+CB    CB    NB              70        110.4
+C*    CB    CA              63        134.9
+C*    CB    CN              63        108.8
+CA    CB    CN              63        116.2
+H1    CT    H1              35        109.5
+H1    CX    H1              35        109.5
+H1    CT    OH              50        109.5
+H1    CT    N               50        109.5
+H1    CX    N               50        109.5
+H1    CT    S               50        109.5
+H1    CT    SH              50        109.5
+H1    CT    N2              50        109.5
+HP    CT    HP              35        109.5
+HP    CX    HP              35        109.5
+HP    CT    N3              50        109.5
+HP    CX    N3              50        109.5
+HC    CT    HC              35        109.5
+C     CT    H1              50        109.5
+C     CX    H1              50        109.5
+C     CT    HP              50        109.5
+C     CX    HP              50        109.5
+C     CT    HC              50        109.5
+C     CT    N               63        110.1
+C     CX    N               63        110.1
+C     CT    N3              80        111.2
+C     CX    N3              80        111.2
+C     CT    CT              63        111.1
+C     CT    CX              63        111.1
+C     CX    CT              63        111.1
+CA    CT    HC              50        109.5
+CC    CT    CT              63        113.1
+CC    CT    CX              63        113.1
+CC    CT    HC              50        109.5
+CT    CT    CT              40        109.5
+CT    CT    CX              40        109.5
+CT    CT    HC              50        109.5
+CX    CT    HC              50        109.5
+CT    CT    H1              50        109.5
+CT    CX    H1              50        109.5
+CX    CT    H1              50        109.5
+CT    CT    HP              50        109.5
+CT    CX    HP              50        109.5
+CT    CT    OH              50        109.5
+CX    CT    OH              50        109.5
+CT    CT    S               50        114.7
+CX    CT    S               50        114.7
+CT    CT    SH              50        108.6
+CX    CT    SH              50        108.6
+CT    CT    CA              63          114
+CX    CT    CA              63          114
+CT    CT    N2              80        111.2
+CT    CT    N               80        109.7
+CT    CX    N               80        109.7
+CT    CT    N3              80        111.2
+CT    CX    N3              80        111.2
+C*    CT    CT              63        115.6
+C*    CT    CX              63        115.6
+C*    CT    HC              50        109.5
+CT    CC    NA              70          120
+CT    CC    CV              70          120
+CT    CC    NB              70          120
+CV    CC    NA              70          120
+CW    CC    NA              70          120
+CW    CC    NB              70          120
+CT    CC    CW              70          120
+H5    CR    NA              50          120
+H5    CR    NB              50          120
+NA    CR    NA              70          120
+NA    CR    NB              70          120
+CC    CV    H4              50          120
+CC    CV    NB              70          120
+H4    CV    NB              50          120
+CC    CW    H4              50          120
+CC    CW    NA              70          120
+C*    CW    H4              50          120
+C*    CW    NA              70        108.7
+H4    CW    NA              50          120
+CB    C*    CT              70        128.6
+CB    C*    CW              63        106.4
+CT    C*    CW              70          125
+CA    CN    CB              63        122.7
+CA    CN    NA              70        132.8
+CB    CN    NA              70        104.4
+C     N     CT              50        121.9
+C     N     CX              50        121.9
+C     N     H               50          120
+CT    N     H               50       118.04
+CX    N     H               50       118.04
+CT    N     CT              50          118
+CT    N     CX              50          118
+H     N     H               35          120
+CA    N2    H               50          120
+CA    N2    CT              50        123.2
+CT    N2    H               50        118.4
+H     N2    H               35          120
+CT    N3    H               50        109.5
+CX    N3    H               50        109.5
+CT    N3    CT              50        109.5
+CT    N3    CX              50        109.5
+H     N3    H               35        109.5
+C     NA    C               70        126.4
+C     NA    CA              70        125.2
+C     NA    H               50        116.8
+CA    NA    H               50          118
+CC    NA    CR              70          120
+CC    NA    H               50          120
+CR    NA    CW              70          120
+CR    NA    H               50          120
+CW    NA    H               50          120
+CN    NA    CW              70        111.6
+CN    NA    H               50        123.1
+CC    NB    CR              70          117
+CR    NB    CV              70          117
+C     OH    HO              50          113
+CA    OH    HO              50          113
+CT    OH    HO              55        108.5
+CT    S     CT              62         98.9
+CT    S     S               68        103.7
+CT    SH    HS              43           96
+HS    SH    HS              35        92.07
+N     C     2C              70        116.6
+O     C     2C              80        120.4
+OH    C     2C              80          110
+CB    C*    2C              70        128.6
+CW    C*    2C              70          125
+C8    C8    C8              40        109.5
+C8    C8    CX              40        109.5
+C8    C8    H1              50        109.5
+C8    C8    HC              50        109.5
+C8    C8    HP              50        109.5
+C8    C8    N2              80        111.2
+C8    C8    N3              80        111.2
+CX    C8    HC              50        109.5
+H1    C8    H1              35        109.5
+H1    C8    N2              50        109.5
+HC    C8    HC              35        109.5
+HP    C8    HP              35        109.5
+HP    C8    N3              50        109.5
+CA    CA    2C              70          120
+CV    CC    2C              70          120
+CW    CC    2C              70          120
+NA    CC    2C              70          120
+NB    CC    2C              70          120
+O2    CO    O2              80          126
+O2    CO    2C              70          117
+HC    CT    2C              50        109.5
+HC    CT    3C              50        109.5
+C     CX    C8              63        111.1
+C     CX    2C              63        111.1
+C     CX    3C              63        111.1
+C8    CX    H1              50        109.5
+C8    CX    N               80        109.7
+C8    CX    N3              80        111.2
+H1    CX    2C              50        109.5
+H1    CX    3C              50        109.5
+HP    CX    C8              50        109.5
+HP    CX    2C              50        109.5
+HP    CX    3C              50        109.5
+N     CX    2C              80        109.7
+N     CX    3C              80        109.7
+N3    CX    2C              80        111.2
+N3    CX    3C              80        111.2
+C8    N2    CA              50        123.2
+C8    N2    H               50        118.4
+C8    N3    H               50        109.5
+HO    OH    2C              55        108.5
+HO    OH    3C              55        108.5
+CT    S     2C              62         98.9
+2C    S     S               68        103.7
+HS    SH    2C              43           96
+C     2C    CX              63        111.1
+C     2C    HC              50        109.5
+C     2C    2C              63        111.1
+C*    2C    CX              63        115.6
+C*    2C    HC              50        109.5
+CA    2C    CX              63          114
+CA    2C    HC              50        109.5
+CC    2C    CX              63        113.1
+CC    2C    HC              50        109.5
+CO    2C    CX              63        111.1
+CO    2C    HC              50        109.5
+CO    2C    2C              63        111.1
+CT    2C    HC              50        109.5
+CT    2C    3C              40        109.5
+CX    2C    H1              50        109.5
+CX    2C    HC              50        109.5
+CX    2C    OH              50        109.5
+CX    2C    S               50        114.7
+CX    2C    SH              50        108.6
+CX    2C    2C              40        109.5
+CX    2C    3C              40        109.5
+H1    2C    H1              35        109.5
+H1    2C    OH              50        109.5
+H1    2C    S               50        109.5
+H1    2C    SH              50        109.5
+H1    2C    2C              50        109.5
+HC    2C    HC              35        109.5
+HC    2C    2C              50        109.5
+HC    2C    3C              50        109.5
+S     2C    2C              50        114.7
+CT    3C    CT              40        109.5
+CT    3C    CX              40        109.5
+CT    3C    H1              50        109.5
+CT    3C    HC              50        109.5
+CT    3C    OH              50        109.5
+CT    3C    2C              40        109.5
+CX    3C    H1              50        109.5
+CX    3C    HC              50        109.5
+CX    3C    OH              50        109.5
+CX    3C    2C              40        109.5
+H1    3C    OH              50        109.5
+HC    3C    2C              50        109.5
+
+[dihedrals]
+# t1 t2 t3 t4  K1 n1 d1 [K2 n2 d2 ...]   E = sum K [1 + cos(n phi - d)] (kcal/mol, deg); X = any type
+X     C     C     X      3.625 2 180
+X     C     CA    X      3.625 2 180
+X     C     CB    X      3 2 180
+X     C     CT    X      0 2 0
+X     C     CX    X      0 2 0
+X     C     N     X      2.5 2 180
+X     C     NA    X      1.35 2 180
+X     C     O     X      2.8 2 180
+X     C     OH    X      2.3 2 180
+X     CA    CA    X      3.625 2 180
+X     CA    CB    X      3.5 2 180
+X     CA    CN    X      3.625 2 180
+X     CA    CT    X      0 2 0
+X     CA    N2    X      2.4 2 180
+X     CA    NA    X      1.5 2 180
+X     CA    OH    X      0.9 2 180
+X     CB    CB    X      5.45 2 180
+X     CB    CN    X      3 2 180
+X     CB    NB    X      2.55 2 180
+X     CC    CT    X      0 2 0
+X     CC    CV    X      5.15 2 180
+X     CC    CW    X      5.375 2 180
+X     CC    NA    X      1.4 2 180
+X     CC    NB    X      2.4 2 180
+X     CN    NA    X      1.525 2 180
+X     CT    CT    X      0.1555555556 3 0
+X     CT    CX    X      0.1555555556 3 0
+X     CT    N     X      0 2 0
+X     CX    N     X      0 2 0
+X     CT    N2    X      0 3 0
+X     CT    N3    X      0.1555555556 3 0
+X     CX    N3    X      0.1555555556 3 0
+X     CT    OH    X      0.1666666667 3 0
+X     CT    S     X      0.3333333333 3 0
+X     CT    SH    X      0.25 3 0
+X     C*    CB    X      1.675 2 180
+X     C*    CT    X      0 2 0
+X     C*    CW    X      6.525 2 180
+X     CR    NA    X      2.325 2 180
+X     CR    NB    X      5 2 180
+X     CV    NB    X      2.4 2 180
+X     CW    NA    X      1.5 2 180
+C     N     CX    C      0 4 0  0.42 3 0  0.27 2 0  0 1 0
+N     CX    C     N      0 4 0  0.55 3 180  1.58 2 180  0.45 1 180
+CT    CT    N     C      0 4 0  0.4 3 0  2 2 0  2 1 0
+CT    CX    N     C      0 4 0  0.8 3 0  1.8 2 0  2 1 0
+CT    CT    C     N      0 4 0  0.4 3 0  0.2 2 0  0.2 1 0
+CT    CX    C     N      0 4 0  0.4 3 0  0.2 2 0  0.2 1 0
+CX    CT    C     N      0 4 0  0.4 3 0  0.2 2 0  0.2 1 0
+H     N     C     O      2.5 2 180  2 1 0
+CT    S     S     CT     3.5 2 0  0.6 3 0
+H1    CT    C     O      0.8 1 0  0 2 0  0.08 3 180
+H1    CX    C     O      0.8 1 0  0 2 0  0.08 3 180
+HC    CT    C     O      0.8 1 0  0 2 0  0.08 3 180
+HC    CT    CT    HC     0.15 3 0
+HC    CT    CT    CT     0.16 3 0
+HC    CT    CT    CX     0.16 3 0
+HO    OH    CT    CT     0.16 3 0  0.25 1 0
+HO    OH    CT    CX     0.16 3 0  0.25 1 0
+HO    OH    C     O      2.3 2 180  1.9 1 0
+CT    CT    CT    CT     0.18 3 0  0.25 2 180  0.2 1 180
+CX    CT    CT    CT     0.18 3 0  0.25 2 180  0.2 1 180
+OH    CT    CT    OH     0.144 3 0  1.175 2 0
+H1    CT    CT    OH     0 3 0  0.25 1 0
+H1    CX    CT    OH     0 3 0  0.25 1 0
+HC    CT    CT    OH     0 3 0  0.25 1 0
+N     CT    CT    OH     0 1 0  1.49 2 0  0.156 3 0  0 4 0
+C8    CX    N     C      0 4 0  0.8 3 0  1.8 2 0  2 1 0
+2C    CX    N     C      0 4 0  0.8 3 0  1.8 2 0  2 1 0
+3C    CX    N     C      0 4 0  0.8 3 0  1.8 2 0  2 1 0
+N     C     CX    C8     0 4 0  0.4 3 0  0.2 2 0  0.2 1 0
+N     C     CX    2C     0 4 0  0.4 3 0  0.2 2 0  0.2 1 0
+N     C     CX    3C     0 4 0  0.4 3 0  0.2 2 0  0.2 1 0
+N     C     2C    HC     0 2 0
+O     C     2C    HC     0.08 3 180  0 2 0  0.8 1 0
+OH    C     2C    HC     0 2 0
+CB    C*    2C    HC     0 2 0
+CW    C*    2C    HC     0 2 0
+X     C8    C8    X      0.1555555556 3 0
+C8    C8    C8    HC     0.16 3 0
+CX    C8    C8    HC     0.16 3 0
+HC    C8    C8    HC     0.15 3 0
+X     C8    CX    X      0.1555555556 3 0
+X     C8    N2    X      0 3 0
+X     C8    N3    X      0.1555555556 3 0
+X     CA    2C    X      0 2 0
+2C    CC    CV    H4     5.15 2 180
+2C    CC    CV    NB     5.15 2 180
+2C    CC    CW    H4     5.375 2 180
+2C    CC    CW    NA     5.375 2 180
+2C    CC    NA    CR     1.4 2 180
+2C    CC    NA    H      1.4 2 180
+2C    CC    NB    CR     2.4 2 180
+CV    CC    2C    HC     0 2 0
+CW    CC    2C    HC     0 2 0
+NA    CC    2C    HC     0 2 0
+NB    CC    2C    HC     0 2 0
+O2    CO    2C    HC     0 2 0
+H1    CT    S     2C     0.3333333333 3 0
+HC    CT    2C    HC     0.15 3 0
+HC    CT    2C    3C     0.16 3 0
+HC    CT    3C    CT     0.16 3 0
+HC    CT    3C    CX     0.16 3 0
+HC    CT    3C    H1     0.1555555556 3 0
+HC    CT    3C    HC     0.15 3 0
+HC    CT    3C    OH     0 3 0  0.25 1 0
+HC    CT    3C    2C     0.16 3 0
+X     CX    2C    X      0.1555555556 3 0
+H1    CX    2C    OH     0 3 0  0.25 1 0
+X     CX    3C    X      0.1555555556 3 0
+H1    CX    3C    OH     0 3 0  0.25 1 0
+HO    OH    2C    H1     0.1666666667 3 0
+HO    OH    3C    H1     0.1666666667 3 0
+X     S     2C    X      0.3333333333 3 0
+X     SH    2C    X      0.25 3 0
+X     2C    2C    X      0.1555555556 3 0
+CX    2C    2C    HC     0.16 3 0
+HC    2C    2C    HC     0.15 3 0
+CT    2C    3C    HC     0.16 3 0
+CX    2C    3C    HC     0.16 3 0
+HC    2C    3C    CT     0.16 3 0
+HC    2C    3C    CX     0.16 3 0
+HC    2C    3C    HC     0.15 3 0
+C     CX    C8    C8     0.1555555556 3 0
+N     CX    C8    C8     0.1555555556 3 0
+N3    CX    C8    C8     0.1555555556 3 0
+CX    C8    C8    C8     0.18 3 0  0.25 2 180  0.2 1 180
+C8    C8    C8    N2     0.1555555556 3 0
+C8    C8    N2    CA     0 3 0  0 1 0
+C8    C8    C8    C8     0.18 3 0  0.25 2 180  0.2 1 180
+C8    C8    C8    N3     0.1555555556 3 0
+C8    N2    CA    N2     0 4 0  2.4 2 180
+H     N2    CA    N2     0 4 0  2.4 2 180
+C8    C8    N3    H      0.1555555556 3 0
+C     CX    2C    SH     0.075 4 0  0.251 3 0  0.337 2 180  0.269 1 180
+N     CX    2C    SH     0.033 4 0  0.251 3 0  0.486 2 180  0.154 1 0
+N3    CX    2C    SH     0.033 4 0  0.251 3 0  0.486 2 180  0.154 1 0
+CX    2C    SH    HS     0.03 4 0  0.252 3 0  0.612 2 0  0.092 1 0
+C     CX    2C    CO     0.154 4 0  0.058 3 0  0.459 2 180  0.424 1 0
+N     CX    2C    CO     0.089 4 0  0.058 3 0  0.647 2 180  2.154 1 180
+N3    CX    2C    CO     0.089 4 0  0.058 3 0  0.647 2 180  2.154 1 180
+CX    2C    CO    O2     0.031 4 180  0 3 0  0.769 2 180  0 1 0
+C     CX    2C    C      0.107 4 0  0.033 3 0  0.303 2 180  1.046 1 0
+N     CX    2C    C      0.059 4 0  0.033 3 0  0.297 2 180  0.688 1 180
+N3    CX    2C    C      0.059 4 0  0.033 3 0  0.297 2 180  0.688 1 180
+CX    2C    C     O      0 1 0
+CX    2C    C     OH     0.199 4 180  0.008 3 0  0.575 2 180  1.199 1 180
+2C    C     OH    HO     0.113 4 0  0.479 3 0  2.706 2 180  0.448 1 180
+CX    2C    C     N      0.008 4 0  0.301 3 180  0.485 2 180  0.828 1 180
+C     CX    CT    CC     0.025 4 0  0.219 3 0  0.244 2 180  0.143 1 180
+N     CX    CT    CC     0.089 4 0  0.219 3 0  0.221 2 180  0.306 1 180
+N3    CX    CT    CC     0.089 4 0  0.219 3 0  0.221 2 180  0.306 1 180
+CX    CT    CC    NA     0.037 4 180  0.686 3 0  0.392 2 180  0.16 1 180
+CX    CT    CC    CV     0.01 4 180  0.122 3 180  0.75 2 0  0.674 1 180
+CX    CT    CC    NB     0.047 4 180  0.74 3 0  0.204 2 0  0.69 1 0
+C     CX    3C    CT     0.112 4 0  0.148 3 0  0.289 2 180  0.406 1 180
+C     CX    3C    2C     0.115 4 0  0.113 3 0  0.735 2 180  0.162 1 0
+N     CX    3C    CT     0.001 4 180  0.148 3 0  0.216 2 180  0.337 1 0
+N     CX    3C    2C     0.097 4 180  0.113 3 0  0.144 2 180  0.31 1 0
+N3    CX    3C    CT     0.001 4 180  0.148 3 0  0.216 2 180  0.337 1 0
+N3    CX    3C    2C     0.097 4 180  0.113 3 0  0.144 2 180  0.31 1 0
+CX    3C    2C    CT     0.23 4 0  0.107 3 0  0.053 2 0  0.447 1 0
+CT    3C    2C    CT     0.224 4 0  0.107 3 0  0.077 2 180  0.202 1 0
+C     CX    3C    OH     0.156 4 0  0.315 3 0  0.119 2 180  0.697 1 180
+N     CX    3C    OH     0.095 4 0  0.315 3 0  0.006 2 0  0.674 1 0
+N3    CX    3C    OH     0.095 4 0  0.315 3 0  0.006 2 0  0.674 1 0
+CX    3C    OH    HO     0.013 4 0  0.236 3 0  0.251 2 0  0.006 1 180
+CT    3C    OH    HO     0.048 4 0  0.236 3 0  0.079 2 180  0.643 1 0
+C     CX    2C    3C     0.19 4 0  0.144 3 0  0.62 2 180  0.706 1 0
+N     CX    2C    3C     0.073 4 0  0.144 3 0  0.259 2 180  0.098 1 0
+N3    CX    2C    3C     0.073 4 0  0.144 3 0  0.259 2 180  0.098 1 0
+CX    2C    3C    CT     0.179 4 0  0.142 3 0  0.027 2 180  0.379 1 0
+C     CX    2C    OH     0.129 4 0  0.401 3 0  0.218 2 180  0.661 1 180
+N     CX    2C    OH     0.16 4 0  0.401 3 0  0.246 2 180  0.666 1 0
+N3    CX    2C    OH     0.16 4 0  0.401 3 0  0.246 2 180  0.666 1 0
+CX    2C    OH    HO     0.007 4 0  0.267 3 0  0.444 2 0  0.211 1 0
+C     CX    CT    C*     0.074 4 0  0.234 3 0  0.353 2 180  0.017 1 180
+N     CX    CT    C*     0.031 4 0  0.234 3 0  0.313 2 180  0.079 1 0
+N3    CX    CT    C*     0.031 4 0  0.234 3 0  0.313 2 180  0.079 1 0
+CX    CT    C*    CB     0.095 4 180  0.819 3 0  0.408 2 0  0.365 1 0
+CX    CT    C*    CW     0 4 0  0 3 0  0 2 0  0 1 0
+C     CX    CT    CA     0.012 4 180  0.192 3 0  0.469 2 180  0.055 1 0
+N     CX    CT    CA     0.007 4 180  0.192 3 0  0.29 2 180  0.012 1 180
+N3    CX    CT    CA     0.007 4 180  0.192 3 0  0.29 2 180  0.012 1 180
+CX    CT    CA    CA     0.048 4 180  0 3 0  0.069 2 180  0 1 0
+CA    C     OH    HO     0.065 4 0  0 3 0  0.883 2 180  0 1 0
+C     CX    2C    2C     0.145 4 0  0.144 3 0  0.393 2 180  0.421 1 180
+N     CX    2C    2C     0.078 4 0  0.144 3 0  0.184 2 180  0.1 1 180
+N3    CX    2C    2C     0.078 4 0  0.144 3 0  0.184 2 180  0.1 1 180
+CX    2C    2C    C      0.138 4 0  0.412 3 180  0.083 2 0  0.196 1 180
+2C    2C    C     O      0 1 0
+2C    2C    C     OH     0.066 4 180  0.025 3 180  1.104 2 180  0.824 1 180
+2C    2C    C     N      0.042 4 0  0.085 3 180  0.845 2 180  0.609 1 180
+CX    2C    2C    CO     0.056 4 180  0.608 3 180  0.222 2 180  1.367 1 180
+2C    2C    CO    O2     0.064 4 0  0.39 2 180
+CX    2C    2C    S      0.028 4 0  0.016 3 0  0.245 2 0  0.417 1 0
+2C    2C    S     CT     0.057 4 0  0.414 3 0  0.442 2 0  0.247 1 180
+C     CX    2C    S      0.278 4 0  0.323 3 0  0.394 2 180  0.602 1 0
+N     CX    2C    S      0.064 4 0  0.323 3 0  0.021 2 180  0.469 1 0
+N3    CX    2C    S      0.064 4 0  0.323 3 0  0.021 2 180  0.469 1 0
+CX    2C    S     S      0.135 4 180  0.302 3 0  0.666 2 0  0.056 1 0
+2C    S     S     2C     0.379 4 0  0.682 3 0  4.48 2 0  0.42 1 0
+
+[impropers]
+# t1 t2 tc t4  K d n   tc = the central atom (bonded to the three others); E = K [1 + d cos(n phi)]
+X     X     C     O      10.5 -1 2
+X     O2    C     O2     10.5 -1 2
+X     X     N     H      1 -1 2
+X     X     N2    H      1 -1 2
+X     X     NA    H      1 -1 2
+X     N2    CA    N2     10.5 -1 2
+X     CT    N     CT     1 -1 2
+X     CX    N     CT     1 -1 2
+X     X     CA    HA     1.1 -1 2
+X     X     CW    H4     1.1 -1 2
+X     X     CR    H5     1.1 -1 2
+X     X     CV    H4     1.1 -1 2
+X     X     CA    H4     1.1 -1 2
+X     X     CA    H5     1.1 -1 2
+CT    O     C     OH     10.5 -1 2
+CT    CV    CC    NA     1.1 -1 2
+CT    CW    CC    NB     1.1 -1 2
+CT    CW    CC    NA     1.1 -1 2
+CB    CT    C*    CW     1.1 -1 2
+CA    CA    CA    CT     1.1 -1 2
+CA    CA    C     OH     1.1 -1 2
+CA    CA    CA    OH     1.1 -1 2
+H5    O     C     OH     1.1 -1 2
+C     CT    N     H      1.1 -1 2
+C     CX    N     H      1.1 -1 2
+C     CT    N     O      1.1 -1 2
+X     O2    CO    O2     10.5 -1 2
+2C    O     C     OH     10.5 -1 2
+2C    CA    CA    CA     1.1 -1 2
+
+[references]
+amber14sb/1AKI.extxyz
+amber14sb/1AKI_ACE_100-104_NME.extxyz
+amber14sb/1AKI_ACE_118-122_NME.extxyz
+amber14sb/1AKI_ACE_2-6_NME.extxyz
+amber14sb/1AKI_ACE_20-24_NME.extxyz
+amber14sb/1AKI_ACE_40-44_NME.extxyz
+amber14sb/1AKI_ACE_60-64_NME.extxyz
+amber14sb/1AKI_ACE_80-84_NME.extxyz
+amber14sb/1AKI_HID15_capped.extxyz
+amber14sb/1AKI_HIE15_capped.extxyz
+amber14sb/1AKI_HIP15_capped.extxyz
+amber14sb/2LZM.extxyz
+amber14sb/2LZM_ASH10_capped.extxyz
+amber14sb/2LZM_CALA_41.extxyz
+amber14sb/2LZM_CARG_8.extxyz
+amber14sb/2LZM_CASN_40.extxyz
+amber14sb/2LZM_CASP_10.extxyz
+amber14sb/2LZM_CCYS_54.extxyz
+amber14sb/2LZM_CGLN_69.extxyz
+amber14sb/2LZM_CGLU_5.extxyz
+amber14sb/2LZM_CGLY_12.extxyz
+amber14sb/2LZM_CHID_31.extxyz
+amber14sb/2LZM_CHIE_31.extxyz
+amber14sb/2LZM_CHIP_31.extxyz
+amber14sb/2LZM_CILE_9.extxyz
+amber14sb/2LZM_CLEU_7.extxyz
+amber14sb/2LZM_CLYS_16.extxyz
+amber14sb/2LZM_CMET_6.extxyz
+amber14sb/2LZM_CPHE_4.extxyz
+amber14sb/2LZM_CPRO_37.extxyz
+amber14sb/2LZM_CSER_36.extxyz
+amber14sb/2LZM_CTHR_21.extxyz
+amber14sb/2LZM_CTRP_126.extxyz
+amber14sb/2LZM_CTYR_18.extxyz
+amber14sb/2LZM_CVAL_57.extxyz
+amber14sb/2LZM_CYS54_capped.extxyz
+amber14sb/2LZM_CYS97_capped.extxyz
+amber14sb/2LZM_GLH11_capped.extxyz
+amber14sb/2LZM_HID31_capped.extxyz
+amber14sb/2LZM_HIE31_capped.extxyz
+amber14sb/2LZM_HIP31_capped.extxyz
+amber14sb/2LZM_LYN16_capped.extxyz
+amber14sb/2LZM_NALA_41.extxyz
+amber14sb/2LZM_NARG_8.extxyz
+amber14sb/2LZM_NASN_2.extxyz
+amber14sb/2LZM_NASP_10.extxyz
+amber14sb/2LZM_NCYS_54.extxyz
+amber14sb/2LZM_NGLN_69.extxyz
+amber14sb/2LZM_NGLU_5.extxyz
+amber14sb/2LZM_NGLY_12.extxyz
+amber14sb/2LZM_NHID_31.extxyz
+amber14sb/2LZM_NHIE_31.extxyz
+amber14sb/2LZM_NHIP_31.extxyz
+amber14sb/2LZM_NILE_3.extxyz
+amber14sb/2LZM_NLEU_7.extxyz
+amber14sb/2LZM_NLYS_16.extxyz
+amber14sb/2LZM_NMET_1.extxyz
+amber14sb/2LZM_NPHE_4.extxyz
+amber14sb/2LZM_NPRO_37.extxyz
+amber14sb/2LZM_NSER_36.extxyz
+amber14sb/2LZM_NTHR_21.extxyz
+amber14sb/2LZM_NTRP_126.extxyz
+amber14sb/2LZM_NTYR_18.extxyz
+amber14sb/2LZM_NVAL_57.extxyz

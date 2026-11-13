@@ -1,0 +1,38 @@
+# soapff library: the solution library of clayff_edge (its second step).  Not used alone.
+# The two particle files and liquid water, the chloride solutions and the same in vacuum (ClayFF water and ions), not relaxed.
+# (examples/library_water/build_library_clayff_edge_water.py of soapff-gui)
+
+[library]
+name        = clayff_edge_water
+engine      = clayff
+hidden      = yes
+description = second step of clayff_edge: water (flexible SPC) and the ions of ClayFF Table 1
+reference   = R. T. Cygan et al. 2004; T. R. Underwood, I. C. Bourg 2020
+prebuilt    = clayff/prebuilt/library_clayff_edge_water.npz
+prebuilt_sha = e35d768bf29f8432
+
+[soap]
+r_cut = 5.0
+n_max = 4
+l_max = 3
+sigma = 0.4
+water_in_soap = yes
+threshold = 0.9
+
+[references]
+clayff/edge/clay_montmorillonite.data
+clayff/edge/clay_montmorillonite_2.data  prune=0.999
+clayff/water/water.data  prune=0.99
+clayff/water/NaCl.data  prune=0.99
+clayff/water/KCl.data  prune=0.99
+clayff/water/CsCl.data  prune=0.99
+clayff/water/CaCl2.data  prune=0.99
+clayff/water/BaCl2.data  prune=0.99
+clayff/water/vac_water_film.data  prune=0.99
+clayff/water/vac_water_film_thin.data  prune=0.99
+clayff/water/vac_water_droplet.data  prune=0.99
+clayff/water/vac_NaCl_film.data  prune=0.99
+clayff/water/vac_KCl_film.data  prune=0.99
+clayff/water/vac_CsCl_film.data  prune=0.99
+clayff/water/vac_CaCl2_film.data  prune=0.99
+clayff/water/vac_BaCl2_film.data  prune=0.99

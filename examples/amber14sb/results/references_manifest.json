@@ -1,0 +1,1056 @@
+{
+ "refs/1AKI": {
+  "atoms": 1960,
+  "charge": 8.0,
+  "templates": [
+   "ALA",
+   "ARG",
+   "ASN",
+   "ASP",
+   "CLEU",
+   "CYX",
+   "GLN",
+   "GLU",
+   "GLY",
+   "HID",
+   "ILE",
+   "LEU",
+   "LYS",
+   "MET",
+   "NLYS",
+   "PHE",
+   "PRO",
+   "SER",
+   "THR",
+   "TRP",
+   "TYR",
+   "VAL"
+  ]
+ },
+ "refs/2LZM": {
+  "atoms": 2643,
+  "charge": 8.0,
+  "templates": [
+   "ALA",
+   "ARG",
+   "ASN",
+   "ASP",
+   "CLEU",
+   "CYS",
+   "GLN",
+   "GLU",
+   "GLY",
+   "HID",
+   "ILE",
+   "LEU",
+   "LYS",
+   "MET",
+   "NMET",
+   "PHE",
+   "PRO",
+   "SER",
+   "THR",
+   "TRP",
+   "TYR",
+   "VAL"
+  ]
+ },
+ "refs/1AKI_HID15_capped": {
+  "atoms": 101,
+  "charge": 2.0,
+  "templates": [
+   "ACE",
+   "ARG",
+   "GLY",
+   "HID",
+   "LEU",
+   "LYS",
+   "NME"
+  ]
+ },
+ "refs/1AKI_HIE15_capped": {
+  "atoms": 101,
+  "charge": 2.0,
+  "templates": [
+   "ACE",
+   "ARG",
+   "GLY",
+   "HIE",
+   "LEU",
+   "LYS",
+   "NME"
+  ]
+ },
+ "refs/1AKI_HIP15_capped": {
+  "atoms": 102,
+  "charge": 3.0,
+  "templates": [
+   "ACE",
+   "ARG",
+   "GLY",
+   "HIP",
+   "LEU",
+   "LYS",
+   "NME"
+  ]
+ },
+ "refs/2LZM_HID31_capped": {
+  "atoms": 93,
+  "charge": 0.0,
+  "templates": [
+   "ACE",
+   "GLY",
+   "HID",
+   "ILE",
+   "LEU",
+   "NME"
+  ]
+ },
+ "refs/2LZM_HIE31_capped": {
+  "atoms": 93,
+  "charge": 0.0,
+  "templates": [
+   "ACE",
+   "GLY",
+   "HIE",
+   "ILE",
+   "LEU",
+   "NME"
+  ]
+ },
+ "refs/2LZM_HIP31_capped": {
+  "atoms": 94,
+  "charge": 1.0,
+  "templates": [
+   "ACE",
+   "GLY",
+   "HIP",
+   "ILE",
+   "LEU",
+   "NME"
+  ]
+ },
+ "refs/2LZM_ASH10_capped": {
+  "atoms": 90,
+  "charge": 0.0,
+  "templates": [
+   "ACE",
+   "ARG",
+   "ASH",
+   "GLU",
+   "GLY",
+   "ILE",
+   "NME"
+  ]
+ },
+ "refs/2LZM_GLH11_capped": {
+  "atoms": 85,
+  "charge": -1.0,
+  "templates": [
+   "ACE",
+   "ASP",
+   "GLH",
+   "GLY",
+   "ILE",
+   "LEU",
+   "NME"
+  ]
+ },
+ "refs/2LZM_LYN16_capped": {
+  "atoms": 116,
+  "charge": 1.0,
+  "templates": [
+   "ACE",
+   "ARG",
+   "ILE",
+   "LEU",
+   "LYN",
+   "NME",
+   "TYR"
+  ]
+ },
+ "refs/2LZM_CYS54_capped": {
+  "atoms": 82,
+  "charge": 1.0,
+  "templates": [
+   "ACE",
+   "ARG",
+   "ASN",
+   "CYS",
+   "GLY",
+   "NME"
+  ]
+ },
+ "refs/2LZM_CYS97_capped": {
+  "atoms": 100,
+  "charge": 2.0,
+  "templates": [
+   "ACE",
+   "ALA",
+   "ARG",
+   "CYS",
+   "LEU",
+   "NME"
+  ]
+ },
+ "refs/2LZM_NMET_1": {
+  "atoms": 73,
+  "charge": 0.0,
+  "templates": [
+   "ASN",
+   "CPHE",
+   "ILE",
+   "NMET"
+  ]
+ },
+ "refs/2LZM_NASN_2": {
+  "atoms": 71,
+  "charge": -1.0,
+  "templates": [
+   "CGLU",
+   "ILE",
+   "NASN",
+   "PHE"
+  ]
+ },
+ "refs/2LZM_NILE_3": {
+  "atoms": 74,
+  "charge": -1.0,
+  "templates": [
+   "CMET",
+   "GLU",
+   "NILE",
+   "PHE"
+  ]
+ },
+ "refs/2LZM_NPHE_4": {
+  "atoms": 74,
+  "charge": -1.0,
+  "templates": [
+   "CLEU",
+   "GLU",
+   "MET",
+   "NPHE"
+  ]
+ },
+ "refs/2LZM_CPHE_4": {
+  "atoms": 73,
+  "charge": 0.0,
+  "templates": [
+   "ASN",
+   "CPHE",
+   "ILE",
+   "NMET"
+  ]
+ },
+ "refs/2LZM_NGLU_5": {
+  "atoms": 78,
+  "charge": 0.0,
+  "templates": [
+   "CARG",
+   "LEU",
+   "MET",
+   "NGLU"
+  ]
+ },
+ "refs/2LZM_CGLU_5": {
+  "atoms": 71,
+  "charge": -1.0,
+  "templates": [
+   "CGLU",
+   "ILE",
+   "NASN",
+   "PHE"
+  ]
+ },
+ "refs/2LZM_CMET_6": {
+  "atoms": 74,
+  "charge": -1.0,
+  "templates": [
+   "CMET",
+   "GLU",
+   "NILE",
+   "PHE"
+  ]
+ },
+ "refs/2LZM_NLEU_7": {
+  "atoms": 77,
+  "charge": -0.0,
+  "templates": [
+   "ARG",
+   "CASP",
+   "ILE",
+   "NLEU"
+  ]
+ },
+ "refs/2LZM_CLEU_7": {
+  "atoms": 74,
+  "charge": -1.0,
+  "templates": [
+   "CLEU",
+   "GLU",
+   "MET",
+   "NPHE"
+  ]
+ },
+ "refs/2LZM_NARG_8": {
+  "atoms": 73,
+  "charge": -1.0,
+  "templates": [
+   "ASP",
+   "CGLU",
+   "ILE",
+   "NARG"
+  ]
+ },
+ "refs/2LZM_CARG_8": {
+  "atoms": 78,
+  "charge": 0.0,
+  "templates": [
+   "CARG",
+   "LEU",
+   "MET",
+   "NGLU"
+  ]
+ },
+ "refs/2LZM_CILE_9": {
+  "atoms": 82,
+  "charge": 1.0,
+  "templates": [
+   "ARG",
+   "CILE",
+   "LEU",
+   "NMET"
+  ]
+ },
+ "refs/2LZM_NASP_10": {
+  "atoms": 56,
+  "charge": -2.0,
+  "templates": [
+   "CLEU",
+   "GLU",
+   "GLY",
+   "NASP"
+  ]
+ },
+ "refs/2LZM_CASP_10": {
+  "atoms": 77,
+  "charge": -0.0,
+  "templates": [
+   "ARG",
+   "CASP",
+   "ILE",
+   "NLEU"
+  ]
+ },
+ "refs/2LZM_NGLY_12": {
+  "atoms": 72,
+  "charge": 1.0,
+  "templates": [
+   "ARG",
+   "CLEU",
+   "LEU",
+   "NGLY"
+  ]
+ },
+ "refs/2LZM_CGLY_12": {
+  "atoms": 56,
+  "charge": -2.0,
+  "templates": [
+   "ASP",
+   "CGLY",
+   "GLU",
+   "NILE"
+  ]
+ },
+ "refs/2LZM_NLYS_16": {
+  "atoms": 87,
+  "charge": 2.0,
+  "templates": [
+   "CLYS",
+   "ILE",
+   "NLYS",
+   "TYR"
+  ]
+ },
+ "refs/2LZM_CLYS_16": {
+  "atoms": 87,
+  "charge": 2.0,
+  "templates": [
+   "ARG",
+   "CLYS",
+   "LEU",
+   "NLEU"
+  ]
+ },
+ "refs/2LZM_NTYR_18": {
+  "atoms": 72,
+  "charge": 0.0,
+  "templates": [
+   "ASP",
+   "CTHR",
+   "LYS",
+   "NTYR"
+  ]
+ },
+ "refs/2LZM_CTYR_18": {
+  "atoms": 84,
+  "charge": 1.0,
+  "templates": [
+   "CTYR",
+   "ILE",
+   "LYS",
+   "NLEU"
+  ]
+ },
+ "refs/2LZM_NTHR_21": {
+  "atoms": 60,
+  "charge": -1.0,
+  "templates": [
+   "CTYR",
+   "GLU",
+   "GLY",
+   "NTHR"
+  ]
+ },
+ "refs/2LZM_CTHR_21": {
+  "atoms": 72,
+  "charge": 0.0,
+  "templates": [
+   "ASP",
+   "CTHR",
+   "LYS",
+   "NTYR"
+  ]
+ },
+ "refs/2LZM_NHID_31": {
+  "atoms": 72,
+  "charge": 0.0,
+  "templates": [
+   "CTHR",
+   "LEU",
+   "NHID"
+  ]
+ },
+ "refs/2LZM_CHID_31": {
+  "atoms": 53,
+  "charge": 0.0,
+  "templates": [
+   "CHID",
+   "GLY",
+   "ILE",
+   "NGLY"
+  ]
+ },
+ "refs/2LZM_NHIE_31": {
+  "atoms": 72,
+  "charge": 0.0,
+  "templates": [
+   "CTHR",
+   "LEU",
+   "NHIE"
+  ]
+ },
+ "refs/2LZM_CHIE_31": {
+  "atoms": 53,
+  "charge": 0.0,
+  "templates": [
+   "CHIE",
+   "GLY",
+   "ILE",
+   "NGLY"
+  ]
+ },
+ "refs/2LZM_NHIP_31": {
+  "atoms": 73,
+  "charge": 1.0,
+  "templates": [
+   "CTHR",
+   "LEU",
+   "NHIP"
+  ]
+ },
+ "refs/2LZM_CHIP_31": {
+  "atoms": 54,
+  "charge": 1.0,
+  "templates": [
+   "CHIP",
+   "GLY",
+   "ILE",
+   "NGLY"
+  ]
+ },
+ "refs/2LZM_NSER_36": {
+  "atoms": 58,
+  "charge": 0.0,
+  "templates": [
+   "CLEU",
+   "NSER",
+   "PRO",
+   "SER"
+  ]
+ },
+ "refs/2LZM_CSER_36": {
+  "atoms": 69,
+  "charge": 1.0,
+  "templates": [
+   "CSER",
+   "LYS",
+   "NLEU",
+   "THR"
+  ]
+ },
+ "refs/2LZM_NPRO_37": {
+  "atoms": 61,
+  "charge": 0.0,
+  "templates": [
+   "CASN",
+   "LEU",
+   "NPRO",
+   "SER"
+  ]
+ },
+ "refs/2LZM_CPRO_37": {
+  "atoms": 64,
+  "charge": 1.0,
+  "templates": [
+   "CPRO",
+   "LYS",
+   "NTHR",
+   "SER"
+  ]
+ },
+ "refs/2LZM_CASN_40": {
+  "atoms": 61,
+  "charge": 0.0,
+  "templates": [
+   "CASN",
+   "LEU",
+   "NPRO",
+   "SER"
+  ]
+ },
+ "refs/2LZM_NALA_41": {
+  "atoms": 56,
+  "charge": 1.0,
+  "templates": [
+   "ALA",
+   "CSER",
+   "LYS",
+   "NALA"
+  ]
+ },
+ "refs/2LZM_CALA_41": {
+  "atoms": 57,
+  "charge": -0.0,
+  "templates": [
+   "ASN",
+   "CALA",
+   "LEU",
+   "NSER"
+  ]
+ },
+ "refs/2LZM_NCYS_54": {
+  "atoms": 51,
+  "charge": -0.0,
+  "templates": [
+   "ASN",
+   "CVAL",
+   "GLY",
+   "NCYS"
+  ]
+ },
+ "refs/2LZM_CCYS_54": {
+  "atoms": 59,
+  "charge": 1.0,
+  "templates": [
+   "ARG",
+   "ASN",
+   "CCYS",
+   "NGLY"
+  ]
+ },
+ "refs/2LZM_NVAL_57": {
+  "atoms": 74,
+  "charge": 1.0,
+  "templates": [
+   "CLYS",
+   "ILE",
+   "NVAL",
+   "THR"
+  ]
+ },
+ "refs/2LZM_CVAL_57": {
+  "atoms": 51,
+  "charge": -0.0,
+  "templates": [
+   "ASN",
+   "CVAL",
+   "GLY",
+   "NCYS"
+  ]
+ },
+ "refs/2LZM_NGLN_69": {
+  "atoms": 60,
+  "charge": -2.0,
+  "templates": [
+   "ASP",
+   "CASP",
+   "NGLN",
+   "VAL"
+  ]
+ },
+ "refs/2LZM_CGLN_69": {
+  "atoms": 73,
+  "charge": -0.0,
+  "templates": [
+   "ASN",
+   "CGLN",
+   "NLEU",
+   "PHE"
+  ]
+ },
+ "refs/2LZM_NTRP_126": {
+  "atoms": 64,
+  "charge": -2.0,
+  "templates": [
+   "ASP",
+   "CALA",
+   "GLU",
+   "NTRP"
+  ]
+ },
+ "refs/2LZM_CTRP_126": {
+  "atoms": 90,
+  "charge": 2.0,
+  "templates": [
+   "ARG",
+   "CTRP",
+   "LYS",
+   "NGLN"
+  ]
+ },
+ "refs/1AKI_ACE_2-6_NME": {
+  "atoms": 90,
+  "charge": 1.0,
+  "templates": [
+   "ACE",
+   "ARG",
+   "CYS",
+   "GLY",
+   "NME",
+   "PHE",
+   "VAL"
+  ]
+ },
+ "refs/1AKI_ACE_20-24_NME": {
+  "atoms": 96,
+  "charge": 1.0,
+  "templates": [
+   "ACE",
+   "ARG",
+   "GLY",
+   "NME",
+   "SER",
+   "TYR"
+  ]
+ },
+ "refs/1AKI_ACE_40-44_NME": {
+  "atoms": 81,
+  "charge": 0.0,
+  "templates": [
+   "ACE",
+   "ALA",
+   "ASN",
+   "GLN",
+   "NME",
+   "THR"
+  ]
+ },
+ "refs/1AKI_ACE_60-64_NME": {
+  "atoms": 106,
+  "charge": 1.0,
+  "templates": [
+   "ACE",
+   "ARG",
+   "CYS",
+   "NME",
+   "SER",
+   "TRP"
+  ]
+ },
+ "refs/1AKI_ACE_80-84_NME": {
+  "atoms": 82,
+  "charge": 0.0,
+  "templates": [
+   "ACE",
+   "ALA",
+   "CYS",
+   "LEU",
+   "NME",
+   "SER"
+  ]
+ },
+ "refs/1AKI_ACE_100-104_NME": {
+  "atoms": 63,
+  "charge": -1.0,
+  "templates": [
+   "ACE",
+   "ASN",
+   "ASP",
+   "GLY",
+   "NME",
+   "SER"
+  ]
+ },
+ "refs/1AKI_ACE_118-122_NME": {
+  "atoms": 81,
+  "charge": -1.0,
+  "templates": [
+   "ACE",
+   "ALA",
+   "ASP",
+   "GLN",
+   "NME",
+   "THR",
+   "VAL"
+  ]
+ },
+ "refs/tip3p_NaCl": {
+  "atoms": 766,
+  "charge": 0.0,
+  "templates": [
+   "CL",
+   "HOH",
+   "NA"
+  ]
+ },
+ "refs/ion_Li": {
+  "atoms": 1,
+  "charge": 1.0,
+  "templates": [
+   "LI"
+  ]
+ },
+ "refs/ion_Na": {
+  "atoms": 1,
+  "charge": 1.0,
+  "templates": [
+   "NA"
+  ]
+ },
+ "refs/ion_K": {
+  "atoms": 1,
+  "charge": 1.0,
+  "templates": [
+   "K"
+  ]
+ },
+ "refs/ion_Rb": {
+  "atoms": 1,
+  "charge": 1.0,
+  "templates": [
+   "RB"
+  ]
+ },
+ "refs/ion_Cs": {
+  "atoms": 1,
+  "charge": 1.0,
+  "templates": [
+   "CS"
+  ]
+ },
+ "refs/ion_F": {
+  "atoms": 1,
+  "charge": -1.0,
+  "templates": [
+   "F"
+  ]
+ },
+ "refs/ion_Cl": {
+  "atoms": 1,
+  "charge": -1.0,
+  "templates": [
+   "CL"
+  ]
+ },
+ "refs/ion_Br": {
+  "atoms": 1,
+  "charge": -1.0,
+  "templates": [
+   "BR"
+  ]
+ },
+ "refs/ion_I": {
+  "atoms": 1,
+  "charge": -1.0,
+  "templates": [
+   "IOD"
+  ]
+ },
+ "refs/ion_Mg": {
+  "atoms": 1,
+  "charge": 2.0,
+  "templates": [
+   "MG"
+  ]
+ },
+ "refs/ion_Ca": {
+  "atoms": 1,
+  "charge": 2.0,
+  "templates": [
+   "CA"
+  ]
+ },
+ "refs/ion_Zn": {
+  "atoms": 1,
+  "charge": 2.0,
+  "templates": [
+   "ZN"
+  ]
+ },
+ "refs/ion_Sr": {
+  "atoms": 1,
+  "charge": 2.0,
+  "templates": [
+   "SR"
+  ]
+ },
+ "refs/ion_Ba": {
+  "atoms": 1,
+  "charge": 2.0,
+  "templates": [
+   "BA"
+  ]
+ },
+ "test/1UBQ": {
+  "atoms": 1231,
+  "charge": 0.0,
+  "templates": [
+   "ALA",
+   "ARG",
+   "ASN",
+   "ASP",
+   "CGLY",
+   "GLN",
+   "GLU",
+   "GLY",
+   "HID",
+   "ILE",
+   "LEU",
+   "LYS",
+   "NMET",
+   "PHE",
+   "PRO",
+   "SER",
+   "THR",
+   "TYR",
+   "VAL"
+  ]
+ },
+ "test/5PTI": {
+  "atoms": 892,
+  "charge": 6.0,
+  "templates": [
+   "ALA",
+   "ARG",
+   "ASN",
+   "ASP",
+   "CALA",
+   "CYX",
+   "GLN",
+   "GLU",
+   "GLY",
+   "ILE",
+   "LEU",
+   "LYS",
+   "MET",
+   "NARG",
+   "PHE",
+   "PRO",
+   "SER",
+   "THR",
+   "TYR",
+   "VAL"
+  ]
+ },
+ "test/1CRN": {
+  "atoms": 642,
+  "charge": 0.0,
+  "templates": [
+   "ALA",
+   "ARG",
+   "ASN",
+   "ASP",
+   "CASN",
+   "CYX",
+   "GLU",
+   "GLY",
+   "ILE",
+   "LEU",
+   "NTHR",
+   "PHE",
+   "PRO",
+   "SER",
+   "THR",
+   "TYR",
+   "VAL"
+  ]
+ },
+ "test/1L2Y": {
+  "atoms": 304,
+  "charge": 1.0,
+  "templates": [
+   "ARG",
+   "ASP",
+   "CSER",
+   "GLN",
+   "GLY",
+   "ILE",
+   "LEU",
+   "LYS",
+   "NASN",
+   "PRO",
+   "SER",
+   "TRP",
+   "TYR"
+  ]
+ },
+ "test/1UBQ_1-5": {
+  "atoms": 92,
+  "charge": 0.0,
+  "templates": [
+   "CVAL",
+   "GLN",
+   "ILE",
+   "NMET",
+   "PHE"
+  ]
+ },
+ "test/1UBQ_30-36": {
+  "atoms": 114,
+  "charge": -1.0,
+  "templates": [
+   "ASP",
+   "CILE",
+   "GLN",
+   "GLU",
+   "GLY",
+   "LYS",
+   "NILE"
+  ]
+ },
+ "test/1UBQ_70-76": {
+  "atoms": 119,
+  "charge": 2.0,
+  "templates": [
+   "ARG",
+   "CGLY",
+   "GLY",
+   "LEU",
+   "NVAL"
+  ]
+ },
+ "test/1UBQ_ACE_10-15_NME": {
+  "atoms": 107,
+  "charge": 1.0,
+  "templates": [
+   "ACE",
+   "GLY",
+   "ILE",
+   "LEU",
+   "LYS",
+   "NME",
+   "THR"
+  ]
+ },
+ "test/1UBQ_ACE_50-55_NME": {
+  "atoms": 103,
+  "charge": -1.0,
+  "templates": [
+   "ACE",
+   "ARG",
+   "ASP",
+   "GLU",
+   "GLY",
+   "LEU",
+   "NME",
+   "THR"
+  ]
+ },
+ "test/1UBQ_md300K_5ps": {
+  "atoms": 1231,
+  "charge": 0.0,
+  "templates": [
+   "ALA",
+   "ARG",
+   "ASN",
+   "ASP",
+   "CGLY",
+   "GLN",
+   "GLU",
+   "GLY",
+   "HID",
+   "ILE",
+   "LEU",
+   "LYS",
+   "NMET",
+   "PHE",
+   "PRO",
+   "SER",
+   "THR",
+   "TYR",
+   "VAL"
+  ]
+ },
+ "test/1UBQ_md300K_10ps": {
+  "atoms": 1231,
+  "charge": 0.0,
+  "templates": [
+   "ALA",
+   "ARG",
+   "ASN",
+   "ASP",
+   "CGLY",
+   "GLN",
+   "GLU",
+   "GLY",
+   "HID",
+   "ILE",
+   "LEU",
+   "LYS",
+   "NMET",
+   "PHE",
+   "PRO",
+   "SER",
+   "THR",
+   "TYR",
+   "VAL"
+  ]
+ },
+ "test/1UBQ_md300K_15ps": {
+  "atoms": 1231,
+  "charge": 0.0,
+  "templates": [
+   "ALA",
+   "ARG",
+   "ASN",
+   "ASP",
+   "CGLY",
+   "GLN",
+   "GLU",
+   "GLY",
+   "HID",
+   "ILE",
+   "LEU",
+   "LYS",
+   "NMET",
+   "PHE",
+   "PRO",
+   "SER",
+   "THR",
+   "TYR",
+   "VAL"
+  ]
+ }
+}

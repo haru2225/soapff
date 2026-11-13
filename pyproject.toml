@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soapff"
+version = "0.1.0"
+description = "soapff: atom types, charges and the LAMMPS input of any structure from a library of reference structures (SOAP) - ClayFF, AMBER ff14SB, TIP3P, SPC/E, and libraries users write"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy", "ase", "dscribe"]
+
+[project.optional-dependencies]
+analysis = ["matplotlib", "sovapy"]     # System.analyze(): diffusion, g(r) and S(Q) of a finished run
+surfaces = ["pymatgen"]                 # soapff_cui.surfaces: (001) slabs of the minerals
+
+[project.scripts]
+soapff = "soapff.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/haru2225/soapff"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+# the libraries: the .txt files, their reference structures (and force-field files), and the prebuilt ClayFF tables
+soapff = ["libraries/*.txt", "libraries/*/*.extxyz", "libraries/*/*.data", "libraries/*/*/*.extxyz", "libraries/*/*/*.data",
+          "libraries/*/*/*.settings", "libraries/clayff/prebuilt/*.npz"]

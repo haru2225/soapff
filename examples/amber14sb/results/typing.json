@@ -1,0 +1,174 @@
+{
+ "library": "amber14sb",
+ "table_seconds": 0.0,
+ "structures": {
+  "1CRN": {
+   "atoms": 642,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity_soap": 0.9701,
+   "min_similarity_fragment": 1.0,
+   "terms": {
+    "bonds": 652,
+    "angles": 1183,
+    "dihedrals": 2164,
+    "impropers": 125
+   },
+   "seconds": 1.38
+  },
+  "1L2Y": {
+   "atoms": 304,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity_soap": 0.9719,
+   "min_similarity_fragment": 1.0,
+   "terms": {
+    "bonds": 310,
+    "angles": 565,
+    "dihedrals": 956,
+    "impropers": 61
+   },
+   "seconds": 0.2
+  },
+  "1UBQ": {
+   "atoms": 1231,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity_soap": 0.9751,
+   "min_similarity_fragment": 1.0,
+   "terms": {
+    "bonds": 1237,
+    "angles": 2257,
+    "dihedrals": 4044,
+    "impropers": 216
+   },
+   "seconds": 0.51
+  },
+  "1UBQ_1-5": {
+   "atoms": 92,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity_soap": 0.9876,
+   "min_similarity_fragment": 1.0,
+   "terms": {
+    "bonds": 92,
+    "angles": 166,
+    "dihedrals": 289,
+    "impropers": 17
+   },
+   "seconds": 0.1
+  },
+  "1UBQ_30-36": {
+   "atoms": 114,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity_soap": 0.9888,
+   "min_similarity_fragment": 1.0,
+   "terms": {
+    "bonds": 113,
+    "angles": 207,
+    "dihedrals": 356,
+    "impropers": 17
+   },
+   "seconds": 0.12
+  },
+  "1UBQ_70-76": {
+   "atoms": 119,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity_soap": 0.9751,
+   "min_similarity_fragment": 1.0,
+   "terms": {
+    "bonds": 118,
+    "angles": 213,
+    "dihedrals": 322,
+    "impropers": 21
+   },
+   "seconds": 0.13
+  },
+  "1UBQ_ACE_10-15_NME": {
+   "atoms": 107,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity_soap": 0.9847,
+   "min_similarity_fragment": 1.0,
+   "terms": {
+    "bonds": 106,
+    "angles": 194,
+    "dihedrals": 344,
+    "impropers": 14
+   },
+   "seconds": 0.11
+  },
+  "1UBQ_ACE_50-55_NME": {
+   "atoms": 103,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity_soap": 0.9871,
+   "min_similarity_fragment": 1.0,
+   "terms": {
+    "bonds": 102,
+    "angles": 181,
+    "dihedrals": 293,
+    "impropers": 20
+   },
+   "seconds": 0.14
+  },
+  "1UBQ_md300K_10ps": {
+   "atoms": 1231,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity_soap": 0.9798,
+   "min_similarity_fragment": 1.0,
+   "terms": {
+    "bonds": 1237,
+    "angles": 2257,
+    "dihedrals": 4044,
+    "impropers": 216
+   },
+   "seconds": 0.41
+  },
+  "1UBQ_md300K_15ps": {
+   "atoms": 1231,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity_soap": 0.9817,
+   "min_similarity_fragment": 1.0,
+   "terms": {
+    "bonds": 1237,
+    "angles": 2257,
+    "dihedrals": 4044,
+    "impropers": 216
+   },
+   "seconds": 0.46
+  },
+  "1UBQ_md300K_5ps": {
+   "atoms": 1231,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity_soap": 0.9773,
+   "min_similarity_fragment": 1.0,
+   "terms": {
+    "bonds": 1237,
+    "angles": 2257,
+    "dihedrals": 4044,
+    "impropers": 216
+   },
+   "seconds": 0.38
+  },
+  "5PTI": {
+   "atoms": 892,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity_soap": 0.9659,
+   "min_similarity_fragment": 1.0,
+   "terms": {
+    "bonds": 906,
+    "angles": 1626,
+    "dihedrals": 2769,
+    "impropers": 199
+   },
+   "seconds": 0.34
+  }
+ }
+}

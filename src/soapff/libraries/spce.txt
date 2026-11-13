@@ -1,0 +1,80 @@
+# soapff library: SPC/E water (Berendsen et al. 1987, rigid) with the ions of OpenMM amber14/spce.xml: Joung-Cheatham monovalent ions for SPC/E (2008) and Li-Merz 12-6 divalent ions (2013).
+# Parameters converted from OpenMM 8.6.1 (amber14/spce.xml) by examples/amber14sb/make_library_txt.py.
+# The water is rigid (SHAKE on the O-H bonds and the H-O-H angle during the MD; flexible with these force constants in the
+# minimisation).  Every ion is an atom without bonds: its element gives its type.
+
+[library]
+name        = spce
+engine      = molecular
+description = SPC/E water (Berendsen et al. 1987, rigid) with the ions of OpenMM amber14/spce.xml: Joung-Cheatham monovalent ions for SPC/E (2008) and Li-Merz 12-6 divalent ions (2013)
+reference   = H. J. C. Berendsen, J. R. Grigera, T. P. Straatsma, J. Phys. Chem. 91, 6269 (1987); I. S. Joung, T. E. Cheatham, J. Phys. Chem. B 112, 9020 (2008); P. Li et al., J. Chem. Theory Comput. 9, 2733 (2013)
+source      = OpenMM 8.6.1 amber14/spce.xml
+
+[soap]
+r_cut = 5.0
+n_max = 4
+l_max = 3
+sigma = 0.4
+depth = 4
+prune = 0.999
+threshold = 0.9
+
+[bonding]
+factor = 1.15
+ions   = Li Na K Rb Cs F Cl Br I Mg Ca Zn Sr Ba
+
+[lammps]
+pair_style     = lj/cut/coul/long 10.0
+pair_modify    = mix arithmetic
+kspace_style   = pppm 1.0e-5
+bond_style     = harmonic
+angle_style    = harmonic
+dihedral_style = charmm
+improper_style = cvff
+special_bonds  = amber
+rigid          = OW HW
+timestep       = 1.0
+
+[types]
+# type  element  mass  epsilon(kcal/mol)  sigma(A)
+Li+    Li       6.94      0.3367344    1.409401772
+Na+    Na      22.99      0.3526418    2.159538493
+K+     K        39.1      0.4297054    2.838403316
+Rb+    Rb      85.47      0.4451036    3.094982147
+Cs+    Cs     132.91      0.0898565    3.601012619
+F-     F          19      0.0074005    4.021516814
+Cl-    Cl      35.45       0.012785     4.83045285
+Br-    Br       79.9      0.0269586    4.901724747
+I-     I       126.9      0.0427845    5.201066717
+Zn2+   Zn       65.4     0.00354287    2.273573529
+Mg2+   Mg     24.305     0.01020237    2.423244513
+Ca2+   Ca      40.08     0.09788018    2.913238808
+Sr2+   Sr      87.62     0.20826406    3.196544601
+Ba2+   Ba     137.33     0.37126402    3.527958924
+OW     O    15.99943         0.1553    3.165719505
+HW     H    1.007947              0             10
+
+[bonds]
+# t1 t2  K(kcal/mol/A^2)  r0(A)       E = K (r - r0)^2
+OW    HW             553          1
+
+[angles]
+# t1 t2 t3  K(kcal/mol/rad^2)  theta0(deg)       E = K (theta - theta0)^2
+HW    OW    HW             100       109.47
+
+[references]
+spce/spce_NaCl.extxyz
+spce/ion_Li.extxyz
+spce/ion_Na.extxyz
+spce/ion_K.extxyz
+spce/ion_Rb.extxyz
+spce/ion_Cs.extxyz
+spce/ion_F.extxyz
+spce/ion_Cl.extxyz
+spce/ion_Br.extxyz
+spce/ion_I.extxyz
+spce/ion_Mg.extxyz
+spce/ion_Ca.extxyz
+spce/ion_Zn.extxyz
+spce/ion_Sr.extxyz
+spce/ion_Ba.extxyz

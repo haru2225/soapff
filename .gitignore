@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.DS_Store
+# outputs of the examples
+*_soapff/
+quickstart_out/
+clayff_test/
+*.lammpstrj
+examples/amber14sb/pdb/

@@ -1,0 +1,337 @@
+{
+ "brucite_bulk 2x2x1": {
+  "atoms": 960,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 1.0,
+  "seconds": 1.5
+ },
+ "brucite_bulk 2x2x1 displaced": {
+  "atoms": 960,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9934,
+  "seconds": 0.4
+ },
+ "kaolinite_bulk 2x2x1": {
+  "atoms": 1632,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 1.0,
+  "seconds": 0.5
+ },
+ "kaolinite_bulk 2x2x1 displaced": {
+  "atoms": 1632,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9952,
+  "seconds": 0.5
+ },
+ "lizerdite_bulk 2x2x1": {
+  "atoms": 1296,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 1.0,
+  "seconds": 0.4
+ },
+ "lizerdite_bulk 2x2x1 displaced": {
+  "atoms": 1296,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9957,
+  "seconds": 0.4
+ },
+ "montmorillonite_dry_Na 2x2x1": {
+  "atoms": 652,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 1.0,
+  "seconds": 0.2
+ },
+ "montmorillonite_dry_Na 2x2x1 displaced": {
+  "atoms": 652,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9957,
+  "seconds": 0.2
+ },
+ "muscovite_1M_bulk 2x2x1": {
+  "atoms": 672,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 1.0,
+  "seconds": 0.2
+ },
+ "muscovite_1M_bulk 2x2x1 displaced": {
+  "atoms": 672,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9963,
+  "seconds": 0.2
+ },
+ "muscovite_2M1_bulk 2x2x1": {
+  "atoms": 1344,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 1.0,
+  "seconds": 0.3
+ },
+ "muscovite_2M1_bulk 2x2x1 displaced": {
+  "atoms": 1344,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9963,
+  "seconds": 0.3
+ },
+ "nanpingite_bulk 2x2x1": {
+  "atoms": 1344,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 1.0,
+  "seconds": 0.3
+ },
+ "nanpingite_bulk 2x2x1 displaced": {
+  "atoms": 1344,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9956,
+  "seconds": 0.3
+ },
+ "phlogopite_1M_bulk 2x2x1": {
+  "atoms": 704,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 1.0,
+  "seconds": 0.2
+ },
+ "phlogopite_1M_bulk 2x2x1 displaced": {
+  "atoms": 704,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9944,
+  "seconds": 0.2
+ },
+ "pyrophyllite_2_bulk 2x2x1": {
+  "atoms": 1280,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 1.0,
+  "seconds": 0.3
+ },
+ "pyrophyllite_2_bulk 2x2x1 displaced": {
+  "atoms": 1280,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.996,
+  "seconds": 0.3
+ },
+ "pyrophyllite_bulk 2x2x1": {
+  "atoms": 1280,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 1.0,
+  "seconds": 0.3
+ },
+ "pyrophyllite_bulk 2x2x1 displaced": {
+  "atoms": 1280,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9956,
+  "seconds": 0.3
+ },
+ "talc_bulk 2x2x1": {
+  "atoms": 1512,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 1.0,
+  "seconds": 0.4
+ },
+ "talc_bulk 2x2x1 displaced": {
+  "atoms": 1512,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9957,
+  "seconds": 0.4
+ },
+ "brucite_001 2x2x1": {
+  "atoms": 1920,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9995,
+  "seconds": 0.9
+ },
+ "brucite_001 2x2x1 displaced": {
+  "atoms": 1920,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9935,
+  "seconds": 0.7
+ },
+ "kaolinite_001 2x2x1": {
+  "atoms": 3264,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9996,
+  "seconds": 1.1
+ },
+ "kaolinite_001 2x2x1 displaced": {
+  "atoms": 3264,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9939,
+  "seconds": 1.2
+ },
+ "lizerdite_001 2x2x1": {
+  "atoms": 2592,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9995,
+  "seconds": 0.9
+ },
+ "lizerdite_001 2x2x1 displaced": {
+  "atoms": 2592,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.996,
+  "seconds": 1.1
+ },
+ "montmorillonite_dry_Na_001 2x2x1": {
+  "atoms": 1304,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.999,
+  "seconds": 0.3
+ },
+ "montmorillonite_dry_Na_001 2x2x1 displaced": {
+  "atoms": 1304,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9959,
+  "seconds": 0.6
+ },
+ "muscovite_1M_001 2x2x1": {
+  "atoms": 1344,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9995,
+  "seconds": 0.3
+ },
+ "muscovite_1M_001 2x2x1 displaced": {
+  "atoms": 1344,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9952,
+  "seconds": 0.3
+ },
+ "muscovite_2M1_001 2x2x1": {
+  "atoms": 1344,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9991,
+  "seconds": 0.3
+ },
+ "muscovite_2M1_001 2x2x1 displaced": {
+  "atoms": 1344,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9961,
+  "seconds": 0.3
+ },
+ "nanpingite_001 2x2x1": {
+  "atoms": 1344,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.999,
+  "seconds": 0.3
+ },
+ "nanpingite_001 2x2x1 displaced": {
+  "atoms": 1344,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.994,
+  "seconds": 0.3
+ },
+ "phlogopite_1M_001 2x2x1": {
+  "atoms": 1408,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9994,
+  "seconds": 0.3
+ },
+ "phlogopite_1M_001 2x2x1 displaced": {
+  "atoms": 1408,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9939,
+  "seconds": 0.3
+ },
+ "pyrophyllite_001 2x2x1": {
+  "atoms": 1280,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9994,
+  "seconds": 0.3
+ },
+ "pyrophyllite_001 2x2x1 displaced": {
+  "atoms": 1280,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9945,
+  "seconds": 0.3
+ },
+ "pyrophyllite_2_001 2x2x1": {
+  "atoms": 1280,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9992,
+  "seconds": 0.3
+ },
+ "pyrophyllite_2_001 2x2x1 displaced": {
+  "atoms": 1280,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9923,
+  "seconds": 0.3
+ },
+ "talc_001 2x2x1": {
+  "atoms": 1512,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9994,
+  "seconds": 0.4
+ },
+ "talc_001 2x2x1 displaced": {
+  "atoms": 1512,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 0.9902,
+  "seconds": 0.4
+ },
+ "kaolinite from CIF": {
+  "atoms": 408,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "min_similarity": 1.0,
+  "seconds": 0.9
+ },
+ "kaolinite with water": {
+  "atoms": 1659,
+  "sources": {
+   "soap": 1659
+  },
+  "roles": {
+   "mineral": 816,
+   "water": 843
+  },
+  "net_charge": 0.0,
+  "types": [
+   "ao",
+   "ho",
+   "hw",
+   "ob",
+   "oh",
+   "ow",
+   "st"
+  ]
+ }
+}

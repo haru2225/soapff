@@ -1,0 +1,54 @@
+# soapff library: ClayFF (Cygan, Liang, Kalinichev, J. Phys. Chem. B 108, 1255 (2004)), the default library of soapff-gui.
+#
+# engine clayff: soapff_cui (soapff-gui), unchanged.  Every atom gets the ClayFF type of the most similar atom of the references
+# (SOAP, same element) and the charge of that type in ClayFF Table 1; LJ, the O-H bond and the H-O-H / M-O-H angles of Tables 1
+# and 2 (soapff_cui/clayff.py) with the flexible SPC water.  The mineral is typed first, on the structure without the water;
+# the water and the ions (Na+ K+ Cs+ Ca2+ Ba2+ Cl-) in a second step with the solution library clayff_water.
+#
+# References: the 11 bulk layered minerals and their basal (0 0 1) slabs in vacuum (LAMMPS data files with the ClayFF type
+# names in the comments of Masses).  The slab rows are pruned at similarity 0.999.  To add a mineral, make your own library:
+#     soapff.new_library("myclay", extends="clayff");  soapff.add_reference("myclay", "mymineral.data")
+# (the data file of the mineral with its ClayFF types and charges; see examples/library/ of soapff-gui).
+
+[library]
+name        = clayff
+engine      = clayff
+description = ClayFF (Cygan et al. 2004): 11 layered minerals (montmorillonite, micas, kaolinite, talc, brucite, ...) and their basal surfaces; water and ions of ClayFF Table 1
+reference   = R. T. Cygan, J.-J. Liang, A. G. Kalinichev, J. Phys. Chem. B 108, 1255 (2004)
+solution    = clayff_water
+prebuilt    = clayff/prebuilt/library_clayff_bulk.npz
+prebuilt_sha = c3da9bdc673208da
+
+[soap]
+r_cut = 5.0
+n_max = 4
+l_max = 3
+sigma = 0.4
+water_in_soap = no
+threshold = 0.9
+
+[references]
+# bulk minerals (kept whole)
+clayff/bulk/brucite_bulk.data
+clayff/bulk/kaolinite_bulk.data
+clayff/bulk/lizerdite_bulk.data
+clayff/bulk/muscovite_1M_bulk.data
+clayff/bulk/muscovite_2M1_bulk.data
+clayff/bulk/nanpingite_bulk.data
+clayff/bulk/phlogopite_1M_bulk.data
+clayff/bulk/pyrophyllite_2_bulk.data
+clayff/bulk/pyrophyllite_bulk.data
+clayff/bulk/talc_bulk.data
+clayff/bulk/montmorillonite_dry_Na.data
+# basal (0 0 1) slabs in vacuum
+clayff/basal/brucite_001.data  prune=0.999
+clayff/basal/kaolinite_001.data  prune=0.999
+clayff/basal/lizerdite_001.data  prune=0.999
+clayff/basal/muscovite_1M_001.data  prune=0.999
+clayff/basal/muscovite_2M1_001.data  prune=0.999
+clayff/basal/nanpingite_001.data  prune=0.999
+clayff/basal/phlogopite_1M_001.data  prune=0.999
+clayff/basal/pyrophyllite_2_001.data  prune=0.999
+clayff/basal/pyrophyllite_001.data  prune=0.999
+clayff/basal/talc_001.data  prune=0.999
+clayff/basal/montmorillonite_dry_Na_001.data  prune=0.999
