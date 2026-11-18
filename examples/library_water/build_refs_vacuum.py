@@ -1,6 +1,8 @@
-"""Reference systems of water and aqueous ions in vacuum for the solution libraries: the environment of a water molecule or an ion at a free
-water surface.  The water and the ions are typed in the second step on the structure of the water and the ions alone (the mineral taken away),
-so a water at the surface of a film or a droplet sees this environment.  packmol, flexible SPC water, ClayFF Table 1 ions, not relaxed, no MD.
+"""Reference systems of water and aqueous ions in vacuum for the clayff libraries (src/soapff/libraries/clayff/water/vac_*.data,
+the refs/vac_*/system.data written here): the environment of a water molecule or an ion at a free water surface (a water
+molecule is typed on its own bonds, taken apart from the mineral in step 1, so a water at the surface of a film or a droplet on
+a mineral sees this environment).  packmol, flexible SPC water, ClayFF Table 1 ions, not relaxed, no MD.  The stored files
+were typed by an earlier soapff, with the water and the ions by rule; the bundled clayff library gives them the same types.
 
   vac_water_film       water film 20 A thick in a 24.83 x 24.83 A cell (periodic in x and y), vacuum above and below (cell 50 A)
   vac_water_film_thin  the same, 10 A thick
@@ -59,5 +61,5 @@ if __name__ == "__main__":
         os.makedirs(d, exist_ok=True)
         s = build(kind, size, ions)
         ase.io.write(os.path.join(d, "structure.extxyz"), s, format="extxyz")
-        r = core.make(os.path.join(d, "structure.extxyz"), d, LIB, md=False, stop_on_fallback=True, log=quiet)
+        r = core.make(os.path.join(d, "structure.extxyz"), d, LIB, strict=True, log=quiet)
         print(name, r["atoms"], "atoms", flush=True)

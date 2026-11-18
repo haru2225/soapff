@@ -1,0 +1,423 @@
+{
+ "cell_PE": {
+  "atoms": 2718,
+  "rms_force": 0.129995319734384,
+  "rms_diff": 1.6156814065752778e-06,
+  "max_diff": 9.277330996287914e-06,
+  "max_diff_atom": 1534,
+  "max_diff_type": "opls_136",
+  "correlation": 0.9999999999227622,
+  "dihedrals_without_parameters": {}
+ },
+ "cell_PEO": {
+  "atoms": 1192,
+  "rms_force": 0.13264097958019758,
+  "rms_diff": 1.7446591984029958e-06,
+  "max_diff": 1.4782053103991333e-05,
+  "max_diff_atom": 473,
+  "max_diff_type": "opls_180",
+  "correlation": 0.9999999999135004,
+  "dihedrals_without_parameters": {}
+ },
+ "cell_PIB": {
+  "atoms": 2892,
+  "rms_force": 0.11507885628697796,
+  "rms_diff": 1.7628193503007092e-06,
+  "max_diff": 1.5057626788717027e-05,
+  "max_diff_atom": 1035,
+  "max_diff_type": "opls_135",
+  "correlation": 0.9999999998826761,
+  "dihedrals_without_parameters": {}
+ },
+ "cell_PMMA": {
+  "atoms": 1362,
+  "rms_force": 0.13254927620504484,
+  "rms_diff": 2.2459492661187106e-06,
+  "max_diff": 1.932309921201525e-05,
+  "max_diff_atom": 46,
+  "max_diff_type": "opls_465",
+  "correlation": 0.9999999998568628,
+  "dihedrals_without_parameters": {}
+ },
+ "cell_PP": {
+  "atoms": 2712,
+  "rms_force": 0.1293887558753824,
+  "rms_diff": 1.6255551177336234e-06,
+  "max_diff": 1.276571450080019e-05,
+  "max_diff_atom": 1045,
+  "max_diff_type": "opls_135",
+  "correlation": 0.9999999999210833,
+  "dihedrals_without_parameters": {}
+ },
+ "chain_PAN": {
+  "atoms": 142,
+  "rms_force": 0.017864684727932054,
+  "rms_diff": 1.4640800148565423e-08,
+  "max_diff": 4.86298007539715e-08,
+  "max_diff_atom": 8,
+  "max_diff_type": "opls_753",
+  "correlation": 0.9999999999996652,
+  "dihedrals_without_parameters": {}
+ },
+ "chain_PB": {
+  "atoms": 202,
+  "rms_force": 0.019618418831359615,
+  "rms_diff": 1.952556659041392e-09,
+  "max_diff": 5.177143739751311e-09,
+  "max_diff_atom": 174,
+  "max_diff_type": "opls_144",
+  "correlation": 0.9999999999999949,
+  "dihedrals_without_parameters": {
+   "dihedral opls_144-opls_142-opls_136-opls_136": 19,
+   "dihedral opls_142-opls_136-opls_136-opls_142": 19,
+   "dihedral opls_136-opls_136-opls_142-opls_144": 19
+  }
+ },
+ "chain_PE": {
+  "atoms": 302,
+  "rms_force": 0.008902884646151108,
+  "rms_diff": 1.101820699350557e-09,
+  "max_diff": 4.4566014151606326e-09,
+  "max_diff_atom": 100,
+  "max_diff_type": "opls_135",
+  "correlation": 0.9999999999999922,
+  "dihedrals_without_parameters": {}
+ },
+ "chain_PEO": {
+  "atoms": 149,
+  "rms_force": 0.0034369241029310747,
+  "rms_diff": 2.679595385421676e-09,
+  "max_diff": 7.441375115060933e-09,
+  "max_diff_atom": 5,
+  "max_diff_type": "opls_180",
+  "correlation": 0.9999999999997067,
+  "dihedrals_without_parameters": {}
+ },
+ "chain_PI": {
+  "atoms": 262,
+  "rms_force": 0.03466225128129034,
+  "rms_diff": 2.2963965335163676e-09,
+  "max_diff": 1.1310505788897363e-08,
+  "max_diff_atom": 131,
+  "max_diff_type": "opls_144",
+  "correlation": 0.999999999999998,
+  "dihedrals_without_parameters": {
+   "dihedral opls_144-opls_142-opls_136-opls_136": 19,
+   "dihedral opls_142-opls_136-opls_136-opls_141": 19
+  }
+ },
+ "chain_PIB": {
+  "atoms": 242,
+  "rms_force": 0.014992193266377693,
+  "rms_diff": 8.96868817440027e-09,
+  "max_diff": 4.7007305226283436e-08,
+  "max_diff_atom": 17,
+  "max_diff_type": "opls_136",
+  "correlation": 0.9999999999998211,
+  "dihedrals_without_parameters": {}
+ },
+ "chain_PMA": {
+  "atoms": 242,
+  "rms_force": 0.013436555651277358,
+  "rms_diff": 7.502805851464951e-09,
+  "max_diff": 3.332168557745874e-08,
+  "max_diff_atom": 27,
+  "max_diff_type": "opls_465",
+  "correlation": 0.9999999999998442,
+  "dihedrals_without_parameters": {}
+ },
+ "chain_PMMA": {
+  "atoms": 302,
+  "rms_force": 0.019159679474935454,
+  "rms_diff": 1.0079260668523343e-08,
+  "max_diff": 4.4267069330451714e-08,
+  "max_diff_atom": 22,
+  "max_diff_type": "opls_136",
+  "correlation": 0.9999999999998621,
+  "dihedrals_without_parameters": {}
+ },
+ "chain_PP": {
+  "atoms": 182,
+  "rms_force": 0.014004766063661836,
+  "rms_diff": 3.406238481807972e-09,
+  "max_diff": 2.0529507992889107e-08,
+  "max_diff_atom": 7,
+  "max_diff_type": "opls_136",
+  "correlation": 0.9999999999999706,
+  "dihedrals_without_parameters": {}
+ },
+ "chain_PTFE": {
+  "atoms": 122,
+  "rms_force": 0.00658992903050371,
+  "rms_diff": 4.373625165436379e-09,
+  "max_diff": 1.2016623737731713e-08,
+  "max_diff_atom": 2,
+  "max_diff_type": "opls_961",
+  "correlation": 0.9999999999997835,
+  "dihedrals_without_parameters": {}
+ },
+ "chain_PVA": {
+  "atoms": 142,
+  "rms_force": 0.02769156892980056,
+  "rms_diff": 3.0745389105082494e-08,
+  "max_diff": 1.4447091642097454e-07,
+  "max_diff_atom": 51,
+  "max_diff_type": "opls_154",
+  "correlation": 0.999999999999397,
+  "dihedrals_without_parameters": {}
+ },
+ "copoly_EP": {
+  "atoms": 218,
+  "rms_force": 0.012202454399647986,
+  "rms_diff": 2.8070733502396302e-09,
+  "max_diff": 1.622797364368711e-08,
+  "max_diff_atom": 34,
+  "max_diff_type": "opls_136",
+  "correlation": 0.9999999999999739,
+  "dihedrals_without_parameters": {}
+ },
+ "copoly_MMA_MA": {
+  "atoms": 269,
+  "rms_force": 0.015502833853286895,
+  "rms_diff": 8.499960996742567e-09,
+  "max_diff": 3.2179756214540875e-08,
+  "max_diff_atom": 28,
+  "max_diff_type": "opls_137",
+  "correlation": 0.99999999999985,
+  "dihedrals_without_parameters": {}
+ },
+ "md413K_PAN": {
+  "atoms": 142,
+  "rms_force": 24.695293879401145,
+  "rms_diff": 1.7708475039043085e-08,
+  "max_diff": 7.088029629898074e-08,
+  "max_diff_atom": 75,
+  "max_diff_type": "opls_754",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md413K_PB": {
+  "atoms": 202,
+  "rms_force": 21.569331534160877,
+  "rms_diff": 2.0318394627211558e-09,
+  "max_diff": 8.06607225456446e-09,
+  "max_diff_atom": 85,
+  "max_diff_type": "opls_144",
+  "correlation": 0.9999999999999996,
+  "dihedrals_without_parameters": {
+   "dihedral opls_144-opls_142-opls_136-opls_136": 19,
+   "dihedral opls_142-opls_136-opls_136-opls_142": 19,
+   "dihedral opls_136-opls_136-opls_142-opls_144": 19
+  }
+ },
+ "md413K_PE": {
+  "atoms": 302,
+  "rms_force": 22.259447185526714,
+  "rms_diff": 7.052447240162687e-09,
+  "max_diff": 4.34995328646437e-08,
+  "max_diff_atom": 18,
+  "max_diff_type": "opls_136",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md413K_PEO": {
+  "atoms": 149,
+  "rms_force": 22.20993511355656,
+  "rms_diff": 3.3773005187314633e-09,
+  "max_diff": 2.0239220077655773e-08,
+  "max_diff_atom": 8,
+  "max_diff_type": "opls_180",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md413K_PI": {
+  "atoms": 262,
+  "rms_force": 24.1751188826437,
+  "rms_diff": 2.179957892456965e-09,
+  "max_diff": 9.514337762084324e-09,
+  "max_diff_atom": 19,
+  "max_diff_type": "opls_142",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {
+   "dihedral opls_144-opls_142-opls_136-opls_136": 19,
+   "dihedral opls_142-opls_136-opls_136-opls_141": 19
+  }
+ },
+ "md413K_PIB": {
+  "atoms": 242,
+  "rms_force": 19.668772275298593,
+  "rms_diff": 1.2030850132990635e-08,
+  "max_diff": 6.738016189444807e-08,
+  "max_diff_atom": 53,
+  "max_diff_type": "opls_136",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md413K_PMA": {
+  "atoms": 242,
+  "rms_force": 22.944037013528437,
+  "rms_diff": 8.410440766247246e-09,
+  "max_diff": 3.726582065155526e-08,
+  "max_diff_atom": 92,
+  "max_diff_type": "opls_137",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md413K_PMMA": {
+  "atoms": 302,
+  "rms_force": 22.071028777138253,
+  "rms_diff": 1.167233686913658e-08,
+  "max_diff": 5.785978629546662e-08,
+  "max_diff_atom": 120,
+  "max_diff_type": "opls_136",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md413K_PP": {
+  "atoms": 182,
+  "rms_force": 24.772978054874027,
+  "rms_diff": 7.783590612482422e-09,
+  "max_diff": 4.2802563271493455e-08,
+  "max_diff_atom": 34,
+  "max_diff_type": "opls_136",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md413K_PTFE": {
+  "atoms": 122,
+  "rms_force": 24.09032497869144,
+  "rms_diff": 8.290734671336927e-09,
+  "max_diff": 4.9318662265207536e-08,
+  "max_diff_atom": 95,
+  "max_diff_type": "opls_962",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md413K_PVA": {
+  "atoms": 142,
+  "rms_force": 22.14803371021773,
+  "rms_diff": 3.190690903338689e-08,
+  "max_diff": 1.6956299031534172e-07,
+  "max_diff_atom": 54,
+  "max_diff_type": "opls_154",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md600K_PAN": {
+  "atoms": 142,
+  "rms_force": 30.824499816046732,
+  "rms_diff": 1.8732180450600243e-08,
+  "max_diff": 5.996126617446862e-08,
+  "max_diff_atom": 36,
+  "max_diff_type": "opls_753",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md600K_PB": {
+  "atoms": 202,
+  "rms_force": 29.14034211229231,
+  "rms_diff": 1.9346331978991686e-09,
+  "max_diff": 6.996176971085788e-09,
+  "max_diff_atom": 163,
+  "max_diff_type": "opls_144",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {
+   "dihedral opls_144-opls_142-opls_136-opls_136": 19,
+   "dihedral opls_142-opls_136-opls_136-opls_142": 19,
+   "dihedral opls_136-opls_136-opls_142-opls_144": 19
+  }
+ },
+ "md600K_PE": {
+  "atoms": 302,
+  "rms_force": 27.72060825534206,
+  "rms_diff": 9.553478023501938e-09,
+  "max_diff": 7.492441733703004e-08,
+  "max_diff_atom": 74,
+  "max_diff_type": "opls_136",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md600K_PEO": {
+  "atoms": 149,
+  "rms_force": 25.87923451868404,
+  "rms_diff": 3.3740154244392833e-09,
+  "max_diff": 2.06255990065074e-08,
+  "max_diff_atom": 11,
+  "max_diff_type": "opls_180",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md600K_PI": {
+  "atoms": 262,
+  "rms_force": 27.649754711740528,
+  "rms_diff": 2.183294524003303e-09,
+  "max_diff": 9.05343000567882e-09,
+  "max_diff_atom": 21,
+  "max_diff_type": "opls_136",
+  "correlation": 0.9999999999999999,
+  "dihedrals_without_parameters": {
+   "dihedral opls_144-opls_142-opls_136-opls_136": 19,
+   "dihedral opls_142-opls_136-opls_136-opls_141": 19
+  }
+ },
+ "md600K_PIB": {
+  "atoms": 242,
+  "rms_force": 26.67838284756529,
+  "rms_diff": 1.5184945981221282e-08,
+  "max_diff": 8.12301763630785e-08,
+  "max_diff_atom": 69,
+  "max_diff_type": "opls_136",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ },
+ "md600K_PMA": {
+  "atoms": 242,
+  "rms_force": 27.373153020039872,
+  "rms_diff": 9.52824526127314e-09,
+  "max_diff": 5.2406299744234275e-08,
+  "max_diff_atom": 46,
+  "max_diff_type": "opls_466",
+  "correlation": 0.9999999999999999,
+  "dihedrals_without_parameters": {}
+ },
+ "md600K_PMMA": {
+  "atoms": 302,
+  "rms_force": 25.438989901689677,
+  "rms_diff": 1.3539481150758458e-08,
+  "max_diff": 8.588548894294945e-08,
+  "max_diff_atom": 85,
+  "max_diff_type": "opls_136",
+  "correlation": 0.9999999999999997,
+  "dihedrals_without_parameters": {}
+ },
+ "md600K_PP": {
+  "atoms": 182,
+  "rms_force": 27.639589599781367,
+  "rms_diff": 8.622621669769034e-09,
+  "max_diff": 4.382346219244937e-08,
+  "max_diff_atom": 35,
+  "max_diff_type": "opls_137",
+  "correlation": 0.9999999999999997,
+  "dihedrals_without_parameters": {}
+ },
+ "md600K_PTFE": {
+  "atoms": 122,
+  "rms_force": 29.497489100262694,
+  "rms_diff": 1.1057059653214767e-08,
+  "max_diff": 5.199373021014253e-08,
+  "max_diff_atom": 68,
+  "max_diff_type": "opls_962",
+  "correlation": 0.9999999999999999,
+  "dihedrals_without_parameters": {}
+ },
+ "md600K_PVA": {
+  "atoms": 142,
+  "rms_force": 27.664515523044436,
+  "rms_diff": 2.971620189122626e-08,
+  "max_diff": 1.6388236545594737e-07,
+  "max_diff_atom": 48,
+  "max_diff_type": "opls_154",
+  "correlation": 1.0,
+  "dihedrals_without_parameters": {}
+ }
+}

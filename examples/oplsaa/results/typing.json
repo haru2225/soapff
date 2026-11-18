@@ -1,0 +1,606 @@
+{
+ "library": "oplsaa (88 references)",
+ "table_seconds": 0.0,
+ "structures": {
+  "cell_PE": {
+   "atoms": 2718,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 3,
+   "min_similarity_soap": 0.9886,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 2709,
+    "angles": 5400,
+    "dihedrals": 8019,
+    "impropers": 0
+   },
+   "seconds": 2.2
+  },
+  "cell_PEO": {
+   "atoms": 1192,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 4,
+   "min_similarity_soap": 0.9869,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 1184,
+    "angles": 2184,
+    "dihedrals": 2448,
+    "impropers": 0
+   },
+   "seconds": 0.37
+  },
+  "cell_PIB": {
+   "atoms": 2892,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 5,
+   "min_similarity_soap": 0.9948,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 2886,
+    "angles": 5760,
+    "dihedrals": 8586,
+    "impropers": 0
+   },
+   "seconds": 1.41
+  },
+  "cell_PMMA": {
+   "atoms": 1362,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 11,
+   "min_similarity_soap": 0.9815,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 1356,
+    "angles": 2520,
+    "dihedrals": 3360,
+    "impropers": 0
+   },
+   "seconds": 0.55
+  },
+  "cell_PP": {
+   "atoms": 2712,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 4,
+   "min_similarity_soap": 0.9803,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 2706,
+    "angles": 5400,
+    "dihedrals": 8046,
+    "impropers": 0
+   },
+   "seconds": 1.25
+  },
+  "chain_PAN": {
+   "atoms": 142,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 8,
+   "min_similarity_soap": 0.9908,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 141,
+    "angles": 260,
+    "dihedrals": 313,
+    "impropers": 0
+   },
+   "seconds": 0.15
+  },
+  "chain_PB": {
+   "atoms": 202,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 5,
+   "min_similarity_soap": 0.9978,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 201,
+    "angles": 360,
+    "dihedrals": 434,
+    "impropers": 0
+   },
+   "seconds": 0.15
+  },
+  "chain_PE": {
+   "atoms": 302,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 3,
+   "min_similarity_soap": 0.9994,
+   "net_charge": -0.0,
+   "terms": {
+    "bonds": 301,
+    "angles": 600,
+    "dihedrals": 891,
+    "impropers": 0
+   },
+   "seconds": 0.37
+  },
+  "chain_PEO": {
+   "atoms": 149,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 4,
+   "min_similarity_soap": 1.0,
+   "net_charge": -0.0,
+   "terms": {
+    "bonds": 148,
+    "angles": 273,
+    "dihedrals": 306,
+    "impropers": 0
+   },
+   "seconds": 0.18
+  },
+  "chain_PI": {
+   "atoms": 262,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 6,
+   "min_similarity_soap": 0.9893,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 261,
+    "angles": 480,
+    "dihedrals": 573,
+    "impropers": 0
+   },
+   "seconds": 0.21
+  },
+  "chain_PIB": {
+   "atoms": 242,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 5,
+   "min_similarity_soap": 0.9935,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 241,
+    "angles": 480,
+    "dihedrals": 711,
+    "impropers": 0
+   },
+   "seconds": 0.15
+  },
+  "chain_PMA": {
+   "atoms": 242,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 10,
+   "min_similarity_soap": 0.989,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 241,
+    "angles": 440,
+    "dihedrals": 550,
+    "impropers": 0
+   },
+   "seconds": 0.19
+  },
+  "chain_PMMA": {
+   "atoms": 302,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 11,
+   "min_similarity_soap": 0.9919,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 301,
+    "angles": 560,
+    "dihedrals": 750,
+    "impropers": 0
+   },
+   "seconds": 0.2
+  },
+  "chain_PP": {
+   "atoms": 182,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 4,
+   "min_similarity_soap": 0.9922,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 181,
+    "angles": 360,
+    "dihedrals": 531,
+    "impropers": 0
+   },
+   "seconds": 0.15
+  },
+  "chain_PTFE": {
+   "atoms": 122,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 3,
+   "min_similarity_soap": 0.9996,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 121,
+    "angles": 240,
+    "dihedrals": 351,
+    "impropers": 0
+   },
+   "seconds": 0.12
+  },
+  "chain_PVA": {
+   "atoms": 142,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 7,
+   "min_similarity_soap": 0.9838,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 141,
+    "angles": 260,
+    "dihedrals": 411,
+    "impropers": 0
+   },
+   "seconds": 0.13
+  },
+  "copoly_EP": {
+   "atoms": 218,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 4,
+   "min_similarity_soap": 0.9871,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 217,
+    "angles": 432,
+    "dihedrals": 639,
+    "impropers": 0
+   },
+   "seconds": 0.19
+  },
+  "copoly_MMA_MA": {
+   "atoms": 269,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 11,
+   "min_similarity_soap": 0.9775,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 268,
+    "angles": 494,
+    "dihedrals": 640,
+    "impropers": 0
+   },
+   "seconds": 0.21
+  },
+  "md413K_PAN": {
+   "atoms": 142,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 8,
+   "min_similarity_soap": 0.9897,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 141,
+    "angles": 260,
+    "dihedrals": 313,
+    "impropers": 0
+   },
+   "seconds": 0.13
+  },
+  "md413K_PB": {
+   "atoms": 202,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 5,
+   "min_similarity_soap": 0.9943,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 201,
+    "angles": 360,
+    "dihedrals": 434,
+    "impropers": 0
+   },
+   "seconds": 0.14
+  },
+  "md413K_PE": {
+   "atoms": 302,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 3,
+   "min_similarity_soap": 0.9952,
+   "net_charge": -0.0,
+   "terms": {
+    "bonds": 301,
+    "angles": 600,
+    "dihedrals": 891,
+    "impropers": 0
+   },
+   "seconds": 0.29
+  },
+  "md413K_PEO": {
+   "atoms": 149,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 4,
+   "min_similarity_soap": 0.9851,
+   "net_charge": -0.0,
+   "terms": {
+    "bonds": 148,
+    "angles": 273,
+    "dihedrals": 306,
+    "impropers": 0
+   },
+   "seconds": 0.13
+  },
+  "md413K_PI": {
+   "atoms": 262,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 6,
+   "min_similarity_soap": 0.9766,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 261,
+    "angles": 480,
+    "dihedrals": 573,
+    "impropers": 0
+   },
+   "seconds": 0.18
+  },
+  "md413K_PIB": {
+   "atoms": 242,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 5,
+   "min_similarity_soap": 0.9937,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 241,
+    "angles": 480,
+    "dihedrals": 711,
+    "impropers": 0
+   },
+   "seconds": 0.15
+  },
+  "md413K_PMA": {
+   "atoms": 242,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 10,
+   "min_similarity_soap": 0.9839,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 241,
+    "angles": 440,
+    "dihedrals": 550,
+    "impropers": 0
+   },
+   "seconds": 0.16
+  },
+  "md413K_PMMA": {
+   "atoms": 302,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 11,
+   "min_similarity_soap": 0.9906,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 301,
+    "angles": 560,
+    "dihedrals": 750,
+    "impropers": 0
+   },
+   "seconds": 0.18
+  },
+  "md413K_PP": {
+   "atoms": 182,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 4,
+   "min_similarity_soap": 0.9921,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 181,
+    "angles": 360,
+    "dihedrals": 531,
+    "impropers": 0
+   },
+   "seconds": 0.14
+  },
+  "md413K_PTFE": {
+   "atoms": 122,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 3,
+   "min_similarity_soap": 0.9941,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 121,
+    "angles": 240,
+    "dihedrals": 351,
+    "impropers": 0
+   },
+   "seconds": 0.11
+  },
+  "md413K_PVA": {
+   "atoms": 142,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 7,
+   "min_similarity_soap": 0.9736,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 141,
+    "angles": 260,
+    "dihedrals": 411,
+    "impropers": 0
+   },
+   "seconds": 0.22
+  },
+  "md600K_PAN": {
+   "atoms": 142,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 8,
+   "min_similarity_soap": 0.9827,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 141,
+    "angles": 260,
+    "dihedrals": 313,
+    "impropers": 0
+   },
+   "seconds": 0.14
+  },
+  "md600K_PB": {
+   "atoms": 202,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 5,
+   "min_similarity_soap": 0.9904,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 201,
+    "angles": 360,
+    "dihedrals": 434,
+    "impropers": 0
+   },
+   "seconds": 0.15
+  },
+  "md600K_PE": {
+   "atoms": 302,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 3,
+   "min_similarity_soap": 0.9899,
+   "net_charge": -0.0,
+   "terms": {
+    "bonds": 301,
+    "angles": 600,
+    "dihedrals": 891,
+    "impropers": 0
+   },
+   "seconds": 0.28
+  },
+  "md600K_PEO": {
+   "atoms": 149,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 4,
+   "min_similarity_soap": 0.9889,
+   "net_charge": -0.0,
+   "terms": {
+    "bonds": 148,
+    "angles": 273,
+    "dihedrals": 306,
+    "impropers": 0
+   },
+   "seconds": 0.15
+  },
+  "md600K_PI": {
+   "atoms": 262,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 6,
+   "min_similarity_soap": 0.9863,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 261,
+    "angles": 480,
+    "dihedrals": 573,
+    "impropers": 0
+   },
+   "seconds": 0.24
+  },
+  "md600K_PIB": {
+   "atoms": 242,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 5,
+   "min_similarity_soap": 0.9923,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 241,
+    "angles": 480,
+    "dihedrals": 711,
+    "impropers": 0
+   },
+   "seconds": 0.23
+  },
+  "md600K_PMA": {
+   "atoms": 242,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 10,
+   "min_similarity_soap": 0.9839,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 241,
+    "angles": 440,
+    "dihedrals": 550,
+    "impropers": 0
+   },
+   "seconds": 0.16
+  },
+  "md600K_PMMA": {
+   "atoms": 302,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 11,
+   "min_similarity_soap": 0.986,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 301,
+    "angles": 560,
+    "dihedrals": 750,
+    "impropers": 0
+   },
+   "seconds": 0.19
+  },
+  "md600K_PP": {
+   "atoms": 182,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 4,
+   "min_similarity_soap": 0.9881,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 181,
+    "angles": 360,
+    "dihedrals": 531,
+    "impropers": 0
+   },
+   "seconds": 0.15
+  },
+  "md600K_PTFE": {
+   "atoms": 122,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 3,
+   "min_similarity_soap": 0.9881,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 121,
+    "angles": 240,
+    "dihedrals": 351,
+    "impropers": 0
+   },
+   "seconds": 0.12
+  },
+  "md600K_PVA": {
+   "atoms": 142,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "types": 7,
+   "min_similarity_soap": 0.9836,
+   "net_charge": 0.0,
+   "terms": {
+    "bonds": 141,
+    "angles": 260,
+    "dihedrals": 411,
+    "impropers": 0
+   },
+   "seconds": 0.12
+  }
+ }
+}

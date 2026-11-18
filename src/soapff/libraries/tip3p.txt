@@ -1,7 +1,8 @@
 # soapff library: TIP3P water (Jorgensen et al. 1983, rigid) with the ions of OpenMM amber14/tip3p.xml: Joung-Cheatham monovalent ions (2008) and Li-Merz 12-6 divalent ions (2013).
-# Parameters converted from OpenMM 8.6.1 (amber14/tip3p.xml) by examples/amber14sb/make_library_txt.py.
-# The water is rigid (SHAKE on the O-H bonds and the H-O-H angle during the MD; flexible with these force constants in the
-# minimisation).  Every ion is an atom without bonds: its element gives its type.
+# Parameters converted from OpenMM 8.6.1 (amber14/tip3p.xml) by examples/water/make_library_txt.py.
+# The water is rigid: system.settings ends with fix shake on the O-H bonds and the H-O-H angle (in a minimisation LAMMPS
+# turns the constraints into stiff restraints).  The force constants below are used without it (System.commands(rigid=False)).
+# Every ion is an atom without bonds: its element gives its type.
 
 [library]
 name        = tip3p
@@ -19,9 +20,13 @@ depth = 4
 prune = 0.999
 threshold = 0.9
 
-[bonding]
-factor = 1.15
-ions   = Li Na K Rb Cs F Cl Br I Mg Ca Zn Sr Ba
+[bond_lengths]
+# E1 E2 r(A): two atoms of these elements nearer than r are bonded (step 1).  r lies between the longest bond (d_b)
+# and the shortest distance of two atoms not bonded (d_n) in the references (checked when the table is built).  H-O by
+# hand: in MD at 300 K the H...O of the hydrogen bonds comes to 1.43-1.50 A and the O-H bonds stretch to 1.12 A (flexible
+# water).
+# E1 E2  r       d_b    d_n
+H  O   1.25   # 0.959  1.582  (halfway 1.27)
 
 [lammps]
 pair_style     = lj/cut/coul/long 10.0

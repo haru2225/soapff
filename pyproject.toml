@@ -4,15 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "soapff"
-version = "0.1.0"
-description = "soapff: atom types, charges and the LAMMPS input of any structure from a library of reference structures (SOAP) - ClayFF, AMBER ff14SB, TIP3P, SPC/E, and libraries users write"
+version = "0.2.0"
+description = "soapff: atom types, charges and the LAMMPS force field of any structure from a library of reference structures (SOAP) - ClayFF, OPLS-AA, TIP3P, SPC/E, and libraries users write"
 readme = "README.md"
+license = {text = "MIT"}
 requires-python = ">=3.9"
 dependencies = ["numpy", "scipy", "ase", "dscribe"]
 
 [project.optional-dependencies]
-analysis = ["matplotlib", "sovapy"]     # System.analyze(): diffusion, g(r) and S(Q) of a finished run
 surfaces = ["pymatgen"]                 # soapff_cui.surfaces: (001) slabs of the minerals
+examples = ["lammps[mpi]", "matplotlib", "rdkit"]   # the examples: MD with the LAMMPS Python module, plots, a chain from its SMILES
 
 [project.scripts]
 soapff = "soapff.__main__:main"

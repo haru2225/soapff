@@ -1,0 +1,97 @@
+{
+ "N3": {
+  "particles": 3,
+  "S": 0.128,
+  "box": [
+   73.88,
+   73.88,
+   123.14
+  ],
+  "mw_mc": 3.0,
+  "wet": {
+   "atoms": 66900,
+   "stopped": "18 atoms are below similarity 0.9 (step 2): H9033 (0.814, nearest hw water.data:2), H12452 (0.851, nearest hw water.data:2), H12713 (0.851, nearest hw water.data:2), H17478 (0.848, nearest hw water.data:2), H19448 (0.841, nearest hw water.data:2), H20423 (0.875, nearest hw water.data:2), H20909 (0.817, nearest hw water.data:2), H27894 (0.855, nearest hw water.data:2), H29805 (0.862, nearest hw water.data:2), H44712 (0.826, nearest hw water.data:2) ...; library /Users/harutokono/clay/soapff/src/soapff/libr",
+   "seconds": 22.3
+  },
+  "wet_min": {
+   "atoms": 66900,
+   "water_molecules": 20008,
+   "wrong_type": 12,
+   "wrong_charge": 0,
+   "min_similarity": 0.9116,
+   "min_similarity_particles": 0.9116,
+   "min_similarity_water": 0.9969,
+   "charge_sum": -0.0,
+   "seconds": 22.1,
+   "water_apart": {
+    "molecules": 20008,
+    "bonds_taken_out": {
+     "Al-O": [
+      17,
+      1.922
+     ],
+     "Mg-O": [
+      6,
+      2.185
+     ]
+    }
+   },
+   "confused": [
+    "mga->mgb"
+   ]
+  },
+  "dry": {
+   "atoms": 6876,
+   "water_molecules": 0,
+   "wrong_type": 0,
+   "wrong_charge": 0,
+   "min_similarity": 1.0,
+   "min_similarity_particles": 1.0,
+   "min_similarity_water": null,
+   "charge_sum": 0.0,
+   "seconds": 6.1,
+   "water_apart": {
+    "molecules": 0,
+    "bonds_taken_out": {}
+   }
+  },
+  "single_point": {
+   "wet_min": {
+    "builder": {
+     "pe": -1851521.541977,
+     "ebond": 10487.869657,
+     "eangle": 8071.102422,
+     "evdwl": 188212.190726,
+     "ecoul": -235499.689745,
+     "elong": -1822793.015037
+    },
+    "soapff": {
+     "pe": -1851521.541739,
+     "ebond": 10487.869649,
+     "eangle": 8071.102427,
+     "evdwl": 188212.190716,
+     "ecoul": -235499.689493,
+     "elong": -1822793.015038
+    }
+   },
+   "dry": {
+    "builder": {
+     "pe": -1528491.191943,
+     "ebond": 21.269384,
+     "eangle": 17753.599898,
+     "evdwl": 116607.17931,
+     "ecoul": -985251.874481,
+     "elong": -677621.366053
+    },
+    "soapff": {
+     "pe": -1528491.191943,
+     "ebond": 21.269384,
+     "eangle": 17753.599898,
+     "evdwl": 116607.17931,
+     "ecoul": -985251.874481,
+     "elong": -677621.366053
+    }
+   }
+  }
+ }
+}

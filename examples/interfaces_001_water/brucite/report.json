@@ -1,14 +1,15 @@
 {
- "structure": "examples/interfaces_001_water/brucite/structure.extxyz",
+ "structure": "/Users/harutokono/clay/soapff/examples/interfaces_001_water/brucite/structure.extxyz",
  "atoms": 885,
- "library": "src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
+ "library": "/Users/harutokono/clay/soapff/src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
  "soap": {
   "r_cut": 5.0,
   "n_max": 4,
   "l_max": 3,
   "sigma": 0.4
  },
- "threshold": 0.95,
+ "depth": 4,
+ "threshold": 0.9,
  "boundary": "p p p",
  "kspace": [
   "kspace_style pppm 1.0e-5"
@@ -17,14 +18,26 @@
  "charges": "clayff2004",
  "water_model": "spc",
  "forcefield": null,
- "charge_sum_before": 2.098321516541546e-14,
  "charge_sum": 2.098321516541546e-14,
- "from_soap": 885,
- "fallback": 0,
+ "below_threshold": 0,
+ "min_similarity": 0.9999994039535522,
+ "min_margin": 0.13971662521362305,
+ "bond_lengths": {
+  "Al-O": 2.659,
+  "H-O": 1.25,
+  "Mg-O": 2.7017,
+  "O-Si": 2.4129
+ },
+ "bonds": 462,
+ "angles": 711,
  "type_check": {
   "compared": 288,
   "differ": 0,
   "kinds": {}
+ },
+ "water_apart": {
+  "molecules": 135,
+  "bonds_taken_out": {}
  },
  "warnings": [],
  "roles": {
@@ -38,56 +51,70 @@
    "charges": [
     0.425
    ],
-   "from_soap": 192,
-   "fallback": 0,
-   "min_similarity": 0.9999887943267822
+   "min_similarity": 0.999999463558197,
+   "bonds": [
+    "O1"
+   ]
   },
   "hw": {
    "atoms": 270,
    "charges": [
     0.41
    ],
-   "from_soap": 270,
-   "fallback": 0,
-   "min_similarity": 1.0
+   "min_similarity": 0.9999994039535522,
+   "bonds": [
+    "O1"
+   ]
   },
   "mgh": {
    "atoms": 96,
    "charges": [
     1.05
    ],
-   "from_soap": 96,
-   "fallback": 0,
-   "min_similarity": 0.9999995827674866
+   "min_similarity": 0.9999999403953552,
+   "bonds": [
+    "O6"
+   ]
   },
   "oh": {
    "atoms": 192,
    "charges": [
     -0.95
    ],
-   "from_soap": 192,
-   "fallback": 0,
-   "min_similarity": 0.9994560480117798
+   "min_similarity": 1.0000003576278687,
+   "bonds": [
+    "H1 Mg3"
+   ]
   },
   "ow": {
    "atoms": 135,
    "charges": [
     -0.82
    ],
-   "from_soap": 135,
-   "fallback": 0,
-   "min_similarity": 1.0
+   "min_similarity": 0.9999998807907104,
+   "bonds": [
+    "H2"
+   ]
   }
  },
  "consistency": [],
- "md": {
-  "temp": 300.0,
-  "relax_ps": 10.0,
-  "nvt_ps": 50.0,
-  "npt_ps": 0.0,
-  "press": 1.0,
-  "baro": "aniso",
-  "dump_ps": 1.0,
-  "timestep_fs": 0.5
- }
+ "type_ids": {
+  "ho": 1,
+  "hw": 2,
+  "mgh": 3,
+  "oh": 4,
+  "ow": 5
+ },
+ "type_elements": [
+  "H",
+  "H",
+  "Mg",
+  "O",
+  "O"
+ ],
+ "rigid": {
+  "bonds": [],
+  "angles": []
+ },
+ "timestep_fs": 0.5
 }

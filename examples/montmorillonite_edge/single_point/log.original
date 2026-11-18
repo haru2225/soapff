@@ -1,11 +1,11 @@
-LAMMPS (22 Jul 2025 - Update 5)
+LAMMPS (22 Jul 2025 - Update 4)
 units real
 atom_style full
 bond_style harmonic
 angle_style harmonic
 pair_style lj/cut/coul/long 10.0
 special_bonds lj/coul 0.0 0.0 0.0
-read_data original.data
+read_data "/Users/harutokono/clay/soapff/examples/montmorillonite_edge/single_point/original.data"
 Reading data file ...
   orthogonal box = (0 0 0) to (87.5065 87.5065 87.5065)
   1 by 1 by 1 MPI processor grid
@@ -28,9 +28,9 @@ Finding 1-2 1-3 1-4 neighbors ...
      0 = max # of 1-3 neighbors
      0 = max # of 1-4 neighbors
      1 = max # of special neighbors
-  special bonds CPU = 0.000 seconds
-  read_data CPU = 0.013 seconds
-include original.settings
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.025 seconds
+include "/Users/harutokono/clay/soapff/examples/montmorillonite_edge/single_point/original.settings"
 # Force-field settings for clay_montmorillonite.data (units real)
 # LJ: standard ClayFF values mapped onto the custom atom types (edge types use the parent values).
 # Replace with the values of your GROMACS force-field files if they differ.
@@ -61,7 +61,7 @@ thermo_style custom pe ebond eangle evdwl ecoul elong
 thermo_modify format float %.6f
 run 0
 WARNING: No fixes with time integration, atoms won't move
-For more information see https://docs.lammps.org/err0028 (src/verlet.cpp:60)
+For more information see https://docs.lammps.org/err0028 (src/src/verlet.cpp:60)
 Ewald initialization ...
   using 12-bit tables for long-range coulomb
   G vector (1/distance) = 0.29617708
@@ -85,9 +85,9 @@ Neighbor list info ...
 Per MPI rank memory allocation (min/avg/max) = 54.56 | 54.56 | 54.56 Mbytes
     PotEng         E_bond        E_angle         E_vdwl         E_coul         E_long    
 -509528.707277 7.090368 5917.865731 38869.102638 -335112.681592 -219210.084421
-Loop time of 1.333e-06 on 1 procs for 0 steps with 2292 atoms
+Loop time of 1.125e-06 on 1 procs for 0 steps with 2292 atoms
 
-75.0% CPU use with 1 MPI tasks x no OpenMP threads
+88.9% CPU use with 1 MPI tasks x no OpenMP threads
 
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
@@ -99,7 +99,7 @@ Neigh   | 0          | 0          | 0          |   0.0 |  0.00
 Comm    | 0          | 0          | 0          |   0.0 |  0.00
 Output  | 0          | 0          | 0          |   0.0 |  0.00
 Modify  | 0          | 0          | 0          |   0.0 |  0.00
-Other   |            | 1.333e-06  |            |       |100.00
+Other   |            | 1.125e-06  |            |       |100.00
 
 Nlocal:           2292 ave        2292 max        2292 min
 Histogram: 1 0 0 0 0 0 0 0 0 0
@@ -113,4 +113,5 @@ Ave neighs/atom = 149.82199
 Ave special neighs/atom = 0.2513089
 Neighbor list builds = 0
 Dangerous builds = 0
-Total wall time: 0:00:01
+
+Total wall time: 0:00:00

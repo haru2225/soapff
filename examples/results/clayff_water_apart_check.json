@@ -1,0 +1,230 @@
+{
+ "structures": {
+  "interface_shapes/cavity/system.data": {
+   "library": "clayff",
+   "atoms": 4047,
+   "water_molecules": 697,
+   "bonds_taken_out": {}
+  },
+  "interface_shapes/cylinder/system.data": {
+   "library": "clayff",
+   "atoms": 2829,
+   "water_molecules": 291,
+   "bonds_taken_out": {}
+  },
+  "interface_shapes/hemisphere/system.data": {
+   "library": "clayff",
+   "atoms": 2469,
+   "water_molecules": 151,
+   "bonds_taken_out": {}
+  },
+  "interface_shapes/ions/system.data": {
+   "library": "clayff",
+   "atoms": 4249,
+   "water_molecules": 739,
+   "bonds_taken_out": {}
+  },
+  "interface_shapes/sphere/system.data": {
+   "library": "clayff",
+   "atoms": 2373,
+   "water_molecules": 139,
+   "bonds_taken_out": {}
+  },
+  "interface_shapes/xygauss/system.data": {
+   "library": "clayff",
+   "atoms": 3159,
+   "water_molecules": 401,
+   "bonds_taken_out": {}
+  },
+  "interfaces_001_water/brucite/system.data": {
+   "library": "clayff",
+   "atoms": 885,
+   "water_molecules": 135,
+   "bonds_taken_out": {}
+  },
+  "interfaces_001_water/kaolinite/system.data": {
+   "library": "clayff",
+   "atoms": 1659,
+   "water_molecules": 281,
+   "bonds_taken_out": {}
+  },
+  "interfaces_001_water/lizerdite/system.data": {
+   "library": "clayff",
+   "atoms": 1335,
+   "water_molecules": 229,
+   "bonds_taken_out": {}
+  },
+  "interfaces_001_water/montmorillonite_dry_Na/system.data": {
+   "library": "clayff",
+   "atoms": 692,
+   "water_molecules": 122,
+   "bonds_taken_out": {}
+  },
+  "interfaces_001_water/muscovite_1M/system.data": {
+   "library": "clayff",
+   "atoms": 759,
+   "water_molecules": 141,
+   "bonds_taken_out": {}
+  },
+  "interfaces_001_water/muscovite_2M1/system.data": {
+   "library": "clayff",
+   "atoms": 738,
+   "water_molecules": 134,
+   "bonds_taken_out": {}
+  },
+  "interfaces_001_water/nanpingite/system.data": {
+   "library": "clayff",
+   "atoms": 774,
+   "water_molecules": 146,
+   "bonds_taken_out": {}
+  },
+  "interfaces_001_water/phlogopite_1M/system.data": {
+   "library": "clayff",
+   "atoms": 784,
+   "water_molecules": 144,
+   "bonds_taken_out": {}
+  },
+  "interfaces_001_water/pyrophyllite/system.data": {
+   "library": "clayff",
+   "atoms": 710,
+   "water_molecules": 130,
+   "bonds_taken_out": {}
+  },
+  "interfaces_001_water/talc/system.data": {
+   "library": "clayff",
+   "atoms": 849,
+   "water_molecules": 157,
+   "bonds_taken_out": {}
+  },
+  "meng2022_droplet/paper/system.data": {
+   "library": "clayff",
+   "atoms": 105977,
+   "water_molecules": 9171,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/BaCl2/final.data": {
+   "library": "clayff",
+   "atoms": 1500,
+   "water_molecules": 494,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/CaCl2/final.data": {
+   "library": "clayff",
+   "atoms": 1500,
+   "water_molecules": 494,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/CsCl/final.data": {
+   "library": "clayff",
+   "atoms": 1504,
+   "water_molecules": 496,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/KCl/final.data": {
+   "library": "clayff",
+   "atoms": 1504,
+   "water_molecules": 496,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/NaCl/final.data": {
+   "library": "clayff",
+   "atoms": 1504,
+   "water_molecules": 496,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/hydrate_2W/final.data": {
+   "library": "clayff",
+   "atoms": 1554,
+   "water_molecules": 192,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/if_brucite/final.data": {
+   "library": "clayff",
+   "atoms": 885,
+   "water_molecules": 135,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/if_kaolinite/final.data": {
+   "library": "clayff",
+   "atoms": 1659,
+   "water_molecules": 281,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/if_lizerdite/final.data": {
+   "library": "clayff",
+   "atoms": 1335,
+   "water_molecules": 229,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/if_montmorillonite_dry_Na/final.data": {
+   "library": "clayff",
+   "atoms": 692,
+   "water_molecules": 122,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/if_muscovite_1M/final.data": {
+   "library": "clayff",
+   "atoms": 759,
+   "water_molecules": 141,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/if_muscovite_2M1/final.data": {
+   "library": "clayff",
+   "atoms": 738,
+   "water_molecules": 134,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/if_nanpingite/final.data": {
+   "library": "clayff",
+   "atoms": 774,
+   "water_molecules": 146,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/if_phlogopite_1M/final.data": {
+   "library": "clayff",
+   "atoms": 784,
+   "water_molecules": 144,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/if_pyrophyllite/final.data": {
+   "library": "clayff",
+   "atoms": 710,
+   "water_molecules": 130,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/if_pyrophyllite_2/final.data": {
+   "library": "clayff",
+   "atoms": 710,
+   "water_molecules": 130,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/if_talc/final.data": {
+   "library": "clayff",
+   "atoms": 849,
+   "water_molecules": 157,
+   "bonds_taken_out": {}
+  },
+  "library_water/refs/water/final.data": {
+   "library": "clayff",
+   "atoms": 1536,
+   "water_molecules": 512,
+   "bonds_taken_out": {}
+  },
+  "montmorillonite_2W/diffusion/start/final.data": {
+   "library": "clayff",
+   "atoms": 1554,
+   "water_molecules": 192,
+   "bonds_taken_out": {}
+  },
+  "montmorillonite_edge/out_particle_water/system.data": {
+   "library": "clayff_edge",
+   "atoms": 9980,
+   "water_molecules": 2560,
+   "bonds_taken_out": {}
+  }
+ },
+ "total": {
+  "structures": 37,
+  "with_bonds_taken_out": 0
+ }
+}

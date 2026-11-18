@@ -1,4 +1,6 @@
-"""soapff.build(library, structure): a structure file of any format in, the LAMMPS input of the force field of the library out."""
+"""soapff.build(library, structure): a structure file of any format in, the force field of the library for LAMMPS out
+(system.data, system.settings).  What is done with it (minimisation, MD, ...) is written in LAMMPS, e.g. with its Python
+module:  lmp = lammps(); lmp.commands_list(system.commands()); lmp.command("fix 1 all npt ...")."""
 import csv
 import json
 import os
@@ -47,7 +49,7 @@ def boxed(at, padding=10.0):
 
 # ------------------------------------------------------------------------------------------------- the result
 class System:
-    """an output folder of soapff: system.data, system.settings, in.lammps, charges.csv, report.json"""
+    """an output folder of soapff: system.data, system.settings (the force field for LAMMPS), charges.csv, report.json"""
 
     def __init__(self, out_dir, report=None, atoms=None):
         self.out_dir = os.path.abspath(out_dir)
@@ -62,8 +64,39 @@ class System:
     @property
     def files(self):
         return {k: os.path.join(self.out_dir, f) for k, f in (("data", "system.data"), ("settings", "system.settings"),
-                                                              ("input", "in.lammps"), ("charges", "charges.csv"),
-                                                              ("report", "report.json"))}
+                                                              ("charges", "charges.csv"), ("report", "report.json"))}
+
+    def commands(self, rigid=True):
+        """the LAMMPS commands of the force field (system.settings, with the path of system.data made absolute), for the
+        LAMMPS Python module:  lmp.commands_list(s.commands()).  rigid=False leaves out the SHAKE of the rigid molecules
+        (fix rigid; e.g. a single point of the flexible molecule)."""
+        L = []
+        for line in open(self.files["settings"]):
+            c = line.split("#")[0].strip()
+            if not c:
+                continue
+            if c.split()[0] == "read_data":
+                c = f'read_data "{self.files["data"]}"' + (" " + " ".join(c.split()[2:]) if len(c.split()) > 2 else "")
+            if not rigid and c.startswith("fix rigid "):
+                continue
+            L.append(c)
+        return L
+
+    @property
+    def type_names(self):
+        """the type names in the order of the LAMMPS atom types (type 1 first)"""
+        tid = self.report["type_ids"]
+        return sorted(tid, key=tid.get)
+
+    @property
+    def type_ids(self):
+        """{type name: LAMMPS atom type}"""
+        return dict(self.report["type_ids"])
+
+    @property
+    def elements(self):
+        """the element of each LAMMPS atom type (type 1 first), e.g. for dump_modify element"""
+        return list(self.report["type_elements"])
 
     def table(self):
         """the rows of charges.csv (one dict per atom: id, element, type, charge, ...)"""
@@ -79,77 +112,29 @@ class System:
     def charges(self):
         return np.array([float(r["charge"]) for r in self.table()])
 
-    @property
-    def input(self):
-        return open(self.files["input"]).read()
-
-    def write_input(self, text, name="in.lammps"):
-        """replace (or add) a LAMMPS input in the folder, e.g. one written by hand after include system.settings"""
-        open(os.path.join(self.out_dir, name), "w").write(text)
-        return os.path.join(self.out_dir, name)
-
-    def run(self, np=1, lmp=None, mpirun=None, input="in.lammps", log="log.lammps", echo=True):
-        """run LAMMPS here (lmp executable; np > 1 with mpirun) and return the path of log.lammps"""
-        from .lammps import run
-        return run(self.out_dir, np_=np, lmp=lmp, mpirun=mpirun, input=input, log=log, echo=echo)
-
-    def lammps(self, input="in.lammps", run_input=True, cmdargs=("-screen", "none")):
-        """the LAMMPS Python module started in this folder (with `input` run first when run_input)"""
-        from .lammps import session
-        return session(self.out_dir, input=input, run_input=run_input, cmdargs=cmdargs)
-
-    def thermo(self, log="log.lammps"):
-        """the thermo output of the last run in log.lammps: {column: numpy array}"""
-        return read_thermo(os.path.join(self.out_dir, log))
-
-    def analyze(self, **kw):
-        """the analyses of a finished run (soapff_cui.analysis: diffusion from compute msd, SOVA g(r) and S(Q), XRD)"""
-        from soapff_cui.analysis import analyze
-        return analyze(self.out_dir, **kw)
-
-
-def read_thermo(path, which=-1):
-    """the thermo table of a LAMMPS log (`which`: the run, -1 = the last) -> {column: array}"""
-    blocks, cur, head = [], None, None
-    for line in open(path):
-        p = line.split()
-        if p[:1] == ["Step"]:
-            head, cur = p, []
-            blocks.append((head, cur))
-            continue
-        if cur is not None:
-            if line.startswith("Loop time") or not p:
-                cur = None
-                continue
-            try:
-                cur.append([float(x) for x in p])
-            except ValueError:
-                cur = None
-    if not blocks:
-        return {}
-    head, rows = blocks[which]
-    a = np.array([r for r in rows if len(r) == len(head)])
-    return {h: a[:, k] for k, h in enumerate(head)} if len(a) else {h: np.zeros(0) for h in head}
-
 
 # ------------------------------------------------------------------------------------------------- build
-def build(library, structure, out_dir=None, *, md=True, temp=300.0, relax_ps=10.0, nvt_ps=50.0, npt_ps=0.0, press=1.0,
-          baro="aniso", dump_ps=1.0, timestep=None, cutoff=None, kspace=None, boundary="p p p", strict=True, padding=10.0,
+def build(library, structure, out_dir=None, *, cutoff=None, kspace=None, boundary="p p p", strict=True, padding=10.0,
           log=print, **options):
-    """type every atom of `structure` with `library` and write the LAMMPS input.
+    """type every atom of `structure` with `library` and write its force field for LAMMPS.
 
-    library    a library name (soapff.libraries() lists them: clayff, clayff_edge, amber14sb, tip3p, spce, ...) or the path of
-               a library .txt file
+    library    a library name (soapff.libraries() lists them: clayff, clayff_edge, oplsaa, tip3p, spce, ...) or
+               the path of a library .txt file
     structure  a structure file of any format ASE reads (cif, xyz, extxyz, pdb, POSCAR, ...) or a LAMMPS data file, or an
                ase.Atoms
-    out_dir    the output folder (default: <structure name>_soapff in the current folder)
-    md         False: in.lammps stops after the energy minimisation; True: then NVT (relax_ps not recorded, nvt_ps recorded) and
-               NPT (npt_ps > 0) at temp (K), press (atm), barostat coupling baro (iso, aniso, tri, z)
+    out_dir    the output folder (default: <structure name>_soapff in the current folder): system.data, system.settings,
+               charges.csv, report.json
+    cutoff     the cutoff of LJ and of the real-space Coulomb (A; default: the library's)
+    kspace     the long-range Coulomb, e.g. "pppm 1.0e-5" (default: the library's; MSM or slab are chosen for non-periodic
+               boundaries)
+    boundary   the LAMMPS boundary, e.g. "p p f"
     strict     stop (soapff.TypingError) when an atom is not in the library (its environment has no counterpart in the
-               references) instead of writing the input with the nearest reference
+               references) instead of writing the force field with the nearest reference
     padding    molecular engine: a structure without a cell (xyz, pdb without CRYST1) is put in a box this much larger (A)
     options    clayff engine: the other options of soapff_cui.core.make (e.g. reserve_water, water_rule)
-    Returns a soapff.System (out_dir, report, files, run(), lammps())."""
+    Returns a soapff.System: its commands() are the force field for the LAMMPS Python module (lmp.commands_list), and its
+    folder holds the same as files (include system.settings in a LAMMPS input).  Minimisation, MD and analysis are not
+    soapff's: they are written in LAMMPS."""
     lib = _library.load(library)
     if out_dir is None:
         stem = os.path.splitext(os.path.basename(os.fspath(structure)))[0] if isinstance(structure, (str, os.PathLike)) else "structure"
@@ -158,10 +143,7 @@ def build(library, structure, out_dir=None, *, md=True, temp=300.0, relax_ps=10.
     os.makedirs(out_dir, exist_ok=True)
     if lib.engine == "clayff":
         from . import clayff
-        kw = dict(md=md, temp=temp, relax_ps=relax_ps, nvt_ps=nvt_ps, npt_ps=npt_ps, press=press, baro=baro, dump_ps=dump_ps,
-                  boundary=boundary)
-        if timestep is not None:
-            kw["timestep_fs"] = timestep
+        kw = dict(boundary=boundary)
         if cutoff is not None:
             kw["cutoff"] = cutoff
         if kspace is not None:
@@ -174,27 +156,20 @@ def build(library, structure, out_dir=None, *, md=True, temp=300.0, relax_ps=10.
                 _read(src)                         # a file soapff-cui reads itself (with a cell): keep its path in report.json
             except Exception:
                 src = read_structure(src)
-        try:
-            rep = clayff.make(lib, src, out_dir, log=log, strict=strict, **kw)
-        except Exception as e:
-            from soapff_cui.core import FallbackError
-            if isinstance(e, FallbackError):
-                raise M.TypingError(str(e)) from e
-            raise
+        rep = clayff.make(lib, src, out_dir, log=log, strict=strict, **kw)
         rep["library_name"] = lib.name
+        rep["library_file"] = lib.path
+        rep["software"] = _library.software_versions()
         json.dump(rep, open(os.path.join(out_dir, "report.json"), "w"), indent=1)
         return System(out_dir, rep)
     if options:
         raise TypeError(f"unknown options for the molecular engine: {sorted(options)}")
-    return _build_molecular(lib, structure, out_dir, md=md, temp=temp, relax_ps=relax_ps, nvt_ps=nvt_ps, npt_ps=npt_ps,
-                            press=press, baro=baro, dump_ps=dump_ps, timestep=timestep, cutoff=cutoff, kspace=kspace,
-                            boundary=boundary, strict=strict, padding=padding, log=log)
+    return _build_molecular(lib, structure, out_dir, cutoff=cutoff, kspace=kspace, boundary=boundary, strict=strict,
+                            padding=padding, log=log)
 
 
-def _build_molecular(lib, structure, out_dir, md, temp, relax_ps, nvt_ps, npt_ps, press, baro, dump_ps, timestep, cutoff,
-                     kspace, boundary, strict, padding, log):
+def _build_molecular(lib, structure, out_dir, cutoff, kspace, boundary, strict, padding, log):
     from . import lammps as W
-    from soapff_cui.core import parse_boundary
     src = os.fspath(structure) if isinstance(structure, (str, os.PathLike)) else "Atoms"
     at = read_structure(structure) if isinstance(structure, (str, os.PathLike)) else structure.copy()
     warn = []
@@ -205,43 +180,44 @@ def _build_molecular(lib, structure, out_dir, md, temp, relax_ps, nvt_ps, npt_ps
         log("NOTE " + warn[-1])
     else:
         at.pbc = True
-    _, periodic = parse_boundary(boundary)
-    if npt_ps > 0 and not all(periodic):
-        raise ValueError(f"NPT needs a periodic box (boundary {boundary})")
-    table = M.load_table(lib.table_path(log=log))
-    factor, ions = M.bonding_options(lib)
-    nb = M.bond_graph(at, factor, ions)
+    table_file = lib.table_path(log=log)
+    table = M.load_table(table_file)
+    res = M.type_atoms(lib, table, at, log=log)
+    nb = res["nb"]
+    if res["water"] and res["water"]["bonds_taken_out"]:
+        log("NOTE the water typed apart from the rest: bonds taken out between water molecules and the rest (number, "
+            "shortest A): " + ", ".join(f"{k} {n} ({d:.2f})" for k, (n, d) in res["water"]["bonds_taken_out"].items()))
     el = np.array(at.get_chemical_symbols())
-    res = M.assign(lib, table, at, nb, log=log)
     types, q = res["type"], res["q"]
     thr = float(lib.soap.get("threshold", 0.9))
-    graph = "G" in table
     known = np.array([t != "" for t in types])
     low1 = known & (res["source"] == "soap") & (res["sim1"] < thr)
-    low2 = known & (res["source"] == "graph") & (res["sim2"] < M.GRAPH_EXACT)
-    bad = ~known | low1 | low2
+    odd = np.zeros(len(at), bool)
+    odd[res["odd"]] = True
+    bad = ~known | low1 | odd
     if bad.any():
         idx = np.nonzero(bad)[0]
-        why = lambda i: ("element not in the library" if not known[i] else
-                         f"fragment not in the library (similarity {res['sim2'][i]:.4f}, nearest {res['label'][i]})" if low2[i] else
-                         f"SOAP similarity {res['sim1'][i]:.3f} < {thr} (nearest {res['label'][i]})")
+        species = set(str(x) for x in table["allspecies"])
+
+        def why(i):
+            if not known[i]:
+                if el[i] not in species:
+                    return "element not in the library"
+                return f"bonded to {M.coordination(nb, el, i)}: no atom of the library has these bonds"
+            if odd[i]:
+                return (f"bonded to {M.coordination(nb, el, i)}, but its type {types[i]} has "
+                        f"{' or '.join(res['want'][types[i]])} (similarity {res['sim1'][i]:.3f})")
+            return f"SOAP similarity {res['sim1'][i]:.3f} < {thr} (nearest {res['label'][i]})"
         detail = "; ".join(f"{el[i]}{i + 1}: {why(i)}" for i in idx[:8]) + (" ..." if len(idx) > 8 else "")
-        # an H bonded to two atoms: two molecules overlap (e.g. water placed across the periodic boundary)
-        over = [i for i in range(len(at)) if el[i] == "H" and len(nb[i]) > 1]
-        clash = ""
-        if over:
-            clash = (f"  The structure has overlapping atoms: {len(over)} H atoms are within bonding distance of two atoms ("
-                     + "; ".join(f"H{i + 1}: " + ", ".join(f"{el[j]}{j + 1} {np.linalg.norm(d):.2f} A" for j, d in nb[i])
-                                 for i in over[:3]) + (" ..." if len(over) > 3 else "") + "): remove or move those molecules.")
-        msg = (f"{len(idx)} atoms are not in the library {lib.name}: {detail}.{clash}  Otherwise add a reference structure "
-               f"with these environments to the library (soapff.add_reference), or check the structure (missing hydrogens, "
-               f"close contacts)")
+        msg = (f"{len(idx)} atoms are not in the library {lib.name}: {detail}.  Add a reference structure with these "
+               f"environments to the library (soapff.add_reference), or check the structure (missing hydrogens, overlapping "
+               f"molecules, close contacts)")
         if strict:
             raise M.TypingError(msg)
         warn.append(msg)
         log("WARNING " + msg)
         if not known.all():
-            raise M.TypingError("atoms of elements the library does not have cannot be written: " + msg)
+            raise M.TypingError("atoms without a type cannot be written: " + msg)
     tlist = [str(t) for t in types]
     topo = M.topology(nb, tlist, el, lib)
     miss = {k: v for k, v in topo["missing"].items() if not k.startswith("dihedral")}
@@ -251,28 +227,44 @@ def _build_molecular(lib, structure, out_dir, md, temp, relax_ps, nvt_ps, npt_ps
     if nodih:
         warn.append(f"{sum(nodih.values())} dihedrals have no parameters and are left out (as AMBER / OpenMM do): "
                     + ", ".join(sorted(nodih)[:6]))
-    info = W.write(out_dir, at, nb, tlist, q, topo, lib, cutoff=cutoff, kspace=kspace, boundary=boundary)
-    open(os.path.join(out_dir, "in.lammps"), "w").write(
-        W.input_file(lib, info, md=md, temp=temp, relax_ps=relax_ps, nvt_ps=nvt_ps, npt_ps=npt_ps, press=press, baro=baro,
-                     dump_ps=dump_ps, timestep_fs=timestep))
-    # molecules and their charges
+    # margin: how much nearer the reference row that gave the type and charge was than the nearest row with another type or
+    # charge (atoms typed by SOAP only); a small margin marks an atom to check (e.g. an environment in no reference)
+    margin = np.where(res["source"] == "soap", res["margin"], np.nan)
+    # molecules and their charges.  The charges of a force field whose charges belong to the types (OPLS-AA, water models,
+    # ions) add up to a whole number in every molecule; a molecule whose charge does not has a mistyped atom, even when every
+    # similarity is above the threshold (e.g. a junction of two blocks in no reference): stop before writing anything
     mol = M.molecules(nb)
     qm = np.bincount(mol, weights=q)
     frac = np.abs(qm - np.round(qm))
-    odd = np.nonzero(frac > 1e-3)[0]
+    tol = float(lib.soap.get("charge_tolerance", 1e-3))
+    odd = np.nonzero(frac > tol)[0]
     if len(odd):
-        warn.append(f"{len(odd)} molecules have a charge that is not a whole number (largest deviation {frac.max():.4f} e)")
-        log("WARNING " + warn[-1])
+        def suspects(k):
+            idx = np.nonzero(mol == k)[0]
+            idx = idx[np.argsort(np.where(np.isnan(margin[idx]), np.inf, margin[idx]))][:4]
+            return ", ".join(f"{el[i]}{i + 1} {tlist[i]} (margin {margin[i]:.4f}, nearest {res['label'][i]})" for i in idx)
+        msg = (f"{len(odd)} molecules have a charge that is not a whole number, so atoms in them are mistyped: "
+               + "; ".join(f"molecule {k + 1} ({int((mol == k).sum())} atoms) charge {qm[k]:+.4f} e, smallest margins: "
+                           f"{suspects(k)}" for k in odd[:3]) + (" ..." if len(odd) > 3 else "")
+               + ".  Add a reference structure with these environments to the library (soapff.add_reference)")
+        if strict:
+            raise M.TypingError(msg)
+        warn.append(msg)
+        log("WARNING " + msg)
+    info = W.write(out_dir, at, nb, tlist, q, topo, lib, cutoff=cutoff, kspace=kspace, boundary=boundary)
     total = float(q.sum())
     if abs(total) > 1e-6:
         warn.append(f"net charge {total:+.4f} e (LAMMPS adds a uniform neutralising background for the long-range Coulomb)")
     with open(os.path.join(out_dir, "charges.csv"), "w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["id", "element", "type", "charge", "molecule", "source", "similarity_soap", "similarity_fragment",
-                    "nearest_reference"])
+        w.writerow(["id", "element", "type", "charge", "molecule", "source", "similarity_soap", "nearest_reference",
+                    "margin_soap", "bonded_to"])
         for i in range(len(at)):
             w.writerow([i + 1, el[i], tlist[i], f"{q[i]:+.6f}", mol[i] + 1, res["source"][i], f"{res['sim1'][i]:.5f}",
-                        "" if np.isnan(res["sim2"][i]) else f"{res['sim2'][i]:.5f}", res["label"][i]])
+                        res["label"][i],
+                        "" if np.isnan(margin[i]) else f"{margin[i]:.5f}",
+                        " ".join(str(b + 1) for b, _ in sorted(nb[i], key=lambda x: x[0]))])
+    small = [int(i) for i in np.argsort(np.where(np.isnan(margin), np.inf, margin))[:5] if np.isfinite(margin[i])]
     per = {}
     for t in sorted(set(tlist)):
         m = np.array(tlist) == t
@@ -282,19 +274,24 @@ def _build_molecular(lib, structure, out_dir, md, temp, relax_ps, nvt_ps, npt_ps
     for k in np.unique(mol):
         key = f"{int((mol == k).sum())} atoms, charge {qm[k]:+.4f}"
         kinds[key] = kinds.get(key, 0) + 1
-    rep = dict(structure=src, library=lib.path, library_name=lib.name, engine="molecular", atoms=len(at),
+    rep = dict(structure=src, library=lib.path, library_name=lib.name, engine="molecular", table=table_file,
+               software=_library.software_versions(), atoms=len(at),
                charge_sum=total, molecules=int(mol.max() + 1), molecule_kinds=dict(sorted(kinds.items(), key=lambda kv: -kv[1])[:20]),
                min_similarity_soap=float(res["sim1"][known].min()) if known.any() else None,
-               min_similarity_fragment=(float(np.nanmin(res["sim2"])) if graph and np.isfinite(res["sim2"]).any() else None),
+               min_margin_soap=float(margin[small[0]]) if small else None,
+               smallest_margins=[dict(id=i + 1, element=str(el[i]), type=tlist[i], margin=round(float(margin[i]), 5),
+                                      similarity_soap=round(float(res["sim1"][i]), 5), nearest_reference=str(res["label"][i]))
+                                 for i in small],
                sources={s: int((res["source"] == s).sum()) for s in sorted(set(res["source"]))},
+               bond_lengths={k: v["r"] for k, v in table["bond_lengths"].items()}, water_apart=res["water"],
                terms=dict(bonds=info["nbonds"], angles=info["nangles"], dihedrals=info["ndihedrals"], impropers=info["nimpropers"]),
                dihedrals_without_parameters=nodih, box=info["box"], boundary=boundary, kspace=info["kspace"],
-               per_type=per, warnings=warn,
-               md=dict(md=md, temp=temp, relax_ps=relax_ps, nvt_ps=nvt_ps, npt_ps=npt_ps, press=press, baro=baro,
-                       dump_ps=dump_ps, timestep_fs=float(timestep or lib.lammps.get("timestep", W.TIMESTEP_FS))))
+               per_type=per, warnings=warn, type_ids=info["type_ids"], type_elements=info["elements"],
+               rigid=dict(bonds=info["shake_bonds"], angles=info["shake_angles"]),
+               timestep_fs=float(lib.lammps.get("timestep", W.TIMESTEP_FS)))
     json.dump(rep, open(os.path.join(out_dir, "report.json"), "w"), indent=1)
     log(f"{len(at)} atoms, {rep['molecules']} molecules; {rep['terms']}; net charge {total:+.4f} e; wrote {out_dir}/system.data, "
-        f"system.settings, in.lammps, charges.csv, report.json")
+        f"system.settings, charges.csv, report.json")
     typed = at.copy()
     typed.set_array("fftype", np.array(tlist))
     typed.set_array("ffcharge", q)
@@ -322,22 +319,29 @@ def new_library(name, extends=None, engine="molecular", folder=None, description
     L += [f"description = {description or ('references added to ' + extends if extends else '')}", ""]
     if not extends and engine == "molecular":
         L += ["[soap]", "r_cut = 5.0", "n_max = 4", "l_max = 3", "sigma = 0.4", "depth = 4", "prune = 0.999", "threshold = 0.9", "",
-              "[bonding]", "factor = 1.15", "", "[lammps]", "pair_style     = lj/cut/coul/long 10.0", "pair_modify    = mix arithmetic",
+              "[bond_lengths]", "# E1 E2 r(A): two atoms nearer than r are bonded.  r must lie between the longest bond and the "
+              "shortest distance not bonded of the pair in the references; a pair not written gets the halfway value (the "
+              "log of the first build gives it as a row to copy here)",
+              "# H...O of hydrogen bonds comes to 1.43 A in MD, O-H bonds stretch to 1.12 A",
+              "H O 1.25", "",
+              "[lammps]", "pair_style     = lj/cut/coul/long 10.0", "pair_modify    = mix arithmetic",
               "kspace_style   = pppm 1.0e-5", "bond_style     = harmonic", "angle_style    = harmonic",
               "dihedral_style = fourier", "improper_style = cvff", "special_bonds  = lj/coul 0.0 0.0 0.5", "", "[types]",
               "# type  element  mass  epsilon(kcal/mol)  sigma(A)", "", "[bonds]", "# t1 t2  K(kcal/mol/A^2)  r0(A)", "",
               "[angles]", "# t1 t2 t3  K(kcal/mol/rad^2)  theta0(deg)", "", "[dihedrals]",
               "# t1 t2 t3 t4  K1 n1 d1 [K2 n2 d2 ...]   (E = sum K [1 + cos(n phi - d)])", "", "[impropers]",
               "# t1 t2 tc t4  K d n   (tc central; E = K [1 + d cos(n phi)])", ""]
-    L += ["[references]", "# file [prune=0.999]   (relative to this file; extxyz with fftype and ffcharge, or LAMMPS data)", ""]
+    L += ["[references]", "# file [prune=0.999]   (relative to this file; extxyz with fftype, ffcharge and bonds, or LAMMPS data)",
+          ""]
     open(path, "w").write("\n".join(L))
     return path
 
 
-def add_reference(library, structure, types=None, charges=None, name=None, prune=None):
+def add_reference(library, structure, types=None, charges=None, bonds=None, name=None, prune=None):
     """add a reference structure to a library file (never to a bundled one: make your own with
-    soapff.new_library(name, extends=...)).  structure: a file that already carries the types and charges (extxyz with fftype /
-    ffcharge, or a LAMMPS data file with type names), or an ase.Atoms / any structure file with `types` and `charges` given.
+    soapff.new_library(name, extends=...)).  structure: a file that already carries the types, charges and bonds (extxyz with
+    fftype / ffcharge / bonds, or a LAMMPS data file with type names and Bonds), or an ase.Atoms / any structure file with
+    `types`, `charges` and `bonds` (the bonded pairs, 0-based atom indices) given.
     The file is copied (or written) next to the library, in <library>_refs/, and listed in [references].  Returns its path."""
     path = _library.find(os.fspath(library) if not isinstance(library, _library.Library) else library.path)
     if os.path.commonpath([path, _library.BUNDLED]) == _library.BUNDLED:
@@ -347,7 +351,8 @@ def add_reference(library, structure, types=None, charges=None, name=None, prune
     os.makedirs(lib_dir, exist_ok=True)
     if types is None:
         src = os.fspath(structure)
-        M.read_reference(src)                             # it must carry the types and charges
+        at0 = M.read_reference(src)[0]                    # it must carry the types, the charges
+        M.reference_bonds(at0, src)                       # and the bonds
         name = name or os.path.basename(src)
         dest = os.path.join(lib_dir, name)
         if os.path.abspath(src) != os.path.abspath(dest):
@@ -357,10 +362,12 @@ def add_reference(library, structure, types=None, charges=None, name=None, prune
         at = read_structure(structure) if isinstance(structure, (str, os.PathLike)) else structure
         if charges is None or len(types) != len(at) or len(charges) != len(at):
             raise ValueError("give one type and one charge per atom")
+        if bonds is None and "bonds" not in at.arrays:
+            raise ValueError("give the bonds of the reference: bonds=[(i, j), ...] (0-based atom indices)")
         name = name or ((os.path.splitext(os.path.basename(os.fspath(structure)))[0] if isinstance(structure, (str, os.PathLike))
                          else f"ref{len(os.listdir(lib_dir)) + 1}") + ".extxyz")
         dest = os.path.join(lib_dir, name)
-        M.write_reference(dest, at, types, charges)
+        M.write_reference(dest, at, types, charges, bonds=bonds)
     rel = os.path.relpath(dest, os.path.dirname(path))
     with open(path, "a") as f:
         txt = open(path).read()

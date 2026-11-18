@@ -1,0 +1,70 @@
+{
+ "depth 4": {
+  "structures": 40,
+  "atoms": 18230,
+  "wrong_types": 0,
+  "wrong_charges": 0,
+  "structures_with_errors": {},
+  "types_exchanged": {},
+  "structures_that_stop": {},
+  "min_similarity": 0.9736
+ },
+ "depth 3": {
+  "structures": 40,
+  "atoms": 18230,
+  "wrong_types": 87,
+  "wrong_charges": 0,
+  "structures_with_errors": {
+   "cell_PEO": [
+    6,
+    0
+   ],
+   "cell_PMMA": [
+    14,
+    0
+   ],
+   "chain_PMA": [
+    2,
+    0
+   ],
+   "chain_PMMA": [
+    2,
+    0
+   ],
+   "copoly_MMA_MA": [
+    4,
+    0
+   ],
+   "md413K_PEO": [
+    3,
+    0
+   ],
+   "md413K_PMA": [
+    9,
+    0
+   ],
+   "md413K_PMMA": [
+    18,
+    0
+   ],
+   "md600K_PEO": [
+    5,
+    0
+   ],
+   "md600K_PMA": [
+    13,
+    0
+   ],
+   "md600K_PMMA": [
+    11,
+    0
+   ]
+  },
+  "types_exchanged": {
+   "opls_185->opls_469": 14,
+   "opls_469->opls_185": 73
+  },
+  "structures_that_stop": {},
+  "min_similarity": 0.973
+ }
+}

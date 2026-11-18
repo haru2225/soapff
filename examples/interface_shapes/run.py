@@ -10,26 +10,30 @@ by soapff_cui.water.pack (tolerance 2 A, seed 1) in a region given by constraint
   xygauss     a water film with a mound: inside box + below xygauss
   ions        a water film (2-22 A above z1) with 8 Na+ and 8 Cl-: inside box (muscovite)
 The number of water molecules: 1 g/cm3 in the free volume of the region (water.estimate).
-Then the force field of soapff (bundled clayff library) and a LAMMPS minimisation (Ewald 1e-4, as in ../interfaces_001_water).
+Then the force field of soapff (bundled clayff library) and a LAMMPS minimisation with the LAMMPS Python module (Ewald 1e-4,
+as in ../interfaces_001_water).
 
-    python run.py [lmp]      (with a Python where soapff is installed; packmol must be installed)
-                              ->  <case>/ (structure.extxyz; soapff's system.data, system.settings, in.lammps, charges.csv,
-                                  report.json; packmol/; the minimisation in.min, log.min), results.json"""
+    python run.py            (with a Python where soapff and LAMMPS are installed: pip install "lammps[mpi]"; packmol)
+                              ->  <case>/ (structure.extxyz; soapff's system.data, system.settings, charges.csv, report.json;
+                                  packmol/; the minimisation: its commands in.min, its log log.min), results.json"""
 import json
 import os
 import shutil
-import subprocess
 import sys
 
 import ase.io
+from lammps import lammps
 
+import soapff
 from soapff_cui import core, surfaces, water as W
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-REFS = os.path.join(HERE, "..", "library", "refs_bulk")
+sys.path.insert(0, os.path.join(HERE, ".."))
+import clay_md  # noqa: E402  (examples/clay_md.py: the LAMMPS commands of the clay examples)
+
+REFS = os.path.join(HERE, "..", "..", "src", "soapff", "libraries", "clayff", "bulk")
 LIB = os.path.join(HERE, "..", "..", "src", "soapff", "libraries", "clayff", "prebuilt", "library_clayff_bulk.npz")
-LMP = sys.argv[1] if len(sys.argv) > 1 else "lmp_serial"
-EWALD = "kspace_style ewald 1.0e-4  # this test: Ewald 1e-4 instead of the PPPM of system.settings\n"
+EWALD = "kspace_style ewald 1.0e-4"          # this test: Ewald 1e-4 instead of the PPPM of system.settings
 
 
 def slab_of(name, reps):
@@ -64,14 +68,18 @@ def case(slab, kind):
     return items
 
 
-def minimize(d, lmp=LMP):
-    """in.min: soapff's in.lammps with Ewald 1e-4 after the include (system.settings is kept as written)"""
-    s = open(os.path.join(d, "in.lammps")).read().replace("include system.settings\n", "include system.settings\n" + EWALD, 1)
-    open(os.path.join(d, "in.min"), "w").write(s)
-    p = subprocess.run([lmp, "-in", "in.min", "-log", "log.min"], cwd=d, capture_output=True, text=True)
+def minimize(d):
+    """the two-stage minimisation (clay_md.minimize) of the force field in `d` with Ewald 1e-4 after system.settings, with the
+    LAMMPS Python module (log: log.min); the same commands are written to in.min (lmp -in in.min in the folder)"""
+    s = soapff.System(d)
+    cmds = [EWALD] + clay_md.minimize()
+    clay_md.input_file(s, cmds, "in.min")
+    lmp = lammps(cmdargs=["-log", os.path.join(d, "log.min"), "-screen", "none"])
+    lmp.commands_list(s.commands() + cmds)
+    lmp.close()
     L = open(os.path.join(d, "log.min")).read().splitlines()
     k = [i for i, l in enumerate(L) if "Energy initial, next-to-last, final" in l]
-    return dict(returncode=p.returncode, stop=[l.split("=")[1].strip() for l in L if "Stopping criterion" in l],
+    return dict(stop=[l.split("=")[1].strip() for l in L if "Stopping criterion" in l],
                 energy_initial_final=[float(L[k[0] + 1].split()[0]), float(L[k[-1] + 1].split()[2])] if k else None)
 
 
@@ -86,9 +94,9 @@ if __name__ == "__main__":
         items = case(slab, kind)
         s, rep = W.pack(slab, items, tolerance=2.0, seed=1, workdir=os.path.join(d, "packmol"), log=lambda *a: None)
         ase.io.write(os.path.join(d, "structure.extxyz"), s, format="extxyz")
-        r = core.make(os.path.join(d, "structure.extxyz"), d, LIB, md=False, stop_on_fallback=True, log=lambda *a: None)
+        r = core.make(os.path.join(d, "structure.extxyz"), d, LIB, strict=True, log=lambda *a: None)
         res[kind] = dict(atoms=len(s), packmol_converged=rep["converged"], placed={x["molecule"]: x["n"] for x in rep["items"]},
-                         nearest_atom=min(x["min_distance"] for x in rep["items"]), fallback=r["fallback"],
+                         nearest_atom=min(x["min_distance"] for x in rep["items"]),
                          type_check_differ=r["type_check"]["differ"], charge_sum=round(r["charge_sum"], 4),
                          constraints=items[0]["constraints"], minimization=minimize(d))
         print(kind, {k: v for k, v in res[kind].items() if k != "constraints"}, flush=True)

@@ -7,6 +7,5 @@ dist/
 # outputs of the examples
 *_soapff/
 quickstart_out/
-clayff_test/
+polymer_smiles_out/
 *.lammpstrj
-examples/amber14sb/pdb/

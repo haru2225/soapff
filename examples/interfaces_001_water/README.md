@@ -1,26 +1,29 @@
 # Example: water on the basal (0 0 1) slabs (paper: test (4), Fig. "interfaces")
 
-The library slab of each of the 10 layered minerals of the figure (`../library/refs_basal/`; the second pyrophyllite source is left out, as in the paper) with its widest empty slice (the vacuum above the slab) filled with water by packmol at 1 g/cm³: `soapff_cui.water` (tolerance 2 Å, seed 1). Then soapff's ClayFF force field (bundled library, flexible SPC water) and a LAMMPS minimization.
+The library slab of each of the 10 layered minerals of the figure (the references of the clayff library, `src/soapff/libraries/clayff/basal/`; the second pyrophyllite source is left out, as in the paper) with its widest empty slice (the vacuum above the slab) filled with water by packmol at 1 g/cm³: `soapff_cui.water` (tolerance 2 Å, seed 1). Then soapff's ClayFF force field (bundled library, flexible SPC water) and a LAMMPS minimization.
 
 ```
-python run.py [lmp]     # lmp: the LAMMPS executable (default lmp_serial); packmol must be installed
+pip install "lammps[mpi]"     # the LAMMPS Python module
+python run.py                 # packmol must be installed
 ```
 
-Each `<mineral>/` holds `structure.extxyz` (slab + water), the files soapff writes for it (`system.data`, `system.settings`, `in.lammps` up to the minimization, `charges.csv`, `report.json`), and the LAMMPS input and log of the minimization (`in.min`, `log.min`). `in.min` is `in.lammps` with `kspace_style ewald 1.0e-4` after the `include`: the minimization uses Ewald (1e-4) instead of the PPPM of `system.settings`, as in the paper (with the LAMMPS on the machine used there, PPPM stopped at the start of the minimization). Run it in the folder with `lmp -in in.min`.
+Each `<mineral>/` holds `structure.extxyz` (slab + water), the files soapff writes for it (`system.data`, `system.settings`, `charges.csv`, `report.json`), and the minimization: its commands `in.min` and its log `log.min`. `run.py` runs the minimization in Python with the LAMMPS Python module: the force field (`system.settings`), then `kspace_style ewald 1.0e-4`, then the two-stage minimization of `../clay_md.py` (`clay_md.minimize`). The minimization uses Ewald (1e-4) instead of the PPPM of `system.settings`, as in the paper (with the LAMMPS on the machine used there, PPPM stopped at the start of the minimization). `in.min` holds the same commands after `include system.settings`; `lmp -in in.min` in the folder runs it with the `lmp` executable.
+
+All the files here were written by `run.py` with the current soapff and the LAMMPS Python module (LAMMPS 22 Jul 2025).
 
 ## Results (`results.json`)
 
-| Mineral | Slab atoms | Water molecules | Atoms | Nearest atom to the water (Å) | Fallback | Type check differ | Net charge (e) | Minimization stopped by |
-|---|---|---|---|---|---|---|---|---|
-| Na montmorillonite (dry) | 326 | 122 | 692 | 2.33 | 0 | 0 | +0.0004 | energy tolerance |
-| muscovite 2M1 | 336 | 134 | 738 | 2.87 | 0 | 0 | -0.0032 | energy tolerance |
-| muscovite 1M | 336 | 141 | 759 | 2.2 | 0 | 0 | -0.0032 | energy tolerance |
-| phlogopite 1M | 352 | 144 | 784 | 2.2 | 0 | 0 | -0.0032 | energy tolerance |
-| nanpingite | 336 | 146 | 774 | 2.36 | 0 | 0 | -0.0032 | energy tolerance |
-| pyrophyllite | 320 | 130 | 710 | 2.2 | 0 | 0 | 0 | energy tolerance |
-| kaolinite | 816 | 281 | 1659 | 2.16 | 0 | 0 | 0 | energy tolerance |
-| lizardite | 648 | 229 | 1335 | 2.68 | 0 | 0 | 0 | energy tolerance |
-| talc | 378 | 157 | 849 | 2.36 | 0 | 0 | 0 | energy tolerance |
-| brucite | 480 | 135 | 885 | 2.19 | 0 | 0 | 0 | energy tolerance |
+| Mineral | Slab atoms | Water molecules | Atoms | Nearest atom to the water (Å) | Type check differ | Net charge (e) | Minimization stopped by |
+|---|---|---|---|---|---|---|---|
+| Na montmorillonite (dry) | 326 | 122 | 692 | 2.33 | 0 | +0.0004 | energy tolerance |
+| muscovite 2M1 | 336 | 134 | 738 | 2.87 | 0 | -0.0032 | energy tolerance |
+| muscovite 1M | 336 | 141 | 759 | 2.2 | 0 | -0.0032 | energy tolerance |
+| phlogopite 1M | 352 | 144 | 784 | 2.2 | 0 | -0.0032 | energy tolerance |
+| nanpingite | 336 | 146 | 774 | 2.36 | 0 | -0.0032 | energy tolerance |
+| pyrophyllite | 320 | 130 | 710 | 2.2 | 0 | 0 | energy tolerance |
+| kaolinite | 816 | 281 | 1659 | 2.16 | 0 | 0 | energy tolerance |
+| lizardite | 648 | 229 | 1335 | 2.68 | 0 | 0 | energy tolerance |
+| talc | 378 | 157 | 849 | 2.36 | 0 | 0 | energy tolerance |
+| brucite | 480 | 135 | 885 | 2.19 | 0 | 0 | energy tolerance |
 
 packmol converged in every case. The net charges are those of ClayFF Table 1 (the rounding of the substituted sites; -0.0002 e per tetrahedral Al and +0.0002 e per octahedral Mg: 16 tetrahedral Al in the mica slabs; 4 octahedral Mg and 2 tetrahedral Al in the montmorillonite slab).

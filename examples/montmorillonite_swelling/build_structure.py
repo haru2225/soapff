@@ -3,13 +3,13 @@ dioctahedral 2:1 layer of the soapff library, COD 9000809 with H added) as 2 x 2
 cell), one tetrahedral Si -> Al, then the two octahedral Al -> Mg chosen by the static ClayFF energy (every pair of the 16
 octahedral sites, with 3 Na+ in the interlayer, each relaxed with the box free; 4 random Na placements per pair, the lowest
 energy kept).  Pairs that would make an O bonded to both the tetrahedral Al and a Mg (ClayFF obss, not in the soapff
-library) are reported but not chosen.  Dry (no water); d001 starts at 10 A.
+library) are reported but not chosen.  Dry (no water); d001 starts at 10 A.  The relaxations run in the LAMMPS Python
+module (pip install "lammps[mpi]"), one serial LAMMPS per process of the pool.
     python build_structure.py [nproc]  -> dry.extxyz (elements, positions, cell only), screening.csv
 """
 import csv
 import itertools
 import os
-import subprocess
 import sys
 import tempfile
 from multiprocessing import Pool
@@ -17,14 +17,14 @@ from multiprocessing import Pool
 import numpy as np
 from ase import Atoms
 from ase.io import write
+from lammps import lammps
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "../../src"))
 from soapff_cui.core import read_lammps_data, write_system, TYPE_ALIAS  # noqa: E402
 from soapff_cui._clayff.ff import ff_types, CLAYFF_Q  # noqa: E402
 
-LMP = os.environ.get("LMP", "lmp")
-REF = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "src", "soapff", "libraries", "clayff", "bulk",
+REF =os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "src", "soapff", "libraries", "clayff", "bulk",
                    "pyrophyllite_bulk.data")
 D001 = 10.0
 
@@ -57,6 +57,16 @@ def structure(mg, na_frac):
     return Atoms(list(sym) + ["Na"] * 3, positions=np.vstack([layer.positions, na]), cell=cell, pbc=True)
 
 
+def settings(d):
+    """system.settings of the folder d as LAMMPS commands (read_data with the absolute path of system.data)"""
+    L = []
+    for line in open(os.path.join(d, "system.settings")):
+        c = line.split("#")[0].strip()
+        if c:
+            L.append(f'read_data "{os.path.join(d, "system.data")}"' if c.split()[0] == "read_data" else c)
+    return L
+
+
 def energy(args, keep=None):
     """relaxed ClayFF energy of one (Mg pair, Na placement); keep: a path to write the relaxed structure to."""
     mg, k = args
@@ -69,28 +79,31 @@ def energy(args, keep=None):
     q = np.array([CLAYFF_Q[x] for x in t])
     with tempfile.TemporaryDirectory() as d:
         write_system(at, q, t, d)
-        open(f"{d}/in.min", "w").write("""include system.settings
-neighbor 2.0 bin
-thermo_style custom step pe press
-min_style cg
-min_modify dmax 0.05
-minimize 1.0e-6 1.0e-6 2000 20000
-fix br all box/relax tri 0.0 vmax 0.001
-minimize 1.0e-8 1.0e-8 2000 20000
-unfix br
-minimize 1.0e-8 1.0e-8 2000 20000
-print "PE $(pe:%.6f) LZ $(lz:%.4f)"
-write_data relaxed.data
-""")
-        r = subprocess.run([LMP, "-in", "in.min", "-log", "none", "-echo", "none"], cwd=d, capture_output=True, text=True)
-        line = next((l for l in r.stdout.splitlines() if l.startswith("PE ")), None)
-        if line is None:
+        lmp = lammps(cmdargs=["-log", "none", "-screen", "none"])
+        try:
+            lmp.commands_list(settings(d))
+            # the atoms, then the atoms and the box (all six components to zero stress), then the atoms again
+            lmp.commands_list(["neighbor 2.0 bin",
+                               "thermo_style custom step pe press",
+                               "min_style cg",
+                               "min_modify dmax 0.05",
+                               "minimize 1.0e-6 1.0e-6 2000 20000",
+                               "fix br all box/relax tri 0.0 vmax 0.001",
+                               "minimize 1.0e-8 1.0e-8 2000 20000",
+                               "unfix br",
+                               "minimize 1.0e-8 1.0e-8 2000 20000",
+                               "variable sc_pe equal pe", "variable sc_lz equal lz",
+                               f"write_data {os.path.join(d, 'relaxed.data')}"])
+            # rounded as the earlier version printed them (screening.csv)
+            pe, lz = float(f"{lmp.extract_variable('sc_pe'):.6f}"), float(f"{lmp.extract_variable('sc_lz'):.4f}")
+        except Exception:                                    # a LAMMPS error: this placement is left out
             return mg, k, None, False
-        w = line.split()
+        finally:
+            lmp.close()
         if keep:
             a_, _, _ = read_lammps_data(f"{d}/relaxed.data")
             write(keep, a_, format="extxyz")
-        return mg, k, (float(w[1]), float(w[3]), na_frac.tolist()), False
+        return mg, k, (pe, lz, na_frac.tolist()), False
 
 
 if __name__ == "__main__":

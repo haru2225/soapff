@@ -18,9 +18,9 @@ from scipy.spatial import cKDTree
 p = argparse.ArgumentParser()
 import os
 _here = os.path.dirname(os.path.abspath(__file__))
-_pk = _here if os.path.exists(os.path.join(_here, 'particle.data')) else os.path.join(_here, '..', 'montmorillonite_edge', 'out_clay_montmorillonite')
-p.add_argument('--particle-data', default=os.path.join(_pk, 'particle.data' if _pk == _here else 'system.data'), help='LAMMPS data file of one particle (soapff)')
-p.add_argument('--particle-settings', default=os.path.join(_pk, 'particle.settings' if _pk == _here else 'system.settings'), help='its settings file')
+_pk = os.path.join(_here, '..', 'montmorillonite_edge', 'out_clay_montmorillonite')
+p.add_argument('--particle-data', default=os.path.join(_pk, 'system.data'), help='LAMMPS data file of one particle (soapff)')
+p.add_argument('--particle-settings', default=os.path.join(_pk, 'system.settings'), help='its settings file')
 p.add_argument('-n', type=int, default=12, help='number of particles')
 p.add_argument('--mwmc', type=float, default=3.0, help='initial water / clay mass ratio (paper: ~3)')
 p.add_argument('--aspect', type=float, default=40 / 24, help='Lz / Lx = Lz / Ly of the box (paper: 40 nm / 24 nm)')

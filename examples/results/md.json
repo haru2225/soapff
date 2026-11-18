@@ -1,29 +1,29 @@
 {
  "tip3p": {
-  "seconds": 127.4,
+  "seconds": 127.3,
   "types": [
    "HW",
    "OW"
   ],
   "steps": 25000,
-  "temp_mean_npt": 300.5,
-  "density_g_cm3": 0.977
+  "temp_mean_npt": 299.5,
+  "density_g_cm3": 0.965
  },
  "spce": {
-  "seconds": 105.9,
+  "seconds": 127.2,
   "types": [
    "HW",
    "OW"
   ],
   "steps": 25000,
-  "temp_mean_npt": 298.9,
-  "density_g_cm3": 0.988
+  "temp_mean_npt": 299.3,
+  "density_g_cm3": 0.985
  },
  "clayff_kaolinite_water": {
-  "seconds": 110.5,
+  "seconds": 93.5,
   "atoms": 1659,
   "steps": 4000,
-  "temp_mean": 295.7,
+  "temp_mean": 299.2,
   "final_data": true
  }
 }

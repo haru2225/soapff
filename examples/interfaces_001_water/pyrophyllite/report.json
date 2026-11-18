@@ -1,14 +1,15 @@
 {
- "structure": "examples/interfaces_001_water/pyrophyllite/structure.extxyz",
+ "structure": "/Users/harutokono/clay/soapff/examples/interfaces_001_water/pyrophyllite/structure.extxyz",
  "atoms": 710,
- "library": "src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
+ "library": "/Users/harutokono/clay/soapff/src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
  "soap": {
   "r_cut": 5.0,
   "n_max": 4,
   "l_max": 3,
   "sigma": 0.4
  },
- "threshold": 0.95,
+ "depth": 4,
+ "threshold": 0.9,
  "boundary": "p p p",
  "kspace": [
   "kspace_style pppm 1.0e-5"
@@ -17,14 +18,26 @@
  "charges": "clayff2004",
  "water_model": "spc",
  "forcefield": null,
- "charge_sum_before": -3.7192471324942744e-15,
  "charge_sum": -3.7192471324942744e-15,
- "from_soap": 710,
- "fallback": 0,
+ "below_threshold": 0,
+ "min_similarity": 0.9999991655349731,
+ "min_margin": 0.01408165693283081,
+ "bond_lengths": {
+  "Al-O": 2.659,
+  "H-O": 1.25,
+  "Mg-O": 2.7017,
+  "O-Si": 2.4129
+ },
+ "bonds": 292,
+ "angles": 194,
  "type_check": {
   "compared": 288,
   "differ": 0,
   "kinds": {}
+ },
+ "water_apart": {
+  "molecules": 130,
+  "bonds_taken_out": {}
  },
  "warnings": [],
  "roles": {
@@ -38,74 +51,95 @@
    "charges": [
     1.575
    ],
-   "from_soap": 32,
-   "fallback": 0,
-   "min_similarity": 1.000000238418579
+   "min_similarity": 0.9999997615814209,
+   "bonds": [
+    "O6"
+   ]
   },
   "ho": {
    "atoms": 32,
    "charges": [
     0.425
    ],
-   "from_soap": 32,
-   "fallback": 0,
-   "min_similarity": 0.9998244047164917
+   "min_similarity": 1.0,
+   "bonds": [
+    "O1"
+   ]
   },
   "hw": {
    "atoms": 260,
    "charges": [
     0.41
    ],
-   "from_soap": 260,
-   "fallback": 0,
-   "min_similarity": 1.0
+   "min_similarity": 0.9999994039535522,
+   "bonds": [
+    "O1"
+   ]
   },
   "ob": {
    "atoms": 160,
    "charges": [
     -1.05
    ],
-   "from_soap": 160,
-   "fallback": 0,
-   "min_similarity": 0.9993602633476257
+   "min_similarity": 0.9999995231628418,
+   "bonds": [
+    "Al2 Si1",
+    "Si2"
+   ]
   },
   "oh": {
    "atoms": 32,
    "charges": [
     -0.95
    ],
-   "from_soap": 32,
-   "fallback": 0,
-   "min_similarity": 0.9999967813491821
+   "min_similarity": 0.9999991655349731,
+   "bonds": [
+    "Al2 H1"
+   ]
   },
   "ow": {
    "atoms": 130,
    "charges": [
     -0.82
    ],
-   "from_soap": 130,
-   "fallback": 0,
-   "min_similarity": 1.0
+   "min_similarity": 0.9999999403953552,
+   "bonds": [
+    "H2"
+   ]
   },
   "st": {
    "atoms": 64,
    "charges": [
     2.1
    ],
-   "from_soap": 64,
-   "fallback": 0,
-   "min_similarity": 0.999744713306427
+   "min_similarity": 0.9999995827674866,
+   "bonds": [
+    "O4"
+   ]
   }
  },
  "consistency": [],
- "md": {
-  "temp": 300.0,
-  "relax_ps": 10.0,
-  "nvt_ps": 50.0,
-  "npt_ps": 0.0,
-  "press": 1.0,
-  "baro": "aniso",
-  "dump_ps": 1.0,
-  "timestep_fs": 0.5
- }
+ "type_ids": {
+  "ao": 1,
+  "ho": 2,
+  "hw": 3,
+  "ob": 4,
+  "oh": 5,
+  "ow": 6,
+  "st": 7
+ },
+ "type_elements": [
+  "Al",
+  "H",
+  "H",
+  "O",
+  "O",
+  "O",
+  "Si"
+ ],
+ "rigid": {
+  "bonds": [],
+  "angles": []
+ },
+ "timestep_fs": 0.5
 }

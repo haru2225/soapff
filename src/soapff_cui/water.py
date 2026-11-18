@@ -14,8 +14,8 @@ density.  region(): any slice of z, optionally limited in a and b (fractions of 
 region of constraints (Monte Carlo), the part of it outside the van der Waals spheres of the atoms, and the molecules that
 fill it at a density.  pack(): packmol places items (molecule, number, constraints), keeping `tolerance` from every atom
 and from each other, and marks them (per-atom array "added"); packmol_input() is the input it runs.  add_water(): the
-regions of gaps()/region() filled with water and ions (each region an inside-box constraint).  soapff_cui.core.make types
-the mineral without the added molecules, then the added water and ions (by SOAP with a solution library, else by rule)."""
+regions of gaps()/region() filled with water and ions (each region an inside-box constraint).  soapff_cui.core.make then
+types the mineral, the water and the ions together (the water molecules taken apart from the mineral in step 1)."""
 import os
 import shutil
 import subprocess
@@ -94,13 +94,10 @@ def n_water(volume_A3, density=1.0):
 
 
 def find_packmol(path=None):
-    for p in (path, os.environ.get("PACKMOL"), shutil.which("packmol"),
-              os.path.join(os.path.expanduser("~"), ".soapff-gui", "packmol", "bin", "packmol"),
-              os.path.join(os.path.expanduser("~"), ".soapff-gui", "lammps", "bin", "packmol")):
+    for p in (path, os.environ.get("PACKMOL"), shutil.which("packmol")):
         if p and os.path.isfile(p) and os.access(p, os.X_OK):
             return p
-    raise FileNotFoundError("packmol not found: install it (install.sh, conda-forge 'packmol', or brew install packmol) "
-                            "or set PACKMOL")
+    raise FileNotFoundError("packmol not found: install it (conda-forge 'packmol', or brew install packmol) or set PACKMOL")
 
 
 def _xyz(path, sym, pos):

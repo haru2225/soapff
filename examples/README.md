@@ -1,64 +1,49 @@
 # Examples and test cases of soapff
 
-Run these with a Python where `pip install -e .` was run. The scripts of this first table are run from the root of the repository. The clay examples below are run inside their own folder (`python run.py`).
+Run these with a Python where `pip install -e ".[examples]"` was run: soapff and the LAMMPS Python module (`pip install "lammps[mpi]"`). soapff writes the force field only; every example writes its own minimisation and MD in LAMMPS, through the LAMMPS Python module (`from lammps import lammps`). The scripts of the first table are run from the root of the repository; the clay examples are run inside their own folder (`python run.py`). No test structure is a reference of the library it is typed with.
 
 ## The package and its libraries
 
 | File | What it shows |
 |---|---|
-| `quickstart.py [--run]` | Lists the libraries. Builds ClayFF kaolinite/water from an extxyz file, then Trp-cage with amber14sb from a plain xyz file (no types, no cell, so it is boxed). Shows `charges.csv`. `--run` runs LAMMPS. |
-| `user_library.py WORK` | Your own library. `soapff new methanol --extends amber14sb` (command line), then `soapff.add_reference` with a methanol molecule, its types and its charges. ff14SB already has the CT/H1/OH/HO parameters. A methanol/water mixture read from a CIF file is then typed. The parent library refuses it, and adding to a bundled library is refused. |
-| `clayff/test_clayff.py [WORK]` | Test case of the clay minerals. The 11 bulk crystals and the 11 (001) slabs of the `clayff` references are built as 2×2×1 supercells, and again with random displacements (0.05 Å; each H moves with its O, plus 0.02 Å). Kaolinite is read from a CIF file, and kaolinite with water (`clayff/kaolinite_water.extxyz`) is typed. Every atom is compared with the type and charge of the reference. Results in `results/clayff.json`. |
-| `md_check.py WORK` | Short LAMMPS runs of what soapff writes. TIP3P and SPC/E boxes of 216 waters (2 ps NVT relaxation, 5 ps NVT, 20 ps NPT, SHAKE). Kaolinite with water (ClayFF, 0.5 + 2 ps NVT). Results in `results/md.json`. |
-| `amber14sb/` | How the protein library was made from OpenMM's ff14SB, and the checks against OpenMM (types, charges, energies in vacuum and in water). See `amber14sb/README.md`. |
+| `quickstart.py [--run]` | Lists the libraries. Builds the force field of ClayFF kaolinite/water from an extxyz file, of a PMMA chain with oplsaa from a plain xyz file (no types, no cell, so it is boxed), and of a PE melt with oplsaa. Shows `charges.csv` and the force field as LAMMPS commands. `--run` then runs 10 ps of NPT of the PE melt at 413 K with the LAMMPS Python module. |
+| `polymer_smiles.py [ps]` | A polymer from its SMILES: a PMMA 10-mer made 3D with H by RDKit (only the elements and positions go to soapff), its OPLS-AA force field (`oplsaa`; every type and charge is the one Foyer gives the same coordinates), then minimisation and NVT at 413 K (default 100 ps; 24 s on one core) with the LAMMPS Python module. Needs `pip install rdkit`. |
+| `md_check.py WORK` | Short MD with soapff's force fields. TIP3P and SPC/E boxes of 216 waters (SHAKE from the force field; minimisation, 2 ps NVT relaxation, 5 ps NVT, 20 ps NPT). Kaolinite with water (ClayFF, `clay_md.py`: minimisation, 0.5 + 2 ps NVT). Results in `results/md.json`. |
+| `clay_md.py` | The MD protocol of the clay examples as LAMMPS commands (two-stage minimisation, NVT relaxation, NVT with trajectory and MSD, NPT), for `lmp.commands_list`, or written to an input file for the `lmp` executable. |
+| `clayff/water_md_frames.py` | `clayff` on the last frames of 19 MD runs with water at 300 K (`library_water/refs/*/final.data` and `montmorillonite_2W/diffusion/start/final.data`), against the types of their MD input; the longest O-H bond and the shortest H…O of the hydrogen bonds, which decide the H-O bond length (1.25 Å). Results in `results/clayff_water_md_frames.json`. |
+| `clayff/water_apart_check.py` | Step 1 on the 37 clay structures with water: the bonds between water and the rest that taking the water molecules apart takes out (none; the nano-gouge, `nanogouge/`, is the case where there are). Results in `results/clayff_water_apart_check.json`. |
+| `oplsaa/` | Polymers with OPLS-AA: how the library was made from Foyer's `oplsaa.xml` and oligomers typed by Foyer, and the checks against Foyer (types and charges of chains, MD frames, copolymers and amorphous cells), against Foyer's force field in OpenMM (forces, melt MD) and against the measured melt densities (Fetters et al. 1994); a user library for a block-copolymer junction. See `oplsaa/README.md`. |
+| `water/make_library_txt.py LIBDIR` | How the `tip3p` and `spce` libraries were made from OpenMM's `amber14/tip3p.xml` and `amber14/spce.xml` (needs OpenMM). |
 
 ## Clay minerals (`clayff`, `clayff_edge`)
 
-Each folder has a `README.md`, its inputs, the script that redoes the calculation (`run.py` and others), and its results (`results.json`).
+The references of the two libraries are in `src/soapff/libraries/clayff/` (`bulk/`, `basal/`, `water/`, `edge/`). Each folder here has a `README.md`, its inputs, the script that redoes the calculation, and its results (`results.json`).
 
 | Test case | Folder | What it holds |
 |---|---|---|
-| References, one-to-one correspondence | `library/` | The reference structures: 11 bulk crystals, 11 basal slabs, the 2-layer hydrate and the particle with edges. The default, edge and initial 12-structure libraries are rebuilt and checked, with l_max 3, 4 and 5 (`run_lmax.py`). |
-| Solution libraries | `library_water/` | The references of the water and the aqueous ions (`clayff_water`, `clayff_edge_water`): liquid water, chloride solutions, films and a droplet built by packmol. Also the scripts that build and test the two-step typing (mineral first, then water and ions). |
-| Larger crystals | `supercells/` | Brucite 5×5×4 and pyrophyllite 3×2×3, compared with the bond-graph ClayFF types; their MD (`md.py`). |
-| MD frames | `sheet_silicates/` | 8 sheet silicates: supercells and the last frame of a 300 K NVT/NPT MD, compared with the truth; lattice parameters, temperatures, d001. |
-| MD of the references | `library_nvt_npt/` | NVT and NPT of the 11 bulk reference structures, with analysis. |
-| Basal slabs | `surfaces_001/` | 13 faces of the 11 minerals cut with pymatgen (only (001) is made); the (001) slabs cut again from the bulk doubled along a, and typed. |
-| Interfaces with water | `interfaces_001_water/` | Water on the (001) slabs of 10 minerals: force field and minimisation. |
+| Water and ion references, MD frames | `library_water/` | How the water and ion references of the libraries were made (packmol liquids, films and a droplet in vacuum), and the 300 K MD of the liquids, of the 11 (001) slabs with water and of the 2-layer hydrate, whose last frames are the test frames of `clayff/water_md_frames.py`. |
+| Interfaces with water | `interfaces_001_water/` | Water on the (001) slabs of 10 minerals (packmol): force field and minimisation. |
 | Water shapes | `interface_shapes/` | 6 initial structures made with packmol's constraints (sphere, hemisphere, cylinder, cavity, xygauss, NaCl film): force field and minimisation. |
 | Large droplet | `meng2022_droplet/` | The NaCl droplet of Meng et al. 2022 on montmorillonite (001), 105,977 atoms. |
-| Particle with edges | `montmorillonite_edge/` | The `clayff_edge` library on the particle: types, charges, coefficients, single point against the original files, minimisations. |
-| Swelling curve | `montmorillonite_swelling/` | The Na montmorillonite of Cygan et al. 2004 and its swelling curve (10 water contents). |
-| Diffusion | `montmorillonite_2W/` | Diffusion coefficients of Na montmorillonite with a 2-layer hydrate (1,554 atoms; 300, 330 and 366 K), compared with Greathouse et al. 2016. |
-| Mechanical properties | `muscovite_2M1/` | 0 K elastic constants, and tension, compression and shear at 300 K, of muscovite 2M1. |
-| Supercomputer workflow | `nanogouge/` | Shearing an assemblage of montmorillonite nanoparticles with edges (all-atom LAMMPS, PBS job chain); tested on a small system. |
+| Particle with edges | `montmorillonite_edge/` | The `clayff_edge` library on the particle, the particle twice and the particle with a water film and NaCl: types, charges, coefficients, single point against the original files, minimisations. |
+| Nano-gouge | `nanogouge/` | 3 particles with edges in a periodic box, dry and in water (66,900 atoms), typed with `clayff_edge` against the types of the builder (`typing_test.py`). |
+| 2-layer hydrate | `montmorillonite_2W/` | Na montmorillonite with two water layers (1,554 atoms): its force field and a 300 K NPT, the last frame of which is one of the test frames of `clayff/water_md_frames.py`. |
+| Swelling curve | `montmorillonite_swelling/` | The Na montmorillonite of Cygan et al. 2004 and its swelling curve (10 water contents; `swelling.py`). |
 
 Notes on these examples:
-- **Force field:** all use the current force field: the charges of Table 1 of Cygan et al. 2004 as they are, the LJ parameters unrounded, and the flexible SPC water. The edge example uses the particle's own force field.
-- **Where the MD ran:** the MD of `library_nvt_npt/`, `montmorillonite_2W/`, `montmorillonite_swelling/` and `muscovite_2M1/` was run on another computer over SSH (Linux, Open MPI, PPPM 1e-5).
-- **Minimisations:** those of the interface examples use Ewald 1e-4, because PPPM stopped at the start of a minimisation with the local LAMMPS. Their input is `in.min`, next to the `in.lammps` soapff writes.
-- **Not kept:** trajectories (`*.lammpstrj`) and packmol's xyz files.
+- **Force field:** the charges of Table 1 of Cygan et al. 2004 as they are, the LJ parameters unrounded, and the flexible SPC water. The edge examples use the particle's own force field.
+- **Where the MD ran:** the MD of `montmorillonite_2W/`, `montmorillonite_swelling/` and the systems of `library_water/refs/` was run on another computer (Linux, Open MPI, PPPM 1e-5) with LAMMPS 7 Feb 2024 (Update 1); the water, NaCl and KCl systems of `library_water/refs/` with LAMMPS 29 Aug 2024 (the first line of each `log.lammps`). These runs used the `in.lammps` files written by an earlier soapff, whose commands are those the scripts now write with `clay_md.py`; a rerun with another LAMMPS version may relax to slightly different minima.
+- **Minimisations:** those of the interface examples run in the LAMMPS Python module: the force field, `kspace_style ewald 1.0e-4` (PPPM stopped at the start of a minimisation with the Homebrew LAMMPS used for the stored results), then the two-stage minimisation of `clay_md.py`. The same commands are written to `in.min`. The `in.lammps` files in some folders were written by the earlier soapff and are kept as records.
+- **Not kept:** trajectories (`*.lammpstrj`) and packmol's xyz files of the large structures.
 
-## Results of `clayff/test_clayff.py` (`results/clayff.json`)
-
-| Structures | Atoms | Wrong types | Wrong charges (> 0.01 e) | Lowest similarity |
-|---|---|---|---|---|
-| 11 bulk crystals, 2×2×1 | 652–1,632 | 0 | 0 | 1.0000 |
-| the same, displaced | 652–1,632 | 0 | 0 | 0.9934–0.9963 |
-| 11 (001) slabs, 2×2×1 | 1,280–3,264 | 0 | 0 | 0.9990–0.9996 |
-| the same, displaced | 1,280–3,264 | 0 | 0 | 0.9902–0.9961 |
-| kaolinite from a CIF file | 408 | 0 | 0 | 1.0000 |
-
-Kaolinite with water (1,659 atoms): all 816 mineral atoms and 843 water atoms are typed by SOAP; no atom falls back to a rule; net charge 0.
-
-## Results of `md_check.py` (`results/md.json`; LAMMPS 22 Jul 2025, serial, Ewald 1e-5)
+## Results of `md_check.py` (`results/md.json`; LAMMPS 22 Jul 2025 Python module, serial, PPPM 1e-5)
 
 | System | Atoms | Run | Result |
 |---|---|---|---|
-| TIP3P, 216 waters | 648 | 27 ps | mean temperature of the NPT 300.5 K; density over the second half of the NPT 0.977 g/cm³ (10 Å cutoff, no tail correction; TIP3P is about 0.98–1.00) |
-| SPC/E, 216 waters | 648 | 27 ps | 298.9 K; 0.988 g/cm³ (SPC/E is about 0.99–1.00) |
-| kaolinite / water (ClayFF) | 1659 | minimisation, 0.5 ps relaxation, 2 ps NVT (0.5 fs) | mean temperature over the second half of the NVT 295.7 K; `final.data` written |
+| TIP3P, 216 waters | 648 | 27 ps | mean temperature of the NPT 299.5 K; density over the second half of the NPT 0.965(3) g/cm³ (10 Å cutoff, no tail correction; TIP3P is about 0.98 with it) |
+| SPC/E, 216 waters | 648 | 27 ps | 299.3 K; 0.985(5) g/cm³ (SPC/E is about 0.99 with the tail correction) |
+| kaolinite / water (ClayFF) | 1659 | minimisation, 0.5 ps relaxation, 2 ps NVT (0.5 fs) | mean temperature over the second half of the NVT 299.2 K; `final.data` written |
 
-These checks use Ewald, not the PPPM the libraries choose. The local Homebrew LAMMPS (FFTW3 with threads) crashes when PPPM is set up a second time, as in the run after a minimisation. Other builds run the `in.lammps` soapff writes as it is.
+The numbers in brackets are standard errors from 5 blocks. SHAKE is part of the water force field, so it is on during the minimisation too (LAMMPS turns the constraints into stiff restraints there and warns about it). An earlier run of the same protocol with the `lmp` executable, Ewald 1e-5 and SHAKE switched on after the minimisation gave 0.977 and 0.988 g/cm³. A box of 216 waters is small: the density of single frames varies by ±0.014 g/cm³ (standard deviation), so 10 ps averages of two runs can differ by about 0.01.
 
 For a density closer to the published values in NPT, add the long-range dispersion correction: `pair_modify mix arithmetic tail yes` in the `[lammps]` section of your own library, or in `system.settings`.

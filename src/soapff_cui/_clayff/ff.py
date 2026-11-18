@@ -12,7 +12,7 @@ Sources
 import numpy as np
 
 from .bonds import Graph
-from .chem import EXCHANGEABLE, FORMAL, MASS
+from .chem import EXCHANGEABLE, MASS
 
 KJ = 4.184
 LJ = {  # type: (epsilon kcal/mol, sigma A)
@@ -163,7 +163,6 @@ def write_lammps(atoms, charges, data_path, settings_path, types=None, boundary=
     mol = np.ones(len(atoms), int)
     nxt = 2
     if role is not None:
-        wO = [o for o, h, k in bonds if k == "OHw"]
         seen = {}
         for o, h, k in bonds:
             if k == "OHw":

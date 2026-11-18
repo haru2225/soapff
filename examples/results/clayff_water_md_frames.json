@@ -1,0 +1,209 @@
+{
+ "bond_lengths": {
+  "Al-O": 2.659,
+  "H-O": 1.25,
+  "Mg-O": 2.7017,
+  "O-Si": 2.4129
+ },
+ "frames": {
+  "BaCl2": {
+   "atoms": 1500,
+   "water": 494,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9909,
+   "longest_OH_bond": 1.096,
+   "shortest_HO_not_bonded": 1.449
+  },
+  "CaCl2": {
+   "atoms": 1500,
+   "water": 494,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9939,
+   "longest_OH_bond": 1.107,
+   "shortest_HO_not_bonded": 1.451
+  },
+  "CsCl": {
+   "atoms": 1504,
+   "water": 496,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9903,
+   "longest_OH_bond": 1.104,
+   "shortest_HO_not_bonded": 1.441
+  },
+  "KCl": {
+   "atoms": 1504,
+   "water": 496,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9936,
+   "longest_OH_bond": 1.085,
+   "shortest_HO_not_bonded": 1.446
+  },
+  "NaCl": {
+   "atoms": 1504,
+   "water": 496,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9935,
+   "longest_OH_bond": 1.099,
+   "shortest_HO_not_bonded": 1.47
+  },
+  "hydrate_2W": {
+   "atoms": 1554,
+   "water": 192,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9865,
+   "longest_OH_bond": 1.091,
+   "shortest_HO_not_bonded": 1.431
+  },
+  "if_brucite": {
+   "atoms": 885,
+   "water": 135,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9792,
+   "longest_OH_bond": 1.09,
+   "shortest_HO_not_bonded": 1.517
+  },
+  "if_kaolinite": {
+   "atoms": 1659,
+   "water": 281,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9394,
+   "longest_OH_bond": 1.102,
+   "shortest_HO_not_bonded": 1.474
+  },
+  "if_lizerdite": {
+   "atoms": 1335,
+   "water": 229,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9644,
+   "longest_OH_bond": 1.083,
+   "shortest_HO_not_bonded": 1.49
+  },
+  "if_montmorillonite_dry_Na": {
+   "atoms": 692,
+   "water": 122,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.994,
+   "longest_OH_bond": 1.093,
+   "shortest_HO_not_bonded": 1.495
+  },
+  "if_muscovite_1M": {
+   "atoms": 759,
+   "water": 141,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9903,
+   "longest_OH_bond": 1.091,
+   "shortest_HO_not_bonded": 1.53
+  },
+  "if_muscovite_2M1": {
+   "atoms": 738,
+   "water": 134,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9752,
+   "longest_OH_bond": 1.096,
+   "shortest_HO_not_bonded": 1.555
+  },
+  "if_nanpingite": {
+   "atoms": 774,
+   "water": 146,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9851,
+   "longest_OH_bond": 1.105,
+   "shortest_HO_not_bonded": 1.48
+  },
+  "if_phlogopite_1M": {
+   "atoms": 784,
+   "water": 144,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9621,
+   "longest_OH_bond": 1.089,
+   "shortest_HO_not_bonded": 1.535
+  },
+  "if_pyrophyllite": {
+   "atoms": 710,
+   "water": 130,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9936,
+   "longest_OH_bond": 1.094,
+   "shortest_HO_not_bonded": 1.459
+  },
+  "if_pyrophyllite_2": {
+   "atoms": 710,
+   "water": 130,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9919,
+   "longest_OH_bond": 1.082,
+   "shortest_HO_not_bonded": 1.448
+  },
+  "if_talc": {
+   "atoms": 849,
+   "water": 157,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9673,
+   "longest_OH_bond": 1.1,
+   "shortest_HO_not_bonded": 1.472
+  },
+  "water": {
+   "atoms": 1536,
+   "water": 512,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9916,
+   "longest_OH_bond": 1.116,
+   "shortest_HO_not_bonded": 1.471
+  },
+  "hydrate_2W_after_npt": {
+   "atoms": 1554,
+   "water": 192,
+   "wrong": 0,
+   "below_0_9": 0,
+   "bonds_not_of_type": 0,
+   "min_similarity": 0.9921,
+   "longest_OH_bond": 1.104,
+   "shortest_HO_not_bonded": 1.442
+  }
+ },
+ "total": {
+  "frames": 19,
+  "atoms": 22051,
+  "wrong": 0,
+  "frames_that_stop": 0,
+  "min_similarity": 0.9394,
+  "longest_OH_bond": 1.116,
+  "shortest_HO_not_bonded": 1.431
+ }
+}

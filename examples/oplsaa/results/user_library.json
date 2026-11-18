@@ -1,0 +1,10 @@
+{
+ "oplsaa + PE4_PEO3": {
+  "atoms": 136,
+  "wrong_type": 0,
+  "wrong_charge": 0,
+  "net_charge": 0.0,
+  "min_similarity_soap": 0.9994,
+  "wrong_atoms": []
+ }
+}

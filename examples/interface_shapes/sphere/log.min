@@ -1,7 +1,4 @@
-LAMMPS (22 Jul 2025 - Update 5)
-# soapff-cui: ClayFF + SOAP charges.  lmp -in in.lammps
-include system.settings
-# soapff-cui settings: ClayFF (Cygan et al. 2004, Tables 1 and 2) with flexible SPC (ClayFF) water; types in system.data from SOAP, charges: clayff2004
+LAMMPS (22 Jul 2025 - Update 4)
 units real
 atom_style full
 boundary p p p
@@ -10,7 +7,7 @@ angle_style harmonic
 pair_style lj/cut/coul/long 10.0
 pair_modify mix arithmetic tail no
 special_bonds lj/coul 0.0 0.0 0.0
-read_data system.data
+read_data "/Users/harutokono/clay/soapff/examples/interface_shapes/sphere/system.data"
 Reading data file ...
   triclinic box = (0 0 0) to (31.039969 35.921566 65.038012) with tilt (-0.00997602 0 0)
   1 by 1 by 1 MPI processor grid
@@ -34,40 +31,35 @@ Finding 1-2 1-3 1-4 neighbors ...
      1 = max # of 1-4 neighbors
      2 = max # of special neighbors
   special bonds CPU = 0.000 seconds
-  read_data CPU = 0.017 seconds
-pair_coeff 1 1 1.3298e-06 4.271235724380229  # ao
-pair_coeff 2 2 1.8405e-06 3.3020270089153536  # at
-pair_coeff 3 3 0.0 0.0  # ho
-pair_coeff 4 4 0.0 0.0  # hw
-pair_coeff 5 5 9.0298e-07 5.264320525491264  # mgo
-pair_coeff 6 6 0.1301 2.350012638710587  # Na
-pair_coeff 7 7 0.1554 3.1655413252962536  # ob
-pair_coeff 8 8 0.1554 3.1655413252962536  # obos
-pair_coeff 9 9 0.1554 3.1655413252962536  # obts
-pair_coeff 10 10 0.1554 3.1655413252962536  # oh
-pair_coeff 11 11 0.1554 3.1655413252962536  # ohs
-pair_coeff 12 12 0.1554 3.1655413252962536  # ow
-pair_coeff 13 13 1.8405e-06 3.3020270089153536  # st
-bond_coeff 1 554.1349 1.0  # O-H
-bond_coeff 2 554.1349 1.0  # O-H (water)
-angle_coeff 1 45.7696 109.47  # HOHw
-angle_coeff 2 30.0 109.47  # MOH-Al-bulk
-angle_coeff 3 30.0 109.47  # MOH-Mg-bulk
+  read_data CPU = 0.018 seconds
+pair_coeff 1 1 1.3298e-06 4.271235724380229
+pair_coeff 2 2 1.8405e-06 3.3020270089153536
+pair_coeff 3 3 0.0 0.0
+pair_coeff 4 4 0.0 0.0
+pair_coeff 5 5 9.0298e-07 5.264320525491264
+pair_coeff 6 6 0.1301 2.350012638710587
+pair_coeff 7 7 0.1554 3.1655413252962536
+pair_coeff 8 8 0.1554 3.1655413252962536
+pair_coeff 9 9 0.1554 3.1655413252962536
+pair_coeff 10 10 0.1554 3.1655413252962536
+pair_coeff 11 11 0.1554 3.1655413252962536
+pair_coeff 12 12 0.1554 3.1655413252962536
+pair_coeff 13 13 1.8405e-06 3.3020270089153536
+bond_coeff 1 554.1349 1.0
+bond_coeff 2 554.1349 1.0
+angle_coeff 1 45.7696 109.47
+angle_coeff 2 30.0 109.47
+angle_coeff 3 30.0 109.47
 kspace_style pppm 1.0e-5
-kspace_style ewald 1.0e-4  # this test: Ewald 1e-4 instead of the PPPM of system.settings
-group water type 12 4
-417 atoms in group water
-neighbor 2.0 bin
-neigh_modify every 1 delay 0 check yes
+kspace_style ewald 1.0e-4
 thermo_style custom step temp press pe ke etotal vol density lx ly lz
 thermo 1000
-# minimisation with a small step limit first (built structures may contain overlapping water)
 min_style cg
 min_modify dmax 0.01
 minimize 1.0e-4 1.0e-6 1000 10000
 Ewald initialization ...
 WARNING: System is not charge neutral, net charge = 0.0024
-For more information see https://docs.lammps.org/err0029 (src/kspace.cpp:330)
+For more information see https://docs.lammps.org/err0029 (src/src/kspace.cpp:330)
   using 12-bit tables for long-range coulomb
   G vector (1/distance) = 0.27325293
   estimated absolute RMS force accuracy = 0.038785288
@@ -91,9 +83,9 @@ Per MPI rank memory allocation (min/avg/max) = 36.09 | 36.09 | 36.09 Mbytes
    Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
          0   0              5771.8531     -468026.96      0             -468026.96      72517.662      0.86657628     31.039969      35.921566      65.038012    
         15   0              3459.1642     -469227.17      0             -469227.17      72517.662      0.86657628     31.039969      35.921566      65.038012    
-Loop time of 2.17147 on 1 procs for 15 steps with 2373 atoms
+Loop time of 1.12877 on 1 procs for 15 steps with 2373 atoms
 
-47.4% CPU use with 1 MPI tasks x no OpenMP threads
+84.5% CPU use with 1 MPI tasks x no OpenMP threads
 
 Minimization stats:
   Stopping criterion = energy tolerance
@@ -107,14 +99,14 @@ Minimization stats:
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
 ---------------------------------------------------------------
-Pair    | 0.42602    | 0.42602    | 0.42602    |   0.0 | 19.62
-Bond    | 0.00077108 | 0.00077108 | 0.00077108 |   0.0 |  0.04
-Kspace  | 1.7421     | 1.7421     | 1.7421     |   0.0 | 80.23
+Pair    | 0.26966    | 0.26966    | 0.26966    |   0.0 | 23.89
+Bond    | 0.00089308 | 0.00089308 | 0.00089308 |   0.0 |  0.08
+Kspace  | 0.85578    | 0.85578    | 0.85578    |   0.0 | 75.81
 Neigh   | 0          | 0          | 0          |   0.0 |  0.00
-Comm    | 0.00089013 | 0.00089013 | 0.00089013 |   0.0 |  0.04
+Comm    | 0.00091492 | 0.00091492 | 0.00091492 |   0.0 |  0.08
 Output  | 0          | 0          | 0          |   0.0 |  0.00
 Modify  | 0          | 0          | 0          |   0.0 |  0.00
-Other   |            | 0.001645   |            |       |  0.08
+Other   |            | 0.001528   |            |       |  0.14
 
 Nlocal:           2373 ave        2373 max        2373 min
 Histogram: 1 0 0 0 0 0 0 0 0 0
@@ -141,31 +133,31 @@ Generated 78 of 78 mixed pair_coeff terms from arithmetic mixing rule
 Per MPI rank memory allocation (min/avg/max) = 36.09 | 36.09 | 36.09 Mbytes
    Step          Temp          Press          PotEng         KinEng         TotEng         Volume        Density           Lx             Ly             Lz      
         15   0              3459.1642     -469227.17      0             -469227.17      72517.662      0.86657628     31.039969      35.921566      65.038012    
-       189   0              1349.8841     -471583.83      0             -471583.83      72517.662      0.86657628     31.039969      35.921566      65.038012    
-Loop time of 45.3125 on 1 procs for 174 steps with 2373 atoms
+       189   0              1349.8858     -471583.83      0             -471583.83      72517.662      0.86657628     31.039969      35.921566      65.038012    
+Loop time of 24.9133 on 1 procs for 174 steps with 2373 atoms
 
-48.4% CPU use with 1 MPI tasks x no OpenMP threads
+81.8% CPU use with 1 MPI tasks x no OpenMP threads
 
 Minimization stats:
   Stopping criterion = energy tolerance
   Energy initial, next-to-last, final = 
-     -469227.172325273  -471583.393533938  -471583.826155177
-  Force two-norm initial, final = 540.71107 26.270833
-  Force max component initial, final = 67.594085 5.8020563
-  Final line search alpha, max atom move = 0.0056884768 0.033004863
+     -469227.172325273  -471583.393243094  -471583.825727973
+  Force two-norm initial, final = 540.71107 26.270728
+  Force max component initial, final = 67.594085 5.8018464
+  Final line search alpha, max atom move = 0.0056883692 0.033003044
   Iterations, force evaluations = 174 337
 
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
 ---------------------------------------------------------------
-Pair    | 9.9698     | 9.9698     | 9.9698     |   0.0 | 22.00
-Bond    | 0.025833   | 0.025833   | 0.025833   |   0.0 |  0.06
-Kspace  | 34.905     | 34.905     | 34.905     |   0.0 | 77.03
-Neigh   | 0.34113    | 0.34113    | 0.34113    |   0.0 |  0.75
-Comm    | 0.026795   | 0.026795   | 0.026795   |   0.0 |  0.06
+Pair    | 6.2702     | 6.2702     | 6.2702     |   0.0 | 25.17
+Bond    | 0.021038   | 0.021038   | 0.021038   |   0.0 |  0.08
+Kspace  | 18.378     | 18.378     | 18.378     |   0.0 | 73.77
+Neigh   | 0.19914    | 0.19914    | 0.19914    |   0.0 |  0.80
+Comm    | 0.022256   | 0.022256   | 0.022256   |   0.0 |  0.09
 Output  | 0          | 0          | 0          |   0.0 |  0.00
 Modify  | 0          | 0          | 0          |   0.0 |  0.00
-Other   |            | 0.04444    |            |       |  0.10
+Other   |            | 0.02255    |            |       |  0.09
 
 Nlocal:           2373 ave        2373 max        2373 min
 Histogram: 1 0 0 0 0 0 0 0 0 0
@@ -179,4 +171,5 @@ Ave neighs/atom = 244.79772
 Ave special neighs/atom = 0.51327434
 Neighbor list builds = 7
 Dangerous builds = 0
-Total wall time: 0:00:47
+
+Total wall time: 0:00:26

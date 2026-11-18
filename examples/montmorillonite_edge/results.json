@@ -3,7 +3,6 @@
   "atoms": 2292,
   "wrong_type": 0,
   "wrong_charge": 0,
-  "fallback": 0,
   "min_similarity": 1.0,
   "type_check_differ": 0,
   "pair_coeff_differ": [],
@@ -19,14 +18,13 @@
    "angle_coeff 6 800.0 100.0  # MOMe  (edge metal-O-metal) (Montmorillonite edge)"
   ],
   "minimization": {
-   "returncode": 0,
    "stop": [
     "energy tolerance",
     "energy tolerance"
    ],
    "energy_initial_final": [
     -509519.555466255,
-    -528845.907358724
+    -528845.635117305
    ]
   }
  },
@@ -34,7 +32,6 @@
   "atoms": 4584,
   "wrong_type": 0,
   "wrong_charge": 0,
-  "fallback": 0,
   "min_similarity": 1.0,
   "type_check_differ": 0,
   "pair_coeff_differ": [],
@@ -50,18 +47,16 @@
    "angle_coeff 6 800.0 100.0  # MOMe  (edge metal-O-metal) (Montmorillonite edge)"
   ],
   "minimization": {
-   "returncode": 0,
    "stop": [
     "energy tolerance",
     "energy tolerance"
    ],
    "energy_initial_final": [
     -1019042.49831074,
-    -1057691.91474976
+    -1057691.90076232
    ]
   }
  },
- "default_library": "237 atoms are not in the library (fallback): O1 (similarity 0.783), O2 (similarity 0.795), O3 (similarity 0.781), O4 (si",
  "single_point": {
   "original": {
    "pe": -509528.707277,
@@ -92,18 +87,21 @@
    "water": 7680,
    "ion": 32
   },
-  "fallback": 0,
   "type_check_differ": 0,
+  "water_apart": {
+   "molecules": 2560,
+   "bonds_taken_out": {}
+  },
+  "min_similarity": 1.0,
   "charge_sum": -0.0,
   "minimization": {
-   "returncode": 0,
    "stop": [
     "energy tolerance",
     "energy tolerance"
    ],
    "energy_initial_final": [
     -481562.00576409,
-    -560343.06596038
+    -561422.043790605
    ]
   }
  }

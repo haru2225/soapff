@@ -1,0 +1,53 @@
+{
+ "PE": {
+  "fetters_1994": 0.785,
+  "lammps": {
+   "density": 0.7622,
+   "stderr": 0.0025,
+   "temperature": 412.8,
+   "from_ps": 100.1,
+   "to_ps": 500.0
+  },
+  "openmm": {
+   "density": 0.7508,
+   "stderr": 0.0025,
+   "temperature": 413.3,
+   "from_ps": 101.0,
+   "to_ps": 500.0
+  }
+ },
+ "PP": {
+  "fetters_1994": 0.791,
+  "lammps": {
+   "density": 0.7825,
+   "stderr": 0.0035,
+   "temperature": 413.0,
+   "from_ps": 100.1,
+   "to_ps": 500.0
+  },
+  "openmm": {
+   "density": 0.7739,
+   "stderr": 0.0023,
+   "temperature": 413.5,
+   "from_ps": 101.0,
+   "to_ps": 500.0
+  }
+ },
+ "PIB": {
+  "fetters_1994": 0.849,
+  "lammps": {
+   "density": 0.8433,
+   "stderr": 0.0024,
+   "temperature": 412.9,
+   "from_ps": 100.1,
+   "to_ps": 500.0
+  },
+  "openmm": {
+   "density": 0.8413,
+   "stderr": 0.0008,
+   "temperature": 413.0,
+   "from_ps": 101.0,
+   "to_ps": 500.0
+  }
+ }
+}

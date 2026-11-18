@@ -1,9 +1,9 @@
 """soapff from the command line (python -m soapff, or the soapff command):
 
     soapff list                                        the libraries that can be given by name
-    soapff info amber14sb [--table]                    a library: file, engine, references, types (--table: compute its table)
-    soapff build amber14sb protein.pdb -o out [--run --np 4]
-    soapff run out [--np 4] [--lmp lmp] [--mpirun mpirun]
+    soapff info oplsaa [--table]                       a library: file, engine, references, types (--table: compute its table)
+    soapff build oplsaa cell_PE.extxyz -o out          the force field: out/system.data, out/system.settings (include it in
+                                                       a LAMMPS input, or lmp.commands_list(System.commands()) in Python)
     soapff new mine --extends clayff                   ~/.soapff/libraries/mine.txt
     soapff add-reference mine annite.data              a reference with its types and charges (extxyz fftype/ffcharge, LAMMPS data)
 """
@@ -56,7 +56,7 @@ def cmd_info(a):
         print(f"types        {len(lib.types)}: {' '.join(sorted(lib.types))}")
         print(f"terms        {len(lib.bonds)} bonds, {len(lib.angles)} angles, {len(lib.dihedrals)} dihedrals, "
               f"{len(lib.impropers)} impropers")
-    for sec in ("soap", "graph", "bonding", "lammps"):
+    for sec in ("soap", "lammps"):
         d = getattr(lib, sec)
         if d:
             print(f"[{sec}]".ljust(13) + "  ".join(f"{k}={v}" for k, v in d.items()))
@@ -67,9 +67,7 @@ def cmd_info(a):
 
 def cmd_build(a):
     from . import build
-    kw = dict(md=not a.no_md, temp=a.temp, relax_ps=a.relax_ps, nvt_ps=a.nvt_ps, npt_ps=a.npt_ps, press=a.press, baro=a.baro,
-              dump_ps=a.dump_ps, timestep=a.timestep, cutoff=a.cutoff, kspace=a.kspace, boundary=a.boundary,
-              strict=not a.no_strict, padding=a.padding)
+    kw = dict(cutoff=a.cutoff, kspace=a.kspace, boundary=a.boundary, strict=not a.no_strict, padding=a.padding)
     for o in a.option or []:
         if "=" not in o:
             raise SystemExit(f"--option {o!r}: give KEY=VALUE")
@@ -80,15 +78,7 @@ def cmd_build(a):
             kw[k] = v
     s = build(a.library, a.structure, a.out, **kw)
     print(s)
-    if a.run:
-        log = s.run(np=a.np, lmp=a.lmp, mpirun=a.mpirun)
-        print("LAMMPS log:", log)
-    return 0
-
-
-def cmd_run(a):
-    from .lammps import run
-    print("LAMMPS log:", run(a.folder, np_=a.np, lmp=a.lmp, mpirun=a.mpirun, input=a.input, echo=not a.quiet))
+    print(f"in a LAMMPS input:  include {s.files['settings']}   (run LAMMPS in {s.out_dir}: read_data system.data)")
     return 0
 
 
@@ -119,41 +109,19 @@ def parser():
     s.add_argument("--show", type=int, default=10, help="references listed (default 10)")
     s.set_defaults(func=cmd_info)
 
-    s = sub.add_parser("build", help="type a structure with a library and write the LAMMPS input")
+    s = sub.add_parser("build", help="type a structure with a library and write its force field for LAMMPS (system.data, system.settings)")
     s.add_argument("library", help="name (soapff list) or path of a library .txt file")
     s.add_argument("structure", help="any structure file ASE reads (cif, xyz, extxyz, pdb, POSCAR, ...) or a LAMMPS data file")
     s.add_argument("-o", "--out", help="output folder (default: <structure>_soapff)")
-    s.add_argument("--no-md", action="store_true", help="in.lammps stops after the minimisation")
-    s.add_argument("--temp", type=float, default=300.0, help="K (default 300)")
-    s.add_argument("--relax-ps", type=float, default=10.0, help="NVT relaxation, not recorded (default 10 ps)")
-    s.add_argument("--nvt-ps", type=float, default=50.0, help="NVT, recorded (default 50 ps)")
-    s.add_argument("--npt-ps", type=float, default=0.0, help="NPT after the NVT (default 0: none)")
-    s.add_argument("--press", type=float, default=1.0, help="atm (default 1)")
-    s.add_argument("--baro", default="aniso", choices=["iso", "aniso", "tri", "z"], help="NPT coupling (default aniso)")
-    s.add_argument("--dump-ps", type=float, default=1.0, help="dump interval (default 1 ps)")
-    s.add_argument("--timestep", type=float, help="fs (default: that of the library)")
     s.add_argument("--cutoff", type=float, help="pair cutoff, A (default: that of the library)")
     s.add_argument("--kspace", help="e.g. 'pppm 1.0e-5', 'ewald 1.0e-6', none (default: that of the library)")
     s.add_argument("--boundary", default="p p p", help="LAMMPS boundary (default 'p p p')")
-    s.add_argument("--no-strict", action="store_true", help="write the input even when atoms are not in the library "
+    s.add_argument("--no-strict", action="store_true", help="write the force field even when atoms are not in the library "
                    "(they take the nearest reference; see report.json)")
     s.add_argument("--padding", type=float, default=10.0, help="box padding (A) of a structure without a cell (default 10)")
     s.add_argument("--option", action="append", metavar="KEY=VALUE", help="clayff engine: another option of soapff_cui "
                    "make (repeatable), e.g. --option reserve_water=true")
-    s.add_argument("--run", action="store_true", help="then run LAMMPS in the output folder")
-    s.add_argument("--np", type=int, default=1, help="MPI processes of --run (default 1)")
-    s.add_argument("--lmp", help="LAMMPS executable (default: $SOAPFF_LMP, else found on PATH)")
-    s.add_argument("--mpirun", help="MPI launcher (default: $SOAPFF_MPIRUN, else mpirun)")
     s.set_defaults(func=cmd_build)
-
-    s = sub.add_parser("run", help="run LAMMPS in an output folder")
-    s.add_argument("folder")
-    s.add_argument("--np", type=int, default=1)
-    s.add_argument("--lmp")
-    s.add_argument("--mpirun")
-    s.add_argument("--input", default="in.lammps")
-    s.add_argument("--quiet", action="store_true", help="do not echo the LAMMPS output")
-    s.set_defaults(func=cmd_run)
 
     s = sub.add_parser("new", help="write a new library file (in ~/.soapff/libraries unless --folder)")
     s.add_argument("name")
