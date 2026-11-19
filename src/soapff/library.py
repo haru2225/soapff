@@ -45,7 +45,7 @@ import re
 HERE = os.path.dirname(os.path.abspath(__file__))
 BUNDLED = os.path.join(HERE, "libraries")
 # changes when the way the table of a library is computed changes (per engine: the prebuilt ClayFF tables stay valid)
-DESCRIPTOR_VERSION = {"clayff": "3", "molecular": "4"}
+DESCRIPTOR_VERSION = {"clayff": "3", "molecular": "5"}  # molecular 5: the prune= of each reference
 KEYVALUE = ("library", "soap", "lammps")
 TABLES = ("types", "bonds", "angles", "dihedrals", "impropers", "bond_lengths", "references")
 

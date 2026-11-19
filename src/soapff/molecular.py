@@ -381,7 +381,9 @@ def soap_rows(at, nb, species, params, depth, centers, chunk=2000):
 
 # ------------------------------------------------------------------------------------------------- the table of a library
 def _prune(X, keys, thr):
-    """indices of the rows to keep: a row is dropped when a kept row with the same key is at least thr similar"""
+    """indices of the rows to keep: a row is dropped when a kept row with the same key is at least thr similar
+    (thr: one value, or one per row: the prune= of the row's reference, else [soap] prune)"""
+    thr = np.broadcast_to(np.asarray(thr, float), (len(X),))
     keep = np.zeros(len(X), bool)
     for key in sorted(set(keys)):
         idx = np.nonzero(keys == key)[0]
@@ -389,7 +391,7 @@ def _prune(X, keys, thr):
         for i in idx:
             if kept:
                 s = X[kept] @ X[i]
-                if s.max() >= thr:
+                if s.max() >= thr[i]:
                     continue
             kept.append(i)
         keep[kept] = True
@@ -421,7 +423,7 @@ def build_table(lib, out, log=print):
     log("  bond lengths: " + bond_lengths_log(bl))
     # step 2: SOAP of the covalent neighbourhood
     species = sorted({e for _, at, _, _, _, nb in refs for i, e in enumerate(at.get_chemical_symbols()) if nb[i]})
-    X, T, Q, E, L = [], [], [], [], []
+    X, T, Q, E, L, P = [], [], [], [], [], []
     iso = {}
     for r, at, t, q, lab, nb in refs:
         el = np.array(at.get_chemical_symbols())
@@ -432,12 +434,14 @@ def build_table(lib, out, log=print):
         if len(cen):
             X.append(soap_rows(at, nb, species, params, depth, cen))
             T += list(t[cen]); Q += list(q[cen]); E += list(el[cen]); L += list(lab[cen])
+            P += [float(r.get("prune", thr))] * len(cen)             # prune= of this reference, else [soap] prune
         log(f"  {os.path.basename(r['path'])}: {len(at)} atoms")
     X = np.vstack(X) if X else np.zeros((0, 1), np.float32)
     T, Q, E, L = np.array(T), np.array(Q), np.array(E), np.array(L)
     keys = np.array([f"{e}|{t}|{q:.6f}" for e, t, q in zip(E, T, Q)])
-    keep = _prune(X, keys, thr) if len(X) else np.zeros(0, int)
-    log(f"  SOAP rows: {len(X)} -> {len(keep)} (pruned at similarity {thr} within the same element, type and charge)")
+    keep = _prune(X, keys, np.array(P)) if len(X) else np.zeros(0, int)
+    log(f"  SOAP rows: {len(X)} -> {len(keep)} (pruned at similarity {thr}, or the prune= of a reference, within the same "
+        "element, type and charge)")
     data = dict(X=X[keep], type=T[keep], q=Q[keep], element=E[keep], label=L[keep], species=np.array(species),
                 soap=json.dumps(dict(params, depth=depth)), iso_element=np.array(list(iso)),
                 iso_type=np.array([v[0] for v in iso.values()]), iso_q=np.array([v[1] for v in iso.values()]),

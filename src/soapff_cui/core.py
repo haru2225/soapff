@@ -613,11 +613,9 @@ def make_steps(structure, out_dir, library, threshold=THRESHOLD, cutoff=10.0, ks
     differ = same_class & (tarr != geo)
     type_check = dict(compared=int(same_class.sum()), differ=int(differ.sum()),
                       kinds=dict(collections.Counter(f"{g}->{t}" for g, t in zip(geo[differ], tarr[differ]))))
+    # the net charge is written (report.json charge_sum, the log), not checked: a clay layer or particle may carry a charge
+    # (LAMMPS adds a uniform neutralising background for the long-range Coulomb)
     total = float(q.sum())
-    if abs(total) > 1e-6:
-        warn.append(f"net charge {total:+.4f} e (not neutralised; LAMMPS adds a uniform neutralising background for the "
-                    f"long-range Coulomb)" + ("" if abs(total) < 0.01 else ": check the structure (counter-ions, protonation)"))
-        log("WARNING " + warn[-1])
     at, info, gaps = _write(at, q, types, out_dir, bnd, periodic, cutoff, kspace, reserve_water, charges, water, ff, warn, log,
                             nb=nb)
     with open(os.path.join(out_dir, "charges.csv"), "w", newline="") as f:
