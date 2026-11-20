@@ -1,0 +1,21 @@
+{
+ "total": {
+  "structures": 1,
+  "atoms": 4128,
+  "same_type": 4128,
+  "same_charge": 4128,
+  "same_both": 4128,
+  "seconds": 56.816
+ },
+ "detail": {
+  "ext__mmt3w": {
+   "atoms": 4128,
+   "same_type": 4128,
+   "same_charge": 4128,
+   "same_both": 4128,
+   "max_charge_difference": 3.2999999999949736e-05,
+   "seconds": 56.816,
+   "other_names": {}
+  }
+ }
+}

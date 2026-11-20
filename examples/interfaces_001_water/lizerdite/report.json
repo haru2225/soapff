@@ -1,7 +1,7 @@
 {
- "structure": "/Users/harutokono/clay/soapff/examples/interfaces_001_water/lizerdite/structure.extxyz",
+ "structure": "examples/interfaces_001_water/lizerdite/structure.extxyz",
  "atoms": 1335,
- "library": "/Users/harutokono/clay/soapff/src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
+ "library": "src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
  "soap": {
   "r_cut": 5.0,
   "n_max": 4,

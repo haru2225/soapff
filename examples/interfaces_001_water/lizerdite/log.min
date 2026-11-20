@@ -7,7 +7,7 @@ angle_style harmonic
 pair_style lj/cut/coul/long 10.0
 pair_modify mix arithmetic tail no
 special_bonds lj/coul 0.0 0.0 0.0
-read_data "/Users/harutokono/clay/soapff/examples/interfaces_001_water/lizerdite/system.data"
+read_data "examples/interfaces_001_water/lizerdite/system.data"
 Reading data file ...
   triclinic box = (0 0 0) to (15.980101 13.839173 58.0312) with tilt (-7.9900503 0 0)
 WARNING: Triclinic box skew is large. LAMMPS will run inefficiently. (src/src/domain.cpp:221)

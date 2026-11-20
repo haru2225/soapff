@@ -1,6 +1,6 @@
 # Example: the library `clayff_edge` (Montmorillonite edge, Underwood & Bourg 2020) on the particle with edges
 
-The montmorillonite particle with edges on every side (`src/soapff/libraries/clayff/edge/`: `clay_montmorillonite.data` and `.settings`, a single layer of 2,292 atoms; `clay_montmorillonite_2.data`, the particle twice along c, 4,584 atoms) typed with the `clayff_edge` library (`src/soapff/libraries/clayff/prebuilt/library_clayff_edge.npz`), whose force field is taken whole from those files.
+The montmorillonite particle with edges on every side (`src/soapff/libraries/clayff/edge/`: `clay_montmorillonite.data` and `.settings`, a single layer of 2,292 atoms; `clay_montmorillonite_2.data`, the particle twice along c, 4,584 atoms) typed with the `clayff_edge` library (`src/soapff/libraries/clayff/prebuilt/library_clayff_edge.npz`), whose force field is taken whole from those files. The particle files were converted from the GROMACS files of Underwood and Bourg (J. Phys. Chem. C 124, 3702 (2020); `new.gro` and `v07.itp`, the first line of the data file); the LJ parameters of the settings file are the ClayFF values put on each type (the edge types take those of their parent type).
 
 ```
 pip install "lammps[mpi]"     # the LAMMPS Python module

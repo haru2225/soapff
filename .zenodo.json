@@ -1,0 +1,10 @@
+{
+  "title": "soapff: atom typing and force-field distribution with reference structures",
+  "upload_type": "software",
+  "description": "soapff gives every atom of a structure the type and charge of the most similar atom of typed reference structures (SOAP of the atoms within 4 bonds), from the elements and coordinates only, and writes the LAMMPS force field. Bundled libraries: ClayFF (layered clay minerals, water and ions), a ClayFF-based model of a montmorillonite particle with edges, OPLS-AA (polymers), TIP3P and SPC/E with ions. The examples hold the test structures, scripts and results of the paper.",
+  "creators": [
+    {"name": "Kono, Haruto", "affiliation": "Tohoku University"}
+  ],
+  "license": "MIT",
+  "keywords": ["atom typing", "force field", "SOAP", "ClayFF", "OPLS-AA", "LAMMPS", "clay minerals", "polymers"]
+}

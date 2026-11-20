@@ -1,0 +1,29 @@
+{
+ "clayff": {
+  "o_rows": 96,
+  "explained": [
+   0.761,
+   0.168
+  ],
+  "rows_per_type": {
+   "ob": 68,
+   "obos": 8,
+   "obts": 4,
+   "oh": 12,
+   "ohs": 4
+  }
+ },
+ "oplsaa": {
+  "o_rows": 303,
+  "explained": [
+   0.51,
+   0.283
+  ],
+  "rows_per_type": {
+   "opls_154": 56,
+   "opls_180": 52,
+   "opls_466": 97,
+   "opls_467": 98
+  }
+ }
+}

@@ -1,7 +1,7 @@
 {
- "structure": "/Users/harutokono/clay/soapff/examples/interface_shapes/sphere/structure.extxyz",
+ "structure": "examples/interface_shapes/sphere/structure.extxyz",
  "atoms": 2373,
- "library": "/Users/harutokono/clay/soapff/src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
+ "library": "src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
  "soap": {
   "r_cut": 5.0,
   "n_max": 4,

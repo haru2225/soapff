@@ -33,7 +33,7 @@ from .library import available as _available
 from .library import load as load_library
 from .molecular import TypingError, write_reference
 
-__version__ = "0.2.0"
+__version__ = "1.0.0"
 
 
 def libraries():

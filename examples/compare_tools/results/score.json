@@ -1,0 +1,187 @@
+{
+ "total": {
+  "structures": 16,
+  "atoms": 28311,
+  "same_type": 27939,
+  "same_charge": 28311,
+  "same_both": 27939,
+  "seconds": 1325.7649999999999
+ },
+ "detail": {
+  "interfaces__brucite": {
+   "atoms": 885,
+   "same_type": 885,
+   "same_charge": 885,
+   "same_both": 885,
+   "max_charge_difference": 0.0,
+   "seconds": 29.095,
+   "other_names": {}
+  },
+  "interfaces__kaolinite": {
+   "atoms": 1659,
+   "same_type": 1659,
+   "same_charge": 1659,
+   "same_both": 1659,
+   "max_charge_difference": 0.0,
+   "seconds": 54.609,
+   "other_names": {}
+  },
+  "interfaces__lizerdite": {
+   "atoms": 1335,
+   "same_type": 1335,
+   "same_charge": 1335,
+   "same_both": 1335,
+   "max_charge_difference": 0.0,
+   "seconds": 53.494,
+   "other_names": {}
+  },
+  "interfaces__montmorillonite_dry_Na": {
+   "atoms": 692,
+   "same_type": 690,
+   "same_charge": 692,
+   "same_both": 690,
+   "max_charge_difference": 5.0000000000105516e-05,
+   "seconds": 15.161,
+   "other_names": {
+    "obts -> Ob": 2
+   }
+  },
+  "interfaces__muscovite_1M": {
+   "atoms": 759,
+   "same_type": 743,
+   "same_charge": 759,
+   "same_both": 743,
+   "max_charge_difference": 5.0000000000105516e-05,
+   "seconds": 19.008,
+   "other_names": {
+    "obts -> Ob": 16
+   }
+  },
+  "interfaces__muscovite_2M1": {
+   "atoms": 738,
+   "same_type": 720,
+   "same_charge": 738,
+   "same_both": 720,
+   "max_charge_difference": 5.0000000000105516e-05,
+   "seconds": 17.652,
+   "other_names": {
+    "obts -> Ob": 16,
+    "obts -> Oalsi": 2
+   }
+  },
+  "interfaces__nanpingite": {
+   "atoms": 774,
+   "same_type": 756,
+   "same_charge": 774,
+   "same_both": 756,
+   "max_charge_difference": 5.0000000000105516e-05,
+   "seconds": 19.021,
+   "other_names": {
+    "obts -> Ob": 16,
+    "obts -> Oalsi": 2
+   }
+  },
+  "interfaces__phlogopite_1M": {
+   "atoms": 784,
+   "same_type": 766,
+   "same_charge": 784,
+   "same_both": 766,
+   "max_charge_difference": 5.0000000000105516e-05,
+   "seconds": 24.54,
+   "other_names": {
+    "obts -> Oalsi": 2,
+    "obts -> Op": 16
+   }
+  },
+  "interfaces__pyrophyllite": {
+   "atoms": 710,
+   "same_type": 710,
+   "same_charge": 710,
+   "same_both": 710,
+   "max_charge_difference": 0.0,
+   "seconds": 18.231,
+   "other_names": {}
+  },
+  "interfaces__talc": {
+   "atoms": 849,
+   "same_type": 849,
+   "same_charge": 849,
+   "same_both": 849,
+   "max_charge_difference": 0.0,
+   "seconds": 26.8,
+   "other_names": {}
+  },
+  "shapes__cavity": {
+   "atoms": 4047,
+   "same_type": 4032,
+   "same_charge": 4047,
+   "same_both": 4032,
+   "max_charge_difference": 5.0000000000105516e-05,
+   "seconds": 223.311,
+   "other_names": {
+    "obts -> Ob": 12,
+    "obts -> Oalsi": 3
+   }
+  },
+  "shapes__cylinder": {
+   "atoms": 2829,
+   "same_type": 2814,
+   "same_charge": 2829,
+   "same_both": 2814,
+   "max_charge_difference": 5.0000000000105516e-05,
+   "seconds": 142.386,
+   "other_names": {
+    "obts -> Ob": 12,
+    "obts -> Oalsi": 3
+   }
+  },
+  "shapes__hemisphere": {
+   "atoms": 2469,
+   "same_type": 2349,
+   "same_charge": 2469,
+   "same_both": 2349,
+   "max_charge_difference": 5.0000000000105516e-05,
+   "seconds": 143.808,
+   "other_names": {
+    "obts -> Ob": 96,
+    "obts -> Oalsi": 24
+   }
+  },
+  "shapes__ions": {
+   "atoms": 4249,
+   "same_type": 4129,
+   "same_charge": 4249,
+   "same_both": 4129,
+   "max_charge_difference": 5.0000000000105516e-05,
+   "seconds": 230.757,
+   "other_names": {
+    "obts -> Ob": 96,
+    "obts -> Oalsi": 24
+   }
+  },
+  "shapes__sphere": {
+   "atoms": 2373,
+   "same_type": 2358,
+   "same_charge": 2373,
+   "same_both": 2358,
+   "max_charge_difference": 5.0000000000105516e-05,
+   "seconds": 138.002,
+   "other_names": {
+    "obts -> Ob": 12,
+    "obts -> Oalsi": 3
+   }
+  },
+  "shapes__xygauss": {
+   "atoms": 3159,
+   "same_type": 3144,
+   "same_charge": 3159,
+   "same_both": 3144,
+   "max_charge_difference": 5.0000000000105516e-05,
+   "seconds": 169.89,
+   "other_names": {
+    "obts -> Ob": 12,
+    "obts -> Oalsi": 3
+   }
+  }
+ }
+}

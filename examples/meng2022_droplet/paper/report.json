@@ -1,7 +1,7 @@
 {
- "structure": "/Users/harutokono/clay/soapff/examples/meng2022_droplet/paper/structure.extxyz",
+ "structure": "examples/meng2022_droplet/paper/structure.extxyz",
  "atoms": 105977,
- "library": "/Users/harutokono/clay/soapff/src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
+ "library": "src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
  "soap": {
   "r_cut": 5.0,
   "n_max": 4,

@@ -7,7 +7,7 @@ angle_style harmonic
 pair_style lj/cut/coul/long 10.0
 pair_modify mix arithmetic tail no
 special_bonds lj/coul 0.0 0.0 0.0
-read_data "/Users/harutokono/clay/soapff/examples/montmorillonite_edge/out_clay_montmorillonite_2/system.data"
+read_data "examples/montmorillonite_edge/out_clay_montmorillonite_2/system.data"
 Reading data file ...
   orthogonal box = (0 0 0) to (87.5065 87.5065 175.013)
   1 by 1 by 1 MPI processor grid

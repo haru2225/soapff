@@ -7,7 +7,7 @@ angle_style harmonic
 pair_style lj/cut/coul/long 10.0
 pair_modify mix arithmetic tail no
 special_bonds lj/coul 0.0 0.0 0.0
-read_data "/Users/harutokono/clay/soapff/examples/interfaces_001_water/nanpingite/system.data"
+read_data "examples/interfaces_001_water/nanpingite/system.data"
 Reading data file ...
   orthogonal box = (0 0 0) to (18.152 10.452 42.235214)
   1 by 1 by 1 MPI processor grid

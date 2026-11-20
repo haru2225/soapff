@@ -1,7 +1,7 @@
 {
- "structure": "/Users/harutokono/clay/soapff/examples/montmorillonite_edge/clay_montmorillonite.extxyz",
+ "structure": "examples/montmorillonite_edge/clay_montmorillonite.extxyz",
  "atoms": 2292,
- "library": "/Users/harutokono/clay/soapff/src/soapff/libraries/clayff/prebuilt/library_clayff_edge.npz",
+ "library": "src/soapff/libraries/clayff/prebuilt/library_clayff_edge.npz",
  "soap": {
   "r_cut": 5.0,
   "n_max": 4,

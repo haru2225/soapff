@@ -1,6 +1,6 @@
 # Examples and test cases of soapff
 
-Run these with a Python where `pip install -e ".[examples]"` was run: soapff and the LAMMPS Python module (`pip install "lammps[mpi]"`). soapff writes the force field only; every example writes its own minimisation and MD in LAMMPS, through the LAMMPS Python module (`from lammps import lammps`). The scripts of the first table are run from the root of the repository; the clay examples are run inside their own folder (`python run.py`). No test structure is a reference of the library it is typed with.
+Run these with a Python where `pip install -e ".[examples]"` was run: soapff and the LAMMPS Python module (`pip install "lammps[mpi]"`). soapff writes the force field only; every example writes its own minimisation and MD in LAMMPS, through the LAMMPS Python module (`from lammps import lammps`). The scripts of the first table are run from the root of the repository; the clay examples are run inside their own folder (`python run.py`). No test structure is a reference of the library it is typed with, except the particle with edges and the particle twice of `montmorillonite_edge/` (the references of `clayff_edge` themselves).
 
 ## The package and its libraries
 
@@ -13,6 +13,8 @@ Run these with a Python where `pip install -e ".[examples]"` was run: soapff and
 | `clayff/water_md_frames.py` | `clayff` on the last frames of 19 MD runs with water at 300 K (`library_water/refs/*/final.data` and `montmorillonite_2W/diffusion/start/final.data`), against the types of their MD input; the longest O-H bond and the shortest H…O of the hydrogen bonds, which decide the H-O bond length (1.25 Å). Results in `results/clayff_water_md_frames.json`. |
 | `clayff/water_apart_check.py` | Step 1 on the 37 clay structures with water: the bonds between water and the rest that taking the water molecules apart takes out (none; the nano-gouge, `nanogouge/`, is the case where there are). Results in `results/clayff_water_apart_check.json`. |
 | `oplsaa/` | Polymers with OPLS-AA: how the library was made from Foyer's `oplsaa.xml` and oligomers typed by Foyer, and the checks against Foyer (types and charges of chains, MD frames, copolymers and amorphous cells), against Foyer's force field in OpenMM (forces, melt MD) and against the measured melt densities (Fetters et al. 1994); a user library for a block-copolymer junction. See `oplsaa/README.md`. |
+| `compare_tools/` | atom 3.0.2 (Holmboe 2019; ClayFF by coordination rules, run in GNU Octave) on the 16 `clayff` test structures in the reference arrangement: soapff gives every atom atom's charge, and atom's type except some O next to a tetrahedral Al. See `compare_tools/README.md`. |
+| `paper_figures/` | Figs. 3 and 6 of the paper: the SOAP vectors of the O references on their first two principal components (`pca.py`), and the typing of the test structures with the SOAP settings changed one at a time (`soap_params.py`, its summary in `figdata/soap_params/results.json`). |
 | `water/make_library_txt.py LIBDIR` | How the `tip3p` and `spce` libraries were made from OpenMM's `amber14/tip3p.xml` and `amber14/spce.xml` (needs OpenMM). |
 
 ## Clay minerals (`clayff`, `clayff_edge`)

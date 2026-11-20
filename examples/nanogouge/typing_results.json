@@ -10,7 +10,7 @@
   "mw_mc": 3.0,
   "wet": {
    "atoms": 66900,
-   "stopped": "18 atoms are below similarity 0.9 (step 2): H9033 (0.814, nearest hw water.data:2), H12452 (0.851, nearest hw water.data:2), H12713 (0.851, nearest hw water.data:2), H17478 (0.848, nearest hw water.data:2), H19448 (0.841, nearest hw water.data:2), H20423 (0.875, nearest hw water.data:2), H20909 (0.817, nearest hw water.data:2), H27894 (0.855, nearest hw water.data:2), H29805 (0.862, nearest hw water.data:2), H44712 (0.826, nearest hw water.data:2) ...; library /Users/harutokono/clay/soapff/src/soapff/libr",
+   "stopped": "18 atoms are below similarity 0.9 (step 2): H9033 (0.814, nearest hw water.data:2), H12452 (0.851, nearest hw water.data:2), H12713 (0.851, nearest hw water.data:2), H17478 (0.848, nearest hw water.data:2), H19448 (0.841, nearest hw water.data:2), H20423 (0.875, nearest hw water.data:2), H20909 (0.817, nearest hw water.data:2), H27894 (0.855, nearest hw water.data:2), H29805 (0.862, nearest hw water.data:2), H44712 (0.826, nearest hw water.data:2) ...; library src/soapff/libr",
    "seconds": 22.3
   },
   "wet_min": {

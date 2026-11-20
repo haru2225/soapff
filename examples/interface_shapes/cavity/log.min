@@ -7,7 +7,7 @@ angle_style harmonic
 pair_style lj/cut/coul/long 10.0
 pair_modify mix arithmetic tail no
 special_bonds lj/coul 0.0 0.0 0.0
-read_data "/Users/harutokono/clay/soapff/examples/interface_shapes/cavity/system.data"
+read_data "examples/interface_shapes/cavity/system.data"
 Reading data file ...
   triclinic box = (0 0 0) to (31.039969 35.921566 65.038012) with tilt (-0.00997602 0 0)
   1 by 1 by 1 MPI processor grid

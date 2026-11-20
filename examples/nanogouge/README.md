@@ -9,6 +9,8 @@ The initial state of a nano-gouge after Underwood & Bourg, J. Phys. Chem. C 124,
 python typing_test.py WORK 3          # -> typing_results.json; WORK/gouge_N3.*, WORK/out_N3_{wet,wet_min,dry}/
 ```
 
+`minimised/`: the minimised structure of N = 3 (`wet_min`) and soapff's result on it, so that the typing can be checked without LAMMPS (the minimisation depends on the LAMMPS version): `builder_min.data.gz` (the builder's LAMMPS data file after the minimisation, LAMMPS 22 Jul 2025, with the builder's types and charges), `charges.csv.gz` and `report.json` (soapff's types, charges, similarities and margins; `soapff build clayff_edge` on the elements, coordinates and box of that file).
+
 ## Results (`typing_results.json`)
 
 N = 3 (`--seed 1`, S = 0.128; box 73.9 x 73.9 x 123.1 Å; 6,876 clay atoms, 20,008 water molecules, 66,900 atoms):
