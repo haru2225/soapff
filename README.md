@@ -79,7 +79,7 @@ soapff add-reference mine PE4_PEO3.extxyz
 |---|---|---|---|
 | `clayff` | clayff | Bulk crystals of 11 layered minerals and their (001) slabs | ClayFF (Cygan et al. 2004), flexible SPC water |
 | `clayff_edge` | clayff | Montmorillonite particle with edges | Underwood & Bourg (2020) |
-| `clayff_oplsaa` | molecular | The references of `clayff` and `oplsaa` (124 structures) | ClayFF and OPLS-AA as one force field: Lorentz–Berthelot for every pair, the 1-4 pairs of OPLS-AA × 0.5 (as Szczerba & Kalinichev 2016) |
+| `clayff_oplsaa` | molecular | 11 layered mineral crystals and their (001) slabs, water and the ions of ClayFF, and 11 polymers typed by Foyer, in its own folder (124 structures) | ClayFF and OPLS-AA as one force field: Lorentz–Berthelot for every pair, the 1-4 pairs of OPLS-AA × 0.5 (as Szczerba & Kalinichev 2016) |
 | `oplsaa` | molecular | 88 oligomer structures of 11 polymers (5-mers, 8-mers and MD frames at 413 K), typed by Foyer | OPLS-AA (Jorgensen et al. 1996; from Foyer 1.3.0 `oplsaa.xml`; the bonded terms by class, the Ryckaert–Bellemans torsions as `dihedral_style fourier`) |
 | `tip3p` | molecular | Water, NaCl and 14 ions | TIP3P (rigid), Joung–Cheatham 2008 monovalent and Li–Merz 2013 divalent ions |
 | `spce` | molecular | The same, for SPC/E | SPC/E (rigid) and its ions |

@@ -2,7 +2,7 @@
 
 A smectite layer with water, Na⁺ and two polymer chains (PEO or PVA) in its interlayer, typed from the elements, positions and cell alone with `clayff_oplsaa` (ClayFF and OPLS-AA as one force field), and compared with the right answer. The test also checks that the force field written is ClayFF for the mineral, water and ions and OPLS-AA for the chains, with the Lorentz–Berthelot rules for every pair.
 
-`clayff_oplsaa` extends `oplsaa` with the ClayFF types, the O–H bonds and the H–O–H and M–O–H angles of ClayFF, and the references of `clayff`; it is typed by the molecular engine. The metals and bridging O of ClayFF are named in no row of `[bonds]`, so their bonds of step 1 only give the SOAP its neighbourhood (the force field has no metal–O bond), and the mineral layer they hold is not checked for a whole-number charge (`report.json`: `bonds_not_in_force_field`, `frameworks`).
+`clayff_oplsaa` is a library of its own (no `extends`): its file has the types and bonded terms of ClayFF and of OPLS-AA, and its folder the references of both, minerals, water and ions typed by ClayFF and polymers typed by Foyer; it is typed by the molecular engine. The metals and bridging O of ClayFF are named in no row of `[bonds]`, so their bonds of step 1 only give the SOAP its neighbourhood (the force field has no metal–O bond), and the mineral layer they hold is not checked for a whole-number charge (`report.json`: `bonds_not_in_force_field`, `frameworks`).
 
 | Step | Script | Environment | Output |
 |---|---|---|---|

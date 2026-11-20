@@ -1,36 +1,60 @@
-# soapff library: ClayFF (Cygan, Liang, Kalinichev 2004) and OPLS-AA (oplsaa) as one force field, for minerals with water,
-# ions and organic molecules, as Szczerba & Kalinichev (Clays Clay Miner. 64, 488 (2016)) put the two together: the LJ of
-# unlike atoms by the Lorentz-Berthelot rules (arithmetic sigma, geometric epsilon) for every pair, the 1-4 pairs of
-# OPLS-AA scaled by 0.5 (ClayFF has none).
+# soapff library: ClayFF (Cygan, Liang, Kalinichev 2004) for minerals, water and ions and OPLS-AA (Jorgensen, Maxwell,
+# Tirado-Rives 1996, as distributed with Foyer) for organic molecules, as one force field, as Szczerba & Kalinichev (Clays
+# Clay Miner. 64, 488 (2016)) put the two together: the LJ of unlike atoms by the Lorentz-Berthelot rules (arithmetic sigma,
+# geometric epsilon) for every pair, the 1-4 pairs of OPLS-AA scaled by 0.5 (ClayFF has none).
 #
-# The OPLS-AA types, parameters and references are those of oplsaa (extends); this file adds the ClayFF types (Table 1),
-# the O-H bonds and the H-O-H and M-O-H angles (Table 2) with the flexible SPC water, as in clayff.txt, and the references
-# of clayff.  The metals and bridging O of ClayFF are named in no row of [bonds]: their bonds of step 1 only give the SOAP
-# its neighbourhood, and the force field has no metal-O bond.
+# Types and charges in two steps: the bonds from the distance and the bond length of each pair of elements ([bond_lengths]),
+# and the type and charge from the SOAP of the atoms within 4 bonds; the charges are those of the reference atoms (ClayFF
+# Table 1; OPLS-AA gives every type one charge).  The metals and bridging O of ClayFF are named in no row of [bonds]: their
+# bonds of step 1 only give the SOAP its neighbourhood, and the force field has no metal-O bond.
+#
+# References (clayff_oplsaa/): polymers/, oligomers of 11 polymers and their MD frames at 413 K typed by Foyer; bulk/ and
+# basal/, 11 crystals of 9 layered minerals and their (001) slabs; water/, water and the ions of ClayFF Table 1 in bulk
+# water and in films and a droplet in vacuum.
+# Parameters: ClayFF Tables 1 and 2 (the flexible SPC water); OPLS-AA of foyer 1.3.0 forcefields/xml/oplsaa.xml.
 
 [library]
-name        = clayff_oplsaa
-extends     = oplsaa
-description = ClayFF minerals, water and ions with OPLS-AA molecules in one force field (Lorentz-Berthelot for every pair)
-reference   = R. T. Cygan, J.-J. Liang, A. G. Kalinichev, J. Phys. Chem. B 108, 1255 (2004); W. L. Jorgensen, D. S. Maxwell, J. Tirado-Rives, J. Am. Chem. Soc. 118, 11225 (1996); M. Szczerba, A. G. Kalinichev, Clays Clay Miner. 64, 488 (2016)
+name   = clayff_oplsaa
+engine = molecular
+
+[soap]
+r_cut = 5.0
+n_max = 4
+l_max = 3
+sigma = 0.4
+depth = 4
+prune = 0.999
+threshold = 0.9
 
 [bond_lengths]
-# E1 E2 r(A), as in clayff.txt (metal-O halfway between the longest bond and the shortest distance not bonded in the
-# references); the C pairs and H-O come from oplsaa.txt
+# E1 E2 r(A): two atoms of these elements nearer than r are bonded (step 1).  r lies between the longest bond (d_b) and the
+# shortest distance of two atoms not bonded (d_n) in the references (checked when the table is built): halfway for the
+# metal-O and C pairs; H-O by hand, as in MD at 300 K the H...O of the hydrogen bonds comes to 1.43 A and the O-H bonds
+# stretch to 1.12 A.
 # E1 E2  r       d_b    d_n
 O  Si  2.41   # 1.683  3.143
 Al O   2.66   # 2.105  3.213
 Mg O   2.70   # 2.187  3.217
+C  C   1.99   # 1.716  2.260
+C  H   1.51   # 1.217  1.797
+C  O   1.86   # 1.545  2.179
+C  N   1.89   # 1.210  2.562
+C  F   1.77   # 1.425  2.110
+H  O   1.25   # 1.050  1.761  (halfway 1.41)
 
 [lammps]
-# ClayFF's mixing for every pair; the other settings are those of oplsaa (special_bonds lj/coul 0.0 0.0 0.5, ...)
 pair_style     = lj/cut/coul/long 10.0
 pair_modify    = mix arithmetic tail no
+kspace_style   = pppm 1.0e-5
+bond_style     = harmonic
+angle_style    = harmonic
+dihedral_style = fourier
+special_bonds  = lj/coul 0.0 0.0 0.5
 timestep       = 0.5
 
 [types]
-# ClayFF Table 1: epsilon = D0 (kcal/mol), sigma = R0 / 2^(1/6) (A).  The charges are those of the reference atoms
-# (Table 1).  type  element  mass  epsilon  sigma
+# type  element  mass  epsilon(kcal/mol)  sigma(A)  [class]
+# ClayFF (Table 1): epsilon = D0, sigma = R0 / 2^(1/6)
 hw     H      1.00794   0.0                    0.0
 ho     H      1.00794   0.0                    0.0
 ow     O     15.99940   0.1554                 3.1655413252962536
@@ -55,54 +79,3326 @@ Cs     Cs   132.90545   0.1                    3.831042667747087
 Ca     Ca    40.07800   0.1                    2.8719901976690116
 Ba     Ba   137.32700   0.047                  3.8166101085132134
 Cl     Cl    35.45300   0.1001                 4.399970589151507
+# OPLS-AA: the bonded terms are given by the class (6th column)
+opls_001   C     12.0110        0.105         3.75  opls_001
+opls_002   O     15.9994         0.21         2.96  opls_002
+opls_003   N     14.0067         0.17         3.25  opls_003
+opls_004   H      1.0080            0           10  opls_004
+opls_005   C     14.0270        0.118          3.8  opls_005
+opls_006   C     13.0190         0.08          3.8  opls_006
+opls_007   C     15.0350         0.16         3.91  opls_007
+opls_008   C     13.0190         0.08         3.85  opls_008
+opls_009   N     14.0270        0.118        3.905  opls_009
+opls_010   C     15.0350        0.175        3.905  opls_010
+opls_011   C     12.0110         0.11         3.75  opls_011
+opls_012   N     14.0067         0.17         3.25  opls_012
+opls_013   H      1.0080            0           10  opls_013
+opls_014   C     13.0190         0.08          3.8  opls_014
+opls_015   C     14.0270        0.118          3.8  opls_015
+opls_016   C     14.0270        0.118        3.905  opls_016
+opls_017   C     12.0110        0.105         3.75  opls_017
+opls_018   O     15.9994         0.21         2.96  opls_018
+opls_019   C     14.0270        0.118        3.905  opls_019
+opls_020   N     14.0067         0.17         3.25  opls_020
+opls_021   H      1.0080            0           10  opls_021
+opls_022   C     14.0270        0.118        3.905  opls_022
+opls_023   O     15.9994         0.17         3.07  opls_023
+opls_024   H      1.0080            0           10  opls_024
+opls_025   C     13.0190         0.08         3.85  opls_025
+opls_026   C     12.0110         0.11         3.75  opls_026
+opls_027   C     14.0270        0.118          3.8  opls_027
+opls_028   C     14.0270        0.118          3.8  opls_028
+opls_029   C     13.0190         0.08          3.8  opls_029
+opls_030   C     13.0190         0.08          3.8  opls_030
+opls_031   C     14.0270        0.118        3.905  opls_031
+opls_032   S     32.0600         0.25         3.55  opls_032
+opls_033   H      1.0080            0           10  opls_033
+opls_034   C     14.0270        0.118          3.8  opls_034
+opls_035   S     32.0600         0.25         3.55  opls_035
+opls_036   C     15.0350         0.17          3.8  opls_036
+opls_037   C     14.0270        0.118          3.8  opls_037
+opls_038   S     32.0600         0.25         3.55  opls_038
+opls_039   C     15.0350         0.17          3.8  opls_039
+opls_040   N     14.0067         0.17         3.25  opls_040
+opls_041   H      1.0080            0           10  opls_041
+opls_042   N     14.0067         0.17         3.25  opls_042
+opls_043   C     12.0110        0.145         3.75  opls_043
+opls_044   C     12.0110        0.145         3.75  opls_044
+opls_045   C     12.0110        0.145         3.75  opls_045
+opls_046   N     14.0067         0.17         3.25  opls_046
+opls_047   H      1.0080            0           10  opls_047
+opls_048   C     12.0110        0.145         3.75  opls_048
+opls_049   C     12.0110        0.145         3.75  opls_049
+opls_050   C     12.0110        0.145         3.75  opls_050
+opls_051   N     14.0067         0.17         3.25  opls_051
+opls_052   H      1.0080            0           10  opls_052
+opls_053   C     12.0110         0.05         2.25  opls_053
+opls_054   N     14.0067         0.17         3.25  opls_054
+opls_055   H      1.0080            0           10  opls_055
+opls_056   C     14.0270        0.118        3.905  opls_056
+opls_057   C     14.0270        0.118        3.905  opls_057
+opls_058   C     12.0110        0.105         3.75  opls_058
+opls_059   O     15.9994         0.21         2.96  opls_059
+opls_060   C     13.0190         0.08          3.8  opls_060
+opls_061   C     14.0270        0.118          3.8  opls_061
+opls_062   O     15.9994         0.17            3  opls_062
+opls_063   C     15.0350         0.17          3.8  opls_063
+opls_064   C     12.0110         0.05          3.8  opls_064
+opls_065   C     15.0350        0.145         3.96  opls_065
+opls_066   C     16.0430   0.29400096         3.73  opls_066
+opls_067   C     15.0350        0.207        3.775  opls_067
+opls_068   C     15.0350        0.175        3.905  opls_068
+opls_069   C     15.0350         0.16         3.91  opls_069
+opls_070   C     15.0350        0.145         3.96  opls_070
+opls_071   C     14.0270        0.118        3.905  opls_071
+opls_072   C     14.0270         0.14         3.85  opls_072
+opls_073   C     13.0190         0.08         3.85  opls_073
+opls_074   C     13.0190        0.115          3.8  opls_074
+opls_075   C     13.0190         0.11         3.75  opls_075
+opls_076   C     12.0110         0.05          3.8  opls_076
+opls_077   C     12.0110        0.105         3.75  opls_077
+opls_078   O     15.9994         0.17         3.07  opls_078
+opls_079   H      1.0080            0           10  opls_079
+opls_080   C     15.0350        0.207        3.775  opls_080
+opls_081   C     14.0270        0.118        3.905  opls_081
+opls_082   S     32.0600         0.25          3.7  opls_082
+opls_083   S     32.0600         0.25         3.55  opls_083
+opls_084   S     32.0600         0.25         3.55  opls_084
+opls_085   S     32.0600         0.25         3.55  opls_085
+opls_086   H      1.0080            0           10  opls_086
+opls_087   H      1.0080            0           10  opls_087
+opls_088   C     15.0350        0.207        3.775  opls_088
+opls_089   C     14.0270        0.118        3.905  opls_089
+opls_090   C     15.0350         0.17          3.8  opls_090
+opls_091   C     14.0270        0.118          3.8  opls_091
+opls_092   C     15.0350         0.17          3.8  opls_092
+opls_093   C     14.0270        0.118          3.8  opls_093
+opls_094   N     14.0067         0.17          3.2  opls_094
+opls_095   C     12.0110         0.15         3.65  opls_095
+opls_096   C     15.0350        0.207        3.775  opls_096
+opls_097   Ar    39.9480    0.2339001        3.401  opls_097
+opls_098   Kr    83.7980   0.43299952        3.935  opls_098
+opls_099   Xe   131.2930            0           10  opls_099
+opls_101   N     14.0067         0.17         3.25  opls_101
+opls_102   N     14.0067         0.17         3.25  opls_102
+opls_103   N     14.0067         0.17         3.25  opls_103
+opls_104   H      1.0080            0           10  opls_104
+opls_105   H      1.0080            0           10  opls_105
+opls_106   C     15.0350        0.207        3.775  opls_106
+opls_107   C     15.0350        0.145         3.96  opls_107
+opls_108   O     15.9994         0.17            3  opls_108
+opls_109   C     15.0350         0.17          3.8  opls_109
+opls_110   C     14.0270        0.118          3.8  opls_110
+opls_111   O     15.9994    0.1520999      3.15061  opls_111
+opls_112   H      1.0080            0           10  opls_112
+opls_113   O     15.9994        0.155      3.15365  opls_113
+opls_114   H      1.0080            0           10  opls_114
+opls_116   O     15.9994    0.1554001      3.16557  opls_116
+opls_117   H      1.0080            0           10  opls_117
+opls_118   O     15.9994         0.16         3.12  opls_118
+opls_118e  O     15.9994        0.178        3.097  opls_118e
+opls_119   H      1.0080            0           10  opls_119
+opls_122   C     12.0110         0.05          3.8  opls_122
+opls_123   Cl    35.4530   0.26600143         3.47  opls_123
+opls_124   S     32.0600        0.395         3.56  opls_124
+opls_125   O     15.9994         0.28         2.93  opls_125
+opls_126   C     15.0350         0.16         3.81  opls_126
+opls_127   N     14.0067         0.17         3.42  opls_127
+opls_128   H      1.0080            0           10  opls_128
+opls_129   Ne    20.1797        0.069         2.78  opls_129
+opls_130   He     4.0026         0.02        2.556  opls_130
+opls_131   C     12.0110        0.115          3.8  opls_131
+opls_132   C     15.0350         0.17          3.8  opls_132
+opls_135   C     12.0110        0.066          3.5  CT
+opls_136   C     12.0110        0.066          3.5  CT
+opls_137   C     12.0110        0.066          3.5  CT
+opls_138   C     12.0110        0.066          3.5  CT
+opls_139   C     12.0110        0.066          3.5  CT
+opls_140   H      1.0080         0.03          2.5  HC
+opls_141   C     12.0110        0.076         3.55  CM
+opls_142   C     12.0110        0.076         3.55  CM
+opls_143   C     12.0110        0.076         3.55  CM
+opls_144   H      1.0080         0.03         2.42  HC
+opls_145   C     12.0110         0.07         3.55  CA
+opls_145B  C     12.0110         0.07         3.55  C!
+opls_146   H      1.0080         0.03         2.42  HA
+opls_147   C     12.0110         0.07         3.55  CA
+opls_148   C     12.0110        0.066          3.5  CT
+opls_149   C     12.0110        0.066          3.5  CT
+opls_150   C     12.0110        0.076         3.55  opls_150
+opls_151   Cl    35.4530          0.3          3.4  Cl
+opls_151a  Cl    35.4530          0.3          3.4  Cl
+opls_151b  Cl    35.4530          0.3          3.4  Cl
+opls_151c  Cl    35.4530          0.3          3.4  Cl
+opls_152   C     12.0110        0.066          3.5  CT
+opls_152a  C     12.0110        0.066          3.5  CT
+opls_152b  C     12.0110        0.066          3.5  CT
+opls_152c  C     12.0110        0.066          3.5  CT
+opls_152d  C     12.0110        0.066          3.5  CT
+opls_152e  C     12.0110        0.066          3.5  CT
+opls_153   H      1.0080         0.03          2.5  HC
+opls_153a  H      1.0080         0.03          2.5  HC
+opls_153b  H      1.0080         0.03          2.5  HC
+opls_153c  H      1.0080         0.03          2.5  HC
+opls_154   O     15.9994         0.17         3.12  OH
+opls_155   H      1.0080            0           10  HO
+opls_156   H      1.0080         0.03          2.5  HC
+opls_157   C     12.0110        0.066          3.5  CT
+opls_158   C     12.0110        0.066          3.5  CT
+opls_159   C     12.0110        0.066          3.5  CT
+opls_160   C     12.0110        0.066          3.5  opls_160
+opls_161   C     12.0110        0.062         3.25  opls_161
+opls_162   O     15.9994         0.17         3.07  opls_162
+opls_163   H      1.0080            0           10  opls_163
+opls_164   F     18.9984        0.061         2.94  opls_164
+opls_165   H      1.0080         0.03          2.5  opls_165
+opls_166   C     12.0110         0.07         3.55  CA
+opls_167   O     15.9994         0.17         3.07  OH
+opls_168   H      1.0080            0           10  HO
+opls_169   O     15.9994         0.17         3.07  opls_169
+opls_170   H      1.0080            0           10  opls_170
+opls_171   O     15.9994         0.17         3.07  OH
+opls_172   H      1.0080            0           10  HO
+opls_173   C     12.0110        0.066          3.5  CT
+opls_174   C     12.0110        0.066          3.5  CT
+opls_175   C     12.0110        0.066          3.5  opls_175
+opls_176   H      1.0080         0.03          2.5  HC
+opls_178   C     12.0110        0.076         3.55  opls_178
+opls_179   O     15.9994         0.14          2.9  OS
+opls_180   O     15.9994         0.14          2.9  OS
+opls_181   C     12.0110        0.066          3.5  CT
+opls_182   C     12.0110        0.066          3.5  CT
+opls_183   C     12.0110        0.066          3.5  CT
+opls_184   C     12.0110        0.066          3.5  CT
+opls_185   H      1.0080         0.03          2.5  HC
+opls_186   O     15.9994         0.14          2.9  OS
+opls_187   O     15.9994         0.17         3.07  opls_187
+opls_188   H      1.0080            0           10  opls_188
+opls_189   C     12.0110        0.066          3.5  CO
+opls_190   H      1.0080         0.03          2.5  HC
+opls_191   C     12.0110        0.066          3.5  opls_191
+opls_192   H      1.0080         0.03          2.5  opls_192
+opls_193   C     12.0110        0.066          3.5  CO
+opls_194   H      1.0080         0.03          2.5  HC
+opls_195   C     12.0110        0.066          3.5  opls_195
+opls_196   H      1.0080         0.03          2.5  opls_196
+opls_197   C     12.0110        0.066          3.5  opls_197
+opls_198   C     12.0110        0.066          3.5  opls_198
+opls_199   C     12.0110         0.07         3.55  CA
+opls_200   S     32.0600        0.425          3.6  SH
+opls_201   S     32.0600         0.25          3.7  SH
+opls_202   S     32.0600        0.355          3.6  S
+opls_203   S     32.0600         0.25         3.55  S
+opls_204   H      1.0080            0           10  HS
+opls_205   H      1.0080            0           10  HS
+opls_206   C     12.0110        0.066          3.5  CT
+opls_207   C     12.0110        0.066          3.5  CT
+opls_208   C     12.0110        0.066          3.5  CT
+opls_209   C     12.0110        0.066          3.5  CT
+opls_210   C     12.0110        0.066          3.5  CT
+opls_211   C     12.0110        0.066          3.5  CT
+opls_212   C     12.0110        0.066          3.5  CT
+opls_213   C     12.0110        0.066          3.5  CT
+opls_214   C     12.0110        0.066          3.5  CT
+opls_215   C     12.0110        0.066          3.5  CT
+opls_216   C     12.0110        0.066          3.5  CT
+opls_217   C     12.0110        0.066          3.5  CT
+opls_218   C     12.0110        0.066          3.5  CT
+opls_219   C     12.0110        0.066          3.5  opls_219
+opls_220   C     12.0110        0.066          3.5  opls_220
+opls_221   C     12.0110         0.07         3.55  CA
+opls_222   S     32.0600         0.25         3.55  opls_222
+opls_223   C     12.0110        0.066          3.5  opls_223
+opls_223B  C     12.0110        0.066          3.5  opls_223B
+opls_224   C     12.0110        0.066          3.5  opls_224
+opls_224B  C     12.0110        0.066          3.5  opls_224B
+opls_225   C     12.0110        0.066          3.5  opls_225
+opls_225B  C     12.0110        0.066          3.5  opls_225B
+opls_226   Cl    35.4530          0.3          3.4  Cl
+opls_227   C     12.0110        0.076         3.55  CM
+opls_228   C     12.0110         0.07         3.55  opls_228
+opls_229   C     12.0110        0.066          3.5  opls_229
+opls_230   C     12.0110        0.066          3.5  opls_230
+opls_231   C     12.0110        0.105         3.75  opls_231
+opls_232   C     12.0110        0.105         3.75  C_2
+opls_233   C     12.0110        0.105         3.75  C_2
+opls_234   C     12.0110        0.105         3.75  opls_234
+opls_235   C     12.0110        0.105         3.75  C
+opls_236   O     15.9994         0.21         2.96  O
+opls_237   N     14.0067         0.17         3.25  N
+opls_238   N     14.0067         0.17         3.25  N
+opls_239   N     14.0067         0.17         3.25  N
+opls_240   H      1.0080            0            0  H
+opls_241   H      1.0080            0            0  H
+opls_242   C     12.0110        0.066          3.5  CT
+opls_243   C     12.0110        0.066          3.5  CT
+opls_244   C     12.0110        0.066          3.5  opls_244
+opls_245   C     12.0110        0.066          3.5  CT
+opls_246   C     12.0110        0.066          3.5  opls_246
+opls_247   C     12.0110        0.105         3.75  opls_247
+opls_248   O     15.9994         0.21         2.96  opls_248
+opls_249   N     14.0067         0.17         3.25  opls_249
+opls_250   H      1.0080            0           10  opls_250
+opls_251   N     14.0067         0.17         3.25  opls_251
+opls_252   C     12.0110        0.105         3.75  opls_252
+opls_253   O     15.9994         0.21         2.96  opls_253
+opls_254   H      1.0080            0           10  opls_254
+opls_255   H      1.0080         0.02          2.5  opls_255
+opls_256   C     12.0110        0.066          3.5  opls_256
+opls_257   C     12.0110        0.066          3.5  opls_257
+opls_258   C     12.0110        0.066          3.5  opls_258
+opls_259   C     12.0110        0.066          3.5  opls_259
+opls_260   C     12.0110         0.07         3.55  CA
+opls_261   C     12.0110         0.15         3.65  CZ
+opls_262   N     14.0067         0.17          3.2  NZ
+opls_263   C     12.0110         0.07         3.55  CA
+opls_264   Cl    35.4530          0.3          3.4  Cl
+opls_265   N     14.0067         0.17         3.25  opls_265
+opls_266   C     12.0110         0.07         3.55  opls_266
+opls_267   C     12.0110        0.105         3.75  C
+opls_268   O     15.9994         0.17            3  OH
+opls_269   O     15.9994         0.21         2.96  O_3
+opls_270   H      1.0080            0           10  HO
+opls_271   C     12.0110        0.105         3.75  C
+opls_272   O     15.9994         0.21         2.96  O_3
+opls_273   C     12.0110        0.066          3.5  opls_273
+opls_274   C     12.0110        0.066          3.5  opls_274
+opls_275   C     12.0110        0.066          3.5  opls_275
+opls_276   C     12.0110        0.066          3.5  opls_276
+opls_277   C     12.0110        0.105         3.75  C_2
+opls_278   O     15.9994         0.21         2.96  O_2
+opls_279   H      1.0080        0.015         2.42  HC
+opls_280   C     12.0110        0.105         3.75  C_2
+opls_281   O     15.9994         0.21         2.96  O_2
+opls_282   H      1.0080        0.015         2.42  HC
+opls_283   C     12.0110        0.066          3.5  opls_283
+opls_284   C     12.0110        0.066          3.5  opls_284
+opls_285   C     12.0110        0.066          3.5  opls_285
+opls_286   N     14.0067         0.17         3.25  opls_286
+opls_287   N     14.0067         0.17         3.25  opls_287
+opls_288   N     14.0067         0.17         3.25  opls_288
+opls_289   H      1.0080            0           10  opls_289
+opls_290   H      1.0080            0           10  opls_290
+opls_291   C     12.0110        0.066          3.5  opls_291
+opls_292   C     12.0110        0.066          3.5  opls_292
+opls_292B  C     12.0110        0.066          3.5  opls_292B
+opls_293   C     12.0110        0.066          3.5  opls_293
+opls_293B  C     12.0110        0.066          3.5  opls_293B
+opls_294   C     12.0110        0.066          3.5  opls_294
+opls_295   C     12.0110        0.066          3.5  opls_295
+opls_296   C     12.0110        0.066          3.5  opls_296
+opls_297   C     12.0110        0.066          3.5  opls_297
+opls_298   C     12.0110        0.066          3.5  opls_298
+opls_299   C     12.0110        0.066          3.5  opls_299
+opls_300   N     14.0067         0.17         3.25  opls_300
+opls_301   H      1.0080            0           10  opls_301
+opls_302   C     12.0110         0.05         2.25  opls_302
+opls_303   N     14.0067         0.17         3.25  opls_303
+opls_304   H      1.0080            0           10  opls_304
+opls_305   C     12.0110        0.066          3.5  opls_305
+opls_306   C     12.0110        0.066          3.5  opls_306
+opls_307   C     12.0110        0.066          3.5  opls_307
+opls_308   C     12.0110        0.066          3.5  opls_308
+opls_309   N     14.0067         0.17         3.25  opls_309
+opls_310   H      1.0080            0           10  opls_310
+opls_311   N     14.0067         0.17         3.25  opls_311
+opls_312   C     12.0110         0.08          3.5  opls_312
+opls_313   N     14.0067         0.17         3.25  opls_313
+opls_314   H      1.0080            0           10  opls_314
+opls_315   C     12.0110         0.08          3.5  opls_315
+opls_316   H      1.0080         0.05          2.5  opls_316
+opls_317   C     12.0110         0.08          3.5  opls_317
+opls_318   H      1.0080         0.05          2.5  opls_318
+opls_319   N     14.0067         0.17         3.25  opls_319
+opls_319B  N     14.0067         0.17         3.25  opls_319B
+opls_320   C     12.0110        0.105         3.75  opls_320
+opls_321   N     14.0067         0.17         3.25  opls_321
+opls_322   C     12.0110        0.105         3.75  opls_322
+opls_323   C     12.0110         0.08          3.5  opls_323
+opls_324   C     12.0110         0.08          3.5  opls_324
+opls_325   H      1.0080            0           10  opls_325
+opls_326   O     15.9994         0.21         2.96  opls_326
+opls_327   H      1.0080            0           10  opls_327
+opls_328   O     15.9994         0.21         2.96  opls_328
+opls_329   H      1.0080         0.05          2.5  opls_329
+opls_330   H      1.0080         0.05          2.5  opls_330
+opls_331   C     12.0110         0.08          3.5  opls_331
+opls_332   H      1.0080         0.05          2.5  opls_332
+opls_333   N     14.0067         0.17         3.25  opls_333
+opls_333B  N     14.0067         0.17         3.25  opls_333B
+opls_334   C     12.0110        0.105         3.75  opls_334
+opls_335   N     14.0067         0.17         3.25  opls_335
+opls_336   C     12.0110         0.08          3.5  opls_336
+opls_337   C     12.0110         0.08          3.5  opls_337
+opls_338   C     12.0110         0.08          3.5  opls_338
+opls_339   H      1.0080            0           10  opls_339
+opls_340   O     15.9994         0.21         2.96  opls_340
+opls_341   N     14.0067         0.17         3.25  opls_341
+opls_342   H      1.0080            0           10  opls_342
+opls_343   H      1.0080            0           10  opls_343
+opls_344   H      1.0080         0.05          2.5  opls_344
+opls_345   H      1.0080         0.05          2.5  opls_345
+opls_346   N     14.0067         0.17         3.25  opls_346
+opls_347   C     12.0110         0.08          3.5  opls_347
+opls_348   N     14.0067         0.17         3.25  opls_348
+opls_349   C     12.0110         0.08          3.5  opls_349
+opls_350   C     12.0110         0.08          3.5  opls_350
+opls_351   C     12.0110         0.08          3.5  opls_351
+opls_352   N     14.0067         0.17         3.25  opls_352
+opls_353   C     12.0110         0.08          3.5  opls_353
+opls_354   N     14.0067         0.17         3.25  opls_354
+opls_354B  N     14.0067         0.17         3.25  opls_354B
+opls_355   H      1.0080         0.05          2.5  opls_355
+opls_356   N     14.0067         0.17         3.25  opls_356
+opls_357   H      1.0080            0           10  opls_357
+opls_358   H      1.0080            0           10  opls_358
+opls_359   H      1.0080         0.05          2.5  opls_359
+opls_360   H      1.0080            0           10  opls_360
+opls_361   N     14.0067         0.17         3.25  opls_361
+opls_362   C     12.0110         0.08          3.5  opls_362
+opls_363   N     14.0067         0.17         3.25  opls_363
+opls_364   C     12.0110         0.08          3.5  opls_364
+opls_365   C     12.0110         0.08          3.5  opls_365
+opls_366   C     12.0110        0.105         3.75  opls_366
+opls_367   H      1.0080            0           10  opls_367
+opls_368   N     14.0067         0.17         3.25  opls_368
+opls_369   H      1.0080            0           10  opls_369
+opls_370   O     15.9994         0.21         2.96  opls_370
+opls_371   C     12.0110         0.08          3.5  opls_371
+opls_372   H      1.0080         0.05          2.5  opls_372
+opls_373   C     12.0110         0.08          3.5  opls_373
+opls_374   H      1.0080         0.05          2.5  opls_374
+opls_375   C     12.0110         0.08          3.5  opls_375
+opls_376   H      1.0080         0.05          2.5  opls_376
+opls_377   N     14.0067         0.17         3.25  opls_377
+opls_377B  N     14.0067         0.17         3.25  opls_377B
+opls_378   C     12.0110        0.105         3.75  opls_378
+opls_379   N     14.0067         0.17         3.25  opls_379
+opls_380   C     12.0110         0.08          3.5  opls_380
+opls_381   C     12.0110         0.08          3.5  opls_381
+opls_382   C     12.0110         0.08          3.5  opls_382
+opls_383   H      1.0080            0           10  opls_383
+opls_384   O     15.9994         0.21         2.96  opls_384
+opls_385   H      1.0080            0           10  opls_385
+opls_386   N     14.0067         0.17         3.25  opls_386
+opls_387   H      1.0080            0           10  opls_387
+opls_388   H      1.0080            0           10  opls_388
+opls_389   H      1.0080         0.05          2.5  opls_389
+opls_390   H      1.0080         0.05          2.5  opls_390
+opls_391   C     12.0110         0.08          3.5  opls_391
+opls_392   H      1.0080         0.05          2.5  opls_392
+opls_393   P     30.9738          0.2         3.74  opls_393
+opls_394   O     15.9994         0.21         2.96  opls_394
+opls_395   O     15.9994         0.17            3  opls_395
+opls_396   C     12.0110        0.066         3.55  opls_396
+opls_400   F     18.9984         0.72      2.73295  opls_400
+opls_401   Cl    35.4530   0.11778991      4.41724  opls_401
+opls_402   Br    79.9040         0.09      4.62376  opls_402
+opls_403   I    126.9045         0.07          5.4  opls_403
+opls_404   Li     6.9410         6.25      1.25992  opls_404
+opls_405   Na    22.9898    1.6071391      1.89744  opls_405
+opls_406   Li     6.9410  0.018278991      2.12645  opls_406
+opls_407   Na    22.9898 0.0027719885      3.33045  opls_407
+opls_408   K     39.0983 0.00032799952      4.93463  opls_408
+opls_409   Rb    85.4678     0.000171      5.62177  opls_409
+opls_410   Cs   132.9054      8.1e-05        6.716  opls_410
+opls_411   Mg    24.3050   0.87504302      1.64447  opls_411
+opls_412   Ca    40.0800   0.44965583      2.41203  opls_412
+opls_413   Sr    87.6200    0.1182261      3.10269  opls_413
+opls_414   Ba   137.3300   0.04709608      3.81661  opls_414
+opls_415   C     12.0110          0.3          4.2  opls_415
+opls_416   H      1.0080         0.05          2.5  opls_416
+opls_417   S     32.0600          0.5         4.25  opls_417
+opls_418   C     12.0110          0.3          4.2  opls_418
+opls_419   H      1.0080         0.05          2.5  opls_419
+opls_420   O     15.9994         0.25         3.15  opls_420
+opls_421   C     12.0110          0.3          4.2  opls_421
+opls_422   H      1.0080         0.05          2.5  opls_422
+opls_423   C     12.0110         0.15         3.65  opls_423
+opls_424   N     14.0067         0.25          3.4  opls_424
+opls_425   C     12.0110          0.3          4.2  opls_425
+opls_426   H      1.0080         0.05          2.5  opls_426
+opls_427   N     14.0067         0.25          3.4  opls_427
+opls_428   H      1.0080         0.05          2.5  opls_428
+opls_429   C     12.0110          0.3          4.2  opls_429
+opls_430   H      1.0080         0.05          2.5  opls_430
+opls_431   C     12.0110          0.3          4.2  opls_431
+opls_432   H      1.0080         0.05          2.5  opls_432
+opls_434   O     15.9994         0.25          3.2  opls_434
+opls_435   H      1.0080            0           10  opls_435
+opls_437   O     15.9994          0.2      3.11815  opls_437
+opls_440   P     30.9738          0.2         3.74  P
+opls_441   O     15.9994          0.2         3.15  O2
+opls_442   O     15.9994         0.14          2.9  OS
+opls_443   C     12.0110        0.066          3.5  CT
+opls_444   H      1.0080         0.03          2.5  HC
+opls_445   P     30.9738          0.2         3.74  opls_445
+opls_446   O     15.9994          0.2         3.15  opls_446
+opls_447   O     15.9994         0.14          2.9  opls_447
+opls_448   C     12.0110        0.066          3.5  opls_448
+opls_449   H      1.0080         0.03          2.5  opls_449
+opls_450   P     30.9738          0.2         3.74  opls_450
+opls_451   O     15.9994          0.2         3.15  opls_451
+opls_452   O     15.9994         0.14          2.9  opls_452
+opls_453   C     12.0110        0.066          3.5  opls_453
+opls_454   H      1.0080         0.03          2.5  opls_454
+opls_455   C     12.0110        0.066          3.5  opls_455
+opls_456   H      1.0080         0.03          2.5  opls_456
+opls_457   C     12.0110         0.07         3.55  opls_457
+opls_458   C     12.0110        0.066          3.5  opls_458
+opls_459   H      1.0080         0.03          2.5  opls_459
+opls_460   C     12.0110         0.07         3.55  opls_460
+opls_461   C     12.0110        0.066          3.5  opls_461
+opls_462   H      1.0080         0.03          2.5  opls_462
+opls_463   C     12.0110         0.07         3.55  opls_463
+opls_465   C     12.0110        0.105         3.75  C_2
+opls_466   O     15.9994         0.21         2.96  O_2
+opls_467   O     15.9994         0.17            3  OS
+opls_468   C     12.0110        0.066          3.5  CT
+opls_469   H      1.0080        0.015         2.42  HC
+opls_470   C     12.0110        0.105         3.75  opls_470
+opls_471   C     12.0110        0.105         3.75  C
+opls_472   C     12.0110         0.07         3.55  CA
+opls_473   O     15.9994         0.17            3  OS
+opls_474   S     32.0600         0.25         3.55  opls_474
+opls_475   O     15.9994         0.17         2.96  opls_475
+opls_476   C     12.0110        0.066          3.5  opls_476
+opls_477   H      1.0080         0.03          2.5  opls_477
+opls_478   N     14.0067         0.17         3.25  opls_478
+opls_479   H      1.0080            0           10  opls_479
+opls_480   N     14.0067         0.17         3.25  opls_480
+opls_481   H      1.0080            0           10  opls_481
+opls_482   C     12.0110        0.066          3.5  opls_482
+opls_483   H      1.0080         0.03          2.5  opls_483
+opls_484   C     12.0110        0.066          3.5  CT
+opls_485   H      1.0080         0.03          2.5  HC
+opls_486   C     12.0110        0.066          3.5  opls_486
+opls_487   H      1.0080         0.03          2.5  opls_487
+opls_488   C     12.0110         0.07         3.55  opls_488
+opls_490   C     12.0110        0.066          3.5  CT
+opls_491   C     12.0110        0.066          3.5  opls_491
+opls_492   C     12.0110        0.066          3.5  opls_492
+opls_493   S     32.0600         0.25         3.55  SY2
+opls_494   O     15.9994         0.17         2.96  OY
+opls_496   S     32.0600        0.395         3.56  SZ
+opls_497   O     15.9994         0.28         2.93  OY
+opls_498   C     12.0110        0.066          3.5  CT
+opls_499   C     12.0110        0.066          3.5  opls_499
+opls_500   C     12.0110         0.07         3.55  opls_500
+opls_501   C     12.0110         0.07         3.55  opls_501
+opls_502   C     12.0110         0.07         3.55  opls_502
+opls_503   N     14.0067         0.17         3.25  opls_503
+opls_504   H      1.0080            0           10  opls_504
+opls_505   C     12.0110        0.066          3.5  opls_505
+opls_506   C     12.0110         0.07         3.55  opls_506
+opls_507   C     12.0110         0.07         3.55  opls_507
+opls_508   C     12.0110         0.07         3.55  opls_508
+opls_509   C     12.0110         0.07         3.55  opls_509
+opls_510   C     12.0110         0.07         3.55  opls_510
+opls_511   N     14.0067         0.17         3.25  opls_511
+opls_512   N     14.0067         0.17         3.25  opls_512
+opls_513   H      1.0080            0           10  opls_513
+opls_514   C     12.0110         0.07         3.55  opls_514
+opls_515   C     12.0110        0.066          3.5  opls_515
+opls_516   C     12.0110        0.066          3.5  opls_516
+opls_517   C     12.0110        0.076         3.55  opls_517
+opls_518   C     12.0110        0.076         3.55  CM
+opls_520   N     14.0067         0.17         3.25  NC
+opls_521   C     12.0110         0.07         3.55  CA
+opls_522   C     12.0110         0.07         3.55  CA
+opls_523   C     12.0110         0.07         3.55  CA
+opls_524   H      1.0080         0.03         2.42  HA
+opls_525   H      1.0080         0.03         2.42  HA
+opls_526   H      1.0080         0.03         2.42  HA
+opls_527   N     14.0067         0.17         3.25  opls_527
+opls_528   C     12.0110         0.07         3.55  opls_528
+opls_529   H      1.0080         0.03         2.42  opls_529
+opls_530   N     14.0067         0.17         3.25  NC
+opls_531   C     12.0110         0.07         3.55  CQ
+opls_532   C     12.0110         0.07         3.55  CA
+opls_533   C     12.0110         0.07         3.55  CA
+opls_534   H      1.0080         0.03         2.42  HA
+opls_535   H      1.0080         0.03         2.42  HA
+opls_536   H      1.0080         0.03         2.42  HA
+opls_537   N     14.0067         0.17         3.25  opls_537
+opls_538   C     12.0110         0.07         3.55  opls_538
+opls_539   C     12.0110         0.07         3.55  opls_539
+opls_540   H      1.0080         0.03         2.42  opls_540
+opls_541   H      1.0080         0.03         2.42  opls_541
+opls_542   N     14.0067         0.17         3.25  NA
+opls_543   C     12.0110         0.07         3.55  CW
+opls_544   C     12.0110         0.07         3.55  CS
+opls_545   H      1.0080            0           10  H
+opls_546   H      1.0080         0.03         2.42  HA
+opls_547   H      1.0080         0.03         2.42  HA
+opls_548   N     14.0067         0.17         3.25  opls_548
+opls_549   N     14.0067         0.17         3.25  opls_549
+opls_550   C     12.0110         0.07         3.55  opls_550
+opls_551   C     12.0110         0.07         3.55  opls_551
+opls_552   C     12.0110         0.07         3.55  opls_552
+opls_553   H      1.0080            0           10  opls_553
+opls_554   H      1.0080         0.03         2.42  opls_554
+opls_555   H      1.0080         0.03         2.42  opls_555
+opls_556   H      1.0080         0.03         2.42  opls_556
+opls_557   N     14.0067         0.17         3.25  opls_557
+opls_558   C     12.0110         0.07         3.55  opls_558
+opls_559   N     14.0067         0.17         3.25  opls_559
+opls_560   C     12.0110         0.07         3.55  opls_560
+opls_561   C     12.0110         0.07         3.55  opls_561
+opls_562   H      1.0080            0           10  opls_562
+opls_563   H      1.0080         0.03         2.42  opls_563
+opls_564   H      1.0080         0.03         2.42  opls_564
+opls_565   H      1.0080         0.03         2.42  opls_565
+opls_566   O     15.9994         0.14          2.9  OS
+opls_567   C     12.0110         0.07         3.55  CW
+opls_568   C     12.0110        0.076         3.55  CS
+opls_569   H      1.0080         0.03         2.42  HA
+opls_570   H      1.0080         0.03         2.42  HA
+opls_571   O     15.9994         0.14          2.9  opls_571
+opls_572   C     12.0110         0.07         3.55  opls_572
+opls_573   N     14.0067         0.17         3.25  opls_573
+opls_574   C     12.0110         0.07         3.55  opls_574
+opls_575   C     12.0110         0.07         3.55  opls_575
+opls_576   H      1.0080         0.03         2.42  opls_576
+opls_577   H      1.0080         0.03         2.42  opls_577
+opls_578   H      1.0080         0.03         2.42  opls_578
+opls_579   O     15.9994         0.14          2.9  opls_579
+opls_580   N     14.0067         0.17         3.25  opls_580
+opls_581   C     12.0110         0.07         3.55  opls_581
+opls_582   C     12.0110         0.07         3.55  opls_582
+opls_583   C     12.0110         0.07         3.55  opls_583
+opls_584   H      1.0080         0.03         2.42  opls_584
+opls_585   H      1.0080         0.03         2.42  opls_585
+opls_586   H      1.0080         0.03         2.42  opls_586
+opls_587   N     14.0067         0.17         3.25  opls_587
+opls_588   C     12.0110         0.07         3.55  opls_588
+opls_589   C     12.0110         0.07         3.55  opls_589
+opls_590   C     12.0110         0.07         3.55  opls_590
+opls_591   C     12.0110         0.07         3.55  opls_591
+opls_592   C     12.0110         0.07         3.55  opls_592
+opls_593   C     12.0110         0.07         3.55  opls_593
+opls_594   C     12.0110         0.07         3.55  opls_594
+opls_595   C     12.0110         0.07         3.55  opls_595
+opls_596   H      1.0080            0           10  opls_596
+opls_597   H      1.0080         0.03         2.42  opls_597
+opls_598   H      1.0080         0.03         2.42  opls_598
+opls_599   H      1.0080         0.03         2.42  opls_599
+opls_600   H      1.0080         0.03         2.42  opls_600
+opls_601   H      1.0080         0.03         2.42  opls_601
+opls_602   H      1.0080         0.03         2.42  opls_602
+opls_603   N     14.0067         0.17         3.25  opls_603
+opls_604   C     12.0110         0.07         3.55  opls_604
+opls_605   C     12.0110         0.07         3.55  opls_605
+opls_606   C     12.0110         0.07         3.55  opls_606
+opls_607   C     12.0110         0.07         3.55  opls_607
+opls_608   C     12.0110         0.07         3.55  opls_608
+opls_609   C     12.0110         0.07         3.55  opls_609
+opls_610   C     12.0110         0.07         3.55  opls_610
+opls_611   C     12.0110         0.07         3.55  opls_611
+opls_612   C     12.0110         0.07         3.55  opls_612
+opls_613   H      1.0080         0.03         2.42  opls_613
+opls_614   H      1.0080         0.03         2.42  opls_614
+opls_615   H      1.0080         0.03         2.42  opls_615
+opls_616   H      1.0080         0.03         2.42  opls_616
+opls_617   H      1.0080         0.03         2.42  opls_617
+opls_618   H      1.0080         0.03         2.42  opls_618
+opls_619   H      1.0080         0.03         2.42  opls_619
+opls_620   N     14.0067         0.17         3.25  opls_620
+opls_621   C     12.0110         0.07         3.55  opls_621
+opls_622   N     14.0067         0.17         3.25  opls_622
+opls_623   C     12.0110         0.07         3.55  opls_623
+opls_624   C     12.0110         0.07         3.55  opls_624
+opls_625   C     12.0110         0.07         3.55  opls_625
+opls_626   N     14.0067         0.17         3.25  opls_626
+opls_627   C     12.0110         0.07         3.55  opls_627
+opls_628   N     14.0067         0.17         3.25  opls_628
+opls_629   H      1.0080         0.03         2.42  opls_629
+opls_630   H      1.0080         0.03         2.42  opls_630
+opls_631   H      1.0080         0.03         2.42  opls_631
+opls_632   H      1.0080            0           10  opls_632
+opls_633   S     32.0600         0.25         3.55  S
+opls_634   C     12.0110         0.07         3.55  opls_634
+opls_635   N     14.0067         0.17         3.25  opls_635
+opls_636   C     12.0110         0.07         3.55  opls_636
+opls_637   C     12.0110         0.07         3.55  opls_637
+opls_638   H      1.0080         0.03         2.42  opls_638
+opls_639   H      1.0080         0.03         2.42  opls_639
+opls_640   H      1.0080         0.03         2.42  opls_640
+opls_641   N     14.0067         0.17         3.25  opls_641
+opls_642   C     12.0110         0.07         3.55  opls_642
+opls_643   H      1.0080         0.03         2.42  opls_643
+opls_644   C     12.0110         0.07         3.55  opls_644
+opls_645   C     12.0110        0.066          3.5  opls_645
+opls_646   N     14.0067         0.17         3.25  opls_646
+opls_647   C     12.0110         0.07         3.55  opls_647
+opls_648   C     12.0110         0.07         3.55  opls_648
+opls_649   C     12.0110         0.07         3.55  opls_649
+opls_650   C     12.0110         0.07         3.55  opls_650
+opls_651   C     12.0110         0.07         3.55  opls_651
+opls_652   C     12.0110         0.07         3.55  opls_652
+opls_653   H      1.0080         0.03         2.42  opls_653
+opls_654   H      1.0080         0.03         2.42  opls_654
+opls_655   H      1.0080         0.03         2.42  opls_655
+opls_656   H      1.0080         0.03         2.42  opls_656
+opls_670   C     12.0110        0.066          3.5  CT
+opls_671   C     12.0110        0.066          3.5  opls_671
+opls_672   C     12.0110        0.066          3.5  CT
+opls_673   C     12.0110        0.066          3.5  opls_673
+opls_674   C     12.0110        0.066          3.5  CT
+opls_675   C     12.0110        0.066          3.5  opls_675
+opls_676   C     12.0110        0.066          3.5  opls_676
+opls_677   C     12.0110        0.066          3.5  opls_677
+opls_678   C     12.0110        0.066          3.5  CT
+opls_679   C     12.0110        0.066          3.5  CT
+opls_680   C     12.0110        0.066          3.5  opls_680
+opls_681   C     12.0110        0.066          3.5  opls_681
+opls_697   Ac   227.0300        0.054        3.473  opls_697
+opls_698   Th   232.0400         0.05          3.3  opls_698
+opls_699   Am   243.0600         0.05          3.3  opls_699
+opls_700   C     12.0110        0.076         3.55  opls_700
+opls_701   C     12.0110        0.066          3.5  opls_701
+opls_702   H      1.0080         0.03          2.5  opls_702
+opls_703   La   138.9100         0.06         3.75  opls_703
+opls_704   Nd   144.2400        0.054        3.473  opls_704
+opls_705   Eu   151.9600         0.05          3.3  opls_705
+opls_706   Gd   157.2500         0.05          3.3  opls_706
+opls_707   Yb   173.0400         0.04         2.95  opls_707
+opls_708   C     12.0110        0.076         3.55  opls_708
+opls_709   Cl    35.4530          0.3          3.4  opls_709
+opls_710   H      1.0080         0.03         2.42  opls_710
+opls_711   C     12.0110        0.066          3.5  CY
+opls_712   C     12.0110        0.066          3.5  CY
+opls_713   C     12.0110        0.066          3.5  CY
+opls_714   C     12.0110         0.07         3.55  opls_714
+opls_715   H      1.0080         0.03         2.42  opls_715
+opls_716   C     12.0110         0.07         3.55  opls_716
+opls_717   H      1.0080         0.03         2.42  opls_717
+opls_718   C     12.0110         0.07         3.55  CA
+opls_719   F     18.9984        0.061         2.85  F
+opls_720   C     12.0110         0.07         3.55  CA
+opls_721   F     18.9984        0.061         2.85  F
+opls_722   Br    79.9040         0.47         3.47  Br
+opls_722a  Br    79.9040         0.47         3.47  Br
+opls_724   C     12.0110         0.07         3.55  CA
+opls_725   C     12.0110        0.062         3.25  CT
+opls_726   F     18.9984        0.061         2.94  F
+opls_727   C     12.0110         0.07         3.55  CA
+opls_728   F     18.9984        0.061         2.85  F
+opls_729   C     12.0110         0.07         3.55  opls_729
+opls_730   Br    79.9040         0.47         3.47  opls_730
+opls_731   C     12.0110         0.07         3.55  opls_731
+opls_732   I    126.9045         0.58         3.67  I
+opls_733   C     12.0110        0.066          3.5  opls_733
+opls_734   S     32.0600         0.25         3.55  SH
+opls_735   C     12.0110         0.07         3.55  CA
+opls_736   C     12.0110         0.07         3.55  opls_736
+opls_737   C     12.0110         0.07         3.55  opls_737
+opls_738   C     12.0110         0.07         3.55  opls_738
+opls_739   C     12.0110         0.07         3.55  opls_739
+opls_740   H      1.0080         0.03         2.42  opls_740
+opls_741   H      1.0080         0.03         2.42  opls_741
+opls_742   C     12.0110         0.05         2.25  opls_742
+opls_743   N     14.0067         0.17         3.25  opls_743
+opls_744   H      1.0080            0           10  opls_744
+opls_745   H      1.0080            0           10  opls_745
+opls_746   H      1.0080         0.03         2.42  opls_746
+opls_747   C     12.0110        0.066          3.5  opls_747
+opls_748   C     12.0110        0.066          3.5  opls_748
+opls_749   N     14.0067         0.17         3.25  opls_749
+opls_750   N     14.0067         0.17         3.25  opls_750
+opls_751   N     14.0067         0.17         3.25  opls_751
+opls_752   C     12.0110         0.05         2.25  opls_752
+opls_753   N     14.0067         0.17          3.2  NZ
+opls_754   C     12.0110        0.066          3.3  CZ
+opls_755   C     12.0110        0.066          3.3  CT
+opls_756   C     12.0110        0.066          3.3  CT
+opls_757   C     12.0110        0.066          3.3  CT
+opls_758   C     12.0110        0.066          3.3  CT
+opls_759   H      1.0080        0.015          2.5  HC
+opls_760   N     14.0067         0.12         3.25  NO
+opls_761   O     15.9994         0.17         2.96  ON
+opls_762   C     12.0110        0.066          3.5  CT
+opls_763   H      1.0080        0.015          2.5  HC
+opls_764   C     12.0110        0.066          3.5  CT
+opls_765   C     12.0110        0.066          3.5  CT
+opls_766   C     12.0110        0.066          3.5  opls_766
+opls_767   N     14.0067         0.12         3.25  NO
+opls_768   C     12.0110         0.07         3.55  CA
+opls_771   O     15.9994         0.21         2.96  O
+opls_772   C     12.0110        0.105         3.75  C
+opls_773   O     15.9994         0.17            3  OS
+opls_774   C     12.0110        0.066          3.5  CT
+opls_775   C     12.0110        0.066          3.5  CT
+opls_776   C     12.0110        0.066          3.5  CT
+opls_777   H      1.0080        0.015         2.42  HC
+opls_778   H      1.0080        0.015         2.42  HC
+opls_779   H      1.0080        0.015         2.42  HC
+opls_781   P     30.9738          0.2         3.74  opls_781
+opls_782   C     12.0110        0.066          3.5  opls_782
+opls_783   C     12.0110        0.066          3.5  opls_783
+opls_784   H      1.0080         0.03          2.5  opls_784
+opls_785   P     30.9738          0.2         3.74  opls_785
+opls_786   F     18.9984        0.061       3.1181  opls_786
+opls_787   N     14.0067         0.17         3.15  opls_787
+opls_788   O     15.9994         0.21         2.86  opls_788
+opls_795   O     15.9994         0.14        3.215  opls_795
+opls_796   H      1.0080            0           10  opls_796
+opls_900   N     14.0067         0.17          3.3  NT
+opls_901   N     14.0067         0.17          3.3  NT
+opls_902   N     14.0067         0.17          3.3  NT
+opls_903   C     12.0110        0.066          3.5  CT
+opls_904   C     12.0110        0.066          3.5  CT
+opls_905   C     12.0110        0.066          3.5  CT
+opls_906   C     12.0110        0.066          3.5  CT
+opls_906B  C     12.0110        0.066          3.5  opls_906B
+opls_907   C     12.0110        0.066          3.5  CT
+opls_908   C     12.0110        0.066          3.5  CT
+opls_909   H      1.0080            0           10  H
+opls_910   H      1.0080            0           10  H
+opls_911   H      1.0080        0.015          2.5  HC
+opls_912   C     12.0110        0.066          3.5  CT
+opls_912B  C     12.0110        0.066          3.5  opls_912B
+opls_913   C     12.0110        0.066          3.5  CT
+opls_914   C     12.0110        0.066          3.5  CT
+opls_915   C     12.0110        0.066          3.5  opls_915
+opls_916   C     12.0110         0.07         3.55  CA
+opls_917   C     12.0110         0.07         3.55  CA
+opls_918   C     12.0110         0.07         3.55  opls_918
+opls_925   C     12.0110        0.086          3.3  CZ
+opls_926   H      1.0080        0.015         2.42  HC
+opls_927   C     12.0110         0.21          3.3  CZ
+opls_928   C     12.0110        0.135          3.3  opls_928
+opls_929   C     12.0110          0.1          3.3  opls_929
+opls_930   H      1.0080        0.015          2.5  HC
+opls_931   C     12.0110         0.21          3.3  opls_931
+opls_940   N     14.0067         0.17         3.25  opls_940
+opls_941   H      1.0080            0           10  opls_941
+opls_942   C     12.0110        0.066          3.5  opls_942
+opls_943   C     12.0110        0.066          3.5  opls_943
+opls_944   C     12.0110        0.066          3.5  opls_944
+opls_945   C     12.0110        0.066          3.5  opls_945
+opls_950   H      1.0080         0.03          2.5  opls_950
+opls_951   C     12.0110        0.066          3.5  opls_951
+opls_952   C     12.0110        0.105         3.75  opls_952
+opls_953   N     14.0067         0.17         3.25  opls_953
+opls_954   O     15.9994         0.21         2.96  opls_954
+opls_955   H      1.0080            0           10  opls_955
+opls_956   F     18.9984        0.061         2.94  opls_956
+opls_957   C     12.0110        0.066          3.5  opls_957
+opls_958   H      1.0080         0.03          2.5  opls_958
+opls_959   C     12.0110        0.066          3.5  CT
+opls_960   C     12.0110        0.066          3.5  CT
+opls_961   C     12.0110        0.066          3.5  CT
+opls_962   C     12.0110        0.066          3.5  CT
+opls_963   C     12.0110        0.066          3.5  opls_963
+opls_964   C     12.0110        0.097          3.5  opls_964
+opls_965   F     18.9984        0.053         2.95  F
+HW_tip4pew H      1.0080            0           10  HW_tip4pew
+OW_tip4pew O     16.0000      0.16275      3.16435  OW_tip4pew
 
 [bonds]
-# ClayFF Table 2: O-H of water (flexible SPC) and of the hydroxyls.  t1 t2 K(kcal/mol/A^2) r0(A)
+# t1 t2  K(kcal/mol/A^2)  r0(A)       E = K (r - r0)^2
+# ClayFF (Table 2): O-H of water and of the hydroxyls
 ow  hw   554.1349 1.0
 oh  ho   554.1349 1.0
 ohs ho   554.1349 1.0
+# OPLS-AA (classes)
+OW    HW             600     0.9572
+OW    LP             900      0.175
+C*    HC             340       1.08
+C     C3             317      1.522
+C_2   C3             317      1.522
+C_3   C3             317      1.522
+C     CA             400       1.49
+C_2   CA             400       1.49
+C_3   CA             400       1.49
+C     CB             447      1.419
+C_2   CB             447      1.419
+C_3   CB             447      1.419
+C     CM             410      1.444
+C_2   CM             410      1.444
+C_3   CM             410      1.444
+C     CS             400       1.49
+C_2   CS             400       1.49
+C_3   CS             400       1.49
+C     CT             317      1.522
+C_2   CT             317      1.522
+C_3   CT             317      1.522
+C     CT_2           317      1.522
+C_3   CT_2           317      1.522
+C     N              490      1.335
+C_2   N              490      1.335
+C_3   N              490      1.335
+C     N*             424      1.383
+C_2   N*             424      1.383
+C_3   N*             424      1.383
+C     NA             418      1.388
+C_2   NA             418      1.388
+C_3   NA             418      1.388
+C     NC             457      1.358
+C_2   NC             457      1.358
+C_3   NC             457      1.358
+C     O              570      1.229
+C     O_2            570      1.229
+C     O_3            570      1.229
+C_2   O_2            570      1.229
+C     O2             656       1.25
+C_3   O2             656       1.25
+C     OH             450      1.364
+NO    ON             550      1.225
+CT    NO             375       1.49
+CA    NO             400       1.46
+CA    OH             450      1.364
+CA    OS             450      1.364
+CB    OS             340       1.36
+CM    OS             450       1.37
+CM    OH             450       1.37
+CA    O              450      1.364
+CA    O_2            450      1.364
+C     OS             214      1.327
+C_2   OS             214      1.327
+C*    CB             388      1.459
+C*    CT             317      1.495
+CU    CT             317       1.51
+CR    CT             317       1.51
+CS    CT             317      1.495
+C*    CW             546      1.352
+CA    CR             546      1.367
+CA    CS             469      1.424
+CA    CW             546      1.367
+CQ    O              450      1.364
+CQ    O_2            450      1.364
+CS    CW             546      1.367
+CS    CS             469      1.424
+CS    CB             469      1.424
+CS    HA             367       1.08
+CU    NB             410       1.32
+CU    CA             469      1.421
+CU    HA             367       1.08
+NA    NB             400      1.349
+OS    NB             462      1.399
+OS    CR             462      1.357
+C3    C3             260      1.526
+C3    NT             382      1.448
+CT    NT             382      1.448
+NT    NT             350      1.445
+CO    OS             320       1.38
+CO    C3             260      1.526
+CW    OS             340       1.36
+C3    CM             317       1.51
+C3    N              337      1.449
+C3    N*             337      1.475
+C3    N2             337      1.463
+C3    N3             367      1.471
+C3    OH             386      1.425
+C3    OS             320      1.425
+C3    S              222       1.81
+C3    SH             222       1.81
+CA    CA             469        1.4
+CA    C!             469        1.4
+C!    C!             385       1.46
+C!    CS             385       1.46
+C!    CU             385       1.46
+C!    CV             385       1.46
+C!    CW             385       1.46
+C!    CR             385       1.46
+C!    C              385       1.46
+C!    C_2            385       1.46
+C!    C_3            385       1.46
+C!    CM             385       1.46
+C!    NA             385       1.44
+CA    CB             469      1.404
+CA    CM             427      1.433
+CA    CN             469        1.4
+CA    CT             317       1.51
+CA    CY             317       1.49
+CW    CT             317      1.504
+CV    CT             317      1.504
+CX    CT             317      1.504
+CX    CA             317      1.504
+CX    CX             520       1.37
+CX    NA             427      1.381
+CX    HA             367       1.08
+CA    NY             382      1.385
+CA    NZ             500      1.261
+NY    H              434       1.01
+NY    H3             434       1.01
+NZ    H              434       1.01
+NZ    H3             434       1.01
+CT    NY             382      1.448
+CA    N2             481       1.34
+CQ    N2             481       1.34
+CR    N2             481       1.34
+CA    NT             481       1.34
+CA    NA             427      1.381
+CQ    N              427      1.381
+CA    NC             483      1.339
+C!    NC             483      1.339
+NC    NC             500       1.32
+NC    NZ             550       1.24
+NZ    NZ             550       1.12
+CA    HA             367       1.08
+CB    CB             520       1.37
+CR    CS             520       1.37
+CV    CW             520       1.37
+CB    CN             447      1.419
+CB    N*             436      1.374
+CB    NA             436      1.374
+CB    NB             414      1.391
+CB    NC             461      1.354
+CR    NC             461      1.354
+CW    CW             512      1.375
+CK    HA             340       1.08
+CK    H5             367       1.08
+CK    N*             440      1.371
+CK    NA             440      1.371
+CK    NB             529      1.304
+CM    CM             549       1.34
+CM    C=             549       1.34
+CW    C=             549      1.365
+C=    C=             385       1.46
+C     C              350       1.51
+C     C_2            350       1.51
+C     C_3            350       1.51
+C=    C              385       1.46
+C=    C_2            385       1.46
+C=    C_3            385       1.46
+CT    C+       532.79995       1.46
+C+    HC       532.79995      1.084
+CM    CT             317       1.51
+C=    CT             317       1.51
+CM    HC             340       1.08
+CM    H4             367       1.08
+C=    HC             340       1.08
+HC    C              340       1.09
+HC    C_2            340       1.09
+HC    C_3            340       1.09
+CT    CZ             390       1.47
+CA    CZ             400      1.451
+CY    CZ             400      1.451
+CZ    NZ             650      1.157
+CZ    CZ            1150       1.21
+HC    CZ             420       1.08
+CM    N*             448      1.365
+CM    NA             448      1.365
+CN    NA             428       1.38
+CQ    HA             367       1.08
+CQ    H5             367       1.08
+CQ    NC             502      1.324
+CR    HA             367       1.08
+CR    H5             367       1.08
+CR    NA             477      1.343
+CR    NB             488      1.335
+CT    CT             268      1.529
+CT    CT_2           268      1.529
+CT    CT_3           268      1.529
+CT    CT_4           268      1.529
+CT    HC             340       1.09
+CT_2  HC             340       1.09
+CT_3  HC             340       1.09
+CT_4  HC             340       1.09
+CT_3  N              337      1.449
+CT_3  NT             337      1.449
+CT    N              337      1.449
+CT_2  N              337      1.449
+CT_2  NT             382      1.448
+CT    NC             337      1.449
+CY    N              337      1.449
+CT    N*             337      1.475
+CT    NA             337      1.475
+CT    N2             337      1.463
+CT    N3             367      1.471
+CT_2  N3             367      1.471
+CT_3  N3             367      1.471
+CT    OH             320       1.41
+CT_4  OH             320       1.41
+NT    OH             320       1.45
+NT    OS             320       1.45
+N     OH             400       1.38
+CT    OS             320       1.41
+CT    S              222       1.81
+CY    S              222       1.81
+CR    S              250       1.76
+CW    S              250       1.74
+CA    SH             250       1.74
+CT    SH             222       1.81
+CT    Cl             245      1.781
+CA    Cl             300      1.725
+CM    Cl             300      1.725
+C     Cl             300       1.79
+C_2   Cl             300       1.79
+C_3   Cl             300       1.79
+CZ    Cl             330      1.637
+CT    Br             245      1.945
+CA    Br             300       1.87
+CM    Br             300        1.9
+C     Br             300       1.98
+C_2   Br             300       1.98
+C_3   Br             300       1.98
+CZ    Br             330      1.784
+CA    I              275       2.08
+CV    HA             367       1.08
+CV    H4             367       1.08
+CV    NB             410      1.394
+CW    NB             410      1.394
+CW    H4             367       1.08
+CW    HA             367       1.08
+CW    NA             427      1.381
+CW    N              427      1.381
+CY    CY             260      1.509
+CY    CT             280       1.51
+CY    HC             340      1.088
+H     N              434       1.01
+H     N3             434       1.01
+H     N*             434       1.01
+H     N2             434       1.01
+H     NA             434       1.01
+H     NT             434       1.01
+H3    N2             434       1.01
+H3    N3             434       1.01
+HO    OH             553      0.945
+HO    OS             553      0.945
+HS    SH             274      1.336
+LP    S              600      0.679
+LP    SH             600      0.679
+O2    P              525       1.48
+O     P              525       1.48
+OH    P              230       1.61
+OS    P              230       1.61
+CT    P              212      1.843
+CA    P              220       1.78
+CT    P+             212       1.82
+S     S              166      2.038
+CT    C3             260      1.526
+CA    NB             414      1.391
+CA    N              427      1.381
+CB    CT             317       1.51
+CT    F              367      1.332
+CA    F              420      1.354
+CM    F              420       1.34
+CZ    F              450      1.279
+C     F              420      1.357
+C_2   F              420      1.357
+C_3   F              420      1.357
+CT    CO             268      1.529
+OH    CO             320       1.38
+HC    CO             340       1.09
+SY    C3             222       1.81
+SY    CA             340       1.77
+SY    OY             700       1.44
+SZ    OY             700       1.53
+SY    N              434       1.67
+SY    CT             340       1.77
+SZ    CT             340       1.79
+U     OU             500        1.8
+CA    S              250       1.76
+CM    S              250       1.76
+CM    CY             317       1.51
+CY    NT             382      1.448
+SY    NT             340       1.77
+C     NT             317      1.522
+C_2   NT             317      1.522
+C_3   NT             317      1.522
+C     CW             400       1.49
+C_2   CW             400       1.49
+C_3   CW             400       1.49
+O2    S        478.01147       1.53
+SY2   OY             700       1.44
+SY2   CT             340       1.77
+CT    I              245      2.145
+CM    CZ            1150       1.21
+CZ    NT             650      1.157
+C_2   CY             400       1.49
+CA    HC             367       1.08
 
 [angles]
-# ClayFF Table 2: H-O-H of water, metal-O-H of the hydroxyls (X: the metal).  t1 t2 t3 K(kcal/mol/rad^2) theta0(deg)
+# t1 t2 t3  K(kcal/mol/rad^2)  theta0(deg)       E = K (theta - theta0)^2
+# ClayFF (Table 2): H-O-H of water, metal-O-H of the hydroxyls (X: the metal)
 hw  ow  hw   45.7696 109.47
 X   oh  ho   30.0 109.47
 X   ohs ho   30.0 109.47
+# OPLS-AA (classes)
+HW    OW    HW              75        109.5
+HW    OW    LP              50        54.75
+OU    U     OU             150          180
+HC    C*    CW              35        126.8
+HC    C*    CB              35        126.8
+HC    CS    CW              35        126.8
+HC    CS    CB              35        126.8
+HA    CA    CW              35        126.9
+HC    C=    CW              35          122
+HA    CW    CA              35        130.7
+HA    CW    C=              35        130.7
+HA    CW    NA              35        121.6
+CT    CW    NA              70        121.6
+C!    CW    NA              70        121.6
+CT    CW    OS              70        121.6
+C!    CW    OS              70        121.6
+CA    CW    NA              70        121.6
+HA    CW    CV              35        130.7
+HA    CV    CW              35        128.2
+HC    CT    CZ              35        108.5
+CT    CT    CR              63          114
+CT    CT    CZ       58.350024        112.7
+CT    CZ    CZ             150          180
+CA    CZ    CZ             160          180
+HC    CZ    CZ             112          180
+CA    CA    CZ              70          120
+CA    CA    CR              63          120
+CA    CA    CX              85          120
+CA    CR    NB              70          111
+CT    CZ    NZ             150          180
+N2    CZ    NZ             150          180
+CA    CZ    NZ             150          180
+CT    CX    NA              70        121.6
+HA    CX    CX              35        130.7
+CX    CX    NA              70        106.3
+CX    NA    CR              70        109.8
+C3    C     N               70        116.6
+C3    C     O               80        120.4
+C3    C     O_2             80        120.4
+C3    C     O_3             80        120.4
+C3    C_2   O_2             80        120.4
+C3    C_3   O2              70          117
+CA    C     CA              85          120
+CA    C_2   CA              85          120
+CA    C     OH              70          120
+CA    CA    O               70          120
+CA    CA    OH              70          120
+CA    CA    SH              70          120
+CA    CA    OS              70          120
+CM    CM    OS              70          123
+C=    CM    OS              70          123
+CM    CM    OH              70          123
+C=    CM    OH              70          123
+CB    C     NA              70        111.3
+CB    C_2   NA              70        111.3
+CB    C     O               80        128.8
+CB    C     O_2             80        128.8
+CB    C     O_3             80        128.8
+CB    C_2   O_2             80        128.8
+CB    C     N               70        111.3
+CS    C     O               80        128.2
+CS    C     O_2             80        128.2
+CS    C     O_3             80        128.2
+CS    C_2   O_2             80        128.2
+CM    C     NA              70        114.1
+CM    C_2   NA              70        114.1
+CM    C     O               80        125.3
+CM    C     O_2             80        125.3
+CM    C     O_3             80        125.3
+CM    C_2   O_2             80        125.3
+CM    C     C               80        117.2
+CM    C     C_2             80        117.2
+CM    C     C_3             80        117.2
+CM    C_2   C               80        117.2
+CM    C_2   C_2             80        117.2
+CM    C_2   C_3             80        117.2
+CM    C     OH              70          108
+C=    C     O               80          124
+C=    C     O_2             80          124
+C=    C     O_3             80          124
+C=    C_2   O_2             80          124
+C=    C     OH              70          108
+C=    C     HC              80          116
+C=    C_2   HC              80          116
+CT    C     N               70        116.6
+CT_2  C     N               70        116.6
+CA    C     N               70        115.5
+CM    C     N               70        115.5
+CT    C     O               80        120.4
+CT    C     O_2             80        120.4
+CT    C     O_3             80        120.4
+CT    C_2   O_2             80        120.4
+CT_2  C     O               80        120.4
+CT_2  C     O_2             80        120.4
+CT_2  C     O_3             80        120.4
+CT_2  C_2   O_2             80        120.4
+CA    C     O               80        120.4
+CA    C     O_2             80        120.4
+CA    C     O_3             80        120.4
+CA    C_2   O_2             80        120.4
+CT    NO    ON              80        117.5
+CA    NO    ON              80        117.5
+CT    CT    NO              63        111.1
+HC    CT    NO              35          105
+CA    CA    NO              85          120
+HC    C     N               40          114
+HC    C     OS              40          115
+HC    C_2   OS              40          115
+HC    C     OH              40          115
+O     C     HC              35          123
+O_2   C     HC              35          123
+O_3   C     HC              35          123
+O_2   C_2   HC              35          123
+NC    C     HC              35          122
+NC    C_2   HC              35          122
+CT    C     OH              70          108
+CT_2  C     OH              70          108
+CT    C     CT              70          116
+CT    C_2   CT              70          116
+CT    C     CA              70          116
+CT    C_2   CA              70          116
+C=    C     CT              70          116
+C=    C_2   CT              70          116
+CT    C_3   O2              70          117
+CT_2  C_3   O2              70          117
+CT    CT    Cl              69        109.8
+C     CT    Cl              69        109.8
+C     CT_2  Cl              69        109.8
+CA    CA    Cl              75          120
+CM    CM    Cl              75        121.5
+Cl    CM    HC              60          114
+Cl    CT    Cl              78        111.7
+HC    CT    Cl              51        107.6
+CT    CT    Br              69          110
+C     CT    Br              69        109.8
+C_2   CT    Br              69        109.8
+C_3   CT    Br              69        109.8
+CT    C     Cl              75          109
+CT    C_2   Cl              75          109
+CT    C     Br              75          109
+CT    C_2   Br              75          109
+O     C     Cl              75          119
+O_2   C     Cl              75          119
+O_3   C     Cl              75          119
+O_2   C_2   Cl              75          119
+O     C     Br              75          119
+O_2   C     Br              75          119
+O_3   C     Br              75          119
+O_2   C_2   Br              75          119
+CA    CA    Br              75          120
+CM    CM    Br              75          120
+Br    CM    HC              60          114
+Br    CT    Br              78        111.7
+HC    CT    Br              51        107.6
+CA    CA    I               75          120
+CA    CA    F               80          120
+CM    CM    F               80        121.5
+C     CM    F               80        121.5
+F     CM    HC              50          112
+F     CM    F               80          108
+F     C     O               80          121
+F     C     O_2             80          121
+F     C     O_3             80          121
+F     C_2   O_2             80          121
+F     C     CT              80          111
+F     C_2   CT              80          111
+N     C     O               80        122.9
+N     C     O_2             80        122.9
+N     C     O_3             80        122.9
+N     C_2   O_2             80        122.9
+N     C     N               70        114.2
+N     C_2   N               70        114.2
+N*    C     NA              70        115.4
+N*    C_2   NA              70        115.4
+N*    C     NC              70        118.6
+N*    C_2   NC              70        118.6
+NA    C     NA              70        118.6
+NA    C_2   NA              70        118.6
+N*    C     O               80        120.9
+N*    C     O_2             80        120.9
+N*    C     O_3             80        120.9
+N*    C_2   O_2             80        120.9
+NA    C     O               80        120.6
+NA    C     O_2             80        120.6
+NA    C     O_3             80        120.6
+NA    C_2   O_2             80        120.6
+NC    C     O               80        122.5
+NC    C     O_2             80        122.5
+NC    C     O_3             80        122.5
+NC    C_2   O_2             80        122.5
+NC    C     NA              70        118.6
+NC    C_2   NA              70        118.6
+NA    CM    H4              35        119.1
+N     CA    HA              35        119.1
+ON    NO    ON              80          125
+O_3   C     O_3             80          126
+O_3   C     OH              80          121
+O2    C_3   O2              80          126
+CB    C*    CT              70        128.6
+CB    C*    CW              85        106.4
+CT    C*    CW              70          125
+CB    CS    CT              70        128.6
+CB    CS    CW              85        106.4
+CT    CS    CW              70          125
+CT    CT    NT       56.199928       109.47
+C3    CT    NT       56.199928       109.47
+CT    CT_2  NT       56.199928       109.47
+C     CA    CA              85          120
+C_2   CA    CA              85          120
+C_3   CA    CA              85          120
+C     CA    HA              35          120
+C_2   CA    HA              35          120
+C_3   CA    HA              35          120
+CA    CA    CA              63          120
+CA    C!    CA              63          120
+CA    C!    C!              63          120
+CA    CA    C!              63          120
+CA    C!    CR              63          120
+CA    C!    CS              63          120
+CA    C!    CW              63          120
+CA    C!    CU              63          120
+CA    C!    CV              63          120
+CA    CA    CB              63          120
+CA    CA    CN              85          120
+CA    CA    CM              70          124
+CA    CM    CT              85        119.7
+CA    CM    C=              85          117
+CA    CA    CT              70          120
+CA    CA    NT              70        120.1
+CA    CA    HA              35          120
+C!    CA    HA              35          120
+CT    NC    CQ              70        118.6
+CT    NC    NZ              70          120
+NC    NZ    NZ             100          180
+CT    CT    NC              65          109
+NC    CA    HA              35          116
+CA    CA    NC              70          124
+CA    C!    NC              70          124
+C!    CA    NC              70          124
+C!    C!    NC              70          124
+CA    NC    CA              70          117
+CA    NC    C!              70          117
+CA    NC    CY              70        125.8
+CA    CA    CW              70        107.4
+CV    NA    H               35          120
+CW    NA    CW              70        109.8
+CW    NA    CT              70        125.8
+CV    CW    NA              70        106.3
+CV    CW    N               70        106.3
+CW    CV    NB              70          111
+CW    NA    CR              70        109.8
+CB    NA    CR              70        109.8
+CW    C=    C=              35          106
+CA    NA    CK              70        109.8
+NC    CA    CT              70          116
+NC    CQ    CT              70        115.5
+NC    CQ    O               80        122.5
+NB    CV    CT              70        124.5
+CA    CV    NB              70          111
+CA    NC    NC              70          117
+CT    NC    NC              70          117
+OS    CW    CS              70        110.6
+OS    CW    CA              70        110.6
+OS    CW    C=              70          110
+CW    OS    CW              70        106.5
+CW    OS    CB              70        106.5
+CR    OS    CB              70        106.5
+OS    CW    HA              35        113.4
+S     CW    HA              35        113.4
+S     CR    CA              70          111
+S     CR    HA              35        113.4
+S     CW    CV              70          111
+S     CW    CS              70          111
+S     CW    N               70          115
+NA    CW    CS              70        107.7
+CW    CS    CS              70        107.3
+CW    CS    HA              35        125.7
+CW    CS    C!              70        125.7
+CS    CW    C!              70        132.1
+CS    CS    C!              70        127.5
+CS    CW    HA              35        132.1
+CS    CW    CT              70        132.1
+CS    CW    CA              70        132.1
+CS    CS    HA              35        127.5
+CU    NB    NA              70        104.1
+CW    NB    NA              70        104.1
+NB    CU    HA              35        118.9
+NB    CU    CA              70        111.9
+NB    CU    CT              70        118.9
+NB    CW    CT              70        118.9
+NB    CW    S               70          115
+CU    CS    CW              70        103.8
+CW    CS    CW              70        103.8
+NB    CU    CS              70        111.9
+NB    CW    CS              70        111.9
+CA    CU    HA              35        128.6
+CU    CA    HA              35        128.2
+CU    CA    CW              70        103.8
+CU    NB    OS              70        105.3
+NB    NA    CW              56        113.1
+CB    NA    NB              56        113.1
+CR    NA    CT              70        125.8
+CR    NA    NB              56        113.1
+NB    NA    H               56        118.4
+NB    NA    CA              70        118.4
+NB    NA    CT              70        118.4
+CW    OS    NB              70        108.9
+NB    CR    OS              70          115
+NB    CR    S               70          115
+CR    OS    CW              70          104
+CV    CW    OS              70          108
+HA    CR    OS              35          117
+OS    CM    HC              35        114.5
+CB    CA    HA              35          120
+CB    CA    N2              70        123.5
+CB    CA    NC              70        117.3
+CM    CA    N2              70        120.1
+CA    CA    N2              70        120.1
+CM    CA    NC              70        121.5
+CM    CA    NA              70        121.5
+CN    CA    HA              35          120
+NY    CA    NY              70        111.8
+NZ    CA    NY              70        124.1
+CA    NZ    H               35          113
+CA    NZ    H3              35          113
+CA    NY    H               50        112.5
+CA    NY    H3              50        112.5
+CA    NY    CT              50        120.5
+H     NY    H        43.600024        106.4
+H3    NY    H3       43.600024        106.4
+CT    NY    H               35        109.5
+CT    NY    H3              35        109.5
+CT    CT    NY              80        111.2
+HC    CT    NY              35        109.5
+N2    CA    N2              70          120
+N2    CA    NA              70          116
+N2    CA    NC              70        119.3
+N2    CQ    NC              70        119.3
+N2    CQ    N               70          116
+NA    CA    NC              70        123.3
+C     CB    CB              85        119.2
+C_2   CB    CB              85        119.2
+C_3   CB    CB              85        119.2
+C     CB    NB              70          130
+C_2   CB    NB              70          130
+C_3   CB    NB              70          130
+N     CQ    NC              70        123.3
+C     CS    CW              70          130
+C_2   CS    CW              70          130
+C_3   CS    CW              70          130
+C     CB    CW              70          130
+C_2   CB    CW              70          130
+C_3   CB    CW              70          130
+C*    CB    CA              85        134.9
+CA    CB    CA              85        134.9
+C*    CB    CN              85        108.8
+CS    CB    CA              85        134.9
+CS    CB    CN              85        108.8
+CA    CB    CB              85        117.3
+CA    CB    CN              85        116.2
+CA    CB    NB              70        132.4
+CB    CB    N*              70        106.2
+CB    CB    NA              70        106.2
+CS    CR    NA              70        106.2
+CR    CS    CW              70        110.4
+CB    CB    NC              70        127.7
+CB    CB    N               70        127.7
+CS    CR    NC              70        127.7
+N*    CB    NC              70        126.2
+NA    CB    NC              70        126.2
+NB    CB    N               70        126.2
+NB    CR    N               70        126.2
+NA    CR    NC              70        126.2
+CT    CW    CV              70        130.7
+CT    CV    CW              70        130.7
+CT    CX    CX              70        130.7
+CT    CW    CW              70          120
+CW    CW    NA              70          120
+CA    CA    NA              70        108.7
+N*    CK    NB              70        113.9
+NA    CK    NB              70        113.9
+NA    CK    H5              35       123.05
+N*    CK    H5              35       123.05
+NB    CK    H5              35       123.05
+C     CM    C3              85        119.7
+C_2   CM    C3              85        119.7
+C_3   CM    C3              85        119.7
+C     CM    CM              85        120.7
+C_2   CM    CM              85        120.7
+C_3   CM    CM              85        120.7
+C     CM    CT              70        119.7
+C_2   CM    CT              70        119.7
+C_3   CM    CT              70        119.7
+C     CA    CT              70        119.7
+C_2   CA    CT              70        119.7
+C_3   CA    CT              70        119.7
+C     CM    HC              35        119.7
+C_2   CM    HC              35        119.7
+C_3   CM    HC              35        119.7
+CA    CM    CM              85          117
+CA    CM    HC              35        123.3
+CM    CM    CT              70          124
+CM    C=    C=              70          124
+CM    C=    C               70        118.7
+CM    C=    C_2             70        118.7
+CM    C=    C_3             70        118.7
+CM    C=    CT              70          124
+C=    C=    CT              70          124
+CT    CM    C=              70          124
+CM    CT    CM              63        112.4
+CM    CT    OS              70          120
+CM    CT    OH              50        109.5
+CM    CM    HC              35          120
+CM    CM    H4              35        119.7
+CM    C=    HC              35          120
+C=    CM    HC              35          120
+C=    C=    HC              35          120
+C     C=    HC              35        119.7
+C_2   C=    HC              35        119.7
+C_3   C=    HC              35        119.7
+CT    C     HC              35          115
+CT    C_2   HC              35          115
+CA    C     HC              35          115
+CA    C_2   HC              35          115
+CT    CM    HC              35          117
+HC    CM    HC              35          117
+CT    CM    CT              70          130
+CT    C+    CT       172.79995          120
+CT    C+    HC             144          120
+CT    CT    C+              63          105
+HC    CT    C+              35          105
+CM    CM    N*              70        121.2
+CM    CM    NA              70        121.2
+HC    CM    N*              35        119.1
+HC    CM    NA              35        119.1
+CA    CN    CB              85        122.7
+CA    CN    NA              70        132.8
+CB    CA    CW              63        106.4
+CB    CA    CT              70        128.6
+CB    CN    NA              70        104.4
+HA    CQ    NC              35       115.45
+H5    CQ    NC              35       115.45
+NC    CQ    NC              70        129.1
+HA    CR    NA              35          120
+HA    CX    NA              35          120
+HA    CR    NB              35          120
+HA    CK    N*              35          120
+HA    CK    NA              35          120
+HA    CK    NB              35          120
+NA    CR    NA              70          120
+NA    CR    NB              70          120
+NA    CR    CT              70          125
+NB    CR    CT              70          125
+NA    CR    SY              70          120
+NB    CR    SY              70          120
+C     CT    CT              63        111.1
+C_2   CT    CT              63        111.1
+C_3   CT    CT              63        111.1
+C     CT    CT_2            63        111.1
+C_2   CT    CT_2            63        111.1
+C_3   CT    CT_2            63        111.1
+C     CT_2  CT              63        111.1
+C_2   CT_2  CT              63        111.1
+C_3   CT_2  CT              63        111.1
+CM    CT    CT              63        111.1
+CW    CT    HC              35        109.5
+CV    CT    HC              35        109.5
+CX    CT    HC              35        109.5
+C     CT    HC              35        109.5
+C_2   CT    HC              35        109.5
+C_3   CT    HC              35        109.5
+C     CT_2  HC              35        109.5
+C_2   CT_2  HC              35        109.5
+C_3   CT_2  HC              35        109.5
+C     CT    N               63        110.1
+C_2   CT    N               63        110.1
+C_3   CT    N               63        110.1
+C     CT_2  N               63        110.1
+C_2   CT_2  N               63        110.1
+C_3   CT_2  N               63        110.1
+C     CT    NC              63        110.1
+C_2   CT    NC              63        110.1
+C_3   CT    NC              63        110.1
+C*    CT    CT              63        115.6
+C*    CT    CT_2            63        115.6
+C*    CT    HC              35        109.5
+CS    CT    CT              63        115.6
+CS    CT    HC              35        109.5
+CA    CT    CT              63          114
+CA    CT    CT_2            63          114
+CA    CT    HC              35        109.5
+CW    CT    CT              63          114
+CW    CT    CT_2            63          114
+CV    CT    CT              63          114
+CV    CT    CT_2            63          114
+CX    CT    CT              63          114
+CX    CT    CT_2            63          114
+CM    CT    HC              35        109.5
+C=    CT    HC              35        109.5
+CT    CT    CT       58.350024        112.7
+CT_2  CT    CT       58.350024        112.7
+CT    CT_2  CT       58.350024        112.7
+CT    CT    CT_3     58.350024        112.7
+C3    CT    C3              40        109.5
+C3    CT    C               63        109.5
+CT_2  CT    HC            37.5        110.7
+CT    CT_2  HC            37.5        110.7
+CT    CT    HC            37.5        110.7
+CT    CT_3  HC            37.5        110.7
+CT_3  CT    HC            37.5        110.7
+CT    CT_4  HC            37.5        110.7
+CT    CT    N               80        109.7
+CT    CT_2  N               80        109.7
+CT    CT_3  N               80        109.7
+CT    CT_3  NT              80        109.7
+CT    CT    N*              50        109.5
+CT    CT    N2              80        111.2
+C     CT    N3              80        111.2
+C_2   CT    N3              80        111.2
+C_3   CT    N3              80        111.2
+C     CT_2  N3              80        111.2
+C_2   CT_2  N3              80        111.2
+C_3   CT_2  N3              80        111.2
+C     CT    NT              80        111.2
+C     CT_2  NT              80        111.2
+C_2   CT    NT              80        111.2
+C_3   CT    NT              80        111.2
+CA    CT    N               80        109.7
+CA    CT    NT              80        111.2
+CA    CT    NA              80        111.2
+CT    CT    NA              80        111.2
+CT    CA    N               80        109.7
+CT    CT    N3              80        111.2
+CT    CT_2  N3              80        111.2
+CT    CT_3  N3              80        111.2
+CT    CT    OH              50        109.5
+CT_2  CT    OH              50        109.5
+CT    CT_4  OH              50        109.5
+CA    CT    OH              50        109.5
+CT    CT    OS              50        109.5
+CA    CT    OS              50        109.5
+CT    CT    S               50        114.7
+CT_2  CT    S               50        114.7
+CT    CT    SH              50        108.6
+CT_2  CT    SH              50        108.6
+CA    CT    S               50        114.7
+CW    CT    S               50        114.7
+CT    NT    H               35        109.5
+CT_3  NT    H               35        109.5
+CT_2  NT    H               35        109.5
+CA    NT    H               35          111
+CA    NT    CT              50        109.5
+CT    NT    CT       51.799952        107.2
+CT    NT    C3       51.799952        107.2
+C3    NT    C3       51.799952        107.2
+HC    CT    HC              33        107.8
+HC    CT_2  HC              33        107.8
+HC    CT_3  HC              33        107.8
+HC    CT_4  HC              33        107.8
+CY    CY    HC            37.5        117.2
+CY    CY    CY              30           60
+CY    CY    CT            37.5        117.2
+CY    CT    HC            37.5        110.7
+HC    CY    HC              35        114.3
+HC    CY    CT              35        114.3
+CY    CY    NC              80           89
+HC    CY    NC              35        109.5
+HC    CY    N               35          108
+CY    CY    N             37.5          126
+HC    CY    S             37.5          108
+CY    CY    S               55          128
+CY    N     C               55          128
+CY    N     H               40          113
+CY    S     CT              62           94
+HC    CT    N               35        109.5
+HC    CT_2  N               35        109.5
+HC    CT_3  N               35        109.5
+HC    CT_3  NT              35        109.5
+HC    CT    N*              35        109.5
+HC    CT    NA              35        109.5
+HC    CT    N2              35        109.5
+HC    CT    N3              35        109.5
+HC    CT_2  N3              35        109.5
+HC    CT_3  N3              35        109.5
+HC    CT    NT              35        109.5
+HC    CT_2  NT              35        109.5
+HC    CT    NC              35        109.5
+HC    CT    OH              35        109.5
+C     CT    OH              50        109.5
+C_2   CT    OH              50        109.5
+C_3   CT    OH              50        109.5
+HC    CT_4  OH              35        109.5
+HC    CT    OS              35        109.5
+HC    CT    S               35        109.5
+HC    CT    P               41        109.5
+CT    CT    P               43        109.5
+CA    CT    P               43        109.5
+CT    CT    P+              43        109.5
+CT    P+    CT              45        109.5
+HC    CT    P+              41        109.5
+HC    CT    SH              35        109.5
+N*    CT    OS              50        109.5
+CW    CW    NB              70          120
+HA    CV    NB              35          120
+C*    CW    HA              35          120
+C*    CW    NA              70        108.7
+H4    CW    NA              35          120
+HA    CA    NA              35          120
+C     N     C3              50        121.9
+C     N     CT              50        121.9
+C     N     CT_2            50        121.9
+C     N     CT_3            50        121.9
+C     N     CA              50        121.9
+C     N     H               35        119.8
+C3    N     H               38        118.4
+CT    N     CT              50          118
+CT_2  N     CT              50          118
+CT_2  N     CT_2            50          118
+CT_3  N     CT              50          118
+CT_3  N     CT_2            50          118
+CT_3  NT    CT_2            50          118
+CA    N     CT              50          118
+CA    NC    CT              50          118
+CT    N     H               38        118.4
+CT_2  N     H               38        118.4
+CT_3  N     H               38        118.4
+CT_3  N     H3              38        118.4
+H     N     H               35          120
+H     N2    H               35          113
+H3    N     H3              35          120
+C     N*    CM              70        121.6
+C_2   N*    CM              70        121.6
+C_3   N*    CM              70        121.6
+C     NA    CM              70        121.6
+C_2   NA    CM              70        121.6
+C_3   NA    CM              70        121.6
+C     N*    CT              70        117.6
+C_2   N*    CT              70        117.6
+C_3   N*    CT              70        117.6
+C     N*    H               35        119.2
+C_2   N*    H               35        119.2
+C_3   N*    H               35        119.2
+C3    N*    CB              70        125.8
+C3    N*    CK              70        128.8
+CM    N*    CT              70        121.2
+CM    N*    H               35        119.2
+CM    NA    H               35        119.2
+C3    N2    CA              50        123.2
+CA    N2    CA              50        123.2
+CA    N2    CT              50        123.2
+CA    N2    CX              50        123.2
+N2    CX    NZ              70          180
+CA    N2    H               35          120
+CQ    N2    H               35          120
+CA    N2    H3              35          120
+CT    N2    H3              35        118.4
+CT    N2    H               35        118.4
+H3    N2    H3              35          120
+C3    N3    H3              35        109.5
+CT    N3    H3              35        109.5
+CT_2  N3    H3              35        109.5
+CT    N3    H               35        109.5
+CT_3  N3    H3              35        109.5
+CT_3  N3    H               35        109.5
+H3    N3    H3              35        109.5
+H     N3    H               35        109.5
+CT    N3    CT              50          113
+CT_2  N3    CT_3            50          113
+CT_2  N3    CT              50          113
+C     NA    C               70        126.4
+C     NA    C_2             70        126.4
+C     NA    C_3             70        126.4
+C_2   NA    C_2             70        126.4
+C_2   NA    C_3             70        126.4
+C_3   NA    C_3             70        126.4
+C     N     C               70        126.4
+C     NA    CA              70        125.2
+C_2   NA    CA              70        125.2
+C_3   NA    CA              70        125.2
+C     N     CQ              70        125.2
+C     NA    H               35        116.8
+C_2   NA    H               35        116.8
+C_3   NA    H               35        116.8
+CA    NA    H               35          118
+CQ    N     H               35          118
+CN    NA    CW              70        111.6
+CN    NA    H               35        123.1
+CR    NA    H               35          120
+CW    NA    H               35          120
+CX    NA    H               35          120
+CB    N*    CK              70        105.4
+CB    N*    CT              70        125.8
+CB    N*    H               30        125.8
+CK    N*    CT              70        128.8
+CK    N*    H               30        128.8
+CB    NA    CK              70        105.4
+CB    NA    CT              70        125.8
+CB    NA    H               30        125.8
+CK    NA    CT              70        128.8
+CK    NA    H               30        128.8
+CB    NB    CK              70        103.8
+CR    NB    CV              70          110
+CR    NB    CB              70          110
+CR    NB    CW              70          110
+C     NC    CA              70        120.5
+C_2   NC    CA              70        120.5
+C_3   NC    CA              70        120.5
+CA    NC    CB              70        112.2
+CA    NC    CQ              70        118.6
+CQ    NC    CQ              70        118.6
+CB    NC    CQ              70          111
+CR    NC    CQ              70          111
+C3    NT    H        43.200048        108.1
+H     NT    H        43.600024        106.4
+H     N     OH              35        110.2
+C     N     OH              46        115.7
+N     OH    HO              49        105.4
+C     OH    HO              35          113
+CA    OH    HO              35          113
+CM    OH    HO              35          109
+C3    OH    HO              55        108.5
+CT    OH    HO              55        108.5
+CT_4  OH    HO              55        108.5
+HO    OH    P               45        108.5
+C     OS    C3              83        116.9
+C_2   OS    C3              83        116.9
+O     C     OS              83        123.4
+O     C_2   OS              83        123.4
+OS    C_2   OS            69.9    118.17999
+O_2   C_2   OS              83        123.4
+C     OS    CT              83        116.9
+C_2   OS    CT              83        116.9
+OS    C     CT              81        111.4
+OS    C_2   CT              81        111.4
+OS    C     CT_2            81        111.4
+OS    C     CA              81        111.4
+C     OS    CA              83        116.9
+C_2   OS    CA              83        116.9
+OS    CO    OH       92.599904       111.55
+OS    CO    OS       92.599904       111.55
+C3    OS    CO             100          113
+C3    CO    OS              80        109.5
+C3    CO    C3              40        109.5
+OS    CO    CT              50        109.5
+CO    CT    CT       58.350024        112.7
+CT    CO    OH              50        109.5
+CT    CO    HC            37.5        110.7
+CO    OH    HO              55        108.5
+OS    CO    HC              35        109.5
+CO    OS    CT              60        109.5
+CO    CT    HC            37.5        110.7
+CO    CT    OH              50        109.5
+OH    CO    HC              35        109.5
+HC    CO    HC              33        109.5
+CA    OS    NB              70        108.9
+CA    OS    CA              75          111
+CA    OS    P              100        120.5
+C3    OS    P              100        120.5
+CT    OS    CT              60        109.5
+CT    OS    CA              75          111
+CT    OS    CM              75          111
+CT    OS    P              100        120.5
+O2    P     O2             140        119.9
+O2    P     OH              45       108.23
+O2    P     OS             100       108.23
+OH    P     OS              45        102.6
+OS    P     OS              45        102.6
+O     P     OH             100       108.23
+O     P     OS             100       108.23
+OH    P     OH              45        102.6
+CT    P     OS              45        109.5
+CT    P     O2              45        109.5
+CT    P     O               45        109.5
+CA    P     OS              45        109.5
+CA    P     OH              45        109.5
+CA    P     O               45        109.5
+C3    S     LP             150         96.7
+C3    S     S               68        103.7
+CT    S     CT              62         98.9
+CR    S     CW              74           90
+CW    S     CW              74           97
+CT    S     LP             150         96.7
+CT    S     S               68        103.7
+LP    S     LP               0          160
+LP    S     S              150         96.7
+C3    SH    HS              44           96
+C3    SH    LP             150         96.7
+CT    SH    HS              44           96
+CA    SH    HS              50           96
+CT    SH    LP             150         96.7
+HS    SH    HS              35        92.07
+HS    SH    LP             150         96.7
+LP    SH    LP               0          160
+P     OS    P              100        120.5
+CA    CT    CA              40        109.5
+CA    CT    C               63          112
+CA    CT    C_2             63          112
+CA    CT    C_3             63          112
+CT    CA    NA              70          120
+CT    CA    N2              70        120.1
+N2    CA    N               70          120
+CA    NA    CA              70        125.2
+CA    CA    NB              70        108.7
+NA    CA    NB              70        123.3
+CA    NB    CA              70        125.2
+HA    CA    NB              35        119.1
+CA    CA    N               70          120
+CA    N     H               35        119.8
+CB    CT    HC              35        109.5
+CA    CB    CT              70          120
+CB    CA    NA              70        108.7
+CB    CB    CT              70          120
+CB    CB    NB              70        110.4
+CB    CT    CT              63          114
+CT    CT    F               50        109.5
+CT_4  CT    F               50        109.5
+CA    CT    F               50        109.5
+F     CT    F               77        109.1
+HC    CT    F               40          107
+CT    C     C               80        117.2
+CT    C     C_2             80        117.2
+CT    C     C_3             80        117.2
+CT    C_2   C               80        117.2
+CT    C_2   C_2             80        117.2
+CT    C_2   C_3             80        117.2
+C     C     O               80        121.4
+C     C     O_2             80        121.4
+C     C     O_3             80        121.4
+C     C_2   O_2             80        121.4
+C_2   C     O               80        121.4
+C_2   C     O_2             80        121.4
+C_2   C     O_3             80        121.4
+C_2   C_2   O_2             80        121.4
+C_3   C     O               80        121.4
+C_3   C     O_2             80        121.4
+C_3   C     O_3             80        121.4
+C_3   C_2   O_2             80        121.4
+C     C     N               70        116.6
+C_2   C     N               70        116.6
+C_3   C     N               70        116.6
+C     C_2   N               70        116.6
+C_2   C_2   N               70        116.6
+C_3   C_2   N               70        116.6
+OY    SY    N              120          107
+OY    SY    OY             104          119
+OY    SZ    CT              74          107
+OY    SY    CT              74        108.9
+OY    SY    CA              74        107.2
+N     SY    CA             100          103
+SY    CA    CA              85        119.4
+SY    CT    HC              35        109.5
+SZ    CT    HC              35        109.5
+CT    SY    CT              62          102
+CA    SY    CT              62          102
+CR    SY    CT              62          102
+CU    CT    SY              85        119.4
+CT    SZ    CT              62           96
+CT    CT    SY              50        108.6
+CT    CT    SZ              50        108.6
+N     SY    CT             100          103
+SY    N     CT              50          120
+H     N     SY             100          111
+OS    C     N               81        111.4
+OS    C_2   N               81        111.4
+CT    NT    SY              50        108.6
+C     CT    F               50        109.5
+C_2   CT    F               50        109.5
+C_3   CT    F               50        109.5
+SY    CT    F               50        109.5
+SY    NT    H               35          115
+C     CW    NA              85          120
+C_2   CW    NA              85          120
+C_3   CW    NA              85          120
+NT    C     CW              70          116
+C     CW    CS              85          120
+C_2   CW    CS              85          120
+C_3   CW    CS              85          120
+CB    CS    HA              35          120
+CW    C     O               80        120.4
+CW    C     O_2             80        120.4
+CW    C     O_3             80        120.4
+CW    C_2   O_2             80        120.4
+C     NT    CT              63        111.1
+C_2   NT    CT              63        111.1
+C_3   NT    CT              63        111.1
+C     CT    C               63        111.1
+C_2   CT    C               63        111.1
+C_3   CT    C               63        111.1
+C     CT    OS              50        109.5
+C_2   CT    OS              50        109.5
+C_3   CT    OS              50        109.5
+N     CT    OS              50        109.5
+NT    C     O               80        120.4
+NT    C     O_2             80        120.4
+NT    C     O_3             80        120.4
+NT    C_2   O_2             80        120.4
+NT    C     CT              70          116
+NT    C_2   CT              70          116
+CA    NT    C               63          112
+CA    NT    C_2             63          112
+CA    NT    C_3             63          112
+CA    NT    SY              50        108.6
+OY    SY    NT              74        108.9
+NT    SY    CT              62          102
+NT    CT    S               50        114.7
+HC    CY    NT              35        114.3
+CY    CY    NT            37.5        117.2
+CA    NT    CY              50        109.5
+NC    CA    Cl              75          120
+CA    NT    CA              40        109.5
+NC    CA    NT              70          116
+CM    CM    CY              70          124
+CM    CY    HC              35        109.5
+CM    CY    CY              63          114
+C     CM    CY              70        119.7
+C_2   CM    CY              70        119.7
+C_3   CM    CY              70        119.7
+N*    CM    CT              70          120
+NA    CM    CT              70          120
+S     CM    CM              85        119.4
+S     CM    N*              85        119.4
+S     CM    NA              85        119.4
+N*    CM    OS              70          120
+NA    CM    OS              70          120
+CA    S     CM              62        104.2
+CM    OS    CA              75          111
+CM    CT    CA              40        109.5
+S     CA    CA              85        119.4
+P     CA    CA              85        119.4
+CA    S     CT              62        104.2
+OH    C     N               35       115.43
+O2    S     CT       47.801147          107
+SY2   CT    HC              35        109.5
+SY2   CT    CT              50        108.6
+CT    SY2   CT              62    102.00024
+CT    SY2   OY              74        108.9
+OY    SY2   OY             104     118.9999
+CT    CT    I               69    109.99988
+I     CT    I               78        111.7
+HC    CT    I               51        107.6
+CA    CA    I               75    120.00028
+Cl    CM    Cl              60    113.99998
+O_2   C     OS              83    123.39998
+NT    CZ    NZ             150    179.99996
+HC    CZ    NZ             150    179.99996
+CM    CZ    NZ             150    179.99996
+CM    C_2   OS              80    125.30014
+C_2   OS    CM              83    116.90058
+C_2   OS    C_2             83    116.90058
+CY    C_2   CT              70    115.99989
+CY    C_2   CY              30     60.00014
+CY    C_2   O_2             80    121.40002
+CY    CY    C_2           37.5    117.20001
+HC    CY    C_2             35    114.29998
+F     CT    Cl              78        111.7
+CA    CA    HC              35    120.00028
+HC    CA    HC              35    120.00028
+HC    C_2   HC              33        109.5
+CM    CM    CZ              70     124.0001
+CZ    CM    HC              35        123.3
+CZ    NT    H               35    111.00026
+OS    C     OS              83        123.4
+CO    OS    CO              60        109.5
+C_2   CT    C_2             63    111.10001
+
+[dihedrals]
+# c1 c2 c3 c4  K1 n1 d1 [K2 n2 d2 ...]   E = sum K [1 + cos(n phi - d)] (kcal/mol, deg); from the Ryckaert-Bellemans C0..C5 of Foyer
+# (all C = 0: one term K = 0, so that the torsion is known and not reported missing)
+Br    C     CB    CT     0 1 0
+Br    C     CT    HC     0.18 3 0
+Br    CT    CT    Br     0.125 1 180
+Br    CT    CT    CT     0.2 3 0
+Br    CT    CT    HC     0.2 3 0
+C     C     N     H      2.45 2 180
+C     C     N     CT     0.2 1 0  2.45 2 180
+C     C     CT    HC     0.0425 3 0
+C     C     OH    HO     1.5 1 0  2.75 2 180
+C     N     C     N      1.15 1 0  3.044500478 2 180
+C     N     CT    CA     0.698001912 1 180  0.213499044 2 0
+C     N     CT    CT     0.698001912 1 180  0.213499044 2 0
+C     N     CT    HC     1.792543021e-06 1 0  0.0694998805 3 180
+C     N     CY    CY     0.698001912 1 180  0.213499044 2 0
+C     N     CY    HC     0 1 0
+C     N     OH    HO     2.75949988 1 0  3.35 2 0  0.2905001195 3 0
+C     N     CT_3  CT     0.2595010755 1 0  0.438499044 2 180  2.616500359 3 0
+C     N     CT_3  HC     0 1 0
+C     N     CT_2  CT     0.2595010755 1 0  0.438499044 2 180  2.616500359 3 0
+C     N     CT_2  HC     0 1 0
+C     CT    N     C      0.2980001195 1 180  0.139500478 2 180  2.456500359 3 180
+C_3   CT    N     C      0.2980001195 1 180  0.139500478 2 180  2.456500359 3 180
+C     CT    N     CT     0.868499044 1 180  0.625500717 2 180  1.750499522 3 180
+C     CT    CT    C*     0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C     CT    CT    CA     0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C     CT    CT    CT     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    HC     0.05 3 180
+C     CT    CT_2  HC     2.390057361e-06 1 0  0.03799952199 3 180
+C_3   CT    CT_2  HC     2.390057361e-06 1 0  0.03799952199 3 180
+C     CT    CT_2  C      0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C     CT    NT    H      0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+C     CT_2  NT    H      0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+C     CT    OH    HO     0.1780025096 1 180  0.08699928298 2 0  0.2459996415 3 0
+C     CT    N3    H3     1.195028681e-06 1 0  0.173500239 3 0
+C     NC    OH    HO     1.5 1 0  1.5 2 180
+C     NC    OS    CT     1.5 1 0  1.5 2 180
+C     OS    CA    CA     1.25 2 180
+C     OS    CT    CT     0.609998805 1 180  0.06300071702 2 0  0.211000239 3 0
+C     OS    CT    HC     1.195028681e-06 1 180  0.09899976099 3 0
+C     CT_2  N     C      0.2980001195 1 180  0.139500478 2 180  2.456500359 3 180
+C_3   CT_2  N     C      0.2980001195 1 180  0.139500478 2 180  2.456500359 3 180
+C     CT_2  N     H      0 1 0
+C     CT_2  N     CT_3   0.868499044 1 180  0.625500717 2 180  1.750499522 3 180
+C     CT_2  NT    CT_3   0.868499044 1 180  0.625500717 2 180  1.750499522 3 180
+C_3   CT_2  N     CT_3   0.868499044 1 180  0.625500717 2 180  1.750499522 3 180
+C_3   CT_2  NT    CT_3   0.868499044 1 180  0.625500717 2 180  1.750499522 3 180
+C     CT    CT    CT_2   0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C     CT_2  CT    S      2.172000478 1 180  0.857000478 2 0
+C     CT_2  CT    C*     0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C     CT_2  CT    C_3    0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C     CT_2  CT    CA     0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C     CT_2  CT    CT     0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C     CT_2  CT    CV     0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C     CT_2  CT    CW     0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C     CT_2  CT    CX     0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C     CT_2  CT    HC     2.390057361e-06 1 0  0.03799952199 3 180
+C     CT_2  CT    OH     2.826998088 1 180  0.436000239 2 0
+C_3   CT_2  CT    OH     2.826998088 1 180  0.436000239 2 0
+C     CT_2  CT    SH     2.172000478 1 180  0.857000478 2 0
+C     CT_2  N3    H3     1.195028681e-06 1 0  0.173500239 3 0
+C_3   CT_2  N3    H3     1.195028681e-06 1 0  0.173500239 3 0
+C     CT_2  N3    CT_3   0.868499044 1 180  0.625500717 2 180  1.750499522 3 180
+C*    CT    CT    HC     5.975143402e-07 1 180  0.2309996415 3 0
+C*    CT    CT_2  N      0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+C*    CT    CT_2  HC     5.975143402e-07 1 180  0.2309996415 3 0
+C*    CT    CT_2  N3     0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+C*    CW    NA    H      1.5 2 180
+C*    CW    NA    CN     1.5 2 180
+C3    CT    OH    HO     0.1 3 0
+C=    CM    CA    CA     0.6205001195 1 0  1.676499761 2 180  0.1430001195 3 180
+C=    CM    CT    CT     0.1730013145 1 0  0.2025 2 180  0.4519998805 3 180
+C=    CM    OS    CT     1.75 1 180  1.5 2 180
+C=    CT    OH    HO     0.45 1 180
+CA    C     OH    HO     2 1 0  2.5 2 180
+CA    C     OS    CT     2 1 0  2.5 2 180
+CA    N     C     O      3.044500478 2 180
+CA    N     C     CT     1.15 1 0  3.044500478 2 180
+CA    N     CT    HC     0 1 0
+CA    S     CT    HC     1.195028681e-06 1 0  0.323500239 3 0
+CA    CA    C     N      0.55 2 180
+CA    CA    C     O      1.05 2 180
+CA    CA    C     CT     0.1 2 180
+CA    CA    C     HC     0.1 2 180
+CA    CA    C     OH     1.05 2 180
+CA    CA    C     OS     1.05 2 180
+CA    CA    C     O_2    1.05 2 180
+CA    CA    C     O_3    1.05 2 180
+CA    CA    S     CT     0.3 2 180
+CA    CA    CA    N2     0.5 4 180
+CA    CA    CM    CM     0.6205001195 1 0  1.676499761 2 180  0.1430001195 3 180
+CA    CA    CM    CT     0.1025 1 0  0.265499522 2 0
+CA    CA    CT    F      0 1 0
+CA    CA    CT    CT     0 1 0
+CA    CA    CT    Cl     0 1 0
+CA    CA    CT    HC     0 1 0
+CA    CA    N2    H      1.015 2 180
+CA    CA    N2    H3     0.7 2 180
+CA    CA    NO    ON     0.575 2 180
+CA    CA    NT    H      1.015 2 180
+CA    CA    NT    CT     3.791000239 1 180  1.715499522 2 180  1.598999761 3 0
+CA    CA    OH    HO     0.841000239 2 180
+CA    CA    OS    P      1.495 2 180
+CT    CT    OS    P      1.495 2 180
+N3    CT    CT    OS     0.65 1 0  0.025 2 0  0.1 3 0
+CA    CA    OS    CT     1.5 2 180
+CA    CA    OS    C_2    1.25 2 180
+CA    CA    SH    HS     0.55 2 180
+CA    CA    SY    N      0.8280001195 1 0  0.383999761 2 0  0.05849964149 3 180
+CA    CA    SY2   CT     0.45 2 0
+CA    CA    C_2   CT     0.1 2 180
+CA    CA    C_2   HC     0.1 2 180
+CA    CT    C     O      0.272999522 2 180
+CA    CT    C     O_3    0.272999522 2 180
+CT    CT    N     CT     1.429498685 1 0  1.028999761 2 180  5.63300012 3 180
+CA    CT    N     CT     1.429498685 1 0  1.028999761 2 180  5.63300012 3 180
+CA    CT    P     O2     0 1 0
+CA    CT    P     OS     1.125 1 0
+CA    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CA    CT    CT    CT     0.65 1 0  0.025 2 0  0.1 3 0
+CA    CT    CT    HC     5.975143402e-07 1 180  0.2309996415 3 0
+CA    CT    CT_2  HC     5.975143402e-07 1 180  0.2309996415 3 0
+CA    CT    CT    N3     0.5 1 0
+CA    CT    CT    NC     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CA    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CA    CT    CT_2  NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CA    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CA    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CA    CT    CT    C_2    0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+CA    CT    N2    CA     0.914501673 1 0  0.121499761 2 180  0.248999761 3 180
+CA    CT    NT    CT     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+CA    CT    OH    HO     0.45 1 180
+CA    CT    OS    CO     0.325 1 0  0.125 2 0  0.335 3 0
+CA    CT    OS    CT     0.325 1 0  0.125 2 0  0.335 3 0
+CA    CT    CT_2  N      0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CA    CT    CT_2  N3     0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CA    N2    CA    N2     3.967999522 2 180
+CA    N2    CA    NC     3.967999522 2 180
+CA    N2    CT    CT     0.914501673 1 0  0.121499761 2 180  0.248999761 3 180
+CA    NY    CT    CT     0.914501673 1 0  0.121499761 2 180  0.248999761 3 180
+CA    N2    CT    HC     1.195028681e-06 1 180  0.08850023901 3 0
+CA    NY    CT    HC     1.195028681e-06 1 180  0.08850023901 3 0
+CA    NC    CT    CT     0.914501673 1 0  0.121499761 2 180  0.248999761 3 180
+CA    NT    CT    HC     0.28 3 0
+CA    OS    C     O      2.5 2 180
+CA    OS    C     CT     0.75 1 0  2.5 2 180
+CA    OS    P     O      0 1 0
+CA    OS    CT    CT     0.325 1 0  0.125 2 0  0.335 3 0
+CA    OS    CT    CA     0.325 1 0  0.125 2 0  0.335 3 0
+CA    OS    CT    HC     0.38 3 0
+CA    SY    N     H      0.8355001195 1 0  2.450500717 2 0  0.3344998805 3 0
+CA    SY    N     CT     1.036999283 1 0  1.483000717 2 0  1.236499761 3 0
+CA    SY2   CT    HC     0.175 3 0
+CB    C*    CT    CT     0 1 0
+CB    C*    CT    HC     0 1 0
+CB    C*    CT    CT_2   0 1 0
+CB    CA    CT    CT     0 1 0
+CB    CA    CT    HC     0 1 0
+CB    CA    N2    H      1.015 2 180
+CB    CS    CT    CT     0 1 0
+CB    CS    CT    HC     0 1 0
+CK    CT    CT    HC     5.975143402e-07 1 180  0.2309996415 3 0
+CK    N*    CT    CT     0.5 1 180  0.175 2 0
+CK    N*    CT    OS     0.75 1 180  0.75 2 0
+CK    NA    CT    CT     0.5 1 180  0.175 2 0
+CK    NA    CT    OS     0.75 1 180  0.75 2 0
+CM    C     N     H      2.45 2 180
+CM    N     C     O      3.044500478 2 180
+CM    C=    C     O      1.25 1 0  3 2 180
+CM    C=    C     CT     0.4 1 0  1.5 2 0
+CM    C=    C     OH     1.6 1 0  1.5 2 0
+CM    C=    C=    CM     0.7115015535 1 0  2.0275 2 180  0.4290003585 3 0
+CM    C=    C=    CT     1.195028681e-06 1 180  0.186000239 3 180
+CM    C=    C=    HC     1.195028681e-06 1 180  0.186000239 3 180
+CM    C=    C_2   HC     0 1 0
+CM    C=    C_2   O_2    1.25 1 0  3 2 180
+CM    CM    C     N      1 1 0
+CM    CM    C     O      1.25 1 0  3 2 180
+CM    CM    C     OH     1.6 1 0  1.5 2 0
+CM    CM    CT    CT     0.1730013145 1 0  0.2025 2 180  0.4519998805 3 180
+CM    CM    CT    HC     1.195028681e-06 1 180  0.186000239 3 180
+CM    CM    OS    CT     1.75 1 180  1.5 2 180
+CM    CT    CT    CT     0.65 1 0  0.025 2 0  0.1 3 0
+CM    CT    CT    HC     1.792543021e-06 1 0  0.1830001195 3 0
+CM    CT    OH    HO     0.45 1 180
+CM    OS    CT    HC     0.38 3 0
+CN    NA    CW    HA     1.5 2 180
+CO    CT    CT    CT     0.65 1 0  0.025 2 0  0.1 3 0
+CO    CT    CT    HC     0.15 3 0
+CO    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CO    CT    OH    HO     0.1780025096 1 180  0.08699928298 2 0  0.2459996415 3 0
+CO    OS    CT    CT     0.325 1 0  0.125 2 0  0.335 3 0
+CO    OS    CT    HC     0.38 3 0
+C_3   CT    CT    CT     1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+C_3   CT    CT    HC     0.1125 3 180
+C_3   CT_2  CT    CT     1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+C_3   CT_2  CT    HC     0.1125 3 180
+C_2   CT    CT    CT     0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C_2   CT    CT    HC     2.390057361e-06 1 0  0.03799952199 3 180
+C_2   OS    CT    CT     0.609998805 1 180  0.06300071702 2 0  0.211000239 3 0
+C_2   OS    CT    HC     1.195028681e-06 1 180  0.09899976099 3 0
+CT_3  N     C     O      3.044500478 2 180
+CT_3  N     C     CT     1.15 1 0  3.044500478 2 180
+CT_3  N     C     CT_2   1.15 1 0  3.044500478 2 180
+CT_3  N     CT_2  CT     2.376500956 1 0  0.366999283 2 0
+CT_3  NT    CT_2  CT     2.376500956 1 0  0.366999283 2 0
+CT_3  N     CT_2  HC     0 1 0
+CT_3  NT    CT_2  HC     0 1 0
+CT_3  CT    CT    HC     0.15 3 0
+CT_3  CT    CT    CT_2   0.65 1 0  0.025 2 0  0.1 3 0
+CT_3  N3    CT_2  CT     2.376500956 1 0  0.366999283 2 0
+CT_3  N3    CT_2  HC     0 1 0
+CQ    CT    CT    HC     5.975143402e-07 1 180  0.2309996415 3 0
+CR    CT    CT    HC     5.975143402e-07 1 180  0.2309996415 3 0
+CR    N*    CT    CT     0.5 1 180  0.175 2 0
+CR    N*    CT    OS     0.75 1 180  0.75 2 0
+CR    NA    CT    CT     0.5 1 180  0.175 2 0
+CR    NA    CT    OS     0.75 1 180  0.75 2 0
+CR    NA    CW    HA     1.6 2 180
+CR    NA    CX    CT     1.4 2 180
+CR    NA    CX    CX     1.4 2 180
+CR    NA    CX    HA     1.6 2 180
+CS    CT    CT    CT     0.65 1 0  0.025 2 0  0.1 3 0
+CS    CT    CT    HC     5.975143402e-07 1 180  0.2309996415 3 0
+CT    C     C     N      0.25 1 180  0.1 2 180
+CT    C     C     O      0.25 2 180
+CT    C     C     CT     0.35 1 0  0.75 2 0
+CT    C     C     HC     0.4 1 0  0.38 2 0
+CT    C     N     H      2.45 2 180
+CT    C     N     CT     1.15 1 0  3.044500478 2 180
+CT    C     N     OH     2.270999044 1 0  3.301499761 2 180  0.5225 3 0
+CT    C     CT    CT     0.727000478 1 0  0.07200047801 2 0  0.3875 3 180
+CT    C     CT    HC     0.1375 3 0
+CT    C     NC    CT     7 2 180
+CT    C     OH    HO     0.75 1 0  2.75 2 180
+CT_2  C     OH    HO     0.75 1 0  2.75 2 180
+CT    C     OS    CT     2.334498088 1 0  2.561999283 2 180
+CT    N     C     O      3.044500478 2 180
+CT    N     C     HC     1.15 1 0  3.044500478 2 180
+CT    N     C     OH     1.15 1 0  3.044500478 2 180
+CT    N     C     OS     1.15 1 0  3.044500478 2 180
+CT    N     CA    N2     3.967999522 2 180
+CT    N     CT    HC     0 1 0
+CT    N     SY    CT     1.036999283 1 0  1.483000717 2 0  1.236499761 3 0
+CT    S     S     CT     3.707000478 2 0  0.8525 3 0
+CT    S     CT    HC     1.195028681e-06 1 0  0.323500239 3 0
+CT    C+    CT    CT     0.5 2 0
+CT    C+    CT    HC     0.5 2 0
+CT    C=    C=    HC     0.15 3 0
+CT    C=    CM    CT     7 2 180
+CT    C=    CM    HC     7 2 180
+CT    CM    C=    HC     7 2 180
+CT    CM    CT    CT     1.408500239 1 0  0.08450047801 2 0  0.271499761 3 0
+CT    CM    CT    HC     0.15 3 0
+CT    CM    OS    CT     0.325 1 0  0.125 2 0  0.335 3 0
+CT    CO    OS    CT     0.325 1 0  0.125 2 0  0.335 3 0
+CT    CT    C     F      0 1 0
+CT    CT    C     N      1.625000598 1 0  0.200999044 2 0  0.0680001195 3 180
+CT    CT    C     O      0.583000717 2 180
+CT_2  CT    C     O      0.583000717 2 180
+CT    CT    C     Cl     0 1 0
+CT    CT    C     HC     0 1 0
+CT    CT    C     OH     0.5 1 0  0.272999522 2 180  0.225 3 0
+CT_2  CT    C     OH     0.5 1 0  0.272999522 2 180  0.225 3 0
+CT    CT_2  C     OH     0.5 1 0  0.272999522 2 180  0.225 3 0
+CT    CT    C     OS     1.195028681e-06 1 0  0.276499761 3 180
+CT    CT    C     O_3    0.272999522 2 180
+CT_2  CT    C     O_3    0.272999522 2 180
+CT    CT_2  C     O_3    0.272999522 2 180
+CT_2  CT    C_3   O2     0.272999522 2 180
+CT    CT    N     H      0 1 0
+CT    CT    N     CY     1.15 1 0  3.044500478 2 180
+CT    CT    N     SY     1.464501673 1 0  1.266499761 2 0  0.248500239 3 0
+CT    CT    S     S      0.970499522 1 0  0.417999522 2 0  0.4675 3 0
+CT    CT    S     CT     0.462501195 1 0  0.288000717 2 0  0.338500239 3 0
+CT    CT    C*    CW     0.357000478 1 180
+CT_2  CT    C*    CW     0.357000478 1 180
+CT    CT    C+    HC     0.5 2 0
+CT    CT    CO    HC     0.15 3 0
+CT    CT    CS    CW     0.357000478 1 180
+CT    CT    CT    F      0.15 1 0  0.2 3 0
+CT    CT    CT    N      0.9820010755 1 0  0.3294998805 3 0
+CT    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CT    CT    CT    CT     0.65 1 0  0.025 2 0  0.1 3 0
+CT    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CT    CT    CT    Cl     0.2 3 0
+CT    CT    CT    HC     0.15 3 0
+CT    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CT    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CT    CT    CT    NA     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CT    CT    CT    NC     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CT    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CT    CT    CT_2  NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CT    CT    CT    NY     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CT    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CT    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CT    CT    CT    SH     0.631001434 1 0  0.09900095602 2 0  0.2325 3 0
+CT    CT    CT    SY     0.631001434 1 0  0.09900095602 2 0  0.2325 3 0
+CT    CT    CT    CT_2   0.65 1 0  0.025 2 0  0.1 3 0
+CT    CT    CT    SY2    0.937999522 1 0
+CT    CT    CV    CW     0 1 0
+CT    CT    CV    NB     1.182999522 1 0  0.131000239 2 0  0.2525 3 0
+CT    CT    CW    NA     0.85 1 0  0.3 2 0
+CT    CT    CZ    CZ     0 1 0
+CT    CT    N2    H      0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+CT    CT    N2    H3     0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+CT    CT    N3    H      1.195028681e-06 1 0  0.173500239 3 0
+CT    CT    N3    CT     0.7190015535 1 0  0.06199928298 2 0  0.1319998805 3 0
+CT    CT    N3    H3     0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+CT    CT    NC    NZ     0 1 0
+CT    CT    NO    ON     0.2 2 180
+CT    CT    NT    H      0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+CT    CT_3  NT    H      0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+CT    CT_2  NT    H      0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+CT    CT    NT    CT     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+CT    CT    NY    H      0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+CT    CT    NY    H3     0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+CT    CT    OH    HO     0.1780025096 1 180  0.08699928298 2 0  0.2459996415 3 0
+CT    CT_4  OH    HO     2.239000956 1 0  1.0875 2 0
+CT    CT    OS    CT     0.325 1 0  0.125 2 0  0.335 3 0
+CT    CT    P+    CT     0.5 1 0  0.25 2 0  0.25 3 0
+CT    CT    SH    HS     0.379500478 1 180  0.141000239 2 0  0.34 3 0
+CT    CT    SY    N      0.8280001195 1 0  0.383999761 2 0  0.05849964149 3 180
+CT    CT    C_3   O2     0.41 2 180
+CT    CT_2  C_3   O2     0.41 2 180
+CT    CT    C_2   HC     0 1 0
+CT    CT    C_2   OS     1.195028681e-06 1 0  0.276499761 3 180
+CT    CT    C_2   O_2    0.1384996415 1 180  0.613999761 2 180  0.3469998805 3 180
+CT    CT    CT_3  N      0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CT    CT    CT_3  NT     0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CT    CT    CT_3  HC     0.15 3 0
+CT    CT    CT_3  N3     0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CT    CT    CT_2  N      0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CT    CT    CT_2  HC     0.15 3 0
+CT    CT    CT_2  N3     0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CT    CT    SY2   CT     0 1 0
+CT    CT    SY2   OY     0 1 0
+CT    CX    NA    H      1.4 2 180
+CT    CY    CY    CY     0.65 1 0  0.025 2 0  0.1 3 0
+CT    CY    CY    HC     0.15 3 0
+CT    N2    CA    N      3.967999522 2 180
+CT    N2    CA    N2     3.967999522 2 180
+CT    NY    CA    NZ     3.967999522 2 180
+CT    NY    CA    NY     3.967999522 2 180
+CT    N3    CT    HC     1.195028681e-06 1 0  0.151000239 3 0
+CT    NC    NZ    NZ     0 1 0
+CT    NT    CT    HC     0.28 3 0
+CT    NT    NT    H      0.15 3 0
+CT    NT    NT    CT     0.15 3 0
+CT    NT    OH    HO     0.15 3 0
+CT    NT    OS    CT     0.15 3 0
+CT    OS    C     N      1 1 180  2.5 2 180
+CT    OS    C     O      2.5 2 180
+CT    OS    C     HC     2.334498088 1 0  2.561999283 2 180
+CT    OS    P     CT     1.75 1 0  1.65 2 0  0.75 3 0
+CT    OS    P     O2     5.975143403e-07 1 180  0.2809996415 3 0
+CT    OS    P     OS     1.2 2 0  0.25 3 0
+CT    OS    CM    HC     0.38 3 0
+CT    OS    CO    HC     0.38 3 0
+CT    OS    CO    OH     0.1875017925 1 180  0.678999761 2 0  0.001999880497 3 0
+CT    OS    CO    OS     0.1875017925 1 180  0.678999761 2 0  0.001999880497 3 0
+CT    OS    CT    HC     0.38 3 0
+CT    OS    CT    OH     0.2605001195 1 180  1.008999761 2 0  0.9980001195 3 0
+CT    OS    CT    OS     0.2605001195 1 180  1.008999761 2 0  0.9980001195 3 0
+CT    OS    NT    H      0.15 3 0
+CT    OS    C_2   HC     2.334498088 1 0  2.561999283 2 180
+CT    OS    C_2   O_2    2.561999283 2 180
+CT    P+    CT    HC     0.15 3 0
+CT    SY    N     H      0.8355001195 1 0  2.450500717 2 0  0.3344998805 3 0
+CT    C_2   C=    HC     0.1375 3 0
+CT    C_2   CT    CT     0.727000478 1 0  0.07200047801 2 0  0.3875 3 180
+CT    C_2   CT    HC     0.1375 3 0
+CT    C_2   OS    CT     2.334498088 1 0  2.561999283 2 180
+CT    CT_3  N     CT_2   1.429498685 1 0  1.028999761 2 180  5.63300012 3 180
+CT    CT_3  NT    CT_2   1.429498685 1 0  1.028999761 2 180  5.63300012 3 180
+CT    CT_3  N3    H3     0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+CT    CT_3  N3    CT_2   1.429498685 1 0  1.028999761 2 180  5.63300012 3 180
+CT    CT_2  C     N      0.9324976099 1 0  0.04450047801 2 180  0.175499522 3 0
+CT    CT_2  C     O      0 1 0
+CT    CT_2  N     H      0 1 0
+CT    CT_2  N3    H3     1.195028681e-06 1 0  0.173500239 3 0
+CT    SY2   CT    HC     0.175 3 0
+CT_2  C     N     H      2.45 2 180
+CT_2  C     N     CT_2   1.15 1 0  3.044500478 2 180
+CT    C     N     CT_2   1.15 1 0  3.044500478 2 180
+CT    N     C     CT_2   1.15 1 0  3.044500478 2 180
+CT_2  N     C     O      3.044500478 2 180
+CT_2  N     C     HC     1.15 1 0  3.044500478 2 180
+CT_2  N     CT    HC     0 1 0
+CT_2  N     CT_3  HC     0 1 0
+CT_2  NT    CT_3  HC     0 1 0
+CT_2  N     CT_2  HC     0 1 0
+CT    CT    C     O2     0.272999522 2 180
+CT_2  CT    C     O2     0.272999522 2 180
+CT_2  CT    C     N      0.272998327 1 0  1.063499044 2 0  0.416000239 3 180
+CT_2  CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CT_2  CT    CT    HC     0.15 3 0
+CT_2  CT    CV    CW     0 1 0
+CT_2  CT    CV    NB     1.174500478 1 0  0.156000239 2 0  0.27 3 0
+CT_2  CT    CW    CV     0 1 0
+CT_2  CT    CW    NA     1.174500478 1 0  0.156000239 2 0  0.27 3 0
+CT_2  CT    CX    CX     0 1 0
+CT_2  CT    CX    NA     1.174500478 1 0  0.156000239 2 0  0.27 3 0
+CT_2  CT    OH    HO     0.4955013145 1 180  0.434500478 2 0  0.3694998805 3 0
+CT_2  CT    SH    HS     0.379499283 1 180  0.141000239 2 0  0.301499761 3 0
+CT_2  N3    CT_3  HC     0 1 0
+CU    CT    CT    HC     5.975143402e-07 1 180  0.2309996415 3 0
+CU    CT    SY    N      0.8280001195 1 0  0.383999761 2 0  0.05849964149 3 180
+CV    CT    CT    HC     5.975143402e-07 1 180  0.2309996415 3 0
+CV    CT    CT_2  N      0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CV    CT    CT_2  HC     5.975143402e-07 1 180  0.2309996415 3 0
+CV    CT    CT_2  N3     0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CV    CW    CT    HC     0 1 0
+CW    C*    CT    HC     0.24 3 180
+CW    CS    CT    HC     0.24 3 180
+CW    CT    CT    HC     5.975143402e-07 1 180  0.2309996415 3 0
+CW    CT    CT_2  N      0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CW    CT    CT_2  HC     5.975143402e-07 1 180  0.2309996415 3 0
+CW    CT    CT_2  N3     0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CW    CV    CT    HC     0 1 0
+CW    NA    CR    HA     2.325 2 180
+CW    NA    CR    NB     2.325 2 180
+CX    CT    CT    HC     5.975143402e-07 1 180  0.2309996415 3 0
+CX    CT    CT_2  N      0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CX    CT    CT_2  HC     5.975143402e-07 1 180  0.2309996415 3 0
+CX    CT    CT_2  N3     0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CX    CX    CT    HC     0 1 0
+CX    CX    NA    H      1.4 2 180
+CX    N2    CA    N2     3.967999522 2 180
+CX    NA    CR    HA     2.325 2 180
+CX    NA    CR    NA     2.325 2 180
+CY    N     C     O      3.044500478 2 180
+CY    CY    N     H      0 1 0
+CY    CY    CT    HC     0.15 3 0
+CY    CY    CY    HC     0.15 3 0
+CZ    CT    CT    HC     1.792543021e-06 1 0  0.1830001195 3 0
+CZ    CZ    CT    HC     0 1 0
+Cl    C     CT    HC     0.18 3 0
+Cl    CM    CM    Cl     0.8 1 180  7 2 180
+Cl    CT    CT    Cl     0.125 1 180
+Cl    CT    CT    HC     0.2 3 0
+Cl    CT    CT    NT     1 1 0
+F     C     CT    HC     0.18 3 0
+F     CT    CT    F      1.25 1 180
+F     CT    CT    HC     0.2 3 0
+F     CT    CT    OH     0.27 3 0
+F     CT    CT_4  HC     5.975143403e-07 1 0  0.1569998805 3 0
+F     CT    CT_4  OH     0.27 3 0
+H     N     C     N      2.45 2 180
+H     N     C     O      2.45 2 180
+H     N     C     HC     2.45 2 180
+H     N     C     OH     2.45 2 180
+H     N     C     OS     2.45 2 180
+H     N     CT    HC     0 1 0
+H     N     CY    HC     0 1 0
+H     N     OH    HO     1.360999044 1 0  2.577000478 2 0
+H     N     CT_2  HC     0 1 0
+H     N2    CA    N2     1.95 2 180
+H     N2    CA    NC     0.7 1 0
+H     N2    CT    HC     0 1 0
+H     N3    CT    HC     1.792543021e-06 1 0  0.1305001195 3 0
+H     NA    CR    HA     2.325 2 180
+H     NA    CR    NA     2.325 2 180
+H     NA    CR    NB     2.325 2 180
+H     NA    CW    HA     1.5 2 180
+H     NA    CX    HA     1.6 2 180
+H     NT    CT    HC     0.2 3 0
+H     NT    CT_3  HC     0.2 3 0
+H     NT    CT_2  HC     0.2 3 0
+H     NT    NT    H      0.15 3 0
+H     NT    OH    HO     0.15 3 0
+H     NY    CA    NY     0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+H3    NY    CA    NY     0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+H     NY    CA    NZ     0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+H3    NY    CA    NZ     0.09500119503 1 180  0.208500239 2 0  0.208999761 3 0
+H3    N2    CA    N2     1.95 2 180
+H3    N2    CT    HC     0 1 0
+H3    N3    CT_3  HC     1.792543021e-06 1 0  0.1305001195 3 0
+H3    N3    CT_2  HC     1.792543021e-06 1 0  0.1305001195 3 0
+H3    N3    CT    HC     1.792543021e-06 1 0  0.1305001195 3 0
+H3    NY    CT    HC     0 1 0
+H3    NZ    CA    NY     1.95 2 180
+HC    C     C     N      0.45 1 180  0.15 2 180
+HC    C     C     O      0.1 2 180
+HC    C     C     HC     0.4 1 0
+HC    C     CT    HC     0.18 3 0
+HC    C     NC    HC     7 2 180
+HC    C     OH    HO     0.75 1 0  2.75 2 180
+HC    C=    C=    HC     0.15 3 0
+HC    C=    CM    HC     7 2 180
+HC    C=    C_2   O_2    0 1 0
+HC    CM    C     N      0 1 0
+HC    CM    C     O      0 1 0
+HC    CM    CT    HC     1.195028681e-06 1 0  0.158999761 3 0
+HC    CT    C     N      0 1 0
+HC    CT    C     O      0 1 0
+HC    CT    C     O2     0 1 0
+HC    CT    C     OH     0 1 0
+HC    CT    C     OS     1.195028681e-06 1 180  0.06600023901 3 0
+HC    CT    C     O_2    0 1 0
+HC    CT    C     O_3    0 1 0
+HC    CT    N     SY     0.681001434 1 0  0.728500239 2 0  0.07450047801 3 0
+HC    CT    P     O2     0.125 3 0
+HC    CT    P     OS     0.125 3 0
+HC    CT    S     S      5.975143402e-07 1 0  0.2790003585 3 0
+HC    CT    CA    N2     0.5065021511 1 180  0.354499283 2 0  0.236499761 3 0
+HC    CT    CA    NT     0.5065021511 1 180  0.354499283 2 0  0.236499761 3 0
+HC    CT    CO    OS     1.195028681e-06 1 0  0.233999761 3 0
+HC    CT    CT    N      5.975143405e-07 1 0  0.2319998805 3 0
+HC    CT    CT    S      1.195028681e-06 1 0  0.226000239 3 0
+HC    CT    CT    HC     0.15 3 0
+HC    CT    CT    N2     1.195028681e-06 1 0  0.291000239 3 180
+HC    CT    CT    N3     1.792543021e-06 1 180  0.1919998805 3 0
+HC    CT    CT    NO     0.1125 3 180
+HC    CT    CT    NT     0.5065021511 1 180  0.354499283 2 0  0.236499761 3 0
+HC    CT    CT_2  NT     0.5065021511 1 180  0.354499283 2 0  0.236499761 3 0
+HC    CT    CT    NY     1.195028681e-06 1 0  0.291000239 3 180
+HC    CT    CT    OH     1.195028681e-06 1 0  0.233999761 3 0
+HC    CT    CT    OS     1.195028681e-06 1 0  0.233999761 3 0
+HC    CT    CT    P+     0.15 3 0
+HC    CT    CT    SH     1.195028681e-06 1 0  0.226000239 3 0
+HC    CT    CT    SY2    0.175 3 0
+HC    CT    CT    SY     1.195028681e-06 1 0  0.226000239 3 0
+HC    CT    CU    NB     0.21 3 0
+HC    CT    CV    NB     0.21 3 0
+HC    CT    CW    NA     0.21 3 0
+HC    CT    CX    NA     0.21 3 0
+HC    CT    NO    ON     0 1 0
+HC    CT    OH    HO     0.225 3 0
+HC    CT_4  OH    HO     2.390057361e-06 1 180  0.237999522 3 0
+HC    CT    OS    P      1.195028681e-06 1 0  0.178500239 3 0
+HC    CT    SH    HS     0.24 3 0
+HC    CT    SY    N      0 1 0
+HC    CT    C_3   O2     0 1 0
+HC    CT_2  C_3   O2     0 1 0
+HC    CT    C_2   OS     1.195028681e-06 1 180  0.06600023901 3 0
+HC    CT    C_2   O_2    0 1 0
+HC    CT    CT_3  N      5.975143405e-07 1 0  0.2319998805 3 0
+HC    CT    CT_3  NT     5.975143405e-07 1 0  0.2319998805 3 0
+HC    CT    CT_3  N3     5.975143405e-07 1 0  0.2319998805 3 0
+HC    CT    CT_2  N      5.975143405e-07 1 0  0.2319998805 3 0
+HC    CT    CT_2  HC     0.15 3 0
+HC    CT    CT_2  N3     5.975143405e-07 1 0  0.2319998805 3 0
+HC    CT    SY2   OY     0.175 3 0
+HC    CY    CY    HC     0.15 3 0
+HC    NC    NZ    NZ     0 1 0
+HC    C_2   CT    HC     0.18 3 0
+HC    CT_3  CT    HC     0.15 3 0
+HC    CT_2  C     N      0 1 0
+HC    CT_2  C     O      0 1 0
+HC    CT_2  C     OH     0 1 0
+HC    CT_2  C     O_3    0 1 0
+HC    CT_2  CT    S      1.195028681e-06 1 0  0.226000239 3 0
+HC    CT_2  CT    OH     1.195028681e-06 1 0  0.233999761 3 0
+HC    CT_2  CT    SH     1.195028681e-06 1 0  0.226000239 3 0
+HO    OH    C     N      1 1 180  2.5 2 180
+HO    OH    C     O      2.5 2 180
+HO    OH    C     O_3    2.75 2 180
+HO    OH    P     O      0 1 0
+HO    OH    P     OH     0 1 0
+HO    OH    CO    OS     0.628500239 1 180  0.902999522 2 0  0.001499760994 3 0
+N     C     C     O      0 1 0
+N     C     CT_2  N      0.371500956 1 0  1.253999761 2 180  0.4025 3 180
+N     C     CT_2  N3     0.371500956 1 0  1.253999761 2 180  0.4025 3 180
+N     C     CT_2  NT     0.371500956 1 0  1.253999761 2 180  0.4025 3 180
+N     CA    CT    NT     5.5175 1 0  0.483999761 2 0  0.135 3 0
+N     CT    C     O      0 1 0
+N     CT_2  C     O_3    0 1 0
+N     CT_2  C     OH     2.63 1 0  0.41 2 180
+NT    CT_2  C     O_3    0 1 0
+NT    CT_2  C     OH     2.63 1 0  0.41 2 180
+N     CT    C_3   O2     0.41 2 180
+N     CT_2  C_3   O2     0.41 2 180
+N     CT_2  C     O      0 1 0
+N     CT_2  CT    S      0.7139991635 1 0  0.04299952199 2 180  0.0144998805 3 0
+N     CT_2  CT    OH     2.714501076 1 0  0.439500478 2 0  0.5290003585 3 0
+N     CT_2  CT    SH     0.7139991635 1 0  0.04299952199 2 180  0.0144998805 3 0
+N3    CT_2  C     O      0 1 0
+N3    CT_2  C_3   O2     0 1 0
+N3    CT_2  CT    S      0.7139991635 1 0  0.04299952199 2 180  0.0144998805 3 0
+N3    CT_2  CT    OH     2.714501076 1 0  0.439500478 2 0  0.5290003585 3 0
+N3    CT_2  CT    SH     0.7139991635 1 0  0.04299952199 2 180  0.0144998805 3 0
+N3    CT    CT    OH     2.714501076 1 0  0.439500478 2 0  0.5290003585 3 0
+NT    CA    CT    NT     5.5175 1 0  0.483999761 2 0  0.135 3 0
+NT    CT    C     OH     2.63 1 0  0.41 2 180
+NT    CT    CT    NT     5.5175 1 0  0.483999761 2 0  0.135 3 0
+NT    CT    CT    OH     4 1 0
+NT    CT_2  CT    OH     4 1 0
+NT    CT_2  C     O      0 1 0
+NT    CT_2  CT    S      0.7139991635 1 0  0.04299952199 2 180  0.0144998805 3 0
+NT    CT_2  CT    SH     0.7139991635 1 0  0.04299952199 2 180  0.0144998805 3 0
+O     C     C     O      0.8 1 0  1.6 2 180
+O     C     N     OH     3.301499761 2 180
+OH    CT    CT    OH     4.532999522 1 0
+OH    CT    CT    OS     2.159498088 1 0
+OS    CT    CT    OS     0.275 1 180
+CA    CA    N     X      1.05 2 180
+CT    CT    CK    X      0 1 0
+CA    CA    CT    X      0 1 0
+NZ    CZ    CT    X      0 1 0
+NZ    CZ    CA    X      0 1 0
+O     C     CT    X      0 1 0
+CT    CT    C*    X      0 1 0
+CT    CT    CQ    X      0 1 0
+CT    CT    CR    X      0 1 0
+CT    CT    CS    X      0 1 0
+CT    CT    CU    X      0 1 0
+CT    CT    CV    X      0 1 0
+OY    SY    N     X      0 1 0
+OY    SY    C3    X      0 1 0
+OY    SY    CA    X      0 1 0
+OY    SY    OY    X      0 1 0
+OY    SY    NT    X      0 1 0
+OY    SY    CT    X      0 1 0
+CT    CT    CW    X      0 1 0
+CZ    CZ    CT    X      0 1 0
+Cl    CT    CS    X      0 1 0
+Cl    CT    CW    X      0 1 0
+F     CT    CS    X      0 1 0
+H     N     CT    X      0 1 0
+F     CT    CW    X      0 1 0
+H     N     CT_2  X      0 1 0
+H     N2    CA    X      1.015 2 180
+H3    NY    CA    X      1.015 2 180
+H     N2    CQ    X      1.015 2 180
+H     NA    CB    X      1.6 2 180
+H     NA    CR    X      1.6 2 180
+H     NA    CW    X      1.6 2 180
+HA    CR    NA    X      5 2 180
+HC    CT    C*    X      0 1 0
+HC    CT    CK    X      0 1 0
+HC    CT    CQ    X      0 1 0
+HC    CT    CR    X      0 1 0
+HC    CT    CS    X      0 1 0
+HC    CT    CU    X      0 1 0
+HC    CT    CV    X      0 1 0
+HC    CT    CW    X      0 1 0
+N     SY    CT    X      0 1 0
+X     C     CB    X      3.5 2 180
+X     C     CS    X      3.625 2 180
+X     C*    CB    X      1.675 2 180
+X     C*    CW    X      6.525 2 180
+X     CA    S     X      3.625 2 180
+X     CA    CA    X      3.625 2 180
+X     CA    CB    X      3.5 2 180
+X     CA    CN    X      3.625 2 180
+X     CA    CR    X      3.625 2 180
+X     CA    CS    X      3.625 2 180
+X     CA    CU    X      3.625 2 180
+X     CA    CW    X      3.625 2 180
+X     CA    NC    X      3.625 2 180
+X     CA    OS    X      3.625 2 180
+X     CB    N     X      3.625 2 180
+X     CB    CB    X      3.625 2 180
+X     CB    CN    X      3 2 180
+X     CB    CS    X      3.625 2 180
+X     CB    NA    X      3.625 2 180
+X     CB    NB    X      3.625 2 180
+X     CB    NC    X      3.625 2 180
+X     CK    NA    X      5 2 180
+X     CK    NB    X      5 2 180
+X     CK    NC    X      5 2 180
+X     CM    CM    X      7 2 180
+X     CN    NA    X      1.525 2 180
+X     CQ    N     X      3.625 2 180
+X     CQ    NC    X      3.625 2 180
+X     CR    S     X      3.625 2 180
+X     CR    CS    X      3.625 2 180
+X     CR    NA    X      2.325 2 180
+X     CR    NB    X      5 2 180
+X     CR    NC    X      3.625 2 180
+X     CR    OS    X      3.625 2 180
+X     CS    CS    X      3.625 2 180
+X     CS    CW    X      3.625 2 180
+X     CU    NB    X      3.625 2 180
+X     CV    CW    X      5.375 2 180
+X     CV    NA    X      3.625 2 180
+X     CV    NB    X      2.4 2 180
+X     CW    S     X      3.625 2 180
+X     CW    CW    X      5.375 2 180
+X     CW    NA    X      1.4 2 180
+X     CW    NB    X      5 2 180
+X     CW    OS    X      3.625 2 180
+X     CY    S     X      0 1 0
+X     CY    CY    X      0 1 0
+X     CZ    CZ    X      0 1 0
+X     NA    S     X      3.625 2 180
+X     NA    NB    X      5 2 180
+X     NA    OS    X      3.625 2 180
+X     NB    OS    X      3.625 2 180
+X     NC    NC    X      3.625 2 180
+X     OS    S     X      3.625 2 180
+X     CX    CX    X      5.375 2 180
+CT    CT    CO    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CT    CT    CO    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+HC    CM    CT    OH     1.195028681e-06 1 0  0.233999761 3 0
+HC    CM    CT    OS     1.195028681e-06 1 0  0.233999761 3 0
+CT    CM    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CT    CM    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CA    CA    CT    OH     0 1 0
+CA    CA    CT    OS     0 1 0
+CT    CT    NA    CB     0 1 0
+CT    CT    NA    CW     0 1 0
+CA    CT    NA    CB     0 1 0
+CA    CT    NA    CK     0 1 0
+CA    CT    NA    CR     0 1 0
+CA    CT    NA    CW     0 1 0
+CB    NA    CT    HC     0 1 0
+CK    NA    CT    HC     0 1 0
+CR    NA    CT    HC     0 1 0
+CW    NA    CT    HC     0 1 0
+CT    CT    N*    CM     0 1 0
+CT    CT    N*    C      0 1 0
+CT    CT    N*    C_2    0 1 0
+CT    CT    N*    C_3    0 1 0
+CT    CT    N*    CB     0 1 0
+CM    N*    CT    HC     0 1 0
+C     N*    CT    HC     0 1 0
+C_2   N*    CT    HC     0 1 0
+C_3   N*    CT    HC     0 1 0
+CB    N*    CT    HC     0 1 0
+CK    N*    CT    HC     0 1 0
+CA    CA    CT    NT     0 1 0
+CA    CA    CT    N      0 1 0
+CA    CA    CT    NA     0 1 0
+CA    OS    P     O2     5.975143403e-07 1 180  0.2809996415 3 0
+C3    OS    P     O2     5.975143403e-07 1 180  0.2809996415 3 0
+CT    OS    CT    N      0.25 1 180  0.75 2 0  0.5 3 0
+CT    OS    CT    N*     0.25 1 180  0.75 2 0  0.5 3 0
+H     N2    CA    N      1.015 2 180
+H     N2    CA    NA     1.015 2 180
+C     CT    CT    Cl     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    CM     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    CO     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    C      1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    C_2    1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    CT_3   1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    CZ     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    C_3    1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    CB     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    CR     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    CV     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    CW     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    CX     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    CS     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    C+     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C=    CM    CT    OH     0.25 1 0
+C=    CM    CT    OS     0.25 1 0
+CA    CT    S     S      0.970499522 1 0  0.417999522 2 0  0.4675 3 0
+CT_2  CT    S     S      0.970499522 1 0  0.417999522 2 0  0.4675 3 0
+CW    CT    S     S      0.970499522 1 0  0.417999522 2 0  0.4675 3 0
+Cl    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CM    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CO    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+C     CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+C_2   CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CT_3  CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CZ    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+C_3   CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CB    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+C*    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CR    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CV    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CW    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CX    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+CS    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+C+    CT    CT    S      1.309501076 1 0  0.31 2 0  0.1290003585 3 0
+Cl    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CM    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CA    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CO    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CT_2  CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C     CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C_2   CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CT_3  CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CZ    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C_3   CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CB    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C*    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CR    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CV    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CW    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CX    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+CS    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+C+    CT    CT    CU     1.03 1 180  0.156499761 2 0  0.1575 3 0
+Cl    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CM    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CA    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CO    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CT_2  CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+C     CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+C_2   CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CT_3  CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CZ    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+C_3   CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CB    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+C*    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CR    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CV    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CW    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CX    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CS    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+C+    CT    CT    N2     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CM    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CT_2  CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+C     CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+C     CT    CT_2  NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+C_2   CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CT_3  CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CZ    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+C_3   CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+C_3   CT    CT_2  NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CB    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+C*    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+C*    CT    CT_2  NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CR    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CV    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CW    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CX    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CV    CT    CT_2  NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CW    CT    CT_2  NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CX    CT    CT_2  NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+CS    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+C+    CT    CT    NT     1.195999044 1 0  0.336999283 2 0  0.275 3 0
+Cl    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CM    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CO    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CT_2  CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+C     CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+C_2   CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CT_3  CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CZ    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+C_3   CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CB    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+C*    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CR    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CV    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CW    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CX    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CS    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+C+    CT    CT    OH     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+Cl    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CM    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CO    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CT_2  CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+C     CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+C_2   CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CT_3  CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CZ    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+C_3   CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CB    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+C*    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CR    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CV    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CW    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CX    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CS    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+C+    CT    CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+Cl    CT    CT    SH     0.937999522 1 0
+CM    CT    CT    SH     0.937999522 1 0
+CA    CT    CT    SH     0.937999522 1 0
+CO    CT    CT    SH     0.937999522 1 0
+CT_2  CT    CT    SH     0.937999522 1 0
+C     CT    CT    SH     0.937999522 1 0
+C_2   CT    CT    SH     0.937999522 1 0
+CT_3  CT    CT    SH     0.937999522 1 0
+CZ    CT    CT    SH     0.937999522 1 0
+C_3   CT    CT    SH     0.937999522 1 0
+CB    CT    CT    SH     0.937999522 1 0
+C*    CT    CT    SH     0.937999522 1 0
+CR    CT    CT    SH     0.937999522 1 0
+CV    CT    CT    SH     0.937999522 1 0
+CW    CT    CT    SH     0.937999522 1 0
+CX    CT    CT    SH     0.937999522 1 0
+CS    CT    CT    SH     0.937999522 1 0
+C+    CT    CT    SH     0.937999522 1 0
+Cl    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CM    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CA    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CO    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CT_2  CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+C_2   CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CT_3  CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CZ    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+C_3   CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CB    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+C*    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CR    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CV    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CW    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CX    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CS    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+C+    CT    CT    C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CA    CT    CT_2  C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+C     CT    CT_2  C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+C_2   CT    CT_2  C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+C_3   CT    CT_2  C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+C*    CT    CT_2  C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CV    CT    CT_2  C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CW    CT    CT_2  C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+CX    CT    CT_2  C_3    1.592501195 1 180  0.4125 2 0  0.246499761 3 0
+Cl    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CM    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CO    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CT_2  CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+C     CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+C_2   CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CT_3  CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CZ    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+C_3   CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CB    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+C*    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CR    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CV    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CW    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CX    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+CS    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+C+    CT    CT    N3     1.365999044 1 0  0.114500478 2 0  0.2425 3 0
+C     CT    NT    CT     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C_2   CT    NT    CT     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C_3   CT    NT    CT     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C3    CT    NT    CT     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+CM    CT    OS    CT     0.325 1 0  0.125 2 0  0.335 3 0
+C     CT    OS    CT     0.325 1 0  0.125 2 0  0.335 3 0
+C_2   CT    OS    CT     0.325 1 0  0.125 2 0  0.335 3 0
+C_3   CT    OS    CT     0.325 1 0  0.125 2 0  0.335 3 0
+C     CT    CT_2  N      0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+C_2   CT    CT_2  N      0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+C_3   CT    CT_2  N      0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+C     CT    CT_2  N3     0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+C_2   CT    CT_2  N3     0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CT    OS    C_2   OS     2.3345 1 0  2.562 2 180
+C_3   CT    CT_2  N3     0.4225005975 1 0  0.481000239 2 0  0.3565003585 3 0
+CM    N*    CT    OS     0.75 1 0  0.75 2 0
+C     N*    CT    OS     0.75 1 0  0.75 2 0
+C_2   N*    CT    OS     0.75 1 0  0.75 2 0
+C_3   N*    CT    OS     0.75 1 0  0.75 2 0
+CB    N*    CT    OS     0.75 1 0  0.75 2 0
+CB    NA    CT    OS     0.75 1 0  0.75 2 0
+CW    NA    CT    OS     0.75 1 0  0.75 2 0
+Cl    CT_2  C     N      0.9324976099 1 0  0.04450047801 2 180  0.175499522 3 0
+CM    CM    CT    OH     0.25 1 0
+CM    CM    CT    OS     0.25 1 0
+CT    C=    C     OH     0.45 1 0  0.115 2 180  0.2525 3 180
+CT    C=    C     O      0.45 1 0  0.115 2 180  0.2525 3 180
+CT    C=    C     O_3    0.45 1 0  0.115 2 180  0.2525 3 180
+CT    C=    C     O_2    0.45 1 0  0.115 2 180  0.2525 3 180
+CT    CM    C     OH     0.45 1 0  0.115 2 180  0.2525 3 180
+CT    CM    C     O      0.45 1 0  0.115 2 180  0.2525 3 180
+CT    CM    C     O_3    0.45 1 0  0.115 2 180  0.2525 3 180
+CT    CM    C     O_2    0.45 1 0  0.115 2 180  0.2525 3 180
+HA    CW    NA    NB     1.6 2 180
+H4    CW    NA    NB     1.6 2 180
+CT    CW    NA    CT     1.6 2 180
+CT    CW    NA    CN     1.6 2 180
+CT    CW    NA    CR     1.6 2 180
+CT    CW    NA    CW     1.6 2 180
+CA    CW    NA    CT     1.6 2 180
+CA    CW    NA    CN     1.6 2 180
+CA    CW    NA    CR     1.6 2 180
+CA    CW    NA    CW     1.6 2 180
+C!    CW    NA    CT     1.6 2 180
+C!    CW    NA    CN     1.6 2 180
+C!    CW    NA    CR     1.6 2 180
+C!    CW    NA    CW     1.6 2 180
+C     CW    NA    CT     1.6 2 180
+C     CW    NA    CN     1.6 2 180
+C     CW    NA    CR     1.6 2 180
+C     CW    NA    CW     1.6 2 180
+C_2   CW    NA    CT     1.6 2 180
+C_2   CW    NA    CN     1.6 2 180
+C_2   CW    NA    CR     1.6 2 180
+C_2   CW    NA    CW     1.6 2 180
+C_3   CW    NA    CT     1.6 2 180
+C_3   CW    NA    CN     1.6 2 180
+C_3   CW    NA    CR     1.6 2 180
+C_3   CW    NA    CW     1.6 2 180
+C*    CW    NA    CT     1.6 2 180
+C*    CW    NA    CR     1.6 2 180
+C*    CW    NA    CW     1.6 2 180
+CV    CW    NA    CT     1.6 2 180
+CV    CW    NA    CN     1.6 2 180
+CV    CW    NA    CR     1.6 2 180
+CV    CW    NA    CW     1.6 2 180
+CW    CW    NA    CT     1.6 2 180
+CW    CW    NA    CN     1.6 2 180
+CW    CW    NA    CR     1.6 2 180
+CW    CW    NA    CW     1.6 2 180
+CS    CW    NA    CT     1.6 2 180
+CS    CW    NA    CN     1.6 2 180
+CS    CW    NA    CR     1.6 2 180
+CS    CW    NA    CW     1.6 2 180
+CT    CW    NA    NB     1.6 2 180
+CA    CW    NA    NB     1.6 2 180
+C!    CW    NA    NB     1.6 2 180
+C     CW    NA    NB     1.6 2 180
+C_2   CW    NA    NB     1.6 2 180
+C_3   CW    NA    NB     1.6 2 180
+C*    CW    NA    NB     1.6 2 180
+CV    CW    NA    NB     1.6 2 180
+CW    CW    NA    NB     1.6 2 180
+CS    CW    NA    NB     1.6 2 180
+CT    NA    CW    HA     1.6 2 180
+CT    NA    CW    H4     1.6 2 180
+CN    NA    CW    H4     1.6 2 180
+CR    NA    CW    H4     1.6 2 180
+CW    NA    CW    HA     1.6 2 180
+CW    NA    CW    H4     1.6 2 180
+CT    NA    CR    NC     5 2 180
+CT    NA    CR    NA     5 2 180
+CT    NA    CR    NB     5 2 180
+CB    NA    CR    NC     5 2 180
+CB    NA    CR    NA     5 2 180
+CB    NA    CR    NB     5 2 180
+CW    NA    CR    NC     5 2 180
+CW    NA    CR    NA     5 2 180
+CX    NA    CR    NC     5 2 180
+CX    NA    CR    NB     5 2 180
+CT    CT    NT    CA     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+CT    CT    NT    C      0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+CT    CT    NT    C_2    0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+CT    CT    NT    C_3    0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+CT    CT    NT    C3     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+CA    CT    NT    CA     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+CA    CT    NT    C      0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+CA    CT    NT    C_2    0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+CA    CT    NT    C_3    0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+CA    CT    NT    C3     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C     CT    NT    CA     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C     CT    NT    C      0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C     CT    NT    C_2    0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C     CT    NT    C_3    0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C     CT    NT    C3     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C_2   CT    NT    CA     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C_2   CT    NT    C      0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C_2   CT    NT    C_2    0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C_2   CT    NT    C_3    0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C_2   CT    NT    C3     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C_3   CT    NT    CA     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C_3   CT    NT    C      0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C_3   CT    NT    C_2    0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C_3   CT    NT    C_3    0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C_3   CT    NT    C3     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C3    CT    NT    CA     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C3    CT    NT    C      0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C3    CT    NT    C_2    0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C3    CT    NT    C_3    0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+C3    CT    NT    C3     0.208001912 1 0  0.06399976099 2 0  0.3475 3 0
+O2    S     CT    HC     1.195028681e-06 1 0  0.323500239 3 0
+CT    OS    C     O_2    2.561999283 2 180
+C_2   OS    C_2   O_2    2.561999283 2 180
+CT    OS    C_2   O_2    2.561999283 2 180
+CM    OS    C_2   O_2    2.561999283 2 180
+CT    OS    C     OS     2.5 2 180
+CA    CA    C_2   O_2    1.05 2 180
+CM    OS    CT    CT     0.325 1 0  0.125 2 0  0.335 3 0
+CO    OS    CO    CT     0.325 1 0  0.125 2 0  0.335 3 0
+CO    OS    CO    HC     0.38 3 0
+HC    CT    CA    NC     0.5065021511 1 180  0.354499283 2 0  0.236499761 3 0
+I     CT    CT    HC     0.2 3 0
+I     CT    CT    CT     0.2 3 0
+CA    C_2   CT    HC     0.18 3 0
+CA    CA    CM    HC     0.1025 1 0  0.265499522 2 0
+NT    CT    CT    OS     0.65 1 0  0.025 2 0  0.1 3 0
+CM    CM    CZ    NZ     1 1 0
+CM    C_2   OS    CT     1.75 1 180  1.5 2 180
+CM    CM    OS    C_2    1.75 1 180  1.5 2 180
+CM    CM    C_2   OS     1.195028681e-06 1 0  0.276499761 3 180
+CT    CM    C_2   OS     1.195028681e-06 1 0  0.276499761 3 180
+C_2   CT    C_2   OS     1.195028681e-06 1 0  0.276499761 3 180
+C_2   CM    CT    HC     2.390057361e-06 1 0  0.03799952199 3 180
+C_2   CT    C_2   CT     0.848501434 1 180  0.227999522 2 0  0.2925 3 0
+C_2   OS    C_2   CT     0.609998805 1 180  0.06300071702 2 0  0.211000239 3 0
+CT    C_2   CT    OS     0.8555001195 1 0  0.25 2 0  0.3315003585 3 0
+CT    CT    CT    CZ     0 1 0
+CY    CY    C_2   O_2    0.1384996415 1 180  0.613999761 2 180  0.3469998805 3 180
+CM    CM    C_2   O_2    0.1384996415 1 180  0.613999761 2 180  0.3469998805 3 180
+C_2   CT    C_2   O_2    0.1384996415 1 180  0.613999761 2 180  0.3469998805 3 180
+CT    CM    C_2   O_2    0.1384996415 1 180  0.613999761 2 180  0.3469998805 3 180
+CY    C_2   CY    CY     0.65 1 0  0.025 2 0  0.1 3 0
+C_2   OS    CM    HC     0.38 3 0
+CO    OS    CO    OS     0.1875017925 1 180  0.678999761 2 0  0.001999880497 3 0
+CT    C_2   CY    CY     0.727000478 1 0  0.07200047801 2 0  0.3875 3 180
+CT    C_2   CY    HC     0.1375 3 0
+CT    C_2   OS    CM     2.334498088 1 0  2.561999283 2 180
+CT    SZ    CT    HC     0.175 3 0
+CY    C_2   CY    HC     0.15 3 0
+HC    CT    CO    HC     0.15 3 0
+CT    CT    CT    NO     0.1125 3 180
+HC    CT    SZ    OY     0.175 3 0
 
 [references]
-# the references of clayff (oplsaa's come with extends)
-clayff/bulk/brucite_bulk.data  prune=1.0
-clayff/bulk/kaolinite_bulk.data  prune=1.0
-clayff/bulk/lizerdite_bulk.data  prune=1.0
-clayff/bulk/muscovite_1M_bulk.data  prune=1.0
-clayff/bulk/muscovite_2M1_bulk.data  prune=1.0
-clayff/bulk/nanpingite_bulk.data  prune=1.0
-clayff/bulk/phlogopite_1M_bulk.data  prune=1.0
-clayff/bulk/pyrophyllite_2_bulk.data  prune=1.0
-clayff/bulk/pyrophyllite_bulk.data  prune=1.0
-clayff/bulk/talc_bulk.data  prune=1.0
-clayff/bulk/montmorillonite_dry_Na.data  prune=1.0
-clayff/basal/brucite_001.data  prune=0.999
-clayff/basal/kaolinite_001.data  prune=0.999
-clayff/basal/lizerdite_001.data  prune=0.999
-clayff/basal/muscovite_1M_001.data  prune=0.999
-clayff/basal/muscovite_2M1_001.data  prune=0.999
-clayff/basal/nanpingite_001.data  prune=0.999
-clayff/basal/phlogopite_1M_001.data  prune=0.999
-clayff/basal/pyrophyllite_2_001.data  prune=0.999
-clayff/basal/pyrophyllite_001.data  prune=0.999
-clayff/basal/talc_001.data  prune=0.999
-clayff/basal/montmorillonite_dry_Na_001.data  prune=0.999
-clayff/water/water.data  prune=0.99
-clayff/water/NaCl.data  prune=0.99
-clayff/water/KCl.data  prune=0.99
-clayff/water/CsCl.data  prune=0.99
-clayff/water/CaCl2.data  prune=0.99
-clayff/water/BaCl2.data  prune=0.99
-clayff/water/vac_water_film.data  prune=0.99
-clayff/water/vac_water_film_thin.data  prune=0.99
-clayff/water/vac_water_droplet.data  prune=0.99
-clayff/water/vac_NaCl_film.data  prune=0.99
-clayff/water/vac_KCl_film.data  prune=0.99
-clayff/water/vac_CsCl_film.data  prune=0.99
-clayff/water/vac_CaCl2_film.data  prune=0.99
-clayff/water/vac_BaCl2_film.data  prune=0.99
+# FILE [prune=S]: the polymers with the prune of [soap]; the crystals all kept, their slabs pruned at 0.999, water and ions at 0.99
+clayff_oplsaa/polymers/PE_5mer.extxyz
+clayff_oplsaa/polymers/PE_5mer_md413K.extxyz
+clayff_oplsaa/polymers/PE_8mer.extxyz
+clayff_oplsaa/polymers/PE_8mer_md413K_1.extxyz
+clayff_oplsaa/polymers/PE_8mer_md413K_2.extxyz
+clayff_oplsaa/polymers/PE_8mer_md413K_3.extxyz
+clayff_oplsaa/polymers/PE_8mer_md413K_4.extxyz
+clayff_oplsaa/polymers/PE_8mer_md413K_5.extxyz
+clayff_oplsaa/polymers/PP_5mer.extxyz
+clayff_oplsaa/polymers/PP_5mer_md413K.extxyz
+clayff_oplsaa/polymers/PP_8mer.extxyz
+clayff_oplsaa/polymers/PP_8mer_md413K_1.extxyz
+clayff_oplsaa/polymers/PP_8mer_md413K_2.extxyz
+clayff_oplsaa/polymers/PP_8mer_md413K_3.extxyz
+clayff_oplsaa/polymers/PP_8mer_md413K_4.extxyz
+clayff_oplsaa/polymers/PP_8mer_md413K_5.extxyz
+clayff_oplsaa/polymers/PIB_5mer.extxyz
+clayff_oplsaa/polymers/PIB_5mer_md413K.extxyz
+clayff_oplsaa/polymers/PIB_8mer.extxyz
+clayff_oplsaa/polymers/PIB_8mer_md413K_1.extxyz
+clayff_oplsaa/polymers/PIB_8mer_md413K_2.extxyz
+clayff_oplsaa/polymers/PIB_8mer_md413K_3.extxyz
+clayff_oplsaa/polymers/PIB_8mer_md413K_4.extxyz
+clayff_oplsaa/polymers/PIB_8mer_md413K_5.extxyz
+clayff_oplsaa/polymers/PB_5mer.extxyz
+clayff_oplsaa/polymers/PB_5mer_md413K.extxyz
+clayff_oplsaa/polymers/PB_8mer.extxyz
+clayff_oplsaa/polymers/PB_8mer_md413K_1.extxyz
+clayff_oplsaa/polymers/PB_8mer_md413K_2.extxyz
+clayff_oplsaa/polymers/PB_8mer_md413K_3.extxyz
+clayff_oplsaa/polymers/PB_8mer_md413K_4.extxyz
+clayff_oplsaa/polymers/PB_8mer_md413K_5.extxyz
+clayff_oplsaa/polymers/PI_5mer.extxyz
+clayff_oplsaa/polymers/PI_5mer_md413K.extxyz
+clayff_oplsaa/polymers/PI_8mer.extxyz
+clayff_oplsaa/polymers/PI_8mer_md413K_1.extxyz
+clayff_oplsaa/polymers/PI_8mer_md413K_2.extxyz
+clayff_oplsaa/polymers/PI_8mer_md413K_3.extxyz
+clayff_oplsaa/polymers/PI_8mer_md413K_4.extxyz
+clayff_oplsaa/polymers/PI_8mer_md413K_5.extxyz
+clayff_oplsaa/polymers/PEO_5mer.extxyz
+clayff_oplsaa/polymers/PEO_5mer_md413K.extxyz
+clayff_oplsaa/polymers/PEO_8mer.extxyz
+clayff_oplsaa/polymers/PEO_8mer_md413K_1.extxyz
+clayff_oplsaa/polymers/PEO_8mer_md413K_2.extxyz
+clayff_oplsaa/polymers/PEO_8mer_md413K_3.extxyz
+clayff_oplsaa/polymers/PEO_8mer_md413K_4.extxyz
+clayff_oplsaa/polymers/PEO_8mer_md413K_5.extxyz
+clayff_oplsaa/polymers/PMMA_5mer.extxyz
+clayff_oplsaa/polymers/PMMA_5mer_md413K.extxyz
+clayff_oplsaa/polymers/PMMA_8mer.extxyz
+clayff_oplsaa/polymers/PMMA_8mer_md413K_1.extxyz
+clayff_oplsaa/polymers/PMMA_8mer_md413K_2.extxyz
+clayff_oplsaa/polymers/PMMA_8mer_md413K_3.extxyz
+clayff_oplsaa/polymers/PMMA_8mer_md413K_4.extxyz
+clayff_oplsaa/polymers/PMMA_8mer_md413K_5.extxyz
+clayff_oplsaa/polymers/PMA_5mer.extxyz
+clayff_oplsaa/polymers/PMA_5mer_md413K.extxyz
+clayff_oplsaa/polymers/PMA_8mer.extxyz
+clayff_oplsaa/polymers/PMA_8mer_md413K_1.extxyz
+clayff_oplsaa/polymers/PMA_8mer_md413K_2.extxyz
+clayff_oplsaa/polymers/PMA_8mer_md413K_3.extxyz
+clayff_oplsaa/polymers/PMA_8mer_md413K_4.extxyz
+clayff_oplsaa/polymers/PMA_8mer_md413K_5.extxyz
+clayff_oplsaa/polymers/PVA_5mer.extxyz
+clayff_oplsaa/polymers/PVA_5mer_md413K.extxyz
+clayff_oplsaa/polymers/PVA_8mer.extxyz
+clayff_oplsaa/polymers/PVA_8mer_md413K_1.extxyz
+clayff_oplsaa/polymers/PVA_8mer_md413K_2.extxyz
+clayff_oplsaa/polymers/PVA_8mer_md413K_3.extxyz
+clayff_oplsaa/polymers/PVA_8mer_md413K_4.extxyz
+clayff_oplsaa/polymers/PVA_8mer_md413K_5.extxyz
+clayff_oplsaa/polymers/PAN_5mer.extxyz
+clayff_oplsaa/polymers/PAN_5mer_md413K.extxyz
+clayff_oplsaa/polymers/PAN_8mer.extxyz
+clayff_oplsaa/polymers/PAN_8mer_md413K_1.extxyz
+clayff_oplsaa/polymers/PAN_8mer_md413K_2.extxyz
+clayff_oplsaa/polymers/PAN_8mer_md413K_3.extxyz
+clayff_oplsaa/polymers/PAN_8mer_md413K_4.extxyz
+clayff_oplsaa/polymers/PAN_8mer_md413K_5.extxyz
+clayff_oplsaa/polymers/PTFE_5mer.extxyz
+clayff_oplsaa/polymers/PTFE_5mer_md413K.extxyz
+clayff_oplsaa/polymers/PTFE_8mer.extxyz
+clayff_oplsaa/polymers/PTFE_8mer_md413K_1.extxyz
+clayff_oplsaa/polymers/PTFE_8mer_md413K_2.extxyz
+clayff_oplsaa/polymers/PTFE_8mer_md413K_3.extxyz
+clayff_oplsaa/polymers/PTFE_8mer_md413K_4.extxyz
+clayff_oplsaa/polymers/PTFE_8mer_md413K_5.extxyz
+clayff_oplsaa/bulk/brucite_bulk.data  prune=1.0
+clayff_oplsaa/bulk/kaolinite_bulk.data  prune=1.0
+clayff_oplsaa/bulk/lizerdite_bulk.data  prune=1.0
+clayff_oplsaa/bulk/muscovite_1M_bulk.data  prune=1.0
+clayff_oplsaa/bulk/muscovite_2M1_bulk.data  prune=1.0
+clayff_oplsaa/bulk/nanpingite_bulk.data  prune=1.0
+clayff_oplsaa/bulk/phlogopite_1M_bulk.data  prune=1.0
+clayff_oplsaa/bulk/pyrophyllite_2_bulk.data  prune=1.0
+clayff_oplsaa/bulk/pyrophyllite_bulk.data  prune=1.0
+clayff_oplsaa/bulk/talc_bulk.data  prune=1.0
+clayff_oplsaa/bulk/montmorillonite_dry_Na.data  prune=1.0
+clayff_oplsaa/basal/brucite_001.data  prune=0.999
+clayff_oplsaa/basal/kaolinite_001.data  prune=0.999
+clayff_oplsaa/basal/lizerdite_001.data  prune=0.999
+clayff_oplsaa/basal/muscovite_1M_001.data  prune=0.999
+clayff_oplsaa/basal/muscovite_2M1_001.data  prune=0.999
+clayff_oplsaa/basal/nanpingite_001.data  prune=0.999
+clayff_oplsaa/basal/phlogopite_1M_001.data  prune=0.999
+clayff_oplsaa/basal/pyrophyllite_2_001.data  prune=0.999
+clayff_oplsaa/basal/pyrophyllite_001.data  prune=0.999
+clayff_oplsaa/basal/talc_001.data  prune=0.999
+clayff_oplsaa/basal/montmorillonite_dry_Na_001.data  prune=0.999
+clayff_oplsaa/water/water.data  prune=0.99
+clayff_oplsaa/water/NaCl.data  prune=0.99
+clayff_oplsaa/water/KCl.data  prune=0.99
+clayff_oplsaa/water/CsCl.data  prune=0.99
+clayff_oplsaa/water/CaCl2.data  prune=0.99
+clayff_oplsaa/water/BaCl2.data  prune=0.99
+clayff_oplsaa/water/vac_water_film.data  prune=0.99
+clayff_oplsaa/water/vac_water_film_thin.data  prune=0.99
+clayff_oplsaa/water/vac_water_droplet.data  prune=0.99
+clayff_oplsaa/water/vac_NaCl_film.data  prune=0.99
+clayff_oplsaa/water/vac_KCl_film.data  prune=0.99
+clayff_oplsaa/water/vac_CsCl_film.data  prune=0.99
+clayff_oplsaa/water/vac_CaCl2_film.data  prune=0.99
+clayff_oplsaa/water/vac_BaCl2_film.data  prune=0.99
