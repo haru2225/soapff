@@ -5,7 +5,7 @@ Run from the root of the repository with soapff importable (`PYTHONPATH=src`).
 - `pca.py`: Fig. 3, the SOAP vectors of the O rows of the `clayff` table (Na montmorillonite) and of the `oplsaa` table (the
   O of the 88 references) on their first two principal components, coloured by type (the type is not used to find the
   axes). Writes `figs/pca.png` and `figdata/pca/numbers.json`.
-- `soap_params.py`: Fig. 6, the typing with `r_cut`, `n_max` and `l_max` changed one at a time from those of the bundled
+- `soap_params.py`: Fig. 7, the typing with `r_cut`, `n_max` and `l_max` changed one at a time from those of the bundled
   libraries (`sigma` and the depth of 4 bonds kept). For each setting, a library that extends the bundled one with this
   `[soap]` (its table computed again), and the test structures typed with it:
   - `clayff`: the 10 (001) interfaces with water (`../interfaces_001_water`) and the 6 water shapes (`../interface_shapes`),

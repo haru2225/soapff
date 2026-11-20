@@ -17,7 +17,7 @@ another type or charge).
 
     SOAPFF_CACHE=WORK/cache PYTHONPATH=src python examples/paper_figures/soap_params.py run GROUP WORK   (GROUP: clayff, clayff_edge, oplsaa)
     python examples/paper_figures/soap_params.py summary WORK      -> figdata/soap_params/results.json
-    python examples/paper_figures/soap_params.py figure          -> figs/soap_params.png (Fig. 6 of the paper)"""
+    python examples/paper_figures/soap_params.py figure          -> figs/soap_params.png (Fig. 7 of the paper)"""
 import glob
 import json
 import os

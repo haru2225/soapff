@@ -1,0 +1,16 @@
+{
+ "structure": "extra/PMMA_10mer_rdkit.extxyz",
+ "smiles": "CC(C)(C(=O)OC)CC(C)(C(=O)OC)CC(C)(C(=O)OC)CC(C)(C(=O)OC)CC(C)(C(=O)OC)CC(C)(C(=O)OC)CC(C)(C(=O)OC)CC(C)(C(=O)OC)CC(C)(C(=O)OC)CC(C)(C(=O)OC)",
+ "atoms": 152,
+ "wrong_type": 0,
+ "wrong_charge": 0,
+ "types": 11,
+ "min_similarity_soap": 0.9895,
+ "net_charge": 0.0,
+ "terms": {
+  "bonds": 151,
+  "angles": 280,
+  "dihedrals": 370,
+  "impropers": 0
+ }
+}

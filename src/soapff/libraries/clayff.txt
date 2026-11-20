@@ -14,8 +14,11 @@
 #
 # References: the 11 bulk layered minerals, their basal (0 0 1) slabs in vacuum, water and the ions (LAMMPS data files with the
 # ClayFF type names in the comments of Masses).  Their bonds: the O-H bonds of the files and, as ClayFF has no metal-O bond,
-# each Si, Al, Mg bonded to the O within 2.5 A (4 or 6 O within 2.19 A, the next O beyond 3.14 A).  The crystals are kept
-# whole (prune=1.0), the slab rows are pruned at similarity 0.999, the water rows at 0.99.  To add a mineral, make your own library:
+# each Si, Al, Mg bonded to the O within 2.5 A (4 or 6 O within 2.19 A, the next O beyond 3.14 A).  A row is dropped when a row
+# already kept (same element, type and charge) is at least as similar as its prune: prune=1.0 drops only identical rows (the
+# 240 atoms of brucite give 3 rows).  The slabs (0.999) and the water and ion files (0.99) come after the crystals and add no
+# row but the ow and hw of water.data (the SOAP sees only the atoms within 4 bonds, so the atoms of a slab are those of its
+# crystal), and an ion (no bond) takes the type of its element, not of a row.  To add a mineral, make your own library:
 #     soapff.new_library("myclay", extends="clayff");  soapff.add_reference("myclay", "mymineral.data")
 # (the data file of the mineral with its ClayFF types and charges, like the files in clayff/bulk/).
 
@@ -93,7 +96,7 @@ X   oh  ho   30.0 109.47
 X   ohs ho   30.0 109.47
 
 [references]
-# bulk minerals (kept whole)
+# bulk minerals (prune=1.0: only identical rows are dropped)
 clayff/bulk/brucite_bulk.data  prune=1.0
 clayff/bulk/kaolinite_bulk.data  prune=1.0
 clayff/bulk/lizerdite_bulk.data  prune=1.0
@@ -105,7 +108,7 @@ clayff/bulk/pyrophyllite_2_bulk.data  prune=1.0
 clayff/bulk/pyrophyllite_bulk.data  prune=1.0
 clayff/bulk/talc_bulk.data  prune=1.0
 clayff/bulk/montmorillonite_dry_Na.data  prune=1.0
-# basal (0 0 1) slabs in vacuum
+# basal (0 0 1) slabs in vacuum (no row added)
 clayff/basal/brucite_001.data  prune=0.999
 clayff/basal/kaolinite_001.data  prune=0.999
 clayff/basal/lizerdite_001.data  prune=0.999

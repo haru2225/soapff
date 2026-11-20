@@ -108,6 +108,7 @@ mgb X   mga  800.0 100.0
 mga X   mga  800.0 100.0
 
 [references]
+# the particle (prune=1.0: only identical rows are dropped) and the particle twice as long (no row added)
 clayff/edge/clay_montmorillonite.data  prune=1.0
 clayff/edge/clay_montmorillonite_2.data  prune=0.999
 # water and the ions of ClayFF Table 1 (in bulk water and in films and a droplet in vacuum)

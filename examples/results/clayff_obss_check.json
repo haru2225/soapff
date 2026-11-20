@@ -1,0 +1,7 @@
+{
+ "reference": "montmorillonite_dry_Na.data",
+ "changed": "Si4 -> Al (next to O8, obos)",
+ "rule_type_of_O": "obss",
+ "stopped": true,
+ "message": "2 atoms are not in the library clayff: O8: bonded to Al2 Mg1, but its type obts has Al1 Mg3 or Al1 Si1 or Al3 (similarity 0.987); O17: bonded to Al2, but its type obts has Al1 Mg3 or Al1 Si1 or Al3 (similarity 0.947).  Add a reference structure with these environments to the library (soapff.add_reference), or check the structure (missing hydrogens, overlapping molecules, close contacts)"
+}

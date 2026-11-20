@@ -29,6 +29,7 @@ The polymers are listed in `polymers.POLYMERS`:
 | `depth.py` | Types the test structures with `oplsaa` (SOAP of the atoms within 4 bonds) and with a library that keeps the atoms within 3 bonds only, and counts the types exchanged. Writes `results/depth.json`. |
 | `test_frames.py` | Types every frame of the LAMMPS melt MD (`md_lammps.py`) from its elements, coordinates and box, and compares with Foyer's types and bonds of the start. Writes `results/frames.json`. |
 | `user_library.py` | Builds a user library that extends `oplsaa` with one reference, a short PE-b-PEO (`extra/PE4_PEO3.extxyz`), and types a longer PE-b-PEO (`extra/block_PE_PEO.extxyz`) with it. Writes `results/user_library.json`. |
+| `smiles_check.py` | The check behind `../polymer_smiles.py`: the PMMA 10-mer that RDKit makes from its SMILES, typed by Foyer (`extra/PMMA_10mer_rdkit.extxyz`, written by `smiles_check.py foyer`), against soapff given its elements and positions only. Writes `results/smiles_check.json`: all 152 atoms get Foyer's type and charge. |
 | `forces_openmm.py`, `forces_lammps.py` | Compute the force on every atom twice: from Foyer's OPLS-AA in OpenMM, and from soapff's force field in LAMMPS (the LAMMPS Python module, `run 0`). Write `results/forces.json`. |
 | `md_prepare.py`, `md_lammps.py`, `md_openmm.py`, `md_density.py` | Run NPT MD of the PE, PP and PIB melts at 413 K and 1 bar, from the same start, both with soapff's force field in LAMMPS and with Foyer's force field in OpenMM. `md_lammps.py` shows how an NPT is written with the LAMMPS Python module after `soapff.build`. Write `md/` and `results/md_density.json`. |
 
@@ -46,9 +47,11 @@ cd examples/oplsaa
 python make_library_txt.py ../../src/soapff/libraries/oplsaa.txt
 python make_refs.py ../../src/soapff/libraries test
 python make_cells.py test
+python smiles_check.py foyer                   # the RDKit PMMA of ../polymer_smiles.py, typed by Foyer
 # typing (soapff)
 python test_typing.py test WORK results/typing.json
 python user_library.py extra/block_PE_PEO.extxyz extra/PE4_PEO3.extxyz WORK results/user_library.json
+python smiles_check.py WORK
 python depth.py test WORK results/depth.json
 # forces
 python forces_openmm.py test WORK/openmm.npz                          # Foyer environment

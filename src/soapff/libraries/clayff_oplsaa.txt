@@ -3277,7 +3277,7 @@ CT    CT    CT    NO     0.1125 3 180
 HC    CT    SZ    OY     0.175 3 0
 
 [references]
-# FILE [prune=S]: the polymers with the prune of [soap]; the crystals all kept, their slabs pruned at 0.999, water and ions at 0.99
+# FILE [prune=S]: the polymers with the prune of [soap]; the crystals at 1.0 (only identical rows dropped), their slabs at 0.999, water and ions at 0.99
 clayff_oplsaa/polymers/PE_5mer.extxyz
 clayff_oplsaa/polymers/PE_5mer_md413K.extxyz
 clayff_oplsaa/polymers/PE_8mer.extxyz
