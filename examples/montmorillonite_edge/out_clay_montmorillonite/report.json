@@ -1,343 +1,227 @@
 {
  "structure": "examples/montmorillonite_edge/clay_montmorillonite.extxyz",
+ "library": "src/soapff/libraries/clayff_edge.txt",
+ "library_name": "clayff_edge",
+ "table": "~/.cache/soapff/clayff_edge-e92fa1203440995c.npz",
+ "software": {
+  "soapff": "1.0.0",
+  "dscribe": "2.1.2"
+ },
  "atoms": 2292,
- "library": "src/soapff/libraries/clayff/prebuilt/library_clayff_edge.npz",
- "soap": {
-  "r_cut": 5.0,
-  "n_max": 4,
-  "l_max": 3,
-  "sigma": 0.4
- },
- "depth": 4,
- "threshold": 0.9,
- "boundary": "p p p",
- "kspace": [
-  "kspace_style pppm 1.0e-5"
- ],
- "vacuum_gap": {},
- "charges": "clayff2004",
- "water_model": "spc",
- "forcefield": {
-  "name": "Montmorillonite edge",
-  "source": "T. R. Underwood, I. C. Bourg, J. Phys. Chem. C 124, 3702 (2020)",
-  "charge": {
-   "oed": -0.95,
-   "oab": -1.1875,
-   "omb": -1.3185,
-   "oaa": -1.2875,
-   "oma": -1.4185,
-   "alb": 1.8125,
-   "mgb": 1.4675,
-   "ala": 1.8125,
-   "mga": 1.4675,
-   "ho": 0.425,
-   "oh": -0.95,
-   "ohs": -1.081,
-   "ob": -1.05,
-   "obos": -1.181,
-   "ao": 1.575,
-   "st": 2.1,
-   "mgo": 1.361,
-   "Na": 1.0
-  },
-  "lj": {
-   "oed": [
-    0.1554,
-    3.1655
-   ],
-   "oab": [
-    0.1554,
-    3.1655
-   ],
-   "omb": [
-    0.1554,
-    3.1655
-   ],
-   "oaa": [
-    0.1554,
-    3.1655
-   ],
-   "oma": [
-    0.1554,
-    3.1655
-   ],
-   "alb": [
-    1.3298e-06,
-    4.2713
-   ],
-   "mgb": [
-    9.0298e-07,
-    5.2643
-   ],
-   "ala": [
-    1.3298e-06,
-    4.2713
-   ],
-   "mga": [
-    9.0298e-07,
-    5.2643
-   ],
-   "ho": [
-    0.0,
-    0.0
-   ],
-   "oh": [
-    0.1554,
-    3.1655
-   ],
-   "ohs": [
-    0.1554,
-    3.1655
-   ],
-   "ob": [
-    0.1554,
-    3.1655
-   ],
-   "obos": [
-    0.1554,
-    3.1655
-   ],
-   "ao": [
-    1.3298e-06,
-    4.2713
-   ],
-   "st": [
-    1.8405e-06,
-    3.302
-   ],
-   "mgo": [
-    9.0298e-07,
-    5.2643
-   ],
-   "Na": [
-    0.1301,
-    2.6378
-   ]
-  },
-  "bond_oh": [
-   553.935,
-   1.0
-  ],
-  "angle_moh": [
-   30.0191,
-   109.47
-  ],
-  "angle_mom_edge": [
-   800.0,
-   100.0
-  ]
- },
  "charge_sum": 0.0,
- "below_threshold": 0,
- "min_similarity": 0.9999982714653015,
- "min_margin": 0.004674673080444336,
- "bond_lengths": {
-  "Al-O": 2.648,
-  "H-O": 1.25,
-  "Mg-O": 2.648,
-  "O-Si": 2.4147
+ "molecules": 25,
+ "molecule_kinds": {
+  "1 atoms, charge +1.0000": 24,
+  "2268 atoms, charge -24.0000": 1
  },
- "bonds": 288,
- "angles": 624,
- "type_check": {
-  "compared": 1860,
-  "differ": 0,
-  "kinds": {}
+ "min_similarity_soap": 0.9999982714653015,
+ "min_margin_soap": 0.004674673080444336,
+ "smallest_margins": [
+  {
+   "id": 130,
+   "element": "Al",
+   "type": "ala",
+   "margin": 0.00467,
+   "similarity_soap": 1.0,
+   "nearest_reference": "clay_montmorillonite.data:130"
+  },
+  {
+   "id": 117,
+   "element": "Al",
+   "type": "alb",
+   "margin": 0.00468,
+   "similarity_soap": 1.0,
+   "nearest_reference": "clay_montmorillonite.data:117"
+  },
+  {
+   "id": 137,
+   "element": "Al",
+   "type": "ala",
+   "margin": 0.0047,
+   "similarity_soap": 1.0,
+   "nearest_reference": "clay_montmorillonite.data:137"
+  },
+  {
+   "id": 118,
+   "element": "Al",
+   "type": "alb",
+   "margin": 0.0047,
+   "similarity_soap": 1.0,
+   "nearest_reference": "clay_montmorillonite.data:118"
+  },
+  {
+   "id": 128,
+   "element": "Al",
+   "type": "ala",
+   "margin": 0.00514,
+   "similarity_soap": 1.0,
+   "nearest_reference": "clay_montmorillonite.data:128"
+  }
+ ],
+ "sources": {
+  "ion": 24,
+  "soap": 2268
+ },
+ "bond_lengths": {
+  "Al-O": 2.65,
+  "H-O": 1.25,
+  "Mg-O": 2.65,
+  "O-Si": 2.41
  },
  "water_apart": {
   "molecules": 0,
   "bonds_taken_out": {}
  },
- "warnings": [],
- "roles": {
-  "mineral": 2268,
-  "water": 0,
-  "ion": 24
+ "terms": {
+  "bonds": 288,
+  "angles": 624,
+  "dihedrals": 0,
+  "impropers": 0
  },
+ "dihedrals_without_parameters": {},
+ "box": [
+  87.5065,
+  87.5065,
+  87.5065,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "boundary": "p p p",
+ "vacuum_gap": {},
+ "kspace": [
+  "kspace_style pppm 1.0e-5"
+ ],
+ "reserved_water": null,
  "per_type": {
   "Na": {
    "atoms": 24,
    "charges": [
     1.0
    ],
-   "min_similarity": 1.0,
-   "bonds": [
-    "none"
-   ]
+   "min_similarity_soap": 1.0
   },
   "ala": {
    "atoms": 20,
    "charges": [
     1.8125
    ],
-   "min_similarity": 0.9999990463256836,
-   "bonds": [
-    "O5"
-   ]
+   "min_similarity_soap": 0.9999990463256836
   },
   "alb": {
    "atoms": 10,
    "charges": [
     1.8125
    ],
-   "min_similarity": 0.9999990463256836,
-   "bonds": [
-    "O5"
-   ]
+   "min_similarity_soap": 0.9999990463256836
   },
   "ao": {
    "atoms": 162,
    "charges": [
     1.575
    ],
-   "min_similarity": 0.9999985694885254,
-   "bonds": [
-    "O6"
-   ]
+   "min_similarity_soap": 0.9999985694885254
   },
   "ho": {
    "atoms": 288,
    "charges": [
     0.425
    ],
-   "min_similarity": 0.9999985098838806,
-   "bonds": [
-    "O1"
-   ]
+   "min_similarity_soap": 0.9999985098838806
   },
   "mga": {
    "atoms": 4,
    "charges": [
     1.4675
    ],
-   "min_similarity": 0.9999994039535522,
-   "bonds": [
-    "O5"
-   ]
+   "min_similarity_soap": 0.9999994039535522
   },
   "mgb": {
    "atoms": 2,
    "charges": [
     1.4675
    ],
-   "min_similarity": 0.9999995827674866,
-   "bonds": [
-    "O5"
-   ]
+   "min_similarity_soap": 0.9999995827674866
   },
   "mgo": {
    "atoms": 18,
    "charges": [
     1.361
    ],
-   "min_similarity": 0.9999991655349731,
-   "bonds": [
-    "O6"
-   ]
+   "min_similarity_soap": 0.9999991655349731
   },
   "oaa": {
    "atoms": 20,
    "charges": [
     -1.2875
    ],
-   "min_similarity": 0.9999987483024597,
-   "bonds": [
-    "Al1 Si1"
-   ]
+   "min_similarity_soap": 0.9999987483024597
   },
   "oab": {
    "atoms": 10,
    "charges": [
     -1.1875
    ],
-   "min_similarity": 0.9999995231628418,
-   "bonds": [
-    "Al1 H1"
-   ]
+   "min_similarity_soap": 0.9999995231628418
   },
   "ob": {
    "atoms": 932,
    "charges": [
     -1.05
    ],
-   "min_similarity": 0.9999982714653015,
-   "bonds": [
-    "Al2 Si1",
-    "Si2"
-   ]
+   "min_similarity_soap": 0.9999982714653015
   },
   "obos": {
    "atoms": 88,
    "charges": [
     -1.181
    ],
-   "min_similarity": 0.9999986290931702,
-   "bonds": [
-    "Al1 Mg1 Si1"
-   ]
+   "min_similarity_soap": 0.9999986290931702
   },
   "oed": {
    "atoms": 72,
    "charges": [
     -0.95
    ],
-   "min_similarity": 0.9999986290931702,
-   "bonds": [
-    "H1 Si1"
-   ]
+   "min_similarity_soap": 0.9999986290931702
   },
   "oh": {
    "atoms": 160,
    "charges": [
     -0.95
    ],
-   "min_similarity": 0.9999986290931702,
-   "bonds": [
-    "Al2 H1"
-   ]
+   "min_similarity_soap": 0.9999986290931702
   },
   "ohs": {
    "atoms": 44,
    "charges": [
     -1.081
    ],
-   "min_similarity": 0.9999987483024597,
-   "bonds": [
-    "Al1 H1 Mg1"
-   ]
+   "min_similarity_soap": 0.9999987483024597
   },
   "oma": {
    "atoms": 4,
    "charges": [
     -1.4185
    ],
-   "min_similarity": 0.9999992251396179,
-   "bonds": [
-    "Mg1 Si1"
-   ]
+   "min_similarity_soap": 0.9999992251396179
   },
   "omb": {
    "atoms": 2,
    "charges": [
     -1.3185
    ],
-   "min_similarity": 0.9999992251396179,
-   "bonds": [
-    "H1 Mg1"
-   ]
+   "min_similarity_soap": 0.9999992251396179
   },
   "st": {
    "atoms": 432,
    "charges": [
     2.1
    ],
-   "min_similarity": 0.999998927116394,
-   "bonds": [
-    "O4"
-   ]
+   "min_similarity_soap": 0.999998927116394
   }
  },
- "consistency": [],
+ "warnings": [],
  "type_ids": {
   "ala": 1,
   "alb": 2,
@@ -382,5 +266,38 @@
   "bonds": [],
   "angles": []
  },
- "timestep_fs": 0.5
+ "timestep_fs": 0.5,
+ "bonds_not_in_force_field": {
+  "ob-st": 1544,
+  "ao-ob": 572,
+  "ao-oh": 286,
+  "obos-st": 88,
+  "ao-obos": 76,
+  "oed-st": 72,
+  "mgo-obos": 72,
+  "ao-ohs": 38,
+  "mgo-ohs": 36,
+  "alb-ob": 34,
+  "ala-oh": 34,
+  "ala-ob": 34,
+  "ala-oaa": 20,
+  "oaa-st": 20,
+  "alb-oab": 10,
+  "mgb-obos": 8,
+  "mga-ohs": 8,
+  "mga-obos": 8,
+  "alb-obos": 6,
+  "ala-obos": 6,
+  "ala-ohs": 6,
+  "mga-oma": 4,
+  "oma-st": 4,
+  "mgb-omb": 2
+ },
+ "frameworks": [
+  {
+   "molecule": 1,
+   "atoms": 2268,
+   "charge": -24.0
+  }
+ ]
 }

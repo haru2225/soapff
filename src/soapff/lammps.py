@@ -1,5 +1,5 @@
-"""The LAMMPS files of the molecular engine: system.data (atoms, charges, bonds, angles, dihedrals, impropers) and
-system.settings (units, styles, coefficients, special_bonds, kspace, and SHAKE for the rigid molecules of the library).
+"""The LAMMPS files of soapff: system.data (atoms, charges, bonds, angles, dihedrals, impropers) and system.settings (units,
+styles, coefficients, special_bonds, kspace, the walls of fixed faces, and SHAKE for the rigid molecules of the library).
 These are the force field and nothing else: minimisation, velocities, thermostats, barostats, runs and output are written
 by the user, in LAMMPS (e.g. its Python module: lmp.commands_list(system.commands()))."""
 import os
@@ -7,7 +7,7 @@ import os
 import numpy as np
 
 from soapff_cui._clayff.ff import lammps_frame
-from soapff_cui.core import kspace_setup, parse_boundary
+from soapff_cui.core import center_nonperiodic, kspace_setup, parse_boundary
 
 TIMESTEP_FS = 1.0          # recommended time step (fs) when the library gives none (report.json)
 
@@ -17,16 +17,31 @@ def _num(x):
 
 
 def write(out_dir, at, nb, types, q, topo, lib, cutoff=None, kspace=None, boundary="p p p", pair_style=None,
-          dihedral_style=None):
-    """system.data and system.settings of a typed structure; returns the type ids, the SHAKE bonds and angles and the counts"""
+          dihedral_style=None, reserve=None, log=print):
+    """system.data and system.settings of a typed structure; returns the type ids, the SHAKE bonds and angles and the counts.
+    Along a non-periodic axis the widest empty gap is moved to the box faces (the material in the middle).
+    reserve: the water of the library (molecular.water_types): its types, its bond and angle types and room for their bonds
+    are written even when the structure has no water, so that water can be added in LAMMPS."""
     from .molecular import unwrapped
     lm = lib.lammps
     bnd, periodic = parse_boundary(boundary)
-    tnames = sorted(set(types), key=lambda t: (lib.types[t]["element"], t))
+    warnings, gaps = [], {}
+    if not all(periodic):
+        at, gaps = center_nonperiodic(at, periodic)
+        for ax, g in gaps.items():
+            log(f"boundary {' '.join(bnd)}: widest empty gap along {ax} = {g:.2f} A, moved to the box faces")
+            rc = float((pair_style or lm.get("pair_style", "lj/cut/coul/long 10.0")).split()[1]) if cutoff is None else cutoff
+            if g < rc:
+                warnings.append(f"the empty gap along the non-periodic {ax} axis is only {g:.2f} A (< cutoff {rc:g} A): atoms "
+                                f"on the two faces interacted through the periodic boundary of the given structure, now they "
+                                f"do not")
+                log("WARNING " + warnings[-1])
+    rtypes = {reserve["o"], reserve["h"]} if reserve else set()
+    tnames = sorted(set(types) | rtypes, key=lambda t: (lib.types[t]["element"], t))
     tid = {t: k + 1 for k, t in enumerate(tnames)}
-    bkeys = sorted({k for _, k in topo["bonds"]})
+    bkeys = sorted({k for _, k in topo["bonds"]} | ({reserve["bond"]} if reserve else set()))
     bid = {k: i + 1 for i, k in enumerate(bkeys)}
-    akeys = sorted({k for _, k in topo["angles"]})
+    akeys = sorted({k for _, k in topo["angles"]} | ({reserve["angle"]} if reserve else set()))
     aid = {k: i + 1 for i, k in enumerate(akeys)}
     bpar = dict(lib.bonds)
     apar = dict(lib.angles)
@@ -63,6 +78,10 @@ def write(out_dir, at, nb, types, q, topo, lib, cutoff=None, kspace=None, bounda
     pos_u = unwrapped(at, nb_ff)
     frac = pos_u @ np.linalg.inv(cell)
     img = np.where(periodic, np.floor(frac), 0).astype(int)
+    cross = [k for k in range(3) if not periodic[k] and ((frac[:, k] < -1e-9).any() or (frac[:, k] >= 1.0).any())]
+    if cross:
+        raise ValueError(f"molecules cross the non-periodic boundary along {', '.join('xyz'[k] for k in cross)}: the structure has "
+                         f"no empty gap along that axis wide enough; add vacuum or use a periodic boundary")
     wrapped = at.copy()
     wrapped.positions = (frac - img) @ cell
     p, xl = lammps_frame(wrapped, wrap=False)
@@ -71,7 +90,10 @@ def write(out_dir, at, nb, types, q, topo, lib, cutoff=None, kspace=None, bounda
     L = [f"soapff: library {lib.name}, types and charges from the references (SOAP)", "",
          f"{len(at)} atoms", f"{len(tnames)} atom types", f"{len(topo['bonds'])} bonds", f"{len(bkeys)} bond types",
          f"{len(topo['angles'])} angles", f"{len(akeys)} angle types", f"{len(dihedrals)} dihedrals",
-         f"{len(dtypes)} dihedral types", f"{len(topo['impropers'])} impropers", f"{len(ikeys)} improper types", "",
+         f"{len(dtypes)} dihedral types", f"{len(topo['impropers'])} impropers", f"{len(ikeys)} improper types"]
+    if reserve:
+        L += ["2 extra bond per atom", "1 extra angle per atom", "2 extra special per atom"]
+    L += ["",
          f"0.0 {lx:.8f} xlo xhi", f"0.0 {ly:.8f} ylo yhi", f"0.0 {lz:.8f} zlo zhi"]
     if tilted:
         L.append(f"{xy:.8f} {xz:.8f} {yz:.8f} xy xz yz")
@@ -100,7 +122,7 @@ def write(out_dir, at, nb, types, q, topo, lib, cutoff=None, kspace=None, bounda
         coul, ks_lines, note = kspace_setup(kspace or lm.get("kspace_style", "pppm 1.0e-5"), bnd, periodic, tilted)
         if coul == "msm":
             ps[0] = ps[0].replace("coul/long", "coul/msm")
-    S = [f"# soapff settings: library {lib.name} ({lib.library.get('reference', lib.description)}); types and charges in "
+    S = [f"# soapff settings: library {lib.name} ({lib.reference}); types and charges in "
          f"system.data from the references of the library", "units real", "atom_style full", f"boundary {' '.join(bnd)}",
          f"pair_style {' '.join(ps)}"]
     if lm.get("pair_modify"):
@@ -132,6 +154,18 @@ def write(out_dir, at, nb, types, q, topo, lib, cutoff=None, kspace=None, bounda
         K, d, n = ipar[k]
         S.append(f"improper_coeff {iid[k]} {_num(K)} {int(round(d))} {int(round(n))}  # {'-'.join(k)}")
     S += ks_lines
+    # a fixed ('f') face would lose the atoms that reach it: they are reflected there.  A shrink-wrapped ('s') face sits on
+    # the outermost atom; between rebuilds atoms move past it and MSM stops ("Out of range atoms"): the neighbour list is
+    # rebuilt every step (on a 320-atom slab no slower than 'm' or 'f': MSM dominates the cost)
+    walls = " ".join(f"{ax}{side} EDGE" for ax, b in zip("xyz", bnd) if b != "p"
+                     for side, c in zip(("lo", "hi"), b * 2 if len(b) == 1 else b) if c == "f")
+    if walls:
+        S += ["# the fixed faces of the boundary: atoms are reflected there", f"fix wall all wall/reflect {walls}"]
+    if any("s" in b for b in bnd):
+        S += ["# shrink-wrapped faces with MSM: the neighbour list is rebuilt every step", "neigh_modify every 1 delay 0 check no"]
+        log(f"boundary {' '.join(bnd)}: 's' faces with MSM -> neighbour list rebuilt every step (neigh_modify check no)")
+    if note:
+        log(f"boundary {' '.join(bnd)}: long-range Coulomb by {note}")
     # SHAKE: the bonds and angles whose atoms are all of the rigid types (rigid water: part of the model).  LAMMPS keeps the
     # constraints as stiff restraints during a minimisation.  A single point of the flexible molecule leaves it out
     # (System.commands(rigid=False), or unfix rigid).
@@ -146,4 +180,6 @@ def write(out_dir, at, nb, types, q, topo, lib, cutoff=None, kspace=None, bounda
     return dict(type_ids=tid, elements=[lib.types[t]["element"] for t in tnames], shake_bonds=shake_b, shake_angles=shake_a,
                 nbonds=len(topo["bonds"]), nangles=len(topo["angles"]), ndihedrals=len(dihedrals),
                 nimpropers=len(topo["impropers"]), kspace=ks_lines, kspace_note=note, tilted=tilted, nmol=int(mol.max()),
-                box=[lx, ly, lz, xy, xz, yz])
+                box=[lx, ly, lz, xy, xz, yz], gaps=gaps, warnings=warnings,
+                reserved_water=dict(types=[tid[reserve["o"]], tid[reserve["h"]]], bond=bid[reserve["bond"]],
+                                    angle=aid[reserve["angle"]]) if reserve else None)

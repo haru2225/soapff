@@ -31,8 +31,8 @@ for depth in (4, 3):
     else:                                        # the [soap] of oplsaa with another depth
         soap = dict(soapff.load_library("oplsaa").soap, depth=depth)
         lib = os.path.join(W, f"oplsaa_depth{depth}.txt")
-        open(lib, "w").write(f"[library]\nname = oplsaa_depth{depth}\nextends = oplsaa\ndescription = oplsaa with depth "
-                             f"{depth}\n\n[soap]\n" + "".join(f"{k} = {v}\n" for k, v in soap.items()))
+        open(lib, "w").write(f"[library]\nname = oplsaa_depth{depth}\nextends = oplsaa\n\n[soap]\n"
+                             + "".join(f"{k} = {v}\n" for k, v in soap.items()))
     wrong_t = wrong_q = n_atoms = 0
     per, pairs, stops, smin = {}, collections.Counter(), {}, 1.0
     for f in tests:

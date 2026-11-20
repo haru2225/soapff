@@ -87,6 +87,28 @@ def start(s, log="log.lammps", screen=False, cmdargs=()):
     return lmp
 
 
+def run(s, commands, name="in.min", log="log.min"):
+    """the force field of `s` and `commands`, written to the input `name` in its folder (input_file) and run with the LAMMPS
+    Python module, or, without it, with the lmp executable of $LMP (lmp -in NAME -log LOG in the folder); the log in the
+    folder.  Returns the path of the log."""
+    input_file(s, commands, name)
+    try:
+        from lammps import lammps
+    except ImportError:
+        lammps = None
+    if lammps is not None:
+        lmp = lammps(cmdargs=["-log", os.path.join(s.out_dir, log), "-screen", "none"])
+        lmp.commands_list(s.commands() + list(commands))
+        lmp.close()
+    else:
+        import subprocess
+        exe = os.environ.get("LMP")
+        if not exe:
+            raise RuntimeError("no LAMMPS: pip install 'lammps[mpi]' (the Python module), or set LMP to the lmp executable")
+        subprocess.run([exe, "-in", name, "-log", log, "-screen", "none"], cwd=s.out_dir, check=True)
+    return os.path.join(s.out_dir, log)
+
+
 def input_file(s, commands, name="in.lammps"):
     """the same commands as a LAMMPS input in the folder of `s` (for a run on another computer: lmp -in in.lammps there);
     paths are made relative to the folder"""

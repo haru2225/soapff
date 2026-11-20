@@ -23,7 +23,7 @@ lmp.get_thermo("density")
 - **Structure files:** any format ASE reads (cif, xyz, extxyz, pdb, POSCAR, ...), a LAMMPS data file, or an `ase.Atoms`.
 - **Libraries:** text files. Each one names the reference structures and gives the force-field parameters. Users can extend a bundled library or write their own.
 - **Bundled libraries:** ClayFF (clay minerals), OPLS-AA (polymers: 11 polymers and their copolymers, types and charges as Foyer gives them), TIP3P and SPC/E (water and ions).
-- **Checks:** an atom whose environment is not in the library (similarity below the threshold) stops the build with an error that names the atom. So does a molecule whose charge is not a whole number (molecular engine): when the charges belong to the types, as in OPLS-AA and the water models, a mistyped atom of another charge shows there even when its similarity is above the threshold (a junction of a block copolymer, a conformation the references do not cover). The error lists the atoms of that molecule with the smallest margins first. The similarity of every atom, and its margin over the nearest reference with another type or charge, go to `charges.csv`; the atoms with the smallest margins are listed in `report.json`. In the tests of `examples/oplsaa`, soapff either wrote a force field with every atom right or stopped. What these checks cannot see is a confusion of two types with the same charge, and, in the clayff engine, of two types with the same bonded elements and another charge (the octahedral Mg mgo and mgh). The net charge of the structure is written to `report.json` (`charge_sum`) and the log, not checked: a clay layer or particle may carry a charge.
+- **Checks:** an atom whose environment is not in the library (similarity below the threshold) stops the build with an error that names the atom. So does a molecule whose charge is not a whole number: when the charges belong to the types, as in OPLS-AA and the water models, a mistyped atom of another charge shows there even when its similarity is above the threshold (a junction of a block copolymer, a conformation the references do not cover). The error lists the atoms of that molecule with the smallest margins first. The similarity of every atom, and its margin over the nearest reference with another type or charge, go to `charges.csv`; the atoms with the smallest margins are listed in `report.json`. In the tests of `examples/oplsaa`, soapff either wrote a force field with every atom right or stopped. What these checks cannot see is a confusion of two types with the same charge, and, in a mineral layer of ClayFF (not checked for its charge), of two types with the same bonded elements and another charge (the octahedral Mg mgo and mgh). The net charge of the structure is written to `report.json` (`charge_sum`) and the log, not checked: a clay layer or particle may carry a charge.
 
 ## Installation
 
@@ -61,6 +61,7 @@ Options of `soapff.build`:
 
 - `cutoff`, `kspace` (e.g. `"ewald 1.0e-5"`), `boundary` (e.g. `"p p f"`: MSM or the slab correction is chosen for the non-periodic faces, and atoms are reflected at fixed faces).
 - `strict=False`: write the force field even when some atoms are not in the library.
+- `reserve_water=True`: the water types, bond and angle of the library are written even when the structure has no water, so that water can be added in LAMMPS (the swelling curve, `examples/montmorillonite_swelling`).
 - `padding`: a structure without a cell, such as an xyz file or a PDB file without CRYST1, is put in a box this much larger (Å).
 
 The command `soapff` does the same:
@@ -75,36 +76,36 @@ soapff add-reference mine PE4_PEO3.extxyz
 
 ## Libraries
 
-| Library | Engine | References | Force field |
-|---|---|---|---|
-| `clayff` | clayff | Bulk crystals of 11 layered minerals and their (001) slabs | ClayFF (Cygan et al. 2004), flexible SPC water |
-| `clayff_edge` | clayff | Montmorillonite particle with edges | Underwood & Bourg (2020) |
-| `clayff_oplsaa` | molecular | 11 layered mineral crystals and their (001) slabs, water and the ions of ClayFF, and 11 polymers typed by Foyer, in its own folder (124 structures) | ClayFF and OPLS-AA as one force field: Lorentz–Berthelot for every pair, the 1-4 pairs of OPLS-AA × 0.5 (as Szczerba & Kalinichev 2016) |
-| `oplsaa` | molecular | 88 oligomer structures of 11 polymers (5-mers, 8-mers and MD frames at 413 K), typed by Foyer | OPLS-AA (Jorgensen et al. 1996; from Foyer 1.3.0 `oplsaa.xml`; the bonded terms by class, the Ryckaert–Bellemans torsions as `dihedral_style fourier`) |
-| `tip3p` | molecular | Water, NaCl and 14 ions | TIP3P (rigid), Joung–Cheatham 2008 monovalent and Li–Merz 2013 divalent ions |
-| `spce` | molecular | The same, for SPC/E | SPC/E (rigid) and its ions |
+| Library | References | Force field |
+|---|---|---|
+| `clayff` | Bulk crystals of 11 layered minerals and their (001) slabs | ClayFF (Cygan et al. 2004), flexible SPC water |
+| `clayff_edge` | Montmorillonite particle with edges | Underwood & Bourg (2020) |
+| `clayff_oplsaa` | 11 layered mineral crystals and their (001) slabs, water and the ions of ClayFF, and 11 polymers typed by Foyer, in its own folder (124 structures) | ClayFF and OPLS-AA as one force field: Lorentz–Berthelot for every pair, the 1-4 pairs of OPLS-AA × 0.5 (as Szczerba & Kalinichev 2016) |
+| `oplsaa` | 88 oligomer structures of 11 polymers (5-mers, 8-mers and MD frames at 413 K), typed by Foyer | OPLS-AA (Jorgensen et al. 1996; from Foyer 1.3.0 `oplsaa.xml`; the bonded terms by class, the Ryckaert–Bellemans torsions as `dihedral_style fourier`) |
+| `tip3p` | Water, NaCl and 14 ions | TIP3P (rigid), Joung–Cheatham 2008 monovalent and Li–Merz 2013 divalent ions |
+| `spce` | The same, for SPC/E | SPC/E (rigid) and its ions |
 
 **Library files.** Each library is a text file (`src/soapff/libraries/*.txt`) with these sections:
 
-- `[library]`: name, engine, `extends`, description.
+- `[library]`: `name`, `reference` (the papers of the force field) and, for a library built on another, `extends`.
 - `[soap]`, `[lammps]`: the descriptor (and the similarity threshold) and the LAMMPS styles.
 - `[bond_lengths]`: the bond length of each pair of elements (`E1 E2 r`); each must lie between the longest bond and the shortest distance not bonded of the pair in the references (checked when the table is built), and a pair not written gets the halfway value.
 - `[types]`, `[bonds]`, `[angles]`, `[dihedrals]`, `[impropers]`: the parameters, in every library (the clayff libraries too: the ClayFF values of Cygan et al. 2004, and the particle's for `clayff_edge`). The charges are those of the reference atoms.
-- `[references]`: the reference structures. These are extxyz files with the per-atom columns `fftype`, `ffcharge` and (molecular engine) `bonds` (the 1-based ids of the bonded atoms), or LAMMPS data files with the type names in the Masses section and a Bonds section.
+- `[references]`: the reference structures. These are extxyz files with the per-atom columns `fftype`, `ffcharge` and `bonds` (the 1-based ids of the bonded atoms), or LAMMPS data files with the type names in the Masses section and a Bonds section (Si, Al, Mg, Fe and Ti are bonded to the O within 2.5 Å).
 
 The docstring of `soapff.library` gives the full format. Libraries are looked up by name in `$SOAPFF_LIBRARY_PATH`, then `~/.soapff/libraries`, then the bundled folder (`soapff list --paths`).
 
 **Your own library.** First, `soapff.new_library("mine", extends="oplsaa")` writes `~/.soapff/libraries/mine.txt`. Then `soapff.add_reference("mine", molecule, types=[...], charges=[...], bonds=[...])` adds a reference, and any parameter rows that are needed go into the text file. The table of reference environments is computed once and cached in `~/.cache/soapff`. It is computed again when the references or the descriptor settings change. See `examples/oplsaa/user_library.py` (the junction of a block copolymer, extending `oplsaa`).
 
-**Engines.**
-Both engines type in the same two steps:
+**Typing.**
+Every library is typed and written the same way, in two steps:
 1. **Bonds from the bond lengths.** Two atoms are bonded when they are nearer than the bond length of their pair of elements. The bond lengths are written in the library file (`[bond_lengths]`). In the bundled libraries they are halfway between the longest bond and the shortest distance of two atoms that are not bonded, both measured in the references (clayff: Si–O 2.41, Al–O 2.66, Mg–O 2.70 Å; oplsaa: C–C 1.99, C–H 1.51, C–O 1.86 Å), and H–O is 1.25 Å, set by hand: in MD at 300 K the H…O of a hydrogen bond comes to 1.43 Å, nearer than in any reference, and an O–H bond stretches to 1.12 Å. When the table is built, each written length is checked to lie between those two distances in the references, so a reference added that a length does not fit stops the build. A pair bonded in the references but not written gets the halfway value, which the log gives as a row to copy into the file. Elements that have no bond in the references (the ions) get no bonds. If a pair's bonds and non-bonded distances overlap in the references, the table is not built.
    The water molecules (an O bonded to two H only, each H to this O only) are then taken apart from the rest: their bonds to other atoms are taken out, so the mineral or the polymer is typed without the water and each water molecule on its own. A water O can come nearer than the Al–O or Mg–O bond length to an edge Al or Mg (1.92 Å in the minimised nano-gouge, `examples/nanogouge`), and ClayFF bonds it to nothing. This only decides which bonds are taken out; the water's type still comes from step 2. It is used when the only O with two H in the references is that of water (all bundled libraries); a library with another such O (an edge M–OH₂) does not take water apart. `report.json` lists the bonds taken out (`water_apart`).
 2. **Type and charge from the SOAP of the covalent neighbourhood.** The SOAP of each atom is computed on the atoms within 4 bonds only, so other chains, the next layer, the water and the ions are left out. The nearest reference row of the same element gives the type and the charge.
 
-The build stops when an atom is below the similarity threshold, when an atom's bonds are not those of its type in the references, when a molecule's charge is not a whole number (molecular engine), or when an element is not in the library.
-- **clayff:** the ClayFF writer (`soapff_cui`). The mineral, the water and the ions are typed in one build (the water taken apart in step 1); the O–H bonds and the M–O–H angles of ClayFF come from the bonds of step 1, their constants and the LJ from the tables of the library file.
-- **molecular:** any force field with bonds, angles, dihedrals and impropers, given by type or by class. The bonds of step 1 of a type that no row of `[bonds]` names (the metals and bridging O of ClayFF in `clayff_oplsaa`) only give the SOAP its neighbourhood: they are not bonds of the force field, and the molecule they hold (a mineral layer, whose ClayFF charges do not add up to a whole number) is not checked for its charge. The charge comes with the type from the nearest row, so it is right only when the charge of a type is decided within 4 bonds (as in OPLS-AA, the water models and ClayFF); a force field that gives each residue its own charges (protein force fields) is outside what soapff types.
+The build stops when an atom is below the similarity threshold, when an atom's bonds are not those of its type in the references, when a molecule's charge is not a whole number, or when an element is not in the library.
+
+**Force field.** Any force field with bonds, angles, dihedrals and impropers, given by type or by class. The bonds of step 1 of a type that no row of `[bonds]` names (the metals and bridging O of ClayFF) only give the SOAP its neighbourhood: they are not bonds of the force field, and the molecule they hold (a mineral layer, whose ClayFF charges do not add up to a whole number) is not checked for its charge. An angle on such a bond (the M–O–H of ClayFF, the edge M–O–M of `clayff_edge`) is written when a row of `[angles]` gives it. The charge comes with the type from the nearest row, so it is right only when the charge of a type is decided within 4 bonds (as in OPLS-AA, the water models and ClayFF); a force field that gives each residue its own charges (protein force fields) is outside what soapff types.
 
 ## Test cases
 
@@ -124,10 +125,11 @@ Besides soapff, the clay examples need packmol (water) and pymatgen (surfaces). 
 ## Layout
 
 ```
-src/soapff/              the package: api.py (build, System), library.py (library files), molecular.py, clayff.py,
-                         lammps.py (system.data and system.settings of the molecular engine)
-src/soapff/libraries/    the bundled libraries (*.txt), their reference structures and the prebuilt ClayFF tables
-src/soapff_cui/          the ClayFF writer used by the clayff engine (SOAP table, ClayFF types and charges, water, surfaces)
+src/soapff/              the package: api.py (build, System), library.py (library files), molecular.py (the typing),
+                         lammps.py (system.data and system.settings)
+src/soapff/libraries/    the bundled libraries (*.txt) and their reference structures
+src/soapff_cui/          ClayFF helpers of the examples (the ClayFF types of the bond-graph rule, water and ions with
+                         packmol, surfaces)
 examples/                quick start, your own library, short MD checks, and all the test cases (examples/README.md); the MD
                          of the clay examples (clay_md.py)
 ```

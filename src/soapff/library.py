@@ -5,25 +5,26 @@ Format (one file per library; '#' starts a comment):
 
     [library]                    key = value
     name        = oplsaa
-    engine      = molecular      # molecular (every term from the bonds) or clayff (soapff_cui: the terms of ClayFF only)
-    extends     = NAME           # optional: start from another library (its references and parameters come first)
-    description = ...
     reference   = ...            # the papers of the force field
-    [soap]                       key = value: r_cut, n_max, l_max, sigma (dscribe SOAP), depth (molecular: atoms within
-                                 # `depth` bonds), prune (similarity above which a reference row adds nothing), threshold,
-                                 # charge_tolerance (molecular: a molecule whose charge is further than this from a whole
-                                 # number stops the build; default 0.001 e)
+    extends     = NAME           # optional: start from another library (its references and parameters come first)
+    [soap]                       key = value: r_cut, n_max, l_max, sigma (dscribe SOAP), depth (atoms within `depth`
+                                 # bonds), prune (similarity above which a reference row adds nothing), threshold,
+                                 # charge_tolerance (a molecule whose charge is further than this from a whole number
+                                 # stops the build; default 0.001 e)
     [lammps]                     key = value: pair_style, pair_modify, kspace_style, bond_style, angle_style, dihedral_style,
                                  # improper_style, special_bonds, rigid (types made rigid by SHAKE), timestep (fs)
     [types]        type element mass epsilon sigma [class]       (kcal/mol, A; LJ 12-6, sigma not R_min; class: optional,
                                                                   a name the rows below may use in place of the type, as
                                                                   the classes of OPLS-AA; default the type itself.  The
-                                                                  charges are those of the reference atoms.  Every engine
-                                                                  takes its parameters from these tables; molecular: a type
-                                                                  that no row of [bonds] names has no bond in the force
-                                                                  field, its bonds of step 1 only shape the SOAP)
+                                                                  charges are those of the reference atoms.  A type that
+                                                                  no row of [bonds] names has no bond in the force field
+                                                                  (the metals and bridging O of ClayFF): its bonds of step
+                                                                  1 only shape the SOAP)
     [bonds]        t1 t2 K r0                                    (E = K (r - r0)^2; kcal/mol/A^2, A)
-    [angles]       t1 t2 t3 K theta0                             (E = K (theta - theta0)^2; kcal/mol/rad^2, deg)
+    [angles]       t1 t2 t3 K theta0                             (E = K (theta - theta0)^2; kcal/mol/rad^2, deg; an
+                                                                  angle on two bonds of the force field needs a row, one on
+                                                                  a bond of step 1 only (M-O-H of ClayFF) is written when a
+                                                                  row names it)
     [dihedrals]    t1 t2 t3 t4 K1 n1 d1 [K2 n2 d2 ...]           (E = sum K [1 + cos(n phi - d)]; kcal/mol, deg; X = any)
     [impropers]    t1 t2 tc t4 K d n                             (tc: the central atom, bonded to the three others;
                                                                   E = K [1 + d cos(n phi)], LAMMPS cvff; X = any)
@@ -34,9 +35,10 @@ Format (one file per library; '#' starts a comment):
                                                                   pair bonded in the references and not written gets the
                                                                   halfway value, and the log gives it as a row to copy here)
     [references]   FILE [prune=S]                                (paths relative to this file: extxyz with the per-atom
-                                                                  columns fftype, ffcharge and (molecular) bonds, the
+                                                                  columns fftype, ffcharge and bonds, the
                                                                   1-based ids of the bonded atoms; or a LAMMPS data file
-                                                                  with the type names in the comments of Masses and Bonds)
+                                                                  with the type names in the comments of Masses and Bonds;
+                                                                  Si, Al, Mg, Fe and Ti are bonded to the O within 2.5 A)
 
 Libraries are found by name in $SOAPFF_LIBRARY_PATH, ~/.soapff/libraries and the libraries bundled with soapff (in this
 order), or given as a path.  The table of SOAP vectors of the references is computed once and kept in ~/.cache/soapff
@@ -48,8 +50,9 @@ import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BUNDLED = os.path.join(HERE, "libraries")
-# changes when the way the table of a library is computed changes (per engine: the prebuilt ClayFF tables stay valid)
-DESCRIPTOR_VERSION = {"clayff": "3", "molecular": "5"}  # molecular 5: the prune= of each reference
+# changes when the way the table of a library is computed changes (6: one way for every library, no engines)
+DESCRIPTOR_VERSION = "6"
+LIBRARY_KEYS = ("name", "reference", "extends")
 KEYVALUE = ("library", "soap", "lammps")
 TABLES = ("types", "bonds", "angles", "dihedrals", "impropers", "bond_lengths", "references")
 
@@ -84,7 +87,7 @@ def find(name):
 
 
 def available():
-    """[{name, path, engine, description}] of every library that can be given by name (the first of a name wins)"""
+    """[{name, path, reference}] of every library that can be given by name (the first of a name wins)"""
     out, seen = [], set()
     for d in search_path():
         if not os.path.isdir(d):
@@ -96,12 +99,8 @@ def available():
                 raw = parse(os.path.join(d, f))
             except LibraryError:
                 continue
-            lib = raw["library"]
-            if lib.get("hidden", "no") == "yes":
-                continue
             seen.add(f[:-4])
-            out.append(dict(name=f[:-4], path=os.path.join(d, f), engine=lib.get("engine", "molecular"),
-                            description=lib.get("description", "")))
+            out.append(dict(name=f[:-4], path=os.path.join(d, f), reference=raw["library"].get("reference", "")))
     return out
 
 
@@ -152,14 +151,11 @@ class Library:
         if self.path in _chain:
             raise LibraryError(f"{path}: 'extends' makes a loop ({' -> '.join(_chain + (self.path,))})")
         raw = parse(self.path)
-        here = os.path.dirname(self.path)
-        kv = raw["library"]
-        # the keys that name files are made absolute here (relative to the file that declares them)
-        if "forcefield" in kv:
-            raise LibraryError(f"{self.path}: [library] forcefield = DATA SETTINGS is no longer used: write the parameters in "
-                               f"[types], [bonds], [angles] and [lammps] of the library file")
-        if "prebuilt" in kv:
-            kv["prebuilt"] = _resolve(kv["prebuilt"], here)
+        bad = sorted(set(raw["library"]) - set(LIBRARY_KEYS))
+        if bad:
+            raise LibraryError(f"{self.path}: [library] takes {', '.join(LIBRARY_KEYS)} only, not {', '.join(bad)} (soapff "
+                               f"has no engines: every library is typed and written the same way, its force field in "
+                               f"[types], [bonds], [angles], [dihedrals], [impropers] and [lammps])")
         parent = raw["library"].get("extends")
         if parent:
             base = Library(find(parent) if not os.path.isfile(os.path.join(os.path.dirname(self.path), parent))
@@ -168,10 +164,6 @@ class Library:
             for s in KEYVALUE:
                 merged[s].update(raw[s])
             merged["library"].pop("extends", None)
-            merged["library"].pop("prebuilt", None)            # a prebuilt table is that of the parent only
-            merged["library"].pop("prebuilt_sha", None)
-            merged["library"].pop("prebuilt_dscribe", None)
-            merged["library"].pop("hidden", None)
             # rows of this file first (they win over the parent's for the same types), then the parent's
             tables = {s: raw[s] + base._rows[s] for s in TABLES if s != "references"}
             tables["references"] = base._rows["references"] + raw["references"]
@@ -184,13 +176,10 @@ class Library:
         for s in KEYVALUE:
             setattr(self, s, merged[s])
         self.name = self.library.get("name") or os.path.basename(self.path)[:-4]
-        self.engine = self.library.get("engine", "molecular")
-        if self.engine not in ("molecular", "clayff"):
-            raise LibraryError(f"{self.path}: engine must be molecular or clayff, got {self.engine!r}")
-        self.description = self.library.get("description", "")
+        self.reference = self.library.get("reference", "")
         self.references = self._references()
         self.bond_lengths = self._bond_lengths()
-        # the parameters of the force field (every engine: the clayff engine writes the ClayFF terms of its rules with them)
+        # the parameters of the force field
         self.types = self._types()
         self.bonds = self._table("bonds", 2, 2)
         self.angles = self._table("angles", 3, 2)
@@ -198,7 +187,7 @@ class Library:
         self.impropers = self._table("impropers", 4, 3)
 
     def __repr__(self):
-        return f"<soapff Library {self.name} ({self.engine}, {len(self.references)} references) {self.path}>"
+        return f"<soapff Library {self.name} ({len(self.references)} references) {self.path}>"
 
     # ------------------------------------------------------------------------------------------- tables
     def _references(self):
@@ -267,34 +256,19 @@ class Library:
         return dict(r_cut=float(s.get("r_cut", 5.0)), n_max=int(s.get("n_max", 4)), l_max=int(s.get("l_max", 3)),
                     sigma=float(s.get("sigma", 0.4)))
 
-    def recipe(self, software=True):
-        """everything the table of the library depends on (its hash names the cached table), with the version of dscribe
-        (software=False: without it, for the prebuilt tables, whose dscribe version is checked on its own)"""
+    def recipe(self):
+        """everything the table of the library depends on (its hash names the cached table), with the version of dscribe"""
         keep = {k: v for k, v in self.soap.items() if k not in ("threshold", "charge_tolerance")}
-        ff = []                 # (the files of the former [library] forcefield: the parameters are read at every build)
-        return dict(engine=self.engine, version=DESCRIPTOR_VERSION[self.engine], soap=keep,
-                    forcefield=ff,
+        return dict(version=DESCRIPTOR_VERSION, soap=keep,
                     references=[dict(sha=_sha(r["path"]), **{k: v for k, v in r.items() if k != "path"})
                                 for r in self.references],
-                    types=sorted(self.types) if self.engine == "molecular" else None,
-                    bond_lengths=sorted(self.bond_lengths.items()),
-                    **(dict(dscribe=dscribe_version()) if software else {}))
+                    types=sorted(self.types), bond_lengths=sorted(self.bond_lengths.items()), dscribe=dscribe_version())
 
-    def recipe_sha(self, software=True):
-        return hashlib.sha256(json.dumps(self.recipe(software), sort_keys=True).encode()).hexdigest()
+    def recipe_sha(self):
+        return hashlib.sha256(json.dumps(self.recipe(), sort_keys=True).encode()).hexdigest()
 
     def table_path(self, build=True, log=print):
-        """the npz table of the library (the bond lengths and the SOAP rows): the prebuilt one when the
-        recipe is unchanged, else the cached one, built when missing"""
-        pre = self.library.get("prebuilt")
-        if pre and self.library.get("prebuilt_sha", "") == self.recipe_sha(software=False)[:16] and os.path.isfile(pre):
-            v = self.library.get("prebuilt_dscribe")
-            if v and v != dscribe_version() and self.path not in _WARNED:
-                _WARNED.add(self.path)
-                log(f"WARNING library {self.name}: the prebuilt table was checked with dscribe {v}, this is dscribe "
-                    f"{dscribe_version()}; if its SOAP vectors differ, the similarities differ (delete prebuilt_sha in "
-                    f"{self.path} to compute the table again)")
-            return pre
+        """the npz table of the library (the bond lengths and the SOAP rows), computed once and kept in the cache"""
         sha = self.recipe_sha()
         out = os.path.join(cache_dir(), f"{self.name}-{sha[:16]}.npz")
         if not os.path.isfile(out):
@@ -303,16 +277,10 @@ class Library:
             log(f"soapff: library {self.name}: computing the SOAP table of {len(self.references)} references "
                 f"(once; kept in {out})")
             tmp = out[:-4] + f".tmp{os.getpid()}.npz"
-            if self.engine == "clayff":
-                from .clayff import build_table
-            else:
-                from .molecular import build_table
+            from .molecular import build_table
             build_table(self, tmp, log=log)
             os.replace(tmp, out)
         return out
-
-
-_WARNED = set()
 
 
 def dscribe_version():
@@ -328,18 +296,6 @@ def software_versions():
     """the versions of soapff and dscribe, for report.json"""
     from . import __version__
     return dict(soapff=__version__, dscribe=dscribe_version())
-
-
-def _resolve(spec, base):
-    """a path relative to the library file, or pkg:PACKAGE/rel/path inside an installed package"""
-    if spec.startswith("pkg:"):
-        pkg, rel = spec[4:].split("/", 1)
-        import importlib.util
-        mod = importlib.util.find_spec(pkg)
-        if mod is None or not mod.submodule_search_locations:
-            return ""
-        return os.path.join(list(mod.submodule_search_locations)[0], rel)
-    return spec if os.path.isabs(spec) else os.path.join(base, spec)
 
 
 def load(name_or_path):

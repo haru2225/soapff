@@ -3,8 +3,9 @@
 made with soapff (paper: test (6) and Fig. "Meng"): the (0 0 1) slab of dry Na montmorillonite (the bulk reference of the
 clayff library, src/soapff/libraries/clayff/bulk/; pymatgen, the vacuum above it) with c set to 201 A, repeated 20 x 12
 (206.9 x 215.5 A); water, Na+ and Cl- inside one sphere (packmol: inside sphere) holding 9171 molecules at 1 g/cm3 (radius
-40.3 A), its bottom 5 A above the surface; the force field (bundled clayff library).  The structure is large (105,977
-atoms); packmol's xyz files are written but not kept in the repository.
+40.3 A), its bottom 5 A above the surface; the force field (soapff.build("clayff", ...)), compared with the right answer
+(the ClayFF types of the bond-graph rule and Table 1 charges, soapff_cui.core.clayff_answer).  The structure is large
+(105,977 atoms); packmol's xyz files are written but not kept in the repository.  A structure.extxyz kept is used again.
 
     python run.py      (with a Python where soapff is installed; packmol must be installed; ~5 minutes)
                        ->  paper/ (structure.extxyz; soapff's system.data, system.settings, charges.csv, report.json;
@@ -17,17 +18,20 @@ import time
 import ase.io
 import numpy as np
 
+import soapff
 from soapff_cui import core, surfaces, water as W
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REFS = os.path.join(HERE, "..", "..", "src", "soapff", "libraries", "clayff", "bulk")
-LIB = os.path.join(HERE, "..", "..", "src", "soapff", "libraries", "clayff", "prebuilt", "library_clayff_bulk.npz")
 N_WATER, N_SALT, GAP = 9171, 112, 5.0
 
 
 def build():
     t0 = time.time()
     d = os.path.join(HERE, "paper")
+    f = os.path.join(d, "structure.extxyz")
+    if os.path.isfile(f):                                     # the structure made before by packmol
+        return f, None
     shutil.rmtree(d, ignore_errors=True)
     os.makedirs(d)
     at, q, types = core.read_lammps_data(os.path.join(REFS, "montmorillonite_dry_Na.data"))
@@ -41,20 +45,29 @@ def build():
     items = [dict(molecule="water", number=N_WATER, constraints=drop), dict(molecule="Na", number=N_SALT, constraints=drop),
              dict(molecule="Cl", number=N_SALT, constraints=drop)]
     new, rep = W.pack(slab, items, tolerance=2.0, seed=1, workdir=os.path.join(d, "packmol"), log=lambda *a: None)
-    f = os.path.join(d, "structure.extxyz")
     ase.io.write(f, new, format="extxyz")
-    t_pack = time.time() - t0
-    r = core.make(f, d, LIB, strict=True, log=lambda *a: None)
     O = new.positions[len(slab):len(slab) + 3 * N_WATER:3]
-    return dict(slab_atoms=len(slab), atoms=len(new), cell=[round(x, 2) for x in new.cell.cellpar()[:3]],
-                sphere_radius=round(float(R), 2), packmol_converged=rep["converged"],
-                placed={x["molecule"]: x["n"] for x in rep["items"]}, nearest_atom=min(x["min_distance"] for x in rep["items"]),
-                droplet_bottom_above_surface=round(float(O[:, 2].min() - z1), 2),
-                type_check_differ=r["type_check"]["differ"], charge_sum=round(r["charge_sum"], 4),
-                seconds_packmol=round(t_pack), seconds_total=round(time.time() - t0))
+    return f, dict(slab_atoms=len(slab), atoms=len(new), cell=[round(x, 2) for x in new.cell.cellpar()[:3]],
+                   sphere_radius=round(float(R), 2), packmol_converged=rep["converged"],
+                   placed={x["molecule"]: x["n"] for x in rep["items"]}, nearest_atom=min(x["min_distance"] for x in rep["items"]),
+                   droplet_bottom_above_surface=round(float(O[:, 2].min() - z1), 2), seconds_packmol=round(time.time() - t0))
+
+
+def typed(f):
+    """soapff.build("clayff") of the structure, against the right answer"""
+    t0 = time.time()
+    st = core.read_structure(f)
+    s = soapff.build("clayff", f, os.path.dirname(f), log=lambda *a: None)
+    a_t, a_q = core.clayff_answer(st)
+    return dict(**core.score(s.types, s.charges, a_t, a_q), min_similarity=round(s.report["min_similarity_soap"], 4),
+                charge_sum=round(s.report["charge_sum"], 4), seconds_soapff=round(time.time() - t0))
 
 
 if __name__ == "__main__":
-    res = dict(paper=build())
+    old = json.load(open(os.path.join(HERE, "results.json"))) if os.path.isfile(os.path.join(HERE, "results.json")) else {}
+    f, made = build()
+    keep = ("slab_atoms", "atoms", "cell", "sphere_radius", "packmol_converged", "placed", "nearest_atom",
+            "droplet_bottom_above_surface", "seconds_packmol")
+    res = dict(paper=dict(**(made or {k: old.get("paper", {}).get(k) for k in keep}), **typed(f)))
     print("paper", res["paper"], flush=True)
     json.dump(res, open(os.path.join(HERE, "results.json"), "w"), indent=1)

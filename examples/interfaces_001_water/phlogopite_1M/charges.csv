@@ -1,785 +1,785 @@
-id,element,role,clayff_type,charge,source,matched_library_type,similarity,bond_type,bonds,margin,reference_atom
-1,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:1
-2,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-3,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-4,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-5,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:5
-6,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-7,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-8,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-9,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:1
-10,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-11,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:5
-12,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-13,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-14,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-15,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-16,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-17,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-18,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-19,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-20,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-21,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-22,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-23,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-24,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-25,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-26,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-27,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-28,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-29,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-30,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-31,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-32,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-33,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:38
-34,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:39
-35,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-36,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:36
-37,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-38,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:60
-39,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:36
-40,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:36
-41,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-42,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-43,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-44,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-45,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-46,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:71
-47,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:47
-48,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-49,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:49
-50,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-51,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-52,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:46
-53,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-54,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:55
-55,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:54
-56,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-57,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:39
-58,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-59,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:36
-60,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:38
-61,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:36
-62,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:36
-63,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:60
-64,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-65,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-66,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-67,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-68,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-69,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-70,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:47
-71,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:46
-72,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-73,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:46
-74,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-75,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-76,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:49
-77,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-78,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:55
-79,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:54
-80,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-81,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-82,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:82
-83,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:83
-84,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-85,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-86,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:82
-87,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:83
-88,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-89,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:1
-90,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-91,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-92,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-93,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:5
-94,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-95,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-96,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-97,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:1
-98,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-99,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:5
-100,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-101,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-102,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-103,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-104,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-105,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-106,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-107,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-108,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-109,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-110,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-111,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-112,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-113,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-114,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-115,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-116,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-117,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-118,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-119,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-120,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-121,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:38
-122,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:39
-123,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-124,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:36
-125,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-126,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:60
-127,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:36
-128,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:36
-129,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-130,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-131,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-132,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-133,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-134,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:71
-135,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:47
-136,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-137,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:49
-138,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-139,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-140,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:46
-141,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-142,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:55
-143,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:54
-144,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-145,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:39
-146,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-147,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:36
-148,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:38
-149,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:36
-150,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:36
-151,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:60
-152,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-153,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-154,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-155,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-156,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-157,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-158,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:47
-159,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:46
-160,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-161,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:46
-162,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-163,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-164,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:49
-165,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-166,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:55
-167,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:54
-168,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-169,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-170,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:82
-171,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:83
-172,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-173,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-174,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:82
-175,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:83
-176,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-177,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:1
-178,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-179,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-180,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-181,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:5
-182,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-183,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-184,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-185,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:1
-186,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-187,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:5
-188,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-189,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-190,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-191,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-192,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-193,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-194,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-195,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-196,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-197,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-198,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-199,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-200,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-201,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-202,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-203,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-204,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-205,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-206,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-207,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-208,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-209,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:38
-210,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:39
-211,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-212,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:36
-213,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-214,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:60
-215,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:36
-216,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:36
-217,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-218,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-219,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-220,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-221,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-222,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:71
-223,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:47
-224,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-225,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:49
-226,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-227,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-228,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:46
-229,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-230,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:55
-231,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:54
-232,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-233,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:39
-234,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-235,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:36
-236,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:38
-237,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:36
-238,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:36
-239,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:60
-240,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-241,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-242,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-243,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-244,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-245,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-246,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:47
-247,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:46
-248,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-249,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:46
-250,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-251,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-252,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:49
-253,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-254,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:55
-255,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:54
-256,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-257,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-258,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:82
-259,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:83
-260,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-261,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-262,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:82
-263,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:83
-264,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-265,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:1
-266,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-267,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-268,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-269,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:5
-270,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-271,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-272,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-273,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:1
-274,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:3
-275,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:5
-276,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,phlogopite_1M_bulk.data:2
-277,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-278,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-279,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-280,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.12999,phlogopite_1M_bulk.data:13
-281,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-282,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-283,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-284,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-285,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-286,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-287,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-288,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11254,phlogopite_1M_bulk.data:17
-289,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-290,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-291,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.10906,phlogopite_1M_bulk.data:20
-292,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11105,phlogopite_1M_bulk.data:19
-293,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-294,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-295,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-296,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-297,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:38
-298,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:39
-299,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-300,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:36
-301,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-302,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:60
-303,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:36
-304,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:36
-305,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-306,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-307,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-308,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-309,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-310,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:71
-311,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:47
-312,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-313,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:49
-314,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-315,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-316,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:46
-317,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-318,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:55
-319,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:54
-320,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-321,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:39
-322,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-323,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:36
-324,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:38
-325,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04450,phlogopite_1M_bulk.data:36
-326,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04444,phlogopite_1M_bulk.data:36
-327,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04460,phlogopite_1M_bulk.data:60
-328,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04588,phlogopite_1M_bulk.data:35
-329,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-330,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-331,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04446,phlogopite_1M_bulk.data:34
-332,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04503,phlogopite_1M_bulk.data:41
-333,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-334,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:47
-335,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:46
-336,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-337,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Mg3,0.02629,phlogopite_1M_bulk.data:46
-338,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:48
-339,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02702,phlogopite_1M_bulk.data:45
-340,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02777,phlogopite_1M_bulk.data:49
-341,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-342,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:55
-343,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06525,phlogopite_1M_bulk.data:54
-344,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06590,phlogopite_1M_bulk.data:53
-345,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-346,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:82
-347,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:83
-348,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-349,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-350,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:82
-351,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49695,phlogopite_1M_bulk.data:83
-352,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.50579,phlogopite_1M_bulk.data:81
-353,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-354,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-355,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-356,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-357,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-358,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-359,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-360,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-361,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-362,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-363,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-364,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-365,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-366,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-367,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-368,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-369,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-370,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-371,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-372,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-373,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-374,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-375,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-376,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-377,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-378,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-379,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-380,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-381,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-382,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-383,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-384,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-385,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-386,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-387,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-388,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-389,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-390,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-391,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-392,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-393,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-394,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-395,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-396,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-397,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-398,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-399,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-400,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-401,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-402,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-403,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-404,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-405,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-406,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-407,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-408,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-409,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-410,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-411,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-412,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-413,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-414,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-415,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-416,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-417,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-418,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-419,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-420,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-421,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-422,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-423,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-424,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-425,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-426,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-427,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-428,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-429,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-430,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-431,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-432,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-433,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-434,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-435,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-436,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-437,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-438,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-439,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-440,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-441,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-442,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-443,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-444,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-445,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-446,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-447,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-448,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-449,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-450,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-451,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-452,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-453,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-454,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-455,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-456,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-457,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-458,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-459,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-460,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-461,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-462,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-463,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-464,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-465,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-466,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-467,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-468,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-469,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-470,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-471,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-472,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-473,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-474,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-475,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-476,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-477,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-478,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-479,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-480,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-481,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-482,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-483,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-484,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-485,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-486,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-487,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-488,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-489,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-490,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-491,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-492,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-493,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-494,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-495,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-496,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-497,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-498,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-499,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-500,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-501,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-502,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-503,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-504,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-505,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-506,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-507,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-508,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-509,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-510,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-511,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-512,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-513,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-514,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-515,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-516,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-517,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-518,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-519,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-520,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-521,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-522,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-523,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-524,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-525,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-526,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-527,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-528,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-529,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-530,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-531,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-532,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-533,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-534,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-535,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-536,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-537,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-538,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-539,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-540,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-541,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-542,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-543,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-544,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-545,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-546,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-547,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-548,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-549,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-550,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-551,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-552,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-553,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-554,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-555,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-556,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-557,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-558,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-559,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-560,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-561,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-562,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-563,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-564,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-565,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-566,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-567,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-568,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-569,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-570,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-571,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-572,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-573,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-574,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-575,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-576,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-577,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-578,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-579,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-580,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-581,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-582,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-583,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-584,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-585,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-586,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-587,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-588,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-589,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-590,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-591,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-592,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-593,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-594,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-595,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-596,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-597,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-598,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-599,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-600,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-601,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-602,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-603,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-604,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-605,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-606,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-607,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-608,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-609,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-610,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-611,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-612,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-613,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-614,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-615,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-616,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-617,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-618,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-619,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-620,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-621,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-622,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-623,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-624,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-625,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-626,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-627,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-628,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-629,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-630,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-631,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-632,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-633,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-634,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-635,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-636,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-637,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-638,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-639,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-640,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-641,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-642,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-643,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-644,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-645,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-646,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-647,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-648,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-649,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-650,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-651,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-652,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-653,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-654,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-655,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-656,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-657,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-658,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-659,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-660,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-661,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-662,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-663,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-664,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-665,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-666,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-667,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-668,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-669,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-670,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-671,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-672,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-673,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-674,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-675,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-676,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-677,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-678,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-679,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-680,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-681,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-682,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-683,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-684,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-685,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-686,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-687,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-688,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-689,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-690,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-691,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-692,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-693,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-694,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-695,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-696,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-697,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-698,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-699,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-700,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-701,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-702,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-703,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-704,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-705,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-706,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-707,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-708,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-709,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-710,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-711,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-712,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-713,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-714,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-715,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-716,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-717,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-718,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-719,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-720,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-721,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-722,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-723,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-724,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-725,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-726,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-727,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-728,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-729,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-730,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-731,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-732,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-733,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-734,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-735,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-736,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-737,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-738,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-739,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-740,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-741,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-742,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-743,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-744,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-745,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-746,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-747,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-748,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-749,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-750,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-751,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-752,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-753,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-754,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-755,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-756,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-757,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-758,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-759,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-760,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-761,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-762,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-763,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-764,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-765,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-766,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-767,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-768,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-769,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-770,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-771,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-772,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-773,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-774,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-775,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-776,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-777,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-778,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-779,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-780,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-781,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-782,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-783,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-784,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
+id,element,type,charge,molecule,source,similarity_soap,nearest_reference,margin_soap,bonded_to
+1,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:1,,33 40 41 45
+2,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:2,,35 38 42 47
+3,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:3,,36 37 48 129
+4,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:2,,37 43 49 60
+5,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:1,,38 44 50 59
+6,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:3,,39 44 51 58
+7,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:3,,57 64 65 69
+8,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:2,,58 63 70 154
+9,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:1,,60 61 72 153
+10,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:3,,35 62 68 74
+11,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:1,,34 63 68 75
+12,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:2,,33 64 67 76
+13,Al,at,+1.575000,1,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,34 39 46 130
+14,Al,at,+1.575000,1,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,40 43 52 57
+15,Al,at,+1.575000,1,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,59 62 66 71
+16,Al,at,+1.575000,1,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,36 61 67 73
+17,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,49 52 56 74 75 79
+18,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,45 47 53 54 134 136
+19,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,46 49 72 75 141 166
+20,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,47 52 53 69 74 78
+21,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,45 47 50 52 55 56
+22,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,46 48 49 51 55 56
+23,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,50 51 55 73 76 80
+24,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,69 71 77 78 158 160
+25,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,48 51 70 73 142 165
+26,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,45 50 54 71 76 77
+27,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,69 71 74 76 79 80
+28,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,70 72 73 75 79 80
+29,K,K,+1.000000,2,ion,1.00000,muscovite_1M_bulk.data:25,,
+30,K,K,+1.000000,3,ion,1.00000,muscovite_1M_bulk.data:25,,
+31,K,K,+1.000000,4,ion,1.00000,muscovite_1M_bulk.data:25,,
+32,K,K,+1.000000,5,ion,1.00000,muscovite_1M_bulk.data:25,,
+33,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,1 12
+34,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,11 13
+35,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,2 10
+36,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,3 16
+37,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,3 4
+38,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,2 5
+39,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,6 13
+40,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,1 14
+41,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,1 91
+42,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,2 101
+43,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,4 14
+44,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,5 6
+45,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,1 18 21 26
+46,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,13 19 22 106
+47,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:47,0.02777,2 18 20 21
+48,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,3 22 25 106
+49,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:49,0.02777,4 17 19 22
+50,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,5 21 23 26
+51,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,6 22 23 25
+52,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,14 17 20 21
+53,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,18 20 81 107
+54,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,18 26 82 113
+55,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,21 22 23 83
+56,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,17 21 22 84
+57,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,7 14
+58,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,6 8
+59,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,5 15
+60,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,4 9
+61,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,9 16
+62,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,10 15
+63,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,8 11
+64,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,7 12
+65,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,7 97
+66,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,15 96
+67,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,12 16
+68,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,10 11
+69,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,7 20 24 27
+70,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:47,0.02777,8 25 28 112
+71,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,15 24 26 27
+72,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,9 19 28 112
+73,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,16 23 25 28
+74,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,10 17 20 27
+75,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,11 17 19 28
+76,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:49,0.02777,12 23 26 27
+77,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,24 26 85 113
+78,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,20 24 86 107
+79,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,17 27 28 87
+80,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,23 27 28 88
+81,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,53
+82,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,54
+83,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,55
+84,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,56
+85,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,77
+86,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,78
+87,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,79
+88,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,80
+89,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:1,,121 128 129 133
+90,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:2,,123 126 130 135
+91,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:3,,41 124 125 136
+92,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:2,,125 131 137 148
+93,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:1,,126 132 138 147
+94,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:3,,127 132 139 146
+95,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:3,,145 152 153 157
+96,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:2,,66 146 151 158
+97,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:1,,65 148 149 160
+98,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:3,,123 150 156 162
+99,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:1,,122 151 156 163
+100,Si,st,+2.100000,1,soap,1.00000,phlogopite_1M_bulk.data:2,,121 152 155 164
+101,Al,at,+1.575000,1,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,42 122 127 134
+102,Al,at,+1.575000,1,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,128 131 140 145
+103,Al,at,+1.575000,1,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,147 150 154 159
+104,Al,at,+1.575000,1,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,124 149 155 161
+105,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,137 140 144 162 163 167
+106,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,46 48 133 135 141 142
+107,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,53 78 134 137 160 163
+108,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,135 140 141 157 162 166
+109,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,133 135 138 140 143 144
+110,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,134 136 137 139 143 144
+111,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,138 139 143 161 164 168
+112,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,70 72 157 159 165 166
+113,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,54 77 136 139 158 161
+114,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,133 138 142 159 164 165
+115,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,157 159 162 164 167 168
+116,Mg,mgh,+1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,158 160 161 163 167 168
+117,K,K,+1.000000,6,ion,1.00000,muscovite_1M_bulk.data:25,,
+118,K,K,+1.000000,7,ion,1.00000,muscovite_1M_bulk.data:25,,
+119,K,K,+1.000000,8,ion,1.00000,muscovite_1M_bulk.data:25,,
+120,K,K,+1.000000,9,ion,1.00000,muscovite_1M_bulk.data:25,,
+121,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,89 100
+122,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,99 101
+123,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,90 98
+124,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,91 104
+125,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,91 92
+126,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,90 93
+127,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,94 101
+128,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,89 102
+129,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,3 89
+130,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,13 90
+131,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,92 102
+132,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,93 94
+133,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,89 106 109 114
+134,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,18 101 107 110
+135,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:47,0.02777,90 106 108 109
+136,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,18 91 110 113
+137,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:49,0.02777,92 105 107 110
+138,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,93 109 111 114
+139,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,94 110 111 113
+140,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,102 105 108 109
+141,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,19 106 108 169
+142,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,25 106 114 170
+143,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,109 110 111 171
+144,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,105 109 110 172
+145,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,95 102
+146,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,94 96
+147,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,93 103
+148,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,92 97
+149,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,97 104
+150,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,98 103
+151,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,96 99
+152,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,95 100
+153,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,9 95
+154,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,8 103
+155,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,100 104
+156,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,98 99
+157,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,95 108 112 115
+158,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:47,0.02777,24 96 113 116
+159,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,103 112 114 115
+160,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,24 97 107 116
+161,O,obts,-1.168800,1,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,104 111 113 116
+162,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,98 105 108 115
+163,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,99 105 107 116
+164,O,ob,-1.050000,1,soap,1.00000,phlogopite_1M_bulk.data:49,0.02777,100 111 114 115
+165,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,25 112 114 173
+166,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,19 108 112 174
+167,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,105 115 116 175
+168,O,oh,-0.950000,1,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,111 115 116 176
+169,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,141
+170,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,142
+171,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,143
+172,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,144
+173,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,165
+174,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,166
+175,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,167
+176,H,ho,+0.425000,1,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,168
+177,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:1,,209 216 217 221
+178,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:2,,211 214 218 223
+179,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:3,,212 213 224 305
+180,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:2,,213 219 225 236
+181,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:1,,214 220 226 235
+182,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:3,,215 220 227 234
+183,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:3,,233 240 241 245
+184,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:2,,234 239 246 330
+185,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:1,,236 237 248 329
+186,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:3,,211 238 244 250
+187,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:1,,210 239 244 251
+188,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:2,,209 240 243 252
+189,Al,at,+1.575000,10,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,210 215 222 306
+190,Al,at,+1.575000,10,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,216 219 228 233
+191,Al,at,+1.575000,10,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,235 238 242 247
+192,Al,at,+1.575000,10,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,212 237 243 249
+193,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,225 228 232 250 251 255
+194,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,221 223 229 230 310 312
+195,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,222 225 248 251 317 342
+196,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,223 228 229 245 250 254
+197,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,221 223 226 228 231 232
+198,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,222 224 225 227 231 232
+199,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,226 227 231 249 252 256
+200,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,245 247 253 254 334 336
+201,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,224 227 246 249 318 341
+202,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,221 226 230 247 252 253
+203,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,245 247 250 252 255 256
+204,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,246 248 249 251 255 256
+205,K,K,+1.000000,11,ion,1.00000,muscovite_1M_bulk.data:25,,
+206,K,K,+1.000000,12,ion,1.00000,muscovite_1M_bulk.data:25,,
+207,K,K,+1.000000,13,ion,1.00000,muscovite_1M_bulk.data:25,,
+208,K,K,+1.000000,14,ion,1.00000,muscovite_1M_bulk.data:25,,
+209,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,177 188
+210,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,187 189
+211,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,178 186
+212,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,179 192
+213,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,179 180
+214,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,178 181
+215,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,182 189
+216,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,177 190
+217,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,177 267
+218,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,178 277
+219,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,180 190
+220,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,181 182
+221,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,177 194 197 202
+222,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,189 195 198 282
+223,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:47,0.02777,178 194 196 197
+224,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,179 198 201 282
+225,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:49,0.02777,180 193 195 198
+226,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,181 197 199 202
+227,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,182 198 199 201
+228,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,190 193 196 197
+229,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,194 196 257 283
+230,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,194 202 258 289
+231,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,197 198 199 259
+232,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,193 197 198 260
+233,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,183 190
+234,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,182 184
+235,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,181 191
+236,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,180 185
+237,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,185 192
+238,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,186 191
+239,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,184 187
+240,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,183 188
+241,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,183 273
+242,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,191 272
+243,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,188 192
+244,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,186 187
+245,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,183 196 200 203
+246,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:47,0.02777,184 201 204 288
+247,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,191 200 202 203
+248,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,185 195 204 288
+249,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,192 199 201 204
+250,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,186 193 196 203
+251,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,187 193 195 204
+252,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:49,0.02777,188 199 202 203
+253,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,200 202 261 289
+254,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,196 200 262 283
+255,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,193 203 204 263
+256,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,199 203 204 264
+257,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,229
+258,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,230
+259,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,231
+260,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,232
+261,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,253
+262,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,254
+263,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,255
+264,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,256
+265,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:1,,297 304 305 309
+266,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:2,,299 302 306 311
+267,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:3,,217 300 301 312
+268,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:2,,301 307 313 324
+269,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:1,,302 308 314 323
+270,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:3,,303 308 315 322
+271,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:3,,321 328 329 333
+272,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:2,,242 322 327 334
+273,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:1,,241 324 325 336
+274,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:3,,299 326 332 338
+275,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:1,,298 327 332 339
+276,Si,st,+2.100000,10,soap,1.00000,phlogopite_1M_bulk.data:2,,297 328 331 340
+277,Al,at,+1.575000,10,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,218 298 303 310
+278,Al,at,+1.575000,10,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,304 307 316 321
+279,Al,at,+1.575000,10,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,323 326 330 335
+280,Al,at,+1.575000,10,soap,1.00000,phlogopite_1M_bulk.data:13,0.12999,300 325 331 337
+281,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,313 316 320 338 339 343
+282,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,222 224 309 311 317 318
+283,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,229 254 310 313 336 339
+284,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,311 316 317 333 338 342
+285,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,309 311 314 316 319 320
+286,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,310 312 313 315 319 320
+287,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,314 315 319 337 340 344
+288,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:17,0.11254,246 248 333 335 341 342
+289,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,230 253 312 315 334 337
+290,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,309 314 318 335 340 341
+291,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:20,0.10906,333 335 338 340 343 344
+292,Mg,mgh,+1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:19,0.11105,334 336 337 339 343 344
+293,K,K,+1.000000,15,ion,1.00000,muscovite_1M_bulk.data:25,,
+294,K,K,+1.000000,16,ion,1.00000,muscovite_1M_bulk.data:25,,
+295,K,K,+1.000000,17,ion,1.00000,muscovite_1M_bulk.data:25,,
+296,K,K,+1.000000,18,ion,1.00000,muscovite_1M_bulk.data:25,,
+297,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,265 276
+298,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,275 277
+299,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,266 274
+300,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,267 280
+301,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,267 268
+302,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,266 269
+303,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,270 277
+304,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,265 278
+305,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,179 265
+306,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,189 266
+307,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,268 278
+308,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,269 270
+309,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,265 282 285 290
+310,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,194 277 283 286
+311,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:47,0.02777,266 282 284 285
+312,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,194 267 286 289
+313,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:49,0.02777,268 281 283 286
+314,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,269 285 287 290
+315,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,270 286 287 289
+316,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,278 281 284 285
+317,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,195 282 284 345
+318,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,201 282 290 346
+319,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,285 286 287 347
+320,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,281 285 286 348
+321,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,271 278
+322,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,270 272
+323,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,269 279
+324,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,268 273
+325,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04450,273 280
+326,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:36,0.04444,274 279
+327,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:33,0.04460,272 275
+328,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:35,0.04588,271 276
+329,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,185 271
+330,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,184 279
+331,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:34,0.04446,276 280
+332,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:41,0.04503,274 275
+333,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,271 284 288 291
+334,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:47,0.02777,200 272 289 292
+335,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,279 288 290 291
+336,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,200 273 283 292
+337,O,obts,-1.168800,10,soap,1.00000,phlogopite_1M_bulk.data:46,0.02629,280 287 289 292
+338,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:48,0.02777,274 281 284 291
+339,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:45,0.02702,275 281 283 292
+340,O,ob,-1.050000,10,soap,1.00000,phlogopite_1M_bulk.data:49,0.02777,276 287 290 291
+341,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,201 288 290 349
+342,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,195 284 288 350
+343,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:54,0.06525,281 291 292 351
+344,O,oh,-0.950000,10,soap,1.00000,phlogopite_1M_bulk.data:53,0.06590,287 291 292 352
+345,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,317
+346,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,318
+347,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,319
+348,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,320
+349,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,341
+350,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,342
+351,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:82,0.49695,343
+352,H,ho,+0.425000,10,soap,1.00000,phlogopite_1M_bulk.data:81,0.50579,344
+353,O,ow,-0.820000,19,soap,1.00000,water.data:1,0.59366,354 355
+354,H,hw,+0.410000,19,soap,1.00000,water.data:2,0.34836,353
+355,H,hw,+0.410000,19,soap,1.00000,water.data:2,0.34836,353
+356,O,ow,-0.820000,20,soap,1.00000,water.data:1,0.59366,357 358
+357,H,hw,+0.410000,20,soap,1.00000,water.data:2,0.34836,356
+358,H,hw,+0.410000,20,soap,1.00000,water.data:2,0.34836,356
+359,O,ow,-0.820000,21,soap,1.00000,water.data:1,0.59366,360 361
+360,H,hw,+0.410000,21,soap,1.00000,water.data:2,0.34836,359
+361,H,hw,+0.410000,21,soap,1.00000,water.data:2,0.34836,359
+362,O,ow,-0.820000,22,soap,1.00000,water.data:1,0.59366,363 364
+363,H,hw,+0.410000,22,soap,1.00000,water.data:2,0.34836,362
+364,H,hw,+0.410000,22,soap,1.00000,water.data:2,0.34836,362
+365,O,ow,-0.820000,23,soap,1.00000,water.data:1,0.59366,366 367
+366,H,hw,+0.410000,23,soap,1.00000,water.data:2,0.34836,365
+367,H,hw,+0.410000,23,soap,1.00000,water.data:2,0.34836,365
+368,O,ow,-0.820000,24,soap,1.00000,water.data:1,0.59366,369 370
+369,H,hw,+0.410000,24,soap,1.00000,water.data:2,0.34836,368
+370,H,hw,+0.410000,24,soap,1.00000,water.data:2,0.34836,368
+371,O,ow,-0.820000,25,soap,1.00000,water.data:1,0.59366,372 373
+372,H,hw,+0.410000,25,soap,1.00000,water.data:2,0.34836,371
+373,H,hw,+0.410000,25,soap,1.00000,water.data:2,0.34836,371
+374,O,ow,-0.820000,26,soap,1.00000,water.data:1,0.59366,375 376
+375,H,hw,+0.410000,26,soap,1.00000,water.data:2,0.34836,374
+376,H,hw,+0.410000,26,soap,1.00000,water.data:2,0.34836,374
+377,O,ow,-0.820000,27,soap,1.00000,water.data:1,0.59366,378 379
+378,H,hw,+0.410000,27,soap,1.00000,water.data:2,0.34836,377
+379,H,hw,+0.410000,27,soap,1.00000,water.data:2,0.34836,377
+380,O,ow,-0.820000,28,soap,1.00000,water.data:1,0.59366,381 382
+381,H,hw,+0.410000,28,soap,1.00000,water.data:2,0.34836,380
+382,H,hw,+0.410000,28,soap,1.00000,water.data:2,0.34836,380
+383,O,ow,-0.820000,29,soap,1.00000,water.data:1,0.59366,384 385
+384,H,hw,+0.410000,29,soap,1.00000,water.data:2,0.34836,383
+385,H,hw,+0.410000,29,soap,1.00000,water.data:2,0.34836,383
+386,O,ow,-0.820000,30,soap,1.00000,water.data:1,0.59366,387 388
+387,H,hw,+0.410000,30,soap,1.00000,water.data:2,0.34836,386
+388,H,hw,+0.410000,30,soap,1.00000,water.data:2,0.34836,386
+389,O,ow,-0.820000,31,soap,1.00000,water.data:1,0.59366,390 391
+390,H,hw,+0.410000,31,soap,1.00000,water.data:2,0.34836,389
+391,H,hw,+0.410000,31,soap,1.00000,water.data:2,0.34836,389
+392,O,ow,-0.820000,32,soap,1.00000,water.data:1,0.59366,393 394
+393,H,hw,+0.410000,32,soap,1.00000,water.data:2,0.34836,392
+394,H,hw,+0.410000,32,soap,1.00000,water.data:2,0.34836,392
+395,O,ow,-0.820000,33,soap,1.00000,water.data:1,0.59366,396 397
+396,H,hw,+0.410000,33,soap,1.00000,water.data:2,0.34836,395
+397,H,hw,+0.410000,33,soap,1.00000,water.data:2,0.34836,395
+398,O,ow,-0.820000,34,soap,1.00000,water.data:1,0.59366,399 400
+399,H,hw,+0.410000,34,soap,1.00000,water.data:2,0.34836,398
+400,H,hw,+0.410000,34,soap,1.00000,water.data:2,0.34836,398
+401,O,ow,-0.820000,35,soap,1.00000,water.data:1,0.59366,402 403
+402,H,hw,+0.410000,35,soap,1.00000,water.data:2,0.34836,401
+403,H,hw,+0.410000,35,soap,1.00000,water.data:2,0.34836,401
+404,O,ow,-0.820000,36,soap,1.00000,water.data:1,0.59366,405 406
+405,H,hw,+0.410000,36,soap,1.00000,water.data:2,0.34836,404
+406,H,hw,+0.410000,36,soap,1.00000,water.data:2,0.34836,404
+407,O,ow,-0.820000,37,soap,1.00000,water.data:1,0.59366,408 409
+408,H,hw,+0.410000,37,soap,1.00000,water.data:2,0.34836,407
+409,H,hw,+0.410000,37,soap,1.00000,water.data:2,0.34836,407
+410,O,ow,-0.820000,38,soap,1.00000,water.data:1,0.59366,411 412
+411,H,hw,+0.410000,38,soap,1.00000,water.data:2,0.34836,410
+412,H,hw,+0.410000,38,soap,1.00000,water.data:2,0.34836,410
+413,O,ow,-0.820000,39,soap,1.00000,water.data:1,0.59366,414 415
+414,H,hw,+0.410000,39,soap,1.00000,water.data:2,0.34836,413
+415,H,hw,+0.410000,39,soap,1.00000,water.data:2,0.34836,413
+416,O,ow,-0.820000,40,soap,1.00000,water.data:1,0.59366,417 418
+417,H,hw,+0.410000,40,soap,1.00000,water.data:2,0.34836,416
+418,H,hw,+0.410000,40,soap,1.00000,water.data:2,0.34836,416
+419,O,ow,-0.820000,41,soap,1.00000,water.data:1,0.59366,420 421
+420,H,hw,+0.410000,41,soap,1.00000,water.data:2,0.34836,419
+421,H,hw,+0.410000,41,soap,1.00000,water.data:2,0.34836,419
+422,O,ow,-0.820000,42,soap,1.00000,water.data:1,0.59366,423 424
+423,H,hw,+0.410000,42,soap,1.00000,water.data:2,0.34836,422
+424,H,hw,+0.410000,42,soap,1.00000,water.data:2,0.34836,422
+425,O,ow,-0.820000,43,soap,1.00000,water.data:1,0.59366,426 427
+426,H,hw,+0.410000,43,soap,1.00000,water.data:2,0.34836,425
+427,H,hw,+0.410000,43,soap,1.00000,water.data:2,0.34836,425
+428,O,ow,-0.820000,44,soap,1.00000,water.data:1,0.59366,429 430
+429,H,hw,+0.410000,44,soap,1.00000,water.data:2,0.34836,428
+430,H,hw,+0.410000,44,soap,1.00000,water.data:2,0.34836,428
+431,O,ow,-0.820000,45,soap,1.00000,water.data:1,0.59366,432 433
+432,H,hw,+0.410000,45,soap,1.00000,water.data:2,0.34836,431
+433,H,hw,+0.410000,45,soap,1.00000,water.data:2,0.34836,431
+434,O,ow,-0.820000,46,soap,1.00000,water.data:1,0.59366,435 436
+435,H,hw,+0.410000,46,soap,1.00000,water.data:2,0.34836,434
+436,H,hw,+0.410000,46,soap,1.00000,water.data:2,0.34836,434
+437,O,ow,-0.820000,47,soap,1.00000,water.data:1,0.59366,438 439
+438,H,hw,+0.410000,47,soap,1.00000,water.data:2,0.34836,437
+439,H,hw,+0.410000,47,soap,1.00000,water.data:2,0.34836,437
+440,O,ow,-0.820000,48,soap,1.00000,water.data:1,0.59366,441 442
+441,H,hw,+0.410000,48,soap,1.00000,water.data:2,0.34836,440
+442,H,hw,+0.410000,48,soap,1.00000,water.data:2,0.34836,440
+443,O,ow,-0.820000,49,soap,1.00000,water.data:1,0.59366,444 445
+444,H,hw,+0.410000,49,soap,1.00000,water.data:2,0.34836,443
+445,H,hw,+0.410000,49,soap,1.00000,water.data:2,0.34836,443
+446,O,ow,-0.820000,50,soap,1.00000,water.data:1,0.59366,447 448
+447,H,hw,+0.410000,50,soap,1.00000,water.data:2,0.34836,446
+448,H,hw,+0.410000,50,soap,1.00000,water.data:2,0.34836,446
+449,O,ow,-0.820000,51,soap,1.00000,water.data:1,0.59366,450 451
+450,H,hw,+0.410000,51,soap,1.00000,water.data:2,0.34836,449
+451,H,hw,+0.410000,51,soap,1.00000,water.data:2,0.34836,449
+452,O,ow,-0.820000,52,soap,1.00000,water.data:1,0.59366,453 454
+453,H,hw,+0.410000,52,soap,1.00000,water.data:2,0.34836,452
+454,H,hw,+0.410000,52,soap,1.00000,water.data:2,0.34836,452
+455,O,ow,-0.820000,53,soap,1.00000,water.data:1,0.59366,456 457
+456,H,hw,+0.410000,53,soap,1.00000,water.data:2,0.34836,455
+457,H,hw,+0.410000,53,soap,1.00000,water.data:2,0.34836,455
+458,O,ow,-0.820000,54,soap,1.00000,water.data:1,0.59366,459 460
+459,H,hw,+0.410000,54,soap,1.00000,water.data:2,0.34836,458
+460,H,hw,+0.410000,54,soap,1.00000,water.data:2,0.34836,458
+461,O,ow,-0.820000,55,soap,1.00000,water.data:1,0.59366,462 463
+462,H,hw,+0.410000,55,soap,1.00000,water.data:2,0.34836,461
+463,H,hw,+0.410000,55,soap,1.00000,water.data:2,0.34836,461
+464,O,ow,-0.820000,56,soap,1.00000,water.data:1,0.59366,465 466
+465,H,hw,+0.410000,56,soap,1.00000,water.data:2,0.34836,464
+466,H,hw,+0.410000,56,soap,1.00000,water.data:2,0.34836,464
+467,O,ow,-0.820000,57,soap,1.00000,water.data:1,0.59366,468 469
+468,H,hw,+0.410000,57,soap,1.00000,water.data:2,0.34836,467
+469,H,hw,+0.410000,57,soap,1.00000,water.data:2,0.34836,467
+470,O,ow,-0.820000,58,soap,1.00000,water.data:1,0.59366,471 472
+471,H,hw,+0.410000,58,soap,1.00000,water.data:2,0.34836,470
+472,H,hw,+0.410000,58,soap,1.00000,water.data:2,0.34836,470
+473,O,ow,-0.820000,59,soap,1.00000,water.data:1,0.59366,474 475
+474,H,hw,+0.410000,59,soap,1.00000,water.data:2,0.34836,473
+475,H,hw,+0.410000,59,soap,1.00000,water.data:2,0.34836,473
+476,O,ow,-0.820000,60,soap,1.00000,water.data:1,0.59366,477 478
+477,H,hw,+0.410000,60,soap,1.00000,water.data:2,0.34836,476
+478,H,hw,+0.410000,60,soap,1.00000,water.data:2,0.34836,476
+479,O,ow,-0.820000,61,soap,1.00000,water.data:1,0.59366,480 481
+480,H,hw,+0.410000,61,soap,1.00000,water.data:2,0.34836,479
+481,H,hw,+0.410000,61,soap,1.00000,water.data:2,0.34836,479
+482,O,ow,-0.820000,62,soap,1.00000,water.data:1,0.59366,483 484
+483,H,hw,+0.410000,62,soap,1.00000,water.data:2,0.34836,482
+484,H,hw,+0.410000,62,soap,1.00000,water.data:2,0.34836,482
+485,O,ow,-0.820000,63,soap,1.00000,water.data:1,0.59366,486 487
+486,H,hw,+0.410000,63,soap,1.00000,water.data:2,0.34836,485
+487,H,hw,+0.410000,63,soap,1.00000,water.data:2,0.34836,485
+488,O,ow,-0.820000,64,soap,1.00000,water.data:1,0.59366,489 490
+489,H,hw,+0.410000,64,soap,1.00000,water.data:2,0.34836,488
+490,H,hw,+0.410000,64,soap,1.00000,water.data:2,0.34836,488
+491,O,ow,-0.820000,65,soap,1.00000,water.data:1,0.59366,492 493
+492,H,hw,+0.410000,65,soap,1.00000,water.data:2,0.34836,491
+493,H,hw,+0.410000,65,soap,1.00000,water.data:2,0.34836,491
+494,O,ow,-0.820000,66,soap,1.00000,water.data:1,0.59366,495 496
+495,H,hw,+0.410000,66,soap,1.00000,water.data:2,0.34836,494
+496,H,hw,+0.410000,66,soap,1.00000,water.data:2,0.34836,494
+497,O,ow,-0.820000,67,soap,1.00000,water.data:1,0.59366,498 499
+498,H,hw,+0.410000,67,soap,1.00000,water.data:2,0.34836,497
+499,H,hw,+0.410000,67,soap,1.00000,water.data:2,0.34836,497
+500,O,ow,-0.820000,68,soap,1.00000,water.data:1,0.59366,501 502
+501,H,hw,+0.410000,68,soap,1.00000,water.data:2,0.34836,500
+502,H,hw,+0.410000,68,soap,1.00000,water.data:2,0.34836,500
+503,O,ow,-0.820000,69,soap,1.00000,water.data:1,0.59366,504 505
+504,H,hw,+0.410000,69,soap,1.00000,water.data:2,0.34836,503
+505,H,hw,+0.410000,69,soap,1.00000,water.data:2,0.34836,503
+506,O,ow,-0.820000,70,soap,1.00000,water.data:1,0.59366,507 508
+507,H,hw,+0.410000,70,soap,1.00000,water.data:2,0.34836,506
+508,H,hw,+0.410000,70,soap,1.00000,water.data:2,0.34836,506
+509,O,ow,-0.820000,71,soap,1.00000,water.data:1,0.59366,510 511
+510,H,hw,+0.410000,71,soap,1.00000,water.data:2,0.34836,509
+511,H,hw,+0.410000,71,soap,1.00000,water.data:2,0.34836,509
+512,O,ow,-0.820000,72,soap,1.00000,water.data:1,0.59366,513 514
+513,H,hw,+0.410000,72,soap,1.00000,water.data:2,0.34836,512
+514,H,hw,+0.410000,72,soap,1.00000,water.data:2,0.34836,512
+515,O,ow,-0.820000,73,soap,1.00000,water.data:1,0.59366,516 517
+516,H,hw,+0.410000,73,soap,1.00000,water.data:2,0.34836,515
+517,H,hw,+0.410000,73,soap,1.00000,water.data:2,0.34836,515
+518,O,ow,-0.820000,74,soap,1.00000,water.data:1,0.59366,519 520
+519,H,hw,+0.410000,74,soap,1.00000,water.data:2,0.34836,518
+520,H,hw,+0.410000,74,soap,1.00000,water.data:2,0.34836,518
+521,O,ow,-0.820000,75,soap,1.00000,water.data:1,0.59366,522 523
+522,H,hw,+0.410000,75,soap,1.00000,water.data:2,0.34836,521
+523,H,hw,+0.410000,75,soap,1.00000,water.data:2,0.34836,521
+524,O,ow,-0.820000,76,soap,1.00000,water.data:1,0.59366,525 526
+525,H,hw,+0.410000,76,soap,1.00000,water.data:2,0.34836,524
+526,H,hw,+0.410000,76,soap,1.00000,water.data:2,0.34836,524
+527,O,ow,-0.820000,77,soap,1.00000,water.data:1,0.59366,528 529
+528,H,hw,+0.410000,77,soap,1.00000,water.data:2,0.34836,527
+529,H,hw,+0.410000,77,soap,1.00000,water.data:2,0.34836,527
+530,O,ow,-0.820000,78,soap,1.00000,water.data:1,0.59366,531 532
+531,H,hw,+0.410000,78,soap,1.00000,water.data:2,0.34836,530
+532,H,hw,+0.410000,78,soap,1.00000,water.data:2,0.34836,530
+533,O,ow,-0.820000,79,soap,1.00000,water.data:1,0.59366,534 535
+534,H,hw,+0.410000,79,soap,1.00000,water.data:2,0.34836,533
+535,H,hw,+0.410000,79,soap,1.00000,water.data:2,0.34836,533
+536,O,ow,-0.820000,80,soap,1.00000,water.data:1,0.59366,537 538
+537,H,hw,+0.410000,80,soap,1.00000,water.data:2,0.34836,536
+538,H,hw,+0.410000,80,soap,1.00000,water.data:2,0.34836,536
+539,O,ow,-0.820000,81,soap,1.00000,water.data:1,0.59366,540 541
+540,H,hw,+0.410000,81,soap,1.00000,water.data:2,0.34836,539
+541,H,hw,+0.410000,81,soap,1.00000,water.data:2,0.34836,539
+542,O,ow,-0.820000,82,soap,1.00000,water.data:1,0.59366,543 544
+543,H,hw,+0.410000,82,soap,1.00000,water.data:2,0.34836,542
+544,H,hw,+0.410000,82,soap,1.00000,water.data:2,0.34836,542
+545,O,ow,-0.820000,83,soap,1.00000,water.data:1,0.59366,546 547
+546,H,hw,+0.410000,83,soap,1.00000,water.data:2,0.34836,545
+547,H,hw,+0.410000,83,soap,1.00000,water.data:2,0.34836,545
+548,O,ow,-0.820000,84,soap,1.00000,water.data:1,0.59366,549 550
+549,H,hw,+0.410000,84,soap,1.00000,water.data:2,0.34836,548
+550,H,hw,+0.410000,84,soap,1.00000,water.data:2,0.34836,548
+551,O,ow,-0.820000,85,soap,1.00000,water.data:1,0.59366,552 553
+552,H,hw,+0.410000,85,soap,1.00000,water.data:2,0.34836,551
+553,H,hw,+0.410000,85,soap,1.00000,water.data:2,0.34836,551
+554,O,ow,-0.820000,86,soap,1.00000,water.data:1,0.59366,555 556
+555,H,hw,+0.410000,86,soap,1.00000,water.data:2,0.34836,554
+556,H,hw,+0.410000,86,soap,1.00000,water.data:2,0.34836,554
+557,O,ow,-0.820000,87,soap,1.00000,water.data:1,0.59366,558 559
+558,H,hw,+0.410000,87,soap,1.00000,water.data:2,0.34836,557
+559,H,hw,+0.410000,87,soap,1.00000,water.data:2,0.34836,557
+560,O,ow,-0.820000,88,soap,1.00000,water.data:1,0.59366,561 562
+561,H,hw,+0.410000,88,soap,1.00000,water.data:2,0.34836,560
+562,H,hw,+0.410000,88,soap,1.00000,water.data:2,0.34836,560
+563,O,ow,-0.820000,89,soap,1.00000,water.data:1,0.59366,564 565
+564,H,hw,+0.410000,89,soap,1.00000,water.data:2,0.34836,563
+565,H,hw,+0.410000,89,soap,1.00000,water.data:2,0.34836,563
+566,O,ow,-0.820000,90,soap,1.00000,water.data:1,0.59366,567 568
+567,H,hw,+0.410000,90,soap,1.00000,water.data:2,0.34836,566
+568,H,hw,+0.410000,90,soap,1.00000,water.data:2,0.34836,566
+569,O,ow,-0.820000,91,soap,1.00000,water.data:1,0.59366,570 571
+570,H,hw,+0.410000,91,soap,1.00000,water.data:2,0.34836,569
+571,H,hw,+0.410000,91,soap,1.00000,water.data:2,0.34836,569
+572,O,ow,-0.820000,92,soap,1.00000,water.data:1,0.59366,573 574
+573,H,hw,+0.410000,92,soap,1.00000,water.data:2,0.34836,572
+574,H,hw,+0.410000,92,soap,1.00000,water.data:2,0.34836,572
+575,O,ow,-0.820000,93,soap,1.00000,water.data:1,0.59366,576 577
+576,H,hw,+0.410000,93,soap,1.00000,water.data:2,0.34836,575
+577,H,hw,+0.410000,93,soap,1.00000,water.data:2,0.34836,575
+578,O,ow,-0.820000,94,soap,1.00000,water.data:1,0.59366,579 580
+579,H,hw,+0.410000,94,soap,1.00000,water.data:2,0.34836,578
+580,H,hw,+0.410000,94,soap,1.00000,water.data:2,0.34836,578
+581,O,ow,-0.820000,95,soap,1.00000,water.data:1,0.59366,582 583
+582,H,hw,+0.410000,95,soap,1.00000,water.data:2,0.34836,581
+583,H,hw,+0.410000,95,soap,1.00000,water.data:2,0.34836,581
+584,O,ow,-0.820000,96,soap,1.00000,water.data:1,0.59366,585 586
+585,H,hw,+0.410000,96,soap,1.00000,water.data:2,0.34836,584
+586,H,hw,+0.410000,96,soap,1.00000,water.data:2,0.34836,584
+587,O,ow,-0.820000,97,soap,1.00000,water.data:1,0.59366,588 589
+588,H,hw,+0.410000,97,soap,1.00000,water.data:2,0.34836,587
+589,H,hw,+0.410000,97,soap,1.00000,water.data:2,0.34836,587
+590,O,ow,-0.820000,98,soap,1.00000,water.data:1,0.59366,591 592
+591,H,hw,+0.410000,98,soap,1.00000,water.data:2,0.34836,590
+592,H,hw,+0.410000,98,soap,1.00000,water.data:2,0.34836,590
+593,O,ow,-0.820000,99,soap,1.00000,water.data:1,0.59366,594 595
+594,H,hw,+0.410000,99,soap,1.00000,water.data:2,0.34836,593
+595,H,hw,+0.410000,99,soap,1.00000,water.data:2,0.34836,593
+596,O,ow,-0.820000,100,soap,1.00000,water.data:1,0.59366,597 598
+597,H,hw,+0.410000,100,soap,1.00000,water.data:2,0.34836,596
+598,H,hw,+0.410000,100,soap,1.00000,water.data:2,0.34836,596
+599,O,ow,-0.820000,101,soap,1.00000,water.data:1,0.59366,600 601
+600,H,hw,+0.410000,101,soap,1.00000,water.data:2,0.34836,599
+601,H,hw,+0.410000,101,soap,1.00000,water.data:2,0.34836,599
+602,O,ow,-0.820000,102,soap,1.00000,water.data:1,0.59366,603 604
+603,H,hw,+0.410000,102,soap,1.00000,water.data:2,0.34836,602
+604,H,hw,+0.410000,102,soap,1.00000,water.data:2,0.34836,602
+605,O,ow,-0.820000,103,soap,1.00000,water.data:1,0.59366,606 607
+606,H,hw,+0.410000,103,soap,1.00000,water.data:2,0.34836,605
+607,H,hw,+0.410000,103,soap,1.00000,water.data:2,0.34836,605
+608,O,ow,-0.820000,104,soap,1.00000,water.data:1,0.59366,609 610
+609,H,hw,+0.410000,104,soap,1.00000,water.data:2,0.34836,608
+610,H,hw,+0.410000,104,soap,1.00000,water.data:2,0.34836,608
+611,O,ow,-0.820000,105,soap,1.00000,water.data:1,0.59366,612 613
+612,H,hw,+0.410000,105,soap,1.00000,water.data:2,0.34836,611
+613,H,hw,+0.410000,105,soap,1.00000,water.data:2,0.34836,611
+614,O,ow,-0.820000,106,soap,1.00000,water.data:1,0.59366,615 616
+615,H,hw,+0.410000,106,soap,1.00000,water.data:2,0.34836,614
+616,H,hw,+0.410000,106,soap,1.00000,water.data:2,0.34836,614
+617,O,ow,-0.820000,107,soap,1.00000,water.data:1,0.59366,618 619
+618,H,hw,+0.410000,107,soap,1.00000,water.data:2,0.34836,617
+619,H,hw,+0.410000,107,soap,1.00000,water.data:2,0.34836,617
+620,O,ow,-0.820000,108,soap,1.00000,water.data:1,0.59366,621 622
+621,H,hw,+0.410000,108,soap,1.00000,water.data:2,0.34836,620
+622,H,hw,+0.410000,108,soap,1.00000,water.data:2,0.34836,620
+623,O,ow,-0.820000,109,soap,1.00000,water.data:1,0.59366,624 625
+624,H,hw,+0.410000,109,soap,1.00000,water.data:2,0.34836,623
+625,H,hw,+0.410000,109,soap,1.00000,water.data:2,0.34836,623
+626,O,ow,-0.820000,110,soap,1.00000,water.data:1,0.59366,627 628
+627,H,hw,+0.410000,110,soap,1.00000,water.data:2,0.34836,626
+628,H,hw,+0.410000,110,soap,1.00000,water.data:2,0.34836,626
+629,O,ow,-0.820000,111,soap,1.00000,water.data:1,0.59366,630 631
+630,H,hw,+0.410000,111,soap,1.00000,water.data:2,0.34836,629
+631,H,hw,+0.410000,111,soap,1.00000,water.data:2,0.34836,629
+632,O,ow,-0.820000,112,soap,1.00000,water.data:1,0.59366,633 634
+633,H,hw,+0.410000,112,soap,1.00000,water.data:2,0.34836,632
+634,H,hw,+0.410000,112,soap,1.00000,water.data:2,0.34836,632
+635,O,ow,-0.820000,113,soap,1.00000,water.data:1,0.59366,636 637
+636,H,hw,+0.410000,113,soap,1.00000,water.data:2,0.34836,635
+637,H,hw,+0.410000,113,soap,1.00000,water.data:2,0.34836,635
+638,O,ow,-0.820000,114,soap,1.00000,water.data:1,0.59366,639 640
+639,H,hw,+0.410000,114,soap,1.00000,water.data:2,0.34836,638
+640,H,hw,+0.410000,114,soap,1.00000,water.data:2,0.34836,638
+641,O,ow,-0.820000,115,soap,1.00000,water.data:1,0.59366,642 643
+642,H,hw,+0.410000,115,soap,1.00000,water.data:2,0.34836,641
+643,H,hw,+0.410000,115,soap,1.00000,water.data:2,0.34836,641
+644,O,ow,-0.820000,116,soap,1.00000,water.data:1,0.59366,645 646
+645,H,hw,+0.410000,116,soap,1.00000,water.data:2,0.34836,644
+646,H,hw,+0.410000,116,soap,1.00000,water.data:2,0.34836,644
+647,O,ow,-0.820000,117,soap,1.00000,water.data:1,0.59366,648 649
+648,H,hw,+0.410000,117,soap,1.00000,water.data:2,0.34836,647
+649,H,hw,+0.410000,117,soap,1.00000,water.data:2,0.34836,647
+650,O,ow,-0.820000,118,soap,1.00000,water.data:1,0.59366,651 652
+651,H,hw,+0.410000,118,soap,1.00000,water.data:2,0.34836,650
+652,H,hw,+0.410000,118,soap,1.00000,water.data:2,0.34836,650
+653,O,ow,-0.820000,119,soap,1.00000,water.data:1,0.59366,654 655
+654,H,hw,+0.410000,119,soap,1.00000,water.data:2,0.34836,653
+655,H,hw,+0.410000,119,soap,1.00000,water.data:2,0.34836,653
+656,O,ow,-0.820000,120,soap,1.00000,water.data:1,0.59366,657 658
+657,H,hw,+0.410000,120,soap,1.00000,water.data:2,0.34836,656
+658,H,hw,+0.410000,120,soap,1.00000,water.data:2,0.34836,656
+659,O,ow,-0.820000,121,soap,1.00000,water.data:1,0.59366,660 661
+660,H,hw,+0.410000,121,soap,1.00000,water.data:2,0.34836,659
+661,H,hw,+0.410000,121,soap,1.00000,water.data:2,0.34836,659
+662,O,ow,-0.820000,122,soap,1.00000,water.data:1,0.59366,663 664
+663,H,hw,+0.410000,122,soap,1.00000,water.data:2,0.34836,662
+664,H,hw,+0.410000,122,soap,1.00000,water.data:2,0.34836,662
+665,O,ow,-0.820000,123,soap,1.00000,water.data:1,0.59366,666 667
+666,H,hw,+0.410000,123,soap,1.00000,water.data:2,0.34836,665
+667,H,hw,+0.410000,123,soap,1.00000,water.data:2,0.34836,665
+668,O,ow,-0.820000,124,soap,1.00000,water.data:1,0.59366,669 670
+669,H,hw,+0.410000,124,soap,1.00000,water.data:2,0.34836,668
+670,H,hw,+0.410000,124,soap,1.00000,water.data:2,0.34836,668
+671,O,ow,-0.820000,125,soap,1.00000,water.data:1,0.59366,672 673
+672,H,hw,+0.410000,125,soap,1.00000,water.data:2,0.34836,671
+673,H,hw,+0.410000,125,soap,1.00000,water.data:2,0.34836,671
+674,O,ow,-0.820000,126,soap,1.00000,water.data:1,0.59366,675 676
+675,H,hw,+0.410000,126,soap,1.00000,water.data:2,0.34836,674
+676,H,hw,+0.410000,126,soap,1.00000,water.data:2,0.34836,674
+677,O,ow,-0.820000,127,soap,1.00000,water.data:1,0.59366,678 679
+678,H,hw,+0.410000,127,soap,1.00000,water.data:2,0.34836,677
+679,H,hw,+0.410000,127,soap,1.00000,water.data:2,0.34836,677
+680,O,ow,-0.820000,128,soap,1.00000,water.data:1,0.59366,681 682
+681,H,hw,+0.410000,128,soap,1.00000,water.data:2,0.34836,680
+682,H,hw,+0.410000,128,soap,1.00000,water.data:2,0.34836,680
+683,O,ow,-0.820000,129,soap,1.00000,water.data:1,0.59366,684 685
+684,H,hw,+0.410000,129,soap,1.00000,water.data:2,0.34836,683
+685,H,hw,+0.410000,129,soap,1.00000,water.data:2,0.34836,683
+686,O,ow,-0.820000,130,soap,1.00000,water.data:1,0.59366,687 688
+687,H,hw,+0.410000,130,soap,1.00000,water.data:2,0.34836,686
+688,H,hw,+0.410000,130,soap,1.00000,water.data:2,0.34836,686
+689,O,ow,-0.820000,131,soap,1.00000,water.data:1,0.59366,690 691
+690,H,hw,+0.410000,131,soap,1.00000,water.data:2,0.34836,689
+691,H,hw,+0.410000,131,soap,1.00000,water.data:2,0.34836,689
+692,O,ow,-0.820000,132,soap,1.00000,water.data:1,0.59366,693 694
+693,H,hw,+0.410000,132,soap,1.00000,water.data:2,0.34836,692
+694,H,hw,+0.410000,132,soap,1.00000,water.data:2,0.34836,692
+695,O,ow,-0.820000,133,soap,1.00000,water.data:1,0.59366,696 697
+696,H,hw,+0.410000,133,soap,1.00000,water.data:2,0.34836,695
+697,H,hw,+0.410000,133,soap,1.00000,water.data:2,0.34836,695
+698,O,ow,-0.820000,134,soap,1.00000,water.data:1,0.59366,699 700
+699,H,hw,+0.410000,134,soap,1.00000,water.data:2,0.34836,698
+700,H,hw,+0.410000,134,soap,1.00000,water.data:2,0.34836,698
+701,O,ow,-0.820000,135,soap,1.00000,water.data:1,0.59366,702 703
+702,H,hw,+0.410000,135,soap,1.00000,water.data:2,0.34836,701
+703,H,hw,+0.410000,135,soap,1.00000,water.data:2,0.34836,701
+704,O,ow,-0.820000,136,soap,1.00000,water.data:1,0.59366,705 706
+705,H,hw,+0.410000,136,soap,1.00000,water.data:2,0.34836,704
+706,H,hw,+0.410000,136,soap,1.00000,water.data:2,0.34836,704
+707,O,ow,-0.820000,137,soap,1.00000,water.data:1,0.59366,708 709
+708,H,hw,+0.410000,137,soap,1.00000,water.data:2,0.34836,707
+709,H,hw,+0.410000,137,soap,1.00000,water.data:2,0.34836,707
+710,O,ow,-0.820000,138,soap,1.00000,water.data:1,0.59366,711 712
+711,H,hw,+0.410000,138,soap,1.00000,water.data:2,0.34836,710
+712,H,hw,+0.410000,138,soap,1.00000,water.data:2,0.34836,710
+713,O,ow,-0.820000,139,soap,1.00000,water.data:1,0.59366,714 715
+714,H,hw,+0.410000,139,soap,1.00000,water.data:2,0.34836,713
+715,H,hw,+0.410000,139,soap,1.00000,water.data:2,0.34836,713
+716,O,ow,-0.820000,140,soap,1.00000,water.data:1,0.59366,717 718
+717,H,hw,+0.410000,140,soap,1.00000,water.data:2,0.34836,716
+718,H,hw,+0.410000,140,soap,1.00000,water.data:2,0.34836,716
+719,O,ow,-0.820000,141,soap,1.00000,water.data:1,0.59366,720 721
+720,H,hw,+0.410000,141,soap,1.00000,water.data:2,0.34836,719
+721,H,hw,+0.410000,141,soap,1.00000,water.data:2,0.34836,719
+722,O,ow,-0.820000,142,soap,1.00000,water.data:1,0.59366,723 724
+723,H,hw,+0.410000,142,soap,1.00000,water.data:2,0.34836,722
+724,H,hw,+0.410000,142,soap,1.00000,water.data:2,0.34836,722
+725,O,ow,-0.820000,143,soap,1.00000,water.data:1,0.59366,726 727
+726,H,hw,+0.410000,143,soap,1.00000,water.data:2,0.34836,725
+727,H,hw,+0.410000,143,soap,1.00000,water.data:2,0.34836,725
+728,O,ow,-0.820000,144,soap,1.00000,water.data:1,0.59366,729 730
+729,H,hw,+0.410000,144,soap,1.00000,water.data:2,0.34836,728
+730,H,hw,+0.410000,144,soap,1.00000,water.data:2,0.34836,728
+731,O,ow,-0.820000,145,soap,1.00000,water.data:1,0.59366,732 733
+732,H,hw,+0.410000,145,soap,1.00000,water.data:2,0.34836,731
+733,H,hw,+0.410000,145,soap,1.00000,water.data:2,0.34836,731
+734,O,ow,-0.820000,146,soap,1.00000,water.data:1,0.59366,735 736
+735,H,hw,+0.410000,146,soap,1.00000,water.data:2,0.34836,734
+736,H,hw,+0.410000,146,soap,1.00000,water.data:2,0.34836,734
+737,O,ow,-0.820000,147,soap,1.00000,water.data:1,0.59366,738 739
+738,H,hw,+0.410000,147,soap,1.00000,water.data:2,0.34836,737
+739,H,hw,+0.410000,147,soap,1.00000,water.data:2,0.34836,737
+740,O,ow,-0.820000,148,soap,1.00000,water.data:1,0.59366,741 742
+741,H,hw,+0.410000,148,soap,1.00000,water.data:2,0.34836,740
+742,H,hw,+0.410000,148,soap,1.00000,water.data:2,0.34836,740
+743,O,ow,-0.820000,149,soap,1.00000,water.data:1,0.59366,744 745
+744,H,hw,+0.410000,149,soap,1.00000,water.data:2,0.34836,743
+745,H,hw,+0.410000,149,soap,1.00000,water.data:2,0.34836,743
+746,O,ow,-0.820000,150,soap,1.00000,water.data:1,0.59366,747 748
+747,H,hw,+0.410000,150,soap,1.00000,water.data:2,0.34836,746
+748,H,hw,+0.410000,150,soap,1.00000,water.data:2,0.34836,746
+749,O,ow,-0.820000,151,soap,1.00000,water.data:1,0.59366,750 751
+750,H,hw,+0.410000,151,soap,1.00000,water.data:2,0.34836,749
+751,H,hw,+0.410000,151,soap,1.00000,water.data:2,0.34836,749
+752,O,ow,-0.820000,152,soap,1.00000,water.data:1,0.59366,753 754
+753,H,hw,+0.410000,152,soap,1.00000,water.data:2,0.34836,752
+754,H,hw,+0.410000,152,soap,1.00000,water.data:2,0.34836,752
+755,O,ow,-0.820000,153,soap,1.00000,water.data:1,0.59366,756 757
+756,H,hw,+0.410000,153,soap,1.00000,water.data:2,0.34836,755
+757,H,hw,+0.410000,153,soap,1.00000,water.data:2,0.34836,755
+758,O,ow,-0.820000,154,soap,1.00000,water.data:1,0.59366,759 760
+759,H,hw,+0.410000,154,soap,1.00000,water.data:2,0.34836,758
+760,H,hw,+0.410000,154,soap,1.00000,water.data:2,0.34836,758
+761,O,ow,-0.820000,155,soap,1.00000,water.data:1,0.59366,762 763
+762,H,hw,+0.410000,155,soap,1.00000,water.data:2,0.34836,761
+763,H,hw,+0.410000,155,soap,1.00000,water.data:2,0.34836,761
+764,O,ow,-0.820000,156,soap,1.00000,water.data:1,0.59366,765 766
+765,H,hw,+0.410000,156,soap,1.00000,water.data:2,0.34836,764
+766,H,hw,+0.410000,156,soap,1.00000,water.data:2,0.34836,764
+767,O,ow,-0.820000,157,soap,1.00000,water.data:1,0.59366,768 769
+768,H,hw,+0.410000,157,soap,1.00000,water.data:2,0.34836,767
+769,H,hw,+0.410000,157,soap,1.00000,water.data:2,0.34836,767
+770,O,ow,-0.820000,158,soap,1.00000,water.data:1,0.59366,771 772
+771,H,hw,+0.410000,158,soap,1.00000,water.data:2,0.34836,770
+772,H,hw,+0.410000,158,soap,1.00000,water.data:2,0.34836,770
+773,O,ow,-0.820000,159,soap,1.00000,water.data:1,0.59366,774 775
+774,H,hw,+0.410000,159,soap,1.00000,water.data:2,0.34836,773
+775,H,hw,+0.410000,159,soap,1.00000,water.data:2,0.34836,773
+776,O,ow,-0.820000,160,soap,1.00000,water.data:1,0.59366,777 778
+777,H,hw,+0.410000,160,soap,1.00000,water.data:2,0.34836,776
+778,H,hw,+0.410000,160,soap,1.00000,water.data:2,0.34836,776
+779,O,ow,-0.820000,161,soap,1.00000,water.data:1,0.59366,780 781
+780,H,hw,+0.410000,161,soap,1.00000,water.data:2,0.34836,779
+781,H,hw,+0.410000,161,soap,1.00000,water.data:2,0.34836,779
+782,O,ow,-0.820000,162,soap,1.00000,water.data:1,0.59366,783 784
+783,H,hw,+0.410000,162,soap,1.00000,water.data:2,0.34836,782
+784,H,hw,+0.410000,162,soap,1.00000,water.data:2,0.34836,782

@@ -4,18 +4,31 @@
   "wrong_type": 0,
   "wrong_charge": 0,
   "min_similarity": 1.0,
-  "type_check_differ": 0,
   "pair_coeff_differ": [],
   "bonds": "288 bonds",
   "angles": "624 angles",
   "bonded_coeffs": [
-   "bond_coeff 1 553.935 1.0  # O-H (Montmorillonite edge)",
-   "angle_coeff 1 30.0191 109.47  # MOH-Al-bulk (Montmorillonite edge)",
-   "angle_coeff 2 30.0191 109.47  # MOH-Al-surface (Montmorillonite edge)",
-   "angle_coeff 3 30.0191 109.47  # MOH-Mg-bulk (Montmorillonite edge)",
-   "angle_coeff 4 30.0191 109.47  # MOH-Mg-surface (Montmorillonite edge)",
-   "angle_coeff 5 30.0191 109.47  # MOH-Si-surface (Montmorillonite edge)",
-   "angle_coeff 6 800.0 100.0  # MOMe  (edge metal-O-metal) (Montmorillonite edge)"
+   "bond_coeff 1 553.935 1  # oab-ho",
+   "bond_coeff 2 553.935 1  # oed-ho",
+   "bond_coeff 3 553.935 1  # oh-ho",
+   "bond_coeff 4 553.935 1  # ohs-ho",
+   "bond_coeff 5 553.935 1  # omb-ho",
+   "angle_coeff 1 30.0191 109.47  # X-oab-ho",
+   "angle_coeff 2 30.0191 109.47  # X-oed-ho",
+   "angle_coeff 3 30.0191 109.47  # X-oh-ho",
+   "angle_coeff 4 30.0191 109.47  # X-ohs-ho",
+   "angle_coeff 5 30.0191 109.47  # X-omb-ho",
+   "angle_coeff 6 800 100  # ala-X-ala",
+   "angle_coeff 7 800 100  # ala-X-ao",
+   "angle_coeff 8 800 100  # ala-X-mga",
+   "angle_coeff 9 800 100  # ala-X-mgb",
+   "angle_coeff 10 800 100  # ala-X-mgo",
+   "angle_coeff 11 800 100  # alb-X-ala",
+   "angle_coeff 12 800 100  # alb-X-ao",
+   "angle_coeff 13 800 100  # alb-X-mga",
+   "angle_coeff 14 800 100  # alb-X-mgo",
+   "angle_coeff 15 800 100  # mga-X-ao",
+   "angle_coeff 16 800 100  # mgb-X-ao"
   ],
   "minimization": {
    "stop": [
@@ -24,7 +37,7 @@
    ],
    "energy_initial_final": [
     -509519.555466255,
-    -528845.635117305
+    -528845.445278599
    ]
   }
  },
@@ -33,18 +46,31 @@
   "wrong_type": 0,
   "wrong_charge": 0,
   "min_similarity": 1.0,
-  "type_check_differ": 0,
   "pair_coeff_differ": [],
   "bonds": "576 bonds",
   "angles": "1248 angles",
   "bonded_coeffs": [
-   "bond_coeff 1 553.935 1.0  # O-H (Montmorillonite edge)",
-   "angle_coeff 1 30.0191 109.47  # MOH-Al-bulk (Montmorillonite edge)",
-   "angle_coeff 2 30.0191 109.47  # MOH-Al-surface (Montmorillonite edge)",
-   "angle_coeff 3 30.0191 109.47  # MOH-Mg-bulk (Montmorillonite edge)",
-   "angle_coeff 4 30.0191 109.47  # MOH-Mg-surface (Montmorillonite edge)",
-   "angle_coeff 5 30.0191 109.47  # MOH-Si-surface (Montmorillonite edge)",
-   "angle_coeff 6 800.0 100.0  # MOMe  (edge metal-O-metal) (Montmorillonite edge)"
+   "bond_coeff 1 553.935 1  # oab-ho",
+   "bond_coeff 2 553.935 1  # oed-ho",
+   "bond_coeff 3 553.935 1  # oh-ho",
+   "bond_coeff 4 553.935 1  # ohs-ho",
+   "bond_coeff 5 553.935 1  # omb-ho",
+   "angle_coeff 1 30.0191 109.47  # X-oab-ho",
+   "angle_coeff 2 30.0191 109.47  # X-oed-ho",
+   "angle_coeff 3 30.0191 109.47  # X-oh-ho",
+   "angle_coeff 4 30.0191 109.47  # X-ohs-ho",
+   "angle_coeff 5 30.0191 109.47  # X-omb-ho",
+   "angle_coeff 6 800 100  # ala-X-ala",
+   "angle_coeff 7 800 100  # ala-X-ao",
+   "angle_coeff 8 800 100  # ala-X-mga",
+   "angle_coeff 9 800 100  # ala-X-mgb",
+   "angle_coeff 10 800 100  # ala-X-mgo",
+   "angle_coeff 11 800 100  # alb-X-ala",
+   "angle_coeff 12 800 100  # alb-X-ao",
+   "angle_coeff 13 800 100  # alb-X-mga",
+   "angle_coeff 14 800 100  # alb-X-mgo",
+   "angle_coeff 15 800 100  # mga-X-ao",
+   "angle_coeff 16 800 100  # mgb-X-ao"
   ],
   "minimization": {
    "stop": [
@@ -53,7 +79,7 @@
    ],
    "energy_initial_final": [
     -1019042.49831074,
-    -1057691.90076232
+    -1057692.76329229
    ]
   }
  },
@@ -82,12 +108,8 @@
    "Na": 4,
    "Cl": 4
   },
-  "roles": {
-   "mineral": 2268,
-   "water": 7680,
-   "ion": 32
-  },
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
   "water_apart": {
    "molecules": 2560,
    "bonds_taken_out": {}
@@ -100,8 +122,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -481562.00576409,
-    -561422.043790605
+    -481562.005800863,
+    -561336.019309265
    ]
   }
  }

@@ -10,10 +10,11 @@ by soapff_cui.water.pack (tolerance 2 A, seed 1) in a region given by constraint
   xygauss     a water film with a mound: inside box + below xygauss
   ions        a water film (2-22 A above z1) with 8 Na+ and 8 Cl-: inside box (muscovite)
 The number of water molecules: 1 g/cm3 in the free volume of the region (water.estimate).
-Then the force field of soapff (bundled clayff library) and a LAMMPS minimisation with the LAMMPS Python module (Ewald 1e-4,
-as in ../interfaces_001_water).
+Then the force field of soapff (soapff.build("clayff", ...)), compared with the right answer (the ClayFF types of the
+bond-graph rule and Table 1 charges, soapff_cui.core.clayff_answer), and a LAMMPS minimisation (Ewald 1e-4, as in
+../interfaces_001_water).  A structure.extxyz kept from packmol is used again.
 
-    python run.py            (with a Python where soapff and LAMMPS are installed: pip install "lammps[mpi]"; packmol)
+    python run.py            (soapff and the LAMMPS Python module, pip install "lammps[mpi]", or LMP=/path/to/lmp; packmol)
                               ->  <case>/ (structure.extxyz; soapff's system.data, system.settings, charges.csv, report.json;
                                   packmol/; the minimisation: its commands in.min, its log log.min), results.json"""
 import json
@@ -22,7 +23,6 @@ import shutil
 import sys
 
 import ase.io
-from lammps import lammps
 
 import soapff
 from soapff_cui import core, surfaces, water as W
@@ -32,7 +32,6 @@ sys.path.insert(0, os.path.join(HERE, ".."))
 import clay_md  # noqa: E402  (examples/clay_md.py: the LAMMPS commands of the clay examples)
 
 REFS = os.path.join(HERE, "..", "..", "src", "soapff", "libraries", "clayff", "bulk")
-LIB = os.path.join(HERE, "..", "..", "src", "soapff", "libraries", "clayff", "prebuilt", "library_clayff_bulk.npz")
 EWALD = "kspace_style ewald 1.0e-4"          # this test: Ewald 1e-4 instead of the PPPM of system.settings
 
 
@@ -72,12 +71,7 @@ def minimize(d):
     """the two-stage minimisation (clay_md.minimize) of the force field in `d` with Ewald 1e-4 after system.settings, with the
     LAMMPS Python module (log: log.min); the same commands are written to in.min (lmp -in in.min in the folder)"""
     s = soapff.System(d)
-    cmds = [EWALD] + clay_md.minimize()
-    clay_md.input_file(s, cmds, "in.min")
-    lmp = lammps(cmdargs=["-log", os.path.join(d, "log.min"), "-screen", "none"])
-    lmp.commands_list(s.commands() + cmds)
-    lmp.close()
-    L = open(os.path.join(d, "log.min")).read().splitlines()
+    L = open(clay_md.run(s, [EWALD] + clay_md.minimize(), "in.min", "log.min")).read().splitlines()
     k = [i for i, l in enumerate(L) if "Energy initial, next-to-last, final" in l]
     return dict(stop=[l.split("=")[1].strip() for l in L if "Stopping criterion" in l],
                 energy_initial_final=[float(L[k[0] + 1].split()[0]), float(L[k[-1] + 1].split()[2])] if k else None)
@@ -86,18 +80,25 @@ def minimize(d):
 if __name__ == "__main__":
     mmt, musc = slab_of("montmorillonite_dry_Na", (3, 2, 1)), slab_of("muscovite_2M1_bulk", (3, 2, 1))
     res = {}
+    old = json.load(open(os.path.join(HERE, "results.json"))) if os.path.isfile(os.path.join(HERE, "results.json")) else {}
     for kind, slab in (("sphere", mmt), ("hemisphere", musc), ("cylinder", mmt), ("cavity", mmt), ("xygauss", mmt),
                        ("ions", musc)):
         d = os.path.join(HERE, kind)
-        shutil.rmtree(d, ignore_errors=True)
-        os.makedirs(d)
+        f = os.path.join(d, "structure.extxyz")
         items = case(slab, kind)
-        s, rep = W.pack(slab, items, tolerance=2.0, seed=1, workdir=os.path.join(d, "packmol"), log=lambda *a: None)
-        ase.io.write(os.path.join(d, "structure.extxyz"), s, format="extxyz")
-        r = core.make(os.path.join(d, "structure.extxyz"), d, LIB, strict=True, log=lambda *a: None)
-        res[kind] = dict(atoms=len(s), packmol_converged=rep["converged"], placed={x["molecule"]: x["n"] for x in rep["items"]},
-                         nearest_atom=min(x["min_distance"] for x in rep["items"]),
-                         type_check_differ=r["type_check"]["differ"], charge_sum=round(r["charge_sum"], 4),
+        packed = {k: old.get(kind, {}).get(k) for k in ("packmol_converged", "placed", "nearest_atom")}
+        if not os.path.isfile(f):                                               # the structure: made once by packmol
+            shutil.rmtree(d, ignore_errors=True)
+            os.makedirs(d)
+            st, rep = W.pack(slab, items, tolerance=2.0, seed=1, workdir=os.path.join(d, "packmol"), log=lambda *a: None)
+            ase.io.write(f, st, format="extxyz")
+            packed = dict(packmol_converged=rep["converged"], placed={x["molecule"]: x["n"] for x in rep["items"]},
+                          nearest_atom=min(x["min_distance"] for x in rep["items"]))
+        st = core.read_structure(f)
+        s = soapff.build("clayff", f, d, log=lambda *a: None)
+        t0, q0 = core.clayff_answer(st)
+        res[kind] = dict(atoms=len(st), **packed, **core.score(s.types, s.charges, t0, q0),
+                         min_similarity=round(s.report["min_similarity_soap"], 4), charge_sum=round(s.report["charge_sum"], 4),
                          constraints=items[0]["constraints"], minimization=minimize(d))
         print(kind, {k: v for k, v in res[kind].items() if k != "constraints"}, flush=True)
     json.dump(res, open(os.path.join(HERE, "results.json"), "w"), indent=1)

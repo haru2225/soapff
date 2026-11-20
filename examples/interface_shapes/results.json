@@ -6,7 +6,9 @@
    "water": 139
   },
   "nearest_atom": 4.92,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
+  "min_similarity": 1.0,
   "charge_sum": 0.0024,
   "constraints": [
    [
@@ -26,8 +28,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -468026.955050809,
-    -471583.825727973
+    -468026.955086439,
+    -471583.825385516
    ]
   }
  },
@@ -38,7 +40,9 @@
    "water": 151
   },
   "nearest_atom": 2.23,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
+  "min_similarity": 1.0,
   "charge_sum": -0.0192,
   "constraints": [
    [
@@ -68,8 +72,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -436755.139960739,
-    -459658.186349864
+    -436755.139994064,
+    -459437.8272982
    ]
   }
  },
@@ -80,7 +84,9 @@
    "water": 291
   },
   "nearest_atom": 3.12,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
+  "min_similarity": 1.0,
   "charge_sum": 0.0024,
   "constraints": [
    [
@@ -104,8 +110,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -466392.768740204,
-    -473570.119576323
+    -466392.768778004,
+    -473570.121472791
    ]
   }
  },
@@ -116,7 +122,9 @@
    "water": 697
   },
   "nearest_atom": 3.3,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
+  "min_similarity": 1.0,
   "charge_sum": 0.0024,
   "constraints": [
    [
@@ -148,8 +156,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -460423.066372235,
-    -478883.956704644
+    -460423.06641787,
+    -478882.917104846
    ]
   }
  },
@@ -160,7 +168,9 @@
    "water": 401
   },
   "nearest_atom": 3.13,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
+  "min_similarity": 1.0,
   "charge_sum": 0.0024,
   "constraints": [
    [
@@ -194,8 +204,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -464824.205928318,
-    -475121.591981531
+    -464824.205968181,
+    -475121.592073051
    ]
   }
  },
@@ -208,7 +218,9 @@
    "Cl": 8
   },
   "nearest_atom": 2.21,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
+  "min_similarity": 1.0,
   "charge_sum": -0.0192,
   "constraints": [
    [
@@ -230,8 +242,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -426101.032088011,
-    -468250.947221905
+    -426101.032133815,
+    -468852.751348399
    ]
   }
  }

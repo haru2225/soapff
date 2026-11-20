@@ -73,12 +73,9 @@ L = ["# soapff library: OPLS-AA (Jorgensen, Maxwell, Tirado-Rives 1996) as distr
      "# 1-4 interactions: special_bonds lj/coul 0 0 0.5; LJ mixing: geometric (sigma and epsilon).",
      "",
      "[library]",
-     "name        = oplsaa",
-     "engine      = molecular",
-     "description = OPLS-AA (Foyer) for polymers: PE, PP, PIB, PB, PI, PEO, PMMA, PMA, PVA, PAN, PTFE and their oligomers",
-     "reference   = W. L. Jorgensen, D. S. Maxwell, J. Tirado-Rives, J. Am. Chem. Soc. 118, 11225 (1996); types by SMARTS: "
+     "name      = oplsaa",
+     "reference = W. L. Jorgensen, D. S. Maxwell, J. Tirado-Rives, J. Am. Chem. Soc. 118, 11225 (1996); types by SMARTS: "
      "C. Klein et al., Comput. Mater. Sci. 167, 215 (2019)",
-     f"source      = foyer {foyer.__version__} forcefields/xml/oplsaa.xml",
      "",
      "[soap]", "r_cut = 5.0", "n_max = 4", "l_max = 3", "sigma = 0.4", "depth = 4", "prune = 0.999", "threshold = 0.9", "",
      "[bond_lengths]",

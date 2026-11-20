@@ -5,7 +5,8 @@
   "atoms": 692,
   "packmol_converged": true,
   "nearest_atom": 2.33,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
   "min_similarity": 1.0,
   "charge_sum": 0.0004,
   "minimization": {
@@ -14,8 +15,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -76179.0170594745,
-    -80027.9137580159
+    -76179.0170678218,
+    -80028.7974897642
    ]
   }
  },
@@ -25,7 +26,8 @@
   "atoms": 738,
   "packmol_converged": true,
   "nearest_atom": 2.87,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
   "min_similarity": 1.0,
   "charge_sum": -0.0032,
   "minimization": {
@@ -34,8 +36,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -70940.5550696346,
-    -78900.4909217585
+    -70940.5550786114,
+    -78900.4889588284
    ]
   }
  },
@@ -45,7 +47,8 @@
   "atoms": 759,
   "packmol_converged": true,
   "nearest_atom": 2.2,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
   "min_similarity": 1.0,
   "charge_sum": -0.0032,
   "minimization": {
@@ -54,8 +57,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -71808.5219445218,
-    -79173.3875619477
+    -71808.5219522922,
+    -79172.2193941937
    ]
   }
  },
@@ -65,7 +68,8 @@
   "atoms": 784,
   "packmol_converged": true,
   "nearest_atom": 2.2,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
   "min_similarity": 1.0,
   "charge_sum": -0.0032,
   "minimization": {
@@ -74,8 +78,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -66324.1278649287,
-    -74439.2964625854
+    -66324.1278733397,
+    -74439.3056855821
    ]
   }
  },
@@ -85,7 +89,8 @@
   "atoms": 774,
   "packmol_converged": true,
   "nearest_atom": 2.36,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
   "min_similarity": 1.0,
   "charge_sum": -0.0032,
   "minimization": {
@@ -94,8 +99,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -71228.6222086241,
-    -78919.5272551502
+    -71228.6222171064,
+    -78919.5314856874
    ]
   }
  },
@@ -105,7 +110,8 @@
   "atoms": 710,
   "packmol_converged": true,
   "nearest_atom": 2.2,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
   "min_similarity": 1.0,
   "charge_sum": -0.0,
   "minimization": {
@@ -114,8 +120,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -74033.0420860813,
-    -79071.5633941793
+    -74033.0420943919,
+    -79072.2183780303
    ]
   }
  },
@@ -125,7 +131,8 @@
   "atoms": 1659,
   "packmol_converged": true,
   "nearest_atom": 2.16,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
   "min_similarity": 1.0,
   "charge_sum": 0.0,
   "minimization": {
@@ -134,8 +141,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -130398.938565537,
-    -142020.979201697
+    -130398.93858414,
+    -142019.699023409
    ]
   }
  },
@@ -145,7 +152,8 @@
   "atoms": 1335,
   "packmol_converged": true,
   "nearest_atom": 2.68,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
   "min_similarity": 1.0,
   "charge_sum": 0.0,
   "minimization": {
@@ -154,8 +162,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -74404.4810259104,
-    -96059.095018627
+    -74404.4810537941,
+    -96059.0889112362
    ]
   }
  },
@@ -165,7 +173,8 @@
   "atoms": 849,
   "packmol_converged": true,
   "nearest_atom": 2.36,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
   "min_similarity": 1.0,
   "charge_sum": 0.0,
   "minimization": {
@@ -174,8 +183,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -72881.5250684865,
-    -83995.2156755036
+    -72881.5250838682,
+    -83995.2216417585
    ]
   }
  },
@@ -185,7 +194,8 @@
   "atoms": 885,
   "packmol_converged": true,
   "nearest_atom": 2.19,
-  "type_check_differ": 0,
+  "wrong": 0,
+  "kinds": {},
   "min_similarity": 1.0,
   "charge_sum": 0.0,
   "minimization": {
@@ -194,8 +204,8 @@
     "energy tolerance"
    ],
    "energy_initial_final": [
-    -13747.1850288414,
-    -21841.0064319427
+    -13747.1850397893,
+    -21869.8632866563
    ]
   }
  }

@@ -1,21 +1,14 @@
 # soapff library: montmorillonite with edges (T. R. Underwood, I. C. Bourg, J. Phys. Chem. C 124, 3702 (2020), after Lammers et
 # al.), the optional clay library of soapff.
 #
-# engine clayff with the force field of the reference particle (clayff/edge/clay_montmorillonite.data and .settings): its LJ,
-# O-H bond, M-O-H and edge metal-O-metal angles in the tables below, its charges in the reference atoms; the water and the
-# ions added are ClayFF.  Typed in the two steps of clayff.txt, the water molecules taken apart from the particle (a water O
+# The force field of the reference particle (clayff/edge/clay_montmorillonite.data and .settings): its LJ, O-H bond, M-O-H
+# and edge metal-O-metal angles in the tables below, its charges in the reference atoms; the water and the ions added are
+# ClayFF.  Typed in the two steps of clayff.txt, the water molecules taken apart from the particle (a water O
 # nearer than the bond length to an edge Al or Mg is not bonded to it).  Montmorillonite only: other minerals stop.
 
 [library]
-name        = clayff_edge
-engine      = clayff
-description = montmorillonite particle with edges (Underwood & Bourg 2020); added water and ions ClayFF
-reference   = T. R. Underwood, I. C. Bourg, J. Phys. Chem. C 124, 3702 (2020)
-forcefield_name = Montmorillonite edge
-forcefield_source = T. R. Underwood, I. C. Bourg, J. Phys. Chem. C 124, 3702 (2020)
-prebuilt    = clayff/prebuilt/library_clayff_edge.npz
-prebuilt_sha = 0d0bc51876ee3109
-prebuilt_dscribe = 2.1.2
+name      = clayff_edge
+reference = T. R. Underwood, I. C. Bourg, J. Phys. Chem. C 124, 3702 (2020)
 
 [soap]
 r_cut = 5.0
@@ -36,7 +29,7 @@ Mg O   2.65   # 1.963  3.333
 H  O   1.25   # 1.000  1.806  (halfway 1.40)
 
 [lammps]
-# the settings of ClayFF (the clayff engine writes them; the cutoff and kspace are the defaults of soapff.build; the particle file: ewald)
+# the settings of ClayFF (the particle file: ewald)
 pair_style     = lj/cut/coul/long 10.0
 pair_modify    = mix arithmetic tail no
 kspace_style   = pppm 1.0e-5
@@ -85,21 +78,37 @@ oab ho   553.935 1.0
 omb ho   553.935 1.0
 
 [angles]
-# H-O-H of water (ClayFF); metal-O-H of the hydroxyls (X: the metal) and the edge metal - O - octahedral metal angle,
-# the particle's (which angles there are is the rule of the clayff engine).  t1 t2 t3 K(kcal/mol/rad^2) theta0(deg)
+# H-O-H of water (ClayFF); metal-O-H of the hydroxyls (X: the metal) and the edge metal - O - octahedral metal angle, the
+# particle's.  The metal-O bonds are bonds of step 1 only (no row of [bonds] names a metal): an angle on them is written
+# when a row names it.  t1 t2 t3 K(kcal/mol/rad^2) theta0(deg)
 hw  ow  hw   45.7696 109.47
 X   oh  ho   30.0191 109.47
 X   ohs ho   30.0191 109.47
 X   oed ho   30.0191 109.47
 X   oab ho   30.0191 109.47
 X   omb ho   30.0191 109.47
-alb X   X    800.0 100.0
-ala X   X    800.0 100.0
-mgb X   X    800.0 100.0
-mga X   X    800.0 100.0
+# an edge metal (alb, ala, mgb, mga) - O (X) - an octahedral metal
+alb X   ao   800.0 100.0
+alb X   mgo  800.0 100.0
+ala X   ao   800.0 100.0
+ala X   mgo  800.0 100.0
+mgb X   ao   800.0 100.0
+mgb X   mgo  800.0 100.0
+mga X   ao   800.0 100.0
+mga X   mgo  800.0 100.0
+alb X   alb  800.0 100.0
+alb X   ala  800.0 100.0
+alb X   mgb  800.0 100.0
+alb X   mga  800.0 100.0
+ala X   ala  800.0 100.0
+ala X   mgb  800.0 100.0
+ala X   mga  800.0 100.0
+mgb X   mgb  800.0 100.0
+mgb X   mga  800.0 100.0
+mga X   mga  800.0 100.0
 
 [references]
-clayff/edge/clay_montmorillonite.data
+clayff/edge/clay_montmorillonite.data  prune=1.0
 clayff/edge/clay_montmorillonite_2.data  prune=0.999
 # water and the ions of ClayFF Table 1 (in bulk water and in films and a droplet in vacuum)
 clayff/water/water.data  prune=0.99

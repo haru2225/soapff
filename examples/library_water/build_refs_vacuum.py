@@ -18,10 +18,10 @@ import ase.io
 import numpy as np
 from ase import Atoms
 
-from soapff_cui import core, water
+import soapff
+from soapff_cui import water
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-LIB = os.path.join(HERE, "..", "..", "src", "soapff", "libraries", "clayff", "prebuilt", "library_clayff_bulk.npz")
 L = 24.83
 H = 50.0                                                     # cell height of the films and the droplet cube (A)
 RHO = 0.03343                                                # molecules per A^3 at 1 g/cm3
@@ -61,5 +61,5 @@ if __name__ == "__main__":
         os.makedirs(d, exist_ok=True)
         s = build(kind, size, ions)
         ase.io.write(os.path.join(d, "structure.extxyz"), s, format="extxyz")
-        r = core.make(os.path.join(d, "structure.extxyz"), d, LIB, strict=True, log=quiet)
+        r = soapff.build("clayff", os.path.join(d, "structure.extxyz"), d, log=quiet).report
         print(name, r["atoms"], "atoms", flush=True)

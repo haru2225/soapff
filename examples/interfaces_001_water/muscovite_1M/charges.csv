@@ -1,760 +1,760 @@
-id,element,role,clayff_type,charge,source,matched_library_type,similarity,bond_type,bonds,margin,reference_atom
-1,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.09464,muscovite_1M_bulk.data:1
-2,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08103,muscovite_1M_bulk.data:7
-3,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08391,muscovite_1M_bulk.data:4
-4,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08391,muscovite_1M_bulk.data:3
-5,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07209,muscovite_1M_bulk.data:6
-6,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07208,muscovite_1M_bulk.data:5
-7,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08103,muscovite_1M_bulk.data:2
-8,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.09465,muscovite_1M_bulk.data:8
-9,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08394,muscovite_1M_bulk.data:9
-10,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08393,muscovite_1M_bulk.data:3
-11,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07206,muscovite_1M_bulk.data:11
-12,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07208,muscovite_1M_bulk.data:12
-13,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:22
-14,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:14
-15,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:15
-16,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:19
-17,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:17
-18,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:24
-19,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:19
-20,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:22
-21,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:14
-22,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:22
-23,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:17
-24,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:18
-25,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-26,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-27,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-28,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-29,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:29
-30,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:53
-31,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:31
-32,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:32
-33,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03916,muscovite_1M_bulk.data:60
-34,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03915,muscovite_1M_bulk.data:36
-35,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03916,muscovite_1M_bulk.data:60
-36,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03915,muscovite_1M_bulk.data:59
-37,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04029,muscovite_1M_bulk.data:62
-38,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04121,muscovite_1M_bulk.data:61
-39,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04030,muscovite_1M_bulk.data:39
-40,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04122,muscovite_1M_bulk.data:38
-41,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:41
-42,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01498,muscovite_1M_bulk.data:67
-43,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:41
-44,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01498,muscovite_1M_bulk.data:65
-45,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02818,muscovite_1M_bulk.data:47
-46,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:71
-47,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02818,muscovite_1M_bulk.data:45
-48,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:71
-49,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01910,muscovite_1M_bulk.data:49
-50,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01911,muscovite_1M_bulk.data:49
-51,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02115,muscovite_1M_bulk.data:51
-52,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02116,muscovite_1M_bulk.data:76
-53,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:30
-54,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:29
-55,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:55
-56,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:31
-57,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03915,muscovite_1M_bulk.data:59
-58,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03914,muscovite_1M_bulk.data:60
-59,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03914,muscovite_1M_bulk.data:36
-60,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03915,muscovite_1M_bulk.data:58
-61,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04120,muscovite_1M_bulk.data:38
-62,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04029,muscovite_1M_bulk.data:62
-63,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04120,muscovite_1M_bulk.data:40
-64,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04029,muscovite_1M_bulk.data:62
-65,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01497,muscovite_1M_bulk.data:65
-66,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:43
-67,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01497,muscovite_1M_bulk.data:42
-68,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:41
-69,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:71
-70,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02817,muscovite_1M_bulk.data:47
-71,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:48
-72,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02816,muscovite_1M_bulk.data:70
-73,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01911,muscovite_1M_bulk.data:73
-74,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01911,muscovite_1M_bulk.data:73
-75,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02114,muscovite_1M_bulk.data:76
-76,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02115,muscovite_1M_bulk.data:75
-77,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40880,muscovite_1M_bulk.data:78
-78,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40881,muscovite_1M_bulk.data:77
-79,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41126,muscovite_1M_bulk.data:83
-80,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41138,muscovite_1M_bulk.data:83
-81,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40907,muscovite_1M_bulk.data:82
-82,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40906,muscovite_1M_bulk.data:81
-83,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41128,muscovite_1M_bulk.data:84
-84,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41140,muscovite_1M_bulk.data:83
-85,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.09464,muscovite_1M_bulk.data:1
-86,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08103,muscovite_1M_bulk.data:7
-87,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08391,muscovite_1M_bulk.data:4
-88,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08391,muscovite_1M_bulk.data:3
-89,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07209,muscovite_1M_bulk.data:6
-90,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07208,muscovite_1M_bulk.data:5
-91,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08103,muscovite_1M_bulk.data:2
-92,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.09465,muscovite_1M_bulk.data:8
-93,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08394,muscovite_1M_bulk.data:9
-94,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08393,muscovite_1M_bulk.data:3
-95,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07206,muscovite_1M_bulk.data:11
-96,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07208,muscovite_1M_bulk.data:12
-97,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:22
-98,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:14
-99,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:15
-100,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:19
-101,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:17
-102,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:24
-103,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:19
-104,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:22
-105,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:14
-106,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:22
-107,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:17
-108,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:18
-109,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-110,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-111,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-112,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-113,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:29
-114,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:53
-115,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:31
-116,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:32
-117,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03916,muscovite_1M_bulk.data:60
-118,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03915,muscovite_1M_bulk.data:36
-119,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03916,muscovite_1M_bulk.data:60
-120,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03915,muscovite_1M_bulk.data:59
-121,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04029,muscovite_1M_bulk.data:62
-122,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04121,muscovite_1M_bulk.data:61
-123,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04030,muscovite_1M_bulk.data:39
-124,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04122,muscovite_1M_bulk.data:38
-125,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:41
-126,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01498,muscovite_1M_bulk.data:67
-127,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:41
-128,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01498,muscovite_1M_bulk.data:65
-129,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02818,muscovite_1M_bulk.data:47
-130,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:71
-131,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02818,muscovite_1M_bulk.data:45
-132,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:71
-133,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01910,muscovite_1M_bulk.data:49
-134,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01911,muscovite_1M_bulk.data:49
-135,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02115,muscovite_1M_bulk.data:51
-136,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02116,muscovite_1M_bulk.data:76
-137,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:30
-138,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:29
-139,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:55
-140,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:31
-141,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03915,muscovite_1M_bulk.data:59
-142,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03914,muscovite_1M_bulk.data:60
-143,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03914,muscovite_1M_bulk.data:36
-144,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03915,muscovite_1M_bulk.data:58
-145,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04120,muscovite_1M_bulk.data:38
-146,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04029,muscovite_1M_bulk.data:62
-147,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04120,muscovite_1M_bulk.data:40
-148,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04029,muscovite_1M_bulk.data:62
-149,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01497,muscovite_1M_bulk.data:65
-150,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:43
-151,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01497,muscovite_1M_bulk.data:42
-152,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:41
-153,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:71
-154,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02817,muscovite_1M_bulk.data:47
-155,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:48
-156,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02816,muscovite_1M_bulk.data:70
-157,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01911,muscovite_1M_bulk.data:73
-158,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01911,muscovite_1M_bulk.data:73
-159,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02114,muscovite_1M_bulk.data:76
-160,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02115,muscovite_1M_bulk.data:75
-161,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40880,muscovite_1M_bulk.data:78
-162,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40881,muscovite_1M_bulk.data:77
-163,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41126,muscovite_1M_bulk.data:83
-164,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41138,muscovite_1M_bulk.data:83
-165,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40907,muscovite_1M_bulk.data:82
-166,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40906,muscovite_1M_bulk.data:81
-167,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41128,muscovite_1M_bulk.data:84
-168,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41140,muscovite_1M_bulk.data:83
-169,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.09464,muscovite_1M_bulk.data:1
-170,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08103,muscovite_1M_bulk.data:7
-171,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08391,muscovite_1M_bulk.data:4
-172,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08391,muscovite_1M_bulk.data:3
-173,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07209,muscovite_1M_bulk.data:6
-174,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07208,muscovite_1M_bulk.data:5
-175,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08103,muscovite_1M_bulk.data:2
-176,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.09465,muscovite_1M_bulk.data:8
-177,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08394,muscovite_1M_bulk.data:9
-178,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08393,muscovite_1M_bulk.data:3
-179,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07206,muscovite_1M_bulk.data:11
-180,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07208,muscovite_1M_bulk.data:12
-181,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:22
-182,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:14
-183,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:15
-184,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:19
-185,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:17
-186,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:24
-187,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:19
-188,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:22
-189,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:14
-190,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:22
-191,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:17
-192,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:18
-193,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-194,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-195,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-196,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-197,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:29
-198,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:53
-199,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:31
-200,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:32
-201,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03916,muscovite_1M_bulk.data:60
-202,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03915,muscovite_1M_bulk.data:36
-203,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03916,muscovite_1M_bulk.data:60
-204,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03915,muscovite_1M_bulk.data:59
-205,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04029,muscovite_1M_bulk.data:62
-206,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04121,muscovite_1M_bulk.data:61
-207,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04030,muscovite_1M_bulk.data:39
-208,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04122,muscovite_1M_bulk.data:38
-209,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:41
-210,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01498,muscovite_1M_bulk.data:67
-211,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:41
-212,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01498,muscovite_1M_bulk.data:65
-213,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02818,muscovite_1M_bulk.data:47
-214,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:71
-215,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02818,muscovite_1M_bulk.data:45
-216,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:71
-217,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01910,muscovite_1M_bulk.data:49
-218,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01911,muscovite_1M_bulk.data:49
-219,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02115,muscovite_1M_bulk.data:51
-220,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02116,muscovite_1M_bulk.data:76
-221,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:30
-222,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:29
-223,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:55
-224,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:31
-225,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03915,muscovite_1M_bulk.data:59
-226,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03914,muscovite_1M_bulk.data:60
-227,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03914,muscovite_1M_bulk.data:36
-228,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03915,muscovite_1M_bulk.data:58
-229,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04120,muscovite_1M_bulk.data:38
-230,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04029,muscovite_1M_bulk.data:62
-231,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04120,muscovite_1M_bulk.data:40
-232,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04029,muscovite_1M_bulk.data:62
-233,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01497,muscovite_1M_bulk.data:65
-234,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:43
-235,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01497,muscovite_1M_bulk.data:42
-236,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:41
-237,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:71
-238,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02817,muscovite_1M_bulk.data:47
-239,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:48
-240,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02816,muscovite_1M_bulk.data:70
-241,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01911,muscovite_1M_bulk.data:73
-242,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01911,muscovite_1M_bulk.data:73
-243,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02114,muscovite_1M_bulk.data:76
-244,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02115,muscovite_1M_bulk.data:75
-245,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40880,muscovite_1M_bulk.data:78
-246,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40881,muscovite_1M_bulk.data:77
-247,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41126,muscovite_1M_bulk.data:83
-248,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41138,muscovite_1M_bulk.data:83
-249,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40907,muscovite_1M_bulk.data:82
-250,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40906,muscovite_1M_bulk.data:81
-251,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41128,muscovite_1M_bulk.data:84
-252,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41140,muscovite_1M_bulk.data:83
-253,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.09464,muscovite_1M_bulk.data:1
-254,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08103,muscovite_1M_bulk.data:7
-255,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08391,muscovite_1M_bulk.data:4
-256,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08391,muscovite_1M_bulk.data:3
-257,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07209,muscovite_1M_bulk.data:6
-258,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07208,muscovite_1M_bulk.data:5
-259,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08103,muscovite_1M_bulk.data:2
-260,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.09465,muscovite_1M_bulk.data:8
-261,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08394,muscovite_1M_bulk.data:9
-262,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.08393,muscovite_1M_bulk.data:3
-263,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07206,muscovite_1M_bulk.data:11
-264,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.07208,muscovite_1M_bulk.data:12
-265,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:22
-266,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:14
-267,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:15
-268,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:19
-269,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:17
-270,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:24
-271,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:19
-272,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:22
-273,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:14
-274,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:22
-275,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:17
-276,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,muscovite_1M_bulk.data:18
-277,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-278,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-279,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-280,K,ion,K,+1.000000,soap,K,1.00000,K,none,2.00000,muscovite_1M_bulk.data:25
-281,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:29
-282,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:53
-283,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:31
-284,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:32
-285,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03916,muscovite_1M_bulk.data:60
-286,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03915,muscovite_1M_bulk.data:36
-287,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03916,muscovite_1M_bulk.data:60
-288,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03915,muscovite_1M_bulk.data:59
-289,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04029,muscovite_1M_bulk.data:62
-290,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04121,muscovite_1M_bulk.data:61
-291,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04030,muscovite_1M_bulk.data:39
-292,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04122,muscovite_1M_bulk.data:38
-293,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:41
-294,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01498,muscovite_1M_bulk.data:67
-295,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:41
-296,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01498,muscovite_1M_bulk.data:65
-297,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02818,muscovite_1M_bulk.data:47
-298,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:71
-299,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02818,muscovite_1M_bulk.data:45
-300,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:71
-301,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01910,muscovite_1M_bulk.data:49
-302,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01911,muscovite_1M_bulk.data:49
-303,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02115,muscovite_1M_bulk.data:51
-304,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02116,muscovite_1M_bulk.data:76
-305,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:30
-306,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04382,muscovite_1M_bulk.data:29
-307,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:55
-308,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04229,muscovite_1M_bulk.data:31
-309,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03915,muscovite_1M_bulk.data:59
-310,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03914,muscovite_1M_bulk.data:60
-311,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.03914,muscovite_1M_bulk.data:36
-312,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.03915,muscovite_1M_bulk.data:58
-313,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04120,muscovite_1M_bulk.data:38
-314,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04029,muscovite_1M_bulk.data:62
-315,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04120,muscovite_1M_bulk.data:40
-316,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04029,muscovite_1M_bulk.data:62
-317,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01497,muscovite_1M_bulk.data:65
-318,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:43
-319,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01497,muscovite_1M_bulk.data:42
-320,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01564,muscovite_1M_bulk.data:41
-321,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:71
-322,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02817,muscovite_1M_bulk.data:47
-323,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01391,muscovite_1M_bulk.data:48
-324,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.02816,muscovite_1M_bulk.data:70
-325,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01911,muscovite_1M_bulk.data:73
-326,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01911,muscovite_1M_bulk.data:73
-327,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02114,muscovite_1M_bulk.data:76
-328,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.02115,muscovite_1M_bulk.data:75
-329,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40880,muscovite_1M_bulk.data:78
-330,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40881,muscovite_1M_bulk.data:77
-331,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41126,muscovite_1M_bulk.data:83
-332,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41138,muscovite_1M_bulk.data:83
-333,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40907,muscovite_1M_bulk.data:82
-334,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40906,muscovite_1M_bulk.data:81
-335,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41128,muscovite_1M_bulk.data:84
-336,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41140,muscovite_1M_bulk.data:83
-337,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-338,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-339,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-340,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-341,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-342,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-343,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-344,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-345,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-346,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-347,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-348,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-349,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-350,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-351,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-352,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-353,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-354,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-355,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-356,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-357,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-358,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-359,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-360,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-361,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-362,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-363,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-364,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-365,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-366,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-367,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-368,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-369,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-370,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-371,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-372,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-373,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-374,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-375,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-376,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-377,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-378,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-379,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-380,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-381,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-382,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-383,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-384,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-385,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-386,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-387,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-388,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-389,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-390,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-391,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-392,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-393,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-394,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-395,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-396,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-397,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-398,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-399,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-400,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-401,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-402,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-403,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-404,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-405,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-406,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-407,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-408,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-409,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-410,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-411,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-412,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-413,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-414,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-415,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-416,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-417,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-418,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-419,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-420,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-421,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-422,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-423,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-424,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-425,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-426,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-427,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-428,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-429,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-430,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-431,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-432,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-433,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-434,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-435,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-436,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-437,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-438,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-439,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-440,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-441,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-442,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-443,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-444,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-445,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-446,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-447,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-448,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-449,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-450,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-451,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-452,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-453,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-454,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-455,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-456,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-457,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-458,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-459,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-460,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-461,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-462,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-463,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-464,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-465,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-466,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-467,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-468,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-469,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-470,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-471,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-472,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-473,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-474,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-475,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-476,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-477,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-478,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-479,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-480,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-481,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-482,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-483,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-484,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-485,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-486,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-487,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-488,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-489,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-490,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-491,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-492,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-493,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-494,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-495,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-496,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-497,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-498,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-499,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-500,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-501,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-502,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-503,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-504,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-505,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-506,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-507,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-508,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-509,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-510,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-511,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-512,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-513,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-514,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-515,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-516,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-517,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-518,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-519,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-520,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-521,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-522,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-523,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-524,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-525,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-526,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-527,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-528,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-529,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-530,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-531,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-532,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-533,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-534,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-535,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-536,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-537,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-538,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-539,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-540,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-541,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-542,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-543,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-544,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-545,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-546,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-547,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-548,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-549,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-550,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-551,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-552,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-553,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-554,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-555,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-556,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-557,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-558,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-559,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-560,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-561,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-562,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-563,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-564,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-565,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-566,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-567,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-568,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-569,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-570,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-571,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-572,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-573,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-574,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-575,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-576,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-577,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-578,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-579,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-580,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-581,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-582,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-583,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-584,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-585,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-586,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-587,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-588,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-589,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-590,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-591,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-592,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-593,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-594,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-595,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-596,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-597,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-598,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-599,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-600,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-601,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-602,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-603,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-604,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-605,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-606,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-607,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-608,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-609,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-610,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-611,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-612,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-613,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-614,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-615,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-616,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-617,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-618,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-619,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-620,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-621,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-622,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-623,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-624,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-625,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-626,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-627,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-628,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-629,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-630,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-631,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-632,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-633,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-634,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-635,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-636,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-637,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-638,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-639,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-640,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-641,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-642,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-643,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-644,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-645,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-646,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-647,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-648,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-649,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-650,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-651,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-652,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-653,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-654,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-655,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-656,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-657,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-658,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-659,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-660,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-661,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-662,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-663,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-664,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-665,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-666,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-667,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-668,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-669,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-670,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-671,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-672,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-673,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-674,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-675,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-676,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-677,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-678,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-679,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-680,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-681,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-682,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-683,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-684,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-685,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-686,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-687,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-688,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-689,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-690,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-691,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-692,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-693,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-694,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-695,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-696,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-697,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-698,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-699,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-700,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-701,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-702,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-703,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-704,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-705,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-706,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-707,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-708,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-709,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-710,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-711,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-712,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-713,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-714,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-715,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-716,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-717,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-718,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-719,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-720,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-721,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-722,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-723,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-724,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-725,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-726,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-727,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-728,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-729,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-730,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-731,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-732,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-733,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-734,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-735,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-736,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-737,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-738,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-739,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-740,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-741,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-742,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-743,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-744,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-745,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-746,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-747,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-748,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-749,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-750,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-751,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-752,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-753,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-754,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-755,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-756,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-757,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-758,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-759,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
+id,element,type,charge,molecule,source,similarity_soap,nearest_reference,margin_soap,bonded_to
+1,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:1,0.09464,41 47 51 66 72 76
+2,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:2,0.08103,44 46 51 67 69 76
+3,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:4,0.08391,43 44 45 46 50 133
+4,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:3,0.08391,41 42 47 48 49 134
+5,Al,at,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:5,0.07209,31 36 37 45
+6,Al,at,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:5,0.07208,32 34 39 47
+7,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:2,0.08103,42 48 52 65 71 75
+8,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:1,0.09465,43 45 52 68 70 75
+9,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:9,0.08394,67 68 69 70 73 158
+10,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:3,0.08393,65 66 71 72 74 157
+11,Al,at,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:11,0.07206,56 59 62 70
+12,Al,at,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:11,0.07208,55 57 64 72
+13,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:20,,33 41 64 137
+14,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:14,,34 42 54 63
+15,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:20,,35 43 62 138
+16,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:14,,36 44 53 61
+17,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:17,,32 35 38 46
+18,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:24,,31 33 40 48
+19,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:14,,29 40 57 65
+20,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:13,,30 39 58 66
+21,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:14,,38 59 67 114
+22,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:13,,37 60 68 113
+23,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:17,,55 60 61 69
+24,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:24,,56 58 63 71
+25,K,K,+1.000000,2,ion,1.00000,muscovite_1M_bulk.data:25,,
+26,K,K,+1.000000,3,ion,1.00000,muscovite_1M_bulk.data:25,,
+27,K,K,+1.000000,4,ion,1.00000,muscovite_1M_bulk.data:25,,
+28,K,K,+1.000000,5,ion,1.00000,muscovite_1M_bulk.data:25,,
+29,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,19 106
+30,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,20 105
+31,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:31,0.04229,5 18
+32,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:116,0.04229,6 17
+33,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:58,0.03916,13 18
+34,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:36,0.03915,6 14
+35,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:33,0.03916,15 17
+36,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:143,0.03915,5 16
+37,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:62,0.04029,5 22
+38,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:61,0.04121,17 21
+39,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:39,0.04030,6 20
+40,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:38,0.04122,18 19
+41,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:41,0.01564,1 4 13
+42,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:42,0.01498,4 7 14
+43,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:41,0.01564,3 8 15
+44,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:42,0.01498,2 3 16
+45,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:45,0.02818,3 5 8
+46,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:48,0.01391,2 3 17
+47,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:45,0.02818,1 4 6
+48,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:48,0.01391,4 7 18
+49,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:49,0.01910,4 80 87
+50,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:49,0.01911,3 79 88
+51,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:51,0.02115,1 2 77
+52,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:52,0.02116,7 8 78
+53,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,16 97
+54,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,14 99
+55,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:55,0.04229,12 23
+56,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:31,0.04229,11 24
+57,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:143,0.03915,12 19
+58,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:58,0.03914,20 24
+59,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:36,0.03914,11 21
+60,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:58,0.03915,22 23
+61,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:38,0.04120,16 23
+62,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:62,0.04029,11 15
+63,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:61,0.04120,14 24
+64,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:62,0.04029,12 13
+65,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:42,0.01497,7 10 19
+66,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:43,0.01564,1 10 20
+67,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:42,0.01497,2 9 21
+68,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:41,0.01564,8 9 22
+69,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:46,0.01391,2 9 23
+70,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:72,0.02817,8 9 11
+71,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:48,0.01391,7 10 24
+72,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:45,0.02816,1 10 12
+73,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:49,0.01911,9 84 94
+74,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:49,0.01911,10 83 93
+75,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:52,0.02114,7 8 81
+76,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:52,0.02115,1 2 82
+77,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:81,0.40879,51
+78,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:77,0.40881,52
+79,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:83,0.41126,50
+80,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:83,0.41138,49
+81,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:81,0.40907,75
+82,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:81,0.40906,76
+83,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:83,0.41128,74
+84,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:83,0.41140,73
+85,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:1,0.09464,125 131 135 150 156 160
+86,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:2,0.08103,128 130 135 151 153 160
+87,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:4,0.08391,49 127 128 129 130 134
+88,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:3,0.08391,50 125 126 131 132 133
+89,Al,at,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:5,0.07209,115 120 121 129
+90,Al,at,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:5,0.07208,116 118 123 131
+91,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:2,0.08103,126 132 136 149 155 159
+92,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:1,0.09465,127 129 136 152 154 159
+93,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:9,0.08394,74 151 152 153 154 157
+94,Al,ao,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:3,0.08393,73 149 150 155 156 158
+95,Al,at,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:11,0.07206,140 143 146 154
+96,Al,at,+1.575000,1,soap,1.00000,muscovite_1M_bulk.data:11,0.07208,139 141 148 156
+97,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:20,,53 117 125 148
+98,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:14,,118 126 138 147
+99,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:20,,54 119 127 146
+100,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:14,,120 128 137 145
+101,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:17,,116 119 122 130
+102,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:24,,115 117 124 132
+103,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:14,,113 124 141 149
+104,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:13,,114 123 142 150
+105,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:14,,30 122 143 151
+106,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:13,,29 121 144 152
+107,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:17,,139 144 145 153
+108,Si,st,+2.100000,1,soap,1.00000,muscovite_1M_bulk.data:24,,140 142 147 155
+109,K,K,+1.000000,6,ion,1.00000,muscovite_1M_bulk.data:25,,
+110,K,K,+1.000000,7,ion,1.00000,muscovite_1M_bulk.data:25,,
+111,K,K,+1.000000,8,ion,1.00000,muscovite_1M_bulk.data:25,,
+112,K,K,+1.000000,9,ion,1.00000,muscovite_1M_bulk.data:25,,
+113,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,22 103
+114,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,21 104
+115,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:31,0.04229,89 102
+116,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:116,0.04229,90 101
+117,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:58,0.03916,97 102
+118,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:36,0.03915,90 98
+119,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:33,0.03916,99 101
+120,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:143,0.03915,89 100
+121,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:62,0.04029,89 106
+122,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:61,0.04121,101 105
+123,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:39,0.04030,90 104
+124,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:38,0.04122,102 103
+125,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:41,0.01564,85 88 97
+126,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:42,0.01498,88 91 98
+127,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:41,0.01564,87 92 99
+128,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:42,0.01498,86 87 100
+129,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:45,0.02818,87 89 92
+130,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:48,0.01391,86 87 101
+131,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:45,0.02818,85 88 90
+132,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:48,0.01391,88 91 102
+133,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:49,0.01910,3 88 164
+134,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:49,0.01911,4 87 163
+135,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:51,0.02115,85 86 161
+136,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:52,0.02116,91 92 162
+137,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,13 100
+138,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,15 98
+139,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:55,0.04229,96 107
+140,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:31,0.04229,95 108
+141,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:143,0.03915,96 103
+142,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:58,0.03914,104 108
+143,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:36,0.03914,95 105
+144,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:58,0.03915,106 107
+145,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:38,0.04120,100 107
+146,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:62,0.04029,95 99
+147,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:61,0.04120,98 108
+148,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:62,0.04029,96 97
+149,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:42,0.01497,91 94 103
+150,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:43,0.01564,85 94 104
+151,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:42,0.01497,86 93 105
+152,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:41,0.01564,92 93 106
+153,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:46,0.01391,86 93 107
+154,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:72,0.02817,92 93 95
+155,O,ob,-1.050000,1,soap,1.00000,muscovite_1M_bulk.data:48,0.01391,91 94 108
+156,O,obts,-1.168800,1,soap,1.00000,muscovite_1M_bulk.data:45,0.02816,85 94 96
+157,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:49,0.01911,10 93 168
+158,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:49,0.01911,9 94 167
+159,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:52,0.02114,91 92 165
+160,O,oh,-0.950000,1,soap,1.00000,muscovite_1M_bulk.data:52,0.02115,85 86 166
+161,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:81,0.40879,135
+162,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:77,0.40881,136
+163,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:83,0.41126,134
+164,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:83,0.41138,133
+165,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:81,0.40907,159
+166,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:81,0.40906,160
+167,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:83,0.41128,158
+168,H,ho,+0.425000,1,soap,1.00000,muscovite_1M_bulk.data:83,0.41140,157
+169,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:1,0.09464,209 215 219 234 240 244
+170,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:2,0.08103,212 214 219 235 237 244
+171,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:4,0.08391,211 212 213 214 218 301
+172,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:3,0.08391,209 210 215 216 217 302
+173,Al,at,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:5,0.07209,199 204 205 213
+174,Al,at,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:5,0.07208,200 202 207 215
+175,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:2,0.08103,210 216 220 233 239 243
+176,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:1,0.09465,211 213 220 236 238 243
+177,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:9,0.08394,235 236 237 238 241 326
+178,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:3,0.08393,233 234 239 240 242 325
+179,Al,at,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:11,0.07206,224 227 230 238
+180,Al,at,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:11,0.07208,223 225 232 240
+181,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:20,,201 209 232 305
+182,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:14,,202 210 222 231
+183,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:20,,203 211 230 306
+184,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:14,,204 212 221 229
+185,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:17,,200 203 206 214
+186,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:24,,199 201 208 216
+187,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:14,,197 208 225 233
+188,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:13,,198 207 226 234
+189,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:14,,206 227 235 282
+190,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:13,,205 228 236 281
+191,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:17,,223 228 229 237
+192,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:24,,224 226 231 239
+193,K,K,+1.000000,11,ion,1.00000,muscovite_1M_bulk.data:25,,
+194,K,K,+1.000000,12,ion,1.00000,muscovite_1M_bulk.data:25,,
+195,K,K,+1.000000,13,ion,1.00000,muscovite_1M_bulk.data:25,,
+196,K,K,+1.000000,14,ion,1.00000,muscovite_1M_bulk.data:25,,
+197,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,187 274
+198,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,188 273
+199,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:31,0.04229,173 186
+200,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:116,0.04229,174 185
+201,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:58,0.03916,181 186
+202,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:36,0.03915,174 182
+203,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:33,0.03916,183 185
+204,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:143,0.03915,173 184
+205,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:62,0.04029,173 190
+206,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:61,0.04121,185 189
+207,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:39,0.04030,174 188
+208,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:38,0.04122,186 187
+209,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:41,0.01564,169 172 181
+210,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:42,0.01498,172 175 182
+211,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:41,0.01564,171 176 183
+212,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:42,0.01498,170 171 184
+213,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:45,0.02818,171 173 176
+214,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:48,0.01391,170 171 185
+215,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:45,0.02818,169 172 174
+216,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:48,0.01391,172 175 186
+217,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:49,0.01910,172 248 255
+218,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:49,0.01911,171 247 256
+219,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:51,0.02115,169 170 245
+220,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:52,0.02116,175 176 246
+221,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,184 265
+222,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,182 267
+223,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:55,0.04229,180 191
+224,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:31,0.04229,179 192
+225,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:143,0.03915,180 187
+226,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:58,0.03914,188 192
+227,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:36,0.03914,179 189
+228,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:58,0.03915,190 191
+229,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:38,0.04120,184 191
+230,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:62,0.04029,179 183
+231,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:61,0.04120,182 192
+232,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:62,0.04029,180 181
+233,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:42,0.01497,175 178 187
+234,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:43,0.01564,169 178 188
+235,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:42,0.01497,170 177 189
+236,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:41,0.01564,176 177 190
+237,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:46,0.01391,170 177 191
+238,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:72,0.02817,176 177 179
+239,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:48,0.01391,175 178 192
+240,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:45,0.02816,169 178 180
+241,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:49,0.01911,177 252 262
+242,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:49,0.01911,178 251 261
+243,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:52,0.02114,175 176 249
+244,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:52,0.02115,169 170 250
+245,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:81,0.40879,219
+246,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:77,0.40881,220
+247,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:83,0.41126,218
+248,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:83,0.41138,217
+249,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:81,0.40907,243
+250,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:81,0.40906,244
+251,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:83,0.41128,242
+252,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:83,0.41140,241
+253,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:1,0.09464,293 299 303 318 324 328
+254,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:2,0.08103,296 298 303 319 321 328
+255,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:4,0.08391,217 295 296 297 298 302
+256,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:3,0.08391,218 293 294 299 300 301
+257,Al,at,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:5,0.07209,283 288 289 297
+258,Al,at,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:5,0.07208,284 286 291 299
+259,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:2,0.08103,294 300 304 317 323 327
+260,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:1,0.09465,295 297 304 320 322 327
+261,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:9,0.08394,242 319 320 321 322 325
+262,Al,ao,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:3,0.08393,241 317 318 323 324 326
+263,Al,at,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:11,0.07206,308 311 314 322
+264,Al,at,+1.575000,10,soap,1.00000,muscovite_1M_bulk.data:11,0.07208,307 309 316 324
+265,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:20,,221 285 293 316
+266,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:14,,286 294 306 315
+267,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:20,,222 287 295 314
+268,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:14,,288 296 305 313
+269,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:17,,284 287 290 298
+270,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:24,,283 285 292 300
+271,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:14,,281 292 309 317
+272,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:13,,282 291 310 318
+273,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:14,,198 290 311 319
+274,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:13,,197 289 312 320
+275,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:17,,307 312 313 321
+276,Si,st,+2.100000,10,soap,1.00000,muscovite_1M_bulk.data:24,,308 310 315 323
+277,K,K,+1.000000,15,ion,1.00000,muscovite_1M_bulk.data:25,,
+278,K,K,+1.000000,16,ion,1.00000,muscovite_1M_bulk.data:25,,
+279,K,K,+1.000000,17,ion,1.00000,muscovite_1M_bulk.data:25,,
+280,K,K,+1.000000,18,ion,1.00000,muscovite_1M_bulk.data:25,,
+281,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,190 271
+282,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,189 272
+283,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:31,0.04229,257 270
+284,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:116,0.04229,258 269
+285,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:58,0.03916,265 270
+286,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:36,0.03915,258 266
+287,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:33,0.03916,267 269
+288,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:143,0.03915,257 268
+289,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:62,0.04029,257 274
+290,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:61,0.04121,269 273
+291,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:39,0.04030,258 272
+292,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:38,0.04122,270 271
+293,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:41,0.01564,253 256 265
+294,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:42,0.01498,256 259 266
+295,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:41,0.01564,255 260 267
+296,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:42,0.01498,254 255 268
+297,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:45,0.02818,255 257 260
+298,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:48,0.01391,254 255 269
+299,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:45,0.02818,253 256 258
+300,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:48,0.01391,256 259 270
+301,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:49,0.01910,171 256 332
+302,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:49,0.01911,172 255 331
+303,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:51,0.02115,253 254 329
+304,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:52,0.02116,259 260 330
+305,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,181 268
+306,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:29,0.04382,183 266
+307,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:55,0.04229,264 275
+308,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:31,0.04229,263 276
+309,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:143,0.03915,264 271
+310,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:58,0.03914,272 276
+311,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:36,0.03914,263 273
+312,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:58,0.03915,274 275
+313,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:38,0.04120,268 275
+314,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:62,0.04029,263 267
+315,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:61,0.04120,266 276
+316,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:62,0.04029,264 265
+317,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:42,0.01497,259 262 271
+318,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:43,0.01564,253 262 272
+319,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:42,0.01497,254 261 273
+320,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:41,0.01564,260 261 274
+321,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:46,0.01391,254 261 275
+322,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:72,0.02817,260 261 263
+323,O,ob,-1.050000,10,soap,1.00000,muscovite_1M_bulk.data:48,0.01391,259 262 276
+324,O,obts,-1.168800,10,soap,1.00000,muscovite_1M_bulk.data:45,0.02816,253 262 264
+325,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:49,0.01911,178 261 336
+326,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:49,0.01911,177 262 335
+327,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:52,0.02114,259 260 333
+328,O,oh,-0.950000,10,soap,1.00000,muscovite_1M_bulk.data:52,0.02115,253 254 334
+329,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:81,0.40879,303
+330,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:77,0.40881,304
+331,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:83,0.41126,302
+332,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:83,0.41138,301
+333,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:81,0.40907,327
+334,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:81,0.40906,328
+335,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:83,0.41128,326
+336,H,ho,+0.425000,10,soap,1.00000,muscovite_1M_bulk.data:83,0.41140,325
+337,O,ow,-0.820000,19,soap,1.00000,water.data:1,0.59366,338 339
+338,H,hw,+0.410000,19,soap,1.00000,water.data:2,0.34836,337
+339,H,hw,+0.410000,19,soap,1.00000,water.data:2,0.34836,337
+340,O,ow,-0.820000,20,soap,1.00000,water.data:1,0.59366,341 342
+341,H,hw,+0.410000,20,soap,1.00000,water.data:2,0.34836,340
+342,H,hw,+0.410000,20,soap,1.00000,water.data:2,0.34836,340
+343,O,ow,-0.820000,21,soap,1.00000,water.data:1,0.59366,344 345
+344,H,hw,+0.410000,21,soap,1.00000,water.data:2,0.34836,343
+345,H,hw,+0.410000,21,soap,1.00000,water.data:2,0.34836,343
+346,O,ow,-0.820000,22,soap,1.00000,water.data:1,0.59366,347 348
+347,H,hw,+0.410000,22,soap,1.00000,water.data:2,0.34836,346
+348,H,hw,+0.410000,22,soap,1.00000,water.data:2,0.34836,346
+349,O,ow,-0.820000,23,soap,1.00000,water.data:1,0.59366,350 351
+350,H,hw,+0.410000,23,soap,1.00000,water.data:2,0.34836,349
+351,H,hw,+0.410000,23,soap,1.00000,water.data:2,0.34836,349
+352,O,ow,-0.820000,24,soap,1.00000,water.data:1,0.59366,353 354
+353,H,hw,+0.410000,24,soap,1.00000,water.data:2,0.34836,352
+354,H,hw,+0.410000,24,soap,1.00000,water.data:2,0.34836,352
+355,O,ow,-0.820000,25,soap,1.00000,water.data:1,0.59366,356 357
+356,H,hw,+0.410000,25,soap,1.00000,water.data:2,0.34836,355
+357,H,hw,+0.410000,25,soap,1.00000,water.data:2,0.34836,355
+358,O,ow,-0.820000,26,soap,1.00000,water.data:1,0.59366,359 360
+359,H,hw,+0.410000,26,soap,1.00000,water.data:2,0.34836,358
+360,H,hw,+0.410000,26,soap,1.00000,water.data:2,0.34836,358
+361,O,ow,-0.820000,27,soap,1.00000,water.data:1,0.59366,362 363
+362,H,hw,+0.410000,27,soap,1.00000,water.data:2,0.34836,361
+363,H,hw,+0.410000,27,soap,1.00000,water.data:2,0.34836,361
+364,O,ow,-0.820000,28,soap,1.00000,water.data:1,0.59366,365 366
+365,H,hw,+0.410000,28,soap,1.00000,water.data:2,0.34836,364
+366,H,hw,+0.410000,28,soap,1.00000,water.data:2,0.34836,364
+367,O,ow,-0.820000,29,soap,1.00000,water.data:1,0.59366,368 369
+368,H,hw,+0.410000,29,soap,1.00000,water.data:2,0.34836,367
+369,H,hw,+0.410000,29,soap,1.00000,water.data:2,0.34836,367
+370,O,ow,-0.820000,30,soap,1.00000,water.data:1,0.59366,371 372
+371,H,hw,+0.410000,30,soap,1.00000,water.data:2,0.34836,370
+372,H,hw,+0.410000,30,soap,1.00000,water.data:2,0.34836,370
+373,O,ow,-0.820000,31,soap,1.00000,water.data:1,0.59366,374 375
+374,H,hw,+0.410000,31,soap,1.00000,water.data:2,0.34836,373
+375,H,hw,+0.410000,31,soap,1.00000,water.data:2,0.34836,373
+376,O,ow,-0.820000,32,soap,1.00000,water.data:1,0.59366,377 378
+377,H,hw,+0.410000,32,soap,1.00000,water.data:2,0.34836,376
+378,H,hw,+0.410000,32,soap,1.00000,water.data:2,0.34836,376
+379,O,ow,-0.820000,33,soap,1.00000,water.data:1,0.59366,380 381
+380,H,hw,+0.410000,33,soap,1.00000,water.data:2,0.34836,379
+381,H,hw,+0.410000,33,soap,1.00000,water.data:2,0.34836,379
+382,O,ow,-0.820000,34,soap,1.00000,water.data:1,0.59366,383 384
+383,H,hw,+0.410000,34,soap,1.00000,water.data:2,0.34836,382
+384,H,hw,+0.410000,34,soap,1.00000,water.data:2,0.34836,382
+385,O,ow,-0.820000,35,soap,1.00000,water.data:1,0.59366,386 387
+386,H,hw,+0.410000,35,soap,1.00000,water.data:2,0.34836,385
+387,H,hw,+0.410000,35,soap,1.00000,water.data:2,0.34836,385
+388,O,ow,-0.820000,36,soap,1.00000,water.data:1,0.59366,389 390
+389,H,hw,+0.410000,36,soap,1.00000,water.data:2,0.34836,388
+390,H,hw,+0.410000,36,soap,1.00000,water.data:2,0.34836,388
+391,O,ow,-0.820000,37,soap,1.00000,water.data:1,0.59366,392 393
+392,H,hw,+0.410000,37,soap,1.00000,water.data:2,0.34836,391
+393,H,hw,+0.410000,37,soap,1.00000,water.data:2,0.34836,391
+394,O,ow,-0.820000,38,soap,1.00000,water.data:1,0.59366,395 396
+395,H,hw,+0.410000,38,soap,1.00000,water.data:2,0.34836,394
+396,H,hw,+0.410000,38,soap,1.00000,water.data:2,0.34836,394
+397,O,ow,-0.820000,39,soap,1.00000,water.data:1,0.59366,398 399
+398,H,hw,+0.410000,39,soap,1.00000,water.data:2,0.34836,397
+399,H,hw,+0.410000,39,soap,1.00000,water.data:2,0.34836,397
+400,O,ow,-0.820000,40,soap,1.00000,water.data:1,0.59366,401 402
+401,H,hw,+0.410000,40,soap,1.00000,water.data:2,0.34836,400
+402,H,hw,+0.410000,40,soap,1.00000,water.data:2,0.34836,400
+403,O,ow,-0.820000,41,soap,1.00000,water.data:1,0.59366,404 405
+404,H,hw,+0.410000,41,soap,1.00000,water.data:2,0.34836,403
+405,H,hw,+0.410000,41,soap,1.00000,water.data:2,0.34836,403
+406,O,ow,-0.820000,42,soap,1.00000,water.data:1,0.59366,407 408
+407,H,hw,+0.410000,42,soap,1.00000,water.data:2,0.34836,406
+408,H,hw,+0.410000,42,soap,1.00000,water.data:2,0.34836,406
+409,O,ow,-0.820000,43,soap,1.00000,water.data:1,0.59366,410 411
+410,H,hw,+0.410000,43,soap,1.00000,water.data:2,0.34836,409
+411,H,hw,+0.410000,43,soap,1.00000,water.data:2,0.34836,409
+412,O,ow,-0.820000,44,soap,1.00000,water.data:1,0.59366,413 414
+413,H,hw,+0.410000,44,soap,1.00000,water.data:2,0.34836,412
+414,H,hw,+0.410000,44,soap,1.00000,water.data:2,0.34836,412
+415,O,ow,-0.820000,45,soap,1.00000,water.data:1,0.59366,416 417
+416,H,hw,+0.410000,45,soap,1.00000,water.data:2,0.34836,415
+417,H,hw,+0.410000,45,soap,1.00000,water.data:2,0.34836,415
+418,O,ow,-0.820000,46,soap,1.00000,water.data:1,0.59366,419 420
+419,H,hw,+0.410000,46,soap,1.00000,water.data:2,0.34836,418
+420,H,hw,+0.410000,46,soap,1.00000,water.data:2,0.34836,418
+421,O,ow,-0.820000,47,soap,1.00000,water.data:1,0.59366,422 423
+422,H,hw,+0.410000,47,soap,1.00000,water.data:2,0.34836,421
+423,H,hw,+0.410000,47,soap,1.00000,water.data:2,0.34836,421
+424,O,ow,-0.820000,48,soap,1.00000,water.data:1,0.59366,425 426
+425,H,hw,+0.410000,48,soap,1.00000,water.data:2,0.34836,424
+426,H,hw,+0.410000,48,soap,1.00000,water.data:2,0.34836,424
+427,O,ow,-0.820000,49,soap,1.00000,water.data:1,0.59366,428 429
+428,H,hw,+0.410000,49,soap,1.00000,water.data:2,0.34836,427
+429,H,hw,+0.410000,49,soap,1.00000,water.data:2,0.34836,427
+430,O,ow,-0.820000,50,soap,1.00000,water.data:1,0.59366,431 432
+431,H,hw,+0.410000,50,soap,1.00000,water.data:2,0.34836,430
+432,H,hw,+0.410000,50,soap,1.00000,water.data:2,0.34836,430
+433,O,ow,-0.820000,51,soap,1.00000,water.data:1,0.59366,434 435
+434,H,hw,+0.410000,51,soap,1.00000,water.data:2,0.34836,433
+435,H,hw,+0.410000,51,soap,1.00000,water.data:2,0.34836,433
+436,O,ow,-0.820000,52,soap,1.00000,water.data:1,0.59366,437 438
+437,H,hw,+0.410000,52,soap,1.00000,water.data:2,0.34836,436
+438,H,hw,+0.410000,52,soap,1.00000,water.data:2,0.34836,436
+439,O,ow,-0.820000,53,soap,1.00000,water.data:1,0.59366,440 441
+440,H,hw,+0.410000,53,soap,1.00000,water.data:2,0.34836,439
+441,H,hw,+0.410000,53,soap,1.00000,water.data:2,0.34836,439
+442,O,ow,-0.820000,54,soap,1.00000,water.data:1,0.59366,443 444
+443,H,hw,+0.410000,54,soap,1.00000,water.data:2,0.34836,442
+444,H,hw,+0.410000,54,soap,1.00000,water.data:2,0.34836,442
+445,O,ow,-0.820000,55,soap,1.00000,water.data:1,0.59366,446 447
+446,H,hw,+0.410000,55,soap,1.00000,water.data:2,0.34836,445
+447,H,hw,+0.410000,55,soap,1.00000,water.data:2,0.34836,445
+448,O,ow,-0.820000,56,soap,1.00000,water.data:1,0.59366,449 450
+449,H,hw,+0.410000,56,soap,1.00000,water.data:2,0.34836,448
+450,H,hw,+0.410000,56,soap,1.00000,water.data:2,0.34836,448
+451,O,ow,-0.820000,57,soap,1.00000,water.data:1,0.59366,452 453
+452,H,hw,+0.410000,57,soap,1.00000,water.data:2,0.34836,451
+453,H,hw,+0.410000,57,soap,1.00000,water.data:2,0.34836,451
+454,O,ow,-0.820000,58,soap,1.00000,water.data:1,0.59366,455 456
+455,H,hw,+0.410000,58,soap,1.00000,water.data:2,0.34836,454
+456,H,hw,+0.410000,58,soap,1.00000,water.data:2,0.34836,454
+457,O,ow,-0.820000,59,soap,1.00000,water.data:1,0.59366,458 459
+458,H,hw,+0.410000,59,soap,1.00000,water.data:2,0.34836,457
+459,H,hw,+0.410000,59,soap,1.00000,water.data:2,0.34836,457
+460,O,ow,-0.820000,60,soap,1.00000,water.data:1,0.59366,461 462
+461,H,hw,+0.410000,60,soap,1.00000,water.data:2,0.34836,460
+462,H,hw,+0.410000,60,soap,1.00000,water.data:2,0.34836,460
+463,O,ow,-0.820000,61,soap,1.00000,water.data:1,0.59366,464 465
+464,H,hw,+0.410000,61,soap,1.00000,water.data:2,0.34836,463
+465,H,hw,+0.410000,61,soap,1.00000,water.data:2,0.34836,463
+466,O,ow,-0.820000,62,soap,1.00000,water.data:1,0.59366,467 468
+467,H,hw,+0.410000,62,soap,1.00000,water.data:2,0.34836,466
+468,H,hw,+0.410000,62,soap,1.00000,water.data:2,0.34836,466
+469,O,ow,-0.820000,63,soap,1.00000,water.data:1,0.59366,470 471
+470,H,hw,+0.410000,63,soap,1.00000,water.data:2,0.34836,469
+471,H,hw,+0.410000,63,soap,1.00000,water.data:2,0.34836,469
+472,O,ow,-0.820000,64,soap,1.00000,water.data:1,0.59366,473 474
+473,H,hw,+0.410000,64,soap,1.00000,water.data:2,0.34836,472
+474,H,hw,+0.410000,64,soap,1.00000,water.data:2,0.34836,472
+475,O,ow,-0.820000,65,soap,1.00000,water.data:1,0.59366,476 477
+476,H,hw,+0.410000,65,soap,1.00000,water.data:2,0.34836,475
+477,H,hw,+0.410000,65,soap,1.00000,water.data:2,0.34836,475
+478,O,ow,-0.820000,66,soap,1.00000,water.data:1,0.59366,479 480
+479,H,hw,+0.410000,66,soap,1.00000,water.data:2,0.34836,478
+480,H,hw,+0.410000,66,soap,1.00000,water.data:2,0.34836,478
+481,O,ow,-0.820000,67,soap,1.00000,water.data:1,0.59366,482 483
+482,H,hw,+0.410000,67,soap,1.00000,water.data:2,0.34836,481
+483,H,hw,+0.410000,67,soap,1.00000,water.data:2,0.34836,481
+484,O,ow,-0.820000,68,soap,1.00000,water.data:1,0.59366,485 486
+485,H,hw,+0.410000,68,soap,1.00000,water.data:2,0.34836,484
+486,H,hw,+0.410000,68,soap,1.00000,water.data:2,0.34836,484
+487,O,ow,-0.820000,69,soap,1.00000,water.data:1,0.59366,488 489
+488,H,hw,+0.410000,69,soap,1.00000,water.data:2,0.34836,487
+489,H,hw,+0.410000,69,soap,1.00000,water.data:2,0.34836,487
+490,O,ow,-0.820000,70,soap,1.00000,water.data:1,0.59366,491 492
+491,H,hw,+0.410000,70,soap,1.00000,water.data:2,0.34836,490
+492,H,hw,+0.410000,70,soap,1.00000,water.data:2,0.34836,490
+493,O,ow,-0.820000,71,soap,1.00000,water.data:1,0.59366,494 495
+494,H,hw,+0.410000,71,soap,1.00000,water.data:2,0.34836,493
+495,H,hw,+0.410000,71,soap,1.00000,water.data:2,0.34836,493
+496,O,ow,-0.820000,72,soap,1.00000,water.data:1,0.59366,497 498
+497,H,hw,+0.410000,72,soap,1.00000,water.data:2,0.34836,496
+498,H,hw,+0.410000,72,soap,1.00000,water.data:2,0.34836,496
+499,O,ow,-0.820000,73,soap,1.00000,water.data:1,0.59366,500 501
+500,H,hw,+0.410000,73,soap,1.00000,water.data:2,0.34836,499
+501,H,hw,+0.410000,73,soap,1.00000,water.data:2,0.34836,499
+502,O,ow,-0.820000,74,soap,1.00000,water.data:1,0.59366,503 504
+503,H,hw,+0.410000,74,soap,1.00000,water.data:2,0.34836,502
+504,H,hw,+0.410000,74,soap,1.00000,water.data:2,0.34836,502
+505,O,ow,-0.820000,75,soap,1.00000,water.data:1,0.59366,506 507
+506,H,hw,+0.410000,75,soap,1.00000,water.data:2,0.34836,505
+507,H,hw,+0.410000,75,soap,1.00000,water.data:2,0.34836,505
+508,O,ow,-0.820000,76,soap,1.00000,water.data:1,0.59366,509 510
+509,H,hw,+0.410000,76,soap,1.00000,water.data:2,0.34836,508
+510,H,hw,+0.410000,76,soap,1.00000,water.data:2,0.34836,508
+511,O,ow,-0.820000,77,soap,1.00000,water.data:1,0.59366,512 513
+512,H,hw,+0.410000,77,soap,1.00000,water.data:2,0.34836,511
+513,H,hw,+0.410000,77,soap,1.00000,water.data:2,0.34836,511
+514,O,ow,-0.820000,78,soap,1.00000,water.data:1,0.59366,515 516
+515,H,hw,+0.410000,78,soap,1.00000,water.data:2,0.34836,514
+516,H,hw,+0.410000,78,soap,1.00000,water.data:2,0.34836,514
+517,O,ow,-0.820000,79,soap,1.00000,water.data:1,0.59366,518 519
+518,H,hw,+0.410000,79,soap,1.00000,water.data:2,0.34836,517
+519,H,hw,+0.410000,79,soap,1.00000,water.data:2,0.34836,517
+520,O,ow,-0.820000,80,soap,1.00000,water.data:1,0.59366,521 522
+521,H,hw,+0.410000,80,soap,1.00000,water.data:2,0.34836,520
+522,H,hw,+0.410000,80,soap,1.00000,water.data:2,0.34836,520
+523,O,ow,-0.820000,81,soap,1.00000,water.data:1,0.59366,524 525
+524,H,hw,+0.410000,81,soap,1.00000,water.data:2,0.34836,523
+525,H,hw,+0.410000,81,soap,1.00000,water.data:2,0.34836,523
+526,O,ow,-0.820000,82,soap,1.00000,water.data:1,0.59366,527 528
+527,H,hw,+0.410000,82,soap,1.00000,water.data:2,0.34836,526
+528,H,hw,+0.410000,82,soap,1.00000,water.data:2,0.34836,526
+529,O,ow,-0.820000,83,soap,1.00000,water.data:1,0.59366,530 531
+530,H,hw,+0.410000,83,soap,1.00000,water.data:2,0.34836,529
+531,H,hw,+0.410000,83,soap,1.00000,water.data:2,0.34836,529
+532,O,ow,-0.820000,84,soap,1.00000,water.data:1,0.59366,533 534
+533,H,hw,+0.410000,84,soap,1.00000,water.data:2,0.34836,532
+534,H,hw,+0.410000,84,soap,1.00000,water.data:2,0.34836,532
+535,O,ow,-0.820000,85,soap,1.00000,water.data:1,0.59366,536 537
+536,H,hw,+0.410000,85,soap,1.00000,water.data:2,0.34836,535
+537,H,hw,+0.410000,85,soap,1.00000,water.data:2,0.34836,535
+538,O,ow,-0.820000,86,soap,1.00000,water.data:1,0.59366,539 540
+539,H,hw,+0.410000,86,soap,1.00000,water.data:2,0.34836,538
+540,H,hw,+0.410000,86,soap,1.00000,water.data:2,0.34836,538
+541,O,ow,-0.820000,87,soap,1.00000,water.data:1,0.59366,542 543
+542,H,hw,+0.410000,87,soap,1.00000,water.data:2,0.34836,541
+543,H,hw,+0.410000,87,soap,1.00000,water.data:2,0.34836,541
+544,O,ow,-0.820000,88,soap,1.00000,water.data:1,0.59366,545 546
+545,H,hw,+0.410000,88,soap,1.00000,water.data:2,0.34836,544
+546,H,hw,+0.410000,88,soap,1.00000,water.data:2,0.34836,544
+547,O,ow,-0.820000,89,soap,1.00000,water.data:1,0.59366,548 549
+548,H,hw,+0.410000,89,soap,1.00000,water.data:2,0.34836,547
+549,H,hw,+0.410000,89,soap,1.00000,water.data:2,0.34836,547
+550,O,ow,-0.820000,90,soap,1.00000,water.data:1,0.59366,551 552
+551,H,hw,+0.410000,90,soap,1.00000,water.data:2,0.34836,550
+552,H,hw,+0.410000,90,soap,1.00000,water.data:2,0.34836,550
+553,O,ow,-0.820000,91,soap,1.00000,water.data:1,0.59366,554 555
+554,H,hw,+0.410000,91,soap,1.00000,water.data:2,0.34836,553
+555,H,hw,+0.410000,91,soap,1.00000,water.data:2,0.34836,553
+556,O,ow,-0.820000,92,soap,1.00000,water.data:1,0.59366,557 558
+557,H,hw,+0.410000,92,soap,1.00000,water.data:2,0.34836,556
+558,H,hw,+0.410000,92,soap,1.00000,water.data:2,0.34836,556
+559,O,ow,-0.820000,93,soap,1.00000,water.data:1,0.59366,560 561
+560,H,hw,+0.410000,93,soap,1.00000,water.data:2,0.34836,559
+561,H,hw,+0.410000,93,soap,1.00000,water.data:2,0.34836,559
+562,O,ow,-0.820000,94,soap,1.00000,water.data:1,0.59366,563 564
+563,H,hw,+0.410000,94,soap,1.00000,water.data:2,0.34836,562
+564,H,hw,+0.410000,94,soap,1.00000,water.data:2,0.34836,562
+565,O,ow,-0.820000,95,soap,1.00000,water.data:1,0.59366,566 567
+566,H,hw,+0.410000,95,soap,1.00000,water.data:2,0.34836,565
+567,H,hw,+0.410000,95,soap,1.00000,water.data:2,0.34836,565
+568,O,ow,-0.820000,96,soap,1.00000,water.data:1,0.59366,569 570
+569,H,hw,+0.410000,96,soap,1.00000,water.data:2,0.34836,568
+570,H,hw,+0.410000,96,soap,1.00000,water.data:2,0.34836,568
+571,O,ow,-0.820000,97,soap,1.00000,water.data:1,0.59366,572 573
+572,H,hw,+0.410000,97,soap,1.00000,water.data:2,0.34836,571
+573,H,hw,+0.410000,97,soap,1.00000,water.data:2,0.34836,571
+574,O,ow,-0.820000,98,soap,1.00000,water.data:1,0.59366,575 576
+575,H,hw,+0.410000,98,soap,1.00000,water.data:2,0.34836,574
+576,H,hw,+0.410000,98,soap,1.00000,water.data:2,0.34836,574
+577,O,ow,-0.820000,99,soap,1.00000,water.data:1,0.59366,578 579
+578,H,hw,+0.410000,99,soap,1.00000,water.data:2,0.34836,577
+579,H,hw,+0.410000,99,soap,1.00000,water.data:2,0.34836,577
+580,O,ow,-0.820000,100,soap,1.00000,water.data:1,0.59366,581 582
+581,H,hw,+0.410000,100,soap,1.00000,water.data:2,0.34836,580
+582,H,hw,+0.410000,100,soap,1.00000,water.data:2,0.34836,580
+583,O,ow,-0.820000,101,soap,1.00000,water.data:1,0.59366,584 585
+584,H,hw,+0.410000,101,soap,1.00000,water.data:2,0.34836,583
+585,H,hw,+0.410000,101,soap,1.00000,water.data:2,0.34836,583
+586,O,ow,-0.820000,102,soap,1.00000,water.data:1,0.59366,587 588
+587,H,hw,+0.410000,102,soap,1.00000,water.data:2,0.34836,586
+588,H,hw,+0.410000,102,soap,1.00000,water.data:2,0.34836,586
+589,O,ow,-0.820000,103,soap,1.00000,water.data:1,0.59366,590 591
+590,H,hw,+0.410000,103,soap,1.00000,water.data:2,0.34836,589
+591,H,hw,+0.410000,103,soap,1.00000,water.data:2,0.34836,589
+592,O,ow,-0.820000,104,soap,1.00000,water.data:1,0.59366,593 594
+593,H,hw,+0.410000,104,soap,1.00000,water.data:2,0.34836,592
+594,H,hw,+0.410000,104,soap,1.00000,water.data:2,0.34836,592
+595,O,ow,-0.820000,105,soap,1.00000,water.data:1,0.59366,596 597
+596,H,hw,+0.410000,105,soap,1.00000,water.data:2,0.34836,595
+597,H,hw,+0.410000,105,soap,1.00000,water.data:2,0.34836,595
+598,O,ow,-0.820000,106,soap,1.00000,water.data:1,0.59366,599 600
+599,H,hw,+0.410000,106,soap,1.00000,water.data:2,0.34836,598
+600,H,hw,+0.410000,106,soap,1.00000,water.data:2,0.34836,598
+601,O,ow,-0.820000,107,soap,1.00000,water.data:1,0.59366,602 603
+602,H,hw,+0.410000,107,soap,1.00000,water.data:2,0.34836,601
+603,H,hw,+0.410000,107,soap,1.00000,water.data:2,0.34836,601
+604,O,ow,-0.820000,108,soap,1.00000,water.data:1,0.59366,605 606
+605,H,hw,+0.410000,108,soap,1.00000,water.data:2,0.34836,604
+606,H,hw,+0.410000,108,soap,1.00000,water.data:2,0.34836,604
+607,O,ow,-0.820000,109,soap,1.00000,water.data:1,0.59366,608 609
+608,H,hw,+0.410000,109,soap,1.00000,water.data:2,0.34836,607
+609,H,hw,+0.410000,109,soap,1.00000,water.data:2,0.34836,607
+610,O,ow,-0.820000,110,soap,1.00000,water.data:1,0.59366,611 612
+611,H,hw,+0.410000,110,soap,1.00000,water.data:2,0.34836,610
+612,H,hw,+0.410000,110,soap,1.00000,water.data:2,0.34836,610
+613,O,ow,-0.820000,111,soap,1.00000,water.data:1,0.59366,614 615
+614,H,hw,+0.410000,111,soap,1.00000,water.data:2,0.34836,613
+615,H,hw,+0.410000,111,soap,1.00000,water.data:2,0.34836,613
+616,O,ow,-0.820000,112,soap,1.00000,water.data:1,0.59366,617 618
+617,H,hw,+0.410000,112,soap,1.00000,water.data:2,0.34836,616
+618,H,hw,+0.410000,112,soap,1.00000,water.data:2,0.34836,616
+619,O,ow,-0.820000,113,soap,1.00000,water.data:1,0.59366,620 621
+620,H,hw,+0.410000,113,soap,1.00000,water.data:2,0.34836,619
+621,H,hw,+0.410000,113,soap,1.00000,water.data:2,0.34836,619
+622,O,ow,-0.820000,114,soap,1.00000,water.data:1,0.59366,623 624
+623,H,hw,+0.410000,114,soap,1.00000,water.data:2,0.34836,622
+624,H,hw,+0.410000,114,soap,1.00000,water.data:2,0.34836,622
+625,O,ow,-0.820000,115,soap,1.00000,water.data:1,0.59366,626 627
+626,H,hw,+0.410000,115,soap,1.00000,water.data:2,0.34836,625
+627,H,hw,+0.410000,115,soap,1.00000,water.data:2,0.34836,625
+628,O,ow,-0.820000,116,soap,1.00000,water.data:1,0.59366,629 630
+629,H,hw,+0.410000,116,soap,1.00000,water.data:2,0.34836,628
+630,H,hw,+0.410000,116,soap,1.00000,water.data:2,0.34836,628
+631,O,ow,-0.820000,117,soap,1.00000,water.data:1,0.59366,632 633
+632,H,hw,+0.410000,117,soap,1.00000,water.data:2,0.34836,631
+633,H,hw,+0.410000,117,soap,1.00000,water.data:2,0.34836,631
+634,O,ow,-0.820000,118,soap,1.00000,water.data:1,0.59366,635 636
+635,H,hw,+0.410000,118,soap,1.00000,water.data:2,0.34836,634
+636,H,hw,+0.410000,118,soap,1.00000,water.data:2,0.34836,634
+637,O,ow,-0.820000,119,soap,1.00000,water.data:1,0.59366,638 639
+638,H,hw,+0.410000,119,soap,1.00000,water.data:2,0.34836,637
+639,H,hw,+0.410000,119,soap,1.00000,water.data:2,0.34836,637
+640,O,ow,-0.820000,120,soap,1.00000,water.data:1,0.59366,641 642
+641,H,hw,+0.410000,120,soap,1.00000,water.data:2,0.34836,640
+642,H,hw,+0.410000,120,soap,1.00000,water.data:2,0.34836,640
+643,O,ow,-0.820000,121,soap,1.00000,water.data:1,0.59366,644 645
+644,H,hw,+0.410000,121,soap,1.00000,water.data:2,0.34836,643
+645,H,hw,+0.410000,121,soap,1.00000,water.data:2,0.34836,643
+646,O,ow,-0.820000,122,soap,1.00000,water.data:1,0.59366,647 648
+647,H,hw,+0.410000,122,soap,1.00000,water.data:2,0.34836,646
+648,H,hw,+0.410000,122,soap,1.00000,water.data:2,0.34836,646
+649,O,ow,-0.820000,123,soap,1.00000,water.data:1,0.59366,650 651
+650,H,hw,+0.410000,123,soap,1.00000,water.data:2,0.34836,649
+651,H,hw,+0.410000,123,soap,1.00000,water.data:2,0.34836,649
+652,O,ow,-0.820000,124,soap,1.00000,water.data:1,0.59366,653 654
+653,H,hw,+0.410000,124,soap,1.00000,water.data:2,0.34836,652
+654,H,hw,+0.410000,124,soap,1.00000,water.data:2,0.34836,652
+655,O,ow,-0.820000,125,soap,1.00000,water.data:1,0.59366,656 657
+656,H,hw,+0.410000,125,soap,1.00000,water.data:2,0.34836,655
+657,H,hw,+0.410000,125,soap,1.00000,water.data:2,0.34836,655
+658,O,ow,-0.820000,126,soap,1.00000,water.data:1,0.59366,659 660
+659,H,hw,+0.410000,126,soap,1.00000,water.data:2,0.34836,658
+660,H,hw,+0.410000,126,soap,1.00000,water.data:2,0.34836,658
+661,O,ow,-0.820000,127,soap,1.00000,water.data:1,0.59366,662 663
+662,H,hw,+0.410000,127,soap,1.00000,water.data:2,0.34836,661
+663,H,hw,+0.410000,127,soap,1.00000,water.data:2,0.34836,661
+664,O,ow,-0.820000,128,soap,1.00000,water.data:1,0.59366,665 666
+665,H,hw,+0.410000,128,soap,1.00000,water.data:2,0.34836,664
+666,H,hw,+0.410000,128,soap,1.00000,water.data:2,0.34836,664
+667,O,ow,-0.820000,129,soap,1.00000,water.data:1,0.59366,668 669
+668,H,hw,+0.410000,129,soap,1.00000,water.data:2,0.34836,667
+669,H,hw,+0.410000,129,soap,1.00000,water.data:2,0.34836,667
+670,O,ow,-0.820000,130,soap,1.00000,water.data:1,0.59366,671 672
+671,H,hw,+0.410000,130,soap,1.00000,water.data:2,0.34836,670
+672,H,hw,+0.410000,130,soap,1.00000,water.data:2,0.34836,670
+673,O,ow,-0.820000,131,soap,1.00000,water.data:1,0.59366,674 675
+674,H,hw,+0.410000,131,soap,1.00000,water.data:2,0.34836,673
+675,H,hw,+0.410000,131,soap,1.00000,water.data:2,0.34836,673
+676,O,ow,-0.820000,132,soap,1.00000,water.data:1,0.59366,677 678
+677,H,hw,+0.410000,132,soap,1.00000,water.data:2,0.34836,676
+678,H,hw,+0.410000,132,soap,1.00000,water.data:2,0.34836,676
+679,O,ow,-0.820000,133,soap,1.00000,water.data:1,0.59366,680 681
+680,H,hw,+0.410000,133,soap,1.00000,water.data:2,0.34836,679
+681,H,hw,+0.410000,133,soap,1.00000,water.data:2,0.34836,679
+682,O,ow,-0.820000,134,soap,1.00000,water.data:1,0.59366,683 684
+683,H,hw,+0.410000,134,soap,1.00000,water.data:2,0.34836,682
+684,H,hw,+0.410000,134,soap,1.00000,water.data:2,0.34836,682
+685,O,ow,-0.820000,135,soap,1.00000,water.data:1,0.59366,686 687
+686,H,hw,+0.410000,135,soap,1.00000,water.data:2,0.34836,685
+687,H,hw,+0.410000,135,soap,1.00000,water.data:2,0.34836,685
+688,O,ow,-0.820000,136,soap,1.00000,water.data:1,0.59366,689 690
+689,H,hw,+0.410000,136,soap,1.00000,water.data:2,0.34836,688
+690,H,hw,+0.410000,136,soap,1.00000,water.data:2,0.34836,688
+691,O,ow,-0.820000,137,soap,1.00000,water.data:1,0.59366,692 693
+692,H,hw,+0.410000,137,soap,1.00000,water.data:2,0.34836,691
+693,H,hw,+0.410000,137,soap,1.00000,water.data:2,0.34836,691
+694,O,ow,-0.820000,138,soap,1.00000,water.data:1,0.59366,695 696
+695,H,hw,+0.410000,138,soap,1.00000,water.data:2,0.34836,694
+696,H,hw,+0.410000,138,soap,1.00000,water.data:2,0.34836,694
+697,O,ow,-0.820000,139,soap,1.00000,water.data:1,0.59366,698 699
+698,H,hw,+0.410000,139,soap,1.00000,water.data:2,0.34836,697
+699,H,hw,+0.410000,139,soap,1.00000,water.data:2,0.34836,697
+700,O,ow,-0.820000,140,soap,1.00000,water.data:1,0.59366,701 702
+701,H,hw,+0.410000,140,soap,1.00000,water.data:2,0.34836,700
+702,H,hw,+0.410000,140,soap,1.00000,water.data:2,0.34836,700
+703,O,ow,-0.820000,141,soap,1.00000,water.data:1,0.59366,704 705
+704,H,hw,+0.410000,141,soap,1.00000,water.data:2,0.34836,703
+705,H,hw,+0.410000,141,soap,1.00000,water.data:2,0.34836,703
+706,O,ow,-0.820000,142,soap,1.00000,water.data:1,0.59366,707 708
+707,H,hw,+0.410000,142,soap,1.00000,water.data:2,0.34836,706
+708,H,hw,+0.410000,142,soap,1.00000,water.data:2,0.34836,706
+709,O,ow,-0.820000,143,soap,1.00000,water.data:1,0.59366,710 711
+710,H,hw,+0.410000,143,soap,1.00000,water.data:2,0.34836,709
+711,H,hw,+0.410000,143,soap,1.00000,water.data:2,0.34836,709
+712,O,ow,-0.820000,144,soap,1.00000,water.data:1,0.59366,713 714
+713,H,hw,+0.410000,144,soap,1.00000,water.data:2,0.34836,712
+714,H,hw,+0.410000,144,soap,1.00000,water.data:2,0.34836,712
+715,O,ow,-0.820000,145,soap,1.00000,water.data:1,0.59366,716 717
+716,H,hw,+0.410000,145,soap,1.00000,water.data:2,0.34836,715
+717,H,hw,+0.410000,145,soap,1.00000,water.data:2,0.34836,715
+718,O,ow,-0.820000,146,soap,1.00000,water.data:1,0.59366,719 720
+719,H,hw,+0.410000,146,soap,1.00000,water.data:2,0.34836,718
+720,H,hw,+0.410000,146,soap,1.00000,water.data:2,0.34836,718
+721,O,ow,-0.820000,147,soap,1.00000,water.data:1,0.59366,722 723
+722,H,hw,+0.410000,147,soap,1.00000,water.data:2,0.34836,721
+723,H,hw,+0.410000,147,soap,1.00000,water.data:2,0.34836,721
+724,O,ow,-0.820000,148,soap,1.00000,water.data:1,0.59366,725 726
+725,H,hw,+0.410000,148,soap,1.00000,water.data:2,0.34836,724
+726,H,hw,+0.410000,148,soap,1.00000,water.data:2,0.34836,724
+727,O,ow,-0.820000,149,soap,1.00000,water.data:1,0.59366,728 729
+728,H,hw,+0.410000,149,soap,1.00000,water.data:2,0.34836,727
+729,H,hw,+0.410000,149,soap,1.00000,water.data:2,0.34836,727
+730,O,ow,-0.820000,150,soap,1.00000,water.data:1,0.59366,731 732
+731,H,hw,+0.410000,150,soap,1.00000,water.data:2,0.34836,730
+732,H,hw,+0.410000,150,soap,1.00000,water.data:2,0.34836,730
+733,O,ow,-0.820000,151,soap,1.00000,water.data:1,0.59366,734 735
+734,H,hw,+0.410000,151,soap,1.00000,water.data:2,0.34836,733
+735,H,hw,+0.410000,151,soap,1.00000,water.data:2,0.34836,733
+736,O,ow,-0.820000,152,soap,1.00000,water.data:1,0.59366,737 738
+737,H,hw,+0.410000,152,soap,1.00000,water.data:2,0.34836,736
+738,H,hw,+0.410000,152,soap,1.00000,water.data:2,0.34836,736
+739,O,ow,-0.820000,153,soap,1.00000,water.data:1,0.59366,740 741
+740,H,hw,+0.410000,153,soap,1.00000,water.data:2,0.34836,739
+741,H,hw,+0.410000,153,soap,1.00000,water.data:2,0.34836,739
+742,O,ow,-0.820000,154,soap,1.00000,water.data:1,0.59366,743 744
+743,H,hw,+0.410000,154,soap,1.00000,water.data:2,0.34836,742
+744,H,hw,+0.410000,154,soap,1.00000,water.data:2,0.34836,742
+745,O,ow,-0.820000,155,soap,1.00000,water.data:1,0.59366,746 747
+746,H,hw,+0.410000,155,soap,1.00000,water.data:2,0.34836,745
+747,H,hw,+0.410000,155,soap,1.00000,water.data:2,0.34836,745
+748,O,ow,-0.820000,156,soap,1.00000,water.data:1,0.59366,749 750
+749,H,hw,+0.410000,156,soap,1.00000,water.data:2,0.34836,748
+750,H,hw,+0.410000,156,soap,1.00000,water.data:2,0.34836,748
+751,O,ow,-0.820000,157,soap,1.00000,water.data:1,0.59366,752 753
+752,H,hw,+0.410000,157,soap,1.00000,water.data:2,0.34836,751
+753,H,hw,+0.410000,157,soap,1.00000,water.data:2,0.34836,751
+754,O,ow,-0.820000,158,soap,1.00000,water.data:1,0.59366,755 756
+755,H,hw,+0.410000,158,soap,1.00000,water.data:2,0.34836,754
+756,H,hw,+0.410000,158,soap,1.00000,water.data:2,0.34836,754
+757,O,ow,-0.820000,159,soap,1.00000,water.data:1,0.59366,758 759
+758,H,hw,+0.410000,159,soap,1.00000,water.data:2,0.34836,757
+759,H,hw,+0.410000,159,soap,1.00000,water.data:2,0.34836,757

@@ -1,14 +1,13 @@
 """soapff from the command line (python -m soapff, or the soapff command):
 
     soapff list                                        the libraries that can be given by name
-    soapff info oplsaa [--table]                       a library: file, engine, references, types (--table: compute its table)
+    soapff info oplsaa [--table]                       a library: file, references, types (--table: compute its table)
     soapff build oplsaa cell_PE.extxyz -o out          the force field: out/system.data, out/system.settings (include it in
                                                        a LAMMPS input, or lmp.commands_list(System.commands()) in Python)
     soapff new mine --extends clayff                   ~/.soapff/libraries/mine.txt
     soapff add-reference mine annite.data              a reference with its types and charges (extxyz fftype/ffcharge, LAMMPS data)
 """
 import argparse
-import json
 import os
 import sys
 
@@ -25,9 +24,9 @@ def cmd_list(a):
         return 0
     w = max(len(r["name"]) for r in rows)
     for r in rows:
-        print(f"{r['name']:<{w}}  {r['engine']:<9}  {r['description']}")
+        print(f"{r['name']:<{w}}  {r['reference']}")
         if a.paths:
-            print(f"{'':<{w}}  {'':<9}  {r['path']}")
+            print(f"{'':<{w}}  {r['path']}")
     return 0
 
 
@@ -40,12 +39,10 @@ def cmd_info(a):
         p = p.parent
     print(f"name         {lib.name}")
     print(f"file         {lib.path}")
-    print(f"engine       {lib.engine}")
     if chain:
         print(f"extends      {' -> '.join(chain)}")
-    print(f"description  {lib.description}")
-    if lib.library.get("reference"):
-        print(f"reference    {lib.library['reference']}")
+    if lib.reference:
+        print(f"reference    {lib.reference}")
     print(f"references   {len(lib.references)} structures")
     for r in lib.references[:a.show]:
         extra = " ".join(f"{k}={v}" for k, v in r.items() if k != "path")
@@ -67,15 +64,8 @@ def cmd_info(a):
 
 def cmd_build(a):
     from . import build
-    kw = dict(cutoff=a.cutoff, kspace=a.kspace, boundary=a.boundary, strict=not a.no_strict, padding=a.padding)
-    for o in a.option or []:
-        if "=" not in o:
-            raise SystemExit(f"--option {o!r}: give KEY=VALUE")
-        k, v = o.split("=", 1)
-        try:
-            kw[k] = json.loads(v)
-        except ValueError:
-            kw[k] = v
+    kw = dict(cutoff=a.cutoff, kspace=a.kspace, boundary=a.boundary, strict=not a.no_strict, padding=a.padding,
+              reserve_water=a.reserve_water)
     s = build(a.library, a.structure, a.out, **kw)
     print(s)
     print(f"in a LAMMPS input:  include {s.files['settings']}   (run LAMMPS in {s.out_dir}: read_data system.data)")
@@ -84,7 +74,7 @@ def cmd_build(a):
 
 def cmd_new(a):
     from . import new_library
-    path = new_library(a.name, extends=a.extends, engine=a.engine, folder=a.folder, description=a.description or "")
+    path = new_library(a.name, extends=a.extends, folder=a.folder, reference=a.reference or "")
     print(path)
     return 0
 
@@ -103,7 +93,7 @@ def parser():
     s.add_argument("--paths", action="store_true", help="also the file of each library")
     s.set_defaults(func=cmd_list)
 
-    s = sub.add_parser("info", help="a library: file, engine, references, types, parameters")
+    s = sub.add_parser("info", help="a library: file, references, types, parameters")
     s.add_argument("library", help="name or path of a library .txt file")
     s.add_argument("--table", action="store_true", help="compute the SOAP table of the library now if it is not cached")
     s.add_argument("--show", type=int, default=10, help="references listed (default 10)")
@@ -119,16 +109,15 @@ def parser():
     s.add_argument("--no-strict", action="store_true", help="write the force field even when atoms are not in the library "
                    "(they take the nearest reference; see report.json)")
     s.add_argument("--padding", type=float, default=10.0, help="box padding (A) of a structure without a cell (default 10)")
-    s.add_argument("--option", action="append", metavar="KEY=VALUE", help="clayff engine: another option of soapff_cui "
-                   "make (repeatable), e.g. --option reserve_water=true")
+    s.add_argument("--reserve-water", action="store_true", help="also write the water types of the library and room for "
+                   "their bonds, so that water can be added in LAMMPS")
     s.set_defaults(func=cmd_build)
 
     s = sub.add_parser("new", help="write a new library file (in ~/.soapff/libraries unless --folder)")
     s.add_argument("name")
     s.add_argument("--extends", help="start from this library (its references and parameters)")
-    s.add_argument("--engine", default="molecular", choices=["molecular", "clayff"])
     s.add_argument("--folder")
-    s.add_argument("--description")
+    s.add_argument("--reference", help="the papers of the force field")
     s.set_defaults(func=cmd_new)
 
     s = sub.add_parser("add-reference", help="add a reference structure (with its types and charges) to a library")

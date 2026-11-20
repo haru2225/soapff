@@ -10,7 +10,7 @@ import ase.io
 import soapff
 
 for lib in soapff.libraries():                        # the libraries that can be given by name
-    print(f"{lib['name']:12s} {lib['engine']:9s} {lib['description'][:90]}")
+    print(f"{lib['name']:14s} {lib['reference'][:90]}")
 
 # ClayFF: kaolinite with water on its basal plane (any format ASE reads: here extxyz; cif, POSCAR, xyz with a cell, ... alike)
 clay = soapff.build("clayff", "examples/clayff/kaolinite_water.extxyz", "quickstart_out/kaolinite_water")

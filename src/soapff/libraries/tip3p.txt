@@ -5,11 +5,8 @@
 # Every ion is an atom without bonds: its element gives its type.
 
 [library]
-name        = tip3p
-engine      = molecular
-description = TIP3P water (Jorgensen et al. 1983, rigid) with the ions of OpenMM amber14/tip3p.xml: Joung-Cheatham monovalent ions (2008) and Li-Merz 12-6 divalent ions (2013)
-reference   = W. L. Jorgensen et al., J. Chem. Phys. 79, 926 (1983); I. S. Joung, T. E. Cheatham, J. Phys. Chem. B 112, 9020 (2008); P. Li, B. P. Roberts, D. K. Chakravorty, K. M. Merz, J. Chem. Theory Comput. 9, 2733 (2013)
-source      = OpenMM 8.6.1 amber14/tip3p.xml
+name      = tip3p
+reference = W. L. Jorgensen et al., J. Chem. Phys. 79, 926 (1983); I. S. Joung, T. E. Cheatham, J. Phys. Chem. B 112, 9020 (2008); P. Li, B. P. Roberts, D. K. Chakravorty, K. M. Merz, J. Chem. Theory Comput. 9, 2733 (2013)
 
 [soap]
 r_cut = 5.0

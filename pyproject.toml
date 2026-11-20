@@ -25,6 +25,6 @@ Repository = "https://github.com/haru2225/soapff"
 where = ["src"]
 
 [tool.setuptools.package-data]
-# the libraries: the .txt files, their reference structures (and force-field files), and the prebuilt ClayFF tables
+# the libraries: the .txt files and their reference structures (and force-field files)
 soapff = ["libraries/*.txt", "libraries/*/*.extxyz", "libraries/*/*.data", "libraries/*/*/*.extxyz", "libraries/*/*/*.data",
-          "libraries/*/*/*.settings", "libraries/clayff/prebuilt/*.npz"]
+          "libraries/*/*/*.settings"]

@@ -1,5 +1,5 @@
 """figs/pca.png: the SOAP vectors of the O rows of the two tables on their first two principal components, coloured by
-type (the type is not used to find the axes): (a) clayff, the step-3 rows of Na montmorillonite; (b) oplsaa, the O rows of
+type (the type is not used to find the axes): (a) clayff, the rows of Na montmorillonite (montmorillonite_dry_Na.data); (b) oplsaa, the O rows of
 the 88 references of the 11 polymers.  Numbers in figdata/pca/numbers.json.
 
     PYTHONPATH=src python examples/paper_figures/pca.py      (Fig. 3 of the paper)"""
@@ -12,7 +12,8 @@ import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 
 import soapff  # noqa: E402
-from soapff_cui import core, steps  # noqa: E402
+from soapff import molecular as M  # noqa: E402
+from soapff_cui import core  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTD = os.path.join(HERE, "figdata", "pca")
@@ -28,11 +29,11 @@ def pca(X):
 
 num = {}
 lib = soapff.load_library("clayff")
-T = steps.load_table(lib.table_path(log=lambda *a: None))
-org = np.array([str(x) for x in T["s3_origin"]])
-o = (T["s3_element"] == "O") & (np.char.find(org, "montmorillonite") >= 0)
-P1, v1 = pca(T["s3_X"][o].astype(np.float64))
-t1 = np.array([core.TYPE_ALIAS.get(str(x), str(x)) for x in T["s3_type"][o]])
+T = M.load_table(lib.table_path(log=lambda *a: None))
+org = np.array([str(x).split(":")[0] for x in T["label"]])
+o = (T["element"] == "O") & (np.char.find(org, "montmorillonite") >= 0)
+P1, v1 = pca(T["X"][o].astype(np.float64))
+t1 = np.array([core.TYPE_ALIAS.get(str(x), str(x)) for x in T["type"][o]])
 num["clayff"] = dict(o_rows=int(o.sum()), explained=[round(float(v), 3) for v in v1[:2]],
                      rows_per_type={t: int((t1 == t).sum()) for t in sorted(set(t1))})
 

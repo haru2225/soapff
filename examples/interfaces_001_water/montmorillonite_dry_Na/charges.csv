@@ -1,693 +1,693 @@
-id,element,role,clayff_type,charge,source,matched_library_type,similarity,bond_type,bonds,margin,reference_atom
-1,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10515,montmorillonite_dry_Na.data:1
-2,Mg,mineral,mgo,+1.360000,soap,mgo,1.00000,mgo,O6,0.10995,montmorillonite_dry_Na.data:2
-3,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:3
-4,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:4
-5,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.09226,montmorillonite_dry_Na.data:5
-6,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:6
-7,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01351,montmorillonite_dry_Na.data:7
-8,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.01019,montmorillonite_dry_Na.data:8
-9,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.03044,montmorillonite_dry_Na.data:9
-10,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01165,montmorillonite_dry_Na.data:10
-11,O,mineral,ohs,-1.080800,soap,ohs,1.00000,ohs,Al1 H1 Mg1,0.00994,montmorillonite_dry_Na.data:11
-12,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01356,montmorillonite_dry_Na.data:12
-13,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04745,montmorillonite_dry_Na.data:13
-14,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04209,montmorillonite_dry_Na.data:14
-15,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04098,montmorillonite_dry_Na.data:15
-16,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04514,montmorillonite_dry_Na.data:16
-17,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04691,montmorillonite_dry_Na.data:17
-18,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05012,montmorillonite_dry_Na.data:18
-19,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.34946,montmorillonite_dry_Na.data:19
-20,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39600,montmorillonite_dry_Na.data:20
-21,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10453,montmorillonite_dry_Na.data:21
-22,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10570,montmorillonite_dry_Na.data:22
-23,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:23
-24,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:24
-25,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:25
-26,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:26
-27,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.00999,montmorillonite_dry_Na.data:27
-28,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01210,montmorillonite_dry_Na.data:28
-29,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01051,montmorillonite_dry_Na.data:29
-30,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01152,montmorillonite_dry_Na.data:30
-31,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01308,montmorillonite_dry_Na.data:31
-32,O,mineral,ohs,-1.080800,soap,ohs,1.00000,ohs,Al1 H1 Mg1,0.00968,montmorillonite_dry_Na.data:32
-33,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04345,montmorillonite_dry_Na.data:33
-34,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04251,montmorillonite_dry_Na.data:34
-35,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04389,montmorillonite_dry_Na.data:35
-36,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04155,montmorillonite_dry_Na.data:36
-37,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05194,montmorillonite_dry_Na.data:37
-38,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04866,montmorillonite_dry_Na.data:38
-39,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40225,montmorillonite_dry_Na.data:39
-40,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.35936,montmorillonite_dry_Na.data:40
-41,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10732,montmorillonite_dry_Na.data:41
-42,Mg,mineral,mgo,+1.360000,soap,mgo,1.00000,mgo,O6,0.10906,montmorillonite_dry_Na.data:42
-43,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:43
-44,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:44
-45,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:45
-46,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:46
-47,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01180,montmorillonite_dry_Na.data:47
-48,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.01006,montmorillonite_dry_Na.data:48
-49,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01030,montmorillonite_dry_Na.data:49
-50,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01149,montmorillonite_dry_Na.data:50
-51,O,mineral,ohs,-1.080800,soap,ohs,1.00000,ohs,Al1 H1 Mg1,0.00943,montmorillonite_dry_Na.data:51
-52,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01295,montmorillonite_dry_Na.data:52
-53,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04691,montmorillonite_dry_Na.data:53
-54,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04215,montmorillonite_dry_Na.data:54
-55,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04098,montmorillonite_dry_Na.data:55
-56,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04466,montmorillonite_dry_Na.data:56
-57,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04861,montmorillonite_dry_Na.data:57
-58,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05069,montmorillonite_dry_Na.data:58
-59,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.34836,montmorillonite_dry_Na.data:59
-60,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39848,montmorillonite_dry_Na.data:60
-61,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10476,montmorillonite_dry_Na.data:61
-62,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10550,montmorillonite_dry_Na.data:62
-63,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:63
-64,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:64
-65,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:65
-66,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:66
-67,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.00967,montmorillonite_dry_Na.data:67
-68,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01197,montmorillonite_dry_Na.data:68
-69,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01057,montmorillonite_dry_Na.data:69
-70,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01151,montmorillonite_dry_Na.data:70
-71,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01275,montmorillonite_dry_Na.data:71
-72,O,mineral,ohs,-1.080800,soap,ohs,1.00000,ohs,Al1 H1 Mg1,0.01033,montmorillonite_dry_Na.data:72
-73,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,montmorillonite_dry_Na.data:73
-74,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04169,montmorillonite_dry_Na.data:74
-75,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04402,montmorillonite_dry_Na.data:75
-76,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04279,montmorillonite_dry_Na.data:76
-77,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05175,montmorillonite_dry_Na.data:77
-78,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05094,montmorillonite_dry_Na.data:78
-79,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,montmorillonite_dry_Na.data:79
-80,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.35578,montmorillonite_dry_Na.data:80
-81,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10670,montmorillonite_dry_Na.data:81
-82,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.11324,montmorillonite_dry_Na.data:82
-83,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:83
-84,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:84
-85,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:85
-86,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:86
-87,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01017,montmorillonite_dry_Na.data:87
-88,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01460,montmorillonite_dry_Na.data:88
-89,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.00983,montmorillonite_dry_Na.data:89
-90,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01241,montmorillonite_dry_Na.data:90
-91,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01358,montmorillonite_dry_Na.data:91
-92,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01085,montmorillonite_dry_Na.data:92
-93,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04267,montmorillonite_dry_Na.data:93
-94,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04448,montmorillonite_dry_Na.data:94
-95,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04282,montmorillonite_dry_Na.data:95
-96,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04517,montmorillonite_dry_Na.data:96
-97,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05155,montmorillonite_dry_Na.data:97
-98,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05191,montmorillonite_dry_Na.data:98
-99,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41699,montmorillonite_dry_Na.data:99
-100,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.38090,montmorillonite_dry_Na.data:100
-101,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10195,montmorillonite_dry_Na.data:101
-102,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.09777,montmorillonite_dry_Na.data:102
-103,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:103
-104,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:104
-105,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:105
-106,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:106
-107,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01195,montmorillonite_dry_Na.data:107
-108,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.00967,montmorillonite_dry_Na.data:108
-109,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01237,montmorillonite_dry_Na.data:109
-110,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.01001,montmorillonite_dry_Na.data:110
-111,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01222,montmorillonite_dry_Na.data:111
-112,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.00943,montmorillonite_dry_Na.data:112
-113,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04574,montmorillonite_dry_Na.data:113
-114,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04138,montmorillonite_dry_Na.data:114
-115,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04430,montmorillonite_dry_Na.data:115
-116,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04742,montmorillonite_dry_Na.data:116
-117,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05035,montmorillonite_dry_Na.data:117
-118,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05053,montmorillonite_dry_Na.data:118
-119,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39938,montmorillonite_dry_Na.data:119
-120,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.37837,montmorillonite_dry_Na.data:120
-121,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10621,montmorillonite_dry_Na.data:121
-122,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10608,montmorillonite_dry_Na.data:122
-123,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:123
-124,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:124
-125,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:125
-126,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:126
-127,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01004,montmorillonite_dry_Na.data:127
-128,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01262,montmorillonite_dry_Na.data:128
-129,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.00972,montmorillonite_dry_Na.data:129
-130,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01236,montmorillonite_dry_Na.data:130
-131,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01252,montmorillonite_dry_Na.data:131
-132,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01068,montmorillonite_dry_Na.data:132
-133,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04470,montmorillonite_dry_Na.data:133
-134,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04431,montmorillonite_dry_Na.data:134
-135,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04313,montmorillonite_dry_Na.data:135
-136,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04510,montmorillonite_dry_Na.data:136
-137,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05166,montmorillonite_dry_Na.data:137
-138,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05277,montmorillonite_dry_Na.data:138
-139,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40467,montmorillonite_dry_Na.data:139
-140,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.37930,montmorillonite_dry_Na.data:140
-141,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10104,montmorillonite_dry_Na.data:141
-142,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.09978,montmorillonite_dry_Na.data:142
-143,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:143
-144,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:144
-145,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:145
-146,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:146
-147,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01122,montmorillonite_dry_Na.data:147
-148,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.00984,montmorillonite_dry_Na.data:148
-149,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01244,montmorillonite_dry_Na.data:149
-150,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.01004,montmorillonite_dry_Na.data:150
-151,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01234,montmorillonite_dry_Na.data:151
-152,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01118,montmorillonite_dry_Na.data:152
-153,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04548,montmorillonite_dry_Na.data:153
-154,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04402,montmorillonite_dry_Na.data:154
-155,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04420,montmorillonite_dry_Na.data:155
-156,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04845,montmorillonite_dry_Na.data:156
-157,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05148,montmorillonite_dry_Na.data:157
-158,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04989,montmorillonite_dry_Na.data:158
-159,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40032,montmorillonite_dry_Na.data:159
-160,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.37984,montmorillonite_dry_Na.data:160
-161,Na,ion,Na,+1.000000,soap,Na,1.00000,Na,none,2.00000,montmorillonite_dry_Na.data:161
-162,Na,ion,Na,+1.000000,soap,Na,1.00000,Na,none,2.00000,montmorillonite_dry_Na.data:161
-163,Na,ion,Na,+1.000000,soap,Na,1.00000,Na,none,2.00000,montmorillonite_dry_Na.data:161
-164,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10515,montmorillonite_dry_Na.data:1
-165,Mg,mineral,mgo,+1.360000,soap,mgo,1.00000,mgo,O6,0.10995,montmorillonite_dry_Na.data:2
-166,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:3
-167,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:4
-168,Al,mineral,at,+1.575000,soap,at,1.00000,at,O4,0.09226,montmorillonite_dry_Na.data:5
-169,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:6
-170,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01351,montmorillonite_dry_Na.data:7
-171,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.01019,montmorillonite_dry_Na.data:8
-172,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al3,0.03044,montmorillonite_dry_Na.data:9
-173,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01165,montmorillonite_dry_Na.data:10
-174,O,mineral,ohs,-1.080800,soap,ohs,1.00000,ohs,Al1 H1 Mg1,0.00994,montmorillonite_dry_Na.data:11
-175,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01356,montmorillonite_dry_Na.data:12
-176,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04745,montmorillonite_dry_Na.data:13
-177,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04209,montmorillonite_dry_Na.data:14
-178,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04098,montmorillonite_dry_Na.data:15
-179,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04514,montmorillonite_dry_Na.data:16
-180,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04691,montmorillonite_dry_Na.data:17
-181,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05012,montmorillonite_dry_Na.data:18
-182,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.34946,montmorillonite_dry_Na.data:19
-183,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39600,montmorillonite_dry_Na.data:20
-184,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10453,montmorillonite_dry_Na.data:21
-185,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10570,montmorillonite_dry_Na.data:22
-186,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:23
-187,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:24
-188,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:25
-189,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:26
-190,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.00999,montmorillonite_dry_Na.data:27
-191,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01210,montmorillonite_dry_Na.data:28
-192,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01051,montmorillonite_dry_Na.data:29
-193,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01152,montmorillonite_dry_Na.data:30
-194,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01308,montmorillonite_dry_Na.data:31
-195,O,mineral,ohs,-1.080800,soap,ohs,1.00000,ohs,Al1 H1 Mg1,0.00968,montmorillonite_dry_Na.data:32
-196,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04345,montmorillonite_dry_Na.data:33
-197,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04251,montmorillonite_dry_Na.data:34
-198,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04389,montmorillonite_dry_Na.data:35
-199,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04155,montmorillonite_dry_Na.data:36
-200,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05194,montmorillonite_dry_Na.data:37
-201,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04866,montmorillonite_dry_Na.data:38
-202,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40225,montmorillonite_dry_Na.data:39
-203,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.35936,montmorillonite_dry_Na.data:40
-204,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10732,montmorillonite_dry_Na.data:41
-205,Mg,mineral,mgo,+1.360000,soap,mgo,1.00000,mgo,O6,0.10906,montmorillonite_dry_Na.data:42
-206,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:43
-207,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:44
-208,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:45
-209,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:46
-210,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01180,montmorillonite_dry_Na.data:47
-211,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.01006,montmorillonite_dry_Na.data:48
-212,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01030,montmorillonite_dry_Na.data:49
-213,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01149,montmorillonite_dry_Na.data:50
-214,O,mineral,ohs,-1.080800,soap,ohs,1.00000,ohs,Al1 H1 Mg1,0.00943,montmorillonite_dry_Na.data:51
-215,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01295,montmorillonite_dry_Na.data:52
-216,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04691,montmorillonite_dry_Na.data:53
-217,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04215,montmorillonite_dry_Na.data:54
-218,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04098,montmorillonite_dry_Na.data:55
-219,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04466,montmorillonite_dry_Na.data:56
-220,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04861,montmorillonite_dry_Na.data:57
-221,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05069,montmorillonite_dry_Na.data:58
-222,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.34836,montmorillonite_dry_Na.data:59
-223,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39848,montmorillonite_dry_Na.data:60
-224,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10476,montmorillonite_dry_Na.data:61
-225,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10550,montmorillonite_dry_Na.data:62
-226,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:63
-227,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:64
-228,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:65
-229,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:66
-230,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.00967,montmorillonite_dry_Na.data:67
-231,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01197,montmorillonite_dry_Na.data:68
-232,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01057,montmorillonite_dry_Na.data:69
-233,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01151,montmorillonite_dry_Na.data:70
-234,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01275,montmorillonite_dry_Na.data:71
-235,O,mineral,ohs,-1.080800,soap,ohs,1.00000,ohs,Al1 H1 Mg1,0.01033,montmorillonite_dry_Na.data:72
-236,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,montmorillonite_dry_Na.data:73
-237,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04169,montmorillonite_dry_Na.data:74
-238,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04402,montmorillonite_dry_Na.data:75
-239,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04279,montmorillonite_dry_Na.data:76
-240,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05175,montmorillonite_dry_Na.data:77
-241,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05094,montmorillonite_dry_Na.data:78
-242,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,montmorillonite_dry_Na.data:79
-243,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.35578,montmorillonite_dry_Na.data:80
-244,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10670,montmorillonite_dry_Na.data:81
-245,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.11324,montmorillonite_dry_Na.data:82
-246,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:83
-247,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:84
-248,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:85
-249,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:86
-250,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01017,montmorillonite_dry_Na.data:87
-251,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01460,montmorillonite_dry_Na.data:88
-252,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.00983,montmorillonite_dry_Na.data:89
-253,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01241,montmorillonite_dry_Na.data:90
-254,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01358,montmorillonite_dry_Na.data:91
-255,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01085,montmorillonite_dry_Na.data:92
-256,O,mineral,obts,-1.168800,soap,obts,1.00000,obts,Al1 Si1,0.04267,montmorillonite_dry_Na.data:93
-257,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04448,montmorillonite_dry_Na.data:94
-258,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04282,montmorillonite_dry_Na.data:95
-259,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04517,montmorillonite_dry_Na.data:96
-260,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05155,montmorillonite_dry_Na.data:97
-261,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05191,montmorillonite_dry_Na.data:98
-262,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.41699,montmorillonite_dry_Na.data:99
-263,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.38090,montmorillonite_dry_Na.data:100
-264,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10195,montmorillonite_dry_Na.data:101
-265,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.09777,montmorillonite_dry_Na.data:102
-266,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:103
-267,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:104
-268,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:105
-269,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:106
-270,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01195,montmorillonite_dry_Na.data:107
-271,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.00967,montmorillonite_dry_Na.data:108
-272,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01237,montmorillonite_dry_Na.data:109
-273,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.01001,montmorillonite_dry_Na.data:110
-274,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01222,montmorillonite_dry_Na.data:111
-275,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.00943,montmorillonite_dry_Na.data:112
-276,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04574,montmorillonite_dry_Na.data:113
-277,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04138,montmorillonite_dry_Na.data:114
-278,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04430,montmorillonite_dry_Na.data:115
-279,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04742,montmorillonite_dry_Na.data:116
-280,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05035,montmorillonite_dry_Na.data:117
-281,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05053,montmorillonite_dry_Na.data:118
-282,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39938,montmorillonite_dry_Na.data:119
-283,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.37837,montmorillonite_dry_Na.data:120
-284,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10621,montmorillonite_dry_Na.data:121
-285,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10608,montmorillonite_dry_Na.data:122
-286,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:123
-287,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:124
-288,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:125
-289,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:126
-290,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01004,montmorillonite_dry_Na.data:127
-291,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01262,montmorillonite_dry_Na.data:128
-292,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.00972,montmorillonite_dry_Na.data:129
-293,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01236,montmorillonite_dry_Na.data:130
-294,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01252,montmorillonite_dry_Na.data:131
-295,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01068,montmorillonite_dry_Na.data:132
-296,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04470,montmorillonite_dry_Na.data:133
-297,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04431,montmorillonite_dry_Na.data:134
-298,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04313,montmorillonite_dry_Na.data:135
-299,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04510,montmorillonite_dry_Na.data:136
-300,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05166,montmorillonite_dry_Na.data:137
-301,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05277,montmorillonite_dry_Na.data:138
-302,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40467,montmorillonite_dry_Na.data:139
-303,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.37930,montmorillonite_dry_Na.data:140
-304,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.10104,montmorillonite_dry_Na.data:141
-305,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.09978,montmorillonite_dry_Na.data:142
-306,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:143
-307,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:144
-308,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:145
-309,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,montmorillonite_dry_Na.data:146
-310,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01122,montmorillonite_dry_Na.data:147
-311,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.00984,montmorillonite_dry_Na.data:148
-312,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01244,montmorillonite_dry_Na.data:149
-313,O,mineral,obos,-1.180800,soap,obos,1.00000,obos,Al1 Mg1 Si1,0.01004,montmorillonite_dry_Na.data:150
-314,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01234,montmorillonite_dry_Na.data:151
-315,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01118,montmorillonite_dry_Na.data:152
-316,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04548,montmorillonite_dry_Na.data:153
-317,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04402,montmorillonite_dry_Na.data:154
-318,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04420,montmorillonite_dry_Na.data:155
-319,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04845,montmorillonite_dry_Na.data:156
-320,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.05148,montmorillonite_dry_Na.data:157
-321,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04989,montmorillonite_dry_Na.data:158
-322,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.40032,montmorillonite_dry_Na.data:159
-323,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.37984,montmorillonite_dry_Na.data:160
-324,Na,ion,Na,+1.000000,soap,Na,1.00000,Na,none,2.00000,montmorillonite_dry_Na.data:161
-325,Na,ion,Na,+1.000000,soap,Na,1.00000,Na,none,2.00000,montmorillonite_dry_Na.data:161
-326,Na,ion,Na,+1.000000,soap,Na,1.00000,Na,none,2.00000,montmorillonite_dry_Na.data:161
-327,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-328,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-329,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-330,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-331,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-332,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-333,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-334,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-335,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-336,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-337,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-338,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-339,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-340,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-341,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-342,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-343,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-344,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-345,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-346,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-347,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-348,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-349,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-350,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-351,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-352,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-353,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-354,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-355,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-356,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-357,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-358,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-359,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-360,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-361,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-362,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-363,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-364,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-365,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-366,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-367,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-368,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-369,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-370,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-371,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-372,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-373,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-374,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-375,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-376,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-377,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-378,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-379,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-380,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-381,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-382,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-383,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-384,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-385,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-386,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-387,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-388,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-389,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-390,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-391,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-392,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-393,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-394,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-395,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-396,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-397,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-398,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-399,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-400,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-401,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-402,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-403,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-404,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-405,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-406,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-407,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-408,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-409,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-410,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-411,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-412,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-413,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-414,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-415,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-416,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-417,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-418,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-419,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-420,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-421,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-422,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-423,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-424,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-425,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-426,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-427,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-428,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-429,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-430,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-431,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-432,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-433,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-434,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-435,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-436,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-437,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-438,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-439,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-440,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-441,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-442,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-443,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-444,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-445,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-446,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-447,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-448,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-449,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-450,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-451,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-452,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-453,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-454,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-455,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-456,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-457,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-458,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-459,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-460,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-461,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-462,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-463,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-464,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-465,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-466,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-467,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-468,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-469,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-470,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-471,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-472,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-473,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-474,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-475,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-476,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-477,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-478,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-479,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-480,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-481,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-482,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-483,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-484,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-485,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-486,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-487,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-488,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-489,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-490,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-491,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-492,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-493,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-494,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-495,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-496,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-497,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-498,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-499,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-500,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-501,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-502,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-503,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-504,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-505,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-506,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-507,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-508,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-509,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-510,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-511,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-512,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-513,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-514,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-515,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-516,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-517,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-518,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-519,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-520,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-521,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-522,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-523,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-524,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-525,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-526,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-527,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-528,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-529,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-530,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-531,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-532,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-533,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-534,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-535,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-536,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-537,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-538,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-539,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-540,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-541,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-542,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-543,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-544,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-545,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-546,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-547,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-548,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-549,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-550,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-551,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-552,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-553,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-554,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-555,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-556,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-557,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-558,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-559,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-560,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-561,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-562,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-563,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-564,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-565,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-566,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-567,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-568,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-569,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-570,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-571,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-572,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-573,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-574,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-575,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-576,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-577,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-578,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-579,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-580,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-581,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-582,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-583,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-584,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-585,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-586,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-587,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-588,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-589,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-590,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-591,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-592,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-593,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-594,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-595,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-596,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-597,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-598,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-599,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-600,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-601,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-602,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-603,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-604,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-605,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-606,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-607,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-608,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-609,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-610,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-611,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-612,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-613,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-614,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-615,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-616,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-617,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-618,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-619,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-620,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-621,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-622,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-623,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-624,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-625,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-626,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-627,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-628,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-629,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-630,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-631,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-632,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-633,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-634,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-635,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-636,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-637,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-638,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-639,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-640,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-641,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-642,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-643,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-644,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-645,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-646,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-647,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-648,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-649,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-650,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-651,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-652,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-653,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-654,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-655,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-656,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-657,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-658,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-659,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-660,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-661,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-662,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-663,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-664,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-665,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-666,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-667,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-668,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-669,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-670,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-671,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-672,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-673,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-674,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-675,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-676,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-677,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-678,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-679,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-680,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-681,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-682,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-683,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-684,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-685,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-686,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-687,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-688,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-689,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-690,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-691,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-692,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
+id,element,type,charge,molecule,source,similarity_soap,nearest_reference,margin_soap,bonded_to
+1,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:1,0.10515,10 12 27 29 31 47
+2,Mg,mgo,+1.360000,1,soap,1.00000,montmorillonite_dry_Na.data:2,0.10995,8 11 32 89 108 110
+3,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:3,,14 47 55 98
+4,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:4,,8 13 16 17
+5,Al,at,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:5,0.09226,9 15 17 93
+6,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:6,,10 14 16 18
+7,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:7,0.01351,21 41 43
+8,O,obos,-1.180800,1,soap,1.00000,montmorillonite_dry_Na.data:8,0.01019,2 4 102
+9,O,obts,-1.168800,1,soap,1.00000,montmorillonite_dry_Na.data:9,0.03044,5 21 82
+10,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:10,0.01165,1 6 102
+11,O,ohs,-1.080800,1,soap,1.00000,montmorillonite_dry_Na.data:11,0.00994,2 19 21
+12,O,oh,-0.950000,1,soap,1.00000,montmorillonite_dry_Na.data:12,0.01356,1 20 22
+13,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:13,0.04745,4 85
+14,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:14,0.04209,3 6
+15,O,obts,-1.168800,1,soap,1.00000,montmorillonite_dry_Na.data:15,0.04098,5 43
+16,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:16,0.04514,4 6
+17,O,obts,-1.168800,1,soap,1.00000,montmorillonite_dry_Na.data:17,0.04691,4 5
+18,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:18,0.05012,6 83
+19,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:19,0.34946,11
+20,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:20,0.39600,12
+21,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:21,0.10453,7 9 11 30 32 67
+22,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:22,0.10570,12 28 31 88 90 109
+23,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:23,,34 67 75 118
+24,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:24,,28 33 36 37
+25,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:25,,29 35 37 113
+26,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:26,,30 34 36 38
+27,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:27,0.00999,1 61 63
+28,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:28,0.01210,22 24 82
+29,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:29,0.01051,1 25 102
+30,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:30,0.01152,21 26 82
+31,O,oh,-0.950000,1,soap,1.00000,montmorillonite_dry_Na.data:31,0.01308,1 22 39
+32,O,ohs,-1.080800,1,soap,1.00000,montmorillonite_dry_Na.data:32,0.00968,2 21 40
+33,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:33,0.04345,24 105
+34,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:34,0.04251,23 26
+35,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:35,0.04389,25 63
+36,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:36,0.04155,24 26
+37,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:37,0.05194,24 25
+38,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:38,0.04866,26 103
+39,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:39,0.40225,31
+40,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:40,0.35936,32
+41,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:41,0.10732,7 50 52 67 69 71
+42,Mg,mgo,+1.360000,1,soap,1.00000,montmorillonite_dry_Na.data:42,0.10906,48 51 72 129 148 150
+43,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:43,,7 15 54 138
+44,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:44,,48 53 56 57
+45,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:45,,49 55 57 133
+46,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:46,,50 54 56 58
+47,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:47,0.01180,1 3 61
+48,O,obos,-1.180800,1,soap,1.00000,montmorillonite_dry_Na.data:48,0.01006,42 44 142
+49,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:49,0.01030,45 61 122
+50,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:50,0.01149,41 46 142
+51,O,ohs,-1.080800,1,soap,1.00000,montmorillonite_dry_Na.data:51,0.00943,42 59 61
+52,O,oh,-0.950000,1,soap,1.00000,montmorillonite_dry_Na.data:52,0.01295,41 60 62
+53,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:53,0.04691,44 125
+54,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:54,0.04215,43 46
+55,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:55,0.04098,3 45
+56,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:56,0.04466,44 46
+57,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:57,0.04861,44 45
+58,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:58,0.05069,46 123
+59,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:59,0.34836,51
+60,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:60,0.39848,52
+61,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:61,0.10476,27 47 49 51 70 72
+62,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:62,0.10550,52 68 71 128 130 149
+63,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:63,,27 35 74 158
+64,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:64,,68 73 76 77
+65,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:65,,69 75 77 153
+66,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:66,,70 74 76 78
+67,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:67,0.00967,21 23 41
+68,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:68,0.01197,62 64 122
+69,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:69,0.01057,41 65 142
+70,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:70,0.01151,61 66 122
+71,O,oh,-0.950000,1,soap,1.00000,montmorillonite_dry_Na.data:71,0.01275,41 62 79
+72,O,ohs,-1.080800,1,soap,1.00000,montmorillonite_dry_Na.data:72,0.01033,42 61 80
+73,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:73,0.04444,64 145
+74,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:74,0.04169,63 66
+75,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:75,0.04402,23 65
+76,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:76,0.04279,64 66
+77,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:77,0.05175,64 65
+78,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:78,0.05094,66 143
+79,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:79,0.39821,71
+80,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:80,0.35578,72
+81,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:81,0.10670,90 92 107 109 111 127
+82,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:82,0.11324,9 28 30 88 91 112
+83,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:83,,18 94 127 135
+84,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:84,,88 93 96 97
+85,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:85,,13 89 95 97
+86,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:86,,90 94 96 98
+87,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:87,0.01017,101 121 123
+88,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:88,0.01460,22 82 84
+89,O,obos,-1.180800,1,soap,1.00000,montmorillonite_dry_Na.data:89,0.00983,2 85 101
+90,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:90,0.01241,22 81 86
+91,O,oh,-0.950000,1,soap,1.00000,montmorillonite_dry_Na.data:91,0.01358,82 99 101
+92,O,oh,-0.950000,1,soap,1.00000,montmorillonite_dry_Na.data:92,0.01085,81 100 102
+93,O,obts,-1.168800,1,soap,1.00000,montmorillonite_dry_Na.data:93,0.04267,5 84
+94,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:94,0.04448,83 86
+95,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:95,0.04282,85 123
+96,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:96,0.04517,84 86
+97,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:97,0.05155,84 85
+98,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:98,0.05191,3 86
+99,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:99,0.41699,91
+100,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:100,0.38090,92
+101,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:101,0.10195,87 89 91 110 112 147
+102,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:102,0.09777,8 10 29 92 108 111
+103,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:103,,38 114 147 155
+104,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:104,,108 113 116 117
+105,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:105,,33 109 115 117
+106,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:106,,110 114 116 118
+107,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:107,0.01195,81 141 143
+108,O,obos,-1.180800,1,soap,1.00000,montmorillonite_dry_Na.data:108,0.00967,2 102 104
+109,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:109,0.01237,22 81 105
+110,O,obos,-1.180800,1,soap,1.00000,montmorillonite_dry_Na.data:110,0.01001,2 101 106
+111,O,oh,-0.950000,1,soap,1.00000,montmorillonite_dry_Na.data:111,0.01222,81 102 119
+112,O,oh,-0.950000,1,soap,1.00000,montmorillonite_dry_Na.data:112,0.00943,82 101 120
+113,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:113,0.04574,25 104
+114,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:114,0.04138,103 106
+115,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:115,0.04430,105 143
+116,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:116,0.04742,104 106
+117,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:117,0.05035,104 105
+118,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:118,0.05053,23 106
+119,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:119,0.39938,111
+120,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:120,0.37837,112
+121,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:121,0.10621,87 130 132 147 149 151
+122,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:122,0.10608,49 68 70 128 131 152
+123,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:123,,58 87 95 134
+124,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:124,,128 133 136 137
+125,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:125,,53 129 135 137
+126,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:126,,130 134 136 138
+127,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:127,0.01004,81 83 141
+128,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:128,0.01262,62 122 124
+129,O,obos,-1.180800,1,soap,1.00000,montmorillonite_dry_Na.data:129,0.00972,42 125 141
+130,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:130,0.01236,62 121 126
+131,O,oh,-0.950000,1,soap,1.00000,montmorillonite_dry_Na.data:131,0.01252,122 139 141
+132,O,oh,-0.950000,1,soap,1.00000,montmorillonite_dry_Na.data:132,0.01068,121 140 142
+133,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:133,0.04470,45 124
+134,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:134,0.04431,123 126
+135,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:135,0.04313,83 125
+136,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:136,0.04510,124 126
+137,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:137,0.05166,124 125
+138,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:138,0.05277,43 126
+139,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:139,0.40467,131
+140,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:140,0.37930,132
+141,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:141,0.10104,107 127 129 131 150 152
+142,Al,ao,+1.575000,1,soap,1.00000,montmorillonite_dry_Na.data:142,0.09978,48 50 69 132 148 151
+143,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:143,,78 107 115 154
+144,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:144,,148 153 156 157
+145,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:145,,73 149 155 157
+146,Si,st,+2.100000,1,soap,1.00000,montmorillonite_dry_Na.data:146,,150 154 156 158
+147,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:147,0.01122,101 103 121
+148,O,obos,-1.180800,1,soap,1.00000,montmorillonite_dry_Na.data:148,0.00984,42 142 144
+149,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:149,0.01244,62 121 145
+150,O,obos,-1.180800,1,soap,1.00000,montmorillonite_dry_Na.data:150,0.01004,42 141 146
+151,O,oh,-0.950000,1,soap,1.00000,montmorillonite_dry_Na.data:151,0.01234,121 142 159
+152,O,oh,-0.950000,1,soap,1.00000,montmorillonite_dry_Na.data:152,0.01118,122 141 160
+153,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:153,0.04548,65 144
+154,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:154,0.04402,143 146
+155,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:155,0.04420,103 145
+156,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:156,0.04845,144 146
+157,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:157,0.05148,144 145
+158,O,ob,-1.050000,1,soap,1.00000,montmorillonite_dry_Na.data:158,0.04989,63 146
+159,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:159,0.40032,151
+160,H,ho,+0.425000,1,soap,1.00000,montmorillonite_dry_Na.data:160,0.37984,152
+161,Na,Na,+1.000000,2,ion,1.00000,montmorillonite_dry_Na.data:161,,
+162,Na,Na,+1.000000,3,ion,1.00000,montmorillonite_dry_Na.data:161,,
+163,Na,Na,+1.000000,4,ion,1.00000,montmorillonite_dry_Na.data:161,,
+164,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:1,0.10515,173 175 190 192 194 210
+165,Mg,mgo,+1.360000,5,soap,1.00000,montmorillonite_dry_Na.data:2,0.10995,171 174 195 252 271 273
+166,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:3,,177 210 218 261
+167,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:4,,171 176 179 180
+168,Al,at,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:5,0.09226,172 178 180 256
+169,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:6,,173 177 179 181
+170,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:7,0.01351,184 204 206
+171,O,obos,-1.180800,5,soap,1.00000,montmorillonite_dry_Na.data:8,0.01019,165 167 265
+172,O,obts,-1.168800,5,soap,1.00000,montmorillonite_dry_Na.data:9,0.03044,168 184 245
+173,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:10,0.01165,164 169 265
+174,O,ohs,-1.080800,5,soap,1.00000,montmorillonite_dry_Na.data:11,0.00994,165 182 184
+175,O,oh,-0.950000,5,soap,1.00000,montmorillonite_dry_Na.data:12,0.01356,164 183 185
+176,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:13,0.04745,167 248
+177,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:14,0.04209,166 169
+178,O,obts,-1.168800,5,soap,1.00000,montmorillonite_dry_Na.data:15,0.04098,168 206
+179,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:16,0.04514,167 169
+180,O,obts,-1.168800,5,soap,1.00000,montmorillonite_dry_Na.data:17,0.04691,167 168
+181,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:18,0.05012,169 246
+182,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:19,0.34946,174
+183,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:20,0.39600,175
+184,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:21,0.10453,170 172 174 193 195 230
+185,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:22,0.10570,175 191 194 251 253 272
+186,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:23,,197 230 238 281
+187,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:24,,191 196 199 200
+188,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:25,,192 198 200 276
+189,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:26,,193 197 199 201
+190,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:27,0.00999,164 224 226
+191,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:28,0.01210,185 187 245
+192,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:29,0.01051,164 188 265
+193,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:30,0.01152,184 189 245
+194,O,oh,-0.950000,5,soap,1.00000,montmorillonite_dry_Na.data:31,0.01308,164 185 202
+195,O,ohs,-1.080800,5,soap,1.00000,montmorillonite_dry_Na.data:32,0.00968,165 184 203
+196,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:33,0.04345,187 268
+197,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:34,0.04251,186 189
+198,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:35,0.04389,188 226
+199,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:36,0.04155,187 189
+200,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:37,0.05194,187 188
+201,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:38,0.04866,189 266
+202,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:39,0.40225,194
+203,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:40,0.35936,195
+204,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:41,0.10732,170 213 215 230 232 234
+205,Mg,mgo,+1.360000,5,soap,1.00000,montmorillonite_dry_Na.data:42,0.10906,211 214 235 292 311 313
+206,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:43,,170 178 217 301
+207,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:44,,211 216 219 220
+208,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:45,,212 218 220 296
+209,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:46,,213 217 219 221
+210,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:47,0.01180,164 166 224
+211,O,obos,-1.180800,5,soap,1.00000,montmorillonite_dry_Na.data:48,0.01006,205 207 305
+212,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:49,0.01030,208 224 285
+213,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:50,0.01149,204 209 305
+214,O,ohs,-1.080800,5,soap,1.00000,montmorillonite_dry_Na.data:51,0.00943,205 222 224
+215,O,oh,-0.950000,5,soap,1.00000,montmorillonite_dry_Na.data:52,0.01295,204 223 225
+216,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:53,0.04691,207 288
+217,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:54,0.04215,206 209
+218,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:55,0.04098,166 208
+219,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:56,0.04466,207 209
+220,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:57,0.04861,207 208
+221,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:58,0.05069,209 286
+222,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:59,0.34836,214
+223,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:60,0.39848,215
+224,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:61,0.10476,190 210 212 214 233 235
+225,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:62,0.10550,215 231 234 291 293 312
+226,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:63,,190 198 237 321
+227,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:64,,231 236 239 240
+228,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:65,,232 238 240 316
+229,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:66,,233 237 239 241
+230,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:67,0.00967,184 186 204
+231,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:68,0.01197,225 227 285
+232,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:69,0.01057,204 228 305
+233,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:70,0.01151,224 229 285
+234,O,oh,-0.950000,5,soap,1.00000,montmorillonite_dry_Na.data:71,0.01275,204 225 242
+235,O,ohs,-1.080800,5,soap,1.00000,montmorillonite_dry_Na.data:72,0.01033,205 224 243
+236,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:73,0.04444,227 308
+237,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:74,0.04169,226 229
+238,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:75,0.04402,186 228
+239,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:76,0.04279,227 229
+240,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:77,0.05175,227 228
+241,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:78,0.05094,229 306
+242,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:79,0.39821,234
+243,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:80,0.35578,235
+244,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:81,0.10670,253 255 270 272 274 290
+245,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:82,0.11324,172 191 193 251 254 275
+246,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:83,,181 257 290 298
+247,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:84,,251 256 259 260
+248,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:85,,176 252 258 260
+249,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:86,,253 257 259 261
+250,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:87,0.01017,264 284 286
+251,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:88,0.01460,185 245 247
+252,O,obos,-1.180800,5,soap,1.00000,montmorillonite_dry_Na.data:89,0.00983,165 248 264
+253,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:90,0.01241,185 244 249
+254,O,oh,-0.950000,5,soap,1.00000,montmorillonite_dry_Na.data:91,0.01358,245 262 264
+255,O,oh,-0.950000,5,soap,1.00000,montmorillonite_dry_Na.data:92,0.01085,244 263 265
+256,O,obts,-1.168800,5,soap,1.00000,montmorillonite_dry_Na.data:93,0.04267,168 247
+257,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:94,0.04448,246 249
+258,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:95,0.04282,248 286
+259,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:96,0.04517,247 249
+260,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:97,0.05155,247 248
+261,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:98,0.05191,166 249
+262,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:99,0.41699,254
+263,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:100,0.38090,255
+264,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:101,0.10195,250 252 254 273 275 310
+265,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:102,0.09777,171 173 192 255 271 274
+266,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:103,,201 277 310 318
+267,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:104,,271 276 279 280
+268,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:105,,196 272 278 280
+269,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:106,,273 277 279 281
+270,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:107,0.01195,244 304 306
+271,O,obos,-1.180800,5,soap,1.00000,montmorillonite_dry_Na.data:108,0.00967,165 265 267
+272,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:109,0.01237,185 244 268
+273,O,obos,-1.180800,5,soap,1.00000,montmorillonite_dry_Na.data:110,0.01001,165 264 269
+274,O,oh,-0.950000,5,soap,1.00000,montmorillonite_dry_Na.data:111,0.01222,244 265 282
+275,O,oh,-0.950000,5,soap,1.00000,montmorillonite_dry_Na.data:112,0.00943,245 264 283
+276,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:113,0.04574,188 267
+277,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:114,0.04138,266 269
+278,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:115,0.04430,268 306
+279,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:116,0.04742,267 269
+280,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:117,0.05035,267 268
+281,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:118,0.05053,186 269
+282,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:119,0.39938,274
+283,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:120,0.37837,275
+284,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:121,0.10621,250 293 295 310 312 314
+285,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:122,0.10608,212 231 233 291 294 315
+286,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:123,,221 250 258 297
+287,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:124,,291 296 299 300
+288,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:125,,216 292 298 300
+289,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:126,,293 297 299 301
+290,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:127,0.01004,244 246 304
+291,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:128,0.01262,225 285 287
+292,O,obos,-1.180800,5,soap,1.00000,montmorillonite_dry_Na.data:129,0.00972,205 288 304
+293,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:130,0.01236,225 284 289
+294,O,oh,-0.950000,5,soap,1.00000,montmorillonite_dry_Na.data:131,0.01252,285 302 304
+295,O,oh,-0.950000,5,soap,1.00000,montmorillonite_dry_Na.data:132,0.01068,284 303 305
+296,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:133,0.04470,208 287
+297,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:134,0.04431,286 289
+298,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:135,0.04313,246 288
+299,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:136,0.04510,287 289
+300,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:137,0.05166,287 288
+301,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:138,0.05277,206 289
+302,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:139,0.40467,294
+303,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:140,0.37930,295
+304,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:141,0.10104,270 290 292 294 313 315
+305,Al,ao,+1.575000,5,soap,1.00000,montmorillonite_dry_Na.data:142,0.09978,211 213 232 295 311 314
+306,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:143,,241 270 278 317
+307,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:144,,311 316 319 320
+308,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:145,,236 312 318 320
+309,Si,st,+2.100000,5,soap,1.00000,montmorillonite_dry_Na.data:146,,313 317 319 321
+310,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:147,0.01122,264 266 284
+311,O,obos,-1.180800,5,soap,1.00000,montmorillonite_dry_Na.data:148,0.00984,205 305 307
+312,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:149,0.01244,225 284 308
+313,O,obos,-1.180800,5,soap,1.00000,montmorillonite_dry_Na.data:150,0.01004,205 304 309
+314,O,oh,-0.950000,5,soap,1.00000,montmorillonite_dry_Na.data:151,0.01234,284 305 322
+315,O,oh,-0.950000,5,soap,1.00000,montmorillonite_dry_Na.data:152,0.01118,285 304 323
+316,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:153,0.04548,228 307
+317,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:154,0.04402,306 309
+318,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:155,0.04420,266 308
+319,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:156,0.04845,307 309
+320,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:157,0.05148,307 308
+321,O,ob,-1.050000,5,soap,1.00000,montmorillonite_dry_Na.data:158,0.04989,226 309
+322,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:159,0.40032,314
+323,H,ho,+0.425000,5,soap,1.00000,montmorillonite_dry_Na.data:160,0.37984,315
+324,Na,Na,+1.000000,6,ion,1.00000,montmorillonite_dry_Na.data:161,,
+325,Na,Na,+1.000000,7,ion,1.00000,montmorillonite_dry_Na.data:161,,
+326,Na,Na,+1.000000,8,ion,1.00000,montmorillonite_dry_Na.data:161,,
+327,O,ow,-0.820000,9,soap,1.00000,water.data:1,0.59366,328 329
+328,H,hw,+0.410000,9,soap,1.00000,water.data:2,0.34836,327
+329,H,hw,+0.410000,9,soap,1.00000,water.data:2,0.34836,327
+330,O,ow,-0.820000,10,soap,1.00000,water.data:1,0.59366,331 332
+331,H,hw,+0.410000,10,soap,1.00000,water.data:2,0.34836,330
+332,H,hw,+0.410000,10,soap,1.00000,water.data:2,0.34836,330
+333,O,ow,-0.820000,11,soap,1.00000,water.data:1,0.59366,334 335
+334,H,hw,+0.410000,11,soap,1.00000,water.data:2,0.34836,333
+335,H,hw,+0.410000,11,soap,1.00000,water.data:2,0.34836,333
+336,O,ow,-0.820000,12,soap,1.00000,water.data:1,0.59366,337 338
+337,H,hw,+0.410000,12,soap,1.00000,water.data:2,0.34836,336
+338,H,hw,+0.410000,12,soap,1.00000,water.data:2,0.34836,336
+339,O,ow,-0.820000,13,soap,1.00000,water.data:1,0.59366,340 341
+340,H,hw,+0.410000,13,soap,1.00000,water.data:2,0.34836,339
+341,H,hw,+0.410000,13,soap,1.00000,water.data:2,0.34836,339
+342,O,ow,-0.820000,14,soap,1.00000,water.data:1,0.59366,343 344
+343,H,hw,+0.410000,14,soap,1.00000,water.data:2,0.34836,342
+344,H,hw,+0.410000,14,soap,1.00000,water.data:2,0.34836,342
+345,O,ow,-0.820000,15,soap,1.00000,water.data:1,0.59366,346 347
+346,H,hw,+0.410000,15,soap,1.00000,water.data:2,0.34836,345
+347,H,hw,+0.410000,15,soap,1.00000,water.data:2,0.34836,345
+348,O,ow,-0.820000,16,soap,1.00000,water.data:1,0.59366,349 350
+349,H,hw,+0.410000,16,soap,1.00000,water.data:2,0.34836,348
+350,H,hw,+0.410000,16,soap,1.00000,water.data:2,0.34836,348
+351,O,ow,-0.820000,17,soap,1.00000,water.data:1,0.59366,352 353
+352,H,hw,+0.410000,17,soap,1.00000,water.data:2,0.34836,351
+353,H,hw,+0.410000,17,soap,1.00000,water.data:2,0.34836,351
+354,O,ow,-0.820000,18,soap,1.00000,water.data:1,0.59366,355 356
+355,H,hw,+0.410000,18,soap,1.00000,water.data:2,0.34836,354
+356,H,hw,+0.410000,18,soap,1.00000,water.data:2,0.34836,354
+357,O,ow,-0.820000,19,soap,1.00000,water.data:1,0.59366,358 359
+358,H,hw,+0.410000,19,soap,1.00000,water.data:2,0.34836,357
+359,H,hw,+0.410000,19,soap,1.00000,water.data:2,0.34836,357
+360,O,ow,-0.820000,20,soap,1.00000,water.data:1,0.59366,361 362
+361,H,hw,+0.410000,20,soap,1.00000,water.data:2,0.34836,360
+362,H,hw,+0.410000,20,soap,1.00000,water.data:2,0.34836,360
+363,O,ow,-0.820000,21,soap,1.00000,water.data:1,0.59366,364 365
+364,H,hw,+0.410000,21,soap,1.00000,water.data:2,0.34836,363
+365,H,hw,+0.410000,21,soap,1.00000,water.data:2,0.34836,363
+366,O,ow,-0.820000,22,soap,1.00000,water.data:1,0.59366,367 368
+367,H,hw,+0.410000,22,soap,1.00000,water.data:2,0.34836,366
+368,H,hw,+0.410000,22,soap,1.00000,water.data:2,0.34836,366
+369,O,ow,-0.820000,23,soap,1.00000,water.data:1,0.59366,370 371
+370,H,hw,+0.410000,23,soap,1.00000,water.data:2,0.34836,369
+371,H,hw,+0.410000,23,soap,1.00000,water.data:2,0.34836,369
+372,O,ow,-0.820000,24,soap,1.00000,water.data:1,0.59366,373 374
+373,H,hw,+0.410000,24,soap,1.00000,water.data:2,0.34836,372
+374,H,hw,+0.410000,24,soap,1.00000,water.data:2,0.34836,372
+375,O,ow,-0.820000,25,soap,1.00000,water.data:1,0.59366,376 377
+376,H,hw,+0.410000,25,soap,1.00000,water.data:2,0.34836,375
+377,H,hw,+0.410000,25,soap,1.00000,water.data:2,0.34836,375
+378,O,ow,-0.820000,26,soap,1.00000,water.data:1,0.59366,379 380
+379,H,hw,+0.410000,26,soap,1.00000,water.data:2,0.34836,378
+380,H,hw,+0.410000,26,soap,1.00000,water.data:2,0.34836,378
+381,O,ow,-0.820000,27,soap,1.00000,water.data:1,0.59366,382 383
+382,H,hw,+0.410000,27,soap,1.00000,water.data:2,0.34836,381
+383,H,hw,+0.410000,27,soap,1.00000,water.data:2,0.34836,381
+384,O,ow,-0.820000,28,soap,1.00000,water.data:1,0.59366,385 386
+385,H,hw,+0.410000,28,soap,1.00000,water.data:2,0.34836,384
+386,H,hw,+0.410000,28,soap,1.00000,water.data:2,0.34836,384
+387,O,ow,-0.820000,29,soap,1.00000,water.data:1,0.59366,388 389
+388,H,hw,+0.410000,29,soap,1.00000,water.data:2,0.34836,387
+389,H,hw,+0.410000,29,soap,1.00000,water.data:2,0.34836,387
+390,O,ow,-0.820000,30,soap,1.00000,water.data:1,0.59366,391 392
+391,H,hw,+0.410000,30,soap,1.00000,water.data:2,0.34836,390
+392,H,hw,+0.410000,30,soap,1.00000,water.data:2,0.34836,390
+393,O,ow,-0.820000,31,soap,1.00000,water.data:1,0.59366,394 395
+394,H,hw,+0.410000,31,soap,1.00000,water.data:2,0.34836,393
+395,H,hw,+0.410000,31,soap,1.00000,water.data:2,0.34836,393
+396,O,ow,-0.820000,32,soap,1.00000,water.data:1,0.59366,397 398
+397,H,hw,+0.410000,32,soap,1.00000,water.data:2,0.34836,396
+398,H,hw,+0.410000,32,soap,1.00000,water.data:2,0.34836,396
+399,O,ow,-0.820000,33,soap,1.00000,water.data:1,0.59366,400 401
+400,H,hw,+0.410000,33,soap,1.00000,water.data:2,0.34836,399
+401,H,hw,+0.410000,33,soap,1.00000,water.data:2,0.34836,399
+402,O,ow,-0.820000,34,soap,1.00000,water.data:1,0.59366,403 404
+403,H,hw,+0.410000,34,soap,1.00000,water.data:2,0.34836,402
+404,H,hw,+0.410000,34,soap,1.00000,water.data:2,0.34836,402
+405,O,ow,-0.820000,35,soap,1.00000,water.data:1,0.59366,406 407
+406,H,hw,+0.410000,35,soap,1.00000,water.data:2,0.34836,405
+407,H,hw,+0.410000,35,soap,1.00000,water.data:2,0.34836,405
+408,O,ow,-0.820000,36,soap,1.00000,water.data:1,0.59366,409 410
+409,H,hw,+0.410000,36,soap,1.00000,water.data:2,0.34836,408
+410,H,hw,+0.410000,36,soap,1.00000,water.data:2,0.34836,408
+411,O,ow,-0.820000,37,soap,1.00000,water.data:1,0.59366,412 413
+412,H,hw,+0.410000,37,soap,1.00000,water.data:2,0.34836,411
+413,H,hw,+0.410000,37,soap,1.00000,water.data:2,0.34836,411
+414,O,ow,-0.820000,38,soap,1.00000,water.data:1,0.59366,415 416
+415,H,hw,+0.410000,38,soap,1.00000,water.data:2,0.34836,414
+416,H,hw,+0.410000,38,soap,1.00000,water.data:2,0.34836,414
+417,O,ow,-0.820000,39,soap,1.00000,water.data:1,0.59366,418 419
+418,H,hw,+0.410000,39,soap,1.00000,water.data:2,0.34836,417
+419,H,hw,+0.410000,39,soap,1.00000,water.data:2,0.34836,417
+420,O,ow,-0.820000,40,soap,1.00000,water.data:1,0.59366,421 422
+421,H,hw,+0.410000,40,soap,1.00000,water.data:2,0.34836,420
+422,H,hw,+0.410000,40,soap,1.00000,water.data:2,0.34836,420
+423,O,ow,-0.820000,41,soap,1.00000,water.data:1,0.59366,424 425
+424,H,hw,+0.410000,41,soap,1.00000,water.data:2,0.34836,423
+425,H,hw,+0.410000,41,soap,1.00000,water.data:2,0.34836,423
+426,O,ow,-0.820000,42,soap,1.00000,water.data:1,0.59366,427 428
+427,H,hw,+0.410000,42,soap,1.00000,water.data:2,0.34836,426
+428,H,hw,+0.410000,42,soap,1.00000,water.data:2,0.34836,426
+429,O,ow,-0.820000,43,soap,1.00000,water.data:1,0.59366,430 431
+430,H,hw,+0.410000,43,soap,1.00000,water.data:2,0.34836,429
+431,H,hw,+0.410000,43,soap,1.00000,water.data:2,0.34836,429
+432,O,ow,-0.820000,44,soap,1.00000,water.data:1,0.59366,433 434
+433,H,hw,+0.410000,44,soap,1.00000,water.data:2,0.34836,432
+434,H,hw,+0.410000,44,soap,1.00000,water.data:2,0.34836,432
+435,O,ow,-0.820000,45,soap,1.00000,water.data:1,0.59366,436 437
+436,H,hw,+0.410000,45,soap,1.00000,water.data:2,0.34836,435
+437,H,hw,+0.410000,45,soap,1.00000,water.data:2,0.34836,435
+438,O,ow,-0.820000,46,soap,1.00000,water.data:1,0.59366,439 440
+439,H,hw,+0.410000,46,soap,1.00000,water.data:2,0.34836,438
+440,H,hw,+0.410000,46,soap,1.00000,water.data:2,0.34836,438
+441,O,ow,-0.820000,47,soap,1.00000,water.data:1,0.59366,442 443
+442,H,hw,+0.410000,47,soap,1.00000,water.data:2,0.34836,441
+443,H,hw,+0.410000,47,soap,1.00000,water.data:2,0.34836,441
+444,O,ow,-0.820000,48,soap,1.00000,water.data:1,0.59366,445 446
+445,H,hw,+0.410000,48,soap,1.00000,water.data:2,0.34836,444
+446,H,hw,+0.410000,48,soap,1.00000,water.data:2,0.34836,444
+447,O,ow,-0.820000,49,soap,1.00000,water.data:1,0.59366,448 449
+448,H,hw,+0.410000,49,soap,1.00000,water.data:2,0.34836,447
+449,H,hw,+0.410000,49,soap,1.00000,water.data:2,0.34836,447
+450,O,ow,-0.820000,50,soap,1.00000,water.data:1,0.59366,451 452
+451,H,hw,+0.410000,50,soap,1.00000,water.data:2,0.34836,450
+452,H,hw,+0.410000,50,soap,1.00000,water.data:2,0.34836,450
+453,O,ow,-0.820000,51,soap,1.00000,water.data:1,0.59366,454 455
+454,H,hw,+0.410000,51,soap,1.00000,water.data:2,0.34836,453
+455,H,hw,+0.410000,51,soap,1.00000,water.data:2,0.34836,453
+456,O,ow,-0.820000,52,soap,1.00000,water.data:1,0.59366,457 458
+457,H,hw,+0.410000,52,soap,1.00000,water.data:2,0.34836,456
+458,H,hw,+0.410000,52,soap,1.00000,water.data:2,0.34836,456
+459,O,ow,-0.820000,53,soap,1.00000,water.data:1,0.59366,460 461
+460,H,hw,+0.410000,53,soap,1.00000,water.data:2,0.34836,459
+461,H,hw,+0.410000,53,soap,1.00000,water.data:2,0.34836,459
+462,O,ow,-0.820000,54,soap,1.00000,water.data:1,0.59366,463 464
+463,H,hw,+0.410000,54,soap,1.00000,water.data:2,0.34836,462
+464,H,hw,+0.410000,54,soap,1.00000,water.data:2,0.34836,462
+465,O,ow,-0.820000,55,soap,1.00000,water.data:1,0.59366,466 467
+466,H,hw,+0.410000,55,soap,1.00000,water.data:2,0.34836,465
+467,H,hw,+0.410000,55,soap,1.00000,water.data:2,0.34836,465
+468,O,ow,-0.820000,56,soap,1.00000,water.data:1,0.59366,469 470
+469,H,hw,+0.410000,56,soap,1.00000,water.data:2,0.34836,468
+470,H,hw,+0.410000,56,soap,1.00000,water.data:2,0.34836,468
+471,O,ow,-0.820000,57,soap,1.00000,water.data:1,0.59366,472 473
+472,H,hw,+0.410000,57,soap,1.00000,water.data:2,0.34836,471
+473,H,hw,+0.410000,57,soap,1.00000,water.data:2,0.34836,471
+474,O,ow,-0.820000,58,soap,1.00000,water.data:1,0.59366,475 476
+475,H,hw,+0.410000,58,soap,1.00000,water.data:2,0.34836,474
+476,H,hw,+0.410000,58,soap,1.00000,water.data:2,0.34836,474
+477,O,ow,-0.820000,59,soap,1.00000,water.data:1,0.59366,478 479
+478,H,hw,+0.410000,59,soap,1.00000,water.data:2,0.34836,477
+479,H,hw,+0.410000,59,soap,1.00000,water.data:2,0.34836,477
+480,O,ow,-0.820000,60,soap,1.00000,water.data:1,0.59366,481 482
+481,H,hw,+0.410000,60,soap,1.00000,water.data:2,0.34836,480
+482,H,hw,+0.410000,60,soap,1.00000,water.data:2,0.34836,480
+483,O,ow,-0.820000,61,soap,1.00000,water.data:1,0.59366,484 485
+484,H,hw,+0.410000,61,soap,1.00000,water.data:2,0.34836,483
+485,H,hw,+0.410000,61,soap,1.00000,water.data:2,0.34836,483
+486,O,ow,-0.820000,62,soap,1.00000,water.data:1,0.59366,487 488
+487,H,hw,+0.410000,62,soap,1.00000,water.data:2,0.34836,486
+488,H,hw,+0.410000,62,soap,1.00000,water.data:2,0.34836,486
+489,O,ow,-0.820000,63,soap,1.00000,water.data:1,0.59366,490 491
+490,H,hw,+0.410000,63,soap,1.00000,water.data:2,0.34836,489
+491,H,hw,+0.410000,63,soap,1.00000,water.data:2,0.34836,489
+492,O,ow,-0.820000,64,soap,1.00000,water.data:1,0.59366,493 494
+493,H,hw,+0.410000,64,soap,1.00000,water.data:2,0.34836,492
+494,H,hw,+0.410000,64,soap,1.00000,water.data:2,0.34836,492
+495,O,ow,-0.820000,65,soap,1.00000,water.data:1,0.59366,496 497
+496,H,hw,+0.410000,65,soap,1.00000,water.data:2,0.34836,495
+497,H,hw,+0.410000,65,soap,1.00000,water.data:2,0.34836,495
+498,O,ow,-0.820000,66,soap,1.00000,water.data:1,0.59366,499 500
+499,H,hw,+0.410000,66,soap,1.00000,water.data:2,0.34836,498
+500,H,hw,+0.410000,66,soap,1.00000,water.data:2,0.34836,498
+501,O,ow,-0.820000,67,soap,1.00000,water.data:1,0.59366,502 503
+502,H,hw,+0.410000,67,soap,1.00000,water.data:2,0.34836,501
+503,H,hw,+0.410000,67,soap,1.00000,water.data:2,0.34836,501
+504,O,ow,-0.820000,68,soap,1.00000,water.data:1,0.59366,505 506
+505,H,hw,+0.410000,68,soap,1.00000,water.data:2,0.34836,504
+506,H,hw,+0.410000,68,soap,1.00000,water.data:2,0.34836,504
+507,O,ow,-0.820000,69,soap,1.00000,water.data:1,0.59366,508 509
+508,H,hw,+0.410000,69,soap,1.00000,water.data:2,0.34836,507
+509,H,hw,+0.410000,69,soap,1.00000,water.data:2,0.34836,507
+510,O,ow,-0.820000,70,soap,1.00000,water.data:1,0.59366,511 512
+511,H,hw,+0.410000,70,soap,1.00000,water.data:2,0.34836,510
+512,H,hw,+0.410000,70,soap,1.00000,water.data:2,0.34836,510
+513,O,ow,-0.820000,71,soap,1.00000,water.data:1,0.59366,514 515
+514,H,hw,+0.410000,71,soap,1.00000,water.data:2,0.34836,513
+515,H,hw,+0.410000,71,soap,1.00000,water.data:2,0.34836,513
+516,O,ow,-0.820000,72,soap,1.00000,water.data:1,0.59366,517 518
+517,H,hw,+0.410000,72,soap,1.00000,water.data:2,0.34836,516
+518,H,hw,+0.410000,72,soap,1.00000,water.data:2,0.34836,516
+519,O,ow,-0.820000,73,soap,1.00000,water.data:1,0.59366,520 521
+520,H,hw,+0.410000,73,soap,1.00000,water.data:2,0.34836,519
+521,H,hw,+0.410000,73,soap,1.00000,water.data:2,0.34836,519
+522,O,ow,-0.820000,74,soap,1.00000,water.data:1,0.59366,523 524
+523,H,hw,+0.410000,74,soap,1.00000,water.data:2,0.34836,522
+524,H,hw,+0.410000,74,soap,1.00000,water.data:2,0.34836,522
+525,O,ow,-0.820000,75,soap,1.00000,water.data:1,0.59366,526 527
+526,H,hw,+0.410000,75,soap,1.00000,water.data:2,0.34836,525
+527,H,hw,+0.410000,75,soap,1.00000,water.data:2,0.34836,525
+528,O,ow,-0.820000,76,soap,1.00000,water.data:1,0.59366,529 530
+529,H,hw,+0.410000,76,soap,1.00000,water.data:2,0.34836,528
+530,H,hw,+0.410000,76,soap,1.00000,water.data:2,0.34836,528
+531,O,ow,-0.820000,77,soap,1.00000,water.data:1,0.59366,532 533
+532,H,hw,+0.410000,77,soap,1.00000,water.data:2,0.34836,531
+533,H,hw,+0.410000,77,soap,1.00000,water.data:2,0.34836,531
+534,O,ow,-0.820000,78,soap,1.00000,water.data:1,0.59366,535 536
+535,H,hw,+0.410000,78,soap,1.00000,water.data:2,0.34836,534
+536,H,hw,+0.410000,78,soap,1.00000,water.data:2,0.34836,534
+537,O,ow,-0.820000,79,soap,1.00000,water.data:1,0.59366,538 539
+538,H,hw,+0.410000,79,soap,1.00000,water.data:2,0.34836,537
+539,H,hw,+0.410000,79,soap,1.00000,water.data:2,0.34836,537
+540,O,ow,-0.820000,80,soap,1.00000,water.data:1,0.59366,541 542
+541,H,hw,+0.410000,80,soap,1.00000,water.data:2,0.34836,540
+542,H,hw,+0.410000,80,soap,1.00000,water.data:2,0.34836,540
+543,O,ow,-0.820000,81,soap,1.00000,water.data:1,0.59366,544 545
+544,H,hw,+0.410000,81,soap,1.00000,water.data:2,0.34836,543
+545,H,hw,+0.410000,81,soap,1.00000,water.data:2,0.34836,543
+546,O,ow,-0.820000,82,soap,1.00000,water.data:1,0.59366,547 548
+547,H,hw,+0.410000,82,soap,1.00000,water.data:2,0.34836,546
+548,H,hw,+0.410000,82,soap,1.00000,water.data:2,0.34836,546
+549,O,ow,-0.820000,83,soap,1.00000,water.data:1,0.59366,550 551
+550,H,hw,+0.410000,83,soap,1.00000,water.data:2,0.34836,549
+551,H,hw,+0.410000,83,soap,1.00000,water.data:2,0.34836,549
+552,O,ow,-0.820000,84,soap,1.00000,water.data:1,0.59366,553 554
+553,H,hw,+0.410000,84,soap,1.00000,water.data:2,0.34836,552
+554,H,hw,+0.410000,84,soap,1.00000,water.data:2,0.34836,552
+555,O,ow,-0.820000,85,soap,1.00000,water.data:1,0.59366,556 557
+556,H,hw,+0.410000,85,soap,1.00000,water.data:2,0.34836,555
+557,H,hw,+0.410000,85,soap,1.00000,water.data:2,0.34836,555
+558,O,ow,-0.820000,86,soap,1.00000,water.data:1,0.59366,559 560
+559,H,hw,+0.410000,86,soap,1.00000,water.data:2,0.34836,558
+560,H,hw,+0.410000,86,soap,1.00000,water.data:2,0.34836,558
+561,O,ow,-0.820000,87,soap,1.00000,water.data:1,0.59366,562 563
+562,H,hw,+0.410000,87,soap,1.00000,water.data:2,0.34836,561
+563,H,hw,+0.410000,87,soap,1.00000,water.data:2,0.34836,561
+564,O,ow,-0.820000,88,soap,1.00000,water.data:1,0.59366,565 566
+565,H,hw,+0.410000,88,soap,1.00000,water.data:2,0.34836,564
+566,H,hw,+0.410000,88,soap,1.00000,water.data:2,0.34836,564
+567,O,ow,-0.820000,89,soap,1.00000,water.data:1,0.59366,568 569
+568,H,hw,+0.410000,89,soap,1.00000,water.data:2,0.34836,567
+569,H,hw,+0.410000,89,soap,1.00000,water.data:2,0.34836,567
+570,O,ow,-0.820000,90,soap,1.00000,water.data:1,0.59366,571 572
+571,H,hw,+0.410000,90,soap,1.00000,water.data:2,0.34836,570
+572,H,hw,+0.410000,90,soap,1.00000,water.data:2,0.34836,570
+573,O,ow,-0.820000,91,soap,1.00000,water.data:1,0.59366,574 575
+574,H,hw,+0.410000,91,soap,1.00000,water.data:2,0.34836,573
+575,H,hw,+0.410000,91,soap,1.00000,water.data:2,0.34836,573
+576,O,ow,-0.820000,92,soap,1.00000,water.data:1,0.59366,577 578
+577,H,hw,+0.410000,92,soap,1.00000,water.data:2,0.34836,576
+578,H,hw,+0.410000,92,soap,1.00000,water.data:2,0.34836,576
+579,O,ow,-0.820000,93,soap,1.00000,water.data:1,0.59366,580 581
+580,H,hw,+0.410000,93,soap,1.00000,water.data:2,0.34836,579
+581,H,hw,+0.410000,93,soap,1.00000,water.data:2,0.34836,579
+582,O,ow,-0.820000,94,soap,1.00000,water.data:1,0.59366,583 584
+583,H,hw,+0.410000,94,soap,1.00000,water.data:2,0.34836,582
+584,H,hw,+0.410000,94,soap,1.00000,water.data:2,0.34836,582
+585,O,ow,-0.820000,95,soap,1.00000,water.data:1,0.59366,586 587
+586,H,hw,+0.410000,95,soap,1.00000,water.data:2,0.34836,585
+587,H,hw,+0.410000,95,soap,1.00000,water.data:2,0.34836,585
+588,O,ow,-0.820000,96,soap,1.00000,water.data:1,0.59366,589 590
+589,H,hw,+0.410000,96,soap,1.00000,water.data:2,0.34836,588
+590,H,hw,+0.410000,96,soap,1.00000,water.data:2,0.34836,588
+591,O,ow,-0.820000,97,soap,1.00000,water.data:1,0.59366,592 593
+592,H,hw,+0.410000,97,soap,1.00000,water.data:2,0.34836,591
+593,H,hw,+0.410000,97,soap,1.00000,water.data:2,0.34836,591
+594,O,ow,-0.820000,98,soap,1.00000,water.data:1,0.59366,595 596
+595,H,hw,+0.410000,98,soap,1.00000,water.data:2,0.34836,594
+596,H,hw,+0.410000,98,soap,1.00000,water.data:2,0.34836,594
+597,O,ow,-0.820000,99,soap,1.00000,water.data:1,0.59366,598 599
+598,H,hw,+0.410000,99,soap,1.00000,water.data:2,0.34836,597
+599,H,hw,+0.410000,99,soap,1.00000,water.data:2,0.34836,597
+600,O,ow,-0.820000,100,soap,1.00000,water.data:1,0.59366,601 602
+601,H,hw,+0.410000,100,soap,1.00000,water.data:2,0.34836,600
+602,H,hw,+0.410000,100,soap,1.00000,water.data:2,0.34836,600
+603,O,ow,-0.820000,101,soap,1.00000,water.data:1,0.59366,604 605
+604,H,hw,+0.410000,101,soap,1.00000,water.data:2,0.34836,603
+605,H,hw,+0.410000,101,soap,1.00000,water.data:2,0.34836,603
+606,O,ow,-0.820000,102,soap,1.00000,water.data:1,0.59366,607 608
+607,H,hw,+0.410000,102,soap,1.00000,water.data:2,0.34836,606
+608,H,hw,+0.410000,102,soap,1.00000,water.data:2,0.34836,606
+609,O,ow,-0.820000,103,soap,1.00000,water.data:1,0.59366,610 611
+610,H,hw,+0.410000,103,soap,1.00000,water.data:2,0.34836,609
+611,H,hw,+0.410000,103,soap,1.00000,water.data:2,0.34836,609
+612,O,ow,-0.820000,104,soap,1.00000,water.data:1,0.59366,613 614
+613,H,hw,+0.410000,104,soap,1.00000,water.data:2,0.34836,612
+614,H,hw,+0.410000,104,soap,1.00000,water.data:2,0.34836,612
+615,O,ow,-0.820000,105,soap,1.00000,water.data:1,0.59366,616 617
+616,H,hw,+0.410000,105,soap,1.00000,water.data:2,0.34836,615
+617,H,hw,+0.410000,105,soap,1.00000,water.data:2,0.34836,615
+618,O,ow,-0.820000,106,soap,1.00000,water.data:1,0.59366,619 620
+619,H,hw,+0.410000,106,soap,1.00000,water.data:2,0.34836,618
+620,H,hw,+0.410000,106,soap,1.00000,water.data:2,0.34836,618
+621,O,ow,-0.820000,107,soap,1.00000,water.data:1,0.59366,622 623
+622,H,hw,+0.410000,107,soap,1.00000,water.data:2,0.34836,621
+623,H,hw,+0.410000,107,soap,1.00000,water.data:2,0.34836,621
+624,O,ow,-0.820000,108,soap,1.00000,water.data:1,0.59366,625 626
+625,H,hw,+0.410000,108,soap,1.00000,water.data:2,0.34836,624
+626,H,hw,+0.410000,108,soap,1.00000,water.data:2,0.34836,624
+627,O,ow,-0.820000,109,soap,1.00000,water.data:1,0.59366,628 629
+628,H,hw,+0.410000,109,soap,1.00000,water.data:2,0.34836,627
+629,H,hw,+0.410000,109,soap,1.00000,water.data:2,0.34836,627
+630,O,ow,-0.820000,110,soap,1.00000,water.data:1,0.59366,631 632
+631,H,hw,+0.410000,110,soap,1.00000,water.data:2,0.34836,630
+632,H,hw,+0.410000,110,soap,1.00000,water.data:2,0.34836,630
+633,O,ow,-0.820000,111,soap,1.00000,water.data:1,0.59366,634 635
+634,H,hw,+0.410000,111,soap,1.00000,water.data:2,0.34836,633
+635,H,hw,+0.410000,111,soap,1.00000,water.data:2,0.34836,633
+636,O,ow,-0.820000,112,soap,1.00000,water.data:1,0.59366,637 638
+637,H,hw,+0.410000,112,soap,1.00000,water.data:2,0.34836,636
+638,H,hw,+0.410000,112,soap,1.00000,water.data:2,0.34836,636
+639,O,ow,-0.820000,113,soap,1.00000,water.data:1,0.59366,640 641
+640,H,hw,+0.410000,113,soap,1.00000,water.data:2,0.34836,639
+641,H,hw,+0.410000,113,soap,1.00000,water.data:2,0.34836,639
+642,O,ow,-0.820000,114,soap,1.00000,water.data:1,0.59366,643 644
+643,H,hw,+0.410000,114,soap,1.00000,water.data:2,0.34836,642
+644,H,hw,+0.410000,114,soap,1.00000,water.data:2,0.34836,642
+645,O,ow,-0.820000,115,soap,1.00000,water.data:1,0.59366,646 647
+646,H,hw,+0.410000,115,soap,1.00000,water.data:2,0.34836,645
+647,H,hw,+0.410000,115,soap,1.00000,water.data:2,0.34836,645
+648,O,ow,-0.820000,116,soap,1.00000,water.data:1,0.59366,649 650
+649,H,hw,+0.410000,116,soap,1.00000,water.data:2,0.34836,648
+650,H,hw,+0.410000,116,soap,1.00000,water.data:2,0.34836,648
+651,O,ow,-0.820000,117,soap,1.00000,water.data:1,0.59366,652 653
+652,H,hw,+0.410000,117,soap,1.00000,water.data:2,0.34836,651
+653,H,hw,+0.410000,117,soap,1.00000,water.data:2,0.34836,651
+654,O,ow,-0.820000,118,soap,1.00000,water.data:1,0.59366,655 656
+655,H,hw,+0.410000,118,soap,1.00000,water.data:2,0.34836,654
+656,H,hw,+0.410000,118,soap,1.00000,water.data:2,0.34836,654
+657,O,ow,-0.820000,119,soap,1.00000,water.data:1,0.59366,658 659
+658,H,hw,+0.410000,119,soap,1.00000,water.data:2,0.34836,657
+659,H,hw,+0.410000,119,soap,1.00000,water.data:2,0.34836,657
+660,O,ow,-0.820000,120,soap,1.00000,water.data:1,0.59366,661 662
+661,H,hw,+0.410000,120,soap,1.00000,water.data:2,0.34836,660
+662,H,hw,+0.410000,120,soap,1.00000,water.data:2,0.34836,660
+663,O,ow,-0.820000,121,soap,1.00000,water.data:1,0.59366,664 665
+664,H,hw,+0.410000,121,soap,1.00000,water.data:2,0.34836,663
+665,H,hw,+0.410000,121,soap,1.00000,water.data:2,0.34836,663
+666,O,ow,-0.820000,122,soap,1.00000,water.data:1,0.59366,667 668
+667,H,hw,+0.410000,122,soap,1.00000,water.data:2,0.34836,666
+668,H,hw,+0.410000,122,soap,1.00000,water.data:2,0.34836,666
+669,O,ow,-0.820000,123,soap,1.00000,water.data:1,0.59366,670 671
+670,H,hw,+0.410000,123,soap,1.00000,water.data:2,0.34836,669
+671,H,hw,+0.410000,123,soap,1.00000,water.data:2,0.34836,669
+672,O,ow,-0.820000,124,soap,1.00000,water.data:1,0.59366,673 674
+673,H,hw,+0.410000,124,soap,1.00000,water.data:2,0.34836,672
+674,H,hw,+0.410000,124,soap,1.00000,water.data:2,0.34836,672
+675,O,ow,-0.820000,125,soap,1.00000,water.data:1,0.59366,676 677
+676,H,hw,+0.410000,125,soap,1.00000,water.data:2,0.34836,675
+677,H,hw,+0.410000,125,soap,1.00000,water.data:2,0.34836,675
+678,O,ow,-0.820000,126,soap,1.00000,water.data:1,0.59366,679 680
+679,H,hw,+0.410000,126,soap,1.00000,water.data:2,0.34836,678
+680,H,hw,+0.410000,126,soap,1.00000,water.data:2,0.34836,678
+681,O,ow,-0.820000,127,soap,1.00000,water.data:1,0.59366,682 683
+682,H,hw,+0.410000,127,soap,1.00000,water.data:2,0.34836,681
+683,H,hw,+0.410000,127,soap,1.00000,water.data:2,0.34836,681
+684,O,ow,-0.820000,128,soap,1.00000,water.data:1,0.59366,685 686
+685,H,hw,+0.410000,128,soap,1.00000,water.data:2,0.34836,684
+686,H,hw,+0.410000,128,soap,1.00000,water.data:2,0.34836,684
+687,O,ow,-0.820000,129,soap,1.00000,water.data:1,0.59366,688 689
+688,H,hw,+0.410000,129,soap,1.00000,water.data:2,0.34836,687
+689,H,hw,+0.410000,129,soap,1.00000,water.data:2,0.34836,687
+690,O,ow,-0.820000,130,soap,1.00000,water.data:1,0.59366,691 692
+691,H,hw,+0.410000,130,soap,1.00000,water.data:2,0.34836,690
+692,H,hw,+0.410000,130,soap,1.00000,water.data:2,0.34836,690

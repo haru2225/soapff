@@ -8,8 +8,8 @@ only, so it lives here, with the example that uses it (make_run.py).
                            and the lmp executable (as the run stored in run/)
   run(lmp, ...)            the same commands, given to the LAMMPS Python module; the loops are Python loops
 
-The structure needs the water types (soapff_cui.core.reserve_water_types) and a molecule file water.mol of one water
-(soapff_cui.core.water_molecule) in the folder `out`."""
+The structure needs the water types, bond and angle (soapff.build(..., reserve_water=True)) and a molecule file water.mol
+of one water (soapff_cui.core.water_molecule) in the folder `out`."""
 import os
 
 ION_NAMES = ("Na", "K", "Ca", "Cs", "Ba", "Cl")

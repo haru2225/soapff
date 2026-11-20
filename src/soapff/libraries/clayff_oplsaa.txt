@@ -14,8 +14,8 @@
 # Parameters: ClayFF Tables 1 and 2 (the flexible SPC water); OPLS-AA of foyer 1.3.0 forcefields/xml/oplsaa.xml.
 
 [library]
-name   = clayff_oplsaa
-engine = molecular
+name      = clayff_oplsaa
+reference = R. T. Cygan, J.-J. Liang, A. G. Kalinichev, J. Phys. Chem. B 108, 1255 (2004); W. L. Jorgensen, D. S. Maxwell, J. Tirado-Rives, J. Am. Chem. Soc. 118, 11225 (1996); M. Szczerba, A. G. Kalinichev, Clays Clay Miner. 64, 488 (2016)
 
 [soap]
 r_cut = 5.0

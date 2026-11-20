@@ -166,11 +166,8 @@ for model, xml, title, refs in (
 # Every ion is an atom without bonds: its element gives its type.
 
 [library]
-name        = {model}
-engine      = molecular
-description = {title}
-reference   = {refs}
-source      = OpenMM {mm.__version__} amber14/{xml}
+name      = {model}
+reference = {refs}
 
 {SOAP}
 {LAMMPS}

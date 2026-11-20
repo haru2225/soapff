@@ -28,9 +28,8 @@ ANGLE_HOH = (45.7696, 109.47)                   # h*-o*-h* (k2 kcal/mol/rad^2, t
 ANGLE_MOH = (30.0, 109.47)                      # Metal-oh-ho and Metal-ohs-ho
 WATER_Q = (Q["ow"], Q["hw"])                    # flexible SPC
 
-# The libraries (soapff/libraries/clayff.txt, clayff_edge.txt) carry their parameters in their tables ([types], [bonds],
-# [angles]), which soapff.build passes to make() and write_system() in place of the values of this file; these values are
-# those of the code that calls soapff_cui directly with a table without a force field.
+# The libraries (soapff/libraries/clayff.txt, clayff_edge.txt) carry their own parameters ([types], [bonds], [angles]);
+# these values are those of soapff_cui.core.write_system (the slabs of surfaces.py) and of the checks of the examples.
 # montmorillonite edges: only with the optional library of the particle with edges (clay_montmorillonite.data, the edge model
 # of Underwood & Bourg, J. Phys. Chem. C 124, 3702 (2020), after Lammers et al.), whose tables give the charges (of its
 # reference atoms), LJ, O-H bond, M-O-H and edge metal-O-metal angles of every one of its types.  These are only the defaults

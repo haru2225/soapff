@@ -1,850 +1,850 @@
-id,element,role,clayff_type,charge,source,matched_library_type,similarity,bond_type,bonds,margin,reference_atom
-1,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-2,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-3,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-4,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-5,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-6,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-7,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-8,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-9,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-10,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-11,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-12,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-13,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-14,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-15,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-16,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-17,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-18,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-19,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-20,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-21,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-22,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-23,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-24,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-25,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-26,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-27,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-28,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-29,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-30,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-31,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-32,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-33,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-34,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-35,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-36,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-37,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-38,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-39,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-40,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-41,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-42,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-43,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-44,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-45,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-46,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-47,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-48,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-49,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-50,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-51,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-52,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-53,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-54,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-55,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-56,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-57,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-58,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-59,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-60,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-61,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-62,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-63,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-64,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-65,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-66,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-67,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-68,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-69,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-70,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-71,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-72,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-73,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-74,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-75,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-76,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-77,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-78,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-79,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-80,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-81,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-82,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-83,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-84,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-85,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-86,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-87,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-88,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-89,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-90,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-91,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-92,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-93,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-94,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-95,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-96,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-97,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-98,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-99,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-100,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-101,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-102,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-103,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-104,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-105,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-106,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-107,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-108,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-109,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-110,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-111,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-112,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-113,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-114,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-115,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-116,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-117,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-118,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-119,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-120,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-121,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-122,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-123,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-124,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-125,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-126,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-127,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-128,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-129,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-130,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-131,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-132,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-133,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-134,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-135,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-136,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-137,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-138,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-139,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-140,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-141,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-142,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-143,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-144,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-145,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-146,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-147,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-148,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-149,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-150,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-151,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-152,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-153,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-154,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-155,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-156,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-157,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-158,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-159,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-160,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-161,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-162,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-163,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-164,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-165,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-166,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-167,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-168,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-169,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-170,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-171,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-172,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-173,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-174,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-175,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-176,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-177,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-178,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-179,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-180,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-181,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-182,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-183,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-184,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-185,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-186,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-187,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-188,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-189,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-190,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-191,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-192,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-193,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-194,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-195,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-196,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-197,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-198,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-199,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-200,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-201,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-202,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-203,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-204,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-205,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-206,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-207,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-208,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-209,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-210,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-211,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-212,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-213,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-214,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-215,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-216,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-217,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-218,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-219,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-220,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-221,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-222,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-223,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-224,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-225,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-226,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-227,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-228,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-229,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-230,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-231,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-232,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-233,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-234,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-235,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-236,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-237,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-238,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-239,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-240,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-241,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-242,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-243,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-244,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-245,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-246,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-247,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-248,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-249,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-250,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-251,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-252,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-253,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-254,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-255,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-256,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-257,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-258,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-259,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-260,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-261,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-262,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-263,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-264,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-265,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-266,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-267,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-268,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-269,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-270,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-271,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-272,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-273,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-274,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-275,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-276,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-277,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-278,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-279,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-280,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-281,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-282,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-283,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-284,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-285,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-286,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-287,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-288,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-289,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-290,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-291,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-292,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-293,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-294,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-295,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-296,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-297,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-298,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-299,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-300,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-301,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-302,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-303,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-304,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-305,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-306,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-307,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-308,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-309,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-310,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-311,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-312,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-313,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-314,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-315,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-316,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-317,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-318,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-319,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-320,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-321,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-322,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-323,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-324,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-325,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-326,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-327,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-328,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-329,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-330,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-331,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-332,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-333,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-334,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-335,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-336,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-337,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-338,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-339,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-340,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-341,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-342,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-343,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-344,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-345,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-346,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-347,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-348,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-349,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-350,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-351,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-352,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-353,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-354,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-355,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-356,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-357,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-358,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-359,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:1
-360,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-361,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,talc_bulk.data:3
-362,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11825,talc_bulk.data:5
-363,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-364,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.11660,talc_bulk.data:6
-365,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-366,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02630,talc_bulk.data:8
-367,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-368,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06602,talc_bulk.data:10
-369,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-370,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02632,talc_bulk.data:8
-371,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-372,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04640,talc_bulk.data:14
-373,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-374,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04645,talc_bulk.data:16
-375,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-376,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04644,talc_bulk.data:18
-377,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-378,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.51799,talc_bulk.data:20
-379,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-380,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-381,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-382,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-383,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-384,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-385,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-386,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-387,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-388,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-389,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-390,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-391,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-392,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-393,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-394,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-395,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-396,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-397,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-398,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-399,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-400,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-401,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-402,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-403,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-404,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-405,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-406,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-407,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-408,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-409,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-410,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-411,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-412,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-413,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-414,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-415,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-416,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-417,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-418,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-419,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-420,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-421,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-422,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-423,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-424,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-425,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-426,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-427,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-428,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-429,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-430,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-431,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-432,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-433,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-434,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-435,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-436,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-437,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-438,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-439,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-440,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-441,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-442,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-443,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-444,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-445,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-446,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-447,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-448,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-449,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-450,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-451,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-452,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-453,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-454,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-455,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-456,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-457,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-458,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-459,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-460,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-461,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-462,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-463,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-464,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-465,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-466,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-467,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-468,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-469,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-470,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-471,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-472,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-473,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-474,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-475,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-476,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-477,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-478,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-479,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-480,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-481,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-482,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-483,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-484,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-485,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-486,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-487,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-488,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-489,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-490,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-491,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-492,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-493,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-494,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-495,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-496,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-497,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-498,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-499,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-500,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-501,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-502,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-503,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-504,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-505,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-506,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-507,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-508,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-509,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-510,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-511,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-512,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-513,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-514,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-515,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-516,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-517,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-518,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-519,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-520,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-521,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-522,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-523,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-524,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-525,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-526,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-527,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-528,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-529,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-530,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-531,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-532,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-533,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-534,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-535,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-536,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-537,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-538,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-539,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-540,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-541,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-542,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-543,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-544,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-545,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-546,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-547,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-548,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-549,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-550,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-551,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-552,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-553,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-554,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-555,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-556,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-557,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-558,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-559,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-560,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-561,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-562,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-563,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-564,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-565,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-566,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-567,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-568,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-569,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-570,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-571,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-572,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-573,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-574,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-575,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-576,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-577,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-578,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-579,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-580,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-581,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-582,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-583,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-584,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-585,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-586,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-587,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-588,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-589,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-590,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-591,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-592,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-593,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-594,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-595,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-596,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-597,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-598,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-599,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-600,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-601,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-602,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-603,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-604,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-605,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-606,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-607,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-608,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-609,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-610,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-611,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-612,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-613,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-614,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-615,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-616,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-617,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-618,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-619,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-620,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-621,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-622,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-623,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-624,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-625,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-626,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-627,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-628,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-629,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-630,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-631,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-632,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-633,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-634,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-635,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-636,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-637,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-638,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-639,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-640,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-641,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-642,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-643,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-644,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-645,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-646,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-647,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-648,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-649,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-650,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-651,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-652,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-653,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-654,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-655,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-656,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-657,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-658,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-659,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-660,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-661,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-662,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-663,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-664,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-665,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-666,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-667,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-668,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-669,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-670,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-671,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-672,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-673,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-674,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-675,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-676,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-677,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-678,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-679,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-680,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-681,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-682,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-683,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-684,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-685,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-686,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-687,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-688,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-689,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-690,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-691,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-692,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-693,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-694,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-695,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-696,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-697,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-698,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-699,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-700,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-701,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-702,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-703,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-704,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-705,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-706,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-707,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-708,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-709,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-710,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-711,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-712,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-713,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-714,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-715,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-716,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-717,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-718,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-719,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-720,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-721,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-722,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-723,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-724,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-725,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-726,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-727,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-728,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-729,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-730,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-731,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-732,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-733,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-734,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-735,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-736,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-737,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-738,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-739,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-740,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-741,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-742,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-743,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-744,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-745,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-746,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-747,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-748,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-749,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-750,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-751,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-752,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-753,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-754,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-755,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-756,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-757,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-758,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-759,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-760,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-761,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-762,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-763,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-764,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-765,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-766,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-767,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-768,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-769,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-770,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-771,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-772,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-773,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-774,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-775,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-776,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-777,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-778,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-779,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-780,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-781,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-782,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-783,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-784,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-785,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-786,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-787,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-788,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-789,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-790,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-791,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-792,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-793,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-794,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-795,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-796,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-797,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-798,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-799,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-800,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-801,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-802,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-803,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-804,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-805,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-806,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-807,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-808,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-809,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-810,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-811,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-812,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-813,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-814,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-815,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-816,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-817,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-818,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-819,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-820,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-821,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-822,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-823,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-824,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-825,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-826,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-827,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-828,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-829,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-830,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-831,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-832,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-833,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-834,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-835,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-836,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-837,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-838,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-839,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-840,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-841,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-842,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-843,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-844,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-845,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-846,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-847,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-848,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-849,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
+id,element,type,charge,molecule,source,similarity_soap,nearest_reference,margin_soap,bonded_to
+1,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,12 18 100 224
+2,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,13 19 59 309
+3,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,8 14 16 18
+4,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,9 15 17 19
+5,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:5,0.11825,94 96 116 118 176 282
+6,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,29 31 53 75 303 307
+7,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,30 32 94 118 218 222
+8,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,3 27 301 341
+9,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,4 28 152 216
+10,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,20 27 47 49
+11,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,21 28 68 90
+12,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,1 47 111 301
+13,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,2 68 70 216
+14,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,3 295
+15,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,4 212
+16,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,3 43
+17,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,4 86
+18,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,1 3
+19,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,2 4
+20,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,10
+21,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,11
+22,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,33 39 121 245
+23,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,34 40 80 330
+24,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,29 35 37 39
+25,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,30 36 38 40
+26,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:5,0.11825,95 97 115 117 197 261
+27,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,8 10 54 74 324 328
+28,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,9 11 97 115 239 243
+29,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,6 24 322 362
+30,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,7 25 131 237
+31,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,6 41 68 70
+32,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,7 42 47 111
+33,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,22 68 90 322
+34,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,23 47 49 237
+35,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,24 316
+36,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,25 233
+37,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,24 64
+38,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,25 107
+39,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,22 24
+40,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,23 25
+41,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,31
+42,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,32
+43,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,16 54 60 140
+44,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,55 61 101 351
+45,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,50 56 58 60
+46,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,51 57 59 61
+47,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:5,0.11825,10 12 32 34 218 324
+48,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,71 73 95 117 345 349
+49,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,10 34 72 74 134 138
+50,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,45 69 257 343
+51,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,46 70 132 194
+52,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,62 69 89 91
+53,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,6 63 70 110
+54,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,27 43 89 343
+55,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,44 110 112 132
+56,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,45 337
+57,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,46 128
+58,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,45 85
+59,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,2 46
+60,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,43 45
+61,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,44 46
+62,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,52
+63,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,53
+64,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,37 75 81 161
+65,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,76 82 122 372
+66,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,71 77 79 81
+67,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,72 78 80 82
+68,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:5,0.11825,11 13 31 33 239 303
+69,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,50 52 96 116 366 370
+70,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,13 31 51 53 155 159
+71,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,48 66 278 364
+72,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,49 67 153 173
+73,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,48 83 110 112
+74,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,27 49 84 89
+75,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,6 64 110 364
+76,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,65 89 91 153
+77,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,66 358
+78,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,67 149
+79,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,66 106
+80,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,23 67
+81,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,64 66
+82,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,65 67
+83,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,73
+84,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,74
+85,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,58 96 102 182
+86,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,17 97 103 267
+87,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,92 98 100 102
+88,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,93 99 101 103
+89,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:5,0.11825,52 54 74 76 134 366
+90,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,11 33 113 115 261 265
+91,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,52 76 114 116 176 180
+92,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,87 111 259 299
+93,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,88 112 174 236
+94,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,5 7 104 111
+95,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,26 48 105 112
+96,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,5 69 85 259
+97,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,26 28 86 174
+98,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,87 253
+99,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,88 170
+100,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,1 87
+101,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,44 88
+102,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,85 87
+103,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,86 88
+104,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,94
+105,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,95
+106,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,79 117 123 203
+107,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,38 118 124 288
+108,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,113 119 121 123
+109,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,114 120 122 124
+110,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:5,0.11825,53 55 73 75 155 345
+111,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,12 32 92 94 282 286
+112,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,55 73 93 95 197 201
+113,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,90 108 280 320
+114,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,91 109 195 215
+115,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,26 28 90 125
+116,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,5 69 91 126
+117,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,26 48 106 280
+118,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,5 7 107 195
+119,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,108 274
+120,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,109 191
+121,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,22 108
+122,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,65 109
+123,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,106 108
+124,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,107 109
+125,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,115
+126,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,116
+127,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,138 144 226 350
+128,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,57 139 145 185
+129,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,134 140 142 144
+130,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,135 141 143 145
+131,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:5,0.11825,30 220 222 242 244 302
+132,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,51 55 155 157 179 201
+133,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,156 158 220 244 344 348
+134,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,49 89 129 153
+135,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,130 154 278 342
+136,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,146 153 173 175
+137,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,147 154 194 216
+138,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,49 127 173 237
+139,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,128 194 196 342
+140,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,43 129
+141,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,130 338
+142,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,129 169
+143,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,130 212
+144,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,127 129
+145,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,128 130
+146,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,136
+147,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,137
+148,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,159 165 247 371
+149,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,78 160 166 206
+150,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,155 161 163 165
+151,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,156 162 164 166
+152,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:5,0.11825,9 221 223 241 243 323
+153,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,72 76 134 136 180 200
+154,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,135 137 223 241 365 369
+155,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,70 110 132 150
+156,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,133 151 257 363
+157,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,132 167 194 196
+158,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,133 168 173 237
+159,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,70 148 194 216
+160,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,149 173 175 363
+161,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,64 150
+162,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,151 359
+163,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,150 190
+164,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,151 233
+165,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,148 150
+166,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,149 151
+167,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,157
+168,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,158
+169,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,142 180 186 266
+170,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,99 181 187 227
+171,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,176 182 184 186
+172,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,177 183 185 187
+173,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:5,0.11825,72 136 138 158 160 344
+174,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,93 97 197 199 221 243
+175,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,136 160 198 200 260 264
+176,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,5 91 171 195
+177,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,172 196 258 320
+178,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,188 195 215 217
+179,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,132 189 196 236
+180,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,91 153 169 215
+181,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,170 236 238 258
+182,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,85 171
+183,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,172 254
+184,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,171 211
+185,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,128 172
+186,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,169 171
+187,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,170 172
+188,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,178
+189,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,179
+190,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,163 201 207 287
+191,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,120 202 208 248
+192,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,197 203 205 207
+193,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,198 204 206 208
+194,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:5,0.11825,51 137 139 157 159 365
+195,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,114 118 176 178 222 242
+196,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,139 157 177 179 281 285
+197,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,26 112 174 192
+198,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,175 193 279 299
+199,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,174 209 236 238
+200,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,153 175 210 215
+201,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,112 132 190 236
+202,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,191 215 217 279
+203,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,106 192
+204,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,193 275
+205,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,192 232
+206,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,149 193
+207,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,190 192
+208,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,191 193
+209,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,199
+210,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,200
+211,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,184 222 228 308
+212,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,15 143 223 229
+213,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,218 224 226 228
+214,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,219 225 227 229
+215,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:5,0.11825,114 178 180 200 202 260
+216,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,9 13 137 159 239 241
+217,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,178 202 240 242 302 306
+218,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,7 47 213 237
+219,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,214 238 300 362
+220,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,131 133 230 237
+221,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,152 174 231 238
+222,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,7 131 195 211
+223,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,152 154 212 300
+224,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,1 213
+225,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,214 296
+226,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,127 213
+227,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,170 214
+228,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,211 213
+229,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,212 214
+230,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,220
+231,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,221
+232,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,205 243 249 329
+233,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,36 164 244 250
+234,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,239 245 247 249
+235,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,240 246 248 250
+236,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:5,0.11825,93 179 181 199 201 281
+237,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,30 34 138 158 218 220
+238,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,181 199 219 221 323 327
+239,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,28 68 216 234
+240,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,217 235 321 341
+241,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,152 154 216 251
+242,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,131 195 217 252
+243,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,28 152 174 232
+244,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,131 133 233 321
+245,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,22 234
+246,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,235 317
+247,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,148 234
+248,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,191 235
+249,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,232 234
+250,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,233 235
+251,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,241
+252,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,242
+253,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,98 264 270 352
+254,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,183 265 271 311
+255,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,260 266 268 270
+256,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,261 267 269 271
+257,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:5,0.11825,50 156 346 348 368 370
+258,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,177 181 281 283 305 327
+259,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,92 96 282 284 346 370
+260,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,175 215 255 279
+261,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,26 90 256 280
+262,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,272 279 299 301
+263,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,273 280 320 342
+264,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,175 253 299 363
+265,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,90 254 320 322
+266,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,169 255
+267,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,86 256
+268,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,255 295
+269,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,256 338
+270,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,253 255
+271,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,254 256
+272,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,262
+273,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,263
+274,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,119 285 291 373
+275,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,204 286 292 332
+276,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,281 287 289 291
+277,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,282 288 290 292
+278,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:5,0.11825,71 135 347 349 367 369
+279,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,198 202 260 262 306 326
+280,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,113 117 261 263 349 367
+281,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,196 236 258 276
+282,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,5 111 259 277
+283,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,258 293 320 322
+284,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,259 294 299 363
+285,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,196 274 320 342
+286,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,111 275 299 301
+287,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,190 276
+288,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,107 277
+289,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,276 316
+290,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,277 359
+291,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,274 276
+292,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,275 277
+293,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,283
+294,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,284
+295,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,14 268 306 312
+296,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,225 307 313 353
+297,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,302 308 310 312
+298,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,303 309 311 313
+299,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:5,0.11825,92 198 262 264 284 286
+300,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,219 223 323 325 347 369
+301,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,8 12 262 286 324 326
+302,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,131 217 297 321
+303,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,6 68 298 322
+304,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,314 321 341 343
+305,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,258 315 322 362
+306,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,217 279 295 341
+307,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,6 296 362 364
+308,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,211 297
+309,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,2 298
+310,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,297 337
+311,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,254 298
+312,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,295 297
+313,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,296 298
+314,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,304
+315,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,305
+316,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,35 289 327 333
+317,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,246 328 334 374
+318,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,323 329 331 333
+319,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,324 330 332 334
+320,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:5,0.11825,113 177 263 265 283 285
+321,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,240 244 302 304 348 368
+322,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,29 33 265 283 303 305
+323,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,152 238 300 318
+324,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,27 47 301 319
+325,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,300 335 362 364
+326,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,279 301 336 341
+327,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,238 258 316 362
+328,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,27 317 341 343
+329,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,232 318
+330,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,23 319
+331,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,318 358
+332,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,275 319
+333,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,316 318
+334,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,317 319
+335,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,325
+336,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,326
+337,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,56 310 348 354
+338,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,141 269 349 355
+339,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,344 350 352 354
+340,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,345 351 353 355
+341,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:5,0.11825,8 240 304 306 326 328
+342,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,135 139 263 285 365 367
+343,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,50 54 304 328 366 368
+344,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,133 173 339 363
+345,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,48 110 340 364
+346,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,257 259 356 363
+347,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,278 300 357 364
+348,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,133 257 321 337
+349,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,48 278 280 338
+350,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,127 339
+351,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,44 340
+352,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,253 339
+353,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,296 340
+354,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,337 339
+355,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,338 340
+356,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,346
+357,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,347
+358,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:1,,77 331 369 375
+359,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:1,,162 290 370 376
+360,Si,st,+2.100000,2,soap,1.00000,talc_bulk.data:3,,365 371 373 375
+361,Si,st,+2.100000,1,soap,1.00000,talc_bulk.data:3,,366 372 374 376
+362,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:5,0.11825,29 219 305 307 325 327
+363,Mg,mgh,+1.050000,1,soap,1.00000,talc_bulk.data:6,0.11660,156 160 264 284 344 346
+364,Mg,mgh,+1.050000,2,soap,1.00000,talc_bulk.data:6,0.11660,71 75 307 325 345 347
+365,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02630,154 194 342 360
+366,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02630,69 89 343 361
+367,O,oh,-0.950000,2,soap,1.00000,talc_bulk.data:10,0.06602,278 280 342 377
+368,O,oh,-0.950000,1,soap,1.00000,talc_bulk.data:10,0.06602,257 321 343 378
+369,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:8,0.02632,154 278 300 358
+370,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:8,0.02632,69 257 259 359
+371,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:14,0.04640,148 360
+372,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:14,0.04640,65 361
+373,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:16,0.04645,274 360
+374,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:16,0.04645,317 361
+375,O,ob,-1.050000,2,soap,1.00000,talc_bulk.data:18,0.04644,358 360
+376,O,ob,-1.050000,1,soap,1.00000,talc_bulk.data:18,0.04644,359 361
+377,H,ho,+0.425000,2,soap,1.00000,talc_bulk.data:20,0.51799,367
+378,H,ho,+0.425000,1,soap,1.00000,talc_bulk.data:20,0.51799,368
+379,O,ow,-0.820000,3,soap,1.00000,water.data:1,0.59366,380 381
+380,H,hw,+0.410000,3,soap,1.00000,water.data:2,0.34836,379
+381,H,hw,+0.410000,3,soap,1.00000,water.data:2,0.34836,379
+382,O,ow,-0.820000,4,soap,1.00000,water.data:1,0.59366,383 384
+383,H,hw,+0.410000,4,soap,1.00000,water.data:2,0.34836,382
+384,H,hw,+0.410000,4,soap,1.00000,water.data:2,0.34836,382
+385,O,ow,-0.820000,5,soap,1.00000,water.data:1,0.59366,386 387
+386,H,hw,+0.410000,5,soap,1.00000,water.data:2,0.34836,385
+387,H,hw,+0.410000,5,soap,1.00000,water.data:2,0.34836,385
+388,O,ow,-0.820000,6,soap,1.00000,water.data:1,0.59366,389 390
+389,H,hw,+0.410000,6,soap,1.00000,water.data:2,0.34836,388
+390,H,hw,+0.410000,6,soap,1.00000,water.data:2,0.34836,388
+391,O,ow,-0.820000,7,soap,1.00000,water.data:1,0.59366,392 393
+392,H,hw,+0.410000,7,soap,1.00000,water.data:2,0.34836,391
+393,H,hw,+0.410000,7,soap,1.00000,water.data:2,0.34836,391
+394,O,ow,-0.820000,8,soap,1.00000,water.data:1,0.59366,395 396
+395,H,hw,+0.410000,8,soap,1.00000,water.data:2,0.34836,394
+396,H,hw,+0.410000,8,soap,1.00000,water.data:2,0.34836,394
+397,O,ow,-0.820000,9,soap,1.00000,water.data:1,0.59366,398 399
+398,H,hw,+0.410000,9,soap,1.00000,water.data:2,0.34836,397
+399,H,hw,+0.410000,9,soap,1.00000,water.data:2,0.34836,397
+400,O,ow,-0.820000,10,soap,1.00000,water.data:1,0.59366,401 402
+401,H,hw,+0.410000,10,soap,1.00000,water.data:2,0.34836,400
+402,H,hw,+0.410000,10,soap,1.00000,water.data:2,0.34836,400
+403,O,ow,-0.820000,11,soap,1.00000,water.data:1,0.59366,404 405
+404,H,hw,+0.410000,11,soap,1.00000,water.data:2,0.34836,403
+405,H,hw,+0.410000,11,soap,1.00000,water.data:2,0.34836,403
+406,O,ow,-0.820000,12,soap,1.00000,water.data:1,0.59366,407 408
+407,H,hw,+0.410000,12,soap,1.00000,water.data:2,0.34836,406
+408,H,hw,+0.410000,12,soap,1.00000,water.data:2,0.34836,406
+409,O,ow,-0.820000,13,soap,1.00000,water.data:1,0.59366,410 411
+410,H,hw,+0.410000,13,soap,1.00000,water.data:2,0.34836,409
+411,H,hw,+0.410000,13,soap,1.00000,water.data:2,0.34836,409
+412,O,ow,-0.820000,14,soap,1.00000,water.data:1,0.59366,413 414
+413,H,hw,+0.410000,14,soap,1.00000,water.data:2,0.34836,412
+414,H,hw,+0.410000,14,soap,1.00000,water.data:2,0.34836,412
+415,O,ow,-0.820000,15,soap,1.00000,water.data:1,0.59366,416 417
+416,H,hw,+0.410000,15,soap,1.00000,water.data:2,0.34836,415
+417,H,hw,+0.410000,15,soap,1.00000,water.data:2,0.34836,415
+418,O,ow,-0.820000,16,soap,1.00000,water.data:1,0.59366,419 420
+419,H,hw,+0.410000,16,soap,1.00000,water.data:2,0.34836,418
+420,H,hw,+0.410000,16,soap,1.00000,water.data:2,0.34836,418
+421,O,ow,-0.820000,17,soap,1.00000,water.data:1,0.59366,422 423
+422,H,hw,+0.410000,17,soap,1.00000,water.data:2,0.34836,421
+423,H,hw,+0.410000,17,soap,1.00000,water.data:2,0.34836,421
+424,O,ow,-0.820000,18,soap,1.00000,water.data:1,0.59366,425 426
+425,H,hw,+0.410000,18,soap,1.00000,water.data:2,0.34836,424
+426,H,hw,+0.410000,18,soap,1.00000,water.data:2,0.34836,424
+427,O,ow,-0.820000,19,soap,1.00000,water.data:1,0.59366,428 429
+428,H,hw,+0.410000,19,soap,1.00000,water.data:2,0.34836,427
+429,H,hw,+0.410000,19,soap,1.00000,water.data:2,0.34836,427
+430,O,ow,-0.820000,20,soap,1.00000,water.data:1,0.59366,431 432
+431,H,hw,+0.410000,20,soap,1.00000,water.data:2,0.34836,430
+432,H,hw,+0.410000,20,soap,1.00000,water.data:2,0.34836,430
+433,O,ow,-0.820000,21,soap,1.00000,water.data:1,0.59366,434 435
+434,H,hw,+0.410000,21,soap,1.00000,water.data:2,0.34836,433
+435,H,hw,+0.410000,21,soap,1.00000,water.data:2,0.34836,433
+436,O,ow,-0.820000,22,soap,1.00000,water.data:1,0.59366,437 438
+437,H,hw,+0.410000,22,soap,1.00000,water.data:2,0.34836,436
+438,H,hw,+0.410000,22,soap,1.00000,water.data:2,0.34836,436
+439,O,ow,-0.820000,23,soap,1.00000,water.data:1,0.59366,440 441
+440,H,hw,+0.410000,23,soap,1.00000,water.data:2,0.34836,439
+441,H,hw,+0.410000,23,soap,1.00000,water.data:2,0.34836,439
+442,O,ow,-0.820000,24,soap,1.00000,water.data:1,0.59366,443 444
+443,H,hw,+0.410000,24,soap,1.00000,water.data:2,0.34836,442
+444,H,hw,+0.410000,24,soap,1.00000,water.data:2,0.34836,442
+445,O,ow,-0.820000,25,soap,1.00000,water.data:1,0.59366,446 447
+446,H,hw,+0.410000,25,soap,1.00000,water.data:2,0.34836,445
+447,H,hw,+0.410000,25,soap,1.00000,water.data:2,0.34836,445
+448,O,ow,-0.820000,26,soap,1.00000,water.data:1,0.59366,449 450
+449,H,hw,+0.410000,26,soap,1.00000,water.data:2,0.34836,448
+450,H,hw,+0.410000,26,soap,1.00000,water.data:2,0.34836,448
+451,O,ow,-0.820000,27,soap,1.00000,water.data:1,0.59366,452 453
+452,H,hw,+0.410000,27,soap,1.00000,water.data:2,0.34836,451
+453,H,hw,+0.410000,27,soap,1.00000,water.data:2,0.34836,451
+454,O,ow,-0.820000,28,soap,1.00000,water.data:1,0.59366,455 456
+455,H,hw,+0.410000,28,soap,1.00000,water.data:2,0.34836,454
+456,H,hw,+0.410000,28,soap,1.00000,water.data:2,0.34836,454
+457,O,ow,-0.820000,29,soap,1.00000,water.data:1,0.59366,458 459
+458,H,hw,+0.410000,29,soap,1.00000,water.data:2,0.34836,457
+459,H,hw,+0.410000,29,soap,1.00000,water.data:2,0.34836,457
+460,O,ow,-0.820000,30,soap,1.00000,water.data:1,0.59366,461 462
+461,H,hw,+0.410000,30,soap,1.00000,water.data:2,0.34836,460
+462,H,hw,+0.410000,30,soap,1.00000,water.data:2,0.34836,460
+463,O,ow,-0.820000,31,soap,1.00000,water.data:1,0.59366,464 465
+464,H,hw,+0.410000,31,soap,1.00000,water.data:2,0.34836,463
+465,H,hw,+0.410000,31,soap,1.00000,water.data:2,0.34836,463
+466,O,ow,-0.820000,32,soap,1.00000,water.data:1,0.59366,467 468
+467,H,hw,+0.410000,32,soap,1.00000,water.data:2,0.34836,466
+468,H,hw,+0.410000,32,soap,1.00000,water.data:2,0.34836,466
+469,O,ow,-0.820000,33,soap,1.00000,water.data:1,0.59366,470 471
+470,H,hw,+0.410000,33,soap,1.00000,water.data:2,0.34836,469
+471,H,hw,+0.410000,33,soap,1.00000,water.data:2,0.34836,469
+472,O,ow,-0.820000,34,soap,1.00000,water.data:1,0.59366,473 474
+473,H,hw,+0.410000,34,soap,1.00000,water.data:2,0.34836,472
+474,H,hw,+0.410000,34,soap,1.00000,water.data:2,0.34836,472
+475,O,ow,-0.820000,35,soap,1.00000,water.data:1,0.59366,476 477
+476,H,hw,+0.410000,35,soap,1.00000,water.data:2,0.34836,475
+477,H,hw,+0.410000,35,soap,1.00000,water.data:2,0.34836,475
+478,O,ow,-0.820000,36,soap,1.00000,water.data:1,0.59366,479 480
+479,H,hw,+0.410000,36,soap,1.00000,water.data:2,0.34836,478
+480,H,hw,+0.410000,36,soap,1.00000,water.data:2,0.34836,478
+481,O,ow,-0.820000,37,soap,1.00000,water.data:1,0.59366,482 483
+482,H,hw,+0.410000,37,soap,1.00000,water.data:2,0.34836,481
+483,H,hw,+0.410000,37,soap,1.00000,water.data:2,0.34836,481
+484,O,ow,-0.820000,38,soap,1.00000,water.data:1,0.59366,485 486
+485,H,hw,+0.410000,38,soap,1.00000,water.data:2,0.34836,484
+486,H,hw,+0.410000,38,soap,1.00000,water.data:2,0.34836,484
+487,O,ow,-0.820000,39,soap,1.00000,water.data:1,0.59366,488 489
+488,H,hw,+0.410000,39,soap,1.00000,water.data:2,0.34836,487
+489,H,hw,+0.410000,39,soap,1.00000,water.data:2,0.34836,487
+490,O,ow,-0.820000,40,soap,1.00000,water.data:1,0.59366,491 492
+491,H,hw,+0.410000,40,soap,1.00000,water.data:2,0.34836,490
+492,H,hw,+0.410000,40,soap,1.00000,water.data:2,0.34836,490
+493,O,ow,-0.820000,41,soap,1.00000,water.data:1,0.59366,494 495
+494,H,hw,+0.410000,41,soap,1.00000,water.data:2,0.34836,493
+495,H,hw,+0.410000,41,soap,1.00000,water.data:2,0.34836,493
+496,O,ow,-0.820000,42,soap,1.00000,water.data:1,0.59366,497 498
+497,H,hw,+0.410000,42,soap,1.00000,water.data:2,0.34836,496
+498,H,hw,+0.410000,42,soap,1.00000,water.data:2,0.34836,496
+499,O,ow,-0.820000,43,soap,1.00000,water.data:1,0.59366,500 501
+500,H,hw,+0.410000,43,soap,1.00000,water.data:2,0.34836,499
+501,H,hw,+0.410000,43,soap,1.00000,water.data:2,0.34836,499
+502,O,ow,-0.820000,44,soap,1.00000,water.data:1,0.59366,503 504
+503,H,hw,+0.410000,44,soap,1.00000,water.data:2,0.34836,502
+504,H,hw,+0.410000,44,soap,1.00000,water.data:2,0.34836,502
+505,O,ow,-0.820000,45,soap,1.00000,water.data:1,0.59366,506 507
+506,H,hw,+0.410000,45,soap,1.00000,water.data:2,0.34836,505
+507,H,hw,+0.410000,45,soap,1.00000,water.data:2,0.34836,505
+508,O,ow,-0.820000,46,soap,1.00000,water.data:1,0.59366,509 510
+509,H,hw,+0.410000,46,soap,1.00000,water.data:2,0.34836,508
+510,H,hw,+0.410000,46,soap,1.00000,water.data:2,0.34836,508
+511,O,ow,-0.820000,47,soap,1.00000,water.data:1,0.59366,512 513
+512,H,hw,+0.410000,47,soap,1.00000,water.data:2,0.34836,511
+513,H,hw,+0.410000,47,soap,1.00000,water.data:2,0.34836,511
+514,O,ow,-0.820000,48,soap,1.00000,water.data:1,0.59366,515 516
+515,H,hw,+0.410000,48,soap,1.00000,water.data:2,0.34836,514
+516,H,hw,+0.410000,48,soap,1.00000,water.data:2,0.34836,514
+517,O,ow,-0.820000,49,soap,1.00000,water.data:1,0.59366,518 519
+518,H,hw,+0.410000,49,soap,1.00000,water.data:2,0.34836,517
+519,H,hw,+0.410000,49,soap,1.00000,water.data:2,0.34836,517
+520,O,ow,-0.820000,50,soap,1.00000,water.data:1,0.59366,521 522
+521,H,hw,+0.410000,50,soap,1.00000,water.data:2,0.34836,520
+522,H,hw,+0.410000,50,soap,1.00000,water.data:2,0.34836,520
+523,O,ow,-0.820000,51,soap,1.00000,water.data:1,0.59366,524 525
+524,H,hw,+0.410000,51,soap,1.00000,water.data:2,0.34836,523
+525,H,hw,+0.410000,51,soap,1.00000,water.data:2,0.34836,523
+526,O,ow,-0.820000,52,soap,1.00000,water.data:1,0.59366,527 528
+527,H,hw,+0.410000,52,soap,1.00000,water.data:2,0.34836,526
+528,H,hw,+0.410000,52,soap,1.00000,water.data:2,0.34836,526
+529,O,ow,-0.820000,53,soap,1.00000,water.data:1,0.59366,530 531
+530,H,hw,+0.410000,53,soap,1.00000,water.data:2,0.34836,529
+531,H,hw,+0.410000,53,soap,1.00000,water.data:2,0.34836,529
+532,O,ow,-0.820000,54,soap,1.00000,water.data:1,0.59366,533 534
+533,H,hw,+0.410000,54,soap,1.00000,water.data:2,0.34836,532
+534,H,hw,+0.410000,54,soap,1.00000,water.data:2,0.34836,532
+535,O,ow,-0.820000,55,soap,1.00000,water.data:1,0.59366,536 537
+536,H,hw,+0.410000,55,soap,1.00000,water.data:2,0.34836,535
+537,H,hw,+0.410000,55,soap,1.00000,water.data:2,0.34836,535
+538,O,ow,-0.820000,56,soap,1.00000,water.data:1,0.59366,539 540
+539,H,hw,+0.410000,56,soap,1.00000,water.data:2,0.34836,538
+540,H,hw,+0.410000,56,soap,1.00000,water.data:2,0.34836,538
+541,O,ow,-0.820000,57,soap,1.00000,water.data:1,0.59366,542 543
+542,H,hw,+0.410000,57,soap,1.00000,water.data:2,0.34836,541
+543,H,hw,+0.410000,57,soap,1.00000,water.data:2,0.34836,541
+544,O,ow,-0.820000,58,soap,1.00000,water.data:1,0.59366,545 546
+545,H,hw,+0.410000,58,soap,1.00000,water.data:2,0.34836,544
+546,H,hw,+0.410000,58,soap,1.00000,water.data:2,0.34836,544
+547,O,ow,-0.820000,59,soap,1.00000,water.data:1,0.59366,548 549
+548,H,hw,+0.410000,59,soap,1.00000,water.data:2,0.34836,547
+549,H,hw,+0.410000,59,soap,1.00000,water.data:2,0.34836,547
+550,O,ow,-0.820000,60,soap,1.00000,water.data:1,0.59366,551 552
+551,H,hw,+0.410000,60,soap,1.00000,water.data:2,0.34836,550
+552,H,hw,+0.410000,60,soap,1.00000,water.data:2,0.34836,550
+553,O,ow,-0.820000,61,soap,1.00000,water.data:1,0.59366,554 555
+554,H,hw,+0.410000,61,soap,1.00000,water.data:2,0.34836,553
+555,H,hw,+0.410000,61,soap,1.00000,water.data:2,0.34836,553
+556,O,ow,-0.820000,62,soap,1.00000,water.data:1,0.59366,557 558
+557,H,hw,+0.410000,62,soap,1.00000,water.data:2,0.34836,556
+558,H,hw,+0.410000,62,soap,1.00000,water.data:2,0.34836,556
+559,O,ow,-0.820000,63,soap,1.00000,water.data:1,0.59366,560 561
+560,H,hw,+0.410000,63,soap,1.00000,water.data:2,0.34836,559
+561,H,hw,+0.410000,63,soap,1.00000,water.data:2,0.34836,559
+562,O,ow,-0.820000,64,soap,1.00000,water.data:1,0.59366,563 564
+563,H,hw,+0.410000,64,soap,1.00000,water.data:2,0.34836,562
+564,H,hw,+0.410000,64,soap,1.00000,water.data:2,0.34836,562
+565,O,ow,-0.820000,65,soap,1.00000,water.data:1,0.59366,566 567
+566,H,hw,+0.410000,65,soap,1.00000,water.data:2,0.34836,565
+567,H,hw,+0.410000,65,soap,1.00000,water.data:2,0.34836,565
+568,O,ow,-0.820000,66,soap,1.00000,water.data:1,0.59366,569 570
+569,H,hw,+0.410000,66,soap,1.00000,water.data:2,0.34836,568
+570,H,hw,+0.410000,66,soap,1.00000,water.data:2,0.34836,568
+571,O,ow,-0.820000,67,soap,1.00000,water.data:1,0.59366,572 573
+572,H,hw,+0.410000,67,soap,1.00000,water.data:2,0.34836,571
+573,H,hw,+0.410000,67,soap,1.00000,water.data:2,0.34836,571
+574,O,ow,-0.820000,68,soap,1.00000,water.data:1,0.59366,575 576
+575,H,hw,+0.410000,68,soap,1.00000,water.data:2,0.34836,574
+576,H,hw,+0.410000,68,soap,1.00000,water.data:2,0.34836,574
+577,O,ow,-0.820000,69,soap,1.00000,water.data:1,0.59366,578 579
+578,H,hw,+0.410000,69,soap,1.00000,water.data:2,0.34836,577
+579,H,hw,+0.410000,69,soap,1.00000,water.data:2,0.34836,577
+580,O,ow,-0.820000,70,soap,1.00000,water.data:1,0.59366,581 582
+581,H,hw,+0.410000,70,soap,1.00000,water.data:2,0.34836,580
+582,H,hw,+0.410000,70,soap,1.00000,water.data:2,0.34836,580
+583,O,ow,-0.820000,71,soap,1.00000,water.data:1,0.59366,584 585
+584,H,hw,+0.410000,71,soap,1.00000,water.data:2,0.34836,583
+585,H,hw,+0.410000,71,soap,1.00000,water.data:2,0.34836,583
+586,O,ow,-0.820000,72,soap,1.00000,water.data:1,0.59366,587 588
+587,H,hw,+0.410000,72,soap,1.00000,water.data:2,0.34836,586
+588,H,hw,+0.410000,72,soap,1.00000,water.data:2,0.34836,586
+589,O,ow,-0.820000,73,soap,1.00000,water.data:1,0.59366,590 591
+590,H,hw,+0.410000,73,soap,1.00000,water.data:2,0.34836,589
+591,H,hw,+0.410000,73,soap,1.00000,water.data:2,0.34836,589
+592,O,ow,-0.820000,74,soap,1.00000,water.data:1,0.59366,593 594
+593,H,hw,+0.410000,74,soap,1.00000,water.data:2,0.34836,592
+594,H,hw,+0.410000,74,soap,1.00000,water.data:2,0.34836,592
+595,O,ow,-0.820000,75,soap,1.00000,water.data:1,0.59366,596 597
+596,H,hw,+0.410000,75,soap,1.00000,water.data:2,0.34836,595
+597,H,hw,+0.410000,75,soap,1.00000,water.data:2,0.34836,595
+598,O,ow,-0.820000,76,soap,1.00000,water.data:1,0.59366,599 600
+599,H,hw,+0.410000,76,soap,1.00000,water.data:2,0.34836,598
+600,H,hw,+0.410000,76,soap,1.00000,water.data:2,0.34836,598
+601,O,ow,-0.820000,77,soap,1.00000,water.data:1,0.59366,602 603
+602,H,hw,+0.410000,77,soap,1.00000,water.data:2,0.34836,601
+603,H,hw,+0.410000,77,soap,1.00000,water.data:2,0.34836,601
+604,O,ow,-0.820000,78,soap,1.00000,water.data:1,0.59366,605 606
+605,H,hw,+0.410000,78,soap,1.00000,water.data:2,0.34836,604
+606,H,hw,+0.410000,78,soap,1.00000,water.data:2,0.34836,604
+607,O,ow,-0.820000,79,soap,1.00000,water.data:1,0.59366,608 609
+608,H,hw,+0.410000,79,soap,1.00000,water.data:2,0.34836,607
+609,H,hw,+0.410000,79,soap,1.00000,water.data:2,0.34836,607
+610,O,ow,-0.820000,80,soap,1.00000,water.data:1,0.59366,611 612
+611,H,hw,+0.410000,80,soap,1.00000,water.data:2,0.34836,610
+612,H,hw,+0.410000,80,soap,1.00000,water.data:2,0.34836,610
+613,O,ow,-0.820000,81,soap,1.00000,water.data:1,0.59366,614 615
+614,H,hw,+0.410000,81,soap,1.00000,water.data:2,0.34836,613
+615,H,hw,+0.410000,81,soap,1.00000,water.data:2,0.34836,613
+616,O,ow,-0.820000,82,soap,1.00000,water.data:1,0.59366,617 618
+617,H,hw,+0.410000,82,soap,1.00000,water.data:2,0.34836,616
+618,H,hw,+0.410000,82,soap,1.00000,water.data:2,0.34836,616
+619,O,ow,-0.820000,83,soap,1.00000,water.data:1,0.59366,620 621
+620,H,hw,+0.410000,83,soap,1.00000,water.data:2,0.34836,619
+621,H,hw,+0.410000,83,soap,1.00000,water.data:2,0.34836,619
+622,O,ow,-0.820000,84,soap,1.00000,water.data:1,0.59366,623 624
+623,H,hw,+0.410000,84,soap,1.00000,water.data:2,0.34836,622
+624,H,hw,+0.410000,84,soap,1.00000,water.data:2,0.34836,622
+625,O,ow,-0.820000,85,soap,1.00000,water.data:1,0.59366,626 627
+626,H,hw,+0.410000,85,soap,1.00000,water.data:2,0.34836,625
+627,H,hw,+0.410000,85,soap,1.00000,water.data:2,0.34836,625
+628,O,ow,-0.820000,86,soap,1.00000,water.data:1,0.59366,629 630
+629,H,hw,+0.410000,86,soap,1.00000,water.data:2,0.34836,628
+630,H,hw,+0.410000,86,soap,1.00000,water.data:2,0.34836,628
+631,O,ow,-0.820000,87,soap,1.00000,water.data:1,0.59366,632 633
+632,H,hw,+0.410000,87,soap,1.00000,water.data:2,0.34836,631
+633,H,hw,+0.410000,87,soap,1.00000,water.data:2,0.34836,631
+634,O,ow,-0.820000,88,soap,1.00000,water.data:1,0.59366,635 636
+635,H,hw,+0.410000,88,soap,1.00000,water.data:2,0.34836,634
+636,H,hw,+0.410000,88,soap,1.00000,water.data:2,0.34836,634
+637,O,ow,-0.820000,89,soap,1.00000,water.data:1,0.59366,638 639
+638,H,hw,+0.410000,89,soap,1.00000,water.data:2,0.34836,637
+639,H,hw,+0.410000,89,soap,1.00000,water.data:2,0.34836,637
+640,O,ow,-0.820000,90,soap,1.00000,water.data:1,0.59366,641 642
+641,H,hw,+0.410000,90,soap,1.00000,water.data:2,0.34836,640
+642,H,hw,+0.410000,90,soap,1.00000,water.data:2,0.34836,640
+643,O,ow,-0.820000,91,soap,1.00000,water.data:1,0.59366,644 645
+644,H,hw,+0.410000,91,soap,1.00000,water.data:2,0.34836,643
+645,H,hw,+0.410000,91,soap,1.00000,water.data:2,0.34836,643
+646,O,ow,-0.820000,92,soap,1.00000,water.data:1,0.59366,647 648
+647,H,hw,+0.410000,92,soap,1.00000,water.data:2,0.34836,646
+648,H,hw,+0.410000,92,soap,1.00000,water.data:2,0.34836,646
+649,O,ow,-0.820000,93,soap,1.00000,water.data:1,0.59366,650 651
+650,H,hw,+0.410000,93,soap,1.00000,water.data:2,0.34836,649
+651,H,hw,+0.410000,93,soap,1.00000,water.data:2,0.34836,649
+652,O,ow,-0.820000,94,soap,1.00000,water.data:1,0.59366,653 654
+653,H,hw,+0.410000,94,soap,1.00000,water.data:2,0.34836,652
+654,H,hw,+0.410000,94,soap,1.00000,water.data:2,0.34836,652
+655,O,ow,-0.820000,95,soap,1.00000,water.data:1,0.59366,656 657
+656,H,hw,+0.410000,95,soap,1.00000,water.data:2,0.34836,655
+657,H,hw,+0.410000,95,soap,1.00000,water.data:2,0.34836,655
+658,O,ow,-0.820000,96,soap,1.00000,water.data:1,0.59366,659 660
+659,H,hw,+0.410000,96,soap,1.00000,water.data:2,0.34836,658
+660,H,hw,+0.410000,96,soap,1.00000,water.data:2,0.34836,658
+661,O,ow,-0.820000,97,soap,1.00000,water.data:1,0.59366,662 663
+662,H,hw,+0.410000,97,soap,1.00000,water.data:2,0.34836,661
+663,H,hw,+0.410000,97,soap,1.00000,water.data:2,0.34836,661
+664,O,ow,-0.820000,98,soap,1.00000,water.data:1,0.59366,665 666
+665,H,hw,+0.410000,98,soap,1.00000,water.data:2,0.34836,664
+666,H,hw,+0.410000,98,soap,1.00000,water.data:2,0.34836,664
+667,O,ow,-0.820000,99,soap,1.00000,water.data:1,0.59366,668 669
+668,H,hw,+0.410000,99,soap,1.00000,water.data:2,0.34836,667
+669,H,hw,+0.410000,99,soap,1.00000,water.data:2,0.34836,667
+670,O,ow,-0.820000,100,soap,1.00000,water.data:1,0.59366,671 672
+671,H,hw,+0.410000,100,soap,1.00000,water.data:2,0.34836,670
+672,H,hw,+0.410000,100,soap,1.00000,water.data:2,0.34836,670
+673,O,ow,-0.820000,101,soap,1.00000,water.data:1,0.59366,674 675
+674,H,hw,+0.410000,101,soap,1.00000,water.data:2,0.34836,673
+675,H,hw,+0.410000,101,soap,1.00000,water.data:2,0.34836,673
+676,O,ow,-0.820000,102,soap,1.00000,water.data:1,0.59366,677 678
+677,H,hw,+0.410000,102,soap,1.00000,water.data:2,0.34836,676
+678,H,hw,+0.410000,102,soap,1.00000,water.data:2,0.34836,676
+679,O,ow,-0.820000,103,soap,1.00000,water.data:1,0.59366,680 681
+680,H,hw,+0.410000,103,soap,1.00000,water.data:2,0.34836,679
+681,H,hw,+0.410000,103,soap,1.00000,water.data:2,0.34836,679
+682,O,ow,-0.820000,104,soap,1.00000,water.data:1,0.59366,683 684
+683,H,hw,+0.410000,104,soap,1.00000,water.data:2,0.34836,682
+684,H,hw,+0.410000,104,soap,1.00000,water.data:2,0.34836,682
+685,O,ow,-0.820000,105,soap,1.00000,water.data:1,0.59366,686 687
+686,H,hw,+0.410000,105,soap,1.00000,water.data:2,0.34836,685
+687,H,hw,+0.410000,105,soap,1.00000,water.data:2,0.34836,685
+688,O,ow,-0.820000,106,soap,1.00000,water.data:1,0.59366,689 690
+689,H,hw,+0.410000,106,soap,1.00000,water.data:2,0.34836,688
+690,H,hw,+0.410000,106,soap,1.00000,water.data:2,0.34836,688
+691,O,ow,-0.820000,107,soap,1.00000,water.data:1,0.59366,692 693
+692,H,hw,+0.410000,107,soap,1.00000,water.data:2,0.34836,691
+693,H,hw,+0.410000,107,soap,1.00000,water.data:2,0.34836,691
+694,O,ow,-0.820000,108,soap,1.00000,water.data:1,0.59366,695 696
+695,H,hw,+0.410000,108,soap,1.00000,water.data:2,0.34836,694
+696,H,hw,+0.410000,108,soap,1.00000,water.data:2,0.34836,694
+697,O,ow,-0.820000,109,soap,1.00000,water.data:1,0.59366,698 699
+698,H,hw,+0.410000,109,soap,1.00000,water.data:2,0.34836,697
+699,H,hw,+0.410000,109,soap,1.00000,water.data:2,0.34836,697
+700,O,ow,-0.820000,110,soap,1.00000,water.data:1,0.59366,701 702
+701,H,hw,+0.410000,110,soap,1.00000,water.data:2,0.34836,700
+702,H,hw,+0.410000,110,soap,1.00000,water.data:2,0.34836,700
+703,O,ow,-0.820000,111,soap,1.00000,water.data:1,0.59366,704 705
+704,H,hw,+0.410000,111,soap,1.00000,water.data:2,0.34836,703
+705,H,hw,+0.410000,111,soap,1.00000,water.data:2,0.34836,703
+706,O,ow,-0.820000,112,soap,1.00000,water.data:1,0.59366,707 708
+707,H,hw,+0.410000,112,soap,1.00000,water.data:2,0.34836,706
+708,H,hw,+0.410000,112,soap,1.00000,water.data:2,0.34836,706
+709,O,ow,-0.820000,113,soap,1.00000,water.data:1,0.59366,710 711
+710,H,hw,+0.410000,113,soap,1.00000,water.data:2,0.34836,709
+711,H,hw,+0.410000,113,soap,1.00000,water.data:2,0.34836,709
+712,O,ow,-0.820000,114,soap,1.00000,water.data:1,0.59366,713 714
+713,H,hw,+0.410000,114,soap,1.00000,water.data:2,0.34836,712
+714,H,hw,+0.410000,114,soap,1.00000,water.data:2,0.34836,712
+715,O,ow,-0.820000,115,soap,1.00000,water.data:1,0.59366,716 717
+716,H,hw,+0.410000,115,soap,1.00000,water.data:2,0.34836,715
+717,H,hw,+0.410000,115,soap,1.00000,water.data:2,0.34836,715
+718,O,ow,-0.820000,116,soap,1.00000,water.data:1,0.59366,719 720
+719,H,hw,+0.410000,116,soap,1.00000,water.data:2,0.34836,718
+720,H,hw,+0.410000,116,soap,1.00000,water.data:2,0.34836,718
+721,O,ow,-0.820000,117,soap,1.00000,water.data:1,0.59366,722 723
+722,H,hw,+0.410000,117,soap,1.00000,water.data:2,0.34836,721
+723,H,hw,+0.410000,117,soap,1.00000,water.data:2,0.34836,721
+724,O,ow,-0.820000,118,soap,1.00000,water.data:1,0.59366,725 726
+725,H,hw,+0.410000,118,soap,1.00000,water.data:2,0.34836,724
+726,H,hw,+0.410000,118,soap,1.00000,water.data:2,0.34836,724
+727,O,ow,-0.820000,119,soap,1.00000,water.data:1,0.59366,728 729
+728,H,hw,+0.410000,119,soap,1.00000,water.data:2,0.34836,727
+729,H,hw,+0.410000,119,soap,1.00000,water.data:2,0.34836,727
+730,O,ow,-0.820000,120,soap,1.00000,water.data:1,0.59366,731 732
+731,H,hw,+0.410000,120,soap,1.00000,water.data:2,0.34836,730
+732,H,hw,+0.410000,120,soap,1.00000,water.data:2,0.34836,730
+733,O,ow,-0.820000,121,soap,1.00000,water.data:1,0.59366,734 735
+734,H,hw,+0.410000,121,soap,1.00000,water.data:2,0.34836,733
+735,H,hw,+0.410000,121,soap,1.00000,water.data:2,0.34836,733
+736,O,ow,-0.820000,122,soap,1.00000,water.data:1,0.59366,737 738
+737,H,hw,+0.410000,122,soap,1.00000,water.data:2,0.34836,736
+738,H,hw,+0.410000,122,soap,1.00000,water.data:2,0.34836,736
+739,O,ow,-0.820000,123,soap,1.00000,water.data:1,0.59366,740 741
+740,H,hw,+0.410000,123,soap,1.00000,water.data:2,0.34836,739
+741,H,hw,+0.410000,123,soap,1.00000,water.data:2,0.34836,739
+742,O,ow,-0.820000,124,soap,1.00000,water.data:1,0.59366,743 744
+743,H,hw,+0.410000,124,soap,1.00000,water.data:2,0.34836,742
+744,H,hw,+0.410000,124,soap,1.00000,water.data:2,0.34836,742
+745,O,ow,-0.820000,125,soap,1.00000,water.data:1,0.59366,746 747
+746,H,hw,+0.410000,125,soap,1.00000,water.data:2,0.34836,745
+747,H,hw,+0.410000,125,soap,1.00000,water.data:2,0.34836,745
+748,O,ow,-0.820000,126,soap,1.00000,water.data:1,0.59366,749 750
+749,H,hw,+0.410000,126,soap,1.00000,water.data:2,0.34836,748
+750,H,hw,+0.410000,126,soap,1.00000,water.data:2,0.34836,748
+751,O,ow,-0.820000,127,soap,1.00000,water.data:1,0.59366,752 753
+752,H,hw,+0.410000,127,soap,1.00000,water.data:2,0.34836,751
+753,H,hw,+0.410000,127,soap,1.00000,water.data:2,0.34836,751
+754,O,ow,-0.820000,128,soap,1.00000,water.data:1,0.59366,755 756
+755,H,hw,+0.410000,128,soap,1.00000,water.data:2,0.34836,754
+756,H,hw,+0.410000,128,soap,1.00000,water.data:2,0.34836,754
+757,O,ow,-0.820000,129,soap,1.00000,water.data:1,0.59366,758 759
+758,H,hw,+0.410000,129,soap,1.00000,water.data:2,0.34836,757
+759,H,hw,+0.410000,129,soap,1.00000,water.data:2,0.34836,757
+760,O,ow,-0.820000,130,soap,1.00000,water.data:1,0.59366,761 762
+761,H,hw,+0.410000,130,soap,1.00000,water.data:2,0.34836,760
+762,H,hw,+0.410000,130,soap,1.00000,water.data:2,0.34836,760
+763,O,ow,-0.820000,131,soap,1.00000,water.data:1,0.59366,764 765
+764,H,hw,+0.410000,131,soap,1.00000,water.data:2,0.34836,763
+765,H,hw,+0.410000,131,soap,1.00000,water.data:2,0.34836,763
+766,O,ow,-0.820000,132,soap,1.00000,water.data:1,0.59366,767 768
+767,H,hw,+0.410000,132,soap,1.00000,water.data:2,0.34836,766
+768,H,hw,+0.410000,132,soap,1.00000,water.data:2,0.34836,766
+769,O,ow,-0.820000,133,soap,1.00000,water.data:1,0.59366,770 771
+770,H,hw,+0.410000,133,soap,1.00000,water.data:2,0.34836,769
+771,H,hw,+0.410000,133,soap,1.00000,water.data:2,0.34836,769
+772,O,ow,-0.820000,134,soap,1.00000,water.data:1,0.59366,773 774
+773,H,hw,+0.410000,134,soap,1.00000,water.data:2,0.34836,772
+774,H,hw,+0.410000,134,soap,1.00000,water.data:2,0.34836,772
+775,O,ow,-0.820000,135,soap,1.00000,water.data:1,0.59366,776 777
+776,H,hw,+0.410000,135,soap,1.00000,water.data:2,0.34836,775
+777,H,hw,+0.410000,135,soap,1.00000,water.data:2,0.34836,775
+778,O,ow,-0.820000,136,soap,1.00000,water.data:1,0.59366,779 780
+779,H,hw,+0.410000,136,soap,1.00000,water.data:2,0.34836,778
+780,H,hw,+0.410000,136,soap,1.00000,water.data:2,0.34836,778
+781,O,ow,-0.820000,137,soap,1.00000,water.data:1,0.59366,782 783
+782,H,hw,+0.410000,137,soap,1.00000,water.data:2,0.34836,781
+783,H,hw,+0.410000,137,soap,1.00000,water.data:2,0.34836,781
+784,O,ow,-0.820000,138,soap,1.00000,water.data:1,0.59366,785 786
+785,H,hw,+0.410000,138,soap,1.00000,water.data:2,0.34836,784
+786,H,hw,+0.410000,138,soap,1.00000,water.data:2,0.34836,784
+787,O,ow,-0.820000,139,soap,1.00000,water.data:1,0.59366,788 789
+788,H,hw,+0.410000,139,soap,1.00000,water.data:2,0.34836,787
+789,H,hw,+0.410000,139,soap,1.00000,water.data:2,0.34836,787
+790,O,ow,-0.820000,140,soap,1.00000,water.data:1,0.59366,791 792
+791,H,hw,+0.410000,140,soap,1.00000,water.data:2,0.34836,790
+792,H,hw,+0.410000,140,soap,1.00000,water.data:2,0.34836,790
+793,O,ow,-0.820000,141,soap,1.00000,water.data:1,0.59366,794 795
+794,H,hw,+0.410000,141,soap,1.00000,water.data:2,0.34836,793
+795,H,hw,+0.410000,141,soap,1.00000,water.data:2,0.34836,793
+796,O,ow,-0.820000,142,soap,1.00000,water.data:1,0.59366,797 798
+797,H,hw,+0.410000,142,soap,1.00000,water.data:2,0.34836,796
+798,H,hw,+0.410000,142,soap,1.00000,water.data:2,0.34836,796
+799,O,ow,-0.820000,143,soap,1.00000,water.data:1,0.59366,800 801
+800,H,hw,+0.410000,143,soap,1.00000,water.data:2,0.34836,799
+801,H,hw,+0.410000,143,soap,1.00000,water.data:2,0.34836,799
+802,O,ow,-0.820000,144,soap,1.00000,water.data:1,0.59366,803 804
+803,H,hw,+0.410000,144,soap,1.00000,water.data:2,0.34836,802
+804,H,hw,+0.410000,144,soap,1.00000,water.data:2,0.34836,802
+805,O,ow,-0.820000,145,soap,1.00000,water.data:1,0.59366,806 807
+806,H,hw,+0.410000,145,soap,1.00000,water.data:2,0.34836,805
+807,H,hw,+0.410000,145,soap,1.00000,water.data:2,0.34836,805
+808,O,ow,-0.820000,146,soap,1.00000,water.data:1,0.59366,809 810
+809,H,hw,+0.410000,146,soap,1.00000,water.data:2,0.34836,808
+810,H,hw,+0.410000,146,soap,1.00000,water.data:2,0.34836,808
+811,O,ow,-0.820000,147,soap,1.00000,water.data:1,0.59366,812 813
+812,H,hw,+0.410000,147,soap,1.00000,water.data:2,0.34836,811
+813,H,hw,+0.410000,147,soap,1.00000,water.data:2,0.34836,811
+814,O,ow,-0.820000,148,soap,1.00000,water.data:1,0.59366,815 816
+815,H,hw,+0.410000,148,soap,1.00000,water.data:2,0.34836,814
+816,H,hw,+0.410000,148,soap,1.00000,water.data:2,0.34836,814
+817,O,ow,-0.820000,149,soap,1.00000,water.data:1,0.59366,818 819
+818,H,hw,+0.410000,149,soap,1.00000,water.data:2,0.34836,817
+819,H,hw,+0.410000,149,soap,1.00000,water.data:2,0.34836,817
+820,O,ow,-0.820000,150,soap,1.00000,water.data:1,0.59366,821 822
+821,H,hw,+0.410000,150,soap,1.00000,water.data:2,0.34836,820
+822,H,hw,+0.410000,150,soap,1.00000,water.data:2,0.34836,820
+823,O,ow,-0.820000,151,soap,1.00000,water.data:1,0.59366,824 825
+824,H,hw,+0.410000,151,soap,1.00000,water.data:2,0.34836,823
+825,H,hw,+0.410000,151,soap,1.00000,water.data:2,0.34836,823
+826,O,ow,-0.820000,152,soap,1.00000,water.data:1,0.59366,827 828
+827,H,hw,+0.410000,152,soap,1.00000,water.data:2,0.34836,826
+828,H,hw,+0.410000,152,soap,1.00000,water.data:2,0.34836,826
+829,O,ow,-0.820000,153,soap,1.00000,water.data:1,0.59366,830 831
+830,H,hw,+0.410000,153,soap,1.00000,water.data:2,0.34836,829
+831,H,hw,+0.410000,153,soap,1.00000,water.data:2,0.34836,829
+832,O,ow,-0.820000,154,soap,1.00000,water.data:1,0.59366,833 834
+833,H,hw,+0.410000,154,soap,1.00000,water.data:2,0.34836,832
+834,H,hw,+0.410000,154,soap,1.00000,water.data:2,0.34836,832
+835,O,ow,-0.820000,155,soap,1.00000,water.data:1,0.59366,836 837
+836,H,hw,+0.410000,155,soap,1.00000,water.data:2,0.34836,835
+837,H,hw,+0.410000,155,soap,1.00000,water.data:2,0.34836,835
+838,O,ow,-0.820000,156,soap,1.00000,water.data:1,0.59366,839 840
+839,H,hw,+0.410000,156,soap,1.00000,water.data:2,0.34836,838
+840,H,hw,+0.410000,156,soap,1.00000,water.data:2,0.34836,838
+841,O,ow,-0.820000,157,soap,1.00000,water.data:1,0.59366,842 843
+842,H,hw,+0.410000,157,soap,1.00000,water.data:2,0.34836,841
+843,H,hw,+0.410000,157,soap,1.00000,water.data:2,0.34836,841
+844,O,ow,-0.820000,158,soap,1.00000,water.data:1,0.59366,845 846
+845,H,hw,+0.410000,158,soap,1.00000,water.data:2,0.34836,844
+846,H,hw,+0.410000,158,soap,1.00000,water.data:2,0.34836,844
+847,O,ow,-0.820000,159,soap,1.00000,water.data:1,0.59366,848 849
+848,H,hw,+0.410000,159,soap,1.00000,water.data:2,0.34836,847
+849,H,hw,+0.410000,159,soap,1.00000,water.data:2,0.34836,847

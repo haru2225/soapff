@@ -1,1336 +1,1336 @@
-id,element,role,clayff_type,charge,source,matched_library_type,similarity,bond_type,bonds,margin,reference_atom
-1,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-2,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-3,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-4,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-5,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-6,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-7,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-8,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-9,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-10,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-11,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-12,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-13,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-14,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-15,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-16,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-17,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-18,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-19,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-20,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-21,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-22,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-23,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-24,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-25,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-26,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-27,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-28,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-29,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-30,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-31,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-32,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-33,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-34,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-35,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-36,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-37,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-38,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-39,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-40,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-41,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-42,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-43,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-44,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-45,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-46,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-47,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-48,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-49,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-50,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-51,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-52,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-53,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-54,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-55,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-56,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-57,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-58,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-59,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-60,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-61,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-62,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-63,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-64,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-65,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-66,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-67,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-68,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-69,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-70,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-71,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-72,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-73,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-74,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-75,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-76,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-77,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-78,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-79,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-80,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-81,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-82,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-83,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-84,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-85,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-86,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-87,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-88,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-89,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-90,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-91,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-92,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-93,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-94,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-95,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-96,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-97,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-98,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-99,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-100,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-101,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-102,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-103,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-104,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-105,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-106,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-107,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-108,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-109,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-110,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-111,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-112,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-113,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-114,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-115,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-116,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-117,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-118,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-119,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-120,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-121,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-122,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-123,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-124,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-125,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-126,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-127,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-128,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-129,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-130,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-131,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-132,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-133,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-134,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-135,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-136,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-137,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-138,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-139,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-140,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-141,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-142,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-143,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-144,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-145,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-146,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-147,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-148,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-149,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-150,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-151,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-152,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-153,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-154,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-155,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-156,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-157,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-158,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-159,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-160,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-161,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-162,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-163,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-164,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-165,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-166,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-167,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-168,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-169,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-170,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-171,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-172,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-173,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-174,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-175,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-176,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-177,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-178,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-179,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-180,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-181,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-182,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-183,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-184,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-185,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-186,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-187,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-188,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-189,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-190,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-191,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-192,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-193,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-194,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-195,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-196,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-197,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-198,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-199,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-200,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-201,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-202,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-203,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-204,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-205,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-206,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-207,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-208,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-209,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-210,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-211,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-212,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-213,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-214,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-215,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-216,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-217,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-218,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-219,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-220,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-221,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-222,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-223,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-224,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-225,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-226,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-227,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-228,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-229,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-230,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-231,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-232,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-233,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-234,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-235,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-236,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-237,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-238,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-239,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-240,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-241,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-242,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-243,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-244,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-245,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-246,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-247,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-248,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-249,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-250,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-251,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-252,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-253,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-254,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-255,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-256,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-257,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-258,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-259,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-260,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-261,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-262,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-263,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-264,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-265,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-266,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-267,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-268,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-269,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-270,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-271,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-272,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-273,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-274,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-275,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-276,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-277,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-278,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-279,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-280,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-281,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-282,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-283,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-284,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-285,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-286,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-287,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-288,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-289,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-290,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-291,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-292,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-293,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-294,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-295,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-296,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-297,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-298,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-299,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-300,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-301,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-302,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-303,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-304,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-305,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-306,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-307,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-308,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-309,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-310,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-311,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-312,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-313,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-314,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-315,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-316,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-317,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-318,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-319,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-320,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-321,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-322,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-323,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-324,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-325,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-326,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-327,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-328,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-329,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-330,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-331,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-332,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-333,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-334,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-335,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-336,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-337,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-338,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-339,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-340,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-341,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-342,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-343,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-344,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-345,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-346,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-347,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-348,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-349,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-350,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-351,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-352,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-353,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-354,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-355,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-356,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-357,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-358,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-359,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-360,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-361,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-362,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-363,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-364,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-365,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-366,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-367,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-368,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-369,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-370,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-371,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-372,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-373,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-374,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-375,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-376,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-377,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-378,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-379,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-380,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-381,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-382,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-383,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-384,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-385,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-386,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-387,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-388,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-389,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-390,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-391,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-392,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-393,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-394,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-395,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-396,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-397,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-398,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-399,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-400,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-401,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-402,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-403,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-404,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-405,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-406,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-407,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-408,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-409,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-410,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-411,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-412,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-413,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-414,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-415,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-416,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-417,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-418,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-419,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-420,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-421,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-422,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-423,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-424,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-425,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-426,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-427,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-428,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-429,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-430,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-431,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-432,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-433,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-434,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-435,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-436,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-437,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-438,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-439,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-440,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-441,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-442,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-443,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-444,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-445,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-446,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-447,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-448,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-449,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-450,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-451,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-452,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-453,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-454,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-455,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-456,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-457,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-458,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-459,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-460,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-461,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-462,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-463,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-464,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-465,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-466,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-467,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-468,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-469,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-470,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-471,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-472,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-473,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-474,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-475,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-476,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-477,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-478,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-479,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-480,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-481,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-482,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-483,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-484,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-485,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-486,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-487,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-488,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-489,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-490,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-491,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-492,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-493,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-494,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-495,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-496,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-497,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-498,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-499,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-500,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-501,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-502,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-503,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-504,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-505,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-506,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-507,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-508,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-509,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-510,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-511,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-512,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-513,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-514,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-515,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-516,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-517,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-518,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-519,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-520,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-521,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-522,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-523,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-524,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-525,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-526,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-527,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-528,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-529,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-530,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-531,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-532,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-533,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-534,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-535,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-536,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-537,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-538,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-539,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-540,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-541,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-542,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-543,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-544,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-545,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-546,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-547,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-548,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-549,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-550,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-551,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-552,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-553,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-554,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-555,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-556,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-557,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-558,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-559,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-560,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-561,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-562,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-563,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-564,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-565,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-566,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-567,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-568,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-569,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-570,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-571,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-572,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-573,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-574,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-575,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-576,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-577,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-578,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-579,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-580,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-581,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-582,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-583,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-584,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-585,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-586,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-587,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-588,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-589,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-590,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-591,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-592,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-593,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-594,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-595,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-596,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-597,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-598,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-599,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-600,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-601,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-602,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-603,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-604,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-605,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-606,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-607,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-608,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-609,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-610,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-611,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-612,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-613,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-614,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-615,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-616,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-617,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-618,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-619,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-620,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-621,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-622,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-623,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-624,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-625,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-626,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-627,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-628,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-629,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-630,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-631,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-632,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,lizerdite_bulk.data:1
-633,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-634,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15107,lizerdite_bulk.data:3
-635,Mg,mineral,mgh,+1.050000,soap,mgh,1.00000,mgh,O6,0.15056,lizerdite_bulk.data:5
-636,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-637,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46627,lizerdite_bulk.data:6
-638,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.46673,lizerdite_bulk.data:8
-639,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.49550,lizerdite_bulk.data:9
-640,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-641,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Mg3 Si1,0.02971,lizerdite_bulk.data:10
-642,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-643,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-644,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04444,lizerdite_bulk.data:12
-645,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-646,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11630,lizerdite_bulk.data:15
-647,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.11695,lizerdite_bulk.data:17
-648,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,H1 Mg3,0.06667,lizerdite_bulk.data:18
-649,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-650,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-651,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-652,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-653,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-654,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-655,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-656,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-657,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-658,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-659,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-660,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-661,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-662,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-663,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-664,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-665,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-666,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-667,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-668,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-669,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-670,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-671,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-672,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-673,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-674,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-675,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-676,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-677,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-678,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-679,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-680,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-681,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-682,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-683,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-684,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-685,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-686,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-687,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-688,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-689,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-690,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-691,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-692,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-693,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-694,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-695,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-696,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-697,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-698,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-699,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-700,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-701,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-702,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-703,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-704,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-705,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-706,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-707,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-708,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-709,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-710,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-711,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-712,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-713,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-714,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-715,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-716,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-717,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-718,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-719,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-720,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-721,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-722,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-723,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-724,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-725,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-726,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-727,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-728,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-729,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-730,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-731,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-732,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-733,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-734,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-735,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-736,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-737,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-738,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-739,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-740,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-741,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-742,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-743,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-744,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-745,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-746,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-747,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-748,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-749,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-750,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-751,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-752,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-753,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-754,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-755,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-756,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-757,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-758,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-759,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-760,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-761,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-762,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-763,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-764,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-765,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-766,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-767,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-768,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-769,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-770,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-771,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-772,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-773,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-774,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-775,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-776,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-777,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-778,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-779,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-780,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-781,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-782,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-783,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-784,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-785,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-786,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-787,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-788,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-789,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-790,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-791,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-792,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-793,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-794,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-795,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-796,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-797,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-798,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-799,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-800,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-801,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-802,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-803,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-804,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-805,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-806,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-807,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-808,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-809,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-810,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-811,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-812,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-813,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-814,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-815,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-816,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-817,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-818,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-819,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-820,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-821,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-822,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-823,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-824,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-825,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-826,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-827,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-828,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-829,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-830,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-831,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-832,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-833,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-834,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-835,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-836,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-837,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-838,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-839,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-840,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-841,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-842,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-843,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-844,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-845,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-846,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-847,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-848,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-849,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-850,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-851,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-852,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-853,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-854,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-855,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-856,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-857,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-858,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-859,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-860,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-861,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-862,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-863,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-864,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-865,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-866,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-867,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-868,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-869,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-870,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-871,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-872,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-873,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-874,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-875,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-876,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-877,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-878,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-879,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-880,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-881,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-882,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-883,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-884,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-885,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-886,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-887,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-888,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-889,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-890,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-891,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-892,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-893,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-894,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-895,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-896,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-897,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-898,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-899,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-900,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-901,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-902,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-903,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-904,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-905,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-906,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-907,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-908,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-909,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-910,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-911,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-912,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-913,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-914,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-915,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-916,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-917,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-918,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-919,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-920,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-921,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-922,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-923,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-924,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-925,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-926,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-927,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-928,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-929,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-930,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-931,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-932,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-933,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-934,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-935,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-936,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-937,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-938,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-939,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-940,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-941,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-942,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-943,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-944,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-945,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-946,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-947,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-948,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-949,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-950,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-951,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-952,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-953,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-954,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-955,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-956,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-957,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-958,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-959,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-960,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-961,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-962,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-963,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-964,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-965,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-966,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-967,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-968,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-969,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-970,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-971,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-972,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-973,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-974,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-975,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-976,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-977,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-978,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-979,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-980,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-981,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-982,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-983,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-984,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-985,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-986,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-987,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-988,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-989,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-990,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-991,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-992,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-993,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-994,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-995,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-996,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-997,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-998,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-999,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1000,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1001,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1002,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1003,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1004,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1005,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1006,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1007,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1008,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1009,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1010,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1011,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1012,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1013,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1014,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1015,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1016,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1017,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1018,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1019,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1020,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1021,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1022,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1023,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1024,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1025,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1026,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1027,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1028,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1029,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1030,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1031,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1032,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1033,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1034,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1035,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1036,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1037,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1038,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1039,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1040,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1041,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1042,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1043,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1044,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1045,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1046,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1047,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1048,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1049,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1050,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1051,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1052,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1053,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1054,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1055,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1056,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1057,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1058,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1059,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1060,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1061,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1062,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1063,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1064,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1065,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1066,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1067,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1068,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1069,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1070,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1071,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1072,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1073,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1074,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1075,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1076,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1077,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1078,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1079,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1080,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1081,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1082,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1083,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1084,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1085,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1086,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1087,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1088,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1089,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1090,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1091,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1092,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1093,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1094,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1095,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1096,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1097,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1098,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1099,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1100,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1101,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1102,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1103,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1104,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1105,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1106,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1107,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1108,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1109,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1110,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1111,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1112,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1113,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1114,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1115,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1116,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1117,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1118,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1119,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1120,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1121,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1122,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1123,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1124,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1125,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1126,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1127,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1128,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1129,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1130,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1131,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1132,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1133,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1134,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1135,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1136,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1137,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1138,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1139,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1140,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1141,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1142,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1143,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1144,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1145,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1146,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1147,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1148,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1149,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1150,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1151,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1152,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1153,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1154,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1155,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1156,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1157,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1158,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1159,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1160,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1161,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1162,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1163,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1164,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1165,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1166,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1167,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1168,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1169,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1170,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1171,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1172,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1173,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1174,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1175,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1176,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1177,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1178,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1179,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1180,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1181,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1182,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1183,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1184,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1185,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1186,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1187,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1188,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1189,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1190,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1191,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1192,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1193,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1194,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1195,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1196,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1197,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1198,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1199,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1200,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1201,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1202,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1203,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1204,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1205,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1206,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1207,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1208,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1209,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1210,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1211,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1212,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1213,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1214,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1215,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1216,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1217,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1218,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1219,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1220,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1221,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1222,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1223,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1224,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1225,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1226,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1227,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1228,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1229,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1230,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1231,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1232,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1233,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1234,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1235,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1236,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1237,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1238,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1239,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1240,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1241,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1242,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1243,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1244,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1245,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1246,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1247,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1248,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1249,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1250,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1251,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1252,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1253,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1254,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1255,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1256,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1257,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1258,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1259,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1260,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1261,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1262,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1263,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1264,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1265,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1266,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1267,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1268,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1269,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1270,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1271,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1272,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1273,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1274,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1275,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1276,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1277,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1278,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1279,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1280,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1281,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1282,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1283,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1284,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1285,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1286,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1287,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1288,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1289,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1290,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1291,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1292,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1293,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1294,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1295,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1296,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1297,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1298,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1299,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1300,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1301,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1302,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1303,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1304,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1305,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1306,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1307,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1308,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1309,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1310,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1311,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1312,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1313,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1314,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1315,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1316,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1317,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1318,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1319,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1320,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1321,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1322,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1323,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1324,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1325,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1326,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1327,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1328,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1329,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1330,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1331,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1332,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1333,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-1334,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-1335,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
+id,element,type,charge,molecule,source,similarity_soap,nearest_reference,margin_soap,bonded_to
+1,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,10 31 32 66
+2,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,11 30 32 139
+3,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,11 15 17 18 82 88
+4,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,10 16 17 18 227 231
+5,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:5,0.15056,10 11 17 51 124 162
+6,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,15
+7,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,16
+8,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:8,0.46673,17
+9,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:9,0.49550,18
+10,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,1 4 5 39
+11,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,2 3 5 112
+12,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,20 91
+13,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,19 236
+14,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,19 20
+15,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,3 6 77 112
+16,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,4 7 39 221
+17,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:17,0.11695,3 4 5 8
+18,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:18,0.06667,3 4 9 293
+19,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,13 14 28 48
+20,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,12 14 29 121
+21,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,29 33 35 36 100 106
+22,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,28 34 35 36 245 249
+23,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:5,0.15056,28 29 35 69 142 180
+24,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,33
+25,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,34
+26,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:8,0.46673,35
+27,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:9,0.49550,36
+28,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,19 22 23 57
+29,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,20 21 23 130
+30,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,2 73
+31,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,1 218
+32,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,1 2
+33,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,21 24 95 130
+34,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,22 25 57 239
+35,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:17,0.11695,21 22 23 26
+36,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:18,0.06667,21 22 27 311
+37,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,46 67 68 102
+38,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,47 66 68 175
+39,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,10 16 47 51 53 54
+40,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,46 52 53 54 263 267
+41,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:5,0.15056,46 47 53 87 160 198
+42,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,51
+43,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,52
+44,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:8,0.46673,53
+45,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:9,0.49550,54
+46,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,37 40 41 75
+47,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,38 39 41 148
+48,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,19 56
+49,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,55 272
+50,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,55 56
+51,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,5 39 42 148
+52,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,40 43 75 257
+53,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:17,0.11695,39 40 41 44
+54,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:18,0.06667,39 40 45 221
+55,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,49 50 64 84
+56,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,48 50 65 157
+57,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,28 34 65 69 71 72
+58,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,64 70 71 72 281 285
+59,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:5,0.15056,64 65 71 105 178 216
+60,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,69
+61,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,70
+62,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:8,0.46673,71
+63,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:9,0.49550,72
+64,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,55 58 59 93
+65,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,56 57 59 166
+66,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,1 38
+67,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,37 254
+68,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,37 38
+69,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,23 57 60 166
+70,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,58 61 93 275
+71,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:17,0.11695,57 58 59 62
+72,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:18,0.06667,57 58 63 239
+73,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,30 82 103 104
+74,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,83 102 104 211
+75,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,46 52 83 87 89 90
+76,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,82 88 89 90 299 303
+77,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:5,0.15056,15 82 83 89 126 196
+78,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,87
+79,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,88
+80,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:8,0.46673,89
+81,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:9,0.49550,90
+82,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,3 73 76 77
+83,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,74 75 77 184
+84,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,55 92
+85,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,91 308
+86,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,91 92
+87,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,41 75 78 184
+88,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,3 76 79 293
+89,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:17,0.11695,75 76 77 80
+90,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:18,0.06667,75 76 81 257
+91,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,12 85 86 100
+92,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,84 86 101 193
+93,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,64 70 101 105 107 108
+94,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,100 106 107 108 317 321
+95,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:5,0.15056,33 100 101 107 144 214
+96,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,105
+97,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,106
+98,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:8,0.46673,107
+99,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:9,0.49550,108
+100,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,21 91 94 95
+101,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,92 93 95 202
+102,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,37 74
+103,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,73 290
+104,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,73 74
+105,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,59 93 96 202
+106,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,21 94 97 311
+107,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:17,0.11695,93 94 95 98
+108,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:18,0.06667,93 94 99 275
+109,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,118 139 140 174
+110,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,119 138 140 247
+111,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,119 123 125 126 190 196
+112,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,11 15 118 124 125 126
+113,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:5,0.15056,118 119 125 159 232 270
+114,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,123
+115,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,124
+116,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:8,0.46673,125
+117,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:9,0.49550,126
+118,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,109 112 113 147
+119,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,110 111 113 220
+120,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,128 199
+121,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,20 127
+122,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,127 128
+123,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,111 114 185 220
+124,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,5 112 115 147
+125,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:17,0.11695,111 112 113 116
+126,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:18,0.06667,77 111 112 117
+127,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,121 122 136 156
+128,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,120 122 137 229
+129,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,137 141 143 144 208 214
+130,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,29 33 136 142 143 144
+131,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:5,0.15056,136 137 143 177 250 288
+132,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,141
+133,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,142
+134,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:8,0.46673,143
+135,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:9,0.49550,144
+136,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,127 130 131 165
+137,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,128 129 131 238
+138,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,110 181
+139,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,2 109
+140,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,109 110
+141,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,129 132 203 238
+142,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,23 130 133 165
+143,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:17,0.11695,129 130 131 134
+144,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:18,0.06667,95 129 130 135
+145,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,154 175 176 210
+146,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,155 174 176 283
+147,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,118 124 155 159 161 162
+148,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,47 51 154 160 161 162
+149,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:5,0.15056,154 155 161 195 268 306
+150,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,159
+151,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,160
+152,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:8,0.46673,161
+153,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:9,0.49550,162
+154,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,145 148 149 183
+155,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,146 147 149 256
+156,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,127 164
+157,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,56 163
+158,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,163 164
+159,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,113 147 150 256
+160,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,41 148 151 183
+161,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:17,0.11695,147 148 149 152
+162,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:18,0.06667,5 147 148 153
+163,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,157 158 172 192
+164,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,156 158 173 265
+165,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,136 142 173 177 179 180
+166,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,65 69 172 178 179 180
+167,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:5,0.15056,172 173 179 213 286 324
+168,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,177
+169,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,178
+170,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:8,0.46673,179
+171,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:9,0.49550,180
+172,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,163 166 167 201
+173,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,164 165 167 274
+174,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,109 146
+175,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,38 145
+176,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,145 146
+177,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,131 165 168 274
+178,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,59 166 169 201
+179,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:17,0.11695,165 166 167 170
+180,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:18,0.06667,23 165 166 171
+181,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,138 190 211 212
+182,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,191 210 212 319
+183,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,154 160 191 195 197 198
+184,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,83 87 190 196 197 198
+185,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:5,0.15056,123 190 191 197 234 304
+186,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,195
+187,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,196
+188,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:8,0.46673,197
+189,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:9,0.49550,198
+190,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,111 181 184 185
+191,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,182 183 185 292
+192,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,163 200
+193,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,92 199
+194,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,199 200
+195,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,149 183 186 292
+196,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,77 111 184 187
+197,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:17,0.11695,183 184 185 188
+198,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:18,0.06667,41 183 184 189
+199,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,120 193 194 208
+200,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,192 194 209 301
+201,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,172 178 209 213 215 216
+202,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,101 105 208 214 215 216
+203,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:5,0.15056,141 208 209 215 252 322
+204,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,213
+205,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,214
+206,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:8,0.46673,215
+207,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:9,0.49550,216
+208,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,129 199 202 203
+209,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,200 201 203 310
+210,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,145 182
+211,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,74 181
+212,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,181 182
+213,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,167 201 204 310
+214,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,95 129 202 205
+215,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:17,0.11695,201 202 203 206
+216,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:18,0.06667,59 201 202 207
+217,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,226 247 248 282
+218,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,31 227 246 248
+219,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,227 231 233 234 298 304
+220,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,119 123 226 232 233 234
+221,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:5,0.15056,16 54 226 227 233 267
+222,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,231
+223,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,232
+224,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:8,0.46673,233
+225,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:9,0.49550,234
+226,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,217 220 221 255
+227,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,4 218 219 221
+228,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,236 307
+229,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,128 235
+230,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,235 236
+231,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,4 219 222 293
+232,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,113 220 223 255
+233,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:17,0.11695,219 220 221 224
+234,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:18,0.06667,185 219 220 225
+235,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,229 230 244 264
+236,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,13 228 230 245
+237,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,245 249 251 252 316 322
+238,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,137 141 244 250 251 252
+239,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:5,0.15056,34 72 244 245 251 285
+240,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,249
+241,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,250
+242,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:8,0.46673,251
+243,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:9,0.49550,252
+244,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,235 238 239 273
+245,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,22 236 237 239
+246,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,218 289
+247,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,110 217
+248,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,217 218
+249,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,22 237 240 311
+250,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,131 238 241 273
+251,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:17,0.11695,237 238 239 242
+252,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:18,0.06667,203 237 238 243
+253,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,262 283 284 318
+254,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,67 263 282 284
+255,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,226 232 263 267 269 270
+256,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,155 159 262 268 269 270
+257,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:5,0.15056,52 90 262 263 269 303
+258,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,267
+259,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,268
+260,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:8,0.46673,269
+261,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:9,0.49550,270
+262,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,253 256 257 291
+263,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,40 254 255 257
+264,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,235 272
+265,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,164 271
+266,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,271 272
+267,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,40 221 255 258
+268,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,149 256 259 291
+269,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:17,0.11695,255 256 257 260
+270,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:18,0.06667,113 255 256 261
+271,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,265 266 280 300
+272,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,49 264 266 281
+273,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,244 250 281 285 287 288
+274,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,173 177 280 286 287 288
+275,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:5,0.15056,70 108 280 281 287 321
+276,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,285
+277,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,286
+278,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:8,0.46673,287
+279,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:9,0.49550,288
+280,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,271 274 275 309
+281,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,58 272 273 275
+282,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,217 254
+283,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,146 253
+284,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,253 254
+285,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,58 239 273 276
+286,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,167 274 277 309
+287,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:17,0.11695,273 274 275 278
+288,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:18,0.06667,131 273 274 279
+289,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,246 298 319 320
+290,Si,st,+2.100000,1,soap,1.00000,lizerdite_bulk.data:1,,103 299 318 320
+291,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,262 268 299 303 305 306
+292,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:3,0.15107,191 195 298 304 305 306
+293,Mg,mgh,+1.050000,1,soap,1.00000,lizerdite_bulk.data:5,0.15056,18 88 231 298 299 305
+294,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,303
+295,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:6,0.46627,304
+296,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:8,0.46673,305
+297,H,ho,+0.425000,1,soap,1.00000,lizerdite_bulk.data:9,0.49550,306
+298,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,219 289 292 293
+299,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:10,0.02971,76 290 291 293
+300,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,271 308
+301,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,200 307
+302,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:12,0.04444,307 308
+303,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,76 257 291 294
+304,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:15,0.11630,185 219 292 295
+305,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:17,0.11695,291 292 293 296
+306,O,oh,-0.950000,1,soap,1.00000,lizerdite_bulk.data:18,0.06667,149 291 292 297
+307,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,228 301 302 316
+308,Si,st,+2.100000,2,soap,1.00000,lizerdite_bulk.data:1,,85 300 302 317
+309,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,280 286 317 321 323 324
+310,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:3,0.15107,209 213 316 322 323 324
+311,Mg,mgh,+1.050000,2,soap,1.00000,lizerdite_bulk.data:5,0.15056,36 106 249 316 317 323
+312,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,321
+313,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:6,0.46627,322
+314,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:8,0.46673,323
+315,H,ho,+0.425000,2,soap,1.00000,lizerdite_bulk.data:9,0.49550,324
+316,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,237 307 310 311
+317,O,ob,-1.050000,2,soap,1.00000,lizerdite_bulk.data:10,0.02971,94 308 309 311
+318,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,253 290
+319,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,182 289
+320,O,ob,-1.050000,1,soap,1.00000,lizerdite_bulk.data:12,0.04444,289 290
+321,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,94 275 309 312
+322,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:15,0.11630,203 237 310 313
+323,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:17,0.11695,309 310 311 314
+324,O,oh,-0.950000,2,soap,1.00000,lizerdite_bulk.data:18,0.06667,167 309 310 315
+325,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,334 355 356 390
+326,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,335 354 356 463
+327,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,335 339 341 342 406 412
+328,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,334 340 341 342 551 555
+329,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:5,0.15056,334 335 341 375 448 486
+330,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,339
+331,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,340
+332,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:8,0.46673,341
+333,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:9,0.49550,342
+334,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,325 328 329 363
+335,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,326 327 329 436
+336,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,344 415
+337,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,343 560
+338,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,343 344
+339,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,327 330 401 436
+340,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,328 331 363 545
+341,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:17,0.11695,327 328 329 332
+342,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:18,0.06667,327 328 333 617
+343,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,337 338 352 372
+344,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,336 338 353 445
+345,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,353 357 359 360 424 430
+346,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,352 358 359 360 569 573
+347,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:5,0.15056,352 353 359 393 466 504
+348,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,357
+349,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,358
+350,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:8,0.46673,359
+351,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:9,0.49550,360
+352,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,343 346 347 381
+353,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,344 345 347 454
+354,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,326 397
+355,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,325 542
+356,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,325 326
+357,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,345 348 419 454
+358,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,346 349 381 563
+359,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:17,0.11695,345 346 347 350
+360,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:18,0.06667,345 346 351 635
+361,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,370 391 392 426
+362,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,371 390 392 499
+363,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,334 340 371 375 377 378
+364,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,370 376 377 378 587 591
+365,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:5,0.15056,370 371 377 411 484 522
+366,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,375
+367,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,376
+368,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:8,0.46673,377
+369,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:9,0.49550,378
+370,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,361 364 365 399
+371,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,362 363 365 472
+372,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,343 380
+373,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,379 596
+374,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,379 380
+375,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,329 363 366 472
+376,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,364 367 399 581
+377,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:17,0.11695,363 364 365 368
+378,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:18,0.06667,363 364 369 545
+379,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,373 374 388 408
+380,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,372 374 389 481
+381,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,352 358 389 393 395 396
+382,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,388 394 395 396 605 609
+383,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:5,0.15056,388 389 395 429 502 540
+384,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,393
+385,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,394
+386,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:8,0.46673,395
+387,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:9,0.49550,396
+388,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,379 382 383 417
+389,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,380 381 383 490
+390,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,325 362
+391,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,361 578
+392,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,361 362
+393,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,347 381 384 490
+394,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,382 385 417 599
+395,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:17,0.11695,381 382 383 386
+396,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:18,0.06667,381 382 387 563
+397,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,354 406 427 428
+398,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,407 426 428 535
+399,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,370 376 407 411 413 414
+400,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,406 412 413 414 623 627
+401,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:5,0.15056,339 406 407 413 450 520
+402,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,411
+403,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,412
+404,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:8,0.46673,413
+405,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:9,0.49550,414
+406,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,327 397 400 401
+407,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,398 399 401 508
+408,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,379 416
+409,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,415 632
+410,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,415 416
+411,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,365 399 402 508
+412,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,327 400 403 617
+413,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:17,0.11695,399 400 401 404
+414,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:18,0.06667,399 400 405 581
+415,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,336 409 410 424
+416,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,408 410 425 517
+417,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,388 394 425 429 431 432
+418,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,424 430 431 432 641 645
+419,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:5,0.15056,357 424 425 431 468 538
+420,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,429
+421,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,430
+422,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:8,0.46673,431
+423,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:9,0.49550,432
+424,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,345 415 418 419
+425,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,416 417 419 526
+426,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,361 398
+427,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,397 614
+428,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,397 398
+429,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,383 417 420 526
+430,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,345 418 421 635
+431,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:17,0.11695,417 418 419 422
+432,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:18,0.06667,417 418 423 599
+433,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,442 463 464 498
+434,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,443 462 464 571
+435,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,443 447 449 450 514 520
+436,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,335 339 442 448 449 450
+437,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:5,0.15056,442 443 449 483 556 594
+438,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,447
+439,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,448
+440,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:8,0.46673,449
+441,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:9,0.49550,450
+442,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,433 436 437 471
+443,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,434 435 437 544
+444,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,452 523
+445,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,344 451
+446,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,451 452
+447,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,435 438 509 544
+448,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,329 436 439 471
+449,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:17,0.11695,435 436 437 440
+450,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:18,0.06667,401 435 436 441
+451,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,445 446 460 480
+452,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,444 446 461 553
+453,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,461 465 467 468 532 538
+454,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,353 357 460 466 467 468
+455,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:5,0.15056,460 461 467 501 574 612
+456,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,465
+457,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,466
+458,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:8,0.46673,467
+459,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:9,0.49550,468
+460,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,451 454 455 489
+461,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,452 453 455 562
+462,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,434 505
+463,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,326 433
+464,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,433 434
+465,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,453 456 527 562
+466,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,347 454 457 489
+467,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:17,0.11695,453 454 455 458
+468,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:18,0.06667,419 453 454 459
+469,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,478 499 500 534
+470,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,479 498 500 607
+471,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,442 448 479 483 485 486
+472,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,371 375 478 484 485 486
+473,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:5,0.15056,478 479 485 519 592 630
+474,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,483
+475,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,484
+476,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:8,0.46673,485
+477,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:9,0.49550,486
+478,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,469 472 473 507
+479,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,470 471 473 580
+480,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,451 488
+481,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,380 487
+482,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,487 488
+483,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,437 471 474 580
+484,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,365 472 475 507
+485,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:17,0.11695,471 472 473 476
+486,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:18,0.06667,329 471 472 477
+487,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,481 482 496 516
+488,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,480 482 497 589
+489,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,460 466 497 501 503 504
+490,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,389 393 496 502 503 504
+491,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:5,0.15056,496 497 503 537 610 648
+492,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,501
+493,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,502
+494,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:8,0.46673,503
+495,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:9,0.49550,504
+496,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,487 490 491 525
+497,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,488 489 491 598
+498,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,433 470
+499,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,362 469
+500,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,469 470
+501,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,455 489 492 598
+502,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,383 490 493 525
+503,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:17,0.11695,489 490 491 494
+504,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:18,0.06667,347 489 490 495
+505,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,462 514 535 536
+506,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,515 534 536 643
+507,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,478 484 515 519 521 522
+508,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,407 411 514 520 521 522
+509,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:5,0.15056,447 514 515 521 558 628
+510,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,519
+511,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,520
+512,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:8,0.46673,521
+513,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:9,0.49550,522
+514,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,435 505 508 509
+515,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,506 507 509 616
+516,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,487 524
+517,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,416 523
+518,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,523 524
+519,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,473 507 510 616
+520,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,401 435 508 511
+521,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:17,0.11695,507 508 509 512
+522,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:18,0.06667,365 507 508 513
+523,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,444 517 518 532
+524,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,516 518 533 625
+525,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,496 502 533 537 539 540
+526,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,425 429 532 538 539 540
+527,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:5,0.15056,465 532 533 539 576 646
+528,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,537
+529,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,538
+530,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:8,0.46673,539
+531,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:9,0.49550,540
+532,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,453 523 526 527
+533,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,524 525 527 634
+534,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,469 506
+535,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,398 505
+536,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,505 506
+537,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,491 525 528 634
+538,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,419 453 526 529
+539,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:17,0.11695,525 526 527 530
+540,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:18,0.06667,383 525 526 531
+541,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,550 571 572 606
+542,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,355 551 570 572
+543,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,551 555 557 558 622 628
+544,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,443 447 550 556 557 558
+545,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:5,0.15056,340 378 550 551 557 591
+546,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,555
+547,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,556
+548,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:8,0.46673,557
+549,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:9,0.49550,558
+550,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,541 544 545 579
+551,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,328 542 543 545
+552,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,560 631
+553,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,452 559
+554,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,559 560
+555,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,328 543 546 617
+556,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,437 544 547 579
+557,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:17,0.11695,543 544 545 548
+558,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:18,0.06667,509 543 544 549
+559,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,553 554 568 588
+560,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,337 552 554 569
+561,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,569 573 575 576 640 646
+562,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,461 465 568 574 575 576
+563,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:5,0.15056,358 396 568 569 575 609
+564,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,573
+565,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,574
+566,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:8,0.46673,575
+567,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:9,0.49550,576
+568,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,559 562 563 597
+569,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,346 560 561 563
+570,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,542 613
+571,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,434 541
+572,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,541 542
+573,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,346 561 564 635
+574,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,455 562 565 597
+575,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:17,0.11695,561 562 563 566
+576,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:18,0.06667,527 561 562 567
+577,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,586 607 608 642
+578,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,391 587 606 608
+579,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,550 556 587 591 593 594
+580,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,479 483 586 592 593 594
+581,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:5,0.15056,376 414 586 587 593 627
+582,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,591
+583,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,592
+584,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:8,0.46673,593
+585,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:9,0.49550,594
+586,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,577 580 581 615
+587,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,364 578 579 581
+588,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,559 596
+589,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,488 595
+590,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,595 596
+591,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,364 545 579 582
+592,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,473 580 583 615
+593,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:17,0.11695,579 580 581 584
+594,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:18,0.06667,437 579 580 585
+595,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,589 590 604 624
+596,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,373 588 590 605
+597,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,568 574 605 609 611 612
+598,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,497 501 604 610 611 612
+599,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:5,0.15056,394 432 604 605 611 645
+600,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,609
+601,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,610
+602,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:8,0.46673,611
+603,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:9,0.49550,612
+604,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,595 598 599 633
+605,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,382 596 597 599
+606,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,541 578
+607,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,470 577
+608,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,577 578
+609,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,382 563 597 600
+610,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,491 598 601 633
+611,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:17,0.11695,597 598 599 602
+612,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:18,0.06667,455 597 598 603
+613,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,570 622 643 644
+614,Si,st,+2.100000,3,soap,1.00000,lizerdite_bulk.data:1,,427 623 642 644
+615,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,586 592 623 627 629 630
+616,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:3,0.15107,515 519 622 628 629 630
+617,Mg,mgh,+1.050000,3,soap,1.00000,lizerdite_bulk.data:5,0.15056,342 412 555 622 623 629
+618,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,627
+619,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:6,0.46627,628
+620,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:8,0.46673,629
+621,H,ho,+0.425000,3,soap,1.00000,lizerdite_bulk.data:9,0.49550,630
+622,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,543 613 616 617
+623,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:10,0.02971,400 614 615 617
+624,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,595 632
+625,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,524 631
+626,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:12,0.04444,631 632
+627,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,400 581 615 618
+628,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:15,0.11630,509 543 616 619
+629,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:17,0.11695,615 616 617 620
+630,O,oh,-0.950000,3,soap,1.00000,lizerdite_bulk.data:18,0.06667,473 615 616 621
+631,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,552 625 626 640
+632,Si,st,+2.100000,4,soap,1.00000,lizerdite_bulk.data:1,,409 624 626 641
+633,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,604 610 641 645 647 648
+634,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:3,0.15107,533 537 640 646 647 648
+635,Mg,mgh,+1.050000,4,soap,1.00000,lizerdite_bulk.data:5,0.15056,360 430 573 640 641 647
+636,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,645
+637,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:6,0.46627,646
+638,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:8,0.46673,647
+639,H,ho,+0.425000,4,soap,1.00000,lizerdite_bulk.data:9,0.49550,648
+640,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,561 631 634 635
+641,O,ob,-1.050000,4,soap,1.00000,lizerdite_bulk.data:10,0.02971,418 632 633 635
+642,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,577 614
+643,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,506 613
+644,O,ob,-1.050000,3,soap,1.00000,lizerdite_bulk.data:12,0.04444,613 614
+645,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,418 599 633 636
+646,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:15,0.11630,527 561 634 637
+647,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:17,0.11695,633 634 635 638
+648,O,oh,-0.950000,4,soap,1.00000,lizerdite_bulk.data:18,0.06667,491 633 634 639
+649,O,ow,-0.820000,5,soap,1.00000,water.data:1,0.59366,650 651
+650,H,hw,+0.410000,5,soap,1.00000,water.data:2,0.34836,649
+651,H,hw,+0.410000,5,soap,1.00000,water.data:2,0.34836,649
+652,O,ow,-0.820000,6,soap,1.00000,water.data:1,0.59366,653 654
+653,H,hw,+0.410000,6,soap,1.00000,water.data:2,0.34836,652
+654,H,hw,+0.410000,6,soap,1.00000,water.data:2,0.34836,652
+655,O,ow,-0.820000,7,soap,1.00000,water.data:1,0.59366,656 657
+656,H,hw,+0.410000,7,soap,1.00000,water.data:2,0.34836,655
+657,H,hw,+0.410000,7,soap,1.00000,water.data:2,0.34836,655
+658,O,ow,-0.820000,8,soap,1.00000,water.data:1,0.59366,659 660
+659,H,hw,+0.410000,8,soap,1.00000,water.data:2,0.34836,658
+660,H,hw,+0.410000,8,soap,1.00000,water.data:2,0.34836,658
+661,O,ow,-0.820000,9,soap,1.00000,water.data:1,0.59366,662 663
+662,H,hw,+0.410000,9,soap,1.00000,water.data:2,0.34836,661
+663,H,hw,+0.410000,9,soap,1.00000,water.data:2,0.34836,661
+664,O,ow,-0.820000,10,soap,1.00000,water.data:1,0.59366,665 666
+665,H,hw,+0.410000,10,soap,1.00000,water.data:2,0.34836,664
+666,H,hw,+0.410000,10,soap,1.00000,water.data:2,0.34836,664
+667,O,ow,-0.820000,11,soap,1.00000,water.data:1,0.59366,668 669
+668,H,hw,+0.410000,11,soap,1.00000,water.data:2,0.34836,667
+669,H,hw,+0.410000,11,soap,1.00000,water.data:2,0.34836,667
+670,O,ow,-0.820000,12,soap,1.00000,water.data:1,0.59366,671 672
+671,H,hw,+0.410000,12,soap,1.00000,water.data:2,0.34836,670
+672,H,hw,+0.410000,12,soap,1.00000,water.data:2,0.34836,670
+673,O,ow,-0.820000,13,soap,1.00000,water.data:1,0.59366,674 675
+674,H,hw,+0.410000,13,soap,1.00000,water.data:2,0.34836,673
+675,H,hw,+0.410000,13,soap,1.00000,water.data:2,0.34836,673
+676,O,ow,-0.820000,14,soap,1.00000,water.data:1,0.59366,677 678
+677,H,hw,+0.410000,14,soap,1.00000,water.data:2,0.34836,676
+678,H,hw,+0.410000,14,soap,1.00000,water.data:2,0.34836,676
+679,O,ow,-0.820000,15,soap,1.00000,water.data:1,0.59366,680 681
+680,H,hw,+0.410000,15,soap,1.00000,water.data:2,0.34836,679
+681,H,hw,+0.410000,15,soap,1.00000,water.data:2,0.34836,679
+682,O,ow,-0.820000,16,soap,1.00000,water.data:1,0.59366,683 684
+683,H,hw,+0.410000,16,soap,1.00000,water.data:2,0.34836,682
+684,H,hw,+0.410000,16,soap,1.00000,water.data:2,0.34836,682
+685,O,ow,-0.820000,17,soap,1.00000,water.data:1,0.59366,686 687
+686,H,hw,+0.410000,17,soap,1.00000,water.data:2,0.34836,685
+687,H,hw,+0.410000,17,soap,1.00000,water.data:2,0.34836,685
+688,O,ow,-0.820000,18,soap,1.00000,water.data:1,0.59366,689 690
+689,H,hw,+0.410000,18,soap,1.00000,water.data:2,0.34836,688
+690,H,hw,+0.410000,18,soap,1.00000,water.data:2,0.34836,688
+691,O,ow,-0.820000,19,soap,1.00000,water.data:1,0.59366,692 693
+692,H,hw,+0.410000,19,soap,1.00000,water.data:2,0.34836,691
+693,H,hw,+0.410000,19,soap,1.00000,water.data:2,0.34836,691
+694,O,ow,-0.820000,20,soap,1.00000,water.data:1,0.59366,695 696
+695,H,hw,+0.410000,20,soap,1.00000,water.data:2,0.34836,694
+696,H,hw,+0.410000,20,soap,1.00000,water.data:2,0.34836,694
+697,O,ow,-0.820000,21,soap,1.00000,water.data:1,0.59366,698 699
+698,H,hw,+0.410000,21,soap,1.00000,water.data:2,0.34836,697
+699,H,hw,+0.410000,21,soap,1.00000,water.data:2,0.34836,697
+700,O,ow,-0.820000,22,soap,1.00000,water.data:1,0.59366,701 702
+701,H,hw,+0.410000,22,soap,1.00000,water.data:2,0.34836,700
+702,H,hw,+0.410000,22,soap,1.00000,water.data:2,0.34836,700
+703,O,ow,-0.820000,23,soap,1.00000,water.data:1,0.59366,704 705
+704,H,hw,+0.410000,23,soap,1.00000,water.data:2,0.34836,703
+705,H,hw,+0.410000,23,soap,1.00000,water.data:2,0.34836,703
+706,O,ow,-0.820000,24,soap,1.00000,water.data:1,0.59366,707 708
+707,H,hw,+0.410000,24,soap,1.00000,water.data:2,0.34836,706
+708,H,hw,+0.410000,24,soap,1.00000,water.data:2,0.34836,706
+709,O,ow,-0.820000,25,soap,1.00000,water.data:1,0.59366,710 711
+710,H,hw,+0.410000,25,soap,1.00000,water.data:2,0.34836,709
+711,H,hw,+0.410000,25,soap,1.00000,water.data:2,0.34836,709
+712,O,ow,-0.820000,26,soap,1.00000,water.data:1,0.59366,713 714
+713,H,hw,+0.410000,26,soap,1.00000,water.data:2,0.34836,712
+714,H,hw,+0.410000,26,soap,1.00000,water.data:2,0.34836,712
+715,O,ow,-0.820000,27,soap,1.00000,water.data:1,0.59366,716 717
+716,H,hw,+0.410000,27,soap,1.00000,water.data:2,0.34836,715
+717,H,hw,+0.410000,27,soap,1.00000,water.data:2,0.34836,715
+718,O,ow,-0.820000,28,soap,1.00000,water.data:1,0.59366,719 720
+719,H,hw,+0.410000,28,soap,1.00000,water.data:2,0.34836,718
+720,H,hw,+0.410000,28,soap,1.00000,water.data:2,0.34836,718
+721,O,ow,-0.820000,29,soap,1.00000,water.data:1,0.59366,722 723
+722,H,hw,+0.410000,29,soap,1.00000,water.data:2,0.34836,721
+723,H,hw,+0.410000,29,soap,1.00000,water.data:2,0.34836,721
+724,O,ow,-0.820000,30,soap,1.00000,water.data:1,0.59366,725 726
+725,H,hw,+0.410000,30,soap,1.00000,water.data:2,0.34836,724
+726,H,hw,+0.410000,30,soap,1.00000,water.data:2,0.34836,724
+727,O,ow,-0.820000,31,soap,1.00000,water.data:1,0.59366,728 729
+728,H,hw,+0.410000,31,soap,1.00000,water.data:2,0.34836,727
+729,H,hw,+0.410000,31,soap,1.00000,water.data:2,0.34836,727
+730,O,ow,-0.820000,32,soap,1.00000,water.data:1,0.59366,731 732
+731,H,hw,+0.410000,32,soap,1.00000,water.data:2,0.34836,730
+732,H,hw,+0.410000,32,soap,1.00000,water.data:2,0.34836,730
+733,O,ow,-0.820000,33,soap,1.00000,water.data:1,0.59366,734 735
+734,H,hw,+0.410000,33,soap,1.00000,water.data:2,0.34836,733
+735,H,hw,+0.410000,33,soap,1.00000,water.data:2,0.34836,733
+736,O,ow,-0.820000,34,soap,1.00000,water.data:1,0.59366,737 738
+737,H,hw,+0.410000,34,soap,1.00000,water.data:2,0.34836,736
+738,H,hw,+0.410000,34,soap,1.00000,water.data:2,0.34836,736
+739,O,ow,-0.820000,35,soap,1.00000,water.data:1,0.59366,740 741
+740,H,hw,+0.410000,35,soap,1.00000,water.data:2,0.34836,739
+741,H,hw,+0.410000,35,soap,1.00000,water.data:2,0.34836,739
+742,O,ow,-0.820000,36,soap,1.00000,water.data:1,0.59366,743 744
+743,H,hw,+0.410000,36,soap,1.00000,water.data:2,0.34836,742
+744,H,hw,+0.410000,36,soap,1.00000,water.data:2,0.34836,742
+745,O,ow,-0.820000,37,soap,1.00000,water.data:1,0.59366,746 747
+746,H,hw,+0.410000,37,soap,1.00000,water.data:2,0.34836,745
+747,H,hw,+0.410000,37,soap,1.00000,water.data:2,0.34836,745
+748,O,ow,-0.820000,38,soap,1.00000,water.data:1,0.59366,749 750
+749,H,hw,+0.410000,38,soap,1.00000,water.data:2,0.34836,748
+750,H,hw,+0.410000,38,soap,1.00000,water.data:2,0.34836,748
+751,O,ow,-0.820000,39,soap,1.00000,water.data:1,0.59366,752 753
+752,H,hw,+0.410000,39,soap,1.00000,water.data:2,0.34836,751
+753,H,hw,+0.410000,39,soap,1.00000,water.data:2,0.34836,751
+754,O,ow,-0.820000,40,soap,1.00000,water.data:1,0.59366,755 756
+755,H,hw,+0.410000,40,soap,1.00000,water.data:2,0.34836,754
+756,H,hw,+0.410000,40,soap,1.00000,water.data:2,0.34836,754
+757,O,ow,-0.820000,41,soap,1.00000,water.data:1,0.59366,758 759
+758,H,hw,+0.410000,41,soap,1.00000,water.data:2,0.34836,757
+759,H,hw,+0.410000,41,soap,1.00000,water.data:2,0.34836,757
+760,O,ow,-0.820000,42,soap,1.00000,water.data:1,0.59366,761 762
+761,H,hw,+0.410000,42,soap,1.00000,water.data:2,0.34836,760
+762,H,hw,+0.410000,42,soap,1.00000,water.data:2,0.34836,760
+763,O,ow,-0.820000,43,soap,1.00000,water.data:1,0.59366,764 765
+764,H,hw,+0.410000,43,soap,1.00000,water.data:2,0.34836,763
+765,H,hw,+0.410000,43,soap,1.00000,water.data:2,0.34836,763
+766,O,ow,-0.820000,44,soap,1.00000,water.data:1,0.59366,767 768
+767,H,hw,+0.410000,44,soap,1.00000,water.data:2,0.34836,766
+768,H,hw,+0.410000,44,soap,1.00000,water.data:2,0.34836,766
+769,O,ow,-0.820000,45,soap,1.00000,water.data:1,0.59366,770 771
+770,H,hw,+0.410000,45,soap,1.00000,water.data:2,0.34836,769
+771,H,hw,+0.410000,45,soap,1.00000,water.data:2,0.34836,769
+772,O,ow,-0.820000,46,soap,1.00000,water.data:1,0.59366,773 774
+773,H,hw,+0.410000,46,soap,1.00000,water.data:2,0.34836,772
+774,H,hw,+0.410000,46,soap,1.00000,water.data:2,0.34836,772
+775,O,ow,-0.820000,47,soap,1.00000,water.data:1,0.59366,776 777
+776,H,hw,+0.410000,47,soap,1.00000,water.data:2,0.34836,775
+777,H,hw,+0.410000,47,soap,1.00000,water.data:2,0.34836,775
+778,O,ow,-0.820000,48,soap,1.00000,water.data:1,0.59366,779 780
+779,H,hw,+0.410000,48,soap,1.00000,water.data:2,0.34836,778
+780,H,hw,+0.410000,48,soap,1.00000,water.data:2,0.34836,778
+781,O,ow,-0.820000,49,soap,1.00000,water.data:1,0.59366,782 783
+782,H,hw,+0.410000,49,soap,1.00000,water.data:2,0.34836,781
+783,H,hw,+0.410000,49,soap,1.00000,water.data:2,0.34836,781
+784,O,ow,-0.820000,50,soap,1.00000,water.data:1,0.59366,785 786
+785,H,hw,+0.410000,50,soap,1.00000,water.data:2,0.34836,784
+786,H,hw,+0.410000,50,soap,1.00000,water.data:2,0.34836,784
+787,O,ow,-0.820000,51,soap,1.00000,water.data:1,0.59366,788 789
+788,H,hw,+0.410000,51,soap,1.00000,water.data:2,0.34836,787
+789,H,hw,+0.410000,51,soap,1.00000,water.data:2,0.34836,787
+790,O,ow,-0.820000,52,soap,1.00000,water.data:1,0.59366,791 792
+791,H,hw,+0.410000,52,soap,1.00000,water.data:2,0.34836,790
+792,H,hw,+0.410000,52,soap,1.00000,water.data:2,0.34836,790
+793,O,ow,-0.820000,53,soap,1.00000,water.data:1,0.59366,794 795
+794,H,hw,+0.410000,53,soap,1.00000,water.data:2,0.34836,793
+795,H,hw,+0.410000,53,soap,1.00000,water.data:2,0.34836,793
+796,O,ow,-0.820000,54,soap,1.00000,water.data:1,0.59366,797 798
+797,H,hw,+0.410000,54,soap,1.00000,water.data:2,0.34836,796
+798,H,hw,+0.410000,54,soap,1.00000,water.data:2,0.34836,796
+799,O,ow,-0.820000,55,soap,1.00000,water.data:1,0.59366,800 801
+800,H,hw,+0.410000,55,soap,1.00000,water.data:2,0.34836,799
+801,H,hw,+0.410000,55,soap,1.00000,water.data:2,0.34836,799
+802,O,ow,-0.820000,56,soap,1.00000,water.data:1,0.59366,803 804
+803,H,hw,+0.410000,56,soap,1.00000,water.data:2,0.34836,802
+804,H,hw,+0.410000,56,soap,1.00000,water.data:2,0.34836,802
+805,O,ow,-0.820000,57,soap,1.00000,water.data:1,0.59366,806 807
+806,H,hw,+0.410000,57,soap,1.00000,water.data:2,0.34836,805
+807,H,hw,+0.410000,57,soap,1.00000,water.data:2,0.34836,805
+808,O,ow,-0.820000,58,soap,1.00000,water.data:1,0.59366,809 810
+809,H,hw,+0.410000,58,soap,1.00000,water.data:2,0.34836,808
+810,H,hw,+0.410000,58,soap,1.00000,water.data:2,0.34836,808
+811,O,ow,-0.820000,59,soap,1.00000,water.data:1,0.59366,812 813
+812,H,hw,+0.410000,59,soap,1.00000,water.data:2,0.34836,811
+813,H,hw,+0.410000,59,soap,1.00000,water.data:2,0.34836,811
+814,O,ow,-0.820000,60,soap,1.00000,water.data:1,0.59366,815 816
+815,H,hw,+0.410000,60,soap,1.00000,water.data:2,0.34836,814
+816,H,hw,+0.410000,60,soap,1.00000,water.data:2,0.34836,814
+817,O,ow,-0.820000,61,soap,1.00000,water.data:1,0.59366,818 819
+818,H,hw,+0.410000,61,soap,1.00000,water.data:2,0.34836,817
+819,H,hw,+0.410000,61,soap,1.00000,water.data:2,0.34836,817
+820,O,ow,-0.820000,62,soap,1.00000,water.data:1,0.59366,821 822
+821,H,hw,+0.410000,62,soap,1.00000,water.data:2,0.34836,820
+822,H,hw,+0.410000,62,soap,1.00000,water.data:2,0.34836,820
+823,O,ow,-0.820000,63,soap,1.00000,water.data:1,0.59366,824 825
+824,H,hw,+0.410000,63,soap,1.00000,water.data:2,0.34836,823
+825,H,hw,+0.410000,63,soap,1.00000,water.data:2,0.34836,823
+826,O,ow,-0.820000,64,soap,1.00000,water.data:1,0.59366,827 828
+827,H,hw,+0.410000,64,soap,1.00000,water.data:2,0.34836,826
+828,H,hw,+0.410000,64,soap,1.00000,water.data:2,0.34836,826
+829,O,ow,-0.820000,65,soap,1.00000,water.data:1,0.59366,830 831
+830,H,hw,+0.410000,65,soap,1.00000,water.data:2,0.34836,829
+831,H,hw,+0.410000,65,soap,1.00000,water.data:2,0.34836,829
+832,O,ow,-0.820000,66,soap,1.00000,water.data:1,0.59366,833 834
+833,H,hw,+0.410000,66,soap,1.00000,water.data:2,0.34836,832
+834,H,hw,+0.410000,66,soap,1.00000,water.data:2,0.34836,832
+835,O,ow,-0.820000,67,soap,1.00000,water.data:1,0.59366,836 837
+836,H,hw,+0.410000,67,soap,1.00000,water.data:2,0.34836,835
+837,H,hw,+0.410000,67,soap,1.00000,water.data:2,0.34836,835
+838,O,ow,-0.820000,68,soap,1.00000,water.data:1,0.59366,839 840
+839,H,hw,+0.410000,68,soap,1.00000,water.data:2,0.34836,838
+840,H,hw,+0.410000,68,soap,1.00000,water.data:2,0.34836,838
+841,O,ow,-0.820000,69,soap,1.00000,water.data:1,0.59366,842 843
+842,H,hw,+0.410000,69,soap,1.00000,water.data:2,0.34836,841
+843,H,hw,+0.410000,69,soap,1.00000,water.data:2,0.34836,841
+844,O,ow,-0.820000,70,soap,1.00000,water.data:1,0.59366,845 846
+845,H,hw,+0.410000,70,soap,1.00000,water.data:2,0.34836,844
+846,H,hw,+0.410000,70,soap,1.00000,water.data:2,0.34836,844
+847,O,ow,-0.820000,71,soap,1.00000,water.data:1,0.59366,848 849
+848,H,hw,+0.410000,71,soap,1.00000,water.data:2,0.34836,847
+849,H,hw,+0.410000,71,soap,1.00000,water.data:2,0.34836,847
+850,O,ow,-0.820000,72,soap,1.00000,water.data:1,0.59366,851 852
+851,H,hw,+0.410000,72,soap,1.00000,water.data:2,0.34836,850
+852,H,hw,+0.410000,72,soap,1.00000,water.data:2,0.34836,850
+853,O,ow,-0.820000,73,soap,1.00000,water.data:1,0.59366,854 855
+854,H,hw,+0.410000,73,soap,1.00000,water.data:2,0.34836,853
+855,H,hw,+0.410000,73,soap,1.00000,water.data:2,0.34836,853
+856,O,ow,-0.820000,74,soap,1.00000,water.data:1,0.59366,857 858
+857,H,hw,+0.410000,74,soap,1.00000,water.data:2,0.34836,856
+858,H,hw,+0.410000,74,soap,1.00000,water.data:2,0.34836,856
+859,O,ow,-0.820000,75,soap,1.00000,water.data:1,0.59366,860 861
+860,H,hw,+0.410000,75,soap,1.00000,water.data:2,0.34836,859
+861,H,hw,+0.410000,75,soap,1.00000,water.data:2,0.34836,859
+862,O,ow,-0.820000,76,soap,1.00000,water.data:1,0.59366,863 864
+863,H,hw,+0.410000,76,soap,1.00000,water.data:2,0.34836,862
+864,H,hw,+0.410000,76,soap,1.00000,water.data:2,0.34836,862
+865,O,ow,-0.820000,77,soap,1.00000,water.data:1,0.59366,866 867
+866,H,hw,+0.410000,77,soap,1.00000,water.data:2,0.34836,865
+867,H,hw,+0.410000,77,soap,1.00000,water.data:2,0.34836,865
+868,O,ow,-0.820000,78,soap,1.00000,water.data:1,0.59366,869 870
+869,H,hw,+0.410000,78,soap,1.00000,water.data:2,0.34836,868
+870,H,hw,+0.410000,78,soap,1.00000,water.data:2,0.34836,868
+871,O,ow,-0.820000,79,soap,1.00000,water.data:1,0.59366,872 873
+872,H,hw,+0.410000,79,soap,1.00000,water.data:2,0.34836,871
+873,H,hw,+0.410000,79,soap,1.00000,water.data:2,0.34836,871
+874,O,ow,-0.820000,80,soap,1.00000,water.data:1,0.59366,875 876
+875,H,hw,+0.410000,80,soap,1.00000,water.data:2,0.34836,874
+876,H,hw,+0.410000,80,soap,1.00000,water.data:2,0.34836,874
+877,O,ow,-0.820000,81,soap,1.00000,water.data:1,0.59366,878 879
+878,H,hw,+0.410000,81,soap,1.00000,water.data:2,0.34836,877
+879,H,hw,+0.410000,81,soap,1.00000,water.data:2,0.34836,877
+880,O,ow,-0.820000,82,soap,1.00000,water.data:1,0.59366,881 882
+881,H,hw,+0.410000,82,soap,1.00000,water.data:2,0.34836,880
+882,H,hw,+0.410000,82,soap,1.00000,water.data:2,0.34836,880
+883,O,ow,-0.820000,83,soap,1.00000,water.data:1,0.59366,884 885
+884,H,hw,+0.410000,83,soap,1.00000,water.data:2,0.34836,883
+885,H,hw,+0.410000,83,soap,1.00000,water.data:2,0.34836,883
+886,O,ow,-0.820000,84,soap,1.00000,water.data:1,0.59366,887 888
+887,H,hw,+0.410000,84,soap,1.00000,water.data:2,0.34836,886
+888,H,hw,+0.410000,84,soap,1.00000,water.data:2,0.34836,886
+889,O,ow,-0.820000,85,soap,1.00000,water.data:1,0.59366,890 891
+890,H,hw,+0.410000,85,soap,1.00000,water.data:2,0.34836,889
+891,H,hw,+0.410000,85,soap,1.00000,water.data:2,0.34836,889
+892,O,ow,-0.820000,86,soap,1.00000,water.data:1,0.59366,893 894
+893,H,hw,+0.410000,86,soap,1.00000,water.data:2,0.34836,892
+894,H,hw,+0.410000,86,soap,1.00000,water.data:2,0.34836,892
+895,O,ow,-0.820000,87,soap,1.00000,water.data:1,0.59366,896 897
+896,H,hw,+0.410000,87,soap,1.00000,water.data:2,0.34836,895
+897,H,hw,+0.410000,87,soap,1.00000,water.data:2,0.34836,895
+898,O,ow,-0.820000,88,soap,1.00000,water.data:1,0.59366,899 900
+899,H,hw,+0.410000,88,soap,1.00000,water.data:2,0.34836,898
+900,H,hw,+0.410000,88,soap,1.00000,water.data:2,0.34836,898
+901,O,ow,-0.820000,89,soap,1.00000,water.data:1,0.59366,902 903
+902,H,hw,+0.410000,89,soap,1.00000,water.data:2,0.34836,901
+903,H,hw,+0.410000,89,soap,1.00000,water.data:2,0.34836,901
+904,O,ow,-0.820000,90,soap,1.00000,water.data:1,0.59366,905 906
+905,H,hw,+0.410000,90,soap,1.00000,water.data:2,0.34836,904
+906,H,hw,+0.410000,90,soap,1.00000,water.data:2,0.34836,904
+907,O,ow,-0.820000,91,soap,1.00000,water.data:1,0.59366,908 909
+908,H,hw,+0.410000,91,soap,1.00000,water.data:2,0.34836,907
+909,H,hw,+0.410000,91,soap,1.00000,water.data:2,0.34836,907
+910,O,ow,-0.820000,92,soap,1.00000,water.data:1,0.59366,911 912
+911,H,hw,+0.410000,92,soap,1.00000,water.data:2,0.34836,910
+912,H,hw,+0.410000,92,soap,1.00000,water.data:2,0.34836,910
+913,O,ow,-0.820000,93,soap,1.00000,water.data:1,0.59366,914 915
+914,H,hw,+0.410000,93,soap,1.00000,water.data:2,0.34836,913
+915,H,hw,+0.410000,93,soap,1.00000,water.data:2,0.34836,913
+916,O,ow,-0.820000,94,soap,1.00000,water.data:1,0.59366,917 918
+917,H,hw,+0.410000,94,soap,1.00000,water.data:2,0.34836,916
+918,H,hw,+0.410000,94,soap,1.00000,water.data:2,0.34836,916
+919,O,ow,-0.820000,95,soap,1.00000,water.data:1,0.59366,920 921
+920,H,hw,+0.410000,95,soap,1.00000,water.data:2,0.34836,919
+921,H,hw,+0.410000,95,soap,1.00000,water.data:2,0.34836,919
+922,O,ow,-0.820000,96,soap,1.00000,water.data:1,0.59366,923 924
+923,H,hw,+0.410000,96,soap,1.00000,water.data:2,0.34836,922
+924,H,hw,+0.410000,96,soap,1.00000,water.data:2,0.34836,922
+925,O,ow,-0.820000,97,soap,1.00000,water.data:1,0.59366,926 927
+926,H,hw,+0.410000,97,soap,1.00000,water.data:2,0.34836,925
+927,H,hw,+0.410000,97,soap,1.00000,water.data:2,0.34836,925
+928,O,ow,-0.820000,98,soap,1.00000,water.data:1,0.59366,929 930
+929,H,hw,+0.410000,98,soap,1.00000,water.data:2,0.34836,928
+930,H,hw,+0.410000,98,soap,1.00000,water.data:2,0.34836,928
+931,O,ow,-0.820000,99,soap,1.00000,water.data:1,0.59366,932 933
+932,H,hw,+0.410000,99,soap,1.00000,water.data:2,0.34836,931
+933,H,hw,+0.410000,99,soap,1.00000,water.data:2,0.34836,931
+934,O,ow,-0.820000,100,soap,1.00000,water.data:1,0.59366,935 936
+935,H,hw,+0.410000,100,soap,1.00000,water.data:2,0.34836,934
+936,H,hw,+0.410000,100,soap,1.00000,water.data:2,0.34836,934
+937,O,ow,-0.820000,101,soap,1.00000,water.data:1,0.59366,938 939
+938,H,hw,+0.410000,101,soap,1.00000,water.data:2,0.34836,937
+939,H,hw,+0.410000,101,soap,1.00000,water.data:2,0.34836,937
+940,O,ow,-0.820000,102,soap,1.00000,water.data:1,0.59366,941 942
+941,H,hw,+0.410000,102,soap,1.00000,water.data:2,0.34836,940
+942,H,hw,+0.410000,102,soap,1.00000,water.data:2,0.34836,940
+943,O,ow,-0.820000,103,soap,1.00000,water.data:1,0.59366,944 945
+944,H,hw,+0.410000,103,soap,1.00000,water.data:2,0.34836,943
+945,H,hw,+0.410000,103,soap,1.00000,water.data:2,0.34836,943
+946,O,ow,-0.820000,104,soap,1.00000,water.data:1,0.59366,947 948
+947,H,hw,+0.410000,104,soap,1.00000,water.data:2,0.34836,946
+948,H,hw,+0.410000,104,soap,1.00000,water.data:2,0.34836,946
+949,O,ow,-0.820000,105,soap,1.00000,water.data:1,0.59366,950 951
+950,H,hw,+0.410000,105,soap,1.00000,water.data:2,0.34836,949
+951,H,hw,+0.410000,105,soap,1.00000,water.data:2,0.34836,949
+952,O,ow,-0.820000,106,soap,1.00000,water.data:1,0.59366,953 954
+953,H,hw,+0.410000,106,soap,1.00000,water.data:2,0.34836,952
+954,H,hw,+0.410000,106,soap,1.00000,water.data:2,0.34836,952
+955,O,ow,-0.820000,107,soap,1.00000,water.data:1,0.59366,956 957
+956,H,hw,+0.410000,107,soap,1.00000,water.data:2,0.34836,955
+957,H,hw,+0.410000,107,soap,1.00000,water.data:2,0.34836,955
+958,O,ow,-0.820000,108,soap,1.00000,water.data:1,0.59366,959 960
+959,H,hw,+0.410000,108,soap,1.00000,water.data:2,0.34836,958
+960,H,hw,+0.410000,108,soap,1.00000,water.data:2,0.34836,958
+961,O,ow,-0.820000,109,soap,1.00000,water.data:1,0.59366,962 963
+962,H,hw,+0.410000,109,soap,1.00000,water.data:2,0.34836,961
+963,H,hw,+0.410000,109,soap,1.00000,water.data:2,0.34836,961
+964,O,ow,-0.820000,110,soap,1.00000,water.data:1,0.59366,965 966
+965,H,hw,+0.410000,110,soap,1.00000,water.data:2,0.34836,964
+966,H,hw,+0.410000,110,soap,1.00000,water.data:2,0.34836,964
+967,O,ow,-0.820000,111,soap,1.00000,water.data:1,0.59366,968 969
+968,H,hw,+0.410000,111,soap,1.00000,water.data:2,0.34836,967
+969,H,hw,+0.410000,111,soap,1.00000,water.data:2,0.34836,967
+970,O,ow,-0.820000,112,soap,1.00000,water.data:1,0.59366,971 972
+971,H,hw,+0.410000,112,soap,1.00000,water.data:2,0.34836,970
+972,H,hw,+0.410000,112,soap,1.00000,water.data:2,0.34836,970
+973,O,ow,-0.820000,113,soap,1.00000,water.data:1,0.59366,974 975
+974,H,hw,+0.410000,113,soap,1.00000,water.data:2,0.34836,973
+975,H,hw,+0.410000,113,soap,1.00000,water.data:2,0.34836,973
+976,O,ow,-0.820000,114,soap,1.00000,water.data:1,0.59366,977 978
+977,H,hw,+0.410000,114,soap,1.00000,water.data:2,0.34836,976
+978,H,hw,+0.410000,114,soap,1.00000,water.data:2,0.34836,976
+979,O,ow,-0.820000,115,soap,1.00000,water.data:1,0.59366,980 981
+980,H,hw,+0.410000,115,soap,1.00000,water.data:2,0.34836,979
+981,H,hw,+0.410000,115,soap,1.00000,water.data:2,0.34836,979
+982,O,ow,-0.820000,116,soap,1.00000,water.data:1,0.59366,983 984
+983,H,hw,+0.410000,116,soap,1.00000,water.data:2,0.34836,982
+984,H,hw,+0.410000,116,soap,1.00000,water.data:2,0.34836,982
+985,O,ow,-0.820000,117,soap,1.00000,water.data:1,0.59366,986 987
+986,H,hw,+0.410000,117,soap,1.00000,water.data:2,0.34836,985
+987,H,hw,+0.410000,117,soap,1.00000,water.data:2,0.34836,985
+988,O,ow,-0.820000,118,soap,1.00000,water.data:1,0.59366,989 990
+989,H,hw,+0.410000,118,soap,1.00000,water.data:2,0.34836,988
+990,H,hw,+0.410000,118,soap,1.00000,water.data:2,0.34836,988
+991,O,ow,-0.820000,119,soap,1.00000,water.data:1,0.59366,992 993
+992,H,hw,+0.410000,119,soap,1.00000,water.data:2,0.34836,991
+993,H,hw,+0.410000,119,soap,1.00000,water.data:2,0.34836,991
+994,O,ow,-0.820000,120,soap,1.00000,water.data:1,0.59366,995 996
+995,H,hw,+0.410000,120,soap,1.00000,water.data:2,0.34836,994
+996,H,hw,+0.410000,120,soap,1.00000,water.data:2,0.34836,994
+997,O,ow,-0.820000,121,soap,1.00000,water.data:1,0.59366,998 999
+998,H,hw,+0.410000,121,soap,1.00000,water.data:2,0.34836,997
+999,H,hw,+0.410000,121,soap,1.00000,water.data:2,0.34836,997
+1000,O,ow,-0.820000,122,soap,1.00000,water.data:1,0.59366,1001 1002
+1001,H,hw,+0.410000,122,soap,1.00000,water.data:2,0.34836,1000
+1002,H,hw,+0.410000,122,soap,1.00000,water.data:2,0.34836,1000
+1003,O,ow,-0.820000,123,soap,1.00000,water.data:1,0.59366,1004 1005
+1004,H,hw,+0.410000,123,soap,1.00000,water.data:2,0.34836,1003
+1005,H,hw,+0.410000,123,soap,1.00000,water.data:2,0.34836,1003
+1006,O,ow,-0.820000,124,soap,1.00000,water.data:1,0.59366,1007 1008
+1007,H,hw,+0.410000,124,soap,1.00000,water.data:2,0.34836,1006
+1008,H,hw,+0.410000,124,soap,1.00000,water.data:2,0.34836,1006
+1009,O,ow,-0.820000,125,soap,1.00000,water.data:1,0.59366,1010 1011
+1010,H,hw,+0.410000,125,soap,1.00000,water.data:2,0.34836,1009
+1011,H,hw,+0.410000,125,soap,1.00000,water.data:2,0.34836,1009
+1012,O,ow,-0.820000,126,soap,1.00000,water.data:1,0.59366,1013 1014
+1013,H,hw,+0.410000,126,soap,1.00000,water.data:2,0.34836,1012
+1014,H,hw,+0.410000,126,soap,1.00000,water.data:2,0.34836,1012
+1015,O,ow,-0.820000,127,soap,1.00000,water.data:1,0.59366,1016 1017
+1016,H,hw,+0.410000,127,soap,1.00000,water.data:2,0.34836,1015
+1017,H,hw,+0.410000,127,soap,1.00000,water.data:2,0.34836,1015
+1018,O,ow,-0.820000,128,soap,1.00000,water.data:1,0.59366,1019 1020
+1019,H,hw,+0.410000,128,soap,1.00000,water.data:2,0.34836,1018
+1020,H,hw,+0.410000,128,soap,1.00000,water.data:2,0.34836,1018
+1021,O,ow,-0.820000,129,soap,1.00000,water.data:1,0.59366,1022 1023
+1022,H,hw,+0.410000,129,soap,1.00000,water.data:2,0.34836,1021
+1023,H,hw,+0.410000,129,soap,1.00000,water.data:2,0.34836,1021
+1024,O,ow,-0.820000,130,soap,1.00000,water.data:1,0.59366,1025 1026
+1025,H,hw,+0.410000,130,soap,1.00000,water.data:2,0.34836,1024
+1026,H,hw,+0.410000,130,soap,1.00000,water.data:2,0.34836,1024
+1027,O,ow,-0.820000,131,soap,1.00000,water.data:1,0.59366,1028 1029
+1028,H,hw,+0.410000,131,soap,1.00000,water.data:2,0.34836,1027
+1029,H,hw,+0.410000,131,soap,1.00000,water.data:2,0.34836,1027
+1030,O,ow,-0.820000,132,soap,1.00000,water.data:1,0.59366,1031 1032
+1031,H,hw,+0.410000,132,soap,1.00000,water.data:2,0.34836,1030
+1032,H,hw,+0.410000,132,soap,1.00000,water.data:2,0.34836,1030
+1033,O,ow,-0.820000,133,soap,1.00000,water.data:1,0.59366,1034 1035
+1034,H,hw,+0.410000,133,soap,1.00000,water.data:2,0.34836,1033
+1035,H,hw,+0.410000,133,soap,1.00000,water.data:2,0.34836,1033
+1036,O,ow,-0.820000,134,soap,1.00000,water.data:1,0.59366,1037 1038
+1037,H,hw,+0.410000,134,soap,1.00000,water.data:2,0.34836,1036
+1038,H,hw,+0.410000,134,soap,1.00000,water.data:2,0.34836,1036
+1039,O,ow,-0.820000,135,soap,1.00000,water.data:1,0.59366,1040 1041
+1040,H,hw,+0.410000,135,soap,1.00000,water.data:2,0.34836,1039
+1041,H,hw,+0.410000,135,soap,1.00000,water.data:2,0.34836,1039
+1042,O,ow,-0.820000,136,soap,1.00000,water.data:1,0.59366,1043 1044
+1043,H,hw,+0.410000,136,soap,1.00000,water.data:2,0.34836,1042
+1044,H,hw,+0.410000,136,soap,1.00000,water.data:2,0.34836,1042
+1045,O,ow,-0.820000,137,soap,1.00000,water.data:1,0.59366,1046 1047
+1046,H,hw,+0.410000,137,soap,1.00000,water.data:2,0.34836,1045
+1047,H,hw,+0.410000,137,soap,1.00000,water.data:2,0.34836,1045
+1048,O,ow,-0.820000,138,soap,1.00000,water.data:1,0.59366,1049 1050
+1049,H,hw,+0.410000,138,soap,1.00000,water.data:2,0.34836,1048
+1050,H,hw,+0.410000,138,soap,1.00000,water.data:2,0.34836,1048
+1051,O,ow,-0.820000,139,soap,1.00000,water.data:1,0.59366,1052 1053
+1052,H,hw,+0.410000,139,soap,1.00000,water.data:2,0.34836,1051
+1053,H,hw,+0.410000,139,soap,1.00000,water.data:2,0.34836,1051
+1054,O,ow,-0.820000,140,soap,1.00000,water.data:1,0.59366,1055 1056
+1055,H,hw,+0.410000,140,soap,1.00000,water.data:2,0.34836,1054
+1056,H,hw,+0.410000,140,soap,1.00000,water.data:2,0.34836,1054
+1057,O,ow,-0.820000,141,soap,1.00000,water.data:1,0.59366,1058 1059
+1058,H,hw,+0.410000,141,soap,1.00000,water.data:2,0.34836,1057
+1059,H,hw,+0.410000,141,soap,1.00000,water.data:2,0.34836,1057
+1060,O,ow,-0.820000,142,soap,1.00000,water.data:1,0.59366,1061 1062
+1061,H,hw,+0.410000,142,soap,1.00000,water.data:2,0.34836,1060
+1062,H,hw,+0.410000,142,soap,1.00000,water.data:2,0.34836,1060
+1063,O,ow,-0.820000,143,soap,1.00000,water.data:1,0.59366,1064 1065
+1064,H,hw,+0.410000,143,soap,1.00000,water.data:2,0.34836,1063
+1065,H,hw,+0.410000,143,soap,1.00000,water.data:2,0.34836,1063
+1066,O,ow,-0.820000,144,soap,1.00000,water.data:1,0.59366,1067 1068
+1067,H,hw,+0.410000,144,soap,1.00000,water.data:2,0.34836,1066
+1068,H,hw,+0.410000,144,soap,1.00000,water.data:2,0.34836,1066
+1069,O,ow,-0.820000,145,soap,1.00000,water.data:1,0.59366,1070 1071
+1070,H,hw,+0.410000,145,soap,1.00000,water.data:2,0.34836,1069
+1071,H,hw,+0.410000,145,soap,1.00000,water.data:2,0.34836,1069
+1072,O,ow,-0.820000,146,soap,1.00000,water.data:1,0.59366,1073 1074
+1073,H,hw,+0.410000,146,soap,1.00000,water.data:2,0.34836,1072
+1074,H,hw,+0.410000,146,soap,1.00000,water.data:2,0.34836,1072
+1075,O,ow,-0.820000,147,soap,1.00000,water.data:1,0.59366,1076 1077
+1076,H,hw,+0.410000,147,soap,1.00000,water.data:2,0.34836,1075
+1077,H,hw,+0.410000,147,soap,1.00000,water.data:2,0.34836,1075
+1078,O,ow,-0.820000,148,soap,1.00000,water.data:1,0.59366,1079 1080
+1079,H,hw,+0.410000,148,soap,1.00000,water.data:2,0.34836,1078
+1080,H,hw,+0.410000,148,soap,1.00000,water.data:2,0.34836,1078
+1081,O,ow,-0.820000,149,soap,1.00000,water.data:1,0.59366,1082 1083
+1082,H,hw,+0.410000,149,soap,1.00000,water.data:2,0.34836,1081
+1083,H,hw,+0.410000,149,soap,1.00000,water.data:2,0.34836,1081
+1084,O,ow,-0.820000,150,soap,1.00000,water.data:1,0.59366,1085 1086
+1085,H,hw,+0.410000,150,soap,1.00000,water.data:2,0.34836,1084
+1086,H,hw,+0.410000,150,soap,1.00000,water.data:2,0.34836,1084
+1087,O,ow,-0.820000,151,soap,1.00000,water.data:1,0.59366,1088 1089
+1088,H,hw,+0.410000,151,soap,1.00000,water.data:2,0.34836,1087
+1089,H,hw,+0.410000,151,soap,1.00000,water.data:2,0.34836,1087
+1090,O,ow,-0.820000,152,soap,1.00000,water.data:1,0.59366,1091 1092
+1091,H,hw,+0.410000,152,soap,1.00000,water.data:2,0.34836,1090
+1092,H,hw,+0.410000,152,soap,1.00000,water.data:2,0.34836,1090
+1093,O,ow,-0.820000,153,soap,1.00000,water.data:1,0.59366,1094 1095
+1094,H,hw,+0.410000,153,soap,1.00000,water.data:2,0.34836,1093
+1095,H,hw,+0.410000,153,soap,1.00000,water.data:2,0.34836,1093
+1096,O,ow,-0.820000,154,soap,1.00000,water.data:1,0.59366,1097 1098
+1097,H,hw,+0.410000,154,soap,1.00000,water.data:2,0.34836,1096
+1098,H,hw,+0.410000,154,soap,1.00000,water.data:2,0.34836,1096
+1099,O,ow,-0.820000,155,soap,1.00000,water.data:1,0.59366,1100 1101
+1100,H,hw,+0.410000,155,soap,1.00000,water.data:2,0.34836,1099
+1101,H,hw,+0.410000,155,soap,1.00000,water.data:2,0.34836,1099
+1102,O,ow,-0.820000,156,soap,1.00000,water.data:1,0.59366,1103 1104
+1103,H,hw,+0.410000,156,soap,1.00000,water.data:2,0.34836,1102
+1104,H,hw,+0.410000,156,soap,1.00000,water.data:2,0.34836,1102
+1105,O,ow,-0.820000,157,soap,1.00000,water.data:1,0.59366,1106 1107
+1106,H,hw,+0.410000,157,soap,1.00000,water.data:2,0.34836,1105
+1107,H,hw,+0.410000,157,soap,1.00000,water.data:2,0.34836,1105
+1108,O,ow,-0.820000,158,soap,1.00000,water.data:1,0.59366,1109 1110
+1109,H,hw,+0.410000,158,soap,1.00000,water.data:2,0.34836,1108
+1110,H,hw,+0.410000,158,soap,1.00000,water.data:2,0.34836,1108
+1111,O,ow,-0.820000,159,soap,1.00000,water.data:1,0.59366,1112 1113
+1112,H,hw,+0.410000,159,soap,1.00000,water.data:2,0.34836,1111
+1113,H,hw,+0.410000,159,soap,1.00000,water.data:2,0.34836,1111
+1114,O,ow,-0.820000,160,soap,1.00000,water.data:1,0.59366,1115 1116
+1115,H,hw,+0.410000,160,soap,1.00000,water.data:2,0.34836,1114
+1116,H,hw,+0.410000,160,soap,1.00000,water.data:2,0.34836,1114
+1117,O,ow,-0.820000,161,soap,1.00000,water.data:1,0.59366,1118 1119
+1118,H,hw,+0.410000,161,soap,1.00000,water.data:2,0.34836,1117
+1119,H,hw,+0.410000,161,soap,1.00000,water.data:2,0.34836,1117
+1120,O,ow,-0.820000,162,soap,1.00000,water.data:1,0.59366,1121 1122
+1121,H,hw,+0.410000,162,soap,1.00000,water.data:2,0.34836,1120
+1122,H,hw,+0.410000,162,soap,1.00000,water.data:2,0.34836,1120
+1123,O,ow,-0.820000,163,soap,1.00000,water.data:1,0.59366,1124 1125
+1124,H,hw,+0.410000,163,soap,1.00000,water.data:2,0.34836,1123
+1125,H,hw,+0.410000,163,soap,1.00000,water.data:2,0.34836,1123
+1126,O,ow,-0.820000,164,soap,1.00000,water.data:1,0.59366,1127 1128
+1127,H,hw,+0.410000,164,soap,1.00000,water.data:2,0.34836,1126
+1128,H,hw,+0.410000,164,soap,1.00000,water.data:2,0.34836,1126
+1129,O,ow,-0.820000,165,soap,1.00000,water.data:1,0.59366,1130 1131
+1130,H,hw,+0.410000,165,soap,1.00000,water.data:2,0.34836,1129
+1131,H,hw,+0.410000,165,soap,1.00000,water.data:2,0.34836,1129
+1132,O,ow,-0.820000,166,soap,1.00000,water.data:1,0.59366,1133 1134
+1133,H,hw,+0.410000,166,soap,1.00000,water.data:2,0.34836,1132
+1134,H,hw,+0.410000,166,soap,1.00000,water.data:2,0.34836,1132
+1135,O,ow,-0.820000,167,soap,1.00000,water.data:1,0.59366,1136 1137
+1136,H,hw,+0.410000,167,soap,1.00000,water.data:2,0.34836,1135
+1137,H,hw,+0.410000,167,soap,1.00000,water.data:2,0.34836,1135
+1138,O,ow,-0.820000,168,soap,1.00000,water.data:1,0.59366,1139 1140
+1139,H,hw,+0.410000,168,soap,1.00000,water.data:2,0.34836,1138
+1140,H,hw,+0.410000,168,soap,1.00000,water.data:2,0.34836,1138
+1141,O,ow,-0.820000,169,soap,1.00000,water.data:1,0.59366,1142 1143
+1142,H,hw,+0.410000,169,soap,1.00000,water.data:2,0.34836,1141
+1143,H,hw,+0.410000,169,soap,1.00000,water.data:2,0.34836,1141
+1144,O,ow,-0.820000,170,soap,1.00000,water.data:1,0.59366,1145 1146
+1145,H,hw,+0.410000,170,soap,1.00000,water.data:2,0.34836,1144
+1146,H,hw,+0.410000,170,soap,1.00000,water.data:2,0.34836,1144
+1147,O,ow,-0.820000,171,soap,1.00000,water.data:1,0.59366,1148 1149
+1148,H,hw,+0.410000,171,soap,1.00000,water.data:2,0.34836,1147
+1149,H,hw,+0.410000,171,soap,1.00000,water.data:2,0.34836,1147
+1150,O,ow,-0.820000,172,soap,1.00000,water.data:1,0.59366,1151 1152
+1151,H,hw,+0.410000,172,soap,1.00000,water.data:2,0.34836,1150
+1152,H,hw,+0.410000,172,soap,1.00000,water.data:2,0.34836,1150
+1153,O,ow,-0.820000,173,soap,1.00000,water.data:1,0.59366,1154 1155
+1154,H,hw,+0.410000,173,soap,1.00000,water.data:2,0.34836,1153
+1155,H,hw,+0.410000,173,soap,1.00000,water.data:2,0.34836,1153
+1156,O,ow,-0.820000,174,soap,1.00000,water.data:1,0.59366,1157 1158
+1157,H,hw,+0.410000,174,soap,1.00000,water.data:2,0.34836,1156
+1158,H,hw,+0.410000,174,soap,1.00000,water.data:2,0.34836,1156
+1159,O,ow,-0.820000,175,soap,1.00000,water.data:1,0.59366,1160 1161
+1160,H,hw,+0.410000,175,soap,1.00000,water.data:2,0.34836,1159
+1161,H,hw,+0.410000,175,soap,1.00000,water.data:2,0.34836,1159
+1162,O,ow,-0.820000,176,soap,1.00000,water.data:1,0.59366,1163 1164
+1163,H,hw,+0.410000,176,soap,1.00000,water.data:2,0.34836,1162
+1164,H,hw,+0.410000,176,soap,1.00000,water.data:2,0.34836,1162
+1165,O,ow,-0.820000,177,soap,1.00000,water.data:1,0.59366,1166 1167
+1166,H,hw,+0.410000,177,soap,1.00000,water.data:2,0.34836,1165
+1167,H,hw,+0.410000,177,soap,1.00000,water.data:2,0.34836,1165
+1168,O,ow,-0.820000,178,soap,1.00000,water.data:1,0.59366,1169 1170
+1169,H,hw,+0.410000,178,soap,1.00000,water.data:2,0.34836,1168
+1170,H,hw,+0.410000,178,soap,1.00000,water.data:2,0.34836,1168
+1171,O,ow,-0.820000,179,soap,1.00000,water.data:1,0.59366,1172 1173
+1172,H,hw,+0.410000,179,soap,1.00000,water.data:2,0.34836,1171
+1173,H,hw,+0.410000,179,soap,1.00000,water.data:2,0.34836,1171
+1174,O,ow,-0.820000,180,soap,1.00000,water.data:1,0.59366,1175 1176
+1175,H,hw,+0.410000,180,soap,1.00000,water.data:2,0.34836,1174
+1176,H,hw,+0.410000,180,soap,1.00000,water.data:2,0.34836,1174
+1177,O,ow,-0.820000,181,soap,1.00000,water.data:1,0.59366,1178 1179
+1178,H,hw,+0.410000,181,soap,1.00000,water.data:2,0.34836,1177
+1179,H,hw,+0.410000,181,soap,1.00000,water.data:2,0.34836,1177
+1180,O,ow,-0.820000,182,soap,1.00000,water.data:1,0.59366,1181 1182
+1181,H,hw,+0.410000,182,soap,1.00000,water.data:2,0.34836,1180
+1182,H,hw,+0.410000,182,soap,1.00000,water.data:2,0.34836,1180
+1183,O,ow,-0.820000,183,soap,1.00000,water.data:1,0.59366,1184 1185
+1184,H,hw,+0.410000,183,soap,1.00000,water.data:2,0.34836,1183
+1185,H,hw,+0.410000,183,soap,1.00000,water.data:2,0.34836,1183
+1186,O,ow,-0.820000,184,soap,1.00000,water.data:1,0.59366,1187 1188
+1187,H,hw,+0.410000,184,soap,1.00000,water.data:2,0.34836,1186
+1188,H,hw,+0.410000,184,soap,1.00000,water.data:2,0.34836,1186
+1189,O,ow,-0.820000,185,soap,1.00000,water.data:1,0.59366,1190 1191
+1190,H,hw,+0.410000,185,soap,1.00000,water.data:2,0.34836,1189
+1191,H,hw,+0.410000,185,soap,1.00000,water.data:2,0.34836,1189
+1192,O,ow,-0.820000,186,soap,1.00000,water.data:1,0.59366,1193 1194
+1193,H,hw,+0.410000,186,soap,1.00000,water.data:2,0.34836,1192
+1194,H,hw,+0.410000,186,soap,1.00000,water.data:2,0.34836,1192
+1195,O,ow,-0.820000,187,soap,1.00000,water.data:1,0.59366,1196 1197
+1196,H,hw,+0.410000,187,soap,1.00000,water.data:2,0.34836,1195
+1197,H,hw,+0.410000,187,soap,1.00000,water.data:2,0.34836,1195
+1198,O,ow,-0.820000,188,soap,1.00000,water.data:1,0.59366,1199 1200
+1199,H,hw,+0.410000,188,soap,1.00000,water.data:2,0.34836,1198
+1200,H,hw,+0.410000,188,soap,1.00000,water.data:2,0.34836,1198
+1201,O,ow,-0.820000,189,soap,1.00000,water.data:1,0.59366,1202 1203
+1202,H,hw,+0.410000,189,soap,1.00000,water.data:2,0.34836,1201
+1203,H,hw,+0.410000,189,soap,1.00000,water.data:2,0.34836,1201
+1204,O,ow,-0.820000,190,soap,1.00000,water.data:1,0.59366,1205 1206
+1205,H,hw,+0.410000,190,soap,1.00000,water.data:2,0.34836,1204
+1206,H,hw,+0.410000,190,soap,1.00000,water.data:2,0.34836,1204
+1207,O,ow,-0.820000,191,soap,1.00000,water.data:1,0.59366,1208 1209
+1208,H,hw,+0.410000,191,soap,1.00000,water.data:2,0.34836,1207
+1209,H,hw,+0.410000,191,soap,1.00000,water.data:2,0.34836,1207
+1210,O,ow,-0.820000,192,soap,1.00000,water.data:1,0.59366,1211 1212
+1211,H,hw,+0.410000,192,soap,1.00000,water.data:2,0.34836,1210
+1212,H,hw,+0.410000,192,soap,1.00000,water.data:2,0.34836,1210
+1213,O,ow,-0.820000,193,soap,1.00000,water.data:1,0.59366,1214 1215
+1214,H,hw,+0.410000,193,soap,1.00000,water.data:2,0.34836,1213
+1215,H,hw,+0.410000,193,soap,1.00000,water.data:2,0.34836,1213
+1216,O,ow,-0.820000,194,soap,1.00000,water.data:1,0.59366,1217 1218
+1217,H,hw,+0.410000,194,soap,1.00000,water.data:2,0.34836,1216
+1218,H,hw,+0.410000,194,soap,1.00000,water.data:2,0.34836,1216
+1219,O,ow,-0.820000,195,soap,1.00000,water.data:1,0.59366,1220 1221
+1220,H,hw,+0.410000,195,soap,1.00000,water.data:2,0.34836,1219
+1221,H,hw,+0.410000,195,soap,1.00000,water.data:2,0.34836,1219
+1222,O,ow,-0.820000,196,soap,1.00000,water.data:1,0.59366,1223 1224
+1223,H,hw,+0.410000,196,soap,1.00000,water.data:2,0.34836,1222
+1224,H,hw,+0.410000,196,soap,1.00000,water.data:2,0.34836,1222
+1225,O,ow,-0.820000,197,soap,1.00000,water.data:1,0.59366,1226 1227
+1226,H,hw,+0.410000,197,soap,1.00000,water.data:2,0.34836,1225
+1227,H,hw,+0.410000,197,soap,1.00000,water.data:2,0.34836,1225
+1228,O,ow,-0.820000,198,soap,1.00000,water.data:1,0.59366,1229 1230
+1229,H,hw,+0.410000,198,soap,1.00000,water.data:2,0.34836,1228
+1230,H,hw,+0.410000,198,soap,1.00000,water.data:2,0.34836,1228
+1231,O,ow,-0.820000,199,soap,1.00000,water.data:1,0.59366,1232 1233
+1232,H,hw,+0.410000,199,soap,1.00000,water.data:2,0.34836,1231
+1233,H,hw,+0.410000,199,soap,1.00000,water.data:2,0.34836,1231
+1234,O,ow,-0.820000,200,soap,1.00000,water.data:1,0.59366,1235 1236
+1235,H,hw,+0.410000,200,soap,1.00000,water.data:2,0.34836,1234
+1236,H,hw,+0.410000,200,soap,1.00000,water.data:2,0.34836,1234
+1237,O,ow,-0.820000,201,soap,1.00000,water.data:1,0.59366,1238 1239
+1238,H,hw,+0.410000,201,soap,1.00000,water.data:2,0.34836,1237
+1239,H,hw,+0.410000,201,soap,1.00000,water.data:2,0.34836,1237
+1240,O,ow,-0.820000,202,soap,1.00000,water.data:1,0.59366,1241 1242
+1241,H,hw,+0.410000,202,soap,1.00000,water.data:2,0.34836,1240
+1242,H,hw,+0.410000,202,soap,1.00000,water.data:2,0.34836,1240
+1243,O,ow,-0.820000,203,soap,1.00000,water.data:1,0.59366,1244 1245
+1244,H,hw,+0.410000,203,soap,1.00000,water.data:2,0.34836,1243
+1245,H,hw,+0.410000,203,soap,1.00000,water.data:2,0.34836,1243
+1246,O,ow,-0.820000,204,soap,1.00000,water.data:1,0.59366,1247 1248
+1247,H,hw,+0.410000,204,soap,1.00000,water.data:2,0.34836,1246
+1248,H,hw,+0.410000,204,soap,1.00000,water.data:2,0.34836,1246
+1249,O,ow,-0.820000,205,soap,1.00000,water.data:1,0.59366,1250 1251
+1250,H,hw,+0.410000,205,soap,1.00000,water.data:2,0.34836,1249
+1251,H,hw,+0.410000,205,soap,1.00000,water.data:2,0.34836,1249
+1252,O,ow,-0.820000,206,soap,1.00000,water.data:1,0.59366,1253 1254
+1253,H,hw,+0.410000,206,soap,1.00000,water.data:2,0.34836,1252
+1254,H,hw,+0.410000,206,soap,1.00000,water.data:2,0.34836,1252
+1255,O,ow,-0.820000,207,soap,1.00000,water.data:1,0.59366,1256 1257
+1256,H,hw,+0.410000,207,soap,1.00000,water.data:2,0.34836,1255
+1257,H,hw,+0.410000,207,soap,1.00000,water.data:2,0.34836,1255
+1258,O,ow,-0.820000,208,soap,1.00000,water.data:1,0.59366,1259 1260
+1259,H,hw,+0.410000,208,soap,1.00000,water.data:2,0.34836,1258
+1260,H,hw,+0.410000,208,soap,1.00000,water.data:2,0.34836,1258
+1261,O,ow,-0.820000,209,soap,1.00000,water.data:1,0.59366,1262 1263
+1262,H,hw,+0.410000,209,soap,1.00000,water.data:2,0.34836,1261
+1263,H,hw,+0.410000,209,soap,1.00000,water.data:2,0.34836,1261
+1264,O,ow,-0.820000,210,soap,1.00000,water.data:1,0.59366,1265 1266
+1265,H,hw,+0.410000,210,soap,1.00000,water.data:2,0.34836,1264
+1266,H,hw,+0.410000,210,soap,1.00000,water.data:2,0.34836,1264
+1267,O,ow,-0.820000,211,soap,1.00000,water.data:1,0.59366,1268 1269
+1268,H,hw,+0.410000,211,soap,1.00000,water.data:2,0.34836,1267
+1269,H,hw,+0.410000,211,soap,1.00000,water.data:2,0.34836,1267
+1270,O,ow,-0.820000,212,soap,1.00000,water.data:1,0.59366,1271 1272
+1271,H,hw,+0.410000,212,soap,1.00000,water.data:2,0.34836,1270
+1272,H,hw,+0.410000,212,soap,1.00000,water.data:2,0.34836,1270
+1273,O,ow,-0.820000,213,soap,1.00000,water.data:1,0.59366,1274 1275
+1274,H,hw,+0.410000,213,soap,1.00000,water.data:2,0.34836,1273
+1275,H,hw,+0.410000,213,soap,1.00000,water.data:2,0.34836,1273
+1276,O,ow,-0.820000,214,soap,1.00000,water.data:1,0.59366,1277 1278
+1277,H,hw,+0.410000,214,soap,1.00000,water.data:2,0.34836,1276
+1278,H,hw,+0.410000,214,soap,1.00000,water.data:2,0.34836,1276
+1279,O,ow,-0.820000,215,soap,1.00000,water.data:1,0.59366,1280 1281
+1280,H,hw,+0.410000,215,soap,1.00000,water.data:2,0.34836,1279
+1281,H,hw,+0.410000,215,soap,1.00000,water.data:2,0.34836,1279
+1282,O,ow,-0.820000,216,soap,1.00000,water.data:1,0.59366,1283 1284
+1283,H,hw,+0.410000,216,soap,1.00000,water.data:2,0.34836,1282
+1284,H,hw,+0.410000,216,soap,1.00000,water.data:2,0.34836,1282
+1285,O,ow,-0.820000,217,soap,1.00000,water.data:1,0.59366,1286 1287
+1286,H,hw,+0.410000,217,soap,1.00000,water.data:2,0.34836,1285
+1287,H,hw,+0.410000,217,soap,1.00000,water.data:2,0.34836,1285
+1288,O,ow,-0.820000,218,soap,1.00000,water.data:1,0.59366,1289 1290
+1289,H,hw,+0.410000,218,soap,1.00000,water.data:2,0.34836,1288
+1290,H,hw,+0.410000,218,soap,1.00000,water.data:2,0.34836,1288
+1291,O,ow,-0.820000,219,soap,1.00000,water.data:1,0.59366,1292 1293
+1292,H,hw,+0.410000,219,soap,1.00000,water.data:2,0.34836,1291
+1293,H,hw,+0.410000,219,soap,1.00000,water.data:2,0.34836,1291
+1294,O,ow,-0.820000,220,soap,1.00000,water.data:1,0.59366,1295 1296
+1295,H,hw,+0.410000,220,soap,1.00000,water.data:2,0.34836,1294
+1296,H,hw,+0.410000,220,soap,1.00000,water.data:2,0.34836,1294
+1297,O,ow,-0.820000,221,soap,1.00000,water.data:1,0.59366,1298 1299
+1298,H,hw,+0.410000,221,soap,1.00000,water.data:2,0.34836,1297
+1299,H,hw,+0.410000,221,soap,1.00000,water.data:2,0.34836,1297
+1300,O,ow,-0.820000,222,soap,1.00000,water.data:1,0.59366,1301 1302
+1301,H,hw,+0.410000,222,soap,1.00000,water.data:2,0.34836,1300
+1302,H,hw,+0.410000,222,soap,1.00000,water.data:2,0.34836,1300
+1303,O,ow,-0.820000,223,soap,1.00000,water.data:1,0.59366,1304 1305
+1304,H,hw,+0.410000,223,soap,1.00000,water.data:2,0.34836,1303
+1305,H,hw,+0.410000,223,soap,1.00000,water.data:2,0.34836,1303
+1306,O,ow,-0.820000,224,soap,1.00000,water.data:1,0.59366,1307 1308
+1307,H,hw,+0.410000,224,soap,1.00000,water.data:2,0.34836,1306
+1308,H,hw,+0.410000,224,soap,1.00000,water.data:2,0.34836,1306
+1309,O,ow,-0.820000,225,soap,1.00000,water.data:1,0.59366,1310 1311
+1310,H,hw,+0.410000,225,soap,1.00000,water.data:2,0.34836,1309
+1311,H,hw,+0.410000,225,soap,1.00000,water.data:2,0.34836,1309
+1312,O,ow,-0.820000,226,soap,1.00000,water.data:1,0.59366,1313 1314
+1313,H,hw,+0.410000,226,soap,1.00000,water.data:2,0.34836,1312
+1314,H,hw,+0.410000,226,soap,1.00000,water.data:2,0.34836,1312
+1315,O,ow,-0.820000,227,soap,1.00000,water.data:1,0.59366,1316 1317
+1316,H,hw,+0.410000,227,soap,1.00000,water.data:2,0.34836,1315
+1317,H,hw,+0.410000,227,soap,1.00000,water.data:2,0.34836,1315
+1318,O,ow,-0.820000,228,soap,1.00000,water.data:1,0.59366,1319 1320
+1319,H,hw,+0.410000,228,soap,1.00000,water.data:2,0.34836,1318
+1320,H,hw,+0.410000,228,soap,1.00000,water.data:2,0.34836,1318
+1321,O,ow,-0.820000,229,soap,1.00000,water.data:1,0.59366,1322 1323
+1322,H,hw,+0.410000,229,soap,1.00000,water.data:2,0.34836,1321
+1323,H,hw,+0.410000,229,soap,1.00000,water.data:2,0.34836,1321
+1324,O,ow,-0.820000,230,soap,1.00000,water.data:1,0.59366,1325 1326
+1325,H,hw,+0.410000,230,soap,1.00000,water.data:2,0.34836,1324
+1326,H,hw,+0.410000,230,soap,1.00000,water.data:2,0.34836,1324
+1327,O,ow,-0.820000,231,soap,1.00000,water.data:1,0.59366,1328 1329
+1328,H,hw,+0.410000,231,soap,1.00000,water.data:2,0.34836,1327
+1329,H,hw,+0.410000,231,soap,1.00000,water.data:2,0.34836,1327
+1330,O,ow,-0.820000,232,soap,1.00000,water.data:1,0.59366,1331 1332
+1331,H,hw,+0.410000,232,soap,1.00000,water.data:2,0.34836,1330
+1332,H,hw,+0.410000,232,soap,1.00000,water.data:2,0.34836,1330
+1333,O,ow,-0.820000,233,soap,1.00000,water.data:1,0.59366,1334 1335
+1334,H,hw,+0.410000,233,soap,1.00000,water.data:2,0.34836,1333
+1335,H,hw,+0.410000,233,soap,1.00000,water.data:2,0.34836,1333

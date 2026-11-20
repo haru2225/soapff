@@ -1,157 +1,174 @@
 {
  "structure": "examples/interfaces_001_water/nanpingite/structure.extxyz",
+ "library": "src/soapff/libraries/clayff.txt",
+ "library_name": "clayff",
+ "table": "~/.cache/soapff/clayff-700e4894a2bec12e.npz",
+ "software": {
+  "soapff": "1.0.0",
+  "dscribe": "2.1.2"
+ },
  "atoms": 774,
- "library": "src/soapff/libraries/clayff/prebuilt/library_clayff_bulk.npz",
- "soap": {
-  "r_cut": 5.0,
-  "n_max": 4,
-  "l_max": 3,
-  "sigma": 0.4
- },
- "depth": 4,
- "threshold": 0.9,
- "boundary": "p p p",
- "kspace": [
-  "kspace_style pppm 1.0e-5"
- ],
- "vacuum_gap": {},
- "charges": "clayff2004",
- "water_model": "spc",
- "forcefield": null,
  "charge_sum": -0.0031999999999996476,
- "below_threshold": 0,
- "min_similarity": 0.9999991059303284,
- "min_margin": 0.014054596424102783,
- "bond_lengths": {
-  "Al-O": 2.659,
-  "H-O": 1.25,
-  "Mg-O": 2.7017,
-  "O-Si": 2.4129
+ "molecules": 164,
+ "molecule_kinds": {
+  "3 atoms, charge +0.0000": 146,
+  "1 atoms, charge +1.0000": 16,
+  "160 atoms, charge -8.0016": 2
  },
- "bonds": 324,
- "angles": 210,
- "type_check": {
-  "compared": 304,
-  "differ": 0,
-  "kinds": {}
+ "min_similarity_soap": 0.9999991059303284,
+ "min_margin_soap": 0.014054596424102783,
+ "smallest_margins": [
+  {
+   "id": 281,
+   "element": "O",
+   "type": "ob",
+   "margin": 0.01405,
+   "similarity_soap": 1.0,
+   "nearest_reference": "nanpingite_bulk.data:113"
+  },
+  {
+   "id": 113,
+   "element": "O",
+   "type": "ob",
+   "margin": 0.01405,
+   "similarity_soap": 1.0,
+   "nearest_reference": "nanpingite_bulk.data:113"
+  },
+  {
+   "id": 284,
+   "element": "O",
+   "type": "ob",
+   "margin": 0.01409,
+   "similarity_soap": 1.0,
+   "nearest_reference": "nanpingite_bulk.data:116"
+  },
+  {
+   "id": 116,
+   "element": "O",
+   "type": "ob",
+   "margin": 0.01409,
+   "similarity_soap": 1.0,
+   "nearest_reference": "nanpingite_bulk.data:116"
+  },
+  {
+   "id": 286,
+   "element": "O",
+   "type": "ob",
+   "margin": 0.01425,
+   "similarity_soap": 1.0,
+   "nearest_reference": "nanpingite_bulk.data:118"
+  }
+ ],
+ "sources": {
+  "ion": 16,
+  "soap": 758
+ },
+ "bond_lengths": {
+  "Al-O": 2.66,
+  "H-O": 1.25,
+  "Mg-O": 2.7,
+  "O-Si": 2.41
  },
  "water_apart": {
   "molecules": 146,
   "bonds_taken_out": {}
  },
- "warnings": [
-  "net charge -0.0032 e (not neutralised; LAMMPS adds a uniform neutralising background for the long-range Coulomb)"
- ],
- "roles": {
-  "mineral": 320,
-  "water": 438,
-  "ion": 16
+ "terms": {
+  "bonds": 324,
+  "angles": 210,
+  "dihedrals": 0,
+  "impropers": 0
  },
+ "dihedrals_without_parameters": {},
+ "box": [
+  18.152,
+  10.452,
+  42.23521386,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "boundary": "p p p",
+ "vacuum_gap": {},
+ "kspace": [
+  "kspace_style pppm 1.0e-5"
+ ],
+ "reserved_water": null,
  "per_type": {
   "Cs": {
    "atoms": 16,
    "charges": [
     1.0
    ],
-   "min_similarity": 1.0,
-   "bonds": [
-    "none"
-   ]
+   "min_similarity_soap": 1.0
   },
   "ao": {
    "atoms": 32,
    "charges": [
     1.575
    ],
-   "min_similarity": 0.9999992847442627,
-   "bonds": [
-    "O6"
-   ]
+   "min_similarity_soap": 0.9999992847442627
   },
   "at": {
    "atoms": 16,
    "charges": [
     1.575
    ],
-   "min_similarity": 0.9999995827674866,
-   "bonds": [
-    "O4"
-   ]
+   "min_similarity_soap": 0.9999995827674866
   },
   "ho": {
    "atoms": 32,
    "charges": [
     0.425
    ],
-   "min_similarity": 0.9999991059303284,
-   "bonds": [
-    "O1"
-   ]
+   "min_similarity_soap": 0.9999991059303284
   },
   "hw": {
    "atoms": 292,
    "charges": [
     0.41
    ],
-   "min_similarity": 0.9999994039535522,
-   "bonds": [
-    "O1"
-   ]
+   "min_similarity_soap": 0.9999994039535522
   },
   "ob": {
    "atoms": 96,
    "charges": [
     -1.05
    ],
-   "min_similarity": 0.9999991655349731,
-   "bonds": [
-    "Al2 Si1",
-    "Si2"
-   ]
+   "min_similarity_soap": 0.9999991655349731
   },
   "obts": {
    "atoms": 64,
    "charges": [
     -1.1688
    ],
-   "min_similarity": 0.9999992251396179,
-   "bonds": [
-    "Al1 Si1",
-    "Al3"
-   ]
+   "min_similarity_soap": 0.9999992251396179
   },
   "oh": {
    "atoms": 32,
    "charges": [
     -0.95
    ],
-   "min_similarity": 0.9999994039535522,
-   "bonds": [
-    "Al2 H1"
-   ]
+   "min_similarity_soap": 0.9999994039535522
   },
   "ow": {
    "atoms": 146,
    "charges": [
     -0.82
    ],
-   "min_similarity": 0.9999998807907104,
-   "bonds": [
-    "H2"
-   ]
+   "min_similarity_soap": 0.9999998807907104
   },
   "st": {
    "atoms": 48,
    "charges": [
     2.1
    ],
-   "min_similarity": 0.9999992251396179,
-   "bonds": [
-    "O4"
-   ]
+   "min_similarity_soap": 0.9999992251396179
   }
  },
- "consistency": [],
+ "warnings": [
+  "net charge -0.0032 e (LAMMPS adds a uniform neutralising background for the long-range Coulomb)"
+ ],
  "type_ids": {
   "ao": 1,
   "at": 2,
@@ -180,5 +197,25 @@
   "bonds": [],
   "angles": []
  },
- "timestep_fs": 0.5
+ "timestep_fs": 0.5,
+ "bonds_not_in_force_field": {
+  "ob-st": 144,
+  "ao-ob": 96,
+  "ao-oh": 64,
+  "at-obts": 64,
+  "obts-st": 48,
+  "ao-obts": 32
+ },
+ "frameworks": [
+  {
+   "molecule": 9,
+   "atoms": 160,
+   "charge": -8.0016
+  },
+  {
+   "molecule": 10,
+   "atoms": 160,
+   "charge": -8.0016
+  }
+ ]
 }

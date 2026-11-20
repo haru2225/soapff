@@ -5,11 +5,8 @@
 # Every ion is an atom without bonds: its element gives its type.
 
 [library]
-name        = spce
-engine      = molecular
-description = SPC/E water (Berendsen et al. 1987, rigid) with the ions of OpenMM amber14/spce.xml: Joung-Cheatham monovalent ions for SPC/E (2008) and Li-Merz 12-6 divalent ions (2013)
-reference   = H. J. C. Berendsen, J. R. Grigera, T. P. Straatsma, J. Phys. Chem. 91, 6269 (1987); I. S. Joung, T. E. Cheatham, J. Phys. Chem. B 112, 9020 (2008); P. Li et al., J. Chem. Theory Comput. 9, 2733 (2013)
-source      = OpenMM 8.6.1 amber14/spce.xml
+name      = spce
+reference = H. J. C. Berendsen, J. R. Grigera, T. P. Straatsma, J. Phys. Chem. 91, 6269 (1987); I. S. Joung, T. E. Cheatham, J. Phys. Chem. B 112, 9020 (2008); P. Li et al., J. Chem. Theory Comput. 9, 2733 (2013)
 
 [soap]
 r_cut = 5.0

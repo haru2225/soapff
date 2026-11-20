@@ -71,9 +71,9 @@ def typed(at, truth, q0, name):
         return dict(atoms=len(at), stopped=str(e)[:600], seconds=round(time.time() - t0, 1))
     sec = time.time() - t0
     rows = list(csv.DictReader(open(os.path.join(d, "charges.csv"))))
-    got = alias([r["clayff_type"] for r in rows])
+    got = alias([r["type"] for r in rows])
     q = np.array([float(r["charge"]) for r in rows])
-    sim = np.array([float(r["similarity"]) for r in rows])
+    sim = np.array([float(r["similarity_soap"]) for r in rows])
     wt, wq = got != truth, np.abs(q - q0) > 1e-6
     water = np.isin(truth, WATER)
     res = dict(atoms=len(at), water_molecules=int((truth == "ow").sum()), wrong_type=int(wt.sum()), wrong_charge=int(wq.sum()),

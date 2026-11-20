@@ -1,4 +1,4 @@
-"""engine "molecular": any force field written in the tables of a library (types, bonds, angles, dihedrals, impropers).
+"""The typing of soapff, for any force field written in the tables of a library (types, bonds, angles, dihedrals, impropers).
 
 Every atom gets its type and charge from the most similar atom of the references (atoms with a known type, charge and bonds),
 in two steps:
@@ -574,6 +574,28 @@ def _match(key, rows, wild="X", ckey=None):
         if nbest == 0:
             break
     return best
+
+
+def water_types(lib, table):
+    """the water of the library, for the water types reserved in system.data (soapff.build reserve_water): the O type of the
+    water molecules of the references (an O bonded to two H and nothing else), the H type of its H-O-H row of [angles], and
+    the rows of the O-H bond and the H-O-H angle -> dict(o, h, bond, angle)"""
+    el = {t: v["element"] for t, v in lib.types.items()}
+    cls = lambda key: tuple(lib.types[t].get("cls", t) for t in key)         # noqa: E731
+    found = []
+    for o, cs in table["coord"].items():
+        if el.get(o) != "O" or list(cs) != ["H2"]:
+            continue
+        for h, hc in table["coord"].items():
+            if el.get(h) == "H" and list(hc) == ["O1"]:
+                b = _match((o, h), lib.bonds, ckey=cls((o, h)))
+                a = _match((h, o, h), lib.angles, ckey=cls((h, o, h)))
+                if b and a:
+                    found.append(dict(o=o, h=h, bond=b[0], angle=a[0]))
+    if len(found) != 1:
+        raise ValueError(f"reserve_water: the library {lib.name} has {len(found)} water models in its references "
+                         f"({', '.join(f['o'] + '/' + f['h'] for f in found) or 'none'}); one is needed")
+    return found[0]
 
 
 def bonding_types(lib, types):

@@ -22,8 +22,9 @@ def swelling(out_dir, dest):
         raise ValueError("swelling.dat is empty")
     rows = list(csv.DictReader(open(os.path.join(out_dir, "charges.csv"))))
     from soapff_cui._clayff.chem import MASS
-    clay_mass = sum(MASS[r["element"]] for r in rows if r["clayff_type"] not in ("ow", "hw"))
-    w0 = sum(1 for r in rows if r["clayff_type"] == "ow")
+    ty = [r.get("type", r.get("clayff_type")) for r in rows]          # clayff_type: charges.csv of soapff 1.0 (run/)
+    clay_mass = sum(MASS[r["element"]] for r, t in zip(rows, ty) if t not in ("ow", "hw"))
+    w0 = ty.count("ow")
     m_w = 2 * MASS["H"] + MASS["O"]
     states, start = [], 0
     nmax = a[:, 1].max()

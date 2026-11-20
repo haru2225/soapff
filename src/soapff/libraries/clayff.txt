@@ -1,6 +1,6 @@
 # soapff library: ClayFF (Cygan, Liang, Kalinichev, J. Phys. Chem. B 108, 1255 (2004)), the default clay library of soapff.
 #
-# engine clayff: soapff_cui, in the two steps of the molecular engine (soapff_cui/steps.py).  1. The bonds from the distance
+# Typed in the two steps of every library.  1. The bonds from the distance
 # and the bond length of each pair of elements ([bond_lengths] below: halfway between the longest bond and the shortest
 # distance of two atoms not bonded in the references, H-O by hand); the ions are bonded to nothing
 # (no ion is bonded in the references).  2. The SOAP of the atoms within 4 bonds only (water, ions and the next layer left
@@ -8,24 +8,20 @@
 # water molecules (an O bonded to two H only: in the references only the O of water has two H) are taken apart from the
 # mineral in step 1, so that the mineral is typed without them and each molecule on its own bonds.  The parameters are in
 # the tables below: LJ ([types]), the O-H bond ([bonds]) and the H-O-H / M-O-H angles ([angles]) of Tables 1 and 2, with the
-# flexible SPC water; the charges are those of the reference atoms (Table 1).  Which O-H bonds and M-O-H angles there are
-# comes from the bonds of step 1 (the rule of the clayff engine); the metals and bridging O have no bond.
+# flexible SPC water; the charges are those of the reference atoms (Table 1).  The metals and bridging O are named in no row
+# of [bonds], so their bonds of step 1 only give the SOAP its neighbourhood and the force field has no metal-O bond; the
+# M-O-H angles are written on them as the row X oh ho names them.
 #
 # References: the 11 bulk layered minerals, their basal (0 0 1) slabs in vacuum, water and the ions (LAMMPS data files with the
 # ClayFF type names in the comments of Masses).  Their bonds: the O-H bonds of the files and, as ClayFF has no metal-O bond,
-# each Si, Al, Mg bonded to the O within 2.5 A (4 or 6 O within 2.19 A, the next O beyond 3.14 A).  The slab rows are pruned
-# at similarity 0.999, the water rows at 0.99.  To add a mineral, make your own library:
+# each Si, Al, Mg bonded to the O within 2.5 A (4 or 6 O within 2.19 A, the next O beyond 3.14 A).  The crystals are kept
+# whole (prune=1.0), the slab rows are pruned at similarity 0.999, the water rows at 0.99.  To add a mineral, make your own library:
 #     soapff.new_library("myclay", extends="clayff");  soapff.add_reference("myclay", "mymineral.data")
 # (the data file of the mineral with its ClayFF types and charges, like the files in clayff/bulk/).
 
 [library]
-name        = clayff
-engine      = clayff
-description = ClayFF (Cygan et al. 2004): 11 layered minerals (montmorillonite, micas, kaolinite, talc, brucite, ...), their basal surfaces, water and the ions of ClayFF Table 1
-reference   = R. T. Cygan, J.-J. Liang, A. G. Kalinichev, J. Phys. Chem. B 108, 1255 (2004)
-prebuilt    = clayff/prebuilt/library_clayff_bulk.npz
-prebuilt_sha = 670ea9888a93c5f4
-prebuilt_dscribe = 2.1.2
+name      = clayff
+reference = R. T. Cygan, J.-J. Liang, A. G. Kalinichev, J. Phys. Chem. B 108, 1255 (2004)
 
 [soap]
 r_cut = 5.0
@@ -47,7 +43,7 @@ Mg O   2.70   # 2.187  3.217
 H  O   1.25   # 1.050  2.039  (halfway 1.54)
 
 [lammps]
-# the settings of ClayFF (the clayff engine writes them; the cutoff and kspace are the defaults of soapff.build)
+# the settings of ClayFF
 pair_style     = lj/cut/coul/long 10.0
 pair_modify    = mix arithmetic tail no
 kspace_style   = pppm 1.0e-5
@@ -98,17 +94,17 @@ X   ohs ho   30.0 109.47
 
 [references]
 # bulk minerals (kept whole)
-clayff/bulk/brucite_bulk.data
-clayff/bulk/kaolinite_bulk.data
-clayff/bulk/lizerdite_bulk.data
-clayff/bulk/muscovite_1M_bulk.data
-clayff/bulk/muscovite_2M1_bulk.data
-clayff/bulk/nanpingite_bulk.data
-clayff/bulk/phlogopite_1M_bulk.data
-clayff/bulk/pyrophyllite_2_bulk.data
-clayff/bulk/pyrophyllite_bulk.data
-clayff/bulk/talc_bulk.data
-clayff/bulk/montmorillonite_dry_Na.data
+clayff/bulk/brucite_bulk.data  prune=1.0
+clayff/bulk/kaolinite_bulk.data  prune=1.0
+clayff/bulk/lizerdite_bulk.data  prune=1.0
+clayff/bulk/muscovite_1M_bulk.data  prune=1.0
+clayff/bulk/muscovite_2M1_bulk.data  prune=1.0
+clayff/bulk/nanpingite_bulk.data  prune=1.0
+clayff/bulk/phlogopite_1M_bulk.data  prune=1.0
+clayff/bulk/pyrophyllite_2_bulk.data  prune=1.0
+clayff/bulk/pyrophyllite_bulk.data  prune=1.0
+clayff/bulk/talc_bulk.data  prune=1.0
+clayff/bulk/montmorillonite_dry_Na.data  prune=1.0
 # basal (0 0 1) slabs in vacuum
 clayff/basal/brucite_001.data  prune=0.999
 clayff/basal/kaolinite_001.data  prune=0.999

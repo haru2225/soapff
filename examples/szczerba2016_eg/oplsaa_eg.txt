@@ -1,9 +1,9 @@
 # oplsaa with ethylene glycol: the references of oplsaa and those of EG (eg_refs.py: one molecule minimised and 5 frames of
 # its MD at 413 K in vacuum, typed by Foyer).  The types and parameters are those of oplsaa.
 [library]
-name        = oplsaa_eg
-extends     = oplsaa
-description = OPLS-AA (oplsaa) with ethylene glycol
+name      = oplsaa_eg
+reference = W. L. Jorgensen, D. S. Maxwell, J. Tirado-Rives, J. Am. Chem. Soc. 118, 11225 (1996)
+extends   = oplsaa
 
 [references]
 refs/EG.extxyz

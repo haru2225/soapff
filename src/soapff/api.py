@@ -105,9 +105,7 @@ class System:
 
     @property
     def types(self):
-        rows = self.table()
-        key = "type" if rows and "type" in rows[0] else "clayff_type"
-        return [r[key] for r in rows]
+        return [r["type"] for r in self.table()]
 
     @property
     def charges(self):
@@ -116,11 +114,11 @@ class System:
 
 # ------------------------------------------------------------------------------------------------- build
 def build(library, structure, out_dir=None, *, cutoff=None, kspace=None, boundary="p p p", strict=True, padding=10.0,
-          log=print, **options):
+          reserve_water=False, log=print):
     """type every atom of `structure` with `library` and write its force field for LAMMPS.
 
-    library    a library name (soapff.libraries() lists them: clayff, clayff_edge, oplsaa, tip3p, spce, ...) or
-               the path of a library .txt file
+    library    a library name (soapff.libraries() lists them: clayff, clayff_edge, oplsaa, clayff_oplsaa, tip3p, spce, ...)
+               or the path of a library .txt file
     structure  a structure file of any format ASE reads (cif, xyz, extxyz, pdb, POSCAR, ...) or a LAMMPS data file, or an
                ase.Atoms
     out_dir    the output folder (default: <structure name>_soapff in the current folder): system.data, system.settings,
@@ -128,11 +126,12 @@ def build(library, structure, out_dir=None, *, cutoff=None, kspace=None, boundar
     cutoff     the cutoff of LJ and of the real-space Coulomb (A; default: the library's)
     kspace     the long-range Coulomb, e.g. "pppm 1.0e-5" (default: the library's; MSM or slab are chosen for non-periodic
                boundaries)
-    boundary   the LAMMPS boundary, e.g. "p p f"
+    boundary   the LAMMPS boundary, e.g. "p p f" (along a non-periodic axis the widest empty gap is moved to the box faces)
     strict     stop (soapff.TypingError) when an atom is not in the library (its environment has no counterpart in the
                references) instead of writing the force field with the nearest reference
-    padding    molecular engine: a structure without a cell (xyz, pdb without CRYST1) is put in a box this much larger (A)
-    options    clayff engine: the other options of soapff_cui.core.make (e.g. reserve_water, water_rule)
+    padding    a structure without a cell (xyz, pdb without CRYST1) is put in a box this much larger (A)
+    reserve_water  also write the water types of the library (the O and H of the water molecules of its references), their
+               bond and angle types and room for their bonds, so that water can be added in LAMMPS (e.g. a swelling curve)
     Returns a soapff.System: its commands() are the force field for the LAMMPS Python module (lmp.commands_list), and its
     folder holds the same as files (include system.settings in a LAMMPS input).  Minimisation, MD and analysis are not
     soapff's: they are written in LAMMPS."""
@@ -142,34 +141,6 @@ def build(library, structure, out_dir=None, *, cutoff=None, kspace=None, boundar
         out_dir = f"{stem}_soapff"
     out_dir = os.path.abspath(out_dir)
     os.makedirs(out_dir, exist_ok=True)
-    if lib.engine == "clayff":
-        from . import clayff
-        kw = dict(boundary=boundary)
-        if cutoff is not None:
-            kw["cutoff"] = cutoff
-        if kspace is not None:
-            kw["kspace"] = kspace
-        kw.update(options)
-        src = os.fspath(structure) if isinstance(structure, (str, os.PathLike)) else structure
-        if isinstance(src, str):
-            from soapff_cui.core import read_structure as _read
-            try:
-                _read(src)                         # a file soapff-cui reads itself (with a cell): keep its path in report.json
-            except Exception:
-                src = read_structure(src)
-        rep = clayff.make(lib, src, out_dir, log=log, strict=strict, **kw)
-        rep["library_name"] = lib.name
-        rep["library_file"] = lib.path
-        rep["software"] = _library.software_versions()
-        json.dump(rep, open(os.path.join(out_dir, "report.json"), "w"), indent=1)
-        return System(out_dir, rep)
-    if options:
-        raise TypeError(f"unknown options for the molecular engine: {sorted(options)}")
-    return _build_molecular(lib, structure, out_dir, cutoff=cutoff, kspace=kspace, boundary=boundary, strict=strict,
-                            padding=padding, log=log)
-
-
-def _build_molecular(lib, structure, out_dir, cutoff, kspace, boundary, strict, padding, log):
     from . import lammps as W
     src = os.fspath(structure) if isinstance(structure, (str, os.PathLike)) else "Atoms"
     at = read_structure(structure) if isinstance(structure, (str, os.PathLike)) else structure.copy()
@@ -183,6 +154,7 @@ def _build_molecular(lib, structure, out_dir, cutoff, kspace, boundary, strict, 
         at.pbc = True
     table_file = lib.table_path(log=log)
     table = M.load_table(table_file)
+    reserve = M.water_types(lib, table) if reserve_water else None
     res = M.type_atoms(lib, table, at, log=log)
     nb = res["nb"]
     if res["water"] and res["water"]["bonds_taken_out"]:
@@ -256,7 +228,9 @@ def _build_molecular(lib, structure, out_dir, cutoff, kspace, boundary, strict, 
             raise M.TypingError(msg)
         warn.append(msg)
         log("WARNING " + msg)
-    info = W.write(out_dir, at, nb, tlist, q, topo, lib, cutoff=cutoff, kspace=kspace, boundary=boundary)
+    info = W.write(out_dir, at, nb, tlist, q, topo, lib, cutoff=cutoff, kspace=kspace, boundary=boundary, reserve=reserve,
+                   log=log)
+    warn += info["warnings"]
     total = float(q.sum())
     if abs(total) > 1e-6:
         warn.append(f"net charge {total:+.4f} e (LAMMPS adds a uniform neutralising background for the long-range Coulomb)")
@@ -279,7 +253,7 @@ def _build_molecular(lib, structure, out_dir, cutoff, kspace, boundary, strict, 
     for k in np.unique(mol):
         key = f"{int((mol == k).sum())} atoms, charge {qm[k]:+.4f}"
         kinds[key] = kinds.get(key, 0) + 1
-    rep = dict(structure=src, library=lib.path, library_name=lib.name, engine="molecular", table=table_file,
+    rep = dict(structure=src, library=lib.path, library_name=lib.name, table=table_file,
                software=_library.software_versions(), atoms=len(at),
                charge_sum=total, molecules=int(mol.max() + 1), molecule_kinds=dict(sorted(kinds.items(), key=lambda kv: -kv[1])[:20]),
                min_similarity_soap=float(res["sim1"][known].min()) if known.any() else None,
@@ -290,7 +264,8 @@ def _build_molecular(lib, structure, out_dir, cutoff, kspace, boundary, strict, 
                sources={s: int((res["source"] == s).sum()) for s in sorted(set(res["source"]))},
                bond_lengths={k: v["r"] for k, v in table["bond_lengths"].items()}, water_apart=res["water"],
                terms=dict(bonds=info["nbonds"], angles=info["nangles"], dihedrals=info["ndihedrals"], impropers=info["nimpropers"]),
-               dihedrals_without_parameters=nodih, box=info["box"], boundary=boundary, kspace=info["kspace"],
+               dihedrals_without_parameters=nodih, box=info["box"], boundary=boundary, vacuum_gap=info["gaps"],
+               kspace=info["kspace"], reserved_water=info["reserved_water"],
                per_type=per, warnings=warn, type_ids=info["type_ids"], type_elements=info["elements"],
                rigid=dict(bonds=info["shake_bonds"], angles=info["shake_angles"]),
                timestep_fs=float(lib.lammps.get("timestep", W.TIMESTEP_FS)))
@@ -317,19 +292,18 @@ def user_library_dir():
     return d
 
 
-def new_library(name, extends=None, engine="molecular", folder=None, description=""):
+def new_library(name, extends=None, folder=None, reference=""):
     """write a library file NAME.txt (in ~/.soapff/libraries unless `folder`): extends=BASE starts from a library (its
     references and parameters), to which references and parameter rows are added; returns its path"""
     folder = folder or user_library_dir()
+    os.makedirs(folder, exist_ok=True)
     path = os.path.join(folder, name + ".txt")
     if os.path.exists(path):
         raise FileExistsError(path)
-    if extends:
-        engine = _library.load(extends).engine
-    L = [f"# soapff library {name}", "[library]", f"name        = {name}"]
-    L += [f"extends     = {extends}"] if extends else [f"engine      = {engine}"]
-    L += [f"description = {description or ('references added to ' + extends if extends else '')}", ""]
-    if not extends and engine == "molecular":
+    L = [f"# soapff library {name}", "[library]", f"name      = {name}", f"reference = {reference}"]
+    L += [f"extends   = {extends}"] if extends else []
+    L += [""]
+    if not extends:
         L += ["[soap]", "r_cut = 5.0", "n_max = 4", "l_max = 3", "sigma = 0.4", "depth = 4", "prune = 0.999", "threshold = 0.9", "",
               "[bond_lengths]", "# E1 E2 r(A): two atoms nearer than r are bonded.  r must lie between the longest bond and the "
               "shortest distance not bonded of the pair in the references; a pair not written gets the halfway value (the "

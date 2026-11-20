@@ -14,15 +14,15 @@ Na⁺ in a dry interlayer is an environment that no other reference has, so this
 
 `python make_run.py` writes `run/` (the folder is replaced; `--out DIR` writes elsewhere):
 
-1. The force field of `dry.extxyz` with the `clayff` library (all atoms above the similarity threshold, 0 mismatches in the type cross-check).
-2. The structure has no water type, so a water type is added to `system.data` and `system.settings`, and `water.mol` is written.
+1. The force field of `dry.extxyz` with the `clayff` library, with `soapff.build(..., reserve_water=True)`: the structure has no water, so the water types (ow, hw), the O–H bond and the H–O–H angle of the library are added to `system.data` and `system.settings`, with room for their bonds and angles.
+2. `water.mol`, one water molecule with these types.
 3. `in.lammps`: the minimization of `../clay_md.py`, then the swelling curve of `swelling.py`, with the numbers of water molecules "4 8 12 16 20 25 32 40 48 59". Each state is equilibrated with NPT for 30 ps, and the following 20 ps are recorded.
 
 `python make_run.py --run` also runs it here, with the LAMMPS Python module (`pip install "lammps[mpi]"`). The commands are the same as in `in.lammps`. In the input file the loops are `label` / `jump SELF` (they need a file); with the Python module they are Python loops (`swelling.run`). Both give the same `swelling.dat` (checked on a short run). `in.lammps` can also be run with the `lmp` executable: `cd run && mpirun -np 4 lmp -in in.lammps -log log.lammps`.
 
 `swelling.py` holds the swelling-curve code (`swelling_schedule`, `swelling_lines` for an input file, `run` for the Python module). It was part of soapff (`soapff_cui.core`) before soapff was reduced to writing the force field.
 
-The stored run in `run/` was made with the `in.lammps` of the earlier soapff and the `lmp` executable (`soapff run --np 4, an option of the earlier soapff`: 4 MPI processes on another computer, LAMMPS 7 Feb 2024, about 5 minutes). Its commands are the same as those `make_run.py` writes now (the swelling block is identical; the earlier file also set `neighbor 2.0 bin` and `neigh_modify every 1 delay 0 check yes`, the LAMMPS defaults).
+The stored run in `run/` was made with the `in.lammps` of the earlier soapff and the `lmp` executable (`soapff run --np 4, an option of the earlier soapff`: 4 MPI processes on another computer, LAMMPS 7 Feb 2024, about 5 minutes). Its commands are the same as those `make_run.py` writes now (the swelling block is identical; the earlier file also set `neighbor 2.0 bin` and `neigh_modify every 1 delay 0 check yes`, the LAMMPS defaults). The force field `make_run.py` writes now is the same as the one in `run/` (types, charges, LJ, bonds and angles with their coefficients); only the numbering of the bond and angle types differs.
 
 For each state, water molecules are inserted into the interlayer (the region between the clay and the box edge, on the side across the periodic boundary) with `create_atoms ... mol` (at least 2 Å from other atoms; if they do not fit, the box is stretched by 0.5 Å in z), the clay is moved back to the center of the box, and then a minimization, a 2 ps relaxation with damping, and NPT (300 K, 1 atm) are run. The NPT moves x, y, z, and the xy tilt, and keeps the tilts across the layer, xz and yz, fixed (when water enters, the layer slides and the tilt becomes large, which makes LAMMPS stop; d001 = lz does not depend on this).
 

@@ -16,9 +16,11 @@
   },
   "nearest_atom": 6.38,
   "droplet_bottom_above_surface": 5.28,
-  "type_check_differ": 0,
-  "charge_sum": 0.096,
   "seconds_packmol": 37,
-  "seconds_total": 168
+  "wrong": 0,
+  "kinds": {},
+  "min_similarity": 1.0,
+  "charge_sum": 0.096,
+  "seconds_soapff": 86
  }
 }

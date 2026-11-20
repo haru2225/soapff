@@ -13,7 +13,7 @@ import os
 
 from soapff import library
 from soapff import molecular as M
-from soapff_cui import core, steps
+from soapff_cui import core
 
 EX = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(EX, "results", "clayff_water_apart_check.json")
@@ -29,7 +29,7 @@ def jobs():
 
 
 def main():
-    T = {n: steps.load_table(library.load(n).table_path(log=lambda *a: None)) for n in ("clayff", "clayff_edge")}
+    T = {n: M.load_table(library.load(n).table_path(log=lambda *a: None)) for n in ("clayff", "clayff_edge")}
     out = {}
     for p, lib in jobs():
         if not os.path.isfile(p):

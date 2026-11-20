@@ -14,8 +14,6 @@ import subprocess
 import sys
 
 import soapff
-from soapff import clayff
-from soapff_cui import core
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", ".."))           # clay_md.py
@@ -44,8 +42,7 @@ def execute(s, force_field, commands, lmp_cmd=None):
 
 
 def start(lmp_cmd=None):
-    core.make(os.path.join(HERE, "..", "initial.xyz"), START, clayff.LIBRARY)
-    s = soapff.System(START)
+    s = soapff.build("clayff", os.path.join(HERE, "..", "initial.xyz"), START)
     execute(s, s.commands(), clay_md.minimize() + clay_md.md(s, timestep_fs=TIMESTEP_FS, **START_MD), lmp_cmd)
 
 

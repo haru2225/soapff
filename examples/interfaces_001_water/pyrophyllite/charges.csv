@@ -1,711 +1,711 @@
-id,element,role,clayff_type,charge,source,matched_library_type,similarity,bond_type,bonds,margin,reference_atom
-1,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-2,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-3,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-4,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-5,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-6,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-7,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-8,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-9,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-10,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-11,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-12,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-13,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-14,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-15,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-16,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-17,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-18,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-19,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-20,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-21,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-22,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-23,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-24,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-25,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-26,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-27,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-28,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-29,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-30,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-31,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-32,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-33,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-34,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-35,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-36,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-37,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:37
-38,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-39,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-40,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:37
-41,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-42,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-43,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-44,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-45,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-46,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-47,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-48,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-49,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-50,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-51,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-52,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-53,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-54,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-55,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-56,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-57,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-58,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-59,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-60,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-61,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-62,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-63,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-64,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-65,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-66,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-67,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-68,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-69,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-70,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-71,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-72,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-73,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-74,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-75,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-76,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-77,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-78,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:37
-79,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-80,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-81,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-82,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-83,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-84,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-85,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-86,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-87,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-88,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-89,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-90,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-91,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-92,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-93,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-94,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-95,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-96,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-97,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-98,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-99,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-100,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-101,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-102,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-103,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-104,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-105,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-106,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-107,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-108,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-109,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-110,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-111,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-112,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-113,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-114,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-115,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-116,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-117,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-118,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-119,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-120,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:37
-121,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-122,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-123,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-124,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-125,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-126,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-127,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-128,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-129,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-130,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-131,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-132,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-133,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-134,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-135,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-136,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-137,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-138,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-139,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-140,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-141,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-142,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-143,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-144,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-145,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-146,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-147,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-148,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-149,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-150,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-151,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-152,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-153,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-154,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-155,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-156,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-157,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-158,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-159,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-160,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-161,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-162,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-163,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-164,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-165,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-166,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-167,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-168,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-169,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-170,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-171,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-172,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-173,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-174,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-175,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-176,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-177,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-178,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-179,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-180,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-181,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-182,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-183,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-184,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-185,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-186,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-187,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-188,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-189,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-190,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-191,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-192,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-193,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-194,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-195,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-196,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-197,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:37
-198,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-199,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-200,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:37
-201,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-202,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-203,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-204,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-205,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-206,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-207,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-208,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-209,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-210,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-211,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-212,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-213,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-214,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-215,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-216,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-217,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-218,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-219,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-220,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-221,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-222,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-223,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-224,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-225,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-226,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-227,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-228,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-229,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-230,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-231,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-232,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-233,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-234,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-235,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-236,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-237,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-238,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:37
-239,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-240,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-241,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-242,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-243,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-244,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-245,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-246,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-247,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-248,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-249,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-250,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-251,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-252,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-253,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-254,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-255,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-256,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-257,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-258,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-259,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-260,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-261,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-262,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-263,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-264,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-265,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-266,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-267,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-268,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-269,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-270,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-271,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-272,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-273,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-274,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-275,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-276,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-277,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-278,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-279,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-280,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:37
-281,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-282,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-283,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-284,Al,mineral,ao,+1.575000,soap,ao,1.00000,ao,O6,0.07581,pyrophyllite_bulk.data:1
-285,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-286,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-287,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-288,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:5
-289,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-290,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-291,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-292,Si,mineral,st,+2.100000,soap,st,1.00000,st,O4,2.00000,pyrophyllite_bulk.data:9
-293,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-294,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-295,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-296,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01409,pyrophyllite_bulk.data:13
-297,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-298,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-299,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-300,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Al2 Si1,0.01408,pyrophyllite_bulk.data:17
-301,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-302,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-303,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-304,O,mineral,oh,-0.950000,soap,oh,1.00000,oh,Al2 H1,0.01968,pyrophyllite_bulk.data:21
-305,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-306,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-307,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-308,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04073,pyrophyllite_2_bulk.data:25
-309,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-310,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-311,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-312,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04070,pyrophyllite_2_bulk.data:29
-313,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-314,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-315,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-316,O,mineral,ob,-1.050000,soap,ob,1.00000,ob,Si2,0.04627,pyrophyllite_2_bulk.data:33
-317,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-318,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-319,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-320,H,mineral,ho,+0.425000,soap,ho,1.00000,ho,O1,0.39821,pyrophyllite_bulk.data:38
-321,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-322,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-323,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-324,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-325,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-326,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-327,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-328,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-329,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-330,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-331,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-332,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-333,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-334,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-335,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-336,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-337,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-338,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-339,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-340,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-341,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-342,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-343,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-344,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-345,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-346,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-347,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-348,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-349,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-350,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-351,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-352,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-353,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-354,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-355,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-356,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-357,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-358,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-359,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-360,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-361,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-362,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-363,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-364,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-365,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-366,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-367,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-368,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-369,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-370,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-371,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-372,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-373,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-374,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-375,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-376,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-377,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-378,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-379,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-380,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-381,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-382,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-383,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-384,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-385,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-386,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-387,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-388,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-389,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-390,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-391,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-392,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-393,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-394,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-395,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-396,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-397,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-398,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-399,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-400,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-401,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-402,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-403,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-404,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-405,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-406,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-407,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-408,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-409,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-410,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-411,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-412,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-413,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-414,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-415,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-416,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-417,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-418,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-419,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-420,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-421,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-422,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-423,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-424,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-425,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-426,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-427,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-428,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-429,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-430,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-431,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-432,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-433,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-434,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-435,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-436,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-437,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-438,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-439,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-440,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-441,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-442,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-443,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-444,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-445,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-446,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-447,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-448,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-449,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-450,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-451,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-452,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-453,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-454,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-455,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-456,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-457,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-458,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-459,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-460,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-461,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-462,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-463,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-464,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-465,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-466,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-467,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-468,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-469,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-470,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-471,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-472,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-473,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-474,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-475,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-476,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-477,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-478,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-479,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-480,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-481,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-482,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-483,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-484,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-485,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-486,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-487,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-488,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-489,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-490,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-491,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-492,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-493,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-494,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-495,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-496,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-497,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-498,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-499,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-500,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-501,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-502,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-503,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-504,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-505,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-506,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-507,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-508,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-509,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-510,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-511,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-512,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-513,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-514,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-515,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-516,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-517,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-518,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-519,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-520,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-521,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-522,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-523,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-524,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-525,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-526,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-527,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-528,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-529,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-530,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-531,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-532,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-533,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-534,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-535,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-536,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-537,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-538,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-539,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-540,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-541,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-542,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-543,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-544,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-545,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-546,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-547,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-548,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-549,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-550,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-551,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-552,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-553,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-554,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-555,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-556,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-557,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-558,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-559,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-560,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-561,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-562,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-563,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-564,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-565,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-566,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-567,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-568,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-569,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-570,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-571,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-572,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-573,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-574,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-575,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-576,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-577,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-578,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-579,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-580,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-581,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-582,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-583,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-584,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-585,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-586,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-587,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-588,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-589,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-590,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-591,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-592,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-593,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-594,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-595,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-596,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-597,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-598,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-599,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-600,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-601,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-602,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-603,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-604,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-605,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-606,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-607,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-608,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-609,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-610,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-611,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-612,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-613,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-614,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-615,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-616,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-617,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-618,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-619,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-620,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-621,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-622,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-623,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-624,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-625,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-626,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-627,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-628,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-629,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-630,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-631,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-632,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-633,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-634,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-635,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-636,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-637,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-638,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-639,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-640,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-641,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-642,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-643,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-644,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-645,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-646,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-647,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-648,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-649,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-650,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-651,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-652,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-653,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-654,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-655,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-656,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-657,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-658,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-659,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-660,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-661,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-662,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-663,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-664,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-665,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-666,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-667,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-668,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-669,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-670,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-671,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-672,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-673,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-674,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-675,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-676,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-677,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-678,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-679,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-680,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-681,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-682,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-683,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-684,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-685,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-686,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-687,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-688,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-689,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-690,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-691,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-692,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-693,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-694,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-695,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-696,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-697,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-698,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-699,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-700,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-701,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-702,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-703,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-704,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-705,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-706,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-707,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-708,O,water,ow,-0.820000,soap,ow,1.00000,ow,H2,0.59366,water.data:1
-709,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
-710,H,water,hw,+0.410000,soap,hw,1.00000,hw,O1,0.34836,water.data:2
+id,element,type,charge,molecule,source,similarity_soap,nearest_reference,margin_soap,bonded_to
+1,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,20 24 53 57 61 95
+2,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,16 23 62 179 214 218
+3,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,18 22 55 59 63 93
+4,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,14 21 64 177 216 220
+5,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,26 93 109 194
+6,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,14 25 30 33
+7,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,28 95 111 196
+8,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,16 27 32 35
+9,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,17 29 33 185
+10,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,18 26 30 34
+11,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,19 31 35 187
+12,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,20 28 32 36
+13,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,41 83 85
+14,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,4 6 202
+15,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,43 81 87
+16,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,2 8 204
+17,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,9 41 164
+18,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,3 10 202
+19,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,11 43 162
+20,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,1 12 204
+21,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,4 37 41
+22,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,3 38 42
+23,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,2 39 43
+24,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,1 40 44
+25,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,6 169
+26,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,5 10
+27,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,8 171
+28,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,7 12
+29,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,9 85
+30,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,6 10
+31,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,11 87
+32,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,8 12
+33,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,6 9
+34,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,10 165
+35,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,8 11
+36,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,12 167
+37,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,21
+38,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,22
+39,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,23
+40,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,24
+41,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,13 17 21 60 64 135
+42,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,22 56 63 174 178 219
+43,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,15 19 23 58 62 133
+44,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,24 54 61 176 180 217
+45,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,66 133 149 234
+46,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,54 65 70 73
+47,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,68 135 151 236
+48,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,56 67 72 75
+49,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,57 69 73 225
+50,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,58 66 70 74
+51,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,59 71 75 227
+52,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,60 68 72 76
+53,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,1 123 125
+54,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,44 46 162
+55,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,3 121 127
+56,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,42 48 164
+57,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,1 49 204
+58,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,43 50 162
+59,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,3 51 202
+60,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,41 52 164
+61,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,1 44 77
+62,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,2 43 78
+63,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,3 42 79
+64,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,4 41 80
+65,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,46 209
+66,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,45 50
+67,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,48 211
+68,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,47 52
+69,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,49 125
+70,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,46 50
+71,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,51 127
+72,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,48 52
+73,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,46 49
+74,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,50 205
+75,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,48 51
+76,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,52 207
+77,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,61
+78,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,62
+79,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,63
+80,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,64
+81,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,15 100 104 133 137 141
+82,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,96 103 142 259 294 298
+83,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,13 98 102 135 139 143
+84,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,94 101 144 257 296 300
+85,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,13 29 106 274
+86,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,94 105 110 113
+87,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,15 31 108 276
+88,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,96 107 112 115
+89,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,97 109 113 265
+90,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,98 106 110 114
+91,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,99 111 115 267
+92,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,100 108 112 116
+93,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,3 5 121
+94,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,84 86 282
+95,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,1 7 123
+96,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,82 88 284
+97,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,89 121 244
+98,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,83 90 282
+99,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,91 123 242
+100,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,81 92 284
+101,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,84 117 121
+102,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,83 118 122
+103,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,82 119 123
+104,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,81 120 124
+105,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,86 249
+106,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,85 90
+107,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,88 251
+108,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,87 92
+109,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,5 89
+110,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,86 90
+111,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,7 91
+112,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,88 92
+113,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,86 89
+114,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,90 245
+115,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,88 91
+116,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,92 247
+117,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,101
+118,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,102
+119,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,103
+120,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,104
+121,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,55 93 97 101 140 144
+122,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,102 136 143 254 258 299
+123,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,53 95 99 103 138 142
+124,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,104 134 141 256 260 297
+125,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,53 69 146 314
+126,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,134 145 150 153
+127,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,55 71 148 316
+128,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,136 147 152 155
+129,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,137 149 153 305
+130,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,138 146 150 154
+131,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,139 151 155 307
+132,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,140 148 152 156
+133,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,43 45 81
+134,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,124 126 242
+135,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,41 47 83
+136,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,122 128 244
+137,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,81 129 284
+138,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,123 130 242
+139,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,83 131 282
+140,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,121 132 244
+141,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,81 124 157
+142,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,82 123 158
+143,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,83 122 159
+144,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,84 121 160
+145,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,126 289
+146,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,125 130
+147,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,128 291
+148,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,127 132
+149,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,45 129
+150,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,126 130
+151,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,47 131
+152,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,128 132
+153,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,126 129
+154,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,130 285
+155,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,128 131
+156,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,132 287
+157,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,141
+158,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,142
+159,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,143
+160,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,144
+161,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,180 184 213 217 221 255
+162,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,19 54 58 176 183 222
+163,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,178 182 215 219 223 253
+164,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,17 56 60 174 181 224
+165,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,34 186 253 269
+166,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,174 185 190 193
+167,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,36 188 255 271
+168,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,176 187 192 195
+169,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,25 177 189 193
+170,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,178 186 190 194
+171,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,27 179 191 195
+172,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,180 188 192 196
+173,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,201 243 245
+174,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,42 164 166
+175,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,203 241 247
+176,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,44 162 168
+177,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,4 169 201
+178,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,42 163 170
+179,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,2 171 203
+180,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,44 161 172
+181,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,164 197 201
+182,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,163 198 202
+183,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,162 199 203
+184,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,161 200 204
+185,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,9 166
+186,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,165 170
+187,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,11 168
+188,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,167 172
+189,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,169 245
+190,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,166 170
+191,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,171 247
+192,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,168 172
+193,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,166 169
+194,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,5 170
+195,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,168 171
+196,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,7 172
+197,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,181
+198,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,182
+199,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,183
+200,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,184
+201,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,173 177 181 220 224 295
+202,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,14 18 59 182 216 223
+203,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,175 179 183 218 222 293
+204,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,16 20 57 184 214 221
+205,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,74 226 293 309
+206,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,214 225 230 233
+207,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,76 228 295 311
+208,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,216 227 232 235
+209,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,65 217 229 233
+210,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,218 226 230 234
+211,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,67 219 231 235
+212,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,220 228 232 236
+213,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,161 283 285
+214,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,2 204 206
+215,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,163 281 287
+216,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,4 202 208
+217,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,44 161 209
+218,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,2 203 210
+219,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,42 163 211
+220,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,4 201 212
+221,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,161 204 237
+222,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,162 203 238
+223,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,163 202 239
+224,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,164 201 240
+225,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,49 206
+226,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,205 210
+227,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,51 208
+228,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,207 212
+229,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,209 285
+230,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,206 210
+231,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,211 287
+232,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,208 212
+233,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,206 209
+234,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,45 210
+235,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,208 211
+236,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,47 212
+237,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,221
+238,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,222
+239,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,223
+240,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,224
+241,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,175 260 264 293 297 301
+242,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,99 134 138 256 263 302
+243,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,173 258 262 295 299 303
+244,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,97 136 140 254 261 304
+245,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,114 173 189 266
+246,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,254 265 270 273
+247,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,116 175 191 268
+248,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,256 267 272 275
+249,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,105 257 269 273
+250,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,258 266 270 274
+251,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,107 259 271 275
+252,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,260 268 272 276
+253,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,163 165 281
+254,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,122 244 246
+255,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,161 167 283
+256,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,124 242 248
+257,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,84 249 281
+258,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,122 243 250
+259,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,82 251 283
+260,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,124 241 252
+261,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,244 277 281
+262,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,243 278 282
+263,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,242 279 283
+264,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,241 280 284
+265,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,89 246
+266,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,245 250
+267,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,91 248
+268,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,247 252
+269,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,165 249
+270,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,246 250
+271,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,167 251
+272,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,248 252
+273,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,246 249
+274,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,85 250
+275,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,248 251
+276,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,87 252
+277,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,261
+278,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,262
+279,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,263
+280,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,264
+281,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,215 253 257 261 300 304
+282,Al,ao,+1.575000,2,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,94 98 139 262 296 303
+283,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,213 255 259 263 298 302
+284,Al,ao,+1.575000,1,soap,1.00000,pyrophyllite_bulk.data:1,0.07581,96 100 137 264 294 301
+285,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,154 213 229 306
+286,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:5,,294 305 310 313
+287,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,156 215 231 308
+288,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:5,,296 307 312 315
+289,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,145 297 309 313
+290,Si,st,+2.100000,1,soap,1.00000,pyrophyllite_bulk.data:9,,298 306 310 314
+291,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,147 299 311 315
+292,Si,st,+2.100000,2,soap,1.00000,pyrophyllite_bulk.data:9,,300 308 312 316
+293,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,203 205 241
+294,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,82 284 286
+295,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,201 207 243
+296,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:13,0.01409,84 282 288
+297,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,124 241 289
+298,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,82 283 290
+299,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,122 243 291
+300,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_bulk.data:17,0.01408,84 281 292
+301,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,241 284 317
+302,O,oh,-0.950000,1,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,242 283 318
+303,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,243 282 319
+304,O,oh,-0.950000,2,soap,1.00000,pyrophyllite_bulk.data:21,0.01968,244 281 320
+305,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,129 286
+306,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,285 290
+307,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,131 288
+308,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:25,0.04073,287 292
+309,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,205 289
+310,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,286 290
+311,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,207 291
+312,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:29,0.04070,288 292
+313,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,286 289
+314,O,ob,-1.050000,1,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,125 290
+315,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,288 291
+316,O,ob,-1.050000,2,soap,1.00000,pyrophyllite_2_bulk.data:33,0.04627,127 292
+317,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,301
+318,H,ho,+0.425000,1,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,302
+319,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,303
+320,H,ho,+0.425000,2,soap,1.00000,pyrophyllite_bulk.data:37,0.39821,304
+321,O,ow,-0.820000,3,soap,1.00000,water.data:1,0.59366,322 323
+322,H,hw,+0.410000,3,soap,1.00000,water.data:2,0.34836,321
+323,H,hw,+0.410000,3,soap,1.00000,water.data:2,0.34836,321
+324,O,ow,-0.820000,4,soap,1.00000,water.data:1,0.59366,325 326
+325,H,hw,+0.410000,4,soap,1.00000,water.data:2,0.34836,324
+326,H,hw,+0.410000,4,soap,1.00000,water.data:2,0.34836,324
+327,O,ow,-0.820000,5,soap,1.00000,water.data:1,0.59366,328 329
+328,H,hw,+0.410000,5,soap,1.00000,water.data:2,0.34836,327
+329,H,hw,+0.410000,5,soap,1.00000,water.data:2,0.34836,327
+330,O,ow,-0.820000,6,soap,1.00000,water.data:1,0.59366,331 332
+331,H,hw,+0.410000,6,soap,1.00000,water.data:2,0.34836,330
+332,H,hw,+0.410000,6,soap,1.00000,water.data:2,0.34836,330
+333,O,ow,-0.820000,7,soap,1.00000,water.data:1,0.59366,334 335
+334,H,hw,+0.410000,7,soap,1.00000,water.data:2,0.34836,333
+335,H,hw,+0.410000,7,soap,1.00000,water.data:2,0.34836,333
+336,O,ow,-0.820000,8,soap,1.00000,water.data:1,0.59366,337 338
+337,H,hw,+0.410000,8,soap,1.00000,water.data:2,0.34836,336
+338,H,hw,+0.410000,8,soap,1.00000,water.data:2,0.34836,336
+339,O,ow,-0.820000,9,soap,1.00000,water.data:1,0.59366,340 341
+340,H,hw,+0.410000,9,soap,1.00000,water.data:2,0.34836,339
+341,H,hw,+0.410000,9,soap,1.00000,water.data:2,0.34836,339
+342,O,ow,-0.820000,10,soap,1.00000,water.data:1,0.59366,343 344
+343,H,hw,+0.410000,10,soap,1.00000,water.data:2,0.34836,342
+344,H,hw,+0.410000,10,soap,1.00000,water.data:2,0.34836,342
+345,O,ow,-0.820000,11,soap,1.00000,water.data:1,0.59366,346 347
+346,H,hw,+0.410000,11,soap,1.00000,water.data:2,0.34836,345
+347,H,hw,+0.410000,11,soap,1.00000,water.data:2,0.34836,345
+348,O,ow,-0.820000,12,soap,1.00000,water.data:1,0.59366,349 350
+349,H,hw,+0.410000,12,soap,1.00000,water.data:2,0.34836,348
+350,H,hw,+0.410000,12,soap,1.00000,water.data:2,0.34836,348
+351,O,ow,-0.820000,13,soap,1.00000,water.data:1,0.59366,352 353
+352,H,hw,+0.410000,13,soap,1.00000,water.data:2,0.34836,351
+353,H,hw,+0.410000,13,soap,1.00000,water.data:2,0.34836,351
+354,O,ow,-0.820000,14,soap,1.00000,water.data:1,0.59366,355 356
+355,H,hw,+0.410000,14,soap,1.00000,water.data:2,0.34836,354
+356,H,hw,+0.410000,14,soap,1.00000,water.data:2,0.34836,354
+357,O,ow,-0.820000,15,soap,1.00000,water.data:1,0.59366,358 359
+358,H,hw,+0.410000,15,soap,1.00000,water.data:2,0.34836,357
+359,H,hw,+0.410000,15,soap,1.00000,water.data:2,0.34836,357
+360,O,ow,-0.820000,16,soap,1.00000,water.data:1,0.59366,361 362
+361,H,hw,+0.410000,16,soap,1.00000,water.data:2,0.34836,360
+362,H,hw,+0.410000,16,soap,1.00000,water.data:2,0.34836,360
+363,O,ow,-0.820000,17,soap,1.00000,water.data:1,0.59366,364 365
+364,H,hw,+0.410000,17,soap,1.00000,water.data:2,0.34836,363
+365,H,hw,+0.410000,17,soap,1.00000,water.data:2,0.34836,363
+366,O,ow,-0.820000,18,soap,1.00000,water.data:1,0.59366,367 368
+367,H,hw,+0.410000,18,soap,1.00000,water.data:2,0.34836,366
+368,H,hw,+0.410000,18,soap,1.00000,water.data:2,0.34836,366
+369,O,ow,-0.820000,19,soap,1.00000,water.data:1,0.59366,370 371
+370,H,hw,+0.410000,19,soap,1.00000,water.data:2,0.34836,369
+371,H,hw,+0.410000,19,soap,1.00000,water.data:2,0.34836,369
+372,O,ow,-0.820000,20,soap,1.00000,water.data:1,0.59366,373 374
+373,H,hw,+0.410000,20,soap,1.00000,water.data:2,0.34836,372
+374,H,hw,+0.410000,20,soap,1.00000,water.data:2,0.34836,372
+375,O,ow,-0.820000,21,soap,1.00000,water.data:1,0.59366,376 377
+376,H,hw,+0.410000,21,soap,1.00000,water.data:2,0.34836,375
+377,H,hw,+0.410000,21,soap,1.00000,water.data:2,0.34836,375
+378,O,ow,-0.820000,22,soap,1.00000,water.data:1,0.59366,379 380
+379,H,hw,+0.410000,22,soap,1.00000,water.data:2,0.34836,378
+380,H,hw,+0.410000,22,soap,1.00000,water.data:2,0.34836,378
+381,O,ow,-0.820000,23,soap,1.00000,water.data:1,0.59366,382 383
+382,H,hw,+0.410000,23,soap,1.00000,water.data:2,0.34836,381
+383,H,hw,+0.410000,23,soap,1.00000,water.data:2,0.34836,381
+384,O,ow,-0.820000,24,soap,1.00000,water.data:1,0.59366,385 386
+385,H,hw,+0.410000,24,soap,1.00000,water.data:2,0.34836,384
+386,H,hw,+0.410000,24,soap,1.00000,water.data:2,0.34836,384
+387,O,ow,-0.820000,25,soap,1.00000,water.data:1,0.59366,388 389
+388,H,hw,+0.410000,25,soap,1.00000,water.data:2,0.34836,387
+389,H,hw,+0.410000,25,soap,1.00000,water.data:2,0.34836,387
+390,O,ow,-0.820000,26,soap,1.00000,water.data:1,0.59366,391 392
+391,H,hw,+0.410000,26,soap,1.00000,water.data:2,0.34836,390
+392,H,hw,+0.410000,26,soap,1.00000,water.data:2,0.34836,390
+393,O,ow,-0.820000,27,soap,1.00000,water.data:1,0.59366,394 395
+394,H,hw,+0.410000,27,soap,1.00000,water.data:2,0.34836,393
+395,H,hw,+0.410000,27,soap,1.00000,water.data:2,0.34836,393
+396,O,ow,-0.820000,28,soap,1.00000,water.data:1,0.59366,397 398
+397,H,hw,+0.410000,28,soap,1.00000,water.data:2,0.34836,396
+398,H,hw,+0.410000,28,soap,1.00000,water.data:2,0.34836,396
+399,O,ow,-0.820000,29,soap,1.00000,water.data:1,0.59366,400 401
+400,H,hw,+0.410000,29,soap,1.00000,water.data:2,0.34836,399
+401,H,hw,+0.410000,29,soap,1.00000,water.data:2,0.34836,399
+402,O,ow,-0.820000,30,soap,1.00000,water.data:1,0.59366,403 404
+403,H,hw,+0.410000,30,soap,1.00000,water.data:2,0.34836,402
+404,H,hw,+0.410000,30,soap,1.00000,water.data:2,0.34836,402
+405,O,ow,-0.820000,31,soap,1.00000,water.data:1,0.59366,406 407
+406,H,hw,+0.410000,31,soap,1.00000,water.data:2,0.34836,405
+407,H,hw,+0.410000,31,soap,1.00000,water.data:2,0.34836,405
+408,O,ow,-0.820000,32,soap,1.00000,water.data:1,0.59366,409 410
+409,H,hw,+0.410000,32,soap,1.00000,water.data:2,0.34836,408
+410,H,hw,+0.410000,32,soap,1.00000,water.data:2,0.34836,408
+411,O,ow,-0.820000,33,soap,1.00000,water.data:1,0.59366,412 413
+412,H,hw,+0.410000,33,soap,1.00000,water.data:2,0.34836,411
+413,H,hw,+0.410000,33,soap,1.00000,water.data:2,0.34836,411
+414,O,ow,-0.820000,34,soap,1.00000,water.data:1,0.59366,415 416
+415,H,hw,+0.410000,34,soap,1.00000,water.data:2,0.34836,414
+416,H,hw,+0.410000,34,soap,1.00000,water.data:2,0.34836,414
+417,O,ow,-0.820000,35,soap,1.00000,water.data:1,0.59366,418 419
+418,H,hw,+0.410000,35,soap,1.00000,water.data:2,0.34836,417
+419,H,hw,+0.410000,35,soap,1.00000,water.data:2,0.34836,417
+420,O,ow,-0.820000,36,soap,1.00000,water.data:1,0.59366,421 422
+421,H,hw,+0.410000,36,soap,1.00000,water.data:2,0.34836,420
+422,H,hw,+0.410000,36,soap,1.00000,water.data:2,0.34836,420
+423,O,ow,-0.820000,37,soap,1.00000,water.data:1,0.59366,424 425
+424,H,hw,+0.410000,37,soap,1.00000,water.data:2,0.34836,423
+425,H,hw,+0.410000,37,soap,1.00000,water.data:2,0.34836,423
+426,O,ow,-0.820000,38,soap,1.00000,water.data:1,0.59366,427 428
+427,H,hw,+0.410000,38,soap,1.00000,water.data:2,0.34836,426
+428,H,hw,+0.410000,38,soap,1.00000,water.data:2,0.34836,426
+429,O,ow,-0.820000,39,soap,1.00000,water.data:1,0.59366,430 431
+430,H,hw,+0.410000,39,soap,1.00000,water.data:2,0.34836,429
+431,H,hw,+0.410000,39,soap,1.00000,water.data:2,0.34836,429
+432,O,ow,-0.820000,40,soap,1.00000,water.data:1,0.59366,433 434
+433,H,hw,+0.410000,40,soap,1.00000,water.data:2,0.34836,432
+434,H,hw,+0.410000,40,soap,1.00000,water.data:2,0.34836,432
+435,O,ow,-0.820000,41,soap,1.00000,water.data:1,0.59366,436 437
+436,H,hw,+0.410000,41,soap,1.00000,water.data:2,0.34836,435
+437,H,hw,+0.410000,41,soap,1.00000,water.data:2,0.34836,435
+438,O,ow,-0.820000,42,soap,1.00000,water.data:1,0.59366,439 440
+439,H,hw,+0.410000,42,soap,1.00000,water.data:2,0.34836,438
+440,H,hw,+0.410000,42,soap,1.00000,water.data:2,0.34836,438
+441,O,ow,-0.820000,43,soap,1.00000,water.data:1,0.59366,442 443
+442,H,hw,+0.410000,43,soap,1.00000,water.data:2,0.34836,441
+443,H,hw,+0.410000,43,soap,1.00000,water.data:2,0.34836,441
+444,O,ow,-0.820000,44,soap,1.00000,water.data:1,0.59366,445 446
+445,H,hw,+0.410000,44,soap,1.00000,water.data:2,0.34836,444
+446,H,hw,+0.410000,44,soap,1.00000,water.data:2,0.34836,444
+447,O,ow,-0.820000,45,soap,1.00000,water.data:1,0.59366,448 449
+448,H,hw,+0.410000,45,soap,1.00000,water.data:2,0.34836,447
+449,H,hw,+0.410000,45,soap,1.00000,water.data:2,0.34836,447
+450,O,ow,-0.820000,46,soap,1.00000,water.data:1,0.59366,451 452
+451,H,hw,+0.410000,46,soap,1.00000,water.data:2,0.34836,450
+452,H,hw,+0.410000,46,soap,1.00000,water.data:2,0.34836,450
+453,O,ow,-0.820000,47,soap,1.00000,water.data:1,0.59366,454 455
+454,H,hw,+0.410000,47,soap,1.00000,water.data:2,0.34836,453
+455,H,hw,+0.410000,47,soap,1.00000,water.data:2,0.34836,453
+456,O,ow,-0.820000,48,soap,1.00000,water.data:1,0.59366,457 458
+457,H,hw,+0.410000,48,soap,1.00000,water.data:2,0.34836,456
+458,H,hw,+0.410000,48,soap,1.00000,water.data:2,0.34836,456
+459,O,ow,-0.820000,49,soap,1.00000,water.data:1,0.59366,460 461
+460,H,hw,+0.410000,49,soap,1.00000,water.data:2,0.34836,459
+461,H,hw,+0.410000,49,soap,1.00000,water.data:2,0.34836,459
+462,O,ow,-0.820000,50,soap,1.00000,water.data:1,0.59366,463 464
+463,H,hw,+0.410000,50,soap,1.00000,water.data:2,0.34836,462
+464,H,hw,+0.410000,50,soap,1.00000,water.data:2,0.34836,462
+465,O,ow,-0.820000,51,soap,1.00000,water.data:1,0.59366,466 467
+466,H,hw,+0.410000,51,soap,1.00000,water.data:2,0.34836,465
+467,H,hw,+0.410000,51,soap,1.00000,water.data:2,0.34836,465
+468,O,ow,-0.820000,52,soap,1.00000,water.data:1,0.59366,469 470
+469,H,hw,+0.410000,52,soap,1.00000,water.data:2,0.34836,468
+470,H,hw,+0.410000,52,soap,1.00000,water.data:2,0.34836,468
+471,O,ow,-0.820000,53,soap,1.00000,water.data:1,0.59366,472 473
+472,H,hw,+0.410000,53,soap,1.00000,water.data:2,0.34836,471
+473,H,hw,+0.410000,53,soap,1.00000,water.data:2,0.34836,471
+474,O,ow,-0.820000,54,soap,1.00000,water.data:1,0.59366,475 476
+475,H,hw,+0.410000,54,soap,1.00000,water.data:2,0.34836,474
+476,H,hw,+0.410000,54,soap,1.00000,water.data:2,0.34836,474
+477,O,ow,-0.820000,55,soap,1.00000,water.data:1,0.59366,478 479
+478,H,hw,+0.410000,55,soap,1.00000,water.data:2,0.34836,477
+479,H,hw,+0.410000,55,soap,1.00000,water.data:2,0.34836,477
+480,O,ow,-0.820000,56,soap,1.00000,water.data:1,0.59366,481 482
+481,H,hw,+0.410000,56,soap,1.00000,water.data:2,0.34836,480
+482,H,hw,+0.410000,56,soap,1.00000,water.data:2,0.34836,480
+483,O,ow,-0.820000,57,soap,1.00000,water.data:1,0.59366,484 485
+484,H,hw,+0.410000,57,soap,1.00000,water.data:2,0.34836,483
+485,H,hw,+0.410000,57,soap,1.00000,water.data:2,0.34836,483
+486,O,ow,-0.820000,58,soap,1.00000,water.data:1,0.59366,487 488
+487,H,hw,+0.410000,58,soap,1.00000,water.data:2,0.34836,486
+488,H,hw,+0.410000,58,soap,1.00000,water.data:2,0.34836,486
+489,O,ow,-0.820000,59,soap,1.00000,water.data:1,0.59366,490 491
+490,H,hw,+0.410000,59,soap,1.00000,water.data:2,0.34836,489
+491,H,hw,+0.410000,59,soap,1.00000,water.data:2,0.34836,489
+492,O,ow,-0.820000,60,soap,1.00000,water.data:1,0.59366,493 494
+493,H,hw,+0.410000,60,soap,1.00000,water.data:2,0.34836,492
+494,H,hw,+0.410000,60,soap,1.00000,water.data:2,0.34836,492
+495,O,ow,-0.820000,61,soap,1.00000,water.data:1,0.59366,496 497
+496,H,hw,+0.410000,61,soap,1.00000,water.data:2,0.34836,495
+497,H,hw,+0.410000,61,soap,1.00000,water.data:2,0.34836,495
+498,O,ow,-0.820000,62,soap,1.00000,water.data:1,0.59366,499 500
+499,H,hw,+0.410000,62,soap,1.00000,water.data:2,0.34836,498
+500,H,hw,+0.410000,62,soap,1.00000,water.data:2,0.34836,498
+501,O,ow,-0.820000,63,soap,1.00000,water.data:1,0.59366,502 503
+502,H,hw,+0.410000,63,soap,1.00000,water.data:2,0.34836,501
+503,H,hw,+0.410000,63,soap,1.00000,water.data:2,0.34836,501
+504,O,ow,-0.820000,64,soap,1.00000,water.data:1,0.59366,505 506
+505,H,hw,+0.410000,64,soap,1.00000,water.data:2,0.34836,504
+506,H,hw,+0.410000,64,soap,1.00000,water.data:2,0.34836,504
+507,O,ow,-0.820000,65,soap,1.00000,water.data:1,0.59366,508 509
+508,H,hw,+0.410000,65,soap,1.00000,water.data:2,0.34836,507
+509,H,hw,+0.410000,65,soap,1.00000,water.data:2,0.34836,507
+510,O,ow,-0.820000,66,soap,1.00000,water.data:1,0.59366,511 512
+511,H,hw,+0.410000,66,soap,1.00000,water.data:2,0.34836,510
+512,H,hw,+0.410000,66,soap,1.00000,water.data:2,0.34836,510
+513,O,ow,-0.820000,67,soap,1.00000,water.data:1,0.59366,514 515
+514,H,hw,+0.410000,67,soap,1.00000,water.data:2,0.34836,513
+515,H,hw,+0.410000,67,soap,1.00000,water.data:2,0.34836,513
+516,O,ow,-0.820000,68,soap,1.00000,water.data:1,0.59366,517 518
+517,H,hw,+0.410000,68,soap,1.00000,water.data:2,0.34836,516
+518,H,hw,+0.410000,68,soap,1.00000,water.data:2,0.34836,516
+519,O,ow,-0.820000,69,soap,1.00000,water.data:1,0.59366,520 521
+520,H,hw,+0.410000,69,soap,1.00000,water.data:2,0.34836,519
+521,H,hw,+0.410000,69,soap,1.00000,water.data:2,0.34836,519
+522,O,ow,-0.820000,70,soap,1.00000,water.data:1,0.59366,523 524
+523,H,hw,+0.410000,70,soap,1.00000,water.data:2,0.34836,522
+524,H,hw,+0.410000,70,soap,1.00000,water.data:2,0.34836,522
+525,O,ow,-0.820000,71,soap,1.00000,water.data:1,0.59366,526 527
+526,H,hw,+0.410000,71,soap,1.00000,water.data:2,0.34836,525
+527,H,hw,+0.410000,71,soap,1.00000,water.data:2,0.34836,525
+528,O,ow,-0.820000,72,soap,1.00000,water.data:1,0.59366,529 530
+529,H,hw,+0.410000,72,soap,1.00000,water.data:2,0.34836,528
+530,H,hw,+0.410000,72,soap,1.00000,water.data:2,0.34836,528
+531,O,ow,-0.820000,73,soap,1.00000,water.data:1,0.59366,532 533
+532,H,hw,+0.410000,73,soap,1.00000,water.data:2,0.34836,531
+533,H,hw,+0.410000,73,soap,1.00000,water.data:2,0.34836,531
+534,O,ow,-0.820000,74,soap,1.00000,water.data:1,0.59366,535 536
+535,H,hw,+0.410000,74,soap,1.00000,water.data:2,0.34836,534
+536,H,hw,+0.410000,74,soap,1.00000,water.data:2,0.34836,534
+537,O,ow,-0.820000,75,soap,1.00000,water.data:1,0.59366,538 539
+538,H,hw,+0.410000,75,soap,1.00000,water.data:2,0.34836,537
+539,H,hw,+0.410000,75,soap,1.00000,water.data:2,0.34836,537
+540,O,ow,-0.820000,76,soap,1.00000,water.data:1,0.59366,541 542
+541,H,hw,+0.410000,76,soap,1.00000,water.data:2,0.34836,540
+542,H,hw,+0.410000,76,soap,1.00000,water.data:2,0.34836,540
+543,O,ow,-0.820000,77,soap,1.00000,water.data:1,0.59366,544 545
+544,H,hw,+0.410000,77,soap,1.00000,water.data:2,0.34836,543
+545,H,hw,+0.410000,77,soap,1.00000,water.data:2,0.34836,543
+546,O,ow,-0.820000,78,soap,1.00000,water.data:1,0.59366,547 548
+547,H,hw,+0.410000,78,soap,1.00000,water.data:2,0.34836,546
+548,H,hw,+0.410000,78,soap,1.00000,water.data:2,0.34836,546
+549,O,ow,-0.820000,79,soap,1.00000,water.data:1,0.59366,550 551
+550,H,hw,+0.410000,79,soap,1.00000,water.data:2,0.34836,549
+551,H,hw,+0.410000,79,soap,1.00000,water.data:2,0.34836,549
+552,O,ow,-0.820000,80,soap,1.00000,water.data:1,0.59366,553 554
+553,H,hw,+0.410000,80,soap,1.00000,water.data:2,0.34836,552
+554,H,hw,+0.410000,80,soap,1.00000,water.data:2,0.34836,552
+555,O,ow,-0.820000,81,soap,1.00000,water.data:1,0.59366,556 557
+556,H,hw,+0.410000,81,soap,1.00000,water.data:2,0.34836,555
+557,H,hw,+0.410000,81,soap,1.00000,water.data:2,0.34836,555
+558,O,ow,-0.820000,82,soap,1.00000,water.data:1,0.59366,559 560
+559,H,hw,+0.410000,82,soap,1.00000,water.data:2,0.34836,558
+560,H,hw,+0.410000,82,soap,1.00000,water.data:2,0.34836,558
+561,O,ow,-0.820000,83,soap,1.00000,water.data:1,0.59366,562 563
+562,H,hw,+0.410000,83,soap,1.00000,water.data:2,0.34836,561
+563,H,hw,+0.410000,83,soap,1.00000,water.data:2,0.34836,561
+564,O,ow,-0.820000,84,soap,1.00000,water.data:1,0.59366,565 566
+565,H,hw,+0.410000,84,soap,1.00000,water.data:2,0.34836,564
+566,H,hw,+0.410000,84,soap,1.00000,water.data:2,0.34836,564
+567,O,ow,-0.820000,85,soap,1.00000,water.data:1,0.59366,568 569
+568,H,hw,+0.410000,85,soap,1.00000,water.data:2,0.34836,567
+569,H,hw,+0.410000,85,soap,1.00000,water.data:2,0.34836,567
+570,O,ow,-0.820000,86,soap,1.00000,water.data:1,0.59366,571 572
+571,H,hw,+0.410000,86,soap,1.00000,water.data:2,0.34836,570
+572,H,hw,+0.410000,86,soap,1.00000,water.data:2,0.34836,570
+573,O,ow,-0.820000,87,soap,1.00000,water.data:1,0.59366,574 575
+574,H,hw,+0.410000,87,soap,1.00000,water.data:2,0.34836,573
+575,H,hw,+0.410000,87,soap,1.00000,water.data:2,0.34836,573
+576,O,ow,-0.820000,88,soap,1.00000,water.data:1,0.59366,577 578
+577,H,hw,+0.410000,88,soap,1.00000,water.data:2,0.34836,576
+578,H,hw,+0.410000,88,soap,1.00000,water.data:2,0.34836,576
+579,O,ow,-0.820000,89,soap,1.00000,water.data:1,0.59366,580 581
+580,H,hw,+0.410000,89,soap,1.00000,water.data:2,0.34836,579
+581,H,hw,+0.410000,89,soap,1.00000,water.data:2,0.34836,579
+582,O,ow,-0.820000,90,soap,1.00000,water.data:1,0.59366,583 584
+583,H,hw,+0.410000,90,soap,1.00000,water.data:2,0.34836,582
+584,H,hw,+0.410000,90,soap,1.00000,water.data:2,0.34836,582
+585,O,ow,-0.820000,91,soap,1.00000,water.data:1,0.59366,586 587
+586,H,hw,+0.410000,91,soap,1.00000,water.data:2,0.34836,585
+587,H,hw,+0.410000,91,soap,1.00000,water.data:2,0.34836,585
+588,O,ow,-0.820000,92,soap,1.00000,water.data:1,0.59366,589 590
+589,H,hw,+0.410000,92,soap,1.00000,water.data:2,0.34836,588
+590,H,hw,+0.410000,92,soap,1.00000,water.data:2,0.34836,588
+591,O,ow,-0.820000,93,soap,1.00000,water.data:1,0.59366,592 593
+592,H,hw,+0.410000,93,soap,1.00000,water.data:2,0.34836,591
+593,H,hw,+0.410000,93,soap,1.00000,water.data:2,0.34836,591
+594,O,ow,-0.820000,94,soap,1.00000,water.data:1,0.59366,595 596
+595,H,hw,+0.410000,94,soap,1.00000,water.data:2,0.34836,594
+596,H,hw,+0.410000,94,soap,1.00000,water.data:2,0.34836,594
+597,O,ow,-0.820000,95,soap,1.00000,water.data:1,0.59366,598 599
+598,H,hw,+0.410000,95,soap,1.00000,water.data:2,0.34836,597
+599,H,hw,+0.410000,95,soap,1.00000,water.data:2,0.34836,597
+600,O,ow,-0.820000,96,soap,1.00000,water.data:1,0.59366,601 602
+601,H,hw,+0.410000,96,soap,1.00000,water.data:2,0.34836,600
+602,H,hw,+0.410000,96,soap,1.00000,water.data:2,0.34836,600
+603,O,ow,-0.820000,97,soap,1.00000,water.data:1,0.59366,604 605
+604,H,hw,+0.410000,97,soap,1.00000,water.data:2,0.34836,603
+605,H,hw,+0.410000,97,soap,1.00000,water.data:2,0.34836,603
+606,O,ow,-0.820000,98,soap,1.00000,water.data:1,0.59366,607 608
+607,H,hw,+0.410000,98,soap,1.00000,water.data:2,0.34836,606
+608,H,hw,+0.410000,98,soap,1.00000,water.data:2,0.34836,606
+609,O,ow,-0.820000,99,soap,1.00000,water.data:1,0.59366,610 611
+610,H,hw,+0.410000,99,soap,1.00000,water.data:2,0.34836,609
+611,H,hw,+0.410000,99,soap,1.00000,water.data:2,0.34836,609
+612,O,ow,-0.820000,100,soap,1.00000,water.data:1,0.59366,613 614
+613,H,hw,+0.410000,100,soap,1.00000,water.data:2,0.34836,612
+614,H,hw,+0.410000,100,soap,1.00000,water.data:2,0.34836,612
+615,O,ow,-0.820000,101,soap,1.00000,water.data:1,0.59366,616 617
+616,H,hw,+0.410000,101,soap,1.00000,water.data:2,0.34836,615
+617,H,hw,+0.410000,101,soap,1.00000,water.data:2,0.34836,615
+618,O,ow,-0.820000,102,soap,1.00000,water.data:1,0.59366,619 620
+619,H,hw,+0.410000,102,soap,1.00000,water.data:2,0.34836,618
+620,H,hw,+0.410000,102,soap,1.00000,water.data:2,0.34836,618
+621,O,ow,-0.820000,103,soap,1.00000,water.data:1,0.59366,622 623
+622,H,hw,+0.410000,103,soap,1.00000,water.data:2,0.34836,621
+623,H,hw,+0.410000,103,soap,1.00000,water.data:2,0.34836,621
+624,O,ow,-0.820000,104,soap,1.00000,water.data:1,0.59366,625 626
+625,H,hw,+0.410000,104,soap,1.00000,water.data:2,0.34836,624
+626,H,hw,+0.410000,104,soap,1.00000,water.data:2,0.34836,624
+627,O,ow,-0.820000,105,soap,1.00000,water.data:1,0.59366,628 629
+628,H,hw,+0.410000,105,soap,1.00000,water.data:2,0.34836,627
+629,H,hw,+0.410000,105,soap,1.00000,water.data:2,0.34836,627
+630,O,ow,-0.820000,106,soap,1.00000,water.data:1,0.59366,631 632
+631,H,hw,+0.410000,106,soap,1.00000,water.data:2,0.34836,630
+632,H,hw,+0.410000,106,soap,1.00000,water.data:2,0.34836,630
+633,O,ow,-0.820000,107,soap,1.00000,water.data:1,0.59366,634 635
+634,H,hw,+0.410000,107,soap,1.00000,water.data:2,0.34836,633
+635,H,hw,+0.410000,107,soap,1.00000,water.data:2,0.34836,633
+636,O,ow,-0.820000,108,soap,1.00000,water.data:1,0.59366,637 638
+637,H,hw,+0.410000,108,soap,1.00000,water.data:2,0.34836,636
+638,H,hw,+0.410000,108,soap,1.00000,water.data:2,0.34836,636
+639,O,ow,-0.820000,109,soap,1.00000,water.data:1,0.59366,640 641
+640,H,hw,+0.410000,109,soap,1.00000,water.data:2,0.34836,639
+641,H,hw,+0.410000,109,soap,1.00000,water.data:2,0.34836,639
+642,O,ow,-0.820000,110,soap,1.00000,water.data:1,0.59366,643 644
+643,H,hw,+0.410000,110,soap,1.00000,water.data:2,0.34836,642
+644,H,hw,+0.410000,110,soap,1.00000,water.data:2,0.34836,642
+645,O,ow,-0.820000,111,soap,1.00000,water.data:1,0.59366,646 647
+646,H,hw,+0.410000,111,soap,1.00000,water.data:2,0.34836,645
+647,H,hw,+0.410000,111,soap,1.00000,water.data:2,0.34836,645
+648,O,ow,-0.820000,112,soap,1.00000,water.data:1,0.59366,649 650
+649,H,hw,+0.410000,112,soap,1.00000,water.data:2,0.34836,648
+650,H,hw,+0.410000,112,soap,1.00000,water.data:2,0.34836,648
+651,O,ow,-0.820000,113,soap,1.00000,water.data:1,0.59366,652 653
+652,H,hw,+0.410000,113,soap,1.00000,water.data:2,0.34836,651
+653,H,hw,+0.410000,113,soap,1.00000,water.data:2,0.34836,651
+654,O,ow,-0.820000,114,soap,1.00000,water.data:1,0.59366,655 656
+655,H,hw,+0.410000,114,soap,1.00000,water.data:2,0.34836,654
+656,H,hw,+0.410000,114,soap,1.00000,water.data:2,0.34836,654
+657,O,ow,-0.820000,115,soap,1.00000,water.data:1,0.59366,658 659
+658,H,hw,+0.410000,115,soap,1.00000,water.data:2,0.34836,657
+659,H,hw,+0.410000,115,soap,1.00000,water.data:2,0.34836,657
+660,O,ow,-0.820000,116,soap,1.00000,water.data:1,0.59366,661 662
+661,H,hw,+0.410000,116,soap,1.00000,water.data:2,0.34836,660
+662,H,hw,+0.410000,116,soap,1.00000,water.data:2,0.34836,660
+663,O,ow,-0.820000,117,soap,1.00000,water.data:1,0.59366,664 665
+664,H,hw,+0.410000,117,soap,1.00000,water.data:2,0.34836,663
+665,H,hw,+0.410000,117,soap,1.00000,water.data:2,0.34836,663
+666,O,ow,-0.820000,118,soap,1.00000,water.data:1,0.59366,667 668
+667,H,hw,+0.410000,118,soap,1.00000,water.data:2,0.34836,666
+668,H,hw,+0.410000,118,soap,1.00000,water.data:2,0.34836,666
+669,O,ow,-0.820000,119,soap,1.00000,water.data:1,0.59366,670 671
+670,H,hw,+0.410000,119,soap,1.00000,water.data:2,0.34836,669
+671,H,hw,+0.410000,119,soap,1.00000,water.data:2,0.34836,669
+672,O,ow,-0.820000,120,soap,1.00000,water.data:1,0.59366,673 674
+673,H,hw,+0.410000,120,soap,1.00000,water.data:2,0.34836,672
+674,H,hw,+0.410000,120,soap,1.00000,water.data:2,0.34836,672
+675,O,ow,-0.820000,121,soap,1.00000,water.data:1,0.59366,676 677
+676,H,hw,+0.410000,121,soap,1.00000,water.data:2,0.34836,675
+677,H,hw,+0.410000,121,soap,1.00000,water.data:2,0.34836,675
+678,O,ow,-0.820000,122,soap,1.00000,water.data:1,0.59366,679 680
+679,H,hw,+0.410000,122,soap,1.00000,water.data:2,0.34836,678
+680,H,hw,+0.410000,122,soap,1.00000,water.data:2,0.34836,678
+681,O,ow,-0.820000,123,soap,1.00000,water.data:1,0.59366,682 683
+682,H,hw,+0.410000,123,soap,1.00000,water.data:2,0.34836,681
+683,H,hw,+0.410000,123,soap,1.00000,water.data:2,0.34836,681
+684,O,ow,-0.820000,124,soap,1.00000,water.data:1,0.59366,685 686
+685,H,hw,+0.410000,124,soap,1.00000,water.data:2,0.34836,684
+686,H,hw,+0.410000,124,soap,1.00000,water.data:2,0.34836,684
+687,O,ow,-0.820000,125,soap,1.00000,water.data:1,0.59366,688 689
+688,H,hw,+0.410000,125,soap,1.00000,water.data:2,0.34836,687
+689,H,hw,+0.410000,125,soap,1.00000,water.data:2,0.34836,687
+690,O,ow,-0.820000,126,soap,1.00000,water.data:1,0.59366,691 692
+691,H,hw,+0.410000,126,soap,1.00000,water.data:2,0.34836,690
+692,H,hw,+0.410000,126,soap,1.00000,water.data:2,0.34836,690
+693,O,ow,-0.820000,127,soap,1.00000,water.data:1,0.59366,694 695
+694,H,hw,+0.410000,127,soap,1.00000,water.data:2,0.34836,693
+695,H,hw,+0.410000,127,soap,1.00000,water.data:2,0.34836,693
+696,O,ow,-0.820000,128,soap,1.00000,water.data:1,0.59366,697 698
+697,H,hw,+0.410000,128,soap,1.00000,water.data:2,0.34836,696
+698,H,hw,+0.410000,128,soap,1.00000,water.data:2,0.34836,696
+699,O,ow,-0.820000,129,soap,1.00000,water.data:1,0.59366,700 701
+700,H,hw,+0.410000,129,soap,1.00000,water.data:2,0.34836,699
+701,H,hw,+0.410000,129,soap,1.00000,water.data:2,0.34836,699
+702,O,ow,-0.820000,130,soap,1.00000,water.data:1,0.59366,703 704
+703,H,hw,+0.410000,130,soap,1.00000,water.data:2,0.34836,702
+704,H,hw,+0.410000,130,soap,1.00000,water.data:2,0.34836,702
+705,O,ow,-0.820000,131,soap,1.00000,water.data:1,0.59366,706 707
+706,H,hw,+0.410000,131,soap,1.00000,water.data:2,0.34836,705
+707,H,hw,+0.410000,131,soap,1.00000,water.data:2,0.34836,705
+708,O,ow,-0.820000,132,soap,1.00000,water.data:1,0.59366,709 710
+709,H,hw,+0.410000,132,soap,1.00000,water.data:2,0.34836,708
+710,H,hw,+0.410000,132,soap,1.00000,water.data:2,0.34836,708

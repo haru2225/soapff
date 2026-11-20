@@ -40,7 +40,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, ".."))                 # clay_md.py
 import clay_md  # noqa: E402
 
-LIB = os.path.join(HERE, "..", "..", "src", "soapff", "libraries", "clayff", "prebuilt", "library_clayff_bulk.npz")
 REFS = os.path.join(HERE, "..", "..", "src", "soapff", "libraries", "clayff")
 L = 24.83                                                    # cube edge (A): 512 water molecules at 1 g/cm3
 SOLUTIONS = {"water": (512, []), "NaCl": (496, [("Na", 8), ("Cl", 8)]), "KCl": (496, [("K", 8), ("Cl", 8)]),
@@ -91,8 +90,8 @@ def run(name, inputs_only=False):
     os.makedirs(d, exist_ok=True)
     at, md = structure(name)
     ase.io.write(os.path.join(d, "structure.extxyz"), at, format="extxyz")
-    r = core.make(os.path.join(d, "structure.extxyz"), d, LIB, strict=True, log=quiet)
-    s = soapff.System(d)
+    s = soapff.build("clayff", os.path.join(d, "structure.extxyz"), d, log=quiet)
+    r = s.report
     commands = clay_md.minimize() + clay_md.md(s, temp=300.0, dump_ps=1.0, **md)
     clay_md.input_file(s, commands)                           # the same commands for lmp -in in.lammps
     if inputs_only:

@@ -3,17 +3,17 @@
 The library slab of each of the 10 layered minerals of the figure (the references of the clayff library, `src/soapff/libraries/clayff/basal/`; the second pyrophyllite source is left out, as in the paper) with its widest empty slice (the vacuum above the slab) filled with water by packmol at 1 g/cm³: `soapff_cui.water` (tolerance 2 Å, seed 1). Then soapff's ClayFF force field (bundled library, flexible SPC water) and a LAMMPS minimization.
 
 ```
-pip install "lammps[mpi]"     # the LAMMPS Python module
-python run.py                 # packmol must be installed
+pip install "lammps[mpi]"     # the LAMMPS Python module (or LMP=/path/to/lmp: the lmp executable)
+python run.py                 # packmol, when a structure.extxyz is missing
 ```
 
-Each `<mineral>/` holds `structure.extxyz` (slab + water), the files soapff writes for it (`system.data`, `system.settings`, `charges.csv`, `report.json`), and the minimization: its commands `in.min` and its log `log.min`. `run.py` runs the minimization in Python with the LAMMPS Python module: the force field (`system.settings`), then `kspace_style ewald 1.0e-4`, then the two-stage minimization of `../clay_md.py` (`clay_md.minimize`). The minimization uses Ewald (1e-4) instead of the PPPM of `system.settings`, as in the paper (with the LAMMPS on the machine used there, PPPM stopped at the start of the minimization). `in.min` holds the same commands after `include system.settings`; `lmp -in in.min` in the folder runs it with the `lmp` executable.
+Each `<mineral>/` holds `structure.extxyz` (slab + water), the files soapff writes for it (`system.data`, `system.settings`, `charges.csv`, `report.json`), and the minimization: its commands `in.min` and its log `log.min`. `run.py` types the structure with `soapff.build("clayff", ...)`, compares the types and charges with the right answer (the ClayFF types of the bond-graph rule and the charges of Table 1, `soapff_cui.core.clayff_answer`), and runs the minimization with the LAMMPS Python module, or with the `lmp` executable of `$LMP` (`clay_md.run`): the force field (`system.settings`), then `kspace_style ewald 1.0e-4`, then the two-stage minimization of `../clay_md.py` (`clay_md.minimize`). The minimization uses Ewald (1e-4) instead of the PPPM of `system.settings`, as in the paper (with the LAMMPS on the machine used there, PPPM stopped at the start of the minimization). `in.min` holds the same commands after `include system.settings`; `lmp -in in.min` in the folder runs it with the `lmp` executable.
 
-All the files here were written by `run.py` with the current soapff and the LAMMPS Python module (LAMMPS 22 Jul 2025).
+All the files here were written by `run.py` with the `lmp` executable of LAMMPS 22 Jul 2025 (the `structure.extxyz` of the earlier packmol run used again).
 
 ## Results (`results.json`)
 
-| Mineral | Slab atoms | Water molecules | Atoms | Nearest atom to the water (Å) | Type check differ | Net charge (e) | Minimization stopped by |
+| Mineral | Slab atoms | Water molecules | Atoms | Nearest atom to the water (Å) | Wrong type or charge | Net charge (e) | Minimization stopped by |
 |---|---|---|---|---|---|---|---|
 | Na montmorillonite (dry) | 326 | 122 | 692 | 2.33 | 0 | +0.0004 | energy tolerance |
 | muscovite 2M1 | 336 | 134 | 738 | 2.87 | 0 | -0.0032 | energy tolerance |

@@ -14,7 +14,7 @@ os.makedirs(IN, exist_ok=True)
 at = ase.io.read(os.path.join(ATOM, "structures", "minerals", "3WNaMMT_4x6x2.pdb"))
 s = soapff.build("clayff", at, os.path.join(IN, "ext__mmt3w_out"))
 t = np.array(s.types)
-print(len(at), dict(collections.Counter(t)), "min similarity", round(s.report["min_similarity"], 4))
+print(len(at), dict(collections.Counter(t)), "min similarity", round(s.report["min_similarity_soap"], 4))
 hw = collections.defaultdict(list)
 for i, j in zip(*neighbor_list("ij", at, 1.25)):
     if t[i] == "ow" and t[j] == "hw":

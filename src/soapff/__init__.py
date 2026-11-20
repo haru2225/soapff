@@ -24,9 +24,8 @@ written in LAMMPS, here with its Python module (pip install "lammps[mpi]"):
 The command line does the same: soapff list | info LIB | build LIB STRUCTURE -o OUT | new NAME --extends LIB |
 add-reference LIB FILE   (python -m soapff --help); a LAMMPS input then includes OUT/system.settings.
 
-Each library is a text file (see soapff.library): the reference structures and, for the molecular engine, the force-field
-parameters.  Engines: "clayff" (the ClayFF writer soapff_cui: ClayFF, Cygan et al. 2004) and "molecular" (any force
-field written in the library: OPLS-AA, TIP3P / SPC/E water and ions, ...)."""
+Each library is a text file (see soapff.library): the reference structures and the parameters of the force field (ClayFF,
+OPLS-AA, TIP3P / SPC/E water and ions, ...).  Every library is typed and written the same way."""
 from .api import System, add_reference, build, new_library, read_structure
 from .library import Library, LibraryError
 from .library import available as _available
@@ -37,7 +36,7 @@ __version__ = "1.0.0"
 
 
 def libraries():
-    """[{name, engine, description, path}] of the libraries that can be given by name"""
+    """[{name, reference, path}] of the libraries that can be given by name"""
     return _available()
 
 

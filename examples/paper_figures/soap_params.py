@@ -68,7 +68,7 @@ def library(group, name, soap, work):
     tag = name.replace("=", "")
     path = os.path.join(work, "libs", f"{group}_{tag}.txt")
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    open(path, "w").write(f"[library]\nname = {group}_{tag}\nextends = {group}\ndescription = {group} with {name}\n\n[soap]\n"
+    open(path, "w").write(f"[library]\nname = {group}_{tag}\nextends = {group}\n\n[soap]\n"
                           + "".join(f"{k} = {v}\n" for k, v in s.items()))
     return path
 
@@ -98,7 +98,7 @@ def run(group, work):
             shutil.rmtree(d, ignore_errors=True)
             try:
                 s = soapff.build(lib, src, d, strict=False, log=quiet)
-            except soapff.TypingError as e:            # the bonds found do not fit the types (the check of the clayff engine)
+            except soapff.TypingError as e:            # an atom without a type, or a force-field term without parameters
                 n = len(ft) if ft is not None else len(answer[sname][0])
                 res["structures"][sname] = dict(atoms=n, wrong_type=0, wrong_charge=0, below_threshold=0,
                                                 min_similarity=np.nan, min_margin=None, other_stops=[str(e)[:300]],
