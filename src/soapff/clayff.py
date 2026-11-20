@@ -2,8 +2,9 @@
 The types come from the two steps of the molecular engine (soapff_cui.steps): the bonds from the bond lengths of the library
 ([bond_lengths], checked against its references), and the SOAP of the atoms within 4 bonds gives the type and charge; the mineral, the water and the
 ions are typed together.  The library file gives the references
-and the build options of the table; the force field itself is ClayFF (soapff_cui/clayff.py), or the one of the references
-when [library] forcefield names a LAMMPS data and settings file (the montmorillonite edge model)."""
+and the build options of the table, and the parameters of the force field in the tables of the molecular engine: [types]
+(mass, LJ), [bonds] (the O-H bonds), [angles] (H-O-H of water, metal-O-H, the edge metal-O-metal), [lammps]; the charges are
+those of the reference atoms.  Which bonds and angles there are is ClayFF's rule (soapff_cui.core.topology_from_bonds)."""
 import os
 
 from soapff_cui import core, steps
@@ -24,15 +25,16 @@ def prepare(structure, workdir, library=None, log=print, **opts):
 
 
 def _forcefield(lib):
-    spec = lib.library.get("forcefield")
-    if not spec:
+    """the force field of the library file for soapff_cui.core: the mass, element and LJ of every type, the rows of [bonds]
+    and [angles] and the [lammps] settings (the charges are those of the reference atoms); None for a library without
+    [types] (ClayFF of soapff_cui/clayff.py)"""
+    if not lib.types:
         return None
-    tok = spec.split()
-    if len(tok) != 2:
-        raise ValueError(f"{lib.path}: forcefield = DATA SETTINGS (a LAMMPS data file with type names and its settings file)")
-    data, settings = tok
-    return core.read_forcefield(data, settings, lib.library.get("forcefield_name", lib.name),
-                                lib.library.get("forcefield_source", lib.library.get("reference", "")))
+    return dict(name=lib.library.get("forcefield_name", lib.name),
+                source=lib.library.get("forcefield_source", lib.library.get("reference", "")),
+                mass={t: v["mass"] for t, v in lib.types.items()}, element={t: v["element"] for t, v in lib.types.items()},
+                lj={t: [v["epsilon"], v["sigma"]] for t, v in lib.types.items()},
+                bonds=[[*k, *v] for k, v in lib.bonds], angles=[[*k, *v] for k, v in lib.angles], lammps=dict(lib.lammps))
 
 
 def build_table(lib, out, log=print):
@@ -45,8 +47,13 @@ def build_table(lib, out, log=print):
 
 
 def make(lib, structure, out_dir, log=print, strict=True, **opts):
-    """soapff_cui.core.make with the table of the library"""
+    """soapff_cui.core.make with the table of the library and its force field (the cutoff and kspace of [lammps] by default)"""
     table = lib.table_path(log=log)
     opts.setdefault("threshold", float(lib.soap.get("threshold", core.THRESHOLD)))
     opts.setdefault("strict", strict)
-    return core.make(structure, out_dir, table, log=log, **opts)
+    ps = lib.lammps.get("pair_style", "").split()
+    if len(ps) > 1:
+        opts.setdefault("cutoff", float(ps[1]))
+    if lib.lammps.get("kspace_style"):
+        opts.setdefault("kspace", lib.lammps["kspace_style"])
+    return core.make(structure, out_dir, table, log=log, forcefield=_forcefield(lib), **opts)

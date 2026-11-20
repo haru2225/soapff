@@ -28,11 +28,13 @@ ANGLE_HOH = (45.7696, 109.47)                   # h*-o*-h* (k2 kcal/mol/rad^2, t
 ANGLE_MOH = (30.0, 109.47)                      # Metal-oh-ho and Metal-ohs-ho
 WATER_Q = (Q["ow"], Q["hw"])                    # flexible SPC
 
+# The libraries (soapff/libraries/clayff.txt, clayff_edge.txt) carry their parameters in their tables ([types], [bonds],
+# [angles]), which soapff.build passes to make() and write_system() in place of the values of this file; these values are
+# those of the code that calls soapff_cui directly with a table without a force field.
 # montmorillonite edges: only with the optional library of the particle with edges (clay_montmorillonite.data, the edge model
-# of Underwood & Bourg, J. Phys. Chem. C 124, 3702 (2020), after Lammers et al.).  That library carries its own force field
-# (core.read_forcefield: charges, LJ, O-H bond, M-O-H and edge metal-O-metal angles of every one of its types), which make() and
-# write_system() use in place of the values below.  These are only the defaults of the edge types without it: the LJ of their
-# parent ClayFF type and the edge metal - O - octahedral metal angle of the model.
+# of Underwood & Bourg, J. Phys. Chem. C 124, 3702 (2020), after Lammers et al.), whose tables give the charges (of its
+# reference atoms), LJ, O-H bond, M-O-H and edge metal-O-metal angles of every one of its types.  These are only the defaults
+# of the edge types without it: the LJ of their parent ClayFF type and the edge metal - O - octahedral metal angle of the model.
 EDGE_PARENT = {"oed": "ob", "oab": "ob", "omb": "ob", "oaa": "ob", "oma": "ob", "alb": "ao", "ala": "ao", "mgb": "mgo", "mga": "mgo"}
 EDGE_HYDROXYL_O = ("oed", "oab", "omb")         # edge O carrying one H (Si-OH, Al-OH, Mg-OH at the edge)
 EDGE_METALS = ("alb", "ala", "mgb", "mga")       # octahedral Al, Mg at the edge

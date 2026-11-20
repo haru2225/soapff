@@ -1,0 +1,108 @@
+# soapff library: ClayFF (Cygan, Liang, Kalinichev 2004) and OPLS-AA (oplsaa) as one force field, for minerals with water,
+# ions and organic molecules, as Szczerba & Kalinichev (Clays Clay Miner. 64, 488 (2016)) put the two together: the LJ of
+# unlike atoms by the Lorentz-Berthelot rules (arithmetic sigma, geometric epsilon) for every pair, the 1-4 pairs of
+# OPLS-AA scaled by 0.5 (ClayFF has none).
+#
+# The OPLS-AA types, parameters and references are those of oplsaa (extends); this file adds the ClayFF types (Table 1),
+# the O-H bonds and the H-O-H and M-O-H angles (Table 2) with the flexible SPC water, as in clayff.txt, and the references
+# of clayff.  The metals and bridging O of ClayFF are named in no row of [bonds]: their bonds of step 1 only give the SOAP
+# its neighbourhood, and the force field has no metal-O bond.
+
+[library]
+name        = clayff_oplsaa
+extends     = oplsaa
+description = ClayFF minerals, water and ions with OPLS-AA molecules in one force field (Lorentz-Berthelot for every pair)
+reference   = R. T. Cygan, J.-J. Liang, A. G. Kalinichev, J. Phys. Chem. B 108, 1255 (2004); W. L. Jorgensen, D. S. Maxwell, J. Tirado-Rives, J. Am. Chem. Soc. 118, 11225 (1996); M. Szczerba, A. G. Kalinichev, Clays Clay Miner. 64, 488 (2016)
+
+[bond_lengths]
+# E1 E2 r(A), as in clayff.txt (metal-O halfway between the longest bond and the shortest distance not bonded in the
+# references); the C pairs and H-O come from oplsaa.txt
+# E1 E2  r       d_b    d_n
+O  Si  2.41   # 1.683  3.143
+Al O   2.66   # 2.105  3.213
+Mg O   2.70   # 2.187  3.217
+
+[lammps]
+# ClayFF's mixing for every pair; the other settings are those of oplsaa (special_bonds lj/coul 0.0 0.0 0.5, ...)
+pair_style     = lj/cut/coul/long 10.0
+pair_modify    = mix arithmetic tail no
+timestep       = 0.5
+
+[types]
+# ClayFF Table 1: epsilon = D0 (kcal/mol), sigma = R0 / 2^(1/6) (A).  The charges are those of the reference atoms
+# (Table 1).  type  element  mass  epsilon  sigma
+hw     H      1.00794   0.0                    0.0
+ho     H      1.00794   0.0                    0.0
+ow     O     15.99940   0.1554                 3.1655413252962536
+oh     O     15.99940   0.1554                 3.1655413252962536
+ob     O     15.99940   0.1554                 3.1655413252962536
+obos   O     15.99940   0.1554                 3.1655413252962536
+obts   O     15.99940   0.1554                 3.1655413252962536
+obss   O     15.99940   0.1554                 3.1655413252962536
+ohs    O     15.99940   0.1554                 3.1655413252962536
+st     Si    28.08550   1.8405e-06             3.3020270089153536
+ao     Al    26.98154   1.3298e-06             4.271235724380229
+at     Al    26.98154   1.8405e-06             3.3020270089153536
+mgo    Mg    24.30500   9.0298e-07             5.264320525491264
+mgh    Mg    24.30500   9.0298e-07             5.264320525491264
+cao    Ca    40.07800   5.0298e-06             5.5666915504280965
+cah    Ca    40.07800   5.0298e-06             5.56170251760651
+feo    Fe    55.84500   9.0298e-06             4.906179240798848
+lio    Li     6.94100   9.0298e-06             4.210120072315801
+Na     Na    22.98977   0.1301                 2.350012638710587
+K      K     39.09830   0.1                    3.3340102728965917
+Cs     Cs   132.90545   0.1                    3.831042667747087
+Ca     Ca    40.07800   0.1                    2.8719901976690116
+Ba     Ba   137.32700   0.047                  3.8166101085132134
+Cl     Cl    35.45300   0.1001                 4.399970589151507
+
+[bonds]
+# ClayFF Table 2: O-H of water (flexible SPC) and of the hydroxyls.  t1 t2 K(kcal/mol/A^2) r0(A)
+ow  hw   554.1349 1.0
+oh  ho   554.1349 1.0
+ohs ho   554.1349 1.0
+
+[angles]
+# ClayFF Table 2: H-O-H of water, metal-O-H of the hydroxyls (X: the metal).  t1 t2 t3 K(kcal/mol/rad^2) theta0(deg)
+hw  ow  hw   45.7696 109.47
+X   oh  ho   30.0 109.47
+X   ohs ho   30.0 109.47
+
+[references]
+# the references of clayff (oplsaa's come with extends)
+clayff/bulk/brucite_bulk.data  prune=1.0
+clayff/bulk/kaolinite_bulk.data  prune=1.0
+clayff/bulk/lizerdite_bulk.data  prune=1.0
+clayff/bulk/muscovite_1M_bulk.data  prune=1.0
+clayff/bulk/muscovite_2M1_bulk.data  prune=1.0
+clayff/bulk/nanpingite_bulk.data  prune=1.0
+clayff/bulk/phlogopite_1M_bulk.data  prune=1.0
+clayff/bulk/pyrophyllite_2_bulk.data  prune=1.0
+clayff/bulk/pyrophyllite_bulk.data  prune=1.0
+clayff/bulk/talc_bulk.data  prune=1.0
+clayff/bulk/montmorillonite_dry_Na.data  prune=1.0
+clayff/basal/brucite_001.data  prune=0.999
+clayff/basal/kaolinite_001.data  prune=0.999
+clayff/basal/lizerdite_001.data  prune=0.999
+clayff/basal/muscovite_1M_001.data  prune=0.999
+clayff/basal/muscovite_2M1_001.data  prune=0.999
+clayff/basal/nanpingite_001.data  prune=0.999
+clayff/basal/phlogopite_1M_001.data  prune=0.999
+clayff/basal/pyrophyllite_2_001.data  prune=0.999
+clayff/basal/pyrophyllite_001.data  prune=0.999
+clayff/basal/talc_001.data  prune=0.999
+clayff/basal/montmorillonite_dry_Na_001.data  prune=0.999
+clayff/water/water.data  prune=0.99
+clayff/water/NaCl.data  prune=0.99
+clayff/water/KCl.data  prune=0.99
+clayff/water/CsCl.data  prune=0.99
+clayff/water/CaCl2.data  prune=0.99
+clayff/water/BaCl2.data  prune=0.99
+clayff/water/vac_water_film.data  prune=0.99
+clayff/water/vac_water_film_thin.data  prune=0.99
+clayff/water/vac_water_droplet.data  prune=0.99
+clayff/water/vac_NaCl_film.data  prune=0.99
+clayff/water/vac_KCl_film.data  prune=0.99
+clayff/water/vac_CsCl_film.data  prune=0.99
+clayff/water/vac_CaCl2_film.data  prune=0.99
+clayff/water/vac_BaCl2_film.data  prune=0.99

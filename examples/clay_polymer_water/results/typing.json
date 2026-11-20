@@ -1,0 +1,74 @@
+{
+ "PEO": {
+  "atoms": 3104,
+  "wrong": 0,
+  "wrong_atoms": [],
+  "atoms_clayff": 2806,
+  "atoms_oplsaa": 298,
+  "min_similarity": {
+   "clayff": 0.96272,
+   "oplsaa": 0.98756
+  },
+  "terms": {
+   "bonds": 1612,
+   "angles": 1348,
+   "dihedrals": 612,
+   "impropers": 0
+  },
+  "bonds_not_in_force_field": {
+   "ob-st": 704,
+   "ao-ob": 256,
+   "ao-oh": 128,
+   "ao-obos": 64,
+   "mgo-obos": 64,
+   "obos-st": 64,
+   "mgo-ohs": 32,
+   "ao-ohs": 32
+  },
+  "frameworks": [
+   {
+    "molecule": 1,
+    "atoms": 960,
+    "charge": -15.9968
+   }
+  ],
+  "warnings": [
+   "net charge +0.0032 e (LAMMPS adds a uniform neutralising background for the long-range Coulomb)"
+  ]
+ },
+ "PVA": {
+  "atoms": 3098,
+  "wrong": 0,
+  "wrong_atoms": [],
+  "atoms_clayff": 2814,
+  "atoms_oplsaa": 284,
+  "min_similarity": {
+   "clayff": 0.99156,
+   "oplsaa": 0.98574
+  },
+  "terms": {
+   "bonds": 1602,
+   "angles": 1324,
+   "dihedrals": 822,
+   "impropers": 0
+  },
+  "bonds_not_in_force_field": {
+   "ob-st": 642,
+   "ao-ob": 348,
+   "ao-oh": 192,
+   "at-obts": 72,
+   "obts-st": 54,
+   "ao-obts": 36
+  },
+  "frameworks": [
+   {
+    "molecule": 1,
+    "atoms": 960,
+    "charge": -18.0036
+   }
+  ],
+  "warnings": [
+   "net charge -0.0036 e (LAMMPS adds a uniform neutralising background for the long-range Coulomb)"
+  ]
+ }
+}

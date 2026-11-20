@@ -15,7 +15,9 @@ in two steps:
      charge are those of the most similar row of the same element.  An atom with no bond (an ion) takes the type of the
      reference atom of its element that has no bond either.
 Every atom must then have bonds that an atom of its type has in the references (else the build stops).  The angles,
-dihedrals and impropers come from the bonds, their parameters from the tables (X = any type; the most specific row wins)."""
+dihedrals and impropers come from the bonds, their parameters from the tables (X = any type; the most specific row wins).
+The bonds of step 1 of a type that no row of [bonds] names (the metals and bridging O of ClayFF, which has no metal-O
+bond) are not bonds of the force field: they only give the SOAP its neighbourhood (topology)."""
 import collections
 import itertools
 import json
@@ -124,10 +126,21 @@ def _lammps_bonds(path):
     return [] if kb is None else [(rank[int(p[2])], rank[int(p[3])]) for p in rows(kb)]
 
 
+FRAMEWORK = ("Si", "Al", "Mg", "Fe", "Ti")      # the cations of a mineral framework (ClayFF: no metal-O bond in its files)
+RMO = 2.5                                       # A: a framework cation of a reference is bonded to the O within RMO
+
+
 def reference_bonds(at, path):
-    """the bonds of a reference: the column bonds of an extxyz, or the Bonds of a LAMMPS data file -> neighbours"""
+    """the bonds of a reference: the column bonds of an extxyz, or the Bonds of a LAMMPS data file and, as ClayFF has no
+    metal-O bond, each framework cation (Si Al Mg Fe Ti) bonded to the O within RMO of it (in the minerals of clayff every
+    such cation has 4, 5 or 6 O within 2.19 A and the next O beyond 3.14 A) -> neighbours"""
     if path.endswith((".data", ".lmp", ".lammps")):
-        return neighbours(at, _lammps_bonds(path))
+        pairs = list(_lammps_bonds(path))
+        el = np.array(at.get_chemical_symbols())
+        if np.isin(el, FRAMEWORK).any():
+            I, J = neighbor_list("ij", at, RMO)
+            pairs += [(int(i), int(j)) for i, j in zip(I, J) if el[i] in FRAMEWORK and el[j] == "O"]
+        return neighbours(at, pairs)
     col = at.arrays.get("bonds")
     if col is None:
         raise ValueError(f"{path}: a reference needs its bonds: the per-atom column bonds (the 1-based ids of the bonded "
@@ -563,12 +576,26 @@ def _match(key, rows, wild="X", ckey=None):
     return best
 
 
+def bonding_types(lib, types):
+    """the types (of `types`) that have bonds in the force field: named, by type or class, in a row of [bonds].  The others
+    (ions, and the metals and bridging O of ClayFF, which has no metal-O bond) have none: their bonds of step 1 only give
+    the SOAP its neighbourhood"""
+    named = {t for key, _ in lib.bonds for t in key}
+    return {t for t in set(types) if t in named or (t in lib.types and lib.types[t].get("cls", t) in named)}
+
+
 def topology(nb, types, el, lib):
-    """bonds, angles, proper dihedrals and impropers of the bond graph with their parameter rows.  Returns dict of lists of
-    (atom indices, parameter key) and the missing terms."""
+    """bonds, angles, proper dihedrals and impropers of the bond graph with their parameter rows.  A bond of step 1 is a
+    bond of the force field when both its types have bonds in the force field (bonding_types; it then needs a row of
+    [bonds]); the other bonds of step 1 (a metal of ClayFF and its O) are not written.  An angle on two bonds of the force
+    field needs a row of [angles]; an angle on a bond that is not (a metal - O - H of ClayFF) is written when a row gives it.
+    Dihedrals and impropers are made of bonds of the force field.  Returns dict of lists of (atom indices, parameter key),
+    the missing terms and the bonds of step 1 that are not bonds of the force field (not_ff, (i, j) pairs)."""
     n = len(nb)
     nbr = [sorted(b for b, _ in nb[i]) for i in range(n)]
-    out = dict(bonds=[], angles=[], dihedrals=[], impropers=[])
+    has = bonding_types(lib, types)
+    ffb = [[b for b in nbr[i] if types[i] in has and types[b] in has] for i in range(n)]
+    out = dict(bonds=[], angles=[], dihedrals=[], impropers=[], not_ff=[])
     missing = collections.Counter()
     bcache, acache, dcache = {}, {}, {}
     cls = {t: lib.types[t].get("cls", t) if t in lib.types else t for t in set(types)}
@@ -576,6 +603,9 @@ def topology(nb, types, el, lib):
     for i in range(n):
         for j in nbr[i]:
             if i < j:
+                if j not in ffb[i]:
+                    out["not_ff"].append((i, j))
+                    continue
                 k = (types[i], types[j])
                 if k not in bcache:
                     bcache[k] = _match(k, lib.bonds, ckey=ck(k))
@@ -589,9 +619,11 @@ def topology(nb, types, el, lib):
             if key not in acache:
                 acache[key] = _match(key, lib.angles, ckey=ck(key))
             if acache[key] is None:
-                missing["angle " + "-".join(key)] += 1
+                if i in ffb[j] and k in ffb[j]:
+                    missing["angle " + "-".join(key)] += 1
             else:
                 out["angles"].append(((i, j, k), acache[key][0]))
+    nbr = ffb                                   # dihedrals and impropers: the bonds of the force field
     for j in range(n):
         for k in nbr[j]:
             if j > k:

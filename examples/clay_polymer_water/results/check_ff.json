@@ -1,0 +1,136 @@
+{
+ "PEO": {
+  "structure": "PEO",
+  "atoms": 3104,
+  "settings": {
+   "pair_style": "lj/cut/coul/long 10.0",
+   "pair_modify": "mix arithmetic tail no",
+   "special_bonds": "lj/coul 0.0 0.0 0.5"
+  },
+  "parts": {
+   "oplsaa": {
+    "atoms": 298,
+    "settings": {
+     "pair_style": "lj/cut/coul/long 12.0",
+     "pair_modify": "mix geometric tail yes",
+     "special_bonds": "lj/coul 0.0 0.0 0.5"
+    },
+    "types_differ": 0,
+    "charges_max_difference": 0.0,
+    "lj_differ": [],
+    "terms": {
+     "bond": 296,
+     "angle": 546,
+     "dihedral": 612,
+     "improper": 0
+    }
+   },
+   "clayff": {
+    "atoms": 2806,
+    "settings": {
+     "pair_style": "lj/cut/coul/long 10.0",
+     "pair_modify": "mix arithmetic tail no",
+     "special_bonds": "lj/coul 0.0 0.0 0.0"
+    },
+    "types_differ": 0,
+    "charges_max_difference": 0.0,
+    "lj_differ": [],
+    "terms": {
+     "bond": 1316,
+     "angle": 802,
+     "dihedral": 0,
+     "improper": 0
+    }
+   }
+  },
+  "terms": {
+   "bond": {
+    "clayff_oplsaa": 1612,
+    "parts": 1612,
+    "same": true
+   },
+   "angle": {
+    "clayff_oplsaa": 1348,
+    "parts": 1348,
+    "same": true
+   },
+   "dihedral": {
+    "clayff_oplsaa": 612,
+    "parts": 612,
+    "same": true
+   },
+   "improper": {
+    "clayff_oplsaa": 0,
+    "parts": 0,
+    "same": true
+   }
+  }
+ },
+ "PVA": {
+  "structure": "PVA",
+  "atoms": 3098,
+  "settings": {
+   "pair_style": "lj/cut/coul/long 10.0",
+   "pair_modify": "mix arithmetic tail no",
+   "special_bonds": "lj/coul 0.0 0.0 0.5"
+  },
+  "parts": {
+   "oplsaa": {
+    "atoms": 284,
+    "settings": {
+     "pair_style": "lj/cut/coul/long 12.0",
+     "pair_modify": "mix geometric tail yes",
+     "special_bonds": "lj/coul 0.0 0.0 0.5"
+    },
+    "types_differ": 0,
+    "charges_max_difference": 0.0,
+    "lj_differ": [],
+    "terms": {
+     "bond": 282,
+     "angle": 520,
+     "dihedral": 822,
+     "improper": 0
+    }
+   },
+   "clayff": {
+    "atoms": 2814,
+    "settings": {
+     "pair_style": "lj/cut/coul/long 10.0",
+     "pair_modify": "mix arithmetic tail no",
+     "special_bonds": "lj/coul 0.0 0.0 0.0"
+    },
+    "types_differ": 0,
+    "charges_max_difference": 0.0,
+    "lj_differ": [],
+    "terms": {
+     "bond": 1320,
+     "angle": 804,
+     "dihedral": 0,
+     "improper": 0
+    }
+   }
+  },
+  "terms": {
+   "bond": {
+    "clayff_oplsaa": 1602,
+    "parts": 1602,
+    "same": true
+   },
+   "angle": {
+    "clayff_oplsaa": 1324,
+    "parts": 1324,
+    "same": true
+   },
+   "dihedral": {
+    "clayff_oplsaa": 822,
+    "parts": 822,
+    "same": true
+   },
+   "improper": {
+    "clayff_oplsaa": 0,
+    "parts": 0,
+    "same": true
+   }
+  }
+ }
+}

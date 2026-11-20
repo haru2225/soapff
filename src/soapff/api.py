@@ -1,6 +1,7 @@
 """soapff.build(library, structure): a structure file of any format in, the force field of the library for LAMMPS out
 (system.data, system.settings).  What is done with it (minimisation, MD, ...) is written in LAMMPS, e.g. with its Python
 module:  lmp = lammps(); lmp.commands_list(system.commands()); lmp.command("fix 1 all npt ...")."""
+import collections
 import csv
 import json
 import os
@@ -232,10 +233,14 @@ def _build_molecular(lib, structure, out_dir, cutoff, kspace, boundary, strict, 
     margin = np.where(res["source"] == "soap", res["margin"], np.nan)
     # molecules and their charges.  The charges of a force field whose charges belong to the types (OPLS-AA, water models,
     # ions) add up to a whole number in every molecule; a molecule whose charge does not has a mistyped atom, even when every
-    # similarity is above the threshold (e.g. a junction of two blocks in no reference): stop before writing anything
+    # similarity is above the threshold (e.g. a junction of two blocks in no reference): stop before writing anything.
+    # A molecule held by bonds of step 1 that are not bonds of the force field (a mineral layer of ClayFF, whose charges of
+    # Table 1 do not add up to a whole number) is not checked; its charge is in the report
     mol = M.molecules(nb)
     qm = np.bincount(mol, weights=q)
     frac = np.abs(qm - np.round(qm))
+    framework = np.unique([mol[i] for i, _ in topo["not_ff"]]).astype(int)
+    frac[framework] = 0.0
     tol = float(lib.soap.get("charge_tolerance", 1e-3))
     odd = np.nonzero(frac > tol)[0]
     if len(odd):
@@ -289,6 +294,13 @@ def _build_molecular(lib, structure, out_dir, cutoff, kspace, boundary, strict, 
                per_type=per, warnings=warn, type_ids=info["type_ids"], type_elements=info["elements"],
                rigid=dict(bonds=info["shake_bonds"], angles=info["shake_angles"]),
                timestep_fs=float(lib.lammps.get("timestep", W.TIMESTEP_FS)))
+    if topo["not_ff"]:
+        # the bonds of step 1 that are not bonds of the force field (a metal of ClayFF and its O), and the charges of the
+        # molecules they hold (not checked)
+        rep["bonds_not_in_force_field"] = dict(collections.Counter(
+            M.pair_key(tlist[i], tlist[j]) for i, j in topo["not_ff"]).most_common())
+        rep["frameworks"] = [dict(molecule=int(k) + 1, atoms=int((mol == k).sum()), charge=round(float(qm[k]), 6))
+                             for k in framework]
     json.dump(rep, open(os.path.join(out_dir, "report.json"), "w"), indent=1)
     log(f"{len(at)} atoms, {rep['molecules']} molecules; {rep['terms']}; net charge {total:+.4f} e; wrote {out_dir}/system.data, "
         f"system.settings, charges.csv, report.json")

@@ -1,9 +1,9 @@
 # soapff library: montmorillonite with edges (T. R. Underwood, I. C. Bourg, J. Phys. Chem. C 124, 3702 (2020), after Lammers et
 # al.), the optional clay library of soapff.
 #
-# engine clayff with the force field of the reference particle taken whole from its data and settings files
-# (core.read_forcefield: charges, LJ, O-H bond, M-O-H and edge metal-O-metal angles of every type); the water and the ions
-# added are ClayFF.  Typed in the two steps of clayff.txt, the water molecules taken apart from the particle (a water O
+# engine clayff with the force field of the reference particle (clayff/edge/clay_montmorillonite.data and .settings): its LJ,
+# O-H bond, M-O-H and edge metal-O-metal angles in the tables below, its charges in the reference atoms; the water and the
+# ions added are ClayFF.  Typed in the two steps of clayff.txt, the water molecules taken apart from the particle (a water O
 # nearer than the bond length to an edge Al or Mg is not bonded to it).  Montmorillonite only: other minerals stop.
 
 [library]
@@ -11,11 +11,10 @@ name        = clayff_edge
 engine      = clayff
 description = montmorillonite particle with edges (Underwood & Bourg 2020); added water and ions ClayFF
 reference   = T. R. Underwood, I. C. Bourg, J. Phys. Chem. C 124, 3702 (2020)
-forcefield  = clayff/edge/clay_montmorillonite.data clayff/edge/clay_montmorillonite.settings
 forcefield_name = Montmorillonite edge
 forcefield_source = T. R. Underwood, I. C. Bourg, J. Phys. Chem. C 124, 3702 (2020)
 prebuilt    = clayff/prebuilt/library_clayff_edge.npz
-prebuilt_sha = 52e1cee2e8e5251b
+prebuilt_sha = 0d0bc51876ee3109
 prebuilt_dscribe = 2.1.2
 
 [soap]
@@ -35,6 +34,69 @@ O  Si  2.41   # 1.647  3.183
 Al O   2.65   # 1.963  3.333
 Mg O   2.65   # 1.963  3.333
 H  O   1.25   # 1.000  1.806  (halfway 1.40)
+
+[lammps]
+# the settings of ClayFF (the clayff engine writes them; the cutoff and kspace are the defaults of soapff.build; the particle file: ewald)
+pair_style     = lj/cut/coul/long 10.0
+pair_modify    = mix arithmetic tail no
+kspace_style   = pppm 1.0e-5
+bond_style     = harmonic
+angle_style    = harmonic
+special_bonds  = lj/coul 0.0 0.0 0.0
+timestep       = 0.5
+
+[types]
+# the particle of Underwood & Bourg (clayff/edge/clay_montmorillonite.data and .settings, as distributed); the water and
+# the ions it does not have: ClayFF Table 1 (epsilon = D0, sigma = R0 / 2^(1/6)).  The charges are those of the reference
+# atoms.  type  element  mass  epsilon  sigma
+oed    O     15.99940   0.1554                 3.1655
+oab    O     15.99940   0.1554                 3.1655
+omb    O     15.99940   0.1554                 3.1655
+oaa    O     15.99940   0.1554                 3.1655
+oma    O     15.99940   0.1554                 3.1655
+alb    Al    26.98154   1.3298e-06             4.2713
+mgb    Mg    24.30500   9.0298e-07             5.2643
+ala    Al    26.98154   1.3298e-06             4.2713
+mga    Mg    24.30500   9.0298e-07             5.2643
+ho     H      1.00794   0.0                    0.0
+oh     O     15.99940   0.1554                 3.1655
+ohs    O     15.99940   0.1554                 3.1655
+ob     O     15.99940   0.1554                 3.1655
+obos   O     15.99940   0.1554                 3.1655
+ao     Al    26.98154   1.3298e-06             4.2713
+st     Si    28.08550   1.8405e-06             3.302
+mgo    Mg    24.30500   9.0298e-07             5.2643
+Na     Na    22.98977   0.1301                 2.6378   # as the particle file (sigma = R0)
+ow     O     15.99940   0.1554                 3.1655413252962536   # ClayFF
+hw     H      1.00794   0.0                    0.0   # ClayFF
+K      K     39.09830   0.1                    3.3340102728965917   # ClayFF
+Cs     Cs   132.90545   0.1                    3.831042667747087   # ClayFF
+Ca     Ca    40.07800   0.1                    2.8719901976690116   # ClayFF
+Ba     Ba   137.32700   0.047                  3.8166101085132134   # ClayFF
+Cl     Cl    35.45300   0.1001                 4.399970589151507   # ClayFF
+
+[bonds]
+# O-H: of the hydroxyls, the particle's; of water, ClayFF (flexible SPC).  t1 t2 K(kcal/mol/A^2) r0(A)
+ow  hw   554.1349 1.0
+oh  ho   553.935 1.0
+ohs ho   553.935 1.0
+oed ho   553.935 1.0
+oab ho   553.935 1.0
+omb ho   553.935 1.0
+
+[angles]
+# H-O-H of water (ClayFF); metal-O-H of the hydroxyls (X: the metal) and the edge metal - O - octahedral metal angle,
+# the particle's (which angles there are is the rule of the clayff engine).  t1 t2 t3 K(kcal/mol/rad^2) theta0(deg)
+hw  ow  hw   45.7696 109.47
+X   oh  ho   30.0191 109.47
+X   ohs ho   30.0191 109.47
+X   oed ho   30.0191 109.47
+X   oab ho   30.0191 109.47
+X   omb ho   30.0191 109.47
+alb X   X    800.0 100.0
+ala X   X    800.0 100.0
+mgb X   X    800.0 100.0
+mga X   X    800.0 100.0
 
 [references]
 clayff/edge/clay_montmorillonite.data

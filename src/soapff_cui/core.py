@@ -363,17 +363,47 @@ def topology_from_bonds(at, types, nb):
     return bonds, angles, sorted(set(unbonded))
 
 
+def _row_coefficients(ff, types, bonds, angles, reserve_water):
+    """the coefficients of every bond and angle type of write_system from the rows of the library ([bonds] t1 t2 K r0,
+    [angles] t1 t2 t3 K theta0; X = any type, the most specific row wins): {key: (K, r0 or theta0)}.  The terms of one type
+    must have one row (else ValueError)"""
+    from soapff.molecular import _match
+    brows = [(tuple(r[:2]), tuple(float(x) for x in r[2:])) for r in ff["bonds"]]
+    arows = [(tuple(r[:3]), tuple(float(x) for x in r[3:])) for r in ff["angles"]]
+    t = list(types)
+    want_b = [((t[o], t[h]), k) for o, h, k in bonds] + ([(("ow", "hw"), "OHw")] if reserve_water else [])
+    want_a = [((t[a], t[b], t[c]), k) for a, b, c, k in angles] + ([(("hw", "ow", "hw"), ("HOHw",))] if reserve_water else [])
+    out = []
+    for want, rows_, what in ((want_b, brows, "bonds"), (want_a, arows, "angles")):
+        co, cache = {}, {}
+        for key, k in want:
+            if key not in cache:
+                cache[key] = _match(key, rows_)
+            if cache[key] is None:
+                raise ValueError(f"no row of [{what}] in the library for {'-'.join(key)}")
+            co.setdefault(k, set()).add(cache[key][1])
+        bad = {k: v for k, v in co.items() if len(v) > 1}
+        if bad:
+            raise ValueError(f"the {what} of one ClayFF kind have different rows in the library: {bad}")
+        out.append({k: next(iter(v)) for k, v in co.items()})
+    return out
+
+
 def write_system(at, q, types, out_dir, cutoff=10.0, kspace="pppm 1.0e-5", boundary="p p p", reserve_water=False,
                  charges="clayff2004", water="spc", ff=None, nb=None):
     """reserve_water: the water types (ow, hw), the water O-H bond and H-O-H angle types and room for their bonds are
     written even when the structure has no water, so that water can be added in LAMMPS (swelling curve).
-    ff: the force field of the library (read_forcefield), whose LJ, hydroxyl O-H bond, M-O-H and edge M-O-M angles replace
-    ClayFF's for its types; the water and the types it does not have keep ClayFF.
+    ff: the force field of the library file (soapff.clayff: the mass, element and LJ of every type, the rows of [bonds] and
+    [angles], [lammps]): every coefficient is taken from it, the bonded ones from the row of the types of each bond and
+    angle; or (read_forcefield, the tables of former versions) a force field whose LJ, hydroxyl O-H bond, M-O-H and edge
+    M-O-M angles replace ClayFF's for its types; None: ClayFF (soapff_cui/clayff.py).
     nb: the bonds of step 1 (steps.type_atoms): the bonds and angles come from them (topology_from_bonds); without
     nb, from the types and the distances (topology_from_types)."""
     bnd, periodic = parse_boundary(boundary)
     bonds, angles, unbonded = topology_from_bonds(at, types, nb) if nb is not None else topology_from_types(at, types)
-    tnames = sorted(set(types) | ({"ow", "hw"} if reserve_water else set()), key=lambda x: (ELEMENT[x], x))
+    rows = bool(ff) and "bonds" in ff                  # the force field of a library file
+    elem = (lambda x: ff["element"].get(x) or ELEMENT[x]) if rows else (lambda x: ELEMENT[x])   # noqa: E731
+    tnames = sorted(set(types) | ({"ow", "hw"} if reserve_water else set()), key=lambda x: (elem(x), x))
     tid = {x: k + 1 for k, x in enumerate(tnames)}
     bkeys = sorted(set(b[2] for b in bonds) | ({"OHw"} if reserve_water else set())); bid = {k: n + 1 for n, k in enumerate(bkeys)}
     akeys = sorted(set(a[3] for a in angles) | ({("HOHw",)} if reserve_water else set())); aid = {k: n + 1 for n, k in enumerate(akeys)}
@@ -396,7 +426,7 @@ def write_system(at, q, types, out_dir, cutoff=10.0, kspace="pppm 1.0e-5", bound
          f"0.0 {lx:.8f} xlo xhi", f"0.0 {ly:.8f} ylo yhi", f"0.0 {lz:.8f} zlo zhi"]
     if any(abs(v) > 1e-8 for v in (xy, xz, yz)):
         L.append(f"{xy:.8f} {xz:.8f} {yz:.8f} xy xz yz")
-    L += ["", "Masses", ""] + [f"{tid[x]} {MASS[ELEMENT[x]]:.5f}  # {x}" for x in tnames]
+    L += ["", "Masses", ""] + [f"{tid[x]} {(ff['mass'][x] if rows else MASS[ELEMENT[x]]):.5f}  # {x}" for x in tnames]
     # image flags: an H bonded across the cell boundary gets the image that puts it next to its O
     img = np.zeros((len(at), 3), int)
     frac = at.get_scaled_positions(wrap=True)
@@ -415,6 +445,29 @@ def write_system(at, q, types, out_dir, cutoff=10.0, kspace="pppm 1.0e-5", bound
     if angles:
         L += ["", "Angles", ""] + [f"{k + 1} {aid[a[3]]} {a[0] + 1} {a[1] + 1} {a[2] + 1}" for k, a in enumerate(angles)]
     open(os.path.join(out_dir, "system.data"), "w").write("\n".join(L) + "\n")
+    if rows:
+        lm = ff.get("lammps", {})
+        S = [f"# soapff-cui settings: {ff['name']} ({ff['source']}), the parameters of the library file; types and charges in "
+             f"system.data from SOAP (the reference atoms)", "units real", "atom_style full", f"boundary {' '.join(bnd)}",
+             f"bond_style {lm.get('bond_style', 'harmonic')}", f"angle_style {lm.get('angle_style', 'harmonic')}",
+             f"pair_style lj/cut/coul/{coul} {cutoff}", f"pair_modify {lm.get('pair_modify', 'mix arithmetic tail no')}",
+             f"special_bonds {lm.get('special_bonds', 'lj/coul 0.0 0.0 0.0')}", "read_data system.data"]
+        bco, aco = _row_coefficients(ff, types, bonds, angles, reserve_water)
+        for x in tnames:
+            e, sg = ff["lj"][x]
+            S.append(f"pair_coeff {tid[x]} {tid[x]} {e!r} {sg!r}  # {x}")
+        for k in bkeys:
+            K, r0 = bco[k]
+            S.append(f"bond_coeff {bid[k]} {K!r} {r0!r}  # {'O-H (water)' if k == 'OHw' else 'O-H'}")
+        for k in akeys:
+            K, th = aco[k]
+            S.append(f"angle_coeff {aid[k]} {K!r} {th!r}  # {'-'.join(map(str, k))}"
+                     + ("  (edge metal-O-metal)" if k[0] == "MOMe" else ""))
+        S += kspace_lines
+        open(os.path.join(out_dir, "system.settings"), "w").write("\n".join(S) + "\n")
+        return dict(type_ids=tid, water_bond=bid.get("OHw"), water_angle=aid.get(("HOHw",)), nbonds=len(bonds),
+                    nangles=len(angles), unbonded=unbonded, nmol=int(nxt - 1), kspace=kspace_lines, kspace_note=kspace_note,
+                    tilted=any(abs(v) > 1e-8 for v in (xy, xz, yz)))
     S = [(f"# soapff-cui settings: {ff['name']} ({ff['source']}) for its types; the other types and the {WATER_LABELS[water]} "
           f"water: ClayFF (Cygan et al. 2004, Tables 1 and 2); types in system.data from SOAP" if ff else
           f"# soapff-cui settings: ClayFF (Cygan et al. 2004, Tables 1 and 2) with {WATER_LABELS[water]} water; types in system.data "
@@ -533,14 +586,16 @@ ION_TYPES = tuple(FORMAL_ION) + ("Na", "K", "Ca", "Cs", "Cl", "Ba")
 
 
 def make_steps(structure, out_dir, library, threshold=THRESHOLD, cutoff=10.0, kspace="pppm 1.0e-5", boundary="p p p",
-               check=True, reserve_water=False, strict=False, charges="clayff2004", water="spc", log=print):
+               check=True, reserve_water=False, strict=False, charges="clayff2004", water="spc", forcefield=None, log=print):
     """make with a table of the two steps (steps.build_table): the mineral, the water and the ions in one pass; the water
     molecules (an O bonded to two H only, soapff.molecular.water_apart) are taken apart from the mineral, so that the mineral
     is typed without them and each molecule on its own bonds.  Stops when an element is not in the table; when an atom's
     similarity (step 2) is below `threshold` (strict; else the atom keeps its row and is reported: charges.csv
     source soap-low); and (check) when an atom does not have the bonds of the reference atom of its row (the bonds of step 1
     disagree with the type of step 2).
-    The bonds and angles of the force field come from the bonds of step 1 (topology_from_bonds)."""
+    The bonds and angles of the force field come from the bonds of step 1 (topology_from_bonds).
+    forcefield: the force field of the library file (soapff.clayff._forcefield), with the charges of the reference atoms;
+    default: the one of the table, else ClayFF (soapff_cui/clayff.py) with the charges of Table 1."""
     from soapff.molecular import TypingError
 
     from . import steps
@@ -593,11 +648,14 @@ def make_steps(structure, out_dir, library, threshold=THRESHOLD, cutoff=10.0, ks
             raise TypingError("the bonds found do not fit the types (see report.json): " + "; ".join(problems)
                               + ".  The library lacks these environments, or the structure has overlapping atoms")
         warn += [f"consistency: {p_}" for p_ in problems]
-    ff = T["forcefield"]
-    tq = type_charges(charges, water, types=types)
-    if ff:
-        tq.update(ff["charge"])
-    q = np.array([tq.get(t, r["q"][i]) for i, t in enumerate(types)], float)
+    ff = forcefield if forcefield is not None else T["forcefield"]
+    if ff and "bonds" in ff:                   # the force field of a library file: the charges of the reference atoms
+        q = np.asarray(r["q"], float).copy()
+    else:
+        tq = type_charges(charges, water, types=types)
+        if ff:
+            tq.update(ff["charge"])
+        q = np.array([tq.get(t, r["q"][i]) for i, t in enumerate(types)], float)
     dq = float(np.nanmax(np.abs(q - r["q"])))
     if dq > 1e-4:
         warn.append(f"the charges of the types differ from those of the reference atoms by up to {dq:.4f} e")

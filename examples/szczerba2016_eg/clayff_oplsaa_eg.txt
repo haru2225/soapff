@@ -1,0 +1,17 @@
+# the smectites of Szczerba & Kalinichev (2016) with ethylene glycol and water: clayff_oplsaa (ClayFF and OPLS-AA as one
+# force field, Lorentz-Berthelot for every pair) with the references of EG (eg_refs.py), and their cutoff, 8.5 A.
+[library]
+name        = clayff_oplsaa_eg
+extends     = clayff_oplsaa
+description = ClayFF smectite, SPC water and Ca2+ with OPLS-AA ethylene glycol (Szczerba & Kalinichev 2016)
+
+[lammps]
+pair_style  = lj/cut/coul/long 8.5
+
+[references]
+refs/EG.extxyz
+refs/EG_md413K_1.extxyz
+refs/EG_md413K_2.extxyz
+refs/EG_md413K_3.extxyz
+refs/EG_md413K_4.extxyz
+refs/EG_md413K_5.extxyz

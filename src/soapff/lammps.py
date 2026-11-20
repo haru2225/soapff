@@ -53,11 +53,14 @@ def write(out_dir, at, nb, types, q, topo, lib, cutoff=None, kspace=None, bounda
             dihedrals.append((idx, dtypes[key]))
     ikeys = sorted({k for _, k in topo["impropers"]})
     iid = {k: i + 1 for i, k in enumerate(ikeys)}
-    # molecules and image flags (each molecule whole)
+    # molecules (of the bonds of step 1: a mineral layer is one) and image flags (each molecule of the bonds of the force
+    # field whole; the bonds of step 1 that are not, a metal of ClayFF and its O, leave the atoms in the cell)
     from .molecular import molecules
     mol = molecules(nb) + 1
     cell = np.array(at.cell)
-    pos_u = unwrapped(at, nb)
+    off = {(min(i, j), max(i, j)) for i, j in topo.get("not_ff", [])}
+    nb_ff = [[(j, d) for j, d in x if (min(i, j), max(i, j)) not in off] for i, x in enumerate(nb)] if off else nb
+    pos_u = unwrapped(at, nb_ff)
     frac = pos_u @ np.linalg.inv(cell)
     img = np.where(periodic, np.floor(frac), 0).astype(int)
     wrapped = at.copy()

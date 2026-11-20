@@ -5,7 +5,7 @@ Format (one file per library; '#' starts a comment):
 
     [library]                    key = value
     name        = oplsaa
-    engine      = molecular      # molecular (any force field written in the tables below) or clayff (soapff_cui, ClayFF)
+    engine      = molecular      # molecular (every term from the bonds) or clayff (soapff_cui: the terms of ClayFF only)
     extends     = NAME           # optional: start from another library (its references and parameters come first)
     description = ...
     reference   = ...            # the papers of the force field
@@ -17,7 +17,11 @@ Format (one file per library; '#' starts a comment):
                                  # improper_style, special_bonds, rigid (types made rigid by SHAKE), timestep (fs)
     [types]        type element mass epsilon sigma [class]       (kcal/mol, A; LJ 12-6, sigma not R_min; class: optional,
                                                                   a name the rows below may use in place of the type, as
-                                                                  the classes of OPLS-AA; default the type itself)
+                                                                  the classes of OPLS-AA; default the type itself.  The
+                                                                  charges are those of the reference atoms.  Every engine
+                                                                  takes its parameters from these tables; molecular: a type
+                                                                  that no row of [bonds] names has no bond in the force
+                                                                  field, its bonds of step 1 only shape the SOAP)
     [bonds]        t1 t2 K r0                                    (E = K (r - r0)^2; kcal/mol/A^2, A)
     [angles]       t1 t2 t3 K theta0                             (E = K (theta - theta0)^2; kcal/mol/rad^2, deg)
     [dihedrals]    t1 t2 t3 t4 K1 n1 d1 [K2 n2 d2 ...]           (E = sum K [1 + cos(n phi - d)]; kcal/mol, deg; X = any)
@@ -152,7 +156,8 @@ class Library:
         kv = raw["library"]
         # the keys that name files are made absolute here (relative to the file that declares them)
         if "forcefield" in kv:
-            kv["forcefield"] = " ".join(_resolve(x, here) for x in kv["forcefield"].split())
+            raise LibraryError(f"{self.path}: [library] forcefield = DATA SETTINGS is no longer used: write the parameters in "
+                               f"[types], [bonds], [angles] and [lammps] of the library file")
         if "prebuilt" in kv:
             kv["prebuilt"] = _resolve(kv["prebuilt"], here)
         parent = raw["library"].get("extends")
@@ -185,12 +190,12 @@ class Library:
         self.description = self.library.get("description", "")
         self.references = self._references()
         self.bond_lengths = self._bond_lengths()
-        if self.engine == "molecular":
-            self.types = self._types()
-            self.bonds = self._table("bonds", 2, 2)
-            self.angles = self._table("angles", 3, 2)
-            self.dihedrals = self._dihedrals()
-            self.impropers = self._table("impropers", 4, 3)
+        # the parameters of the force field (every engine: the clayff engine writes the ClayFF terms of its rules with them)
+        self.types = self._types()
+        self.bonds = self._table("bonds", 2, 2)
+        self.angles = self._table("angles", 3, 2)
+        self.dihedrals = self._dihedrals()
+        self.impropers = self._table("impropers", 4, 3)
 
     def __repr__(self):
         return f"<soapff Library {self.name} ({self.engine}, {len(self.references)} references) {self.path}>"
@@ -266,7 +271,7 @@ class Library:
         """everything the table of the library depends on (its hash names the cached table), with the version of dscribe
         (software=False: without it, for the prebuilt tables, whose dscribe version is checked on its own)"""
         keep = {k: v for k, v in self.soap.items() if k not in ("threshold", "charge_tolerance")}
-        ff = [_sha(p) for p in self.library.get("forcefield", "").split()]
+        ff = []                 # (the files of the former [library] forcefield: the parameters are read at every build)
         return dict(engine=self.engine, version=DESCRIPTOR_VERSION[self.engine], soap=keep,
                     forcefield=ff,
                     references=[dict(sha=_sha(r["path"]), **{k: v for k, v in r.items() if k != "path"})

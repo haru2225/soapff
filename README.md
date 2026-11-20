@@ -79,6 +79,7 @@ soapff add-reference mine PE4_PEO3.extxyz
 |---|---|---|---|
 | `clayff` | clayff | Bulk crystals of 11 layered minerals and their (001) slabs | ClayFF (Cygan et al. 2004), flexible SPC water |
 | `clayff_edge` | clayff | Montmorillonite particle with edges | Underwood & Bourg (2020) |
+| `clayff_oplsaa` | molecular | The references of `clayff` and `oplsaa` (124 structures) | ClayFF and OPLS-AA as one force field: Lorentz–Berthelot for every pair, the 1-4 pairs of OPLS-AA × 0.5 (as Szczerba & Kalinichev 2016) |
 | `oplsaa` | molecular | 88 oligomer structures of 11 polymers (5-mers, 8-mers and MD frames at 413 K), typed by Foyer | OPLS-AA (Jorgensen et al. 1996; from Foyer 1.3.0 `oplsaa.xml`; the bonded terms by class, the Ryckaert–Bellemans torsions as `dihedral_style fourier`) |
 | `tip3p` | molecular | Water, NaCl and 14 ions | TIP3P (rigid), Joung–Cheatham 2008 monovalent and Li–Merz 2013 divalent ions |
 | `spce` | molecular | The same, for SPC/E | SPC/E (rigid) and its ions |
@@ -88,7 +89,7 @@ soapff add-reference mine PE4_PEO3.extxyz
 - `[library]`: name, engine, `extends`, description.
 - `[soap]`, `[lammps]`: the descriptor (and the similarity threshold) and the LAMMPS styles.
 - `[bond_lengths]`: the bond length of each pair of elements (`E1 E2 r`); each must lie between the longest bond and the shortest distance not bonded of the pair in the references (checked when the table is built), and a pair not written gets the halfway value.
-- `[types]`, `[bonds]`, `[angles]`, `[dihedrals]`, `[impropers]`: the parameters (molecular engine).
+- `[types]`, `[bonds]`, `[angles]`, `[dihedrals]`, `[impropers]`: the parameters, in every library (the clayff libraries too: the ClayFF values of Cygan et al. 2004, and the particle's for `clayff_edge`). The charges are those of the reference atoms.
 - `[references]`: the reference structures. These are extxyz files with the per-atom columns `fftype`, `ffcharge` and (molecular engine) `bonds` (the 1-based ids of the bonded atoms), or LAMMPS data files with the type names in the Masses section and a Bonds section.
 
 The docstring of `soapff.library` gives the full format. Libraries are looked up by name in `$SOAPFF_LIBRARY_PATH`, then `~/.soapff/libraries`, then the bundled folder (`soapff list --paths`).
@@ -102,8 +103,8 @@ Both engines type in the same two steps:
 2. **Type and charge from the SOAP of the covalent neighbourhood.** The SOAP of each atom is computed on the atoms within 4 bonds only, so other chains, the next layer, the water and the ions are left out. The nearest reference row of the same element gives the type and the charge.
 
 The build stops when an atom is below the similarity threshold, when an atom's bonds are not those of its type in the references, when a molecule's charge is not a whole number (molecular engine), or when an element is not in the library.
-- **clayff:** the ClayFF writer (`soapff_cui`). The mineral, the water and the ions are typed in one build (the water taken apart in step 1); the O–H bonds and the M–O–H angles of ClayFF come from the bonds of step 1.
-- **molecular:** any force field with bonds, angles, dihedrals and impropers, given by type or by class. The charge comes with the type from the nearest row, so it is right only when the charge of a type is decided within 4 bonds (as in OPLS-AA, the water models and ClayFF); a force field that gives each residue its own charges (protein force fields) is outside what soapff types.
+- **clayff:** the ClayFF writer (`soapff_cui`). The mineral, the water and the ions are typed in one build (the water taken apart in step 1); the O–H bonds and the M–O–H angles of ClayFF come from the bonds of step 1, their constants and the LJ from the tables of the library file.
+- **molecular:** any force field with bonds, angles, dihedrals and impropers, given by type or by class. The bonds of step 1 of a type that no row of `[bonds]` names (the metals and bridging O of ClayFF in `clayff_oplsaa`) only give the SOAP its neighbourhood: they are not bonds of the force field, and the molecule they hold (a mineral layer, whose ClayFF charges do not add up to a whole number) is not checked for its charge. The charge comes with the type from the nearest row, so it is right only when the charge of a type is decided within 4 bonds (as in OPLS-AA, the water models and ClayFF); a force field that gives each residue its own charges (protein force fields) is outside what soapff types.
 
 ## Test cases
 

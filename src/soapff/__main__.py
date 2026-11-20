@@ -52,7 +52,7 @@ def cmd_info(a):
         print(f"             {os.path.relpath(r['path'], os.path.dirname(lib.path))}  {extra}".rstrip())
     if len(lib.references) > a.show:
         print(f"             ... ({len(lib.references) - a.show} more; --show N)")
-    if lib.engine == "molecular":
+    if lib.types:
         print(f"types        {len(lib.types)}: {' '.join(sorted(lib.types))}")
         print(f"terms        {len(lib.bonds)} bonds, {len(lib.angles)} angles, {len(lib.dihedrals)} dihedrals, "
               f"{len(lib.impropers)} impropers")

@@ -1,0 +1,54 @@
+{
+ "EG1.7_start": {
+  "atoms": 5064,
+  "wrong": 0,
+  "min_similarity": {
+   "clayff": 0.96279,
+   "oplsaa": 1.0
+  },
+  "terms": {
+   "bonds": 2422,
+   "angles": 3666,
+   "dihedrals": 3270,
+   "impropers": 0
+  },
+  "frameworks": [
+   {
+    "molecule": 1,
+    "atoms": 1280,
+    "charge": -17.9964
+   },
+   {
+    "molecule": 2,
+    "atoms": 1280,
+    "charge": -17.9964
+   }
+  ]
+ },
+ "EG1.5_start": {
+  "atoms": 4804,
+  "wrong": 0,
+  "min_similarity": {
+   "clayff": 0.96279,
+   "oplsaa": 1.0
+  },
+  "terms": {
+   "bonds": 2188,
+   "angles": 3302,
+   "dihedrals": 2880,
+   "impropers": 0
+  },
+  "frameworks": [
+   {
+    "molecule": 1,
+    "atoms": 1280,
+    "charge": -17.9964
+   },
+   {
+    "molecule": 2,
+    "atoms": 1280,
+    "charge": -17.9964
+   }
+  ]
+ }
+}

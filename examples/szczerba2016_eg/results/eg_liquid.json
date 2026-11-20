@@ -1,0 +1,20 @@
+{
+ "molecules": 230,
+ "temperature_K": 293,
+ "pressure_bar": 1,
+ "average_over_ns": 0.3,
+ "szczerba2016_table2": {
+  "oplsaa": 1.06,
+  "experiment": 1.115
+ },
+ "cutoff12_tail": {
+  "density_g_cm3": 1.0781623999999999,
+  "stderr": 0.0014378439149953148,
+  "npt_ns": 0.4
+ },
+ "cutoff8.5_notail": {
+  "density_g_cm3": 1.0525644666666665,
+  "stderr": 0.0007835898594148816,
+  "npt_ns": 0.4
+ }
+}
