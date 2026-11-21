@@ -1,8 +1,8 @@
 {
  "structure": "Atoms",
- "library": "examples/szczerba2016_eg/clayff_oplsaa_eg.txt",
- "library_name": "clayff_oplsaa_eg",
- "table": "~/.cache/soapff/clayff_oplsaa_eg-34d8b882943d593c.npz",
+ "library": "src/soapff/libraries/clayff_oplsaa.txt",
+ "library_name": "clayff_oplsaa",
+ "table": "~/.cache/soapff/clayff_oplsaa-0542d3183e0ede0c.npz",
  "software": {
   "soapff": "1.0.0",
   "dscribe": "2.1.2"
@@ -13,48 +13,48 @@
  "molecule_kinds": {
   "10 atoms, charge -0.0000": 230
  },
- "min_similarity_soap": 0.9999994039535522,
- "min_margin_soap": 0.016022026538848877,
+ "min_similarity_soap": 0.9711772203445435,
+ "min_margin_soap": 0.0005439519882202148,
  "smallest_margins": [
+  {
+   "id": 2078,
+   "element": "H",
+   "type": "opls_140",
+   "margin": 0.00054,
+   "similarity_soap": 0.98452,
+   "nearest_reference": "PVA_8mer_md413K_2.extxyz:56"
+  },
+  {
+   "id": 837,
+   "element": "H",
+   "type": "opls_140",
+   "margin": 0.00054,
+   "similarity_soap": 0.98452,
+   "nearest_reference": "PVA_8mer_md413K_2.extxyz:56"
+  },
+  {
+   "id": 199,
+   "element": "H",
+   "type": "opls_140",
+   "margin": 0.00054,
+   "similarity_soap": 0.98452,
+   "nearest_reference": "PVA_8mer_md413K_2.extxyz:56"
+  },
+  {
+   "id": 1486,
+   "element": "H",
+   "type": "opls_140",
+   "margin": 0.00054,
+   "similarity_soap": 0.98452,
+   "nearest_reference": "PVA_8mer_md413K_2.extxyz:56"
+  },
   {
    "id": 1598,
    "element": "H",
    "type": "opls_140",
-   "margin": 0.01602,
-   "similarity_soap": 1.0,
-   "nearest_reference": "EG.extxyz:6"
-  },
-  {
-   "id": 2206,
-   "element": "H",
-   "type": "opls_140",
-   "margin": 0.01602,
-   "similarity_soap": 1.0,
-   "nearest_reference": "EG.extxyz:6"
-  },
-  {
-   "id": 1229,
-   "element": "H",
-   "type": "opls_140",
-   "margin": 0.01602,
-   "similarity_soap": 1.0,
-   "nearest_reference": "EG.extxyz:6"
-  },
-  {
-   "id": 467,
-   "element": "H",
-   "type": "opls_140",
-   "margin": 0.01602,
-   "similarity_soap": 1.0,
-   "nearest_reference": "EG.extxyz:6"
-  },
-  {
-   "id": 1417,
-   "element": "H",
-   "type": "opls_140",
-   "margin": 0.01602,
-   "similarity_soap": 1.0,
-   "nearest_reference": "EG.extxyz:6"
+   "margin": 0.00054,
+   "similarity_soap": 0.98452,
+   "nearest_reference": "PVA_8mer_md413K_2.extxyz:56"
   }
  ],
  "sources": {
@@ -102,28 +102,28 @@
    "charges": [
     0.06
    ],
-   "min_similarity_soap": 0.9999998211860657
+   "min_similarity_soap": 0.9845216870307922
   },
   "opls_154": {
    "atoms": 460,
    "charges": [
     -0.683
    ],
-   "min_similarity_soap": 0.999999463558197
+   "min_similarity_soap": 0.9937772750854492
   },
   "opls_155": {
    "atoms": 460,
    "charges": [
     0.418
    ],
-   "min_similarity_soap": 1.0000001192092896
+   "min_similarity_soap": 0.9955857396125793
   },
   "opls_157": {
    "atoms": 460,
    "charges": [
     0.145
    ],
-   "min_similarity_soap": 0.9999994039535522
+   "min_similarity_soap": 0.9711772203445435
   }
  },
  "warnings": [],

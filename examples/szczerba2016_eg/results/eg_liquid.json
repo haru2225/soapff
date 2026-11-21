@@ -8,8 +8,8 @@
   "experiment": 1.115
  },
  "cutoff12_tail": {
-  "density_g_cm3": 1.0781623999999999,
-  "stderr": 0.0014378439149953148,
+  "density_g_cm3": 1.0796481666666666,
+  "stderr": 0.0018980611767157383,
   "npt_ns": 0.4
  },
  "cutoff8.5_notail": {
@@ -17,7 +17,7 @@
   "stderr": 0.0007835898594148816,
   "npt_ns": 0.4
  },
- "clayff_oplsaa_eg": {
+ "clayff_oplsaa_cutoff8.5": {
   "density_g_cm3": 1.0398265,
   "stderr": 0.0017050741349148033,
   "npt_ns": 0.4

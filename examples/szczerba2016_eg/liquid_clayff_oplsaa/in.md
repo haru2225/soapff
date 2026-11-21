@@ -1,4 +1,4 @@
-# liquid ethylene glycol, OPLS-AA (soapff clayff_oplsaa_eg), 293 K, 1 bar
+# liquid ethylene glycol, OPLS-AA (soapff clayff_oplsaa, cutoff 8.5 A), 293 K, 1 bar
 include ff/system.settings
 neighbor 2.0 bin
 neigh_modify delay 0 every 1 check yes

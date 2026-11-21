@@ -1,9 +1,9 @@
-"""The reference structures of ethylene glycol (EG, HOCH2CH2OH) for the library oplsaa_eg (oplsaa + EG): one EG molecule
-minimised with Foyer's OPLS-AA (OpenMM, vacuum) and 5 frames of its Langevin MD at 413 K in vacuum (every 10 ps: trans and
-gauche O-C-C-O), as the references of oplsaa (../oplsaa/polymers.py), typed by Foyer.  Needs foyer, openmm and parmed (the
+"""One ethylene glycol (EG, HOCH2CH2OH) molecule minimised with Foyer's OPLS-AA (OpenMM, vacuum) and typed by Foyer, as the
+references of oplsaa (../oplsaa/polymers.py): the molecule that build.py and eg_liquid.py pack, and its right answer.  It is
+not a reference of a library: oplsaa and clayff_oplsaa type EG as Foyer without it.  Needs foyer, openmm and parmed (the
 environment of ../oplsaa).
 
-    python eg_refs.py          -> refs/EG.extxyz, refs/EG_md413K_{1..5}.extxyz (+ .json)"""
+    python eg_refs.py          -> refs/EG.extxyz (+ .json)"""
 import os
 import sys
 
@@ -47,10 +47,6 @@ def main():
     s = polymers.save(os.path.join(HERE, "refs", "EG.extxyz"), [mol], x - x.mean(0),
                       comment="ethylene glycol, minimised (Foyer OPLS-AA); types and charges by Foyer", smiles=["OCCO"])
     print("EG", [a.type for a in s.atoms], [round(a.charge, 3) for a in s.atoms], f"O-C-C-O {dihedral(x, 0, 1, 2, 3):.0f}")
-    for k, f in enumerate(polymers.frames(mol, x, temp=413.0, every_ps=10.0, n=5, seed=3), 1):
-        polymers.save(os.path.join(HERE, "refs", f"EG_md413K_{k}.extxyz"), [mol], f,
-                      comment=f"ethylene glycol after {10 * k} ps at 413 K in vacuum (Foyer OPLS-AA)", smiles=["OCCO"])
-        print(f"frame {k}: O-C-C-O {dihedral(f, 0, 1, 2, 3):.0f}")
 
 
 if __name__ == "__main__":

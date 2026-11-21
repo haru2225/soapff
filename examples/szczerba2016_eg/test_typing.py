@@ -1,5 +1,6 @@
-"""The typing of the SWy-1 + EG + water models (build.py) with clayff_oplsaa_eg (clayff_oplsaa with the EG references),
-from the elements, positions and cell alone, compared with the right answer of build.py.
+"""The typing of the SWy-1 + EG + water models (build.py) with the bundled clayff_oplsaa, from the elements, positions and
+cell alone, compared with the right answer of build.py.  EG is not among the references; its atoms get the types of the
+same atoms at the HO-CH2- end of the PVA references.
 
     python test_typing.py      (soapff)  ->  results/typing_start.json"""
 import json
@@ -12,7 +13,7 @@ from ase.io import read
 import soapff
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-LIB = os.path.join(HERE, "clayff_oplsaa_eg.txt")
+LIB = "clayff_oplsaa"
 OPLS = set(soapff.library.load("oplsaa").types)
 
 

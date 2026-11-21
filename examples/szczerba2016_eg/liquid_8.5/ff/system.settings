@@ -1,4 +1,4 @@
-# soapff settings: library oplsaa_eg (W. L. Jorgensen, D. S. Maxwell, J. Tirado-Rives, J. Am. Chem. Soc. 118, 11225 (1996); types by SMARTS: C. Klein et al., Comput. Mater. Sci. 167, 215 (2019)); types and charges in system.data from the references of the library
+# soapff settings: library oplsaa (W. L. Jorgensen, D. S. Maxwell, J. Tirado-Rives, J. Am. Chem. Soc. 118, 11225 (1996); types by SMARTS: C. Klein et al., Comput. Mater. Sci. 167, 215 (2019)); types and charges in system.data from the references of the library
 units real
 atom_style full
 boundary p p p

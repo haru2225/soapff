@@ -4,7 +4,7 @@
   "wrong": 0,
   "min_similarity": {
    "clayff": 0.96279,
-   "oplsaa": 1.0
+   "oplsaa": 0.97118
   },
   "terms": {
    "bonds": 2422,
@@ -30,7 +30,7 @@
   "wrong": 0,
   "min_similarity": {
    "clayff": 0.96279,
-   "oplsaa": 1.0
+   "oplsaa": 0.97118
   },
   "terms": {
    "bonds": 2188,

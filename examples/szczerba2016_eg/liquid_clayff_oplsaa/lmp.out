@@ -25,8 +25,8 @@ Finding 1-2 1-3 1-4 neighbors ...
      4 = max # of 1-3 neighbors
      7 = max # of 1-4 neighbors
      9 = max # of special neighbors
-  special bonds CPU = 0.001 seconds
-  read_data CPU = 0.034 seconds
+  special bonds CPU = 0.002 seconds
+  read_data CPU = 0.041 seconds
 PPPM initialization ...
   using 12-bit tables for long-range coulomb
   G vector (1/distance) = 0.34077148
@@ -56,9 +56,9 @@ Per MPI rank memory allocation (min/avg/max) = 13.66 | 13.8 | 14.07 Mbytes
    Step          Temp          Press          PotEng        Density    
          0   0              65106.42       4517.4985      1.000006     
        514   0             -1177.4886     -2703.3388      1.000006     
-Loop time of 6.54789 on 6 procs for 514 steps with 2300 atoms
+Loop time of 4.58555 on 6 procs for 514 steps with 2300 atoms
 
-65.1% CPU use with 6 MPI tasks x no OpenMP threads
+69.8% CPU use with 6 MPI tasks x no OpenMP threads
 
 Minimization stats:
   Stopping criterion = energy tolerance
@@ -72,14 +72,14 @@ Minimization stats:
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
 ---------------------------------------------------------------
-Pair    | 2.1231     | 2.5268     | 3.0311     |  18.9 | 38.59
-Bond    | 0.071595   | 0.07398    | 0.07724    |   0.8 |  1.13
-Kspace  | 2.4897     | 2.995      | 3.4017     |  17.4 | 45.74
-Neigh   | 0.11253    | 0.11396    | 0.11536    |   0.4 |  1.74
-Comm    | 0.58292    | 0.59652    | 0.60678    |   1.1 |  9.11
+Pair    | 1.6192     | 1.9513     | 2.3349     |  16.5 | 42.55
+Bond    | 0.053093   | 0.055025   | 0.057575   |   0.7 |  1.20
+Kspace  | 1.6374     | 2.0154     | 2.3446     |  16.1 | 43.95
+Neigh   | 0.096602   | 0.099806   | 0.10292    |   1.0 |  2.18
+Comm    | 0.33117    | 0.34239    | 0.35091    |   1.2 |  7.47
 Output  | 0          | 0          | 0          |   0.0 |  0.00
 Modify  | 0          | 0          | 0          |   0.0 |  0.00
-Other   |            | 0.2416     |            |       |  3.69
+Other   |            | 0.1216     |            |       |  2.65
 
 Nlocal:        383.333 ave         427 max         347 min
 Histogram: 1 1 0 0 2 0 1 0 0 1
@@ -210,22 +210,22 @@ Per MPI rank memory allocation (min/avg/max) = 12.54 | 12.68 | 12.95 Mbytes
      98000   293.15516     -1466.2924     -1049.6079      1.000006     
      99000   301.8473      -2296.8899     -1043.2318      1.000006     
     100000   288.34709      209.33985     -1023.1369      1.000006     
-Loop time of 497.141 on 6 procs for 100000 steps with 2300 atoms
+Loop time of 282.737 on 6 procs for 100000 steps with 2300 atoms
 
-Performance: 17.379 ns/day, 1.381 hours/ns, 201.150 timesteps/s, 462.646 katom-step/s
-67.3% CPU use with 6 MPI tasks x no OpenMP threads
+Performance: 30.558 ns/day, 0.785 hours/ns, 353.685 timesteps/s, 813.476 katom-step/s
+76.5% CPU use with 6 MPI tasks x no OpenMP threads
 
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
 ---------------------------------------------------------------
-Pair    | 152.35     | 164.29     | 173.7      |  58.8 | 33.05
-Bond    | 7.1028     | 7.2233     | 7.3187     |   3.3 |  1.45
-Kspace  | 216.61     | 225.78     | 237.53     |  49.0 | 45.41
-Neigh   | 19.544     | 19.594     | 19.663     |   1.0 |  3.94
-Comm    | 58.136     | 58.263     | 58.584     |   2.1 | 11.72
-Output  | 0.10458    | 0.10841    | 0.11532    |   1.1 |  0.02
-Modify  | 14.244     | 15.217     | 15.718     |  12.5 |  3.06
-Other   |            | 6.667      |            |       |  1.34
+Pair    | 105.33     | 111.54     | 117.34     |  42.8 | 39.45
+Bond    | 4.4078     | 4.524      | 4.6009     |   3.0 |  1.60
+Kspace  | 115.73     | 121.41     | 127.57     |  40.2 | 42.94
+Neigh   | 12.199     | 12.21      | 12.222     |   0.3 |  4.32
+Comm    | 26.781     | 26.873     | 26.95      |   1.0 |  9.50
+Output  | 0.031218   | 0.03198    | 0.035417   |   0.9 |  0.01
+Modify  | 4.2489     | 4.4115     | 4.5283     |   4.6 |  1.56
+Other   |            | 1.736      |            |       |  0.61
 
 Nlocal:        383.333 ave         397 max         372 min
 Histogram: 1 2 0 0 0 0 1 0 1 1
@@ -656,22 +656,22 @@ Per MPI rank memory allocation (min/avg/max) = 12.54 | 12.81 | 12.97 Mbytes
     398000   295.06465     -23.311832     -1046.2111      1.0354665    
     399000   286.28189      955.31452     -1059.326       1.0517255    
     400000   292.96796     -762.37345     -1046.4564      1.0332       
-Loop time of 1630.52 on 6 procs for 400000 steps with 2300 atoms
+Loop time of 1465.67 on 6 procs for 400000 steps with 2300 atoms
 
-Performance: 21.196 ns/day, 1.132 hours/ns, 245.320 timesteps/s, 564.237 katom-step/s
-79.9% CPU use with 6 MPI tasks x no OpenMP threads
+Performance: 23.580 ns/day, 1.018 hours/ns, 272.912 timesteps/s, 627.698 katom-step/s
+71.7% CPU use with 6 MPI tasks x no OpenMP threads
 
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
 ---------------------------------------------------------------
-Pair    | 564.41     | 602.34     | 638.05     | 103.5 | 36.94
-Bond    | 28.278     | 29.036     | 29.49      |   7.5 |  1.78
-Kspace  | 622        | 656.89     | 694.45     |  97.7 | 40.29
-Neigh   | 61.324     | 61.398     | 61.476     |   0.6 |  3.77
-Comm    | 152.35     | 152.71     | 152.9      |   1.7 |  9.37
-Output  | 0.079431   | 0.1279     | 0.13808    |   6.1 |  0.01
-Modify  | 102.18     | 104.02     | 107.06     |  16.5 |  6.38
-Other   |            | 23.99      |            |       |  1.47
+Pair    | 488.39     | 512.36     | 539.43     |  82.9 | 34.96
+Bond    | 22.925     | 23.753     | 24.252     |   9.2 |  1.62
+Kspace  | 588.54     | 614.78     | 638.31     |  73.8 | 41.95
+Neigh   | 54.176     | 54.211     | 54.231     |   0.2 |  3.70
+Comm    | 124.85     | 125.07     | 125.34     |   1.4 |  8.53
+Output  | 0.21925    | 0.31942    | 0.34362    |   7.9 |  0.02
+Modify  | 99.111     | 100.96     | 103.24     |  13.4 |  6.89
+Other   |            | 34.21      |            |       |  2.33
 
 Nlocal:        383.333 ave         398 max         369 min
 Histogram: 1 0 1 0 0 2 1 0 0 1
@@ -696,7 +696,4 @@ PPPM initialization ...
   using double precision KISS FFT
   3d grid and FFT values/proc = 8835 2304
 Generated 6 of 6 mixed pair_coeff terms from arithmetic mixing rule
-Total wall time: 0:35:34
-real 2134.49
-user 9853.74
-sys 1692.70
+Total wall time: 0:29:13

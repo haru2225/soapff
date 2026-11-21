@@ -1,4 +1,4 @@
-# soapff settings: library clayff_oplsaa_eg (M. Szczerba, A. G. Kalinichev, Clays Clay Miner. 64, 488 (2016)); types and charges in system.data from the references of the library
+# soapff settings: library clayff_oplsaa (R. T. Cygan, J.-J. Liang, A. G. Kalinichev, J. Phys. Chem. B 108, 1255 (2004); W. L. Jorgensen, D. S. Maxwell, J. Tirado-Rives, J. Am. Chem. Soc. 118, 11225 (1996); M. Szczerba, A. G. Kalinichev, Clays Clay Miner. 64, 488 (2016)); types and charges in system.data from the references of the library
 units real
 atom_style full
 boundary p p p

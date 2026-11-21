@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "soapff"
-version = "1.0.0"
+version = "1.0.1"
 description = "soapff: atom types, charges and the LAMMPS force field of any structure from a library of reference structures (SOAP) - ClayFF, OPLS-AA, TIP3P, SPC/E, and libraries users write"
 readme = "README.md"
 license = {text = "MIT"}
