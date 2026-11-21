@@ -3,12 +3,14 @@ EG molecules (packmol, 1.0 g/cm3), typed from its elements, positions and cell, 
 293 K and 0.4 ns NPT at 293 K and 1 bar; the density is the mean of the last 0.3 ns (it levels off within
 0.05 ns of NPT).
 
-Two settings of the interactions: liquid/, those soapff writes for oplsaa (LJ cutoff 12 A with the tail correction);
-liquid_8.5/, those of Szczerba & Kalinichev (cutoff 8.5 A, Ewald for the Coulomb; no tail correction, the default of
-LAMMPS; clayff_oplsaa_eg.txt has the same cutoff, with Lorentz-Berthelot mixing).
+Three force fields: liquid/, the one soapff writes with oplsaa_eg (LJ cutoff 12 A with the tail correction, geometric
+mixing); liquid_8.5/, the same with the cutoff of Szczerba & Kalinichev (8.5 A, no tail correction); liquid_clayff_oplsaa/,
+the one soapff writes with clayff_oplsaa_eg, the library of the smectite models (ClayFF and OPLS-AA as one force field:
+Lorentz-Berthelot for every pair, cutoff 8.5 A, no tail correction, as their CLAYFF + OPLS-aa).
 
     python eg_liquid.py build  (soapff)  ->  liquid/structure.extxyz, liquid/ff, liquid/in.md
     python eg_liquid.py build85          ->  liquid_8.5/ff, liquid_8.5/in.md (liquid/ff with cutoff 8.5 A, no tail)
+    python eg_liquid.py build_clay       ->  liquid_clayff_oplsaa/ff, in.md (the same box typed with clayff_oplsaa_eg)
     cd liquid && mpirun -np 2 lmp -in in.md          ->  density.dat (the same in liquid_8.5)
     python eg_liquid.py result                      ->  results/eg_liquid.json"""
 import json
@@ -24,6 +26,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 N = 230
 D = os.path.join(HERE, "liquid")
 D85 = os.path.join(HERE, "liquid_8.5")
+DCO = os.path.join(HERE, "liquid_clayff_oplsaa")
 
 IN = """# liquid ethylene glycol, OPLS-AA (soapff oplsaa_eg), 293 K, 1 bar
 include ff/system.settings
@@ -91,10 +94,23 @@ def build85():
     print(f"-> {D85}/in.md")
 
 
+def build_clay():
+    """liquid_clayff_oplsaa: the box of liquid/ typed with clayff_oplsaa_eg (its own interactions)"""
+    import soapff
+    at = read(os.path.join(D, "structure.extxyz"))
+    os.makedirs(DCO, exist_ok=True)
+    s = soapff.build(os.path.join(HERE, "clayff_oplsaa_eg.txt"), at, os.path.join(DCO, "ff"), log=lambda *a: None)
+    right = bool((np.array(s.types) == at.arrays["fftype"]).all() and np.allclose(s.charges, at.arrays["ffcharge"]))
+    txt = open(os.path.join(DCO, "ff", "system.settings")).read().replace("read_data system.data", "read_data ff/system.data")
+    open(os.path.join(DCO, "ff", "system.settings"), "w").write(txt)
+    open(os.path.join(DCO, "in.md"), "w").write(IN.replace("(soapff oplsaa_eg)", "(soapff clayff_oplsaa_eg)"))
+    print(f"{len(at)} atoms; every type and charge as Foyer: {right}; -> {DCO}/in.md")
+
+
 def result():
     out = dict(molecules=N, temperature_K=293, pressure_bar=1, average_over_ns=0.3,
                szczerba2016_table2=dict(oplsaa=1.060, experiment=1.115))
-    for key, d in (("cutoff12_tail", D), ("cutoff8.5_notail", D85)):
+    for key, d in (("cutoff12_tail", D), ("cutoff8.5_notail", D85), ("clayff_oplsaa_eg", DCO)):
         if not os.path.isfile(os.path.join(d, "density.dat")):
             continue
         t, rho = np.loadtxt(os.path.join(d, "density.dat"), unpack=True)
@@ -107,4 +123,4 @@ def result():
 
 
 if __name__ == "__main__":
-    {"build": build, "build85": build85, "result": result}[sys.argv[1]]()
+    {"build": build, "build85": build85, "build_clay": build_clay, "result": result}[sys.argv[1]]()

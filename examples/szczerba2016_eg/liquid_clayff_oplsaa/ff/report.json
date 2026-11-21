@@ -1,0 +1,147 @@
+{
+ "structure": "Atoms",
+ "library": "examples/szczerba2016_eg/clayff_oplsaa_eg.txt",
+ "library_name": "clayff_oplsaa_eg",
+ "table": "~/.cache/soapff/clayff_oplsaa_eg-34d8b882943d593c.npz",
+ "software": {
+  "soapff": "1.0.0",
+  "dscribe": "2.1.2"
+ },
+ "atoms": 2300,
+ "charge_sum": -1.7985612998927536e-14,
+ "molecules": 230,
+ "molecule_kinds": {
+  "10 atoms, charge -0.0000": 230
+ },
+ "min_similarity_soap": 0.9999994039535522,
+ "min_margin_soap": 0.016022026538848877,
+ "smallest_margins": [
+  {
+   "id": 1598,
+   "element": "H",
+   "type": "opls_140",
+   "margin": 0.01602,
+   "similarity_soap": 1.0,
+   "nearest_reference": "EG.extxyz:6"
+  },
+  {
+   "id": 2206,
+   "element": "H",
+   "type": "opls_140",
+   "margin": 0.01602,
+   "similarity_soap": 1.0,
+   "nearest_reference": "EG.extxyz:6"
+  },
+  {
+   "id": 1229,
+   "element": "H",
+   "type": "opls_140",
+   "margin": 0.01602,
+   "similarity_soap": 1.0,
+   "nearest_reference": "EG.extxyz:6"
+  },
+  {
+   "id": 467,
+   "element": "H",
+   "type": "opls_140",
+   "margin": 0.01602,
+   "similarity_soap": 1.0,
+   "nearest_reference": "EG.extxyz:6"
+  },
+  {
+   "id": 1417,
+   "element": "H",
+   "type": "opls_140",
+   "margin": 0.01602,
+   "similarity_soap": 1.0,
+   "nearest_reference": "EG.extxyz:6"
+  }
+ ],
+ "sources": {
+  "soap": 2300
+ },
+ "bond_lengths": {
+  "Al-O": 2.66,
+  "C-C": 1.99,
+  "C-F": 1.77,
+  "C-H": 1.51,
+  "C-N": 1.89,
+  "C-O": 1.86,
+  "H-O": 1.25,
+  "Mg-O": 2.7,
+  "O-Si": 2.41
+ },
+ "water_apart": {
+  "molecules": 0,
+  "bonds_taken_out": {}
+ },
+ "terms": {
+  "bonds": 2070,
+  "angles": 3220,
+  "dihedrals": 3450,
+  "impropers": 0
+ },
+ "dihedrals_without_parameters": {},
+ "box": [
+  28.726488503276265,
+  28.726488503276265,
+  28.726488503276265,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "boundary": "p p p",
+ "vacuum_gap": {},
+ "kspace": [
+  "kspace_style pppm 1.0e-5"
+ ],
+ "reserved_water": null,
+ "per_type": {
+  "opls_140": {
+   "atoms": 920,
+   "charges": [
+    0.06
+   ],
+   "min_similarity_soap": 0.9999998211860657
+  },
+  "opls_154": {
+   "atoms": 460,
+   "charges": [
+    -0.683
+   ],
+   "min_similarity_soap": 0.999999463558197
+  },
+  "opls_155": {
+   "atoms": 460,
+   "charges": [
+    0.418
+   ],
+   "min_similarity_soap": 1.0000001192092896
+  },
+  "opls_157": {
+   "atoms": 460,
+   "charges": [
+    0.145
+   ],
+   "min_similarity_soap": 0.9999994039535522
+  }
+ },
+ "warnings": [],
+ "type_ids": {
+  "opls_157": 1,
+  "opls_140": 2,
+  "opls_155": 3,
+  "opls_154": 4
+ },
+ "type_elements": [
+  "C",
+  "H",
+  "H",
+  "O"
+ ],
+ "rigid": {
+  "bonds": [],
+  "angles": []
+ },
+ "timestep_fs": 0.5
+}
